@@ -1,9 +1,8 @@
 /*
- * Bilgin Ustası asset registry
+ * Bilgin Ustası V3 asset registry
  *
- * All production artwork lives under src/assets/game-assets and is bundled by Vite.
- * This avoids broken /game-assets URLs on deployments that use a sub-path or omit
- * nested public folders.
+ * V3 rule: every inventory item has exactly one dedicated artwork file.
+ * No hash based / random slot assignment remains.
  */
 
 const ASSET_MODULES = import.meta.glob(
@@ -16,26 +15,6 @@ function asset(relativePath) {
   return ASSET_MODULES[key] || "";
 }
 
-const SLOT_ASSETS = {
-  outfit: Array.from({ length: 7 }, (_, i) => asset(`items/tops/top-${i + 1}.png`)),
-  shoes: Array.from({ length: 7 }, (_, i) => asset(`items/shoes/shoes-${i + 1}.png`)),
-  headwear: Array.from({ length: 6 }, (_, i) => asset(`items/headwear/head-${i + 1}.png`)),
-  face: Array.from({ length: 6 }, (_, i) => asset(`items/accessories/accessory-${i + 1}.png`)),
-  petSpecies: Array.from({ length: 8 }, (_, i) => asset(`pets/pet-${i + 1}.png`)),
-  petAccessory: [
-    asset("items/headwear/head-4.png"),
-    asset("items/headwear/head-2.png"),
-    asset("items/accessories/accessory-5.png"),
-    asset("items/headwear/head-5.png"),
-  ],
-  wallpaper: Array.from({ length: 8 }, (_, i) => asset(`worlds/world-${i + 1}.png`)),
-  rug: [asset("rooms/items/room-3.png"), asset("rooms/items/room-8.png"), asset("rooms/items/room-2.png")],
-  desk: [asset("rooms/items/room-5.png"), asset("rooms/items/room-12.png"), asset("rooms/items/room-6.png")],
-  lamp: [asset("rooms/items/room-2.png"), asset("rooms/items/room-3.png")],
-  plant: [asset("rooms/items/room-13.png"), asset("rooms/items/room-8.png")],
-  poster: [asset("rooms/items/room-1.png"), asset("rooms/items/room-7.png")],
-};
-
 const HAIR_ASSETS = {
   "hair-space-buns": asset("avatar/hair/hair-1.png"),
   "hair-long-braid": asset("avatar/hair/hair-2.png"),
@@ -43,17 +22,6 @@ const HAIR_ASSETS = {
   "hair-bob-bangs": asset("avatar/hair/hair-4.png"),
   "hair-wavy-long": asset("avatar/hair/hair-5.png"),
   "hair-curly-afro": asset("avatar/hair/hair-6.png"),
-};
-
-const PET_ASSETS = {
-  "pet-dog-white": asset("pets/pet-1.png"),
-  "pet-cat-orange": asset("pets/pet-2.png"),
-  "pet-owl-purple": asset("pets/pet-3.png"),
-  "pet-dragon": asset("pets/pet-4.png"),
-  "pet-phoenix": asset("pets/pet-4.png"),
-  "pet-cat-gray": asset("pets/pet-6.png"),
-  "pet-dog-brown": asset("pets/pet-1.png"),
-  "pet-owl-teal": asset("pets/pet-3.png"),
 };
 
 const PRESETS = {
@@ -79,31 +47,41 @@ export const GAME_ASSETS = {
   mapBackground: asset("worlds/map-background.jpg"),
 };
 
-function hashIndex(text, length) {
-  if (!length) return 0;
-  let hash = 0;
-  const value = String(text || "item");
-  for (let i = 0; i < value.length; i += 1) {
-    hash = (hash * 31 + value.charCodeAt(i)) >>> 0;
-  }
-  return hash % length;
+function normalizeSlot(slot) {
+  const aliases = {
+    petSpecies: "petSpecies",
+    petAccessory: "petAccessory",
+    outfit: "outfit",
+    shoes: "shoes",
+    headwear: "headwear",
+    face: "face",
+    wallpaper: "wallpaper",
+    rug: "rug",
+    desk: "desk",
+    lamp: "lamp",
+    plant: "plant",
+    poster: "poster",
+  };
+  return aliases[slot] || slot;
 }
 
+/**
+ * Returns the artwork dedicated to this exact item id.
+ * Unlike V2, V3 never maps multiple ids onto a small shared image pool.
+ */
 export function getItemAsset(itemOrId, slotOverride) {
   const item = typeof itemOrId === "string"
     ? { id: itemOrId, slot: slotOverride }
     : itemOrId || {};
 
-  if (item.slot === "petSpecies" && PET_ASSETS[item.id]) {
-    return PET_ASSETS[item.id];
-  }
-
-  const list = SLOT_ASSETS[item.slot] || SLOT_ASSETS.face;
-  return list[hashIndex(item.id, list.length)] || "";
+  if (!item.id || !item.slot) return "";
+  const slot = normalizeSlot(item.slot);
+  return asset(`unique/${slot}/${item.id}.png`);
 }
 
 export function getPetAsset(petId) {
-  return PET_ASSETS[petId] || SLOT_ASSETS.petSpecies[hashIndex(petId, SLOT_ASSETS.petSpecies.length)] || "";
+  if (!petId) return "";
+  return asset(`unique/petSpecies/${petId}.png`);
 }
 
 export function getHairAsset(hairId) {

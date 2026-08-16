@@ -1,0 +1,482 @@
+{
+  "outfit-tshirt": {
+    "slot": "outfit",
+    "label": "Keşif Ceketi",
+    "asset": "unique/outfit/outfit-tshirt.png",
+    "sha256": "6c718e7aaa29f96c5f0da4df7cd255d9233538395d5bcf9c64bce4568fc7ca24"
+  },
+  "outfit-tshirt-red": {
+    "slot": "outfit",
+    "label": "Mavi Keşif Tulumu",
+    "asset": "unique/outfit/outfit-tshirt-red.png",
+    "sha256": "7d40a08c648d7fbf2544fc4a1084ecde37ec6157f8c6b78a592cb4d5c7171519"
+  },
+  "outfit-tshirt-yellow": {
+    "slot": "outfit",
+    "label": "Güneş Rüzgârlığı",
+    "asset": "unique/outfit/outfit-tshirt-yellow.png",
+    "sha256": "b23daab4a29f1e8154f8478f92ca1e898056ac06db69afdbd9128d301251905e"
+  },
+  "outfit-tshirt-green": {
+    "slot": "outfit",
+    "label": "Mor Şehir Takımı",
+    "asset": "unique/outfit/outfit-tshirt-green.png",
+    "sha256": "036778369bb34ad792e82f3528abf5fb8eaeee30a9d4fc42805a33b880c6d22c"
+  },
+  "outfit-overalls": {
+    "slot": "outfit",
+    "label": "Saha Tulumu",
+    "asset": "unique/outfit/outfit-overalls.png",
+    "sha256": "0adbfa0dd53874567eddd20e954a2058c4cd40bafff05c79462873190e48e43a"
+  },
+  "shoes-sneaker": {
+    "slot": "shoes",
+    "label": "Işıklı Koşu Ayakkabısı",
+    "asset": "unique/shoes/shoes-sneaker.png",
+    "sha256": "9f8cd97516bb49ccdfe1d2d53eba74f73ff596cd54ee4c821bb5b131a388d652"
+  },
+  "shoes-sneaker-red": {
+    "slot": "shoes",
+    "label": "Hız Ayakkabısı",
+    "asset": "unique/shoes/shoes-sneaker-red.png",
+    "sha256": "4154ab135530fdc36b99b4f404a4a638270001f11650ed49573b631570747b92"
+  },
+  "shoes-sneaker-pink": {
+    "slot": "shoes",
+    "label": "Gece Spor Ayakkabısı",
+    "asset": "unique/shoes/shoes-sneaker-pink.png",
+    "sha256": "f14f1dffbb18c460feddaceea096e03365dc5f63303deed2933049d6084e3054"
+  },
+  "headwear-cap": {
+    "slot": "headwear",
+    "label": "Kışlık Kaşif Beresi",
+    "asset": "unique/headwear/headwear-cap.png",
+    "sha256": "20fe07147ba391d675c8973a829402d1a3c7307ef26fafa3b5477842d9202722"
+  },
+  "headwear-cap-red": {
+    "slot": "headwear",
+    "label": "Atölye Beresi",
+    "asset": "unique/headwear/headwear-cap-red.png",
+    "sha256": "be63b7ab3d54da9b857ed71bde3c2de665d5b8952985d3dffaf274860aca04de"
+  },
+  "headwear-cap-yellow": {
+    "slot": "headwear",
+    "label": "Güneşlik Şapka",
+    "asset": "unique/headwear/headwear-cap-yellow.png",
+    "sha256": "c18198ced16ad41743287f37c72e3b4ecc9a7c1e697d5ed6baab03a3cb812073"
+  },
+  "headwear-hairbow-pink": {
+    "slot": "headwear",
+    "label": "Mercan Saç Tokası",
+    "asset": "unique/headwear/headwear-hairbow-pink.png",
+    "sha256": "89f2937399967659c2ab7a0c3362267a5d9b082acc5eb8e0ef925bd8dd939c4f"
+  },
+  "headwear-hairbow-blue": {
+    "slot": "headwear",
+    "label": "Mavi Klips",
+    "asset": "unique/headwear/headwear-hairbow-blue.png",
+    "sha256": "e4d9ee9a49eddf51ad91b636010085229820ef13d4291b6581282e08b34bc555"
+  },
+  "face-backpack-badge": {
+    "slot": "face",
+    "label": "Keşif Sırt Çantası",
+    "asset": "unique/face/face-backpack-badge.png",
+    "sha256": "6907b384db3d57fecc839bd3667986061d84d643a1ef87beb514c12c54ad4952"
+  },
+  "outfit-robe": {
+    "slot": "outfit",
+    "label": "Orman Pelerini",
+    "asset": "unique/outfit/outfit-robe.png",
+    "sha256": "875c762b5d03783962d4caf2b9c3aeba5ee8ddcadda8646cfab92b8007dbb8fa"
+  },
+  "outfit-robe-purple": {
+    "slot": "outfit",
+    "label": "Gece Orman Takımı",
+    "asset": "unique/outfit/outfit-robe-purple.png",
+    "sha256": "b48b69fe4969595f0087b9cb3cfdfc7f3dbdcd413a2798b9f6e064b99343b7f2"
+  },
+  "outfit-robe-emerald": {
+    "slot": "outfit",
+    "label": "Yeşil İz Sürücü Takımı",
+    "asset": "unique/outfit/outfit-robe-emerald.png",
+    "sha256": "bc5595da269edee6f735cf17cb59d97418693f4c24c105187875ed813c88079c"
+  },
+  "shoes-cape-boots": {
+    "slot": "shoes",
+    "label": "Orman Botları",
+    "asset": "unique/shoes/shoes-cape-boots.png",
+    "sha256": "e6ff0d384cfb9f04f4a8331fce9d0f759d91fba154a0f1bf362fecef89d433d2"
+  },
+  "headwear-wizardhat": {
+    "slot": "headwear",
+    "label": "Orman Şapkası",
+    "asset": "unique/headwear/headwear-wizardhat.png",
+    "sha256": "fa82fbc2b27c59d2172c0be0824f5ebcab20aa1e166b3a35546e798dcc518d45"
+  },
+  "headwear-wizardhat-teal": {
+    "slot": "headwear",
+    "label": "Mor Keşif Şapkası",
+    "asset": "unique/headwear/headwear-wizardhat-teal.png",
+    "sha256": "b334afe3509ffb94a62c85921e4a37f6df8af442c1fdbb87cd27250ad056c784"
+  },
+  "headwear-wizardhat-red": {
+    "slot": "headwear",
+    "label": "Kızıl Macera Şapkası",
+    "asset": "unique/headwear/headwear-wizardhat-red.png",
+    "sha256": "4902cdf6654a2ead7bf041e416909aea1e608624db832863d37a44a83c8daf29"
+  },
+  "headwear-flowercrown": {
+    "slot": "headwear",
+    "label": "Yaprak Tacı",
+    "asset": "unique/headwear/headwear-flowercrown.png",
+    "sha256": "746171af9d7f0b4a2f260dc8cc0a81d5e897f27a0ffde9321a94b6463eaf15ae"
+  },
+  "face-wand": {
+    "slot": "face",
+    "label": "Enerji Çubuğu",
+    "asset": "unique/face/face-wand.png",
+    "sha256": "a53a6276596a6e3c0095f3efbe8f455583558facf06adbc8d8e569ee1e64f324"
+  },
+  "headwear-crown": {
+    "slot": "headwear",
+    "label": "Kristal Ustalık Tacı",
+    "asset": "unique/headwear/headwear-crown.png",
+    "sha256": "891d14a405f635d4fd96a9c573920e84234bd826897642f7be90e7d1d303130b"
+  },
+  "outfit-labcoat": {
+    "slot": "outfit",
+    "label": "Araştırma Önlüğü",
+    "asset": "unique/outfit/outfit-labcoat.png",
+    "sha256": "d435a786ba32de9e59e5f659a2f2a64ee7076bcea33108fcb7fc3b77fdbfd325"
+  },
+  "outfit-labcoat-blue": {
+    "slot": "outfit",
+    "label": "Mavi Laboratuvar Ceketi",
+    "asset": "unique/outfit/outfit-labcoat-blue.png",
+    "sha256": "b22c15973250931e27f1b8873483d1494baa8f4bd46f9a8691008f1c4f0e3103"
+  },
+  "face-glasses": {
+    "slot": "face",
+    "label": "Araştırmacı Gözlüğü",
+    "asset": "unique/face/face-glasses.png",
+    "sha256": "2a2ce4c4ccb50455f0aed25131adc9326bdeceee8940c3b031a05e04b35d242d"
+  },
+  "face-glasses-red": {
+    "slot": "face",
+    "label": "Kızıl Çerçeve",
+    "asset": "unique/face/face-glasses-red.png",
+    "sha256": "becbfa7ddff6a06d4d44da712df01c0456aec99dcb1c2350025df36c194376fb"
+  },
+  "face-magnifier": {
+    "slot": "face",
+    "label": "Araştırma Büyüteci",
+    "asset": "unique/face/face-magnifier.png",
+    "sha256": "99ab452c84426696546a7f3d4dfee8b4b6c7e596a690237c1a339431cabd290b"
+  },
+  "headwear-detective-hat": {
+    "slot": "headwear",
+    "label": "Dedektif Şapkası",
+    "asset": "unique/headwear/headwear-detective-hat.png",
+    "sha256": "f94bb3d191cc2289890e5e80ecad4655723b95f2d6b81b9c8538da07d9bc0978"
+  },
+  "headwear-wings": {
+    "slot": "headwear",
+    "label": "Enerji Kanatları",
+    "asset": "unique/headwear/headwear-wings.png",
+    "sha256": "fc0fea61fbafd9787f81d89212a88972d3196c85a600d9e18c3aa83f825d527e"
+  },
+  "outfit-halloween": {
+    "slot": "outfit",
+    "label": "Sahil Dalış Takımı",
+    "asset": "unique/outfit/outfit-halloween.png",
+    "sha256": "d4a55b12a5ed9dbd6e2030597d05ad6638cc04bba9dacf2456fbf2527e083e91"
+  },
+  "outfit-christmas": {
+    "slot": "outfit",
+    "label": "Gece Üs Takımı",
+    "asset": "unique/outfit/outfit-christmas.png",
+    "sha256": "1a696ba9eb66a68e2d93b6aed04d0810304d6194e747f28e7601f36c862f2dc0"
+  },
+  "outfit-summer-dress": {
+    "slot": "outfit",
+    "label": "Yaz Keşif Takımı",
+    "asset": "unique/outfit/outfit-summer-dress.png",
+    "sha256": "82b0852731334f0f74988e27c8c0bae68f80c02552b5c50cc85164258326cfc6"
+  },
+  "shoes-sandals": {
+    "slot": "shoes",
+    "label": "Sahil Sandaleti",
+    "asset": "unique/shoes/shoes-sandals.png",
+    "sha256": "1e3437ad89956815ccc0ffd5f74f56074ede0411b702ab39d4650e7298aab7ab"
+  },
+  "headwear-beanie": {
+    "slot": "headwear",
+    "label": "Gece Bandı",
+    "asset": "unique/headwear/headwear-beanie.png",
+    "sha256": "6522bfd3adf070f853877f8aab806274565b9a42f8093642392ae183d02e10ac"
+  },
+  "headwear-beanie-blue": {
+    "slot": "headwear",
+    "label": "Kutup Beresi",
+    "asset": "unique/headwear/headwear-beanie-blue.png",
+    "sha256": "240a7e29aec8592022ee33aac8ed650f8f9c1f878bffbfa51f3edff2d73b468d"
+  },
+  "headwear-partyhat": {
+    "slot": "headwear",
+    "label": "Kutlama Şapkası",
+    "asset": "unique/headwear/headwear-partyhat.png",
+    "sha256": "a8a0409dfa45b314324183b0f27945a55bd493a828d2a950e8efe2660e0b033f"
+  },
+  "face-sunglasses": {
+    "slot": "face",
+    "label": "Sahil Gözlüğü",
+    "asset": "unique/face/face-sunglasses.png",
+    "sha256": "1beaee9be55f74f0bdf3ad8d9c6b54d8d5ad0f9d642a2c322f886ea59aeaf37a"
+  },
+  "outfit-cloud-dress": {
+    "slot": "outfit",
+    "label": "Gökyüzü Ceketi",
+    "asset": "unique/outfit/outfit-cloud-dress.png",
+    "sha256": "91431c16ec8f6f2be0bbfca0b08d7c0640bbfcaf95a7c0b53f44829e0a2a440c"
+  },
+  "shoes-cloud": {
+    "slot": "shoes",
+    "label": "Bulut Botları",
+    "asset": "unique/shoes/shoes-cloud.png",
+    "sha256": "90f96ee945d580d12d8b8a30543ee11571a1a08bcf6a494bea8bdf3e373bfc79"
+  },
+  "headwear-halo": {
+    "slot": "headwear",
+    "label": "Yıldız Halkası",
+    "asset": "unique/headwear/headwear-halo.png",
+    "sha256": "31ec36e5ae3ac1895bd5fcdd36e103108af5e53fa8bb5878c98232ad7ef8bf10"
+  },
+  "outfit-crystal-robe": {
+    "slot": "outfit",
+    "label": "Kristal Zırh",
+    "asset": "unique/outfit/outfit-crystal-robe.png",
+    "sha256": "5c993be78215a7d245e5f2190d88af041d25fe773b7174c27216bc7ebdcd1f6c"
+  },
+  "headwear-wizardhat-crystal": {
+    "slot": "headwear",
+    "label": "Kristal Başlık",
+    "asset": "unique/headwear/headwear-wizardhat-crystal.png",
+    "sha256": "26715af994ae6d6d7559dc59bdf47b5bb40aba4a5429ab31948300dbebce4453"
+  },
+  "outfit-galaxy-dress": {
+    "slot": "outfit",
+    "label": "Yıldız İstasyonu Tulumu",
+    "asset": "unique/outfit/outfit-galaxy-dress.png",
+    "sha256": "50b5ea6ad312b78dad8b6a28cb25106e277d5b02549f4d92c7058678c4dafd82"
+  },
+  "face-sunglasses-galaxy": {
+    "slot": "face",
+    "label": "Yıldız Vizörü",
+    "asset": "unique/face/face-sunglasses-galaxy.png",
+    "sha256": "b6e34117a061d0477b1086c950f11301d486fe4e1ddcc149d844d612a71ff256"
+  },
+  "outfit-gold-robe": {
+    "slot": "outfit",
+    "label": "Altın Ustalık Ceketi",
+    "asset": "unique/outfit/outfit-gold-robe.png",
+    "sha256": "1a7543549b83d18e33141273260432faaf6c70122c14b5c3c6324cbbfb1373d0"
+  },
+  "headwear-crown-gold": {
+    "slot": "headwear",
+    "label": "Altın Arşiv Tacı",
+    "asset": "unique/headwear/headwear-crown-gold.png",
+    "sha256": "8df166d1ac5efcab48fef9019418d65c29d28bbad2be92a92f9d9e4320a19a86"
+  },
+  "outfit-infinity-cape": {
+    "slot": "outfit",
+    "label": "Sonsuzluk Pelerini",
+    "asset": "unique/outfit/outfit-infinity-cape.png",
+    "sha256": "ada29b0ff48639ba99425927effb8d2bda3a7a3a4cf6b487021b97bf21bc1bac"
+  },
+  "headwear-wings-infinity": {
+    "slot": "headwear",
+    "label": "Kozmik Enerji Kanatları",
+    "asset": "unique/headwear/headwear-wings-infinity.png",
+    "sha256": "01b991741aeb20a0eaa532d2e92a669cca818d3fd210ea62c576e7b4e951d666"
+  },
+  "pet-cat-orange": {
+    "slot": "petSpecies",
+    "label": "Turuncu Keşif Kedisi",
+    "asset": "unique/petSpecies/pet-cat-orange.png",
+    "sha256": "fe7c6208f69d6c21bf884ea35f0851cfde014bee75ad530cf2d977ef9c0052e7"
+  },
+  "pet-cat-gray": {
+    "slot": "petSpecies",
+    "label": "Gri Keşif Kedisi",
+    "asset": "unique/petSpecies/pet-cat-gray.png",
+    "sha256": "8f576b7f664d79c2fdccd7d4213ee27fb0695d284780a1cb66d38e7be6a0012f"
+  },
+  "pet-dog-brown": {
+    "slot": "petSpecies",
+    "label": "Altın İzci Köpeği",
+    "asset": "unique/petSpecies/pet-dog-brown.png",
+    "sha256": "073c18ce871a5c453804692134cef9b4f973eca05779cf5cf9ff9020111c2dfe"
+  },
+  "pet-dog-white": {
+    "slot": "petSpecies",
+    "label": "Beyaz İzci Köpeği",
+    "asset": "unique/petSpecies/pet-dog-white.png",
+    "sha256": "f9d308318fd4945a3bd08fd9ae27513efcd1de73a11afbadf3502ef642937374"
+  },
+  "pet-owl-purple": {
+    "slot": "petSpecies",
+    "label": "Orman Baykuşu",
+    "asset": "unique/petSpecies/pet-owl-purple.png",
+    "sha256": "efe61e9af9a22c10022f91fc518df69de95bb74f702bf663f87da3ff410a0334"
+  },
+  "pet-owl-teal": {
+    "slot": "petSpecies",
+    "label": "Gökyüzü Baykuşu",
+    "asset": "unique/petSpecies/pet-owl-teal.png",
+    "sha256": "48ffc68c60474fb916fbf01c168b8353d9df309dc944c8575d8ddc16d233c3c3"
+  },
+  "pet-phoenix": {
+    "slot": "petSpecies",
+    "label": "Kozmik Dost",
+    "asset": "unique/petSpecies/pet-phoenix.png",
+    "sha256": "9bdd6569b9acdd4886cd7d457da0f7dd44156040a2156aac304c557e0c3a0623"
+  },
+  "pet-dragon": {
+    "slot": "petSpecies",
+    "label": "Mini Ejderha",
+    "asset": "unique/petSpecies/pet-dragon.png",
+    "sha256": "6ac2562b691321972c8a4ea479213017e3efd731cece0ef1e55f257afe036a86"
+  },
+  "pet-collar": {
+    "slot": "petAccessory",
+    "label": "Mercan Tasma",
+    "asset": "unique/petAccessory/pet-collar.png",
+    "sha256": "2604229046ec258d7729f3af6923bc5c4bc7c043b3219afd03654754a4f14f38"
+  },
+  "pet-collar-blue": {
+    "slot": "petAccessory",
+    "label": "Mavi Tasma",
+    "asset": "unique/petAccessory/pet-collar-blue.png",
+    "sha256": "1f726405048693d803d7449de88b6634c80bcf182fd4f0487b470ea232ae2880"
+  },
+  "pet-bow": {
+    "slot": "petAccessory",
+    "label": "Altın İşaret",
+    "asset": "unique/petAccessory/pet-bow.png",
+    "sha256": "3a928272626689c56146fede67d46c350777a04136dcb5066a771f67651c081f"
+  },
+  "pet-scarf": {
+    "slot": "petAccessory",
+    "label": "Orman Atkısı",
+    "asset": "unique/petAccessory/pet-scarf.png",
+    "sha256": "8faf6c06cadddb4938baa6a581039a9ef2aa214cb25c5e0009334d3cf33cdc50"
+  },
+  "wallpaper-stars": {
+    "slot": "wallpaper",
+    "label": "Gece Yıldızları",
+    "asset": "unique/wallpaper/wallpaper-stars.png",
+    "sha256": "4d4cf95223be08153b5441a6f53eb6b7c4558f3b9527f292c1bce14d788dab4d"
+  },
+  "wallpaper-forest": {
+    "slot": "wallpaper",
+    "label": "Orman Duvarı",
+    "asset": "unique/wallpaper/wallpaper-forest.png",
+    "sha256": "ac40888dfd3c0d43eac2e5c0a11a21adb781078d55c6a36310bd4723a7d9b015"
+  },
+  "wallpaper-candy": {
+    "slot": "wallpaper",
+    "label": "Gökyüzü Bulutları",
+    "asset": "unique/wallpaper/wallpaper-candy.png",
+    "sha256": "b93597bcee3b67972253efa1d1545466d173bb1b8466f4a23f94de6925a5208a"
+  },
+  "wallpaper-sunny": {
+    "slot": "wallpaper",
+    "label": "Güneş Duvarı",
+    "asset": "unique/wallpaper/wallpaper-sunny.png",
+    "sha256": "08bdd2dbfd504660e61866b8274ddd5e434afcf3bfc74c953d5483261323ae6e"
+  },
+  "rug-round": {
+    "slot": "rug",
+    "label": "Pusula Halısı",
+    "asset": "unique/rug/rug-round.png",
+    "sha256": "3b8b3eceabdc32c4a08dac17eaed566613de74a1c6539333ec3a201099864505"
+  },
+  "rug-striped": {
+    "slot": "rug",
+    "label": "Kızıl Çizgili Halı",
+    "asset": "unique/rug/rug-striped.png",
+    "sha256": "67bd5b556c4a00305528cf30825ca07564c8bd54af392de6eef7d7d11e617e46"
+  },
+  "rug-mint": {
+    "slot": "rug",
+    "label": "Bulut Halısı",
+    "asset": "unique/rug/rug-mint.png",
+    "sha256": "86980c3b6e17e1da52df89bf0293ff91581cee922b0a4312ad4d136eb6513542"
+  },
+  "desk-wood": {
+    "slot": "desk",
+    "label": "Keşif Masası",
+    "asset": "unique/desk/desk-wood.png",
+    "sha256": "6631b88a460c50cc297f98c59fad3e84c9e8afc3876bb08faf135ae4bba26cb5"
+  },
+  "desk-white": {
+    "slot": "desk",
+    "label": "Araştırma Masası",
+    "asset": "unique/desk/desk-white.png",
+    "sha256": "0fb9339b21393924257c8380b7585a456801b653b95a6f590afeea46f7449d00"
+  },
+  "desk-pink": {
+    "slot": "desk",
+    "label": "Laboratuvar Masası",
+    "asset": "unique/desk/desk-pink.png",
+    "sha256": "7302ab464f07494fbf1ceecd4c70b94022ced9bf518dd843aba36ccbd20390c8"
+  },
+  "lamp-star": {
+    "slot": "lamp",
+    "label": "Yıldız Lambası",
+    "asset": "unique/lamp/lamp-star.png",
+    "sha256": "bb6817a8f44def953fdc42f36e1441079da5ae5349ecdd283421cba99e2fad1b"
+  },
+  "lamp-moon": {
+    "slot": "lamp",
+    "label": "Ay Lambası",
+    "asset": "unique/lamp/lamp-moon.png",
+    "sha256": "77b967b7e29b5cb5c5adb75b14f75abeff446db2757cbf7b492a3efa3bbea7ff"
+  },
+  "plant-cactus": {
+    "slot": "plant",
+    "label": "Saksı Kaktüs",
+    "asset": "unique/plant/plant-cactus.png",
+    "sha256": "f3c85e8ec2a9b239aae0820e66f9aa595b261d3799e06afa2b53357a23d47139"
+  },
+  "plant-flower": {
+    "slot": "plant",
+    "label": "Renkli Bitki",
+    "asset": "unique/plant/plant-flower.png",
+    "sha256": "e2ec49b53f2e86871c031debfad7b0b362b0668fd4ee1bfffbd7a5b00bfecd0f"
+  },
+  "poster-stars": {
+    "slot": "poster",
+    "label": "Yıldız Haritası",
+    "asset": "unique/poster/poster-stars.png",
+    "sha256": "df075190841a22db9be6e6a338a105311d6cc250c7442a81add36f06c90699bc"
+  },
+  "poster-rainbow": {
+    "slot": "poster",
+    "label": "Keşif Rotası Posteri",
+    "asset": "unique/poster/poster-rainbow.png",
+    "sha256": "d70c55b68f7135fbd3a29af780a78940d6c47e1bc40c874660329e55f28d5c30"
+  },
+  "wallpaper-galaxy": {
+    "slot": "wallpaper",
+    "label": "Yıldız İstasyonu Duvarı",
+    "asset": "unique/wallpaper/wallpaper-galaxy.png",
+    "sha256": "229d7dcf0ecb3ec216cf0378c16bc17e621a9b0a09746abdb84e06b527448abd"
+  },
+  "rug-gold": {
+    "slot": "rug",
+    "label": "Altın Arşiv Halısı",
+    "asset": "unique/rug/rug-gold.png",
+    "sha256": "b9b09d780ff78b562e664c3916525c13fe199f2b7e438c7f3bf8f4f7cf803e0f"
+  }
+}
