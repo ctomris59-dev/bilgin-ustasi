@@ -21,6 +21,7 @@ import { isWorldUnlocked } from "../../data/worlds";
 import { getLevelInfo } from "../../data/levels";
 import { playPop } from "../../lib/sound";
 import RoomBuilder from "./RoomBuilder";
+import { getHairAsset, getItemAsset, getPetAsset, getRarity, getRarityMeta } from "../../data/gameAssets";
 
 const SLOT_LABELS = {
   [SLOTS.OUTFIT]: "Kıyafet",
@@ -323,7 +324,7 @@ function GearTab({ profile, unlocked, onChangeAvatar }) {
           </OptionGroup>
 
           <OptionGroup label="Saç Stili">
-            <div className="flex flex-wrap gap-2">
+            <div className="grid grid-cols-3 gap-2 sm:grid-cols-6">
               {HAIR_STYLES.map((hair) => {
                 const active = profile.avatar?.hairStyle === hair.id;
 
@@ -331,18 +332,30 @@ function GearTab({ profile, unlocked, onChangeAvatar }) {
                   <button
                     key={hair.id}
                     onClick={() => setSlot("hairStyle", hair.id)}
-                    className="rounded-xl border px-3 py-2 text-[10px] font-black transition-all duration-200 hover:-translate-y-0.5"
+                    className="group relative overflow-hidden rounded-2xl border p-2 transition-all duration-200 hover:-translate-y-0.5"
                     style={{
-                      color: active ? "#FFFFFF" : "#A5AEC6",
                       background: active
-                        ? "linear-gradient(135deg,rgba(139,108,255,.30),rgba(82,227,255,.10))"
-                        : "rgba(255,255,255,.035)",
+                        ? "linear-gradient(145deg,rgba(139,108,255,.22),rgba(82,227,255,.07))"
+                        : "rgba(255,255,255,.028)",
                       borderColor: active
-                        ? "rgba(169,140,255,.38)"
+                        ? "rgba(82,227,255,.35)"
                         : "rgba(255,255,255,.08)",
+                      boxShadow: active ? "0 0 22px rgba(82,227,255,.08)" : "none",
                     }}
                   >
-                    {HAIR_LABELS[hair.id] || hair.label}
+                    <img
+                      src={getHairAsset(hair.id)}
+                      alt=""
+                      className="mx-auto h-14 w-14 object-contain transition-transform duration-200 group-hover:scale-105"
+                    />
+                    <span className="mt-1 block truncate text-[8px] font-black text-[#B7C0D8]">
+                      {HAIR_LABELS[hair.id] || hair.label}
+                    </span>
+                    {active && (
+                      <span className="absolute right-1.5 top-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-[#52E3FF] text-[9px] font-black text-[#06101C]">
+                        ✓
+                      </span>
+                    )}
                   </button>
                 );
               })}
@@ -443,19 +456,16 @@ function GearTab({ profile, unlocked, onChangeAvatar }) {
                     )}
 
                     <div className="flex items-start gap-3">
-                      <div
-                        className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl"
-                        style={{
-                          color: owned ? presentation.accent : "#687494",
-                          background: owned
-                            ? `${presentation.accent}10`
-                            : "rgba(255,255,255,.035)",
-                        }}
-                      >
-                        <GameIcon
-                          name={slotIcon(item.slot)}
-                          size={18}
-                          color={owned ? presentation.accent : "#687494"}
+                      <div className="relative flex h-16 w-16 shrink-0 items-center justify-center">
+                        <img
+                          src={getRarityMeta(getRarity(item)).frame}
+                          alt=""
+                          className="pointer-events-none absolute inset-0 h-full w-full object-contain opacity-75"
+                        />
+                        <img
+                          src={getItemAsset(item)}
+                          alt=""
+                          className="relative z-10 h-[72%] w-[72%] object-contain drop-shadow-[0_8px_7px_rgba(0,0,0,.35)]"
                         />
                       </div>
 
@@ -568,13 +578,13 @@ function PetTab({ profile, unlocked, onChangePet }) {
               >
                 <div className="flex items-center gap-2.5">
                   <div
-                    className="flex h-9 w-9 items-center justify-center rounded-xl"
-                    style={{
-                      background: owned ? `${pet.color}16` : "rgba(255,255,255,.035)",
-                      color: owned ? pet.color : "#687494",
-                    }}
+                    className="flex h-16 w-16 items-center justify-center rounded-2xl border border-white/[0.06] bg-white/[0.025]"
                   >
-                    <GameIcon name="paw" size={17} color="currentColor" />
+                    <img
+                      src={getPetAsset(pet.id)}
+                      alt=""
+                      className="h-[88%] w-[88%] object-contain drop-shadow-[0_8px_7px_rgba(0,0,0,.35)]"
+                    />
                   </div>
 
                   <div className="min-w-0 flex-1">
@@ -630,9 +640,16 @@ function PetTab({ profile, unlocked, onChangePet }) {
                       : "rgba(255,255,255,.075)",
                   }}
                 >
-                  <p className="text-[11px] font-black text-white">
-                    {matureItemLabel(accessory.label)}
-                  </p>
+                  <div className="flex items-center gap-2">
+                    <img
+                      src={getItemAsset(accessory)}
+                      alt=""
+                      className="h-10 w-10 object-contain drop-shadow-[0_5px_5px_rgba(0,0,0,.3)]"
+                    />
+                    <p className="text-[11px] font-black text-white">
+                      {matureItemLabel(accessory.label)}
+                    </p>
+                  </div>
                   <p
                     className="mt-2 text-[9px] font-black"
                     style={{ color: active ? "#FFD166" : "#8793B4" }}

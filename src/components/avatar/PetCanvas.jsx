@@ -1,13 +1,34 @@
-import { useId } from "react";
-import { PETS, PET_ACCESSORIES } from "../../data/petsAndRoom";
-const O="#17213E";
-export default function PetCanvas({ pet, size=90 }) {
-  const uid=useId().replace(/:/g,'');
-  if(!pet?.activeSpecies) return null;
-  const s=PETS.find((p)=>p.id===pet.activeSpecies); if(!s)return null;
-  const a=PET_ACCESSORIES.find((x)=>x.id===pet.accessory);
-  return <svg viewBox="0 0 110 88" width={size} height={size*.8} role="img" aria-label={`Keşif dostu: ${s.label}`} style={{overflow:'visible'}}><defs><linearGradient id={`${uid}-fur`}><stop stopColor="#fff" stopOpacity=".24"/><stop offset=".35" stopColor={s.color}/><stop offset="1" stopColor="#26304f" stopOpacity=".32"/></linearGradient><filter id={`${uid}-sh`}><feDropShadow dx="0" dy="5" stdDeviation="4" floodColor="#000" floodOpacity=".3"/></filter></defs><ellipse cx="55" cy="82" rx="31" ry="5" fill="rgba(0,0,0,.22)"/><g filter={`url(#${uid}-sh)`}><Body type={s.type} fill={`url(#${uid}-fur)`} color={s.color}/>{a&&<Accessory id={a.id} color={a.color}/>}</g><circle cx="88" cy="16" r="1.5" fill="#fff" opacity=".65" className="animate-twinkle"/></svg>;
+import { PETS } from "../../data/petsAndRoom";
+import { getPetAsset } from "../../data/gameAssets";
+
+export default function PetCanvas({ pet, size = 90 }) {
+  if (!pet?.activeSpecies) return null;
+  const species = PETS.find((entry) => entry.id === pet.activeSpecies);
+  if (!species) return null;
+
+  return (
+    <div
+      className="relative flex items-end justify-center"
+      style={{ width: size, height: size }}
+      role="img"
+      aria-label={`Keşif dostu: ${species.label}`}
+    >
+      <div
+        className="absolute bottom-[5%] h-[18%] w-[72%] rounded-full blur-lg"
+        style={{ background: species.color, opacity: 0.16 }}
+      />
+      <img
+        src={getPetAsset(species.id)}
+        alt=""
+        draggable="false"
+        className="relative z-10 h-full w-full select-none object-contain drop-shadow-[0_10px_10px_rgba(0,0,0,.35)]"
+      />
+      {pet.accessory && (
+        <span
+          className="absolute right-0 top-1 z-20 h-3 w-3 rounded-full border border-white/30"
+          style={{ background: "#FFD166", boxShadow: "0 0 12px rgba(255,209,102,.4)" }}
+        />
+      )}
+    </div>
+  );
 }
-function Eyes(){return <><ellipse cx="47" cy="38" rx="4.2" ry="5.3" fill={O}/><ellipse cx="65" cy="38" rx="4.2" ry="5.3" fill={O}/><circle cx="48.5" cy="36" r="1.2" fill="#fff"/><circle cx="66.5" cy="36" r="1.2" fill="#fff"/></>}
-function Body({type,fill,color}){const p={fill,stroke:O,strokeWidth:2.2,strokeLinejoin:'round'}; if(type==='dog')return <g><ellipse cx="56" cy="63" rx="27" ry="18" {...p}/><circle cx="56" cy="38" r="19" {...p}/><ellipse cx="37" cy="30" rx="8" ry="13" transform="rotate(-22 37 30)" {...p}/><ellipse cx="75" cy="30" rx="8" ry="13" transform="rotate(22 75 30)" {...p}/><Eyes/><ellipse cx="56" cy="48" rx="4" ry="3" fill={O}/><path d="M50 53 Q56 58 62 53" stroke={O} strokeWidth="2" fill="none"/></g>; if(type==='owl')return <g><ellipse cx="56" cy="52" rx="25" ry="29" {...p}/><circle cx="46" cy="42" r="11" fill="#eef4ff" stroke={O} strokeWidth="2"/><circle cx="66" cy="42" r="11" fill="#eef4ff" stroke={O} strokeWidth="2"/><circle cx="46" cy="42" r="4" fill={O}/><circle cx="66" cy="42" r="4" fill={O}/><path d="M56 48 L50 54 L62 54 Z" fill="#FFD166" stroke={O} strokeWidth="1.5"/></g>; if(type==='dragon')return <g><ellipse cx="56" cy="62" rx="25" ry="18" {...p}/><circle cx="56" cy="38" r="18" {...p}/><path d="M43 24 L48 10 L53 25 Z M59 24 L65 9 L70 26 Z" fill="#FFD166" stroke={O} strokeWidth="2"/><path d="M80 59 Q103 49 96 71 Q86 68 80 69 Z" fill={color} stroke={O} strokeWidth="2"/><Eyes/><path d="M50 51 Q56 56 62 51" stroke={O} strokeWidth="2" fill="none"/></g>; return <g><ellipse cx="56" cy="62" rx="25" ry="18" {...p}/><circle cx="56" cy="38" r="18" {...p}/><path d="M43 24 L34 8 L50 21 Z M69 24 L78 8 L62 21 Z" {...p}/><Eyes/><path d="M52 48 L60 48 L56 53 Z" fill={O}/><path d="M80 63 Q99 56 93 43" stroke={color} strokeWidth="7" fill="none" strokeLinecap="round"/></g>}
-function Accessory({id,color}){if(id.includes('collar'))return <ellipse cx="56" cy="57" rx="18" ry="4.8" fill={color} stroke={O} strokeWidth="2"/>; if(id==='pet-bow')return <g transform="translate(56 22)"><path d="M-14 -7 L0 2 L-14 12 Z M14 -7 L0 2 L14 12 Z" fill={color} stroke={O} strokeWidth="1.8"/><circle cy="2" r="3.5" fill={color} stroke={O} strokeWidth="1.5"/></g>; if(id==='pet-scarf')return <rect x="37" y="54" width="38" height="10" rx="5" fill={color} stroke={O} strokeWidth="2"/>; return null;}
