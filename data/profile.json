@@ -1,12 +1,12 @@
 {
   "childName": "Bilgin Adayı",
   "accountCreatedAt": "2026-08-16T11:49:54.152Z",
-  "xp": 0,
-  "coins": 0,
+  "xp": 95,
+  "coins": 48,
   "streak": {
-    "current": 0,
-    "longest": 0,
-    "lastWeekKey": null,
+    "current": 1,
+    "longest": 1,
+    "lastWeekKey": "2026-W33",
     "freezesAvailable": 1
   },
   "unlockedItems": [
@@ -54,10 +54,63 @@
   },
   "completedRooms": [],
   "badges": [],
-  "mistakeBox": [],
-  "history": [],
+  "mistakeBox": [
+    {
+      "id": "m1786884401583-q1",
+      "testId": "ingilizce-hafta1",
+      "subject": "İngilizce (Orta 2 Seviyesi)",
+      "question": {
+        "id": "q1",
+        "text": "She _____ her homework already.",
+        "options": [
+          "finish",
+          "finished",
+          "has finished",
+          "finishing"
+        ],
+        "correctIndex": 2,
+        "hint": "Present Perfect = have/has + past participle"
+      },
+      "addedAt": "2026-08-16T12:46:41.583Z",
+      "resolved": false
+    },
+    {
+      "id": "m1786884401583-q3",
+      "testId": "ingilizce-hafta1",
+      "subject": "İngilizce (Orta 2 Seviyesi)",
+      "question": {
+        "id": "q3",
+        "text": "Choose the correct sentence:",
+        "options": [
+          "I have saw that movie.",
+          "I have seen that movie.",
+          "I has seen that movie.",
+          "I seen that movie."
+        ],
+        "correctIndex": 1,
+        "hint": "'see' fiilinin 3. hali (past participle) 'seen'dir."
+      },
+      "addedAt": "2026-08-16T12:46:41.583Z",
+      "resolved": false
+    }
+  ],
+  "history": [
+    {
+      "id": "h1786884401583",
+      "testId": "ingilizce-hafta1",
+      "subject": "İngilizce (Orta 2 Seviyesi)",
+      "date": "2026-08-16T12:46:41.583Z",
+      "correctCount": 4,
+      "totalCount": 6,
+      "xpEarned": 95,
+      "coinsEarned": 48,
+      "isRetry": false
+    }
+  ],
   "stats": {
-    "testsBySubject": {},
+    "testsBySubject": {
+      "İngilizce (Orta 2 Seviyesi)": 1
+    },
     "fullScoreBySubject": {},
     "speedBonusCount": 0,
     "retryTestsPassed": 0
@@ -82,12 +135,14 @@
   "redemptions": [],
   "parentNotes": [],
   "stickerAlbum": {
-    "unlockedIds": []
+    "unlockedIds": [
+      "sticker-0-0"
+    ]
   },
   "moodLog": [],
   "miniGame": {
     "lastRewardDate": null,
     "bestMoves": {}
   },
-  "lastSyncedAt": "2026-08-16T12:06:11.750Z"
+  "lastSyncedAt": "2026-08-16T12:46:43.167Z"
 }
