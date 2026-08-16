@@ -1,0 +1,60 @@
+{
+  "id": "fenbilimleri-unite1-gunes-dunya-ay",
+  "subject": "Fen Bilimleri",
+  "title": "Ünite 1 - Güneş, Dünya ve Ay",
+  "week": 1,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 40,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Güneş, gökcisimleri arasında hangi grupta yer alır?",
+      "options": ["Gezegen", "Yıldız", "Uydu", "Meteor"],
+      "correctIndex": 1,
+      "hint": "Kendi ışığını ve ısısını üreten gökcismine ne denir?"
+    },
+    {
+      "id": "q2",
+      "text": "Ay'ın kendi ışığı yoktur. Öyleyse geceleri neden parlak görünür?",
+      "options": ["Kendi ısısından dolayı", "Güneş ışığını yansıttığı için", "Yıldızlardan ışık aldığı için", "Dünya'dan ışık aldığı için"],
+      "correctIndex": 1,
+      "hint": "Ay bir ayna gibi düşünülebilir - ışığı kendisi üretmez."
+    },
+    {
+      "id": "q3",
+      "text": "Dünya'nın kendi ekseni etrafında dönmesi hangi olayı oluşturur?",
+      "options": ["Mevsimlerin oluşumu", "Gece ve gündüzün oluşumu", "Ay'ın evrelerinin oluşumu", "Yılın oluşumu"],
+      "correctIndex": 1,
+      "hint": "Dünya'nın kendi etrafında bir tam dönüşü yaklaşık 24 saat sürer."
+    },
+    {
+      "id": "q4",
+      "text": "Ay'ın Dünya etrafındaki dönüş şekline göre gökyüzünde farklı şekillerde görünmesine ne denir?",
+      "options": ["Ay tutulması", "Ay'ın evreleri", "Ay'ın dönüşü", "Güneş tutulması"],
+      "correctIndex": 1,
+      "hint": "Hilal, dolunay gibi isimler duydun mu? Bunlar bu olayın farklı aşamalarıdır."
+    },
+    {
+      "id": "q5",
+      "text": "Aşağıdakilerden hangisi Dünya'nın doğal uydusudur?",
+      "options": ["Güneş", "Mars", "Ay", "Venüs"],
+      "correctIndex": 2,
+      "hint": "Geceleri gökyüzünde gördüğümüz, Dünya'nın etrafında dönen gökcismi."
+    },
+    {
+      "id": "q6",
+      "text": "Güneş esas olarak hangi gazlardan oluşur?",
+      "options": ["Oksijen ve karbon", "Hidrojen ve helyum", "Azot ve oksijen", "Karbon ve azot"],
+      "correctIndex": 1,
+      "hint": "Güneş, evrendeki en bol bulunan iki hafif gazdan oluşur."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Gökyüzünde en son ne zaman Ay'ı gözlemledin?",
+    "options": ["Dün akşam", "Bu hafta içinde", "Hatırlamıyorum", "Hiç gözlemlemedim"],
+    "correctIndex": 1,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}
