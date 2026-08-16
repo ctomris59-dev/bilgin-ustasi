@@ -4,7 +4,7 @@ import { makePlacedItem } from "../../data/houseRooms";
 import RoomItemGlyph from "./RoomItemGlyph";
 import { playPop } from "../../lib/sound";
 
-const INK = "#3a3153";
+const INK = "#4A2E4B";
 
 function findItem(id) {
   return ROOM_ITEMS.find((i) => i.id === id) || null;
@@ -16,11 +16,10 @@ export default function RoomBuilder({ room, roomId, unlockedIds, onCommit }) {
   const canvasRef = useRef(null);
   const localRoomRef = useRef(room);
 
-  // Oda değiştirildiğinde (sekme geçişi) yerel state'i sıfırla
   useEffect(() => {
     setLocalRoom(room);
     localRoomRef.current = room;
-  }, [roomId]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [roomId]);
 
   function applyUpdate(updater) {
     setLocalRoom((prev) => {
@@ -30,7 +29,6 @@ export default function RoomBuilder({ room, roomId, unlockedIds, onCommit }) {
     });
   }
 
-  // Sürükleme sırasında window'a dinleyici ekle - parmak/imleç kanvas dışına çıksa bile takip etsin
   useEffect(() => {
     if (!draggingUid) return;
 
@@ -55,7 +53,6 @@ export default function RoomBuilder({ room, roomId, unlockedIds, onCommit }) {
       window.removeEventListener("pointermove", onMove);
       window.removeEventListener("pointerup", onUp);
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [draggingUid]);
 
   function handlePlace(item) {
@@ -89,20 +86,19 @@ export default function RoomBuilder({ room, roomId, unlockedIds, onCommit }) {
   const wallpaperOptions = ROOM_ITEMS.filter((i) => i.slot === "wallpaper" && unlockedIds.has(i.id));
   const placedIds = new Set(localRoom.items.map((it) => it.itemId));
   const paletteItems = ROOM_ITEMS.filter((i) => i.slot !== "wallpaper" && unlockedIds.has(i.id) && !placedIds.has(i.id));
-  const wallColor = localRoom.wallpaper ? findItem(localRoom.wallpaper)?.color : "#bfe8ff";
+  const wallColor = localRoom.wallpaper ? findItem(localRoom.wallpaper)?.color : "#FF9EAA";
 
   return (
-    <div className="space-y-3">
-      {/* Duvar kağıdı seçici */}
-      <div className="sticker-card p-3">
-        <p className="text-xs font-semibold mb-2 opacity-70">Duvar Kağıdı Seç</p>
+    <div className="space-y-3 font-['Fredoka',sans-serif]">
+      <div className="sticker-card p-3 bg-[#FFFFFF]">
+        <p className="text-xs font-black mb-2 text-[#4A2E4B]">Duvar Kağıdı Seç ✨</p>
         <div className="flex gap-2 flex-wrap">
-          {wallpaperOptions.length === 0 && <p className="text-xs opacity-50">Henüz duvar kağıdın yok, mağazadan al.</p>}
+          {wallpaperOptions.length === 0 && <p className="text-xs font-bold text-[#4A2E4B]/50">Henüz duvar kağıdın yok, mağazadan alabilirsin!</p>}
           {wallpaperOptions.map((w) => (
             <button
               key={w.id}
               onClick={() => handleSelectWallpaper(w.id)}
-              className={`w-9 h-9 rounded-full border-2 ${localRoom.wallpaper === w.id ? "border-ink scale-110" : "border-ink/20"}`}
+              className={`w-9 h-9 rounded-2xl border-3 transition-transform ${localRoom.wallpaper === w.id ? "border-[#4A2E4B] scale-110 shadow-md" : "border-[#4A2E4B]/30"}`}
               style={{ backgroundColor: w.color }}
               aria-label={w.label}
             />
@@ -110,18 +106,17 @@ export default function RoomBuilder({ room, roomId, unlockedIds, onCommit }) {
         </div>
       </div>
 
-      {/* Kanvas: sürükle-bırak alanı */}
       <div
         ref={canvasRef}
-        className="relative rounded-[1.5rem] overflow-hidden border-4 touch-none select-none"
+        className="relative rounded-[2rem] overflow-hidden border-4 touch-none select-none shadow-inner"
         style={{
-          background: `linear-gradient(180deg, ${wallColor}55 0%, ${wallColor}30 65%, #fff7e0 65%, #fff7e0 100%)`,
+          background: `linear-gradient(180deg, ${wallColor}66 0%, ${wallColor}35 65%, #FFF0F5 65%, #FFF0F5 100%)`,
           height: 280,
           borderColor: INK,
         }}
       >
-        <p className="absolute top-2 left-1/2 -translate-x-1/2 text-[10px] font-bold bg-white/70 rounded-full px-2 py-0.5 z-20">
-          👆 Eşyaları sürükleyerek taşı
+        <p className="absolute top-2 left-1/2 -translate-x-1/2 text-[10px] font-black bg-[#FFFFFF] border-2 border-[#4A2E4B] rounded-full px-3 py-0.5 z-20 text-[#4A2E4B]">
+          👆 Eşyaları dokunup sürükleyerek odaya diz!
         </p>
         {localRoom.items.map((placed) => {
           const item = findItem(placed.itemId);
@@ -137,11 +132,11 @@ export default function RoomBuilder({ room, roomId, unlockedIds, onCommit }) {
               className={`absolute -translate-x-1/2 -translate-y-1/2 cursor-grab active:cursor-grabbing ${isDragging ? "z-30 scale-110" : "z-10"}`}
               style={{ left: `${placed.x}%`, top: `${placed.y}%`, touchAction: "none" }}
             >
-              <RoomItemGlyph item={item} size={50} />
+              <RoomItemGlyph item={item} size={52} />
               <button
                 onPointerDown={(e) => e.stopPropagation()}
                 onClick={(e) => handleRemove(placed.uid, e)}
-                className="absolute -top-2 -right-2 w-5 h-5 rounded-full bg-coral text-white text-xs font-bold border-2 border-ink flex items-center justify-center"
+                className="absolute -top-2 -right-2 w-5 h-5 rounded-full bg-[#FF70A6] text-white text-xs font-black border-2 border-[#4A2E4B] flex items-center justify-center shadow"
                 aria-label="Kaldır"
               >
                 ×
@@ -151,15 +146,14 @@ export default function RoomBuilder({ room, roomId, unlockedIds, onCommit }) {
         })}
       </div>
 
-      {/* Eşya paleti */}
-      <div className="sticker-card p-3">
-        <p className="text-xs font-semibold mb-2 opacity-70">Eşyalarım — dokunarak odaya ekle</p>
-        {paletteItems.length === 0 && <p className="text-xs opacity-50">Tüm eşyaların odada! Mağazadan yeni eşya alabilirsin.</p>}
+      <div className="sticker-card p-3 bg-[#FFFFFF]">
+        <p className="text-xs font-black mb-2 text-[#4A2E4B]">Eşyalarım — dokunarak odaya ekle ✨</p>
+        {paletteItems.length === 0 && <p className="text-xs font-bold text-[#4A2E4B]/50">Tüm eşyaların odada! Mağazadan yenilerini alabilirsin.</p>}
         <div className="flex gap-3 overflow-x-auto pb-1">
           {paletteItems.map((item) => (
-            <button key={item.id} onClick={() => handlePlace(item)} className="shrink-0 flex flex-col items-center gap-1 p-2 rounded-xl border-2 border-ink/15 hover:border-violet/50">
-              <RoomItemGlyph item={item} size={40} />
-              <span className="text-[9px] font-semibold text-center w-14 leading-tight">{item.label}</span>
+            <button key={item.id} onClick={() => handlePlace(item)} className="shrink-0 flex flex-col items-center gap-1 p-2 rounded-2xl border-2 border-[#4A2E4B]/20 hover:border-[#FF70A6] bg-[#FFE8EC]">
+              <RoomItemGlyph item={item} size={42} />
+              <span className="text-[9px] font-black text-center w-14 leading-tight text-[#4A2E4B]">{item.label}</span>
             </button>
           ))}
         </div>
