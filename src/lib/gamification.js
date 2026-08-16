@@ -99,11 +99,11 @@ function getPreviousWeekKey(weekKey) {
 }
 
 export const BADGES = [
-  { id: "matematik-canavari", label: "Matematik Canavarı", desc: "Matematikte 5 test %100 tamamla", check: (stats) => (stats.fullScoreBySubject["Matematik"] || 0) >= 5 },
-  { id: "kitap-kurdu", label: "Kitap Kurdu", desc: "Türkçe'de 10 test tamamla", check: (stats) => (stats.testsBySubject["Türkçe"] || 0) >= 10 },
-  { id: "haftanin-sampiyonu", label: "Haftanın Şampiyonu", desc: "4 hafta üst üste seri yap", check: (stats) => stats.streakCurrent >= 4 },
+  { id: "matematik-canavari", label: "Sayı Ustası", desc: "Matematikte 5 test %100 tamamla", check: (stats) => (stats.fullScoreBySubject["Matematik"] || 0) >= 5 },
+  { id: "kitap-kurdu", label: "Kelime Kâşifi", desc: "Türkçe'de 10 test tamamla", check: (stats) => (stats.testsBySubject["Türkçe"] || 0) >= 10 },
+  { id: "haftanin-sampiyonu", label: "Düzenlilik Ustası", desc: "4 hafta üst üste seri yap", check: (stats) => stats.streakCurrent >= 4 },
   { id: "hiz-ustasi", label: "Hız Ustası", desc: "Süreli modda 3 hız bonusu kazan", check: (stats) => (stats.speedBonusCount || 0) >= 3 },
-  { id: "rovans-galibi", label: "Rövanş Galibi", desc: "5 rövanş testini başarıyla tamamla", check: (stats) => (stats.retryTestsPassed || 0) >= 5 },
+  { id: "rovans-galibi", label: "Tekrar Ustası", desc: "5 rövanş testini başarıyla tamamla", check: (stats) => (stats.retryTestsPassed || 0) >= 5 },
   { id: "bilgin", label: "Bilgin", desc: "8. seviyeye ulaş", check: (stats) => stats.level >= 8 },
 ];
 
