@@ -14,7 +14,7 @@
     "shoes-sneaker"
   ],
   "avatar": {
-    "characterStyle": "pink",
+    "characterStyle": "casual",
     "skin": "skin-1",
     "hairStyle": "hair-space-buns",
     "hairColor": "#FF9EAA",
@@ -251,5 +251,5 @@
     "lastRewardDate": null,
     "bestMoves": {}
   },
-  "lastSyncedAt": "2026-08-16T21:07:24.349Z"
+  "lastSyncedAt": "2026-08-16T21:07:25.974Z"
 }
