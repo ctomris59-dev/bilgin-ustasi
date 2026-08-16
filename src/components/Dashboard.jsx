@@ -7,7 +7,7 @@ import { getLevelInfo } from "../data/levels";
 import { BADGES } from "../lib/gamification";
 import { getRandomGreeting } from "../data/messages";
 
-export default function Dashboard({ profile, tests, onStartTest, onGeneratePractice, onOpenMistakeBox, onLogMood, onStartMiniGame, onOpenWorldMap }) {
+export default function Dashboard({ profile, tests, onStartTest, onGeneratePractice, onOpenMistakeBox, onLogMood, onStartMiniGame, onOpenWorldMap, pausedTest, onResumeTest, onDiscardPausedTest }) {
   const { current, next, progressPct } = getLevelInfo(profile.xp);
   const availableTests = tests;
   const earnedBadges = BADGES.filter((b) => profile.badges.includes(b.id));
@@ -15,9 +15,31 @@ export default function Dashboard({ profile, tests, onStartTest, onGeneratePract
 
   return (
     <div className="space-y-4 font-['Fredoka',sans-serif]">
+      {pausedTest && (
+        <div className="sticker-card p-4 bg-[#FFFFFF] border-3 border-[#B5838D] animate-pop">
+          <div className="flex items-center gap-3">
+            <span className="text-3xl">⏸️</span>
+            <div className="flex-1">
+              <p className="font-black text-sm text-[#4A2E4B] leading-tight">Kaldığın yerden devam et</p>
+              <p className="text-xs text-[#4A2E4B]/70 font-bold mt-0.5">
+                {pausedTest.test.title} · Soru {pausedTest.index + 1}/{pausedTest.test.questions.length}
+              </p>
+            </div>
+          </div>
+          <div className="flex gap-2 mt-3">
+            <button onClick={onResumeTest} className="flex-1 sticker-btn bg-[#B5838D] text-white rounded-full py-2 font-black text-sm">
+              Devam Et →
+            </button>
+            <button onClick={onDiscardPausedTest} className="px-4 py-2 text-xs text-[#4A2E4B]/60 font-bold">
+              Sil
+            </button>
+          </div>
+        </div>
+      )}
+
       {/* Sahne / Karakter Alanı */}
       <div className="sticker-card p-3 bg-[#FFE8EC] relative overflow-hidden">
-        <RoomBackground room={profile.room}>
+        <RoomBackground room={profile.rooms?.bedroom}>
           <div className="flex items-end justify-center gap-3 pt-4 pb-2">
             <div className="animate-bob">
               <AvatarCanvas avatar={profile.avatar} size={165} />
