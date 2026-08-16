@@ -130,6 +130,7 @@ export const ITEMS = [
 ];
 
 export const DEFAULT_AVATAR = {
+  characterStyle: "auto",
   skin: "skin-1",
   hairStyle: "hair-space-buns",
   hairColor: "#FF9EAA",

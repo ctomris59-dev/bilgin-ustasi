@@ -3,14 +3,7 @@ import AvatarCanvas from "./AvatarCanvas";
 import PetCanvas from "./PetCanvas";
 import RoomBackground from "./RoomBackground";
 import StickerAlbum from "../StickerAlbum";
-import {
-  ITEMS,
-  SLOTS,
-  SKIN_TONES,
-  HAIR_STYLES,
-  HAIR_COLORS,
-  SETS,
-} from "../../data/avatarParts";
+import { ITEMS, SLOTS, SETS } from "../../data/avatarParts";
 import { PETS, PET_ACCESSORIES } from "../../data/petsAndRoom";
 import {
   ROOM_TYPES,
@@ -21,7 +14,14 @@ import { isWorldUnlocked } from "../../data/worlds";
 import { getLevelInfo } from "../../data/levels";
 import { playPop } from "../../lib/sound";
 import RoomBuilder from "./RoomBuilder";
-import { getHairAsset, getItemAsset, getPetAsset, getRarity, getRarityMeta } from "../../data/gameAssets";
+import {
+  CHARACTER_STYLES,
+  getCharacterStyleAsset,
+  getItemAsset,
+  getPetAsset,
+  getRarity,
+  getRarityMeta,
+} from "../../data/gameAssets";
 
 const SLOT_LABELS = {
   [SLOTS.OUTFIT]: "Kıyafet",
@@ -50,14 +50,7 @@ const ROOM_PRESENTATION = {
   library: { label: "Bilgi Arşivi", icon: "library" },
 };
 
-const HAIR_LABELS = {
-  "hair-space-buns": "Çift Topuz",
-  "hair-long-braid": "Uzun Örgü",
-  "hair-twin-pigtails": "Çift At Kuyruğu",
-  "hair-bob-bangs": "Kısa Bob",
-  "hair-wavy-long": "Uzun Dalgalı",
-  "hair-curly-afro": "Kıvırcık",
-};
+
 
 export default function Wardrobe({
   profile,
@@ -96,7 +89,7 @@ export default function Wardrobe({
   }
 
   return (
-    <div className="app-shell relative space-y-4 pb-8">
+    <div className="app-shell relative space-y-4 pb-36">
       <AmbientParticle left="7%" top="9%" delay="0s" />
       <AmbientParticle left="89%" top="15%" delay="1.3s" />
       <AmbientParticle left="14%" top="48%" delay="2.1s" />
@@ -152,7 +145,7 @@ export default function Wardrobe({
               />
 
               <div className="relative z-10 animate-bob">
-                <AvatarCanvas avatar={profile.avatar} size={170} />
+                <AvatarCanvas avatar={profile.avatar} size={205} />
               </div>
 
               {profile.pet?.activeSpecies && (
@@ -177,13 +170,9 @@ export default function Wardrobe({
         </div>
 
         <div className="relative z-20 -mt-1 grid grid-cols-3 gap-2">
-          <ProfileStat label="Koleksiyon" value={ownedCount} accent="#52E3FF" />
+          <ProfileStat label="Sahip" value={`${ownedCount}/${totalCollectibles}`} accent="#52E3FF" />
           <ProfileStat label="Takılı" value={equippedCount} accent="#52E3C2" />
-          <ProfileStat
-            label="Toplam"
-            value={totalCollectibles}
-            accent="#FFD166"
-          />
+          <ProfileStat label="Seviye" value={current.level} accent="#FFD166" />
         </div>
       </section>
 
@@ -284,115 +273,56 @@ function GearTab({ profile, unlocked, onChangeAvatar }) {
     <div className="space-y-4">
       <section className="glass-card p-4">
         <SectionHeading
-          eyebrow="Temel Görünüm"
-          title="Karakter Ayarları"
-          subtitle="Temel görünümü seç. Bunlar coin gerektirmez."
+          eyebrow="Karakter Görünümü"
+          title="Kaşif Stilini Seç"
+          subtitle="Bunlar tam karakter görünümleridir; seçim yaptığında avatarın gerçekten değişir."
           accent="#A98CFF"
         />
 
-        <div className="mt-5 space-y-5">
-          <OptionGroup label="Ten Tonu">
-            <div className="flex flex-wrap gap-2.5">
-              {SKIN_TONES.map((skin) => {
-                const active = profile.avatar?.skin === skin.id;
-
-                return (
-                  <button
-                    key={skin.id}
-                    onClick={() => setSlot("skin", skin.id)}
-                    className="relative h-10 w-10 rounded-xl transition-all duration-200 hover:-translate-y-0.5"
-                    style={{
-                      backgroundColor: skin.hex,
-                      border: active
-                        ? "2px solid #52E3FF"
-                        : "1px solid rgba(255,255,255,.16)",
-                      boxShadow: active
-                        ? "0 0 0 3px rgba(82,227,255,.08), 0 0 20px rgba(82,227,255,.12)"
-                        : "0 8px 18px rgba(0,0,0,.12)",
-                    }}
-                    aria-label={`Ten tonu ${skin.id}`}
-                  >
-                    {active && (
-                      <span className="absolute -right-1 -top-1 flex h-4 w-4 items-center justify-center rounded-full bg-[#52E3FF] text-[9px] font-black text-[#07101A]">
-                        ✓
-                      </span>
-                    )}
-                  </button>
-                );
-              })}
-            </div>
-          </OptionGroup>
-
-          <OptionGroup label="Saç Stili">
-            <div className="grid grid-cols-3 gap-2 sm:grid-cols-6">
-              {HAIR_STYLES.map((hair) => {
-                const active = profile.avatar?.hairStyle === hair.id;
-
-                return (
-                  <button
-                    key={hair.id}
-                    onClick={() => setSlot("hairStyle", hair.id)}
-                    className="group relative overflow-hidden rounded-2xl border p-2 transition-all duration-200 hover:-translate-y-0.5"
-                    style={{
-                      background: active
-                        ? "linear-gradient(145deg,rgba(139,108,255,.22),rgba(82,227,255,.07))"
-                        : "rgba(255,255,255,.028)",
-                      borderColor: active
-                        ? "rgba(82,227,255,.35)"
-                        : "rgba(255,255,255,.08)",
-                      boxShadow: active ? "0 0 22px rgba(82,227,255,.08)" : "none",
-                    }}
-                  >
-                    <img
-                      src={getHairAsset(hair.id)}
-                      alt=""
-                      className="mx-auto h-14 w-14 object-contain transition-transform duration-200 group-hover:scale-105"
-                    />
-                    <span className="mt-1 block truncate text-[8px] font-black text-[#B7C0D8]">
-                      {HAIR_LABELS[hair.id] || hair.label}
+        <div className="mt-4 grid grid-cols-2 gap-2.5 sm:grid-cols-3">
+          {CHARACTER_STYLES.map((style) => {
+            const active = (profile.avatar?.characterStyle || "auto") === style.id;
+            return (
+              <button
+                key={style.id}
+                onClick={() => setSlot("characterStyle", style.id)}
+                className="group relative overflow-hidden rounded-2xl border p-2.5 text-left transition-all duration-200 hover:-translate-y-0.5"
+                style={{
+                  background: active
+                    ? "linear-gradient(145deg,rgba(139,108,255,.22),rgba(82,227,255,.07))"
+                    : "rgba(255,255,255,.028)",
+                  borderColor: active
+                    ? "rgba(82,227,255,.35)"
+                    : "rgba(255,255,255,.08)",
+                  boxShadow: active ? "0 0 24px rgba(82,227,255,.08)" : "none",
+                }}
+              >
+                <div className="relative flex h-32 items-end justify-center overflow-hidden rounded-xl bg-gradient-to-b from-[#17213E] to-[#0A1022]">
+                  <div className="absolute inset-x-5 bottom-1 h-8 rounded-full bg-[#52E3FF]/10 blur-xl" />
+                  <img
+                    src={getCharacterStyleAsset(style.id === "auto" ? "blue" : style.id)}
+                    alt={style.label}
+                    className="relative z-10 h-[118px] w-auto object-contain drop-shadow-[0_12px_10px_rgba(0,0,0,.35)] transition-transform duration-200 group-hover:scale-[1.03]"
+                  />
+                  {active && (
+                    <span className="absolute right-2 top-2 z-20 flex h-5 w-5 items-center justify-center rounded-full bg-[#52E3FF] text-[10px] font-black text-[#06101C]">
+                      ✓
                     </span>
-                    {active && (
-                      <span className="absolute right-1.5 top-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-[#52E3FF] text-[9px] font-black text-[#06101C]">
-                        ✓
-                      </span>
-                    )}
-                  </button>
-                );
-              })}
-            </div>
-          </OptionGroup>
+                  )}
+                </div>
+                <p className="mt-2 text-[11px] font-black text-white">{style.label}</p>
+                <p className="mt-0.5 text-[8px] font-semibold leading-relaxed text-[#74809F]">
+                  {style.description}
+                </p>
+              </button>
+            );
+          })}
+        </div>
 
-          <OptionGroup label="Saç Rengi">
-            <div className="flex flex-wrap gap-2.5">
-              {HAIR_COLORS.map((color) => {
-                const active = profile.avatar?.hairColor === color;
-
-                return (
-                  <button
-                    key={color}
-                    onClick={() => setSlot("hairColor", color)}
-                    className="relative h-9 w-9 rounded-xl transition-all duration-200 hover:-translate-y-0.5"
-                    style={{
-                      backgroundColor: color,
-                      border: active
-                        ? "2px solid #FFFFFF"
-                        : "1px solid rgba(255,255,255,.14)",
-                      boxShadow: active
-                        ? `0 0 18px ${color}55`
-                        : "none",
-                    }}
-                    aria-label={`Saç rengi ${color}`}
-                  >
-                    {active && (
-                      <span className="absolute inset-0 flex items-center justify-center text-[11px] font-black text-white drop-shadow">
-                        ✓
-                      </span>
-                    )}
-                  </button>
-                );
-              })}
-            </div>
-          </OptionGroup>
+        <div className="mt-3 rounded-xl border border-[#52E3FF]/10 bg-[#52E3FF]/[0.035] px-3 py-2.5">
+          <p className="text-[9px] font-semibold leading-relaxed text-[#8793B4]">
+            “Ekipmana Göre” seçeneğinde taktığın kıyafetlere göre karakter görünümü otomatik değişir. Diğer stiller görünümü sabitler.
+          </p>
         </div>
       </section>
 

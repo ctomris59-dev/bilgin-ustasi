@@ -57,6 +57,7 @@ export function normalizeProfile(profile) {
   return {
     ...profileWithoutLegacyCheckIn,
     accountCreatedAt: profile.accountCreatedAt || new Date().toISOString(),
+    avatar: { ...DEFAULT_AVATAR, ...(profile.avatar || {}), characterStyle: profile.avatar?.characterStyle || "auto" },
     pet: profile.pet || { ...DEFAULT_PET_STATE },
     rooms,
     completedRooms: profile.completedRooms || [],
