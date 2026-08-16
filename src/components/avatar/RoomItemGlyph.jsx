@@ -1,48 +1,10 @@
-import { ROOM_ITEMS } from "../../data/petsAndRoom";
-
-const INK = "#4A2E4B";
-
-export default function RoomItemGlyph({ item, size = 54 }) {
-  if (!item) return null;
-  switch (item.slot) {
-    case "desk":
-      return (
-        <div
-          style={{ width: size, height: size * 0.62, backgroundColor: item.color, borderColor: INK }}
-          className="rounded-t-2xl rounded-b-md border-3 shadow-sm"
-        />
-      );
-    case "lamp":
-      return (
-        <div className="flex flex-col items-center">
-          <div style={{ width: size * 0.6, height: size * 0.4, backgroundColor: item.color, borderColor: INK }} className="rounded-t-full border-3 shadow-sm" />
-          <div style={{ width: 4, height: size * 0.45, backgroundColor: "#FF70A6" }} />
-        </div>
-      );
-    case "rug":
-      return (
-        <div
-          style={{ width: size * 1.5, height: size * 0.42, backgroundColor: item.color, borderColor: INK }}
-          className="rounded-full border-3 opacity-95 shadow-sm"
-        />
-      );
-    case "plant":
-      return (
-        <div className="flex flex-col items-center">
-          <span style={{ fontSize: size * 0.55, lineHeight: 1 }}>{item.id === "plant-cactus" ? "🌵" : "🌸"}</span>
-          <div style={{ width: size * 0.42, height: size * 0.24, backgroundColor: item.color, borderColor: INK }} className="rounded-b-lg border-3 -mt-0.5" />
-        </div>
-      );
-    case "poster":
-      return (
-        <div
-          style={{ width: size * 0.62, height: size * 0.78, backgroundColor: item.color, borderColor: INK }}
-          className="rounded-2xl border-3 flex items-center justify-center shadow-sm"
-        >
-          <span style={{ fontSize: size * 0.32 }}>{item.id.includes("star") ? "⭐" : "🌈"}</span>
-        </div>
-      );
-    default:
-      return <div style={{ width: size, height: size, backgroundColor: item.color, borderColor: INK }} className="rounded-2xl border-3 shadow-sm" />;
-  }
+const O="#17213E";
+export default function RoomItemGlyph({ item, size=54 }) {
+  if(!item)return null; const base={filter:'drop-shadow(0 5px 5px rgba(0,0,0,.22))'};
+  if(item.slot==='desk')return <svg viewBox="0 0 80 55" width={size*1.25} height={size*.86} style={base}><rect x="10" y="10" width="60" height="26" rx="5" fill={item.color} stroke={O} strokeWidth="3"/><path d="M18 36 V52 M62 36 V52" stroke={O} strokeWidth="4"/><path d="M17 17 H63" stroke="#fff" strokeOpacity=".35" strokeWidth="3"/></svg>;
+  if(item.slot==='lamp')return <svg viewBox="0 0 55 80" width={size*.72} height={size} style={base}><path d="M14 28 Q27 5 41 28 Z" fill={item.color} stroke={O} strokeWidth="3"/><path d="M27 29 V64" stroke="#8b96b4" strokeWidth="4"/><ellipse cx="27" cy="68" rx="14" ry="5" fill="#59627b" stroke={O} strokeWidth="2"/><circle cx="27" cy="25" r="4" fill="#fff2aa" opacity=".75"/></svg>;
+  if(item.slot==='rug')return <svg viewBox="0 0 90 38" width={size*1.5} height={size*.63} style={base}><ellipse cx="45" cy="19" rx="40" ry="14" fill={item.color} stroke={O} strokeWidth="3"/><path d="M25 19 H65" stroke="#fff" strokeOpacity=".32" strokeWidth="3" strokeDasharray="6 5"/></svg>;
+  if(item.slot==='plant')return <svg viewBox="0 0 60 80" width={size*.75} height={size} style={base}><path d="M30 42 Q8 26 18 10 Q35 21 30 42 Z M30 43 Q50 26 44 9 Q27 22 30 43 Z M30 39 Q18 13 29 5 Q40 18 30 39 Z" fill="#52E3C2" stroke={O} strokeWidth="2"/><path d="M18 45 H43 L39 72 H22 Z" fill={item.color} stroke={O} strokeWidth="3"/></svg>;
+  if(item.slot==='poster')return <svg viewBox="0 0 60 80" width={size*.75} height={size} style={base}><rect x="6" y="5" width="48" height="68" rx="6" fill={item.color} stroke={O} strokeWidth="3"/><path d="M14 58 L28 38 L38 49 L49 29" stroke="#fff" strokeOpacity=".55" strokeWidth="3" fill="none"/><circle cx="19" cy="20" r="5" fill="#FFD166"/></svg>;
+  return <div style={{width:size,height:size,background:item.color,border:`2px solid ${O}`,borderRadius:14,...base}}/>;
 }
