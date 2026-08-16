@@ -1,26 +1,38 @@
-// Sticker'lar RASTGELE değil, SIRAYLA açılır: her test tamamlandığında
-// albümdeki bir sonraki sticker garanti olarak kilidini açar. Gacha değildir.
-
 export const STICKER_ALBUM = [
   {
-    category: "Doğa",
-    stickers: ["🌸", "🌈", "🌻", "🍀", "🌊", "⭐", "🌙", "☀️"],
+    category: "Sihirli Bahçe 🌸",
+    stickers: ["🌸", "🌈", "🌻", "🦋", "🌷", "🍀", "🐝", "🐞"],
   },
   {
-    category: "Hayvanlar",
-    stickers: ["🦋", "🐬", "🦄", "🐢", "🦔", "🐝", "🦉", "🐙"],
+    category: "Sevimli Dostlar 🐱",
+    stickers: ["🦄", "🐱", "🐰", "🐼", "🦊", "🐬", "🦉", "🐨"],
   },
   {
-    category: "Tatlı & Eğlence",
-    stickers: ["🍭", "🧁", "🍩", "🍓", "🎈", "🎨", "🎪", "🎁"],
+    category: "Tatlı Dünyası 🧁",
+    stickers: ["🧁", "🍩", "🍓", "🍦", "🍭", "🎂", "🎈", "🥞"],
   },
   {
-    category: "Uzay & Macera",
-    stickers: ["🚀", "🪐", "🌟", "🧭", "🗺️", "🏰", "🔭", "💎"],
+    category: "Prenses & Şato 👑",
+    stickers: ["👑", "🏰", "💎", "🔮", "🪄", "🎀", "📜", "👗"],
+  },
+  {
+    category: "Uzay & Galaksi 🚀",
+    stickers: ["🚀", "🪐", "🌟", "👾", "🛸", "🌙", "☄️", "✨"],
+  },
+  {
+    category: "Deniz Altı Macerası 🧜‍♀️",
+    stickers: ["🧜‍♀️", "🐙", "🐠", "🪸", "🐚", "🦀", "🪼", "🌊"],
+  },
+  {
+    category: "Piknik & Doğa 🍉",
+    stickers: ["🍉", "🧺", "🍋", "🥪", "🧃", "⛺", "🎸", "🚲"],
+  },
+  {
+    category: "Süper Kızlar 🦸‍♀️",
+    stickers: ["🦸‍♀️", "⚡", "⭐", "🏹", "🛡️", "🔥", "💫", "🏅"],
   },
 ];
 
-// Düz (kategori sınırı olmayan) sıralı dizi - unlock sırası bu diziye göre işler
 export const STICKER_SEQUENCE = STICKER_ALBUM.flatMap((cat, catIdx) =>
   cat.stickers.map((emoji, i) => ({ id: `sticker-${catIdx}-${i}`, emoji, category: cat.category }))
 );
