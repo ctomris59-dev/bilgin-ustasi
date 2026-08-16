@@ -2,7 +2,6 @@ import { useMemo } from "react";
 import AvatarCanvas from "./avatar/AvatarCanvas";
 import PetCanvas from "./avatar/PetCanvas";
 import RoomBackground from "./avatar/RoomBackground";
-import MoodCheckIn from "./MoodCheckIn";
 import { getLevelInfo } from "../data/levels";
 import { BADGES } from "../lib/gamification";
 import { getRandomGreeting } from "../data/messages";
@@ -17,7 +16,7 @@ const SUBJECT_META = {
   İngilizce: { icon: "≈", accent: "#70D6FF", place: "Dil Limanı" },
 };
 
-export default function Dashboard({ profile, tests = [], onStartTest, onGeneratePractice, onOpenMistakeBox, onLogMood, onStartMiniGame, onOpenWorldMap, pausedTest, onResumeTest, onDiscardPausedTest }) {
+export default function Dashboard({ profile, tests = [], onStartTest, onGeneratePractice, onOpenMistakeBox, onStartMiniGame, onOpenWorldMap, pausedTest, onResumeTest, onDiscardPausedTest }) {
   const { current, next, progressPct } = getLevelInfo(profile.xp || 0);
   const greeting = useMemo(() => getRandomGreeting(), []);
   const world = getWorldForLevel(current.level);
@@ -96,7 +95,6 @@ export default function Dashboard({ profile, tests = [], onStartTest, onGenerate
         <ActionCard onClick={onOpenMistakeBox} icon="↻" title="Tekrar Merkezi" subtitle={`${activeMistakes} soru bekliyor`} accent="#FF789E" />
       </div>
 
-      <MoodCheckIn profile={profile} onLogMood={onLogMood} />
 
       <button onClick={onStartMiniGame} className="glass-card group flex w-full items-center gap-3 p-3.5 text-left transition hover:-translate-y-0.5">
         <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-300/10 text-[#52E3FF]">▦</div>
