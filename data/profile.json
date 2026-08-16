@@ -1,8 +1,8 @@
 {
   "childName": "Bilgin Adayı",
   "accountCreatedAt": "2026-08-16T11:49:54.152Z",
-  "xp": 95,
-  "coins": 48,
+  "xp": 136,
+  "coins": 60,
   "streak": {
     "current": 1,
     "longest": 1,
@@ -92,6 +92,101 @@
       },
       "addedAt": "2026-08-16T12:46:41.583Z",
       "resolved": false
+    },
+    {
+      "id": "m1786884856610-q1",
+      "testId": "ingilizce-hafta1",
+      "subject": "İngilizce (Orta 2 Seviyesi)",
+      "question": {
+        "id": "q1",
+        "text": "She _____ her homework already.",
+        "options": [
+          "finish",
+          "finished",
+          "has finished",
+          "finishing"
+        ],
+        "correctIndex": 2,
+        "hint": "Present Perfect = have/has + past participle"
+      },
+      "addedAt": "2026-08-16T12:54:16.610Z",
+      "resolved": false
+    },
+    {
+      "id": "m1786884856610-q2",
+      "testId": "ingilizce-hafta1",
+      "subject": "İngilizce (Orta 2 Seviyesi)",
+      "question": {
+        "id": "q2",
+        "text": "'I have never been to Paris.' Bu cümle hangi zamandadır?",
+        "options": [
+          "Simple Past",
+          "Present Perfect",
+          "Future Tense",
+          "Present Continuous"
+        ],
+        "correctIndex": 1,
+        "hint": "'have + never + been' yapısına dikkat et."
+      },
+      "addedAt": "2026-08-16T12:54:16.610Z",
+      "resolved": false
+    },
+    {
+      "id": "m1786884856610-q4",
+      "testId": "ingilizce-hafta1",
+      "subject": "İngilizce (Orta 2 Seviyesi)",
+      "question": {
+        "id": "q4",
+        "text": "They _____ in this city since 2015.",
+        "options": [
+          "live",
+          "lived",
+          "have lived",
+          "living"
+        ],
+        "correctIndex": 2,
+        "hint": "'since' ile Present Perfect kullanılır."
+      },
+      "addedAt": "2026-08-16T12:54:16.610Z",
+      "resolved": false
+    },
+    {
+      "id": "m1786884856610-q5",
+      "testId": "ingilizce-hafta1",
+      "subject": "İngilizce (Orta 2 Seviyesi)",
+      "question": {
+        "id": "q5",
+        "text": "'Have you ever eaten sushi?' sorusuna en uygun cevap hangisidir?",
+        "options": [
+          "Yes, I eat.",
+          "Yes, I have.",
+          "Yes, I did.",
+          "Yes, I ate."
+        ],
+        "correctIndex": 1,
+        "hint": "Kısa cevaplarda 'have/has' tekrar edilir."
+      },
+      "addedAt": "2026-08-16T12:54:16.610Z",
+      "resolved": false
+    },
+    {
+      "id": "m1786884856610-q6",
+      "testId": "ingilizce-hafta1",
+      "subject": "İngilizce (Orta 2 Seviyesi)",
+      "question": {
+        "id": "q6",
+        "text": "We _____ our project yet.",
+        "options": [
+          "haven't finished",
+          "didn't finish",
+          "don't finish",
+          "not finished"
+        ],
+        "correctIndex": 0,
+        "hint": "'yet' genellikle Present Perfect olumsuz cümlelerde kullanılır."
+      },
+      "addedAt": "2026-08-16T12:54:16.610Z",
+      "resolved": false
     }
   ],
   "history": [
@@ -105,11 +200,22 @@
       "xpEarned": 95,
       "coinsEarned": 48,
       "isRetry": false
+    },
+    {
+      "id": "h1786884856610",
+      "testId": "ingilizce-hafta1",
+      "subject": "İngilizce (Orta 2 Seviyesi)",
+      "date": "2026-08-16T12:54:16.610Z",
+      "correctCount": 1,
+      "totalCount": 6,
+      "xpEarned": 41,
+      "coinsEarned": 12,
+      "isRetry": false
     }
   ],
   "stats": {
     "testsBySubject": {
-      "İngilizce (Orta 2 Seviyesi)": 1
+      "İngilizce (Orta 2 Seviyesi)": 2
     },
     "fullScoreBySubject": {},
     "speedBonusCount": 0,
@@ -136,7 +242,8 @@
   "parentNotes": [],
   "stickerAlbum": {
     "unlockedIds": [
-      "sticker-0-0"
+      "sticker-0-0",
+      "sticker-0-1"
     ]
   },
   "moodLog": [],
@@ -144,5 +251,5 @@
     "lastRewardDate": null,
     "bestMoves": {}
   },
-  "lastSyncedAt": "2026-08-16T12:46:43.167Z"
+  "lastSyncedAt": "2026-08-16T12:54:18.227Z"
 }
