@@ -156,3 +156,61 @@ button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
 }
 @media (max-width: 640px) { :root { --radius-card: 19px; --radius-button: 14px; } .glass-card,.sticker-card { box-shadow: 0 12px 35px rgba(0,0,0,.24), inset 0 1px 0 rgba(255,255,255,.06); } }
+
+/* =========================================================
+   PRODUCTION GAME ASSETS
+   ========================================================= */
+
+.game-avatar {
+  transform-origin: 50% 88%;
+  animation: avatar-idle 3.6s ease-in-out infinite;
+  will-change: transform;
+}
+
+.game-avatar::before {
+  content: "";
+  position: absolute;
+  inset: 12% 5% 2%;
+  z-index: -1;
+  border-radius: 45%;
+  background: radial-gradient(circle at 50% 42%, rgba(82,227,255,.12), transparent 58%);
+  filter: blur(18px);
+  pointer-events: none;
+}
+
+@keyframes avatar-idle {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-4px) scale(1.008); }
+}
+
+.asset-card-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.asset-card-shine::after {
+  content: "";
+  position: absolute;
+  top: -30%;
+  left: -50%;
+  width: 35%;
+  height: 160%;
+  transform: rotate(20deg);
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.14), transparent);
+  transition: left .55s ease;
+  pointer-events: none;
+}
+
+.asset-card-shine:hover::after {
+  left: 130%;
+}
+
+.game-asset-image {
+  image-rendering: auto;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .game-avatar { animation: none; }
+}
