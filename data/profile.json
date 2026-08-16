@@ -17,7 +17,7 @@
     "skin": "skin-1",
     "hairStyle": "hair-space-buns",
     "hairColor": "#FF9EAA",
-    "outfit": null,
+    "outfit": "outfit-tshirt",
     "shoes": "shoes-sneaker",
     "headwear": null,
     "face": null
@@ -250,5 +250,5 @@
     "lastRewardDate": null,
     "bestMoves": {}
   },
-  "lastSyncedAt": "2026-08-16T20:39:12.899Z"
+  "lastSyncedAt": "2026-08-16T20:39:15.186Z"
 }
