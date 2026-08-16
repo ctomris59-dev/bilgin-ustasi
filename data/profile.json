@@ -15,9 +15,9 @@
   ],
   "avatar": {
     "skin": "skin-1",
-    "hairStyle": "hair-curly-afro",
-    "hairColor": "#E0A3FF",
-    "outfit": null,
+    "hairStyle": "hair-space-buns",
+    "hairColor": "#FF9EAA",
+    "outfit": "outfit-tshirt",
     "shoes": "shoes-sneaker",
     "headwear": null,
     "face": null
@@ -246,10 +246,9 @@
       "sticker-0-1"
     ]
   },
-  "moodLog": [],
   "miniGame": {
     "lastRewardDate": null,
     "bestMoves": {}
   },
-  "lastSyncedAt": "2026-08-16T14:35:57.408Z"
+  "lastSyncedAt": "2026-08-16T12:54:18.227Z"
 }
