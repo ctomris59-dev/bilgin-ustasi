@@ -14,7 +14,7 @@
     "shoes-sneaker"
   ],
   "avatar": {
-    "skin": "skin-2",
+    "skin": "skin-3",
     "hairStyle": "hair-space-buns",
     "hairColor": "#FF9EAA",
     "outfit": "outfit-tshirt",
@@ -250,5 +250,5 @@
     "lastRewardDate": null,
     "bestMoves": {}
   },
-  "lastSyncedAt": "2026-08-16T20:39:18.190Z"
+  "lastSyncedAt": "2026-08-16T20:39:18.952Z"
 }
