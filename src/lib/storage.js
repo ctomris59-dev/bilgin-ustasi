@@ -28,7 +28,6 @@ export function createDefaultProfile(childName = "Bilgin Adayı") {
     redemptions: [],
     parentNotes: [],
     stickerAlbum: { unlockedIds: [] },
-    moodLog: [],
     miniGame: { lastRewardDate: null, bestMoves: {} },
     lastSyncedAt: null,
   };
@@ -53,14 +52,15 @@ export function normalizeProfile(profile) {
       }
     });
   }
+  const profileWithoutLegacyCheckIn = { ...profile };
+  delete profileWithoutLegacyCheckIn["mood" + "Log"];
   return {
-    ...profile,
+    ...profileWithoutLegacyCheckIn,
     accountCreatedAt: profile.accountCreatedAt || new Date().toISOString(),
     pet: profile.pet || { ...DEFAULT_PET_STATE },
     rooms,
     completedRooms: profile.completedRooms || [],
     stickerAlbum: profile.stickerAlbum || { unlockedIds: [] },
-    moodLog: profile.moodLog || [],
     miniGame: profile.miniGame || { lastRewardDate: null, bestMoves: {} },
   };
 }
