@@ -319,7 +319,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen pb-24">
-      <header className="px-4 pt-5 pb-3 flex items-center justify-between">
+      <header className="px-4 sm:px-8 pt-5 pb-3 max-w-3xl mx-auto w-full flex items-center justify-between">
         <h1 className="font-display text-xl">📖 Bilgin Ustası</h1>
         <div className="flex items-center gap-2">
           <SoundToggle />
@@ -333,7 +333,7 @@ export default function App() {
         <div className="fixed top-3 left-1/2 -translate-x-1/2 z-30 sticker-card px-4 py-2 text-sm font-bold animate-pop">{toast}</div>
       )}
 
-      <main className="px-4 max-w-lg mx-auto">
+      <main className="px-4 sm:px-8 max-w-3xl mx-auto w-full">
         {activeTest ? (
           <TestSolver
             test={activeTest.test}
