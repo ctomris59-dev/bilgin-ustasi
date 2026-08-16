@@ -1,0 +1,93 @@
+{
+  "childName": "Bilgin Adayı",
+  "accountCreatedAt": "2026-08-16T11:49:54.152Z",
+  "xp": 0,
+  "coins": 0,
+  "streak": {
+    "current": 0,
+    "longest": 0,
+    "lastWeekKey": null,
+    "freezesAvailable": 1
+  },
+  "unlockedItems": [
+    "outfit-tshirt",
+    "shoes-sneaker"
+  ],
+  "avatar": {
+    "skin": "skin-1",
+    "hairStyle": "hair-space-buns",
+    "hairColor": "#FF9EAA",
+    "outfit": "outfit-tshirt",
+    "shoes": "shoes-sneaker",
+    "headwear": null,
+    "face": null
+  },
+  "pet": {
+    "activeSpecies": null,
+    "accessory": null
+  },
+  "rooms": {
+    "bedroom": {
+      "wallpaper": null,
+      "items": []
+    },
+    "playroom": {
+      "wallpaper": null,
+      "items": []
+    },
+    "studyroom": {
+      "wallpaper": null,
+      "items": []
+    },
+    "livingroom": {
+      "wallpaper": null,
+      "items": []
+    },
+    "garden": {
+      "wallpaper": null,
+      "items": []
+    },
+    "library": {
+      "wallpaper": null,
+      "items": []
+    }
+  },
+  "completedRooms": [],
+  "badges": [],
+  "mistakeBox": [],
+  "history": [],
+  "stats": {
+    "testsBySubject": {},
+    "fullScoreBySubject": {},
+    "speedBonusCount": 0,
+    "retryTestsPassed": 0
+  },
+  "rewardsCatalog": [
+    {
+      "id": "r1",
+      "label": "Hafta sonu sinema seçimi",
+      "cost": 150
+    },
+    {
+      "id": "r2",
+      "label": "1 saat ekstra tablet süresi",
+      "cost": 120
+    },
+    {
+      "id": "r3",
+      "label": "En sevdiğin tatlıyı yapma hakkı",
+      "cost": 100
+    }
+  ],
+  "redemptions": [],
+  "parentNotes": [],
+  "stickerAlbum": {
+    "unlockedIds": []
+  },
+  "moodLog": [],
+  "miniGame": {
+    "lastRewardDate": null,
+    "bestMoves": {}
+  },
+  "lastSyncedAt": "2026-08-16T11:58:18.554Z"
+}
