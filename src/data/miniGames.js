@@ -1,7 +1,9 @@
 export const MEMORY_THEMES = [
-  { id: "meyveler", label: "Meyveler", emojis: ["🍎", "🍌", "🍇", "🍓", "🍊", "🍉"] },
-  { id: "hayvanlar", label: "Hayvanlar", emojis: ["🐶", "🐱", "🐰", "🦊", "🐼", "🐨"] },
-  { id: "okul", label: "Okul Eşyaları", emojis: ["📚", "✏️", "🎒", "📐", "🖍️", "📏"] },
+  { id: "meyveler", label: "Tatlı Meyveler 🍓", emojis: ["🍓", "🍌", "🍇", "🍒", "🍑", "🍉"] },
+  { id: "sevimli", label: "Sevimli Dostlar 🐱", emojis: ["🦄", "🐱", "🐰", "🐼", "🦊", "🐨"] },
+  { id: "tatlilar", label: "Şeker & Tatlılar 🧁", emojis: ["🧁", "🍩", "🍦", "🍭", "🍰", "🍫"] },
+  { id: "deniz", label: "Deniz Altı 🧜‍♀️", emojis: ["🧜‍♀️", "🐙", "🐠", "🐚", "🦀", "🪼"] },
+  { id: "uzay", label: "Galaksi ✨", emojis: ["🚀", "🪐", "🌟", "🛸", "🌙", "☄️"] },
 ];
 
 export function shuffle(array) {
