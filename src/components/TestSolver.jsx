@@ -8,7 +8,7 @@ export default function TestSolver({ test, isRetryTest = false, resumeState, onF
   const [timedMode, setTimedMode] = useState(resumeState?.timedMode || false);
   const [index, setIndex] = useState(resumeState?.index || 0);
   const [selected, setSelected] = useState(null);
-  const [answers, setAnswers] = useState(resumeState?.answers || []); // { qId, correct, chosenIndex }
+  const [answers, setAnswers] = useState(resumeState?.answers || []); 
   const [hintsUsed, setHintsUsed] = useState(resumeState?.hintsUsed || 0);
   const [showHint, setShowHint] = useState(false);
   const [bonusAnswer, setBonusAnswer] = useState(null);
@@ -124,19 +124,32 @@ export default function TestSolver({ test, isRetryTest = false, resumeState, onF
             </div>
           )}
 
-          <div className="flex flex-col gap-3 mt-4">
-            <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.95 }} onClick={() => startTest(false)} className="sticker-btn bg-[#70D6FF] text-[#4A2E4B] py-4 text-lg font-black">
+          <div className="flex flex-col gap-3 mt-4 w-full">
+            <motion.button 
+              whileHover={{ scale: 1.03 }} 
+              whileTap={{ scale: 0.95 }} 
+              onClick={() => startTest(false)} 
+              className="sticker-btn bg-[#70D6FF] text-[#4A2E4B] py-4 text-lg font-black w-full"
+            >
               Normal Modda Başla ✨
             </motion.button>
             
             {test.targetSecondsPerQuestion && (
-              <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.95 }} onClick={() => startTest(true)} className="sticker-btn bg-[#FFD166] text-[#4A2E4B] py-4 text-lg font-black relative overflow-hidden">
+              <motion.button 
+                whileHover={{ scale: 1.03 }} 
+                whileTap={{ scale: 0.95 }} 
+                onClick={() => startTest(true)} 
+                className="sticker-btn bg-[#FFD166] text-[#4A2E4B] py-4 text-lg font-black w-full relative overflow-hidden"
+              >
                 ⏱️ Süreli Mod (Hız Puanı!)
               </motion.button>
             )}
             
             {onCancel && (
-              <button onClick={onCancel} className="text-sm font-bold text-[#4A2E4B]/50 hover:text-[#FF70A6] transition-colors py-2 mt-2">
+              <button 
+                onClick={onCancel} 
+                className="text-sm font-bold text-[#4A2E4B]/50 hover:text-[#FF70A6] transition-colors py-2 mt-2 w-full"
+              >
                 Şimdilik Vazgeç
               </button>
             )}
