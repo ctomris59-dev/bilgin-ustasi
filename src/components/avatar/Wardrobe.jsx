@@ -14,8 +14,8 @@ import RoomBuilder from "./RoomBuilder";
 const SLOT_LABELS = {
   [SLOTS.OUTFIT]: "Kıyafet",
   [SLOTS.SHOES]: "Ayakkabı",
-  [SLOTS.HEADWEAR]: "Baş / Aksesuar",
-  [SLOTS.FACE]: "Yüz Aksesuarı",
+  [SLOTS.HEADWEAR]: "Şapka / Taç",
+  [SLOTS.FACE]: "Aksesuar",
 };
 
 function ClothesTab({ profile, unlocked, onChangeAvatar }) {
@@ -28,39 +28,41 @@ function ClothesTab({ profile, unlocked, onChangeAvatar }) {
   }
 
   return (
-    <div className="space-y-4">
-      <div className="sticker-card p-4">
-        <h3 className="font-display text-base mb-2">Ten Tonu</h3>
+    <div className="space-y-4 font-['Fredoka',sans-serif]">
+      <div className="sticker-card p-4 bg-[#FFFFFF]">
+        <h3 className="font-display text-base text-[#4A2E4B] mb-2 font-black">Ten Tonu ✨</h3>
         <div className="flex gap-2 mb-4">
           {SKIN_TONES.map((s) => (
             <button
               key={s.id}
               onClick={() => setSlot("skin", s.id)}
-              className={`w-9 h-9 rounded-full border-2 ${profile.avatar.skin === s.id ? "border-violet" : "border-transparent"}`}
+              className={`w-9 h-9 rounded-2xl border-3 ${profile.avatar.skin === s.id ? "border-[#FF70A6] scale-110 shadow-md" : "border-[#4A2E4B]/20"}`}
               style={{ backgroundColor: s.hex }}
               aria-label={`Ten tonu ${s.id}`}
             />
           ))}
         </div>
-        <h3 className="font-display text-base mb-2">Saç Stili</h3>
+        <h3 className="font-display text-base text-[#4A2E4B] mb-2 font-black">Saç Stili 💇‍♀️</h3>
         <div className="flex flex-wrap gap-2 mb-3">
           {HAIR_STYLES.map((h) => (
             <button
               key={h.id}
               onClick={() => setSlot("hairStyle", h.id)}
-              className={`px-3 py-1.5 rounded-full text-sm ${profile.avatar.hairStyle === h.id ? "bg-violet text-white" : "bg-parchment-dim text-ink"}`}
+              className={`px-3.5 py-1.5 rounded-2xl text-xs font-black ${
+                profile.avatar.hairStyle === h.id ? "bg-[#FF70A6] text-white shadow-md" : "bg-[#FFE8EC] text-[#4A2E4B]"
+              }`}
             >
               {h.label}
             </button>
           ))}
         </div>
-        <h3 className="font-display text-base mb-2">Saç Rengi</h3>
-        <div className="flex gap-2">
+        <h3 className="font-display text-base text-[#4A2E4B] mb-2 font-black">Saç Rengi 🎨</h3>
+        <div className="flex gap-2 flex-wrap">
           {HAIR_COLORS.map((c) => (
             <button
               key={c}
               onClick={() => setSlot("hairColor", c)}
-              className={`w-8 h-8 rounded-full border-2 ${profile.avatar.hairColor === c ? "border-violet" : "border-transparent"}`}
+              className={`w-8 h-8 rounded-2xl border-3 ${profile.avatar.hairColor === c ? "border-[#FF70A6] scale-110 shadow-md" : "border-[#4A2E4B]/20"}`}
               style={{ backgroundColor: c }}
               aria-label={`Saç rengi ${c}`}
             />
@@ -72,8 +74,8 @@ function ClothesTab({ profile, unlocked, onChangeAvatar }) {
         const setItems = ITEMS.filter((i) => i.set === set.id);
         if (setItems.length === 0) return null;
         return (
-          <div key={set.id} className="sticker-card p-4">
-            <h3 className="font-display text-base mb-3" style={{ color: set.color }}>
+          <div key={set.id} className="sticker-card p-4 bg-[#FFFFFF]">
+            <h3 className="font-display text-base mb-3 font-black" style={{ color: set.color }}>
               {set.label}
             </h3>
             <div className="grid grid-cols-2 gap-2">
@@ -85,21 +87,21 @@ function ClothesTab({ profile, unlocked, onChangeAvatar }) {
                     key={item.id}
                     disabled={!owned}
                     onClick={() => toggleSlot(item.slot, item.id)}
-                    className={`text-left p-2.5 rounded-xl border text-sm transition ${
+                    className={`text-left p-3 rounded-2xl border-2 text-xs font-black transition-all ${
                       !owned
-                        ? "opacity-40 cursor-not-allowed border-dashed border-ink/30"
+                        ? "opacity-40 cursor-not-allowed border-dashed border-[#4A2E4B]/30 bg-gray-50"
                         : active
-                        ? "border-violet bg-violet/10"
-                        : "border-ink/15 hover:border-violet/50"
+                        ? "border-[#FF70A6] bg-[#FFE8EC] shadow-md"
+                        : "border-[#4A2E4B]/20 bg-[#FFFFFF] hover:border-[#FF70A6]"
                     }`}
                   >
                     <div className="flex items-center justify-between">
-                      <span className="font-semibold">{item.label}</span>
-                      {item.legendary && <span className="text-xs text-gold">✨ efsanevi</span>}
+                      <span className="text-[#4A2E4B]">{item.label}</span>
+                      {item.legendary && <span className="text-[10px] text-[#FFD166] font-black">✨ efsanevi</span>}
                     </div>
-                    <div className="text-xs opacity-70">
-                      {SLOT_LABELS[item.slot]} {!owned && `· 🔒 Mağazadan ${item.legendary ? "kazan" : "al"}`}
-                      {active && owned && " · Takılı"}
+                    <div className="text-[10px] text-[#4A2E4B]/70 mt-1 font-bold">
+                      {SLOT_LABELS[item.slot]} {!owned && `· 🔒 ${item.legendary ? "Görevle Aç" : "Mağazadan Al"}`}
+                      {active && owned && " · Takılı ✓"}
                     </div>
                   </button>
                 );
@@ -121,9 +123,9 @@ function PetTab({ profile, unlocked, onChangePet }) {
   }
 
   return (
-    <div className="space-y-4">
-      <div className="sticker-card p-4">
-        <h3 className="font-display text-base mb-3">Dostların</h3>
+    <div className="space-y-4 font-['Fredoka',sans-serif]">
+      <div className="sticker-card p-4 bg-[#FFFFFF]">
+        <h3 className="font-display text-base text-[#4A2E4B] mb-3 font-black">Sevimli Dostların 🐾</h3>
         <div className="grid grid-cols-2 gap-2">
           {PETS.map((p) => {
             const owned = unlocked.has(p.id);
@@ -133,15 +135,19 @@ function PetTab({ profile, unlocked, onChangePet }) {
                 key={p.id}
                 disabled={!owned}
                 onClick={() => selectSpecies(p.id)}
-                className={`text-left p-2.5 rounded-xl border text-sm transition ${
-                  !owned ? "opacity-40 cursor-not-allowed border-dashed border-ink/30" : active ? "border-violet bg-violet/10" : "border-ink/15 hover:border-violet/50"
+                className={`text-left p-3 rounded-2xl border-2 text-xs font-black transition-all ${
+                  !owned
+                    ? "opacity-40 cursor-not-allowed border-dashed border-[#4A2E4B]/30 bg-gray-50"
+                    : active
+                    ? "border-[#FF70A6] bg-[#FFE8EC] shadow-md"
+                    : "border-[#4A2E4B]/20 bg-[#FFFFFF]"
                 }`}
               >
                 <div className="flex items-center justify-between">
-                  <span className="font-semibold">{p.label}</span>
-                  {p.legendary && <span className="text-xs text-gold">✨ efsanevi</span>}
+                  <span className="text-[#4A2E4B]">{p.label}</span>
+                  {p.legendary && <span className="text-[10px] text-[#FFD166]">✨ efsanevi</span>}
                 </div>
-                <div className="text-xs opacity-70">{!owned ? `🔒 Mağazadan ${p.legendary ? "kazan" : "al"}` : active ? "Aktif" : "Sahipsin"}</div>
+                <div className="text-[10px] text-[#4A2E4B]/70 mt-1 font-bold">{!owned ? `🔒 Mağazadan Al` : active ? "Yanında ✨" : "Sahipsin"}</div>
               </button>
             );
           })}
@@ -149,8 +155,8 @@ function PetTab({ profile, unlocked, onChangePet }) {
       </div>
 
       {profile.pet.activeSpecies && (
-        <div className="sticker-card p-4">
-          <h3 className="font-display text-base mb-3">Aksesuarlar</h3>
+        <div className="sticker-card p-4 bg-[#FFFFFF]">
+          <h3 className="font-display text-base text-[#4A2E4B] mb-3 font-black">Aksesuarlar 🎀</h3>
           <div className="grid grid-cols-2 gap-2">
             {PET_ACCESSORIES.map((a) => {
               const owned = unlocked.has(a.id);
@@ -160,12 +166,16 @@ function PetTab({ profile, unlocked, onChangePet }) {
                   key={a.id}
                   disabled={!owned}
                   onClick={() => selectAccessory(a.id)}
-                  className={`text-left p-2.5 rounded-xl border text-sm transition ${
-                    !owned ? "opacity-40 cursor-not-allowed border-dashed border-ink/30" : active ? "border-violet bg-violet/10" : "border-ink/15 hover:border-violet/50"
+                  className={`text-left p-3 rounded-2xl border-2 text-xs font-black transition-all ${
+                    !owned
+                      ? "opacity-40 cursor-not-allowed border-dashed border-[#4A2E4B]/30"
+                      : active
+                      ? "border-[#FF70A6] bg-[#FFE8EC] shadow-md"
+                      : "border-[#4A2E4B]/20"
                   }`}
                 >
-                  <span className="font-semibold">{a.label}</span>
-                  <div className="text-xs opacity-70">{!owned ? "🔒 Mağazadan al" : active ? "Takılı" : "Sahipsin"}</div>
+                  <span className="text-[#4A2E4B]">{a.label}</span>
+                  <div className="text-[10px] text-[#4A2E4B]/70 mt-1 font-bold">{!owned ? "🔒 Mağazadan Al" : active ? "Takılı ✓" : "Sahipsin"}</div>
                 </button>
               );
             })}
@@ -185,10 +195,10 @@ function HouseTab({ profile, unlocked, onChangeRoomSlot, activeRoomId, onSelectR
   const completedCount = ROOM_TYPES.filter((r) => isRoomComplete(profile.rooms[r.id])).length;
 
   return (
-    <div className="space-y-4">
-      <div className="sticker-card p-3">
+    <div className="space-y-4 font-['Fredoka',sans-serif]">
+      <div className="sticker-card p-3 bg-[#FFFFFF]">
         <div className="flex items-center justify-between mb-2">
-          <h3 className="font-display text-sm">🏠 Evim — {completedCount}/{ROOM_TYPES.length} oda tamamlandı</h3>
+          <h3 className="font-display text-sm text-[#4A2E4B] font-black">🏠 Evim — {completedCount}/{ROOM_TYPES.length} Oda Tamamlandı</h3>
         </div>
         <div className="flex gap-2 overflow-x-auto pb-1">
           {ROOM_TYPES.map((r) => {
@@ -201,13 +211,13 @@ function HouseTab({ profile, unlocked, onChangeRoomSlot, activeRoomId, onSelectR
                   playPop();
                   onSelectRoom(r.id);
                 }}
-                className={`shrink-0 flex flex-col items-center gap-0.5 px-3 py-2 rounded-2xl border-2 ${
-                  activeRoomId === r.id ? "border-ink bg-parchment-dim" : unlocked_ ? "border-ink/20" : "border-dashed border-ink/20 opacity-50"
+                className={`shrink-0 flex flex-col items-center gap-0.5 px-3 py-2 rounded-2xl border-2 font-black ${
+                  activeRoomId === r.id ? "border-[#4A2E4B] bg-[#FFE8EC] shadow-sm" : unlocked_ ? "border-[#4A2E4B]/20" : "border-dashed border-[#4A2E4B]/20 opacity-50"
                 }`}
               >
                 <span className="text-xl">{unlocked_ ? r.emoji : "🔒"}</span>
-                <span className="text-[10px] font-semibold whitespace-nowrap">{r.title}</span>
-                {unlocked_ && <span className="text-[9px] opacity-60">{pct}%</span>}
+                <span className="text-[10px] text-[#4A2E4B] whitespace-nowrap">{r.title}</span>
+                {unlocked_ && <span className="text-[9px] text-[#FF70A6]">{pct}%</span>}
               </button>
             );
           })}
@@ -215,13 +225,15 @@ function HouseTab({ profile, unlocked, onChangeRoomSlot, activeRoomId, onSelectR
       </div>
 
       {!roomUnlocked ? (
-        <div className="sticker-card p-6 text-center text-sm">
-          🔒 {activeRoomType.title}, Sihirli Yol Haritası'nda ilgili dünya açılınca döşenebilir hale gelir. Haritadan hangi seviyede olduğunu görebilirsin!
+        <div className="sticker-card p-6 text-center text-sm font-bold text-[#4A2E4B] bg-[#FFFFFF]">
+          🔒 {activeRoomType.title}, Sihirli Yol Haritası'nda ilgili dünya açılınca döşenebilir hale gelir. Haritadan seviyeni kontrol edebilirsin! ✨
         </div>
       ) : (
         <>
           {isRoomComplete(activeRoomState) && (
-            <div className="sticker-card p-3 text-center text-sm bg-teal/15 border-teal font-semibold">🎉 Bu oda tamamen döşendi!</div>
+            <div className="sticker-card p-3 text-center text-sm bg-[#52E3C2]/30 border-2 border-[#52E3C2] font-black text-[#4A2E4B]">
+              🎉 Bu oda tamamen döşendi! Tebrikler!
+            </div>
           )}
           <RoomBuilder
             key={activeRoomId}
@@ -242,16 +254,16 @@ export default function Wardrobe({ profile, onChangeAvatar, onChangePet, onChang
   const unlocked = new Set(profile.unlockedItems);
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 font-['Fredoka',sans-serif]">
       <RoomBackground room={profile.rooms[activeRoomId]}>
-        <div className="flex items-end gap-1">
+        <div className="flex items-end gap-2">
           <AvatarCanvas avatar={profile.avatar} size={160} />
           <PetCanvas pet={profile.pet} size={70} />
         </div>
       </RoomBackground>
-      <p className="text-center font-display text-lg -mt-1">{profile.childName}</p>
+      <p className="text-center font-display text-xl text-[#4A2E4B] font-black -mt-1">{profile.childName} ✨</p>
 
-      <div className="flex gap-1 bg-parchment-dim rounded-full p-1">
+      <div className="flex gap-1 bg-[#FFFFFF] rounded-2xl p-1 border-2 border-[#4A2E4B]">
         {[
           { id: "clothes", label: "👗 Kıyafet" },
           { id: "pet", label: "🐾 Hayvan" },
@@ -261,7 +273,9 @@ export default function Wardrobe({ profile, onChangeAvatar, onChangePet, onChang
           <button
             key={t.id}
             onClick={() => setSubTab(t.id)}
-            className={`flex-1 py-2 rounded-full text-xs font-semibold whitespace-nowrap ${subTab === t.id ? "bg-violet text-white" : "text-ink"}`}
+            className={`flex-1 py-2 rounded-xl text-xs font-black whitespace-nowrap transition-all ${
+              subTab === t.id ? "bg-[#FF70A6] text-white shadow-sm" : "text-[#4A2E4B]"
+            }`}
           >
             {t.label}
           </button>
