@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@theme {
+  /* Genel tuval - açık, canlı gökyüzü mavisi */
+  --color-night: #dff4ff;
+  /* Alt gezinme çubuğu - temiz krem beyaz */
+  --color-night-deep: #fffaf0;
+  /* Kart yüzeyi - beyaz "sticker" */
+  --color-parchment: #ffffff;
+  /* Sekme grubu zemini - yumuşak tereyağı sarısı */
+  --color-parchment-dim: #fff1c9;
+  /* Metin / kontur rengi - sıcak koyu erik (saf siyah değil) */
+  --color-ink: #3a3153;
+
+  /* Vurgu renkleri - Toca Boca tarzı doygun ama sıcak palet */
+  --color-gold: #ffc93c;
+  --color-gold-bright: #ffe066;
+  --color-teal: #45d6b5;
+  --color-coral: #ff6f61;
+  --color-violet: #8c6fff;
+  --color-sky: #4fc3f7;
+  --color-bubblegum: #ff8fc7;
+
+  --font-display: "Baloo 2", "Fredoka", system-ui, sans-serif;
+  --font-body: "Quicksand", "Nunito", system-ui, sans-serif;
+}
+
+@layer base {
+  html, body, #root {
+    height: 100%;
+  }
+  body {
+    background-color: var(--color-night);
+    background-image:
+      radial-gradient(circle at 10% 15%, rgba(255,143,199,0.35), transparent 38%),
+      radial-gradient(circle at 90% 8%, rgba(255,201,60,0.35), transparent 36%),
+      radial-gradient(circle at 85% 60%, rgba(69,214,181,0.30), transparent 40%),
+      radial-gradient(circle at 8% 75%, rgba(140,111,255,0.25), transparent 40%),
+      radial-gradient(circle at 50% 100%, rgba(79,195,247,0.30), transparent 45%);
+    background-attachment: fixed;
+    font-family: var(--font-body);
+    font-weight: 600;
+    color: var(--color-ink);
+  }
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+    font-weight: 700;
+  }
+  button {
+    font-family: var(--font-body);
+    font-weight: 700;
+  }
+}
+
+@layer utilities {
+  /* "Sticker" kart: kalın kontur + düz (bulanıksız) ofset gölge, sayfadan kabartma etkisi */
+  .sticker-card {
+    background-color: var(--color-parchment);
+    color: var(--color-ink);
+    border-radius: 1.75rem;
+    border: 3px solid var(--color-ink);
+    box-shadow: 5px 6px 0 rgba(58,49,83,0.18);
+  }
+  .sticker-btn {
+    border: 3px solid var(--color-ink);
+    box-shadow: 3px 4px 0 rgba(58,49,83,0.25);
+    transition: transform 0.08s ease, box-shadow 0.08s ease;
+  }
+  .sticker-btn:active {
+    transform: translate(2px, 3px);
+    box-shadow: 1px 1px 0 rgba(58,49,83,0.25);
+  }
+  .star-dot {
+    box-shadow: 0 0 6px 1px rgba(255,224,102,0.9);
+  }
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; transform: scale(0.85); }
+  50% { opacity: 1; transform: scale(1.15); }
+}
+.animate-twinkle {
+  animation: twinkle 2s ease-in-out infinite;
+}
+
+@keyframes pop-in {
+  0% { transform: scale(0.6) rotate(-4deg); opacity: 0; }
+  70% { transform: scale(1.08) rotate(2deg); opacity: 1; }
+  100% { transform: scale(1) rotate(0); }
+}
+.animate-pop {
+  animation: pop-in 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+.animate-bob {
+  animation: bob 3s ease-in-out infinite;
+}
+
+@keyframes wag {
+  0%, 100% { transform: rotate(-6deg); }
+  50% { transform: rotate(6deg); }
+}
+.animate-wag {
+  animation: wag 0.6s ease-in-out infinite;
+  transform-origin: top center;
+}

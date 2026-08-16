@@ -1,0 +1,381 @@
+import { useState, useEffect } from "react";
+import Dashboard from "./components/Dashboard";
+import MistakeBox from "./components/MistakeBox";
+import Wardrobe from "./components/avatar/Wardrobe";
+import Shop from "./components/Shop";
+import ParentPanel from "./components/ParentPanel";
+import TestSolver from "./components/TestSolver";
+import ResultScreen from "./components/ResultScreen";
+import BottomNav from "./components/BottomNav";
+import MemoryGame from "./components/MemoryGame";
+import WorldMap from "./components/WorldMap";
+import SoundToggle from "./components/SoundToggle";
+import { playCoin, playPop, playCelebrate } from "./lib/sound";
+import { createDefaultProfile, getLocalProfile, saveLocalProfile, normalizeProfile } from "./lib/storage";
+import { fetchCloudData, pushProfile, uploadTest } from "./lib/github";
+import { calcTestRewards, calcSpeedBonus, updateStreak, evaluateNewBadges, BADGES, getBoostInfo, applyBoost } from "./lib/gamification";
+import { ITEMS } from "./data/avatarParts";
+import { PETS } from "./data/petsAndRoom";
+import { getLevelInfo } from "./data/levels";
+import { getNextStickerToUnlock } from "./data/stickers";
+import { todayKey } from "./data/moods";
+import { generatePracticeTest } from "./lib/practiceGenerator";
+import { getWorldForLevel } from "./data/worlds";
+import { isRoomComplete } from "./data/houseRooms";
+
+export default function App() {
+  const [profile, setProfile] = useState(null);
+  const [tests, setTests] = useState([]);
+  const [tab, setTab] = useState("dashboard");
+  const [activeTest, setActiveTest] = useState(null); // { test, isRetryTest }
+  const [pendingResult, setPendingResult] = useState(null);
+  const [syncStatus, setSyncStatus] = useState("loading"); // loading | synced | offline | error
+  const [loading, setLoading] = useState(true);
+  const [showMiniGame, setShowMiniGame] = useState(false);
+  const [showWorldMap, setShowWorldMap] = useState(false);
+  const [toast, setToast] = useState(null);
+
+  function showToast(message) {
+    setToast(message);
+    setTimeout(() => setToast(null), 3000);
+  }
+
+  useEffect(() => {
+    init();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  async function init() {
+    const local = getLocalProfile();
+    try {
+      const cloud = await fetchCloudData();
+      const cloudProfile = normalizeProfile(cloud.profile);
+      const finalProfile = cloudProfile || local || createDefaultProfile();
+      setProfile(finalProfile);
+      setTests(cloud.tests || []);
+      saveLocalProfile(finalProfile);
+      if (!cloudProfile) {
+        // Bulutta profil yok, ilkini oluşturup gönder
+        await pushProfile(finalProfile).catch(() => {});
+      }
+      setSyncStatus("synced");
+    } catch (e) {
+      // Bulut yok / env değişkenleri ayarlanmamış -> yerel modda devam
+      setProfile(local || createDefaultProfile());
+      setSyncStatus("offline");
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  async function persist(newProfile) {
+    setProfile(newProfile);
+    saveLocalProfile(newProfile);
+    try {
+      await pushProfile(newProfile);
+      setSyncStatus("synced");
+    } catch {
+      setSyncStatus("offline");
+    }
+  }
+
+  function handleStartTest(test) {
+    setActiveTest({ test, isRetryTest: false });
+  }
+
+  function handleGeneratePractice(subject) {
+    const practiceTest = generatePracticeTest(subject, tests);
+    if (!practiceTest) return;
+    playPop();
+    setActiveTest({ test: practiceTest, isRetryTest: false });
+  }
+
+  function handleStartRetryTest(subject, mistakeItems) {
+    const retryTest = {
+      id: `retry-${subject}-${Date.now()}`,
+      subject,
+      title: `${subject} Rövanş Testi`,
+      hintsAllowed: 1,
+      targetSecondsPerQuestion: null,
+      questions: mistakeItems.map((m, i) => ({ ...m.question, id: `retry-q${i}` })),
+      _mistakeIds: mistakeItems.map((m) => m.id),
+    };
+    setActiveTest({ test: retryTest, isRetryTest: true });
+  }
+
+  function handleFinishTest(result) {
+    const rewards = calcTestRewards({
+      correctCount: result.correctCount,
+      totalCount: result.totalCount,
+      isRetryTest: result.isRetryTest,
+    });
+    const speedBonus = result.targetSecondsPerQuestion
+      ? calcSpeedBonus({ avgSecondsPerQuestion: result.avgSecondsPerQuestion, targetSeconds: result.targetSecondsPerQuestion })
+      : 0;
+    const bonusCoins = result.bonusCorrect ? 10 : 0;
+
+    const boost = getBoostInfo(profile.accountCreatedAt);
+    const xpEarned = applyBoost(rewards.xp + speedBonus, boost.multiplier);
+    const coinsEarned = applyBoost(rewards.coins + bonusCoins, boost.multiplier);
+
+    let next = { ...profile };
+    next.xp += xpEarned;
+    next.coins += coinsEarned;
+
+    const prevLevel = getLevelInfo(profile.xp).current.level;
+
+    // Geçmişe ekle
+    next.history = [
+      ...next.history,
+      {
+        id: `h${Date.now()}`,
+        testId: result.testId,
+        subject: result.subject,
+        date: new Date().toISOString(),
+        correctCount: result.correctCount,
+        totalCount: result.totalCount,
+        xpEarned,
+        coinsEarned,
+        isRetry: result.isRetryTest,
+      },
+    ];
+
+    // Hata kutusu güncelle
+    if (result.isRetryTest && activeTest?.test?._mistakeIds) {
+      const solvedNowIds = new Set(); // rövanşta doğru yapılanları kutudan çıkar
+      result.wrongQuestions.forEach(() => {}); // wrongQuestions kalanlar hala yanlış
+      const stillWrongQIds = new Set(result.wrongQuestions.map((q) => q.id));
+      next.mistakeBox = next.mistakeBox.map((m, idx) => {
+        if (!activeTest.test._mistakeIds.includes(m.id)) return m;
+        const retryQId = `retry-q${activeTest.test._mistakeIds.indexOf(m.id)}`;
+        const stillWrong = stillWrongQIds.has(retryQId);
+        return stillWrong ? m : { ...m, resolved: true };
+      });
+      if (result.correctCount === result.totalCount) {
+        next.stats.retryTestsPassed = (next.stats.retryTestsPassed || 0) + 1;
+      }
+    } else {
+      const newMistakes = result.wrongQuestions.map((q) => ({
+        id: `m${Date.now()}-${q.id}`,
+        testId: result.testId,
+        subject: result.subject,
+        question: q,
+        addedAt: new Date().toISOString(),
+        resolved: false,
+      }));
+      next.mistakeBox = [...next.mistakeBox, ...newMistakes];
+    }
+
+    // İstatistikler
+    next.stats = { ...next.stats };
+    next.stats.testsBySubject = { ...next.stats.testsBySubject };
+    next.stats.testsBySubject[result.subject] = (next.stats.testsBySubject[result.subject] || 0) + 1;
+    if (result.correctCount === result.totalCount) {
+      next.stats.fullScoreBySubject = { ...next.stats.fullScoreBySubject };
+      next.stats.fullScoreBySubject[result.subject] = (next.stats.fullScoreBySubject[result.subject] || 0) + 1;
+    }
+    if (speedBonus > 0) next.stats.speedBonusCount = (next.stats.speedBonusCount || 0) + 1;
+
+    // Streak
+    next.streak = updateStreak(next, new Date().toISOString());
+
+    // Efsanevi parça kilidi aç (deterministik, rastgele değil)
+    const newLegendaryItems = [];
+    if (result.correctCount === result.totalCount) {
+      [...ITEMS, ...PETS].filter((i) => i.legendary && !next.unlockedItems.includes(i.id)).forEach((item) => {
+        const cond = item.unlock;
+        if (cond?.type === "fullScore" && (cond.subject === "any" || cond.subject === result.subject)) {
+          next.unlockedItems = [...next.unlockedItems, item.id];
+          newLegendaryItems.push(item);
+        }
+      });
+    }
+
+    // Rozetler
+    const { current } = getLevelInfo(next.xp);
+    const badgeStats = {
+      fullScoreBySubject: next.stats.fullScoreBySubject,
+      testsBySubject: next.stats.testsBySubject,
+      streakCurrent: next.streak.current,
+      speedBonusCount: next.stats.speedBonusCount,
+      retryTestsPassed: next.stats.retryTestsPassed,
+      level: current.level,
+    };
+    const newBadgeIds = evaluateNewBadges(badgeStats, next.badges);
+    next.badges = [...next.badges, ...newBadgeIds];
+    const newBadges = BADGES.filter((b) => newBadgeIds.includes(b.id));
+
+    // Sticker Albümü - her tamamlanan test sırada bekleyen bir sonraki sticker'ı garanti açar
+    const newSticker = getNextStickerToUnlock(next.stickerAlbum.unlockedIds);
+    if (newSticker) {
+      next.stickerAlbum = { unlockedIds: [...next.stickerAlbum.unlockedIds, newSticker.id] };
+    }
+
+    persist(next);
+    setActiveTest(null);
+
+    // Yeni dünya açıldı mı? (seviye atlayıp bir sonraki dünyanın eşiğini geçtiyse kutla)
+    const newLevel = getLevelInfo(next.xp).current.level;
+    if (newLevel > prevLevel) {
+      const newWorld = getWorldForLevel(newLevel);
+      if (newWorld.unlockLevel === newLevel) {
+        setTimeout(() => showToast(`🗺️ Yeni Dünya Açıldı: ${newWorld.emoji} ${newWorld.title}!`), 900);
+      }
+    }
+
+    setPendingResult({
+      result: { ...result, fullScore: result.correctCount === result.totalCount },
+      xpEarned,
+      coinsEarned,
+      speedBonus,
+      newBadges,
+      newLegendaryItems,
+      newSticker,
+      boostActive: boost.active,
+    });
+  }
+
+  function handleBuyItem(item) {
+    if (profile.coins < item.price) return;
+    playCoin();
+    const next = {
+      ...profile,
+      coins: profile.coins - item.price,
+      unlockedItems: [...profile.unlockedItems, item.id],
+    };
+    persist(next);
+  }
+
+  function handleRedeemReward(reward) {
+    if (profile.coins < reward.cost) return;
+    playCoin();
+    const next = {
+      ...profile,
+      coins: profile.coins - reward.cost,
+      redemptions: [...profile.redemptions, { id: `red${Date.now()}`, rewardId: reward.id, label: reward.label, date: new Date().toISOString(), fulfilled: false }],
+    };
+    persist(next);
+  }
+
+  function handleChangeAvatar(newAvatar) {
+    persist({ ...profile, avatar: newAvatar });
+  }
+
+  function handleChangePet(newPet) {
+    persist({ ...profile, pet: newPet });
+  }
+
+  function handleChangeRoomSlot(roomId, newRoomState) {
+    const next = { ...profile, rooms: { ...profile.rooms, [roomId]: newRoomState } };
+
+    const alreadyCounted = profile.completedRooms.includes(roomId);
+    if (!alreadyCounted && isRoomComplete(newRoomState)) {
+      const boost = getBoostInfo(profile.accountCreatedAt);
+      const bonusXp = applyBoost(40, boost.multiplier);
+      const bonusCoins = applyBoost(60, boost.multiplier);
+      next.completedRooms = [...profile.completedRooms, roomId];
+      next.coins += bonusCoins;
+      next.xp += bonusXp;
+      showToast(`🏠 Oda tamamlandı! +${bonusXp} XP, +${bonusCoins} coin kazandın!`);
+      playCelebrate();
+    }
+
+    persist(next);
+  }
+
+  function handleLogMood(moodId) {
+    const today = todayKey();
+    if (profile.moodLog.some((m) => m.date === today)) return;
+    persist({ ...profile, moodLog: [...profile.moodLog, { date: today, mood: moodId }] });
+  }
+
+  function handleFinishMiniGame({ moves }) {
+    const today = todayKey();
+    let coinsEarned = 0;
+    let next = { ...profile };
+    if (profile.miniGame.lastRewardDate !== today) {
+      const boost = getBoostInfo(profile.accountCreatedAt);
+      coinsEarned = applyBoost(15, boost.multiplier);
+      next.coins += coinsEarned;
+      next.miniGame = { ...next.miniGame, lastRewardDate: today };
+      persist(next);
+    }
+    setShowMiniGame(false);
+    showToast(coinsEarned > 0 ? `🎉 Harika! ${moves} hamlede bitirdin, +${coinsEarned} coin kazandın!` : `🎉 Harika! ${moves} hamlede bitirdin. Bugünkü coin bonusunu zaten aldın.`);
+  }
+
+  async function handleUploadTest(test) {
+    await uploadTest(test);
+    setTests((prev) => [...prev, test]);
+  }
+
+  if (loading || !profile) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <p className="font-display text-xl animate-pulse">✨ Yükleniyor...</p>
+      </div>
+    );
+  }
+
+  return (
+    <div className="min-h-screen pb-24">
+      <header className="px-4 pt-5 pb-3 flex items-center justify-between">
+        <h1 className="font-display text-xl">📖 Bilgin Ustası</h1>
+        <div className="flex items-center gap-2">
+          <SoundToggle />
+          <span className={`text-xs px-2 py-1 rounded-full ${syncStatus === "synced" ? "bg-teal/20 text-teal" : syncStatus === "offline" ? "bg-coral/20 text-coral" : "bg-white/40"}`}>
+            {syncStatus === "synced" ? "☁️ Senkron" : syncStatus === "offline" ? "📴 Yerel mod" : "⏳"}
+          </span>
+        </div>
+      </header>
+
+      {toast && (
+        <div className="fixed top-3 left-1/2 -translate-x-1/2 z-30 sticker-card px-4 py-2 text-sm font-bold animate-pop">{toast}</div>
+      )}
+
+      <main className="px-4 max-w-lg mx-auto">
+        {activeTest ? (
+          <TestSolver
+            test={activeTest.test}
+            isRetryTest={activeTest.isRetryTest}
+            onFinish={handleFinishTest}
+            onCancel={() => setActiveTest(null)}
+          />
+        ) : pendingResult ? (
+          <ResultScreen {...pendingResult} onClose={() => setPendingResult(null)} />
+        ) : showMiniGame ? (
+          <MemoryGame
+            rewardAvailable={profile.miniGame.lastRewardDate !== todayKey()}
+            onFinish={handleFinishMiniGame}
+            onExit={() => setShowMiniGame(false)}
+          />
+        ) : showWorldMap ? (
+          <WorldMap profile={profile} onClose={() => setShowWorldMap(false)} />
+        ) : (
+          <>
+            {tab === "dashboard" && (
+              <Dashboard
+                profile={profile}
+                tests={tests}
+                onStartTest={handleStartTest}
+                onGeneratePractice={handleGeneratePractice}
+                onOpenMistakeBox={() => setTab("mistakes")}
+                onLogMood={handleLogMood}
+                onStartMiniGame={() => setShowMiniGame(true)}
+                onOpenWorldMap={() => setShowWorldMap(true)}
+              />
+            )}
+            {tab === "mistakes" && <MistakeBox profile={profile} onStartRetryTest={handleStartRetryTest} />}
+            {tab === "wardrobe" && (
+              <Wardrobe profile={profile} onChangeAvatar={handleChangeAvatar} onChangePet={handleChangePet} onChangeRoomSlot={handleChangeRoomSlot} />
+            )}
+            {tab === "shop" && <Shop profile={profile} onBuyItem={handleBuyItem} onRedeemReward={handleRedeemReward} />}
+            {tab === "parent" && <ParentPanel profile={profile} onUpdateProfile={persist} onUploadTest={handleUploadTest} />}
+          </>
+        )}
+      </main>
+
+      {!activeTest && !pendingResult && !showMiniGame && !showWorldMap && <BottomNav active={tab} onChange={setTab} />}
+    </div>
+  );
+}
