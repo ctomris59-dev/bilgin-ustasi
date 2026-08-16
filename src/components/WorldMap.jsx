@@ -4,6 +4,7 @@ import { getLevelInfo } from "../data/levels";
 import { ITEMS } from "../data/avatarParts";
 import { PETS, ROOM_ITEMS } from "../data/petsAndRoom";
 import { playPop } from "../lib/sound";
+import { getWorldAsset, getItemAsset } from "../data/gameAssets";
 
 const FALLBACK_POINTS = [
   { x: 50, y: 90 },
@@ -622,6 +623,25 @@ function WorldDetailSheet({
           </button>
         </div>
 
+        <div className="relative z-10 mt-4 overflow-hidden rounded-2xl border border-white/[0.08] bg-black/20">
+          <img
+            src={getWorldAsset(world.id)}
+            alt=""
+            className={`h-36 w-full object-cover transition duration-500 ${world.unlocked ? "" : "grayscale opacity-45 blur-[1px]"}`}
+          />
+          <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#07101F]/75 via-transparent to-transparent" />
+          <span
+            className="absolute bottom-3 left-3 rounded-xl border px-2.5 py-1 text-[9px] font-black uppercase tracking-[0.12em] backdrop-blur-md"
+            style={{
+              color: world.unlocked ? accent : "#8793B4",
+              background: "rgba(7,11,29,.72)",
+              borderColor: world.unlocked ? `${accent}30` : "rgba(255,255,255,.08)",
+            }}
+          >
+            Bölge {world.order}
+          </span>
+        </div>
+
         <p className="relative z-10 mt-4 text-sm font-medium leading-relaxed text-[#A5AEC6]">
           {world.unlocked
             ? world.blurb
@@ -676,20 +696,31 @@ function WorldDetailSheet({
                     : "rgba(255,255,255,.065)",
                 }}
               >
-                <p className="truncate text-[11px] font-black text-white">
-                  {item.label}
-                </p>
+                <div className="flex items-center gap-2.5">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-white/[0.06] bg-white/[0.025]">
+                    <img
+                      src={getItemAsset(item)}
+                      alt=""
+                      className="h-[88%] w-[88%] object-contain drop-shadow-[0_6px_6px_rgba(0,0,0,.3)]"
+                    />
+                  </div>
+                  <div className="min-w-0 flex-1">
+                    <p className="truncate text-[11px] font-black text-white">
+                      {item.label}
+                    </p>
 
-                <p
-                  className="mt-1 text-[9px] font-bold"
-                  style={{ color: owned ? "#52E3C2" : "#8793B4" }}
-                >
-                  {owned
-                    ? "Sende ✓"
-                    : item.legendary
-                    ? "Kusursuz görev ödülü"
-                    : `◈ ${item.price ?? 0}`}
-                </p>
+                    <p
+                      className="mt-1 text-[9px] font-bold"
+                      style={{ color: owned ? "#52E3C2" : "#8793B4" }}
+                    >
+                      {owned
+                        ? "Sende ✓"
+                        : item.legendary
+                        ? "Kusursuz görev ödülü"
+                        : `◈ ${item.price ?? 0}`}
+                    </p>
+                  </div>
+                </div>
               </div>
             );
           })}

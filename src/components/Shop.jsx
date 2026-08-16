@@ -4,6 +4,7 @@ import { ALL_PET_ROOM_ITEMS } from "../data/petsAndRoom";
 import { WORLDS, getWorldById } from "../data/worlds";
 import { getLevelInfo } from "../data/levels";
 import { playPop } from "../lib/sound";
+import { getItemAsset, getRarity, getRarityMeta } from "../data/gameAssets";
 
 const ALL_SHOP_ITEMS = [...ITEMS, ...ALL_PET_ROOM_ITEMS];
 
@@ -296,19 +297,19 @@ export default function Shop({ profile, onBuyItem, onRedeemReward }) {
                 />
 
                 <div
-                  className="relative flex h-14 w-14 items-center justify-center rounded-2xl border transition-transform duration-500 group-hover:-translate-y-1 group-hover:scale-105"
-                  style={{
-                    color: accent,
-                    background: "rgba(7,11,29,.66)",
-                    borderColor: `${accent}35`,
-                    boxShadow: `0 10px 30px rgba(0,0,0,.25), 0 0 22px ${accent}13`,
-                  }}
+                  className="relative flex h-[88px] w-[88px] items-center justify-center transition-transform duration-500 group-hover:-translate-y-1 group-hover:scale-[1.06]"
                 >
-                  {item.emoji ? (
-                    <span className="text-3xl">{item.emoji}</span>
-                  ) : (
-                    <SlotIcon className="h-7 w-7" />
-                  )}
+                  <img
+                    src={getRarityMeta(getRarity(item)).frame}
+                    alt=""
+                    className="pointer-events-none absolute inset-0 h-full w-full object-contain opacity-80"
+                  />
+                  <img
+                    src={getItemAsset(item)}
+                    alt={item.label}
+                    className="relative z-10 h-[70%] w-[70%] object-contain drop-shadow-[0_12px_12px_rgba(0,0,0,.38)]"
+                    loading="lazy"
+                  />
                 </div>
 
                 <span
@@ -488,21 +489,20 @@ function ItemSheet({ item, coins, owned, currentLevel, justPurchased, onClose, o
               style={{ background: accent, opacity: 0.11 }}
             />
             <div
-              className={`relative flex h-24 w-24 items-center justify-center rounded-[26px] border ${
+              className={`relative flex h-36 w-36 items-center justify-center ${
                 justPurchased ? "animate-level-ring" : "animate-float"
               }`}
-              style={{
-                color: accent,
-                background: "rgba(7,11,29,.68)",
-                borderColor: `${accent}42`,
-                boxShadow: `0 24px 60px rgba(0,0,0,.32), 0 0 38px ${accent}18`,
-              }}
             >
-              {item.emoji ? (
-                <span className="text-5xl">{item.emoji}</span>
-              ) : (
-                <SlotIcon className="h-12 w-12" />
-              )}
+              <img
+                src={getRarityMeta(getRarity(item)).frame}
+                alt=""
+                className="pointer-events-none absolute inset-0 h-full w-full object-contain"
+              />
+              <img
+                src={getItemAsset(item)}
+                alt={item.label}
+                className="relative z-10 h-[72%] w-[72%] object-contain drop-shadow-[0_18px_16px_rgba(0,0,0,.42)]"
+              />
             </div>
             <div
               className="absolute bottom-6 h-5 w-28 rounded-[50%] blur-md"
