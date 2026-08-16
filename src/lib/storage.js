@@ -82,3 +82,25 @@ export function saveLocalProfile(profile) {
 export function clearLocalProfile() {
   localStorage.removeItem(LOCAL_KEY);
 }
+// --- Duraklatılmış Test ---
+// Test ortasında "Ana Sayfa"ya dönülürse ilerlemenin kaybolmaması için
+// yerel olarak (localStorage) saklanır. Bulut senkronuna dahil değildir.
+const PAUSED_TEST_KEY = "bilginustasi_paused_test_v1";
+
+export function getPausedTest() {
+  try {
+    const raw = localStorage.getItem(PAUSED_TEST_KEY);
+    if (!raw) return null;
+    return JSON.parse(raw);
+  } catch {
+    return null;
+  }
+}
+
+export function savePausedTest(snapshot) {
+  localStorage.setItem(PAUSED_TEST_KEY, JSON.stringify(snapshot));
+}
+
+export function clearPausedTest() {
+  localStorage.removeItem(PAUSED_TEST_KEY);
+}
