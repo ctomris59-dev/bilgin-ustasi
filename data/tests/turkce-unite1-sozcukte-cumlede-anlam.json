@@ -1,0 +1,67 @@
+{
+  "id": "turkce-unite1-sozcukte-cumlede-anlam",
+  "subject": "Türkçe",
+  "title": "Sözcükte ve Cümlede Anlam",
+  "week": 1,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 40,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "'Bahçedeki gül açtı.' cümlesinde 'açtı' sözcüğü hangi anlamda kullanılmıştır?",
+      "options": ["Mecaz anlam", "Gerçek anlam", "Terim anlam", "Zıt anlam"],
+      "correctIndex": 1,
+      "hint": "Gerçek anlam, sözcüğün ilk akla gelen, temel anlamıdır."
+    },
+    {
+      "id": "q2",
+      "text": "'Yüreği yandı.' cümlesinde 'yandı' sözcüğü hangi anlamda kullanılmıştır?",
+      "options": ["Gerçek anlam", "Mecaz anlam", "Terim anlam", "Eş anlam"],
+      "correctIndex": 1,
+      "hint": "Burada gerçekten bir yanma yok, bir duygu durumu anlatılıyor."
+    },
+    {
+      "id": "q3",
+      "text": "Aşağıdaki sözcük çiftlerinden hangisi eş anlamlıdır (anlamdaş)?",
+      "options": ["Büyük - küçük", "Kalem - defter", "Sevinç - mutluluk", "Gece - gündüz"],
+      "correctIndex": 2,
+      "hint": "Eş anlamlı sözcükler birbirinin yerine kullanılabilir, anlamları aynıdır."
+    },
+    {
+      "id": "q4",
+      "text": "'Sıcak' sözcüğünün zıt anlamlısı (karşıt anlamlısı) hangisidir?",
+      "options": ["Ilık", "Soğuk", "Nemli", "Kuru"],
+      "correctIndex": 1,
+      "hint": "Zıt anlamlı, tamamen ters anlama gelen sözcüktür."
+    },
+    {
+      "id": "q5",
+      "text": "Aşağıdaki cümlelerin hangisinde noktalama işareti doğru kullanılmıştır?",
+      "options": ["Bugün hava çok güzel", "Bugün, hava çok güzel.", "Bugün hava çok güzel.", "Bugün hava, çok güzel."],
+      "correctIndex": 2,
+      "hint": "Cümle sonunda nokta olmalı, gereksiz virgül kullanılmamalı."
+    },
+    {
+      "id": "q6",
+      "text": "'Kardeşim bugün okula erken gitti çünkü sınavı vardı.' cümlesinde hangi noktalama işareti eksiktir?",
+      "options": ["Nokta", "Virgül", "Ünlem işareti", "Soru işareti"],
+      "correctIndex": 0,
+      "hint": "Cümle bittiğinde hangi işaret kullanılır?"
+    },
+    {
+      "id": "q7",
+      "text": "'Kitap' sözcüğü aşağıdaki cümlelerin hangisinde 'terim anlamda' kullanılmıştır?",
+      "options": ["Bu kitabı çok sevdim.", "Matematikte 'kök' bir terimdir.", "Kitabı masaya koydu.", "Yeni bir kitap aldım."],
+      "correctIndex": 1,
+      "hint": "Terim anlam, bir bilim veya meslek dalında özel bir anlamı olan kullanımdır."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Bu hafta okuduğun en sevdiğin kitap ya da hikaye hangisiydi?",
+    "options": ["Bir kitap okudum", "Henüz okumadım", "Hatırlamıyorum", "Söylemek istemiyorum"],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "id": "sosyalbilgiler-unite1-birlikte-yasamak",
+  "subject": "Sosyal Bilgiler",
+  "title": "Ünite 1 - Birlikte Yaşamak",
+  "week": 1,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 40,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Bir arkadaşının duygularını anlayıp kendini onun yerine koyabilme becerisine ne denir?",
+      "options": ["Empati", "Rekabet", "Bencillik", "Kayıtsızlık"],
+      "correctIndex": 0,
+      "hint": "'Onun yerinde olsaydım nasıl hissederdim?' diye düşünmek bu beceriyle ilgilidir."
+    },
+    {
+      "id": "q2",
+      "text": "Bir grup projesinde herkesin görev alıp ortak bir hedefe ulaşmaya çalışmasına ne denir?",
+      "options": ["Yalnız çalışma", "İş birliği", "Yarışma", "Kayıtsızlık"],
+      "correctIndex": 1,
+      "hint": "Birlikte çalışıp birbirine yardım etmek bu kavramla ilgilidir."
+    },
+    {
+      "id": "q3",
+      "text": "İki arkadaş arasında bir anlaşmazlık çıktığında en doğru ilk adım hangisidir?",
+      "options": ["Küsüp konuşmamak", "Bağırarak haklı çıkmaya çalışmak", "Sakince konuşup birbirini dinlemek", "Öğretmene söylemeden görmezden gelmek"],
+      "correctIndex": 2,
+      "hint": "Sorunları çözmenin ilk adımı genelde iletişimdir."
+    },
+    {
+      "id": "q4",
+      "text": "Sınıfında farklı bir yöreden gelen, farklı bir ağzı olan bir arkadaşın var. En doğru tutum hangisidir?",
+      "options": ["Onunla dalga geçmek", "Farklılığını olduğu gibi kabul edip saygı göstermek", "Onunla konuşmamak", "Ona 'farklı konuşuyorsun' diye takılmak"],
+      "correctIndex": 1,
+      "hint": "Farklılıklar toplumu zenginleştirir, bir eksiklik değildir."
+    },
+    {
+      "id": "q5",
+      "text": "Etkili bir iletişim için aşağıdakilerden hangisi en önemlidir?",
+      "options": ["Sadece kendi fikrini söylemek", "Karşındakini dinlemeden cevap vermek", "Karşındakini dikkatle dinlemek ve anlamaya çalışmak", "Yüksek sesle konuşmak"],
+      "correctIndex": 2,
+      "hint": "İletişim tek taraflı değil, karşılıklıdır."
+    },
+    {
+      "id": "q6",
+      "text": "Bir toplulukta ortak kurallara uymanın temel amacı nedir?",
+      "options": ["Herkesi kısıtlamak", "Düzeni ve herkesin haklarını korumak", "Sadece yetişkinleri memnun etmek", "Hiçbir amacı yoktur"],
+      "correctIndex": 1,
+      "hint": "Kurallar, bir arada yaşayan insanların birbirine zarar vermeden yaşamasını sağlar."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Bu hafta bir arkadaşına nasıl yardımcı oldun?",
+    "options": ["Ona bir konuda yardım ettim", "Henüz fırsat olmadı", "Hatırlamıyorum", "Bunu paylaşmak istemiyorum"],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}
