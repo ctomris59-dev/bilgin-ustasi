@@ -16,7 +16,7 @@
   "avatar": {
     "skin": "skin-1",
     "hairStyle": "hair-space-buns",
-    "hairColor": "#E0A3FF",
+    "hairColor": "#6B4226",
     "outfit": "outfit-tshirt",
     "shoes": "shoes-sneaker",
     "headwear": null,
@@ -89,5 +89,5 @@
     "lastRewardDate": null,
     "bestMoves": {}
   },
-  "lastSyncedAt": "2026-08-16T12:06:09.317Z"
+  "lastSyncedAt": "2026-08-16T12:06:10.244Z"
 }
