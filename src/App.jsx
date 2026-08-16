@@ -35,6 +35,7 @@ export default function App() {
   const [showWorldMap, setShowWorldMap] = useState(false);
   const [pausedTest, setPausedTest] = useState(() => getPausedTest());
   const [toast, setToast] = useState(null);
+  const [worldUnlock, setWorldUnlock] = useState(null);
 
   function showToast(message) {
     setToast(message);
@@ -238,7 +239,7 @@ export default function App() {
     if (newLevel > prevLevel) {
       const newWorld = getWorldForLevel(newLevel);
       if (newWorld.unlockLevel === newLevel) {
-        setTimeout(() => showToast(`🗺️ Yeni Dünya Açıldı: ${newWorld.emoji} ${newWorld.title}!`), 900);
+        setTimeout(() => setWorldUnlock(newWorld), 700);
       }
     }
 
@@ -295,7 +296,7 @@ export default function App() {
       next.completedRooms = [...profile.completedRooms, roomId];
       next.coins += bonusCoins;
       next.xp += bonusXp;
-      showToast(`🏠 Oda tamamlandı! +${bonusXp} XP, +${bonusCoins} coin kazandın!`);
+      showToast(`Üs bölümü tamamlandı · +${bonusXp} XP · +${bonusCoins} coin`);
       playCelebrate();
     }
 
@@ -320,7 +321,7 @@ export default function App() {
       persist(next);
     }
     setShowMiniGame(false);
-    showToast(coinsEarned > 0 ? `🎉 Harika! ${moves} hamlede bitirdin, +${coinsEarned} coin kazandın!` : `🎉 Harika! ${moves} hamlede bitirdin. Bugünkü coin bonusunu zaten aldın.`);
+    showToast(coinsEarned > 0 ? `Hafıza görevi tamamlandı · ${moves} hamle · +${coinsEarned} coin` : `Hafıza görevi tamamlandı · ${moves} hamle`);
   }
 
   async function handleUploadTest(test) {
@@ -337,19 +338,26 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen pb-24">
-      <header className="px-4 sm:px-8 pt-5 pb-3 max-w-3xl mx-auto w-full flex items-center justify-between">
-        <h1 className="font-display text-xl">📖 Bilgin Ustası</h1>
+    <div className="app-shell min-h-screen pb-28">
+      <header className="px-4 sm:px-8 pt-4 pb-3 max-w-3xl mx-auto w-full flex items-center justify-between">
+        <div className="flex items-center gap-3">
+          <div className="flex h-10 w-10 items-center justify-center rounded-2xl border border-white/10 bg-gradient-to-br from-[#8B6CFF]/20 to-[#52E3FF]/10 text-[#A98CFF] shadow-lg">✦</div>
+          <div>
+            <p className="text-[8px] font-black uppercase tracking-[.22em] text-[#687494]">Keşfet · Öğren · Ustalaş</p>
+            <h1 className="font-display text-lg font-black tracking-tight">Bilgin Ustası</h1>
+          </div>
+        </div>
         <div className="flex items-center gap-2">
           <SoundToggle />
-          <span className={`text-xs px-2 py-1 rounded-full ${syncStatus === "synced" ? "bg-teal/20 text-teal" : syncStatus === "offline" ? "bg-coral/20 text-coral" : "bg-white/40"}`}>
-            {syncStatus === "synced" ? "☁️ Senkron" : syncStatus === "offline" ? "📴 Yerel mod" : "⏳"}
+          <span className="game-chip" style={{ color: syncStatus === "synced" ? "#52E3C2" : syncStatus === "offline" ? "#FFD166" : "#A98CFF" }}>
+            <span className="inline-block h-1.5 w-1.5 rounded-full" style={{ background: syncStatus === "synced" ? "#52E3C2" : syncStatus === "offline" ? "#FFD166" : "#A98CFF" }} />
+            {syncStatus === "synced" ? "Senkron" : syncStatus === "offline" ? "Yerel" : "Bağlanıyor"}
           </span>
         </div>
       </header>
 
       {toast && (
-        <div className="fixed top-3 left-1/2 -translate-x-1/2 z-30 sticker-card px-4 py-2 text-sm font-bold animate-pop">{toast}</div>
+        <div className="fixed top-3 left-1/2 -translate-x-1/2 z-40 glass-card px-4 py-2.5 text-xs font-black animate-pop shadow-2xl">{toast}</div>
       )}
 
       <main className="px-4 sm:px-8 max-w-3xl mx-auto w-full">
@@ -400,6 +408,22 @@ export default function App() {
       </main>
 
       {!activeTest && !pendingResult && !showMiniGame && !showWorldMap && <BottomNav active={tab} onChange={setTab} />}
+      {worldUnlock && <WorldUnlockReveal world={worldUnlock} onClose={() => setWorldUnlock(null)} />}
+    </div>
+  );
+}
+
+function WorldUnlockReveal({ world, onClose }) {
+  return (
+    <div className="fixed inset-0 z-[70] flex items-center justify-center bg-[#030612]/80 p-5 backdrop-blur-xl">
+      <div className="pointer-events-none absolute inset-0" style={{ background: `radial-gradient(circle at center, ${world.accent || world.color}18, transparent 45%)` }} />
+      <div className="glass-card animate-pop relative w-full max-w-md overflow-hidden p-6 text-center" style={{ borderColor: `${world.accent || world.color}40`, background: "linear-gradient(145deg,rgba(22,30,61,.96),rgba(6,10,24,.97))" }}>
+        <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl text-3xl animate-pulse-glow" style={{ color: world.accent, background: `${world.accent}12`, border: `1px solid ${world.accent}30` }}>{world.emoji}</div>
+        <p className="mt-4 text-[9px] font-black uppercase tracking-[.24em]" style={{ color: world.accent }}>Yeni Bölge Keşfedildi</p>
+        <h2 className="font-display mt-1 text-2xl font-black">{world.title}</h2>
+        <p className="mt-2 text-xs leading-relaxed text-[#8793B4]">{world.blurb}</p>
+        <button onClick={onClose} className="sticker-btn mt-5 w-full py-3 text-sm">Haritaya Eklendi ✓</button>
+      </div>
     </div>
   );
 }
