@@ -1,22 +1,3 @@
 import { useState } from "react";
 import { isSoundMuted, toggleSoundMuted, playPop } from "../lib/sound";
-
-export default function SoundToggle() {
-  const [muted, setMuted] = useState(isSoundMuted());
-
-  function handleClick() {
-    const next = toggleSoundMuted();
-    setMuted(next);
-    if (!next) playPop();
-  }
-
-  return (
-    <button
-      onClick={handleClick}
-      aria-label={muted ? "Sesi aç" : "Sesi kapat"}
-      className="w-8 h-8 rounded-full border-2 border-ink bg-white flex items-center justify-center text-sm shrink-0"
-    >
-      {muted ? "🔇" : "🔊"}
-    </button>
-  );
-}
+export default function SoundToggle(){const [muted,setMuted]=useState(isSoundMuted());function click(){const next=toggleSoundMuted();setMuted(next);if(!next)playPop();}return <button onClick={click} aria-label={muted?'Sesi aç':'Sesi kapat'} className="glass-card flex h-9 w-9 items-center justify-center rounded-xl text-[#C5CEE7] transition hover:-translate-y-0.5 hover:text-white"><svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round"><path d="M11 5 6.5 9H3v6h3.5L11 19V5Z"/>{muted?<><path d="m16 9 5 5"/><path d="m21 9-5 5"/></>:<><path d="M15 9.5a4 4 0 0 1 0 5"/><path d="M18 7a7.5 7.5 0 0 1 0 10"/></>}</svg></button>}

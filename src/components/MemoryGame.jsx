@@ -1,109 +1,14 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import confetti from "canvas-confetti";
 import { MEMORY_THEMES, buildDeck } from "../data/miniGames";
 import { playPop, playCorrect, playWrong, playCelebrate } from "../lib/sound";
 
 export default function MemoryGame({ rewardAvailable, onFinish, onExit }) {
-  const [theme, setTheme] = useState(null);
-  const [deck, setDeck] = useState([]);
-  const [flipped, setFlipped] = useState([]); // en fazla 2 kart id'si
-  const [matched, setMatched] = useState([]);
-  const [moves, setMoves] = useState(0);
-  const [locked, setLocked] = useState(false);
-
-  useEffect(() => {
-    if (theme) setDeck(buildDeck(theme));
-  }, [theme]);
-
-  const isWon = deck.length > 0 && matched.length === deck.length;
-
-  useEffect(() => {
-    if (isWon) {
-      playCelebrate();
-      confetti({ particleCount: 70, spread: 75, origin: { y: 0.4 }, colors: ["#ff8fc7", "#ffc93c", "#45d6b5", "#8c6fff"] });
-      const timer = setTimeout(() => onFinish({ moves, won: true }), 900);
-      return () => clearTimeout(timer);
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isWon]);
-
-  function flipCard(card) {
-    if (locked || flipped.includes(card.id) || matched.includes(card.pairId)) return;
-    playPop();
-    const nextFlipped = [...flipped, card.id];
-    setFlipped(nextFlipped);
-
-    if (nextFlipped.length === 2) {
-      setMoves((m) => m + 1);
-      const [firstId, secondId] = nextFlipped;
-      const first = deck.find((c) => c.id === firstId);
-      const second = deck.find((c) => c.id === secondId);
-      if (first.pairId === second.pairId) {
-        playCorrect();
-        setMatched((m) => [...m, first.pairId]);
-        setFlipped([]);
-      } else {
-        playWrong();
-        setLocked(true);
-        setTimeout(() => {
-          setFlipped([]);
-          setLocked(false);
-        }, 700);
-      }
-    }
-  }
-
-  if (!theme) {
-    return (
-      <div className="sticker-card p-5 space-y-4 text-center">
-        <p className="text-4xl">🎮</p>
-        <h2 className="font-display text-xl">Mola Zamanı! Hafıza Oyunu</h2>
-        <p className="text-sm opacity-70">Kartları eşleştir, beynini dinlendir. {rewardAvailable && "İlk kazanışında bugün için bonus coin var! 🪙"}</p>
-        <div className="grid grid-cols-1 gap-2">
-          {MEMORY_THEMES.map((t) => (
-            <button key={t.id} onClick={() => { playPop(); setTheme(t); }} className="sticker-btn bg-sky text-ink rounded-full py-3 font-bold">
-              {t.emojis.slice(0, 3).join(" ")} {t.label}
-            </button>
-          ))}
-        </div>
-        {onExit && (
-          <button onClick={onExit} className="text-sm opacity-60 py-2">
-            Vazgeç
-          </button>
-        )}
-      </div>
-    );
-  }
-
-  return (
-    <div className="sticker-card p-4 space-y-4">
-      <div className="flex items-center justify-between text-sm">
-        <span className="font-semibold">{theme.label}</span>
-        <span className="opacity-60">Hamle: {moves}</span>
-      </div>
-      <div className="grid grid-cols-4 gap-2">
-        {deck.map((card) => {
-          const isFlipped = flipped.includes(card.id) || matched.includes(card.pairId);
-          return (
-            <button
-              key={card.id}
-              onClick={() => flipCard(card)}
-              disabled={isFlipped}
-              className={`aspect-square rounded-2xl flex items-center justify-center text-2xl border-2 border-ink transition-all ${
-                isFlipped ? "bg-parchment-dim" : "bg-violet"
-              }`}
-            >
-              {isFlipped ? card.emoji : ""}
-            </button>
-          );
-        })}
-      </div>
-      {isWon && <p className="text-center font-display text-lg text-teal animate-pop">🎉 Harika! {moves} hamlede bitirdin!</p>}
-      {onExit && !isWon && (
-        <button onClick={onExit} className="w-full text-sm opacity-60 py-2">
-          Oyundan Çık
-        </button>
-      )}
-    </div>
-  );
+  const [theme,setTheme]=useState(null), [deck,setDeck]=useState([]), [flipped,setFlipped]=useState([]), [matched,setMatched]=useState([]), [moves,setMoves]=useState(0), [locked,setLocked]=useState(false);
+  useEffect(()=>{if(theme){setDeck(buildDeck(theme));setFlipped([]);setMatched([]);setMoves(0);}},[theme]);
+  const won=deck.length>0&&matched.length===deck.length;
+  useEffect(()=>{if(!won)return undefined;playCelebrate();confetti({particleCount:50,spread:70,origin:{y:.5},colors:['#52E3C2','#52E3FF','#A98CFF','#FFD166']});const t=setTimeout(()=>onFinish({moves,won:true}),800);return()=>clearTimeout(t);},[won,moves,onFinish]);
+  function flip(card){if(locked||flipped.includes(card.id)||matched.includes(card.pairId))return;playPop();const next=[...flipped,card.id];setFlipped(next);if(next.length===2){setMoves((m)=>m+1);const a=deck.find((c)=>c.id===next[0]),b=deck.find((c)=>c.id===next[1]);if(a.pairId===b.pairId){playCorrect();setMatched((m)=>[...m,a.pairId]);setFlipped([]);}else{playWrong();setLocked(true);setTimeout(()=>{setFlipped([]);setLocked(false);},650);}}}
+  if(!theme)return <div className="app-shell py-4"><div className="mx-auto max-w-xl"><div className="mb-4 text-center"><div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl border border-[#52E3FF]/20 bg-[#52E3FF]/10 text-xl text-[#52E3FF]">▦</div><p className="mt-3 text-[9px] font-black uppercase tracking-[.22em] text-[#52E3FF]">Zihin Molası</p><h2 className="font-display mt-1 text-2xl font-black">Hafıza Oyunu</h2><p className="mt-2 text-sm text-[#8793B4]">Kartları eşleştir ve kısa bir mola ver.{rewardAvailable?' İlk tamamlamada bugün için bonus coin var.':''}</p></div><div className="space-y-2.5">{MEMORY_THEMES.map((t)=><button key={t.id} onClick={()=>{playPop();setTheme(t);}} className="glass-card group flex w-full items-center gap-3 p-4 text-left transition hover:-translate-y-1"><div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#A98CFF]/10 text-lg">{t.emojis[0]}</div><div className="flex-1"><p className="text-sm font-black">{t.label}</p><p className="mt-1 text-[10px] text-[#8793B4]">{t.emojis.length} çift · kısa oyun</p></div><span className="text-[#A98CFF] transition group-hover:translate-x-1">→</span></button>)}</div>{onExit&&<button onClick={onExit} className="mt-4 w-full py-2 text-xs font-bold text-[#687494] hover:text-white">Ana üsse dön</button>}</div></div>;
+  return <div className="app-shell py-4"><div className="mx-auto max-w-xl"><div className="mb-3 flex items-center justify-between"><button onClick={onExit} className="glass-card flex h-10 w-10 items-center justify-center rounded-xl">←</button><div className="text-center"><p className="text-[9px] font-black uppercase tracking-[.16em] text-[#52E3FF]">Zihin Molası</p><p className="text-sm font-black">{theme.label}</p></div><span className="game-chip">{moves} hamle</span></div><div className="glass-card p-4"><div className="grid grid-cols-4 gap-2.5">{deck.map((card)=>{const open=flipped.includes(card.id)||matched.includes(card.pairId);return <button key={card.id} onClick={()=>flip(card)} disabled={open} className="relative aspect-square overflow-hidden rounded-2xl border transition duration-300 hover:-translate-y-1" style={{background:open?'linear-gradient(145deg,rgba(255,255,255,.12),rgba(255,255,255,.05))':'linear-gradient(145deg,rgba(139,108,255,.26),rgba(82,227,255,.07))',borderColor:open?'rgba(82,227,194,.28)':'rgba(255,255,255,.1)',boxShadow:open?'0 0 22px rgba(82,227,194,.07)':'0 12px 28px rgba(0,0,0,.18)'}}><span className={`flex h-full w-full items-center justify-center text-2xl transition ${open?'scale-100 opacity-100':'scale-75 opacity-0'}`}>{open?card.emoji:'✦'}</span>{!open&&<span className="absolute inset-0 flex items-center justify-center text-sm text-[#A98CFF]">◆</span>}</button>;})}</div>{won&&<div className="animate-pop mt-4 rounded-2xl border border-[#52E3C2]/20 bg-[#52E3C2]/5 p-4 text-center"><p className="font-display text-lg font-black text-[#52E3C2]">Eşleşmeler tamamlandı</p><p className="mt-1 text-xs text-[#8793B4]">{moves} hamlede bitirdin.</p></div>}</div></div></div>;
 }

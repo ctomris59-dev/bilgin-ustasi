@@ -376,6 +376,40 @@ export default function Shop({ profile, onBuyItem, onRedeemReward }) {
         </div>
       )}
 
+      {(profile.rewardsCatalog || []).length > 0 && (
+        <section className="glass-card p-4">
+          <div className="flex items-end justify-between">
+            <div>
+              <p className="text-[9px] font-black uppercase tracking-[0.18em] text-[#FFD166]">Gerçek Yaşam Ödülleri</p>
+              <h2 className="mt-1 text-sm font-black text-white">Coinlerini deneyime dönüştür</h2>
+            </div>
+            <span className="game-chip">Ebeveyn onaylı</span>
+          </div>
+          <div className="mt-3 space-y-2">
+            {(profile.rewardsCatalog || []).map((reward) => {
+              const canRedeem = coins >= reward.cost;
+              return (
+                <div key={reward.id} className="flex items-center gap-3 rounded-2xl border border-white/[0.07] bg-white/[0.025] p-3">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#FFD166]/10 text-[#FFD166]">◆</div>
+                  <div className="min-w-0 flex-1">
+                    <p className="truncate text-xs font-black text-white">{reward.label}</p>
+                    <p className="mt-1 text-[9px] text-[#8793B4]">Ebeveyn panelinden teslim edilir.</p>
+                  </div>
+                  <button
+                    type="button"
+                    disabled={!canRedeem || !onRedeemReward}
+                    onClick={() => { playPop(); onRedeemReward?.(reward); }}
+                    className="rounded-xl border border-[#FFD166]/15 bg-[#FFD166]/[0.07] px-3 py-2 text-[10px] font-black text-[#FFD166] disabled:opacity-35"
+                  >
+                    ◈ {reward.cost}
+                  </button>
+                </div>
+              );
+            })}
+          </div>
+        </section>
+      )}
+
       {/* =====================================================
           ITEM DETAIL SHEET
       ====================================================== */}

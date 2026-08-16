@@ -1,23 +1,3 @@
 import { speak, isSpeechSupported } from "../lib/speech";
 import { playPop } from "../lib/sound";
-
-export default function SpeakButton({ text, size = 34, className = "" }) {
-  if (!isSpeechSupported()) return null;
-
-  function handleClick(e) {
-    e.stopPropagation();
-    playPop();
-    speak(text);
-  }
-
-  return (
-    <button
-      onClick={handleClick}
-      aria-label="Sesli oku"
-      className={`shrink-0 rounded-full border-2 border-ink bg-sky flex items-center justify-center sticker-btn ${className}`}
-      style={{ width: size, height: size }}
-    >
-      🔊
-    </button>
-  );
-}
+export default function SpeakButton({text,size=36,className=''}){if(!isSpeechSupported())return null;return <button onClick={(e)=>{e.stopPropagation();playPop();speak(text);}} aria-label="Sesli oku" className={`flex shrink-0 items-center justify-center rounded-xl border border-white/10 bg-white/[.045] text-[#70D6FF] transition hover:bg-white/[.08] ${className}`} style={{width:size,height:size}}><svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round"><path d="M11 5 6.5 9H3v6h3.5L11 19V5Z"/><path d="M15 9.5a4 4 0 0 1 0 5"/><path d="M18 7a7.5 7.5 0 0 1 0 10"/></svg></button>}
