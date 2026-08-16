@@ -1,17 +1,17 @@
 export const GREETING_MESSAGES = [
-  "Bugünkü testte başarılar! Sana inanıyorum. 💪",
-  "Hazır mısın? Birlikte yeni bir şeyler öğrenelim! ✨",
-  "Az önce gardırobunu çok beğendim, harika görünüyorsun!",
-  "Unutma, yanlış yapmak öğrenmenin bir parçası. Denemeye devam! 🌟",
-  "Bugün hangi dersten test çözmek istersin?",
-  "Serini bozma, bu hafta da devam edelim! 🔥",
-  "Hata Kutusu'ndaki sorulara bir göz atalım mı?",
-  "Yeni bir rozet kazanmana çok az kaldı!",
+  "Bugünkü testte sana başarılar dilerim! Harika işler çıkaracaksın! 💕",
+  "Hazır mısın? Birlikte sihirli yeni şeyler öğrenelim! ✨",
+  "Kombinin bugün muhteşem görünüyor! Çok şıksın! 💖",
+  "Unutma, yanlış yapmak öğrenmenin en tatlı parçası! 🌟",
+  "Bugün hangi dersten yıldız toplamak istersin? ⭐",
+  "Alevli serini bozma, harika gidiyorsun! 🔥",
+  "Hata Kutusu'ndaki soruları temizleyip ekstra coin kazanalım mı? 📦",
+  "Yeni bir rozet kazanmana çok az kaldı, sabırsızlanıyorum! 🏅",
 ];
 
 export const NO_TEST_MESSAGES = [
-  "Bu hafta henüz test yok, ama gardırobunu düzenleyebilirsin!",
-  "Ebeveynin yeni bir test yükleyene kadar mağazaya göz atabilirsin.",
+  "Bu hafta henüz yeni test yok, ama karakterini giydirip odanı süsleyebilirsin! 🛋️",
+  "Ebeveynin yeni bir test yükleyene kadar mağazadaki tatlı eşyalara göz atabilirsin! 🛍️",
 ];
 
 export function getRandomGreeting() {
