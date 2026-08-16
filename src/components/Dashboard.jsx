@@ -3,158 +3,151 @@ import AvatarCanvas from "./avatar/AvatarCanvas";
 import PetCanvas from "./avatar/PetCanvas";
 import RoomBackground from "./avatar/RoomBackground";
 import MoodCheckIn from "./MoodCheckIn";
-import SpeakButton from "./SpeakButton";
 import { getLevelInfo } from "../data/levels";
-import { BADGES, getBoostInfo } from "../lib/gamification";
+import { BADGES } from "../lib/gamification";
 import { getRandomGreeting } from "../data/messages";
-import { getAvailableSubjects } from "../lib/practiceGenerator";
-import { getWorldForLevel, WORLDS } from "../data/worlds";
-import { ROOM_TYPES, isRoomComplete } from "../data/houseRooms";
 
 export default function Dashboard({ profile, tests, onStartTest, onGeneratePractice, onOpenMistakeBox, onLogMood, onStartMiniGame, onOpenWorldMap }) {
   const { current, next, progressPct } = getLevelInfo(profile.xp);
   const availableTests = tests;
-  const subjects = useMemo(() => getAvailableSubjects(tests), [tests]);
   const earnedBadges = BADGES.filter((b) => profile.badges.includes(b.id));
   const greeting = useMemo(() => getRandomGreeting(), []);
-  const currentWorld = getWorldForLevel(current.level);
-  const nextWorld = WORLDS.find((w) => w.order === currentWorld.order + 1);
-  const completedRoomsCount = ROOM_TYPES.filter((r) => isRoomComplete(profile.rooms[r.id])).length;
-  const boost = getBoostInfo(profile.accountCreatedAt);
 
   return (
-    <div className="space-y-4">
-      {/* Günün Kombini - karşılama */}
-      <RoomBackground room={profile.rooms.bedroom}>
-        <div className="flex items-end gap-1">
-          <div className="animate-bob"><AvatarCanvas avatar={profile.avatar} size={150} /></div>
-          <PetCanvas pet={profile.pet} size={64} />
+    <div className="space-y-4 font-['Fredoka',sans-serif]">
+      {/* Sahne / Karakter Alanı */}
+      <div className="sticker-card p-3 bg-[#FFE8EC] relative overflow-hidden">
+        <RoomBackground room={profile.room}>
+          <div className="flex items-end justify-center gap-3 pt-4 pb-2">
+            <div className="animate-bob">
+              <AvatarCanvas avatar={profile.avatar} size={165} />
+            </div>
+            {profile.pet && (
+              <div className="animate-bob" style={{ animationDelay: "0.3s" }}>
+                <PetCanvas pet={profile.pet} size={75} />
+              </div>
+            )}
+          </div>
+        </RoomBackground>
+        
+        {/* Konuşma Balonu */}
+        <div className="sticker-card p-3 relative -mt-5 bg-[#FFFFFF] border-3 border-[#4A2E4B] text-center shadow-lg animate-pop">
+          <p className="text-sm font-extrabold text-[#4A2E4B]">
+            💬 {profile.childName}, {greeting} ✨
+          </p>
         </div>
-      </RoomBackground>
-      <div className="sticker-card p-3 relative -mt-6 mx-4 flex items-start gap-2">
-        <div
-          className="absolute -top-2 left-8 w-4 h-4 bg-parchment rotate-45"
-          aria-hidden="true"
-        />
-        <p className="text-sm font-semibold flex-1">💬 {profile.childName}, {greeting}</p>
-        <SpeakButton text={`${profile.childName}, ${greeting}`} size={30} />
       </div>
 
+      {/* Harita / Dünya Butonu */}
+      <button
+        onClick={onOpenWorldMap}
+        className="w-full sticker-btn p-4 flex items-center justify-between bg-[#FFD166] text-[#4A2E4B] animate-pulse-glow hover:brightness-105"
+      >
+        <div className="flex items-center gap-3">
+          <span className="text-3xl">🗺️</span>
+          <div className="text-left">
+            <p className="font-black text-base leading-tight">Sihirli Yol Haritası</p>
+            <p className="text-xs font-bold opacity-80">Dünyaları Keşfet & Ödülleri Gör</p>
+          </div>
+        </div>
+        <span className="text-xl font-black bg-[#FFFFFF] px-3 py-1 rounded-xl border-2 border-[#4A2E4B]">Keşfet →</span>
+      </button>
+
+      {/* Mood Check-In */}
       <MoodCheckIn profile={profile} onLogMood={onLogMood} />
 
-      {boost.active && (
-        <div className="sticker-card p-3 flex items-center gap-2 bg-gold/20 border-gold animate-pop">
-          <span className="text-2xl">🚀</span>
-          <div className="flex-1">
-            <p className="text-sm font-bold">Erken Başlangıç Bonusu Aktif! XP & Coin x{boost.multiplier}</p>
-            <p className="text-xs opacity-70">{boost.daysLeft} gün kaldı — bu dönemde her test daha fazla kazandırır!</p>
-          </div>
-        </div>
-      )}
-
-      <button onClick={onOpenWorldMap} className="w-full sticker-card p-3.5 flex items-center gap-3" style={{ backgroundColor: `${currentWorld.color}30` }}>
-        <span className="text-3xl">{currentWorld.emoji}</span>
-        <div className="text-left flex-1">
-          <p className="font-display text-sm leading-tight">{currentWorld.title}</p>
-          <p className="text-xs opacity-60">{nextWorld ? `Sonraki: ${nextWorld.emoji} ${nextWorld.title} (Seviye ${nextWorld.unlockLevel})` : "Yolun sonuna geldin, ama macera bitmedi!"}</p>
-        </div>
-        <span className="text-violet font-bold text-sm">Harita →</span>
+      {/* Mini Oyun Mola Butonu */}
+      <button 
+        onClick={onStartMiniGame} 
+        className="w-full sticker-btn p-3.5 flex items-center justify-between bg-[#70D6FF] text-[#4A2E4B]"
+      >
+        <span className="font-black flex items-center gap-2 text-sm">🎮 Mola Zamanı! Hafıza Oyunu Oyna</span>
+        <span className="text-base font-black bg-[#FFFFFF] px-2.5 py-0.5 rounded-lg border-2 border-[#4A2E4B]">Oyna ✨</span>
       </button>
 
-      <button onClick={onStartMiniGame} className="w-full sticker-card p-3.5 flex items-center justify-between bg-sky/40">
-        <span className="font-semibold">🎮 Mola Zamanı! Hafıza oyunu oyna</span>
-        <span>→</span>
-      </button>
-
-      <div className="sticker-card p-4 flex gap-4 items-center">
-        <div className="flex-1">
-          <p className="font-display text-lg leading-tight">{profile.childName}</p>
-          <p className="text-sm text-violet font-semibold">{current.title} · Seviye {current.level}</p>
-          <div className="w-full bg-ink/10 rounded-full h-2.5 mt-1.5">
-            <div className="bg-violet h-2.5 rounded-full transition-all" style={{ width: `${progressPct}%` }} />
+      {/* Profil Seviye & İlerleme Çubuğu */}
+      <div className="sticker-card p-4 bg-[#FFFFFF]">
+        <div className="flex justify-between items-start mb-1">
+          <div>
+            <p className="font-display text-xl text-[#4A2E4B] font-black">{profile.childName} 💖</p>
+            <p className="text-xs text-[#FF70A6] font-extrabold uppercase tracking-wide">{current.title} · Seviye {current.level}</p>
           </div>
-          <p className="text-xs opacity-60 mt-1">{next ? `${next.title}'a ${next.minXp - profile.xp} XP kaldı` : "En yüksek seviyedesin! 🎉"}</p>
+          <span className="text-2xl animate-bounce">⭐</span>
+        </div>
+        <div className="w-full bg-[#FFE8EC] rounded-full h-4 mt-2 border-3 border-[#4A2E4B] overflow-hidden p-0.5">
+          <div 
+            className="bg-[#FF70A6] h-full rounded-full transition-all duration-500 shadow-inner" 
+            style={{ width: `${progressPct}%` }} 
+          />
+        </div>
+        <p className="text-[11px] text-[#4A2E4B]/80 mt-1.5 font-bold text-right">
+          {next ? `${next.title}'a ${next.minXp - profile.xp} XP kaldı ✨` : "En yüksek seviyedesin! 👑"}
+        </p>
+      </div>
+
+      {/* Oyun İçi Para & İstatistik Kartları */}
+      <div className="grid grid-cols-3 gap-3">
+        <div className="sticker-card p-3 text-center bg-[#FFF275]">
+          <p className="text-3xl animate-bob">🪙</p>
+          <p className="font-display text-xl text-[#4A2E4B] font-black">{profile.coins}</p>
+          <p className="text-[11px] font-black text-[#4A2E4B]/70">Coin</p>
+        </div>
+        <div className="sticker-card p-3 text-center bg-[#FF9EAA]">
+          <p className="text-3xl animate-bob" style={{ animationDelay: "0.2s" }}>🔥</p>
+          <p className="font-display text-xl text-[#4A2E4B] font-black">{profile.streak.current}</p>
+          <p className="text-[11px] font-black text-[#4A2E4B]/70">Günlük Seri</p>
+        </div>
+        <div className="sticker-card p-3 text-center bg-[#52E3C2]">
+          <p className="text-3xl animate-bob" style={{ animationDelay: "0.4s" }}>📦</p>
+          <p className="font-display text-xl text-[#4A2E4B] font-black">{profile.mistakeBox.filter((m) => !m.resolved).length}</p>
+          <p className="text-[11px] font-black text-[#4A2E4B]/70">Hata Kutusu</p>
         </div>
       </div>
 
-      <div className="grid grid-cols-4 gap-2">
-        <div className="sticker-card p-2.5 text-center">
-          <p className="text-xl">🪙</p>
-          <p className="font-display text-base">{profile.coins}</p>
-          <p className="text-[10px] opacity-60">Coin</p>
-        </div>
-        <div className="sticker-card p-2.5 text-center">
-          <p className="text-xl">🔥</p>
-          <p className="font-display text-base">{profile.streak.current}</p>
-          <p className="text-[10px] opacity-60">Seri</p>
-        </div>
-        <div className="sticker-card p-2.5 text-center">
-          <p className="text-xl">📦</p>
-          <p className="font-display text-base">{profile.mistakeBox.filter((m) => !m.resolved).length}</p>
-          <p className="text-[10px] opacity-60">Hata</p>
-        </div>
-        <div className="sticker-card p-2.5 text-center">
-          <p className="text-xl">🏠</p>
-          <p className="font-display text-base">{completedRoomsCount}/{ROOM_TYPES.length}</p>
-          <p className="text-[10px] opacity-60">Oda</p>
-        </div>
-      </div>
-
+      {/* Rövanş Testi Uyarısı */}
       {profile.mistakeBox.filter((m) => !m.resolved).length >= 3 && (
-        <button onClick={onOpenMistakeBox} className="w-full sticker-card p-3 flex items-center justify-between border-2 border-coral">
-          <span className="font-semibold text-coral">⚔️ Rövanş Testi hazır! Yanlışlarını telafi et</span>
-          <span>→</span>
+        <button onClick={onOpenMistakeBox} className="w-full sticker-btn p-3.5 flex items-center justify-between bg-[#FF70A6] text-white">
+          <span className="font-black text-sm">🥊 Rövanş Testi Hazır! Yanlışlarını Düzelt</span>
+          <span className="text-xs bg-[#FFFFFF] text-[#FF70A6] px-2.5 py-1 rounded-xl font-black">Başla →</span>
         </button>
       )}
 
+      {/* Test Listesi */}
       <div>
-        <h2 className="font-display text-lg mb-2 px-1">📚 Bu Haftanın Testleri</h2>
-        <div className="space-y-2">
+        <h2 className="font-display text-lg mb-2 px-1 text-[#4A2E4B] font-black flex items-center gap-2">
+          <span>📚</span> Bu Haftanın Testleri
+        </h2>
+        <div className="space-y-2.5">
           {availableTests.length === 0 && (
-            <p className="sticker-card p-4 text-center text-sm">Henüz test yüklenmedi. Ebeveyn panelinden yeni bir test eklenebilir.</p>
+            <p className="sticker-card p-4 text-center text-sm bg-[#FFFFFF] font-bold">
+              Henüz test yüklenmedi. Ebeveyn panelinden yeni test eklenebilir! ✨
+            </p>
           )}
           {availableTests.map((test) => (
-            <button key={test.id} onClick={() => onStartTest(test)} className="w-full sticker-card p-3.5 text-left flex items-center justify-between hover:brightness-95">
+            <button 
+              key={test.id} 
+              onClick={() => onStartTest(test)} 
+              className="w-full sticker-card p-4 text-left flex items-center justify-between bg-[#FFFFFF] hover:bg-[#FFE8EC]"
+            >
               <div>
-                <p className="font-semibold">{test.title}</p>
-                <p className="text-xs opacity-60">
-                  {test.subject} · {test.questions.length} soru
-                  {test.gradeLevel && <span className="ml-1 px-1.5 py-0.5 rounded-full bg-parchment-dim text-[10px] font-semibold">{test.gradeLevel.split(" ")[0]} {test.gradeLevel.split(" ")[1]}</span>}
-                </p>
+                <p className="font-black text-base text-[#4A2E4B]">{test.title}</p>
+                <p className="text-xs text-[#4A2E4B]/70 font-bold mt-0.5">{test.subject} · {test.questions.length} soru</p>
               </div>
-              <span className="text-violet font-bold">Başla →</span>
+              <span className="sticker-btn bg-[#FF70A6] text-white text-xs px-3 py-1.5 font-black">Başla ➔</span>
             </button>
           ))}
         </div>
       </div>
 
+      {/* Rozetler */}
       {earnedBadges.length > 0 && (
         <div>
-          <h2 className="font-display text-lg mb-2 px-1">🏅 Rozetlerin</h2>
+          <h2 className="font-display text-lg mb-2 px-1 text-[#4A2E4B] font-black">🏅 Rozetlerin</h2>
           <div className="flex flex-wrap gap-2">
             {earnedBadges.map((b) => (
-              <div key={b.id} className="sticker-card px-3 py-2 text-sm font-semibold">
+              <div key={b.id} className="sticker-card px-3.5 py-2 text-xs font-black bg-[#FFF275] text-[#4A2E4B] animate-pop">
                 {b.label}
               </div>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {subjects.length > 0 && (
-        <div>
-          <h2 className="font-display text-lg mb-1 px-1">🔄 Pratik Testi (Sınırsız!)</h2>
-          <p className="text-xs opacity-60 px-1 mb-2">İstediğin kadar çöz — her seferinde farklı sorularla karışır, daha fazla XP ve coin kazan!</p>
-          <div className="grid grid-cols-2 gap-2">
-            {subjects.map((subject) => (
-              <button
-                key={subject}
-                onClick={() => onGeneratePractice(subject)}
-                className="sticker-btn bg-bubblegum text-ink rounded-2xl p-3 text-sm font-bold text-left"
-              >
-                {subject}
-                <div className="text-xs font-normal opacity-70">Yeni pratik oluştur →</div>
-              </button>
             ))}
           </div>
         </div>
