@@ -18,10 +18,13 @@ import { ITEMS } from "./data/avatarParts";
 import { PETS } from "./data/petsAndRoom";
 import { getLevelInfo } from "./data/levels";
 import { getNextStickerToUnlock } from "./data/stickers";
-import { todayKey } from "./data/moods";
 import { generatePracticeTest } from "./lib/practiceGenerator";
 import { getWorldForLevel } from "./data/worlds";
 import { isRoomComplete } from "./data/houseRooms";
+
+function todayKey(date = new Date()) {
+  return date.toISOString().slice(0, 10);
+}
 
 export default function App() {
   const [profile, setProfile] = useState(null);
@@ -303,12 +306,6 @@ export default function App() {
     persist(next);
   }
 
-  function handleLogMood(moodId) {
-    const today = todayKey();
-    if (profile.moodLog.some((m) => m.date === today)) return;
-    persist({ ...profile, moodLog: [...profile.moodLog, { date: today, mood: moodId }] });
-  }
-
   function handleFinishMiniGame({ moves }) {
     const today = todayKey();
     let coinsEarned = 0;
@@ -389,7 +386,6 @@ export default function App() {
                 onStartTest={handleStartTest}
                 onGeneratePractice={handleGeneratePractice}
                 onOpenMistakeBox={() => setTab("mistakes")}
-                onLogMood={handleLogMood}
                 onStartMiniGame={() => setShowMiniGame(true)}
                 onOpenWorldMap={() => setShowWorldMap(true)}
                 pausedTest={pausedTest}
