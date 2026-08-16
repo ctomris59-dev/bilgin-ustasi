@@ -33,7 +33,7 @@ export default function ResultScreen({ result, onContinue }) {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-[70vh] font-['Fredoka',sans-serif] space-y-6">
+    <div className="flex flex-col items-center justify-center min-h-[70vh] font-['Fredoka',sans-serif] space-y-6 p-4">
       <div className="sticker-card p-8 bg-[#FFFFFF] text-center max-w-sm w-full animate-pop">
         <h2 className="text-3xl font-black text-[#4A2E4B] mb-2">Harika İş! 🌟</h2>
         <p className="text-lg font-bold text-[#4A2E4B]/80 mb-6">
@@ -41,11 +41,11 @@ export default function ResultScreen({ result, onContinue }) {
         </p>
 
         <div className="grid grid-cols-2 gap-4 mb-6">
-          <div className="sticker-card p-4 bg-[#FFF275] border-3 animate-bob">
+          <div className="sticker-card p-4 bg-[#FFF275] border-3 border-[#4A2E4B] animate-bob">
             <p className="text-xs font-black text-[#4A2E4B]">Kazanılan XP</p>
             <p className="text-2xl font-black text-[#4A2E4B]">+{xpEarned}</p>
           </div>
-          <div className="sticker-card p-4 bg-[#FF9EAA] border-3 animate-bob" style={{ animationDelay: '0.2s' }}>
+          <div className="sticker-card p-4 bg-[#FF9EAA] border-3 border-[#4A2E4B] animate-bob" style={{ animationDelay: '0.2s' }}>
             <p className="text-xs font-black text-[#4A2E4B]">Coin 🪙</p>
             <p className="text-2xl font-black text-[#4A2E4B]">+{score * 10}</p>
           </div>
@@ -69,7 +69,7 @@ export default function ResultScreen({ result, onContinue }) {
 
         <button
           onClick={onContinue}
-          className="w-full sticker-btn py-4 bg-[#70D6FF] text-[#4A2E4B] text-lg mt-4"
+          className="w-full sticker-btn py-4 bg-[#70D6FF] text-[#4A2E4B] text-lg font-black mt-4"
         >
           Ödüllerimi Al & Devam Et ➔
         </button>
