@@ -1,0 +1,60 @@
+{
+  "id": "ingilizce-hafta1",
+  "subject": "İngilizce (Orta 2 Seviyesi)",
+  "title": "Hafta 1 - Present Perfect Tense",
+  "week": 1,
+  "gradeLevel": "Orta 2 (İleri)",
+  "targetSecondsPerQuestion": 35,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "She _____ her homework already.",
+      "options": ["finish", "finished", "has finished", "finishing"],
+      "correctIndex": 2,
+      "hint": "Present Perfect = have/has + past participle"
+    },
+    {
+      "id": "q2",
+      "text": "'I have never been to Paris.' Bu cümle hangi zamandadır?",
+      "options": ["Simple Past", "Present Perfect", "Future Tense", "Present Continuous"],
+      "correctIndex": 1,
+      "hint": "'have + never + been' yapısına dikkat et."
+    },
+    {
+      "id": "q3",
+      "text": "Choose the correct sentence:",
+      "options": ["I have saw that movie.", "I have seen that movie.", "I has seen that movie.", "I seen that movie."],
+      "correctIndex": 1,
+      "hint": "'see' fiilinin 3. hali (past participle) 'seen'dir."
+    },
+    {
+      "id": "q4",
+      "text": "They _____ in this city since 2015.",
+      "options": ["live", "lived", "have lived", "living"],
+      "correctIndex": 2,
+      "hint": "'since' ile Present Perfect kullanılır."
+    },
+    {
+      "id": "q5",
+      "text": "'Have you ever eaten sushi?' sorusuna en uygun cevap hangisidir?",
+      "options": ["Yes, I eat.", "Yes, I have.", "Yes, I did.", "Yes, I ate."],
+      "correctIndex": 1,
+      "hint": "Kısa cevaplarda 'have/has' tekrar edilir."
+    },
+    {
+      "id": "q6",
+      "text": "We _____ our project yet.",
+      "options": ["haven't finished", "didn't finish", "don't finish", "not finished"],
+      "correctIndex": 0,
+      "hint": "'yet' genellikle Present Perfect olumsuz cümlelerde kullanılır."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Bonus: 'Ever' kelimesinin Türkçe anlamı nedir?",
+    "options": ["Hiç", "Her zaman", "Bazen", "Asla"],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}
