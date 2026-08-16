@@ -11,7 +11,7 @@ import MemoryGame from "./components/MemoryGame";
 import WorldMap from "./components/WorldMap";
 import SoundToggle from "./components/SoundToggle";
 import { playCoin, playPop, playCelebrate } from "./lib/sound";
-import { createDefaultProfile, getLocalProfile, saveLocalProfile, normalizeProfile } from "./lib/storage";
+import { createDefaultProfile, getLocalProfile, saveLocalProfile, normalizeProfile, getPausedTest, savePausedTest, clearPausedTest } from "./lib/storage";
 import { fetchCloudData, pushProfile, uploadTest } from "./lib/github";
 import { calcTestRewards, calcSpeedBonus, updateStreak, evaluateNewBadges, BADGES, getBoostInfo, applyBoost } from "./lib/gamification";
 import { ITEMS } from "./data/avatarParts";
@@ -33,6 +33,7 @@ export default function App() {
   const [loading, setLoading] = useState(true);
   const [showMiniGame, setShowMiniGame] = useState(false);
   const [showWorldMap, setShowWorldMap] = useState(false);
+  const [pausedTest, setPausedTest] = useState(() => getPausedTest());
   const [toast, setToast] = useState(null);
 
   function showToast(message) {
@@ -81,6 +82,22 @@ export default function App() {
 
   function handleStartTest(test) {
     setActiveTest({ test, isRetryTest: false });
+  }
+
+  function handlePauseTest(snapshot) {
+    savePausedTest(snapshot);
+    setPausedTest(snapshot);
+    setActiveTest(null);
+  }
+
+  function handleResumeTest() {
+    if (!pausedTest) return;
+    setActiveTest({ test: pausedTest.test, isRetryTest: pausedTest.isRetryTest, resumeState: pausedTest });
+  }
+
+  function handleDiscardPausedTest() {
+    clearPausedTest();
+    setPausedTest(null);
   }
 
   function handleGeneratePractice(subject) {
@@ -213,6 +230,8 @@ export default function App() {
 
     persist(next);
     setActiveTest(null);
+    clearPausedTest();
+    setPausedTest(null);
 
     // Yeni dünya açıldı mı? (seviye atlayıp bir sonraki dünyanın eşiğini geçtiyse kutla)
     const newLevel = getLevelInfo(next.xp).current.level;
@@ -338,8 +357,10 @@ export default function App() {
           <TestSolver
             test={activeTest.test}
             isRetryTest={activeTest.isRetryTest}
+            resumeState={activeTest.resumeState}
             onFinish={handleFinishTest}
             onCancel={() => setActiveTest(null)}
+            onPause={handlePauseTest}
           />
         ) : pendingResult ? (
           <ResultScreen {...pendingResult} onClose={() => setPendingResult(null)} />
@@ -363,6 +384,9 @@ export default function App() {
                 onLogMood={handleLogMood}
                 onStartMiniGame={() => setShowMiniGame(true)}
                 onOpenWorldMap={() => setShowWorldMap(true)}
+                pausedTest={pausedTest}
+                onResumeTest={handleResumeTest}
+                onDiscardPausedTest={handleDiscardPausedTest}
               />
             )}
             {tab === "mistakes" && <MistakeBox profile={profile} onStartRetryTest={handleStartRetryTest} />}
