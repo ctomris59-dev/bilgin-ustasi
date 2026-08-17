@@ -6,15 +6,19 @@ function findItem(id) {
   return ROOM_ITEMS.find((item) => item.id === id) || null;
 }
 
-export default function RoomBackground({ room, children, compact = false }) {
+export default function RoomBackground({ room, children, compact = false, heroStage = compact }) {
   const wallpaper = findItem(room?.wallpaper);
   const items = room?.items || [];
   const backgroundImage = wallpaper ? getWorldAsset(wallpaper.world) : (GAME_ASSETS.premiumBaseRoom || GAME_ASSETS.roomBackground);
 
-  return (
-    <div
-      className="room-background relative w-full h-full overflow-hidden rounded-2xl border border-white/10"
-      style={{
+  const style = heroStage
+    ? {
+        width: "100%",
+        minWidth: 0,
+        minHeight: compact ? 205 : 255,
+        boxShadow: "inset 0 1px 0 rgba(255,255,255,.08), 0 18px 42px rgba(0,0,0,.28)",
+      }
+    : {
         width: "100%",
         minWidth: 0,
         minHeight: compact ? 205 : 255,
@@ -22,12 +26,23 @@ export default function RoomBackground({ room, children, compact = false }) {
         backgroundSize: "cover",
         backgroundPosition: "center",
         boxShadow: "inset 0 1px 0 rgba(255,255,255,.08), 0 18px 42px rgba(0,0,0,.28)",
-      }}
-    >
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#050914]/55" />
-      <div className="absolute left-[8%] top-[10%] h-[2px] w-[34%] rounded-full bg-white/20 blur-[1px]" />
+      };
 
-      {items.map((placed) => {
+  return (
+    <div
+      className={`room-background relative w-full h-full overflow-hidden rounded-2xl border border-white/10 ${heroStage ? "v5-hero-room" : ""}`}
+      style={style}
+    >
+      {!heroStage && <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#050914]/55" />}
+      {!heroStage && <div className="absolute left-[8%] top-[10%] h-[2px] w-[34%] rounded-full bg-white/20 blur-[1px]" />}
+
+      {heroStage && <>
+        <div className="v5-room-console" />
+        <div className="v5-room-shelf" />
+        <div className="v5-room-light" />
+      </>}
+
+      {!heroStage && items.map((placed) => {
         const item = findItem(placed.itemId);
         if (!item) return null;
         return (
