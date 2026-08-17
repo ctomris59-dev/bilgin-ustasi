@@ -1,51 +1,43 @@
-# Bilgin Ustası – Profesyonel Game Asset Sistemi
+# Bilgin Ustası – Game Asset Sistemi
 
-Bu sürümde eski SVG/kodla çizilen avatar, pet ve envanter görselleri yerine asset tabanlı sistem kullanılır.
+Bu sürümde avatar, pet, dükkan, oda ve dünya görselleri Vite tarafından uygulama paketine dahil edilir. Böylece deploy sırasında `public/game-assets` alt klasörlerinin eksik yüklenmesi nedeniyle kırık görsel oluşmaz.
 
-## Ana klasör
+## Ana asset klasörü
 
-`public/game-assets/`
+`src/assets/game-assets/`
 
-- `avatar/presets/` – yüksek kaliteli tam karakter renderları
-- `avatar/hair/` – saç önizlemeleri
-- `items/tops/` – üst giyim görselleri
-- `items/bottoms/` – alt giyim görselleri
+- `avatar/presets/` – tam karakter renderları
+- `avatar/hair/` – hazır saç assetleri (ileride gerçek katmanlı avatar için kullanılabilir)
+- `items/tops/` – üst giyim ürün renderları
+- `items/bottoms/` – alt giyim ürün renderları
 - `items/shoes/` – ayakkabılar
-- `items/headwear/` – başlık/şapka parçaları
-- `items/accessories/` – aksesuar ve ekipmanlar
+- `items/headwear/` – başlık/şapka renderları
+- `items/accessories/` – aksesuarlar
 - `pets/` – keşif dostları
-- `rooms/items/` – oda/üs eşyaları
+- `rooms/items/` – üs eşyaları
 - `worlds/` – bölge görselleri
 - `ui/rarity/` – Common / Rare / Epic / Legendary çerçeveleri
 
-## Görselleri uygulamaya bağlayan dosya
+## Asset registry
 
 `src/data/gameAssets.js`
 
-Yeni bir görseli sisteme bağlamak için çoğu durumda React bileşenlerine dokunmak gerekmez. Görseli ilgili klasöre koyup `gameAssets.js` içindeki asset listesine eklemek yeterlidir.
+Dosya `import.meta.glob(...)` kullanır. Görseller build sırasında Vite tarafından fingerprint'li URL'lere dönüştürülür. Bu nedenle Vercel, Netlify veya alt klasörde çalışan deploy'larda mutlak `/game-assets/...` yolu kullanılmaz.
 
-## Avatar
+## Karakter sistemi
 
 `src/components/avatar/AvatarCanvas.jsx`
 
-Artık SVG ile yüz/gövde çizmez. `gameAssets.js` içinden profesyonel karakter renderını alır. Takılı başlık ve aksesuarlar ayrıca ekipman rozeti olarak gösterilir.
-
-## Dükkan
-
-`src/components/Shop.jsx`
-
-Her ürün gerçek asset görseliyle, rarity çerçevesi içinde gösterilir. Aynı görsel detay modalında daha büyük kullanılır.
-
-## Karakter Profili
+Karakter artık kodla çizilmez. Tam karakter renderları kullanılır.
 
 `src/components/avatar/Wardrobe.jsx`
 
-Saç seçeneklerinde gerçek önizleme, ekipman kartlarında gerçek ürün görseli, pet sekmesinde gerçek pet renderı kullanılır.
+Karakter ekranındaki "Kaşif Stili" seçenekleri gerçekten avatar görselini değiştirir. "Ekipmana Göre" seçeneğinde görünüm takılı ekipmanlara göre otomatik belirlenir.
 
-## Oda / Üs
+Bu sürümde ten tonu ve saç rengi gibi tam karakter renderına uygulanamayan sahte kontroller kaldırılmıştır. Gerçek katmanlı body/hair/top/bottom renderer eklendiğinde bu kontroller yeniden açılabilir.
 
-`RoomBackground.jsx`, `RoomItemGlyph.jsx` ve `RoomBuilder.jsx` gerçek oda assetlerini kullanır.
+## Yeni asset eklemek
 
-## Kaliteyi daha da yükseltmek
-
-İleride aynı sistem içinde 1024px şeffaf PNG/WebP renderlar eklenebilir. Dosya isimleri ve resolver eşleşmeleri korunduğu sürece uygulamanın geri kalanını değiştirmek gerekmez.
+1. Görseli `src/assets/game-assets/` altında doğru klasöre koy.
+2. Gerekirse `src/data/gameAssets.js` içindeki listeye veya eşlemeye ekle.
+3. React ekranlarını tek tek değiştirmene gerek yoktur.
