@@ -882,3 +882,318 @@ body { overflow: hidden; }
 .v4x-premium-hero-stage{position:relative;height:220px;overflow:hidden;border:1px solid rgba(75,177,255,.16);border-radius:12px;background:#071936}.v4x-premium-hero-stage img{width:100%;height:100%;object-fit:cover;object-position:center 47%;filter:saturate(1.05) contrast(1.02)}.v4x-premium-hero-stage::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 58%,rgba(3,12,31,.62));pointer-events:none}.v4x-premium-hero-stage>span{position:absolute;z-index:2;left:8px;top:8px;padding:4px 6px;border:1px solid rgba(82,227,255,.17);border-radius:6px;color:#8deaff;background:rgba(3,15,36,.72);font-size:5px;font-weight:1000;letter-spacing:.12em}
 .v4x-repeat-hero{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;padding:16px 18px;border:1px solid rgba(255,120,158,.12);border-radius:16px;background:linear-gradient(120deg,rgba(70,20,59,.28),rgba(7,29,65,.78))}.v4x-repeat-hero h2{margin:4px 0 0;font-family:var(--font-display);font-size:clamp(22px,2vw,32px)}.v4x-repeat-hero p{max-width:620px;margin:7px 0 0;color:#8fa0bd;font-size:7px;line-height:1.55}.v4x-repeat-score{min-width:150px;padding:10px;text-align:right;border:1px solid rgba(255,120,158,.11);border-radius:11px;background:rgba(255,120,158,.035)}.v4x-repeat-score strong,.v4x-repeat-score small,.v4x-repeat-score span{display:block}.v4x-repeat-score strong{color:#ff789e;font-size:22px}.v4x-repeat-score small{color:#a8b4ca;font-size:6px}.v4x-repeat-score span{margin-top:4px;color:#667a9d;font-size:5.5px}.v4x-repeat-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:8px}.v4x-repeat-stats>div{padding:10px;border:1px solid rgba(255,255,255,.055);border-radius:10px;background:rgba(7,25,59,.64)}.v4x-repeat-stats strong,.v4x-repeat-stats small{display:block}.v4x-repeat-stats strong{font-size:15px}.v4x-repeat-stats small{margin-top:2px;color:#7083a5;font-size:5.5px}.v4x-repeat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:8px}.v4x-repeat-grid article{padding:12px;border:1px solid rgba(87,153,255,.10);border-radius:13px;background:linear-gradient(145deg,rgba(12,37,78,.74),rgba(5,19,48,.84))}.v4x-repeat-grid header{display:flex;align-items:center;justify-content:space-between}.v4x-repeat-grid header small,.v4x-repeat-grid header strong{display:block}.v4x-repeat-grid header small{color:#64799e;font-size:5px;font-weight:1000}.v4x-repeat-grid header strong{margin-top:2px;font-size:9px}.v4x-repeat-grid header>span{padding:4px 6px;border-radius:7px;color:#ff789e;background:rgba(255,120,158,.06);font-size:5.5px}.v4x-repeat-preview{display:flex;flex-direction:column;gap:4px;margin-top:8px}.v4x-repeat-preview>div{display:flex;align-items:center;gap:6px;padding:5px;border:1px solid rgba(255,255,255,.04);border-radius:7px;background:rgba(255,255,255,.018)}.v4x-repeat-preview b{display:grid;place-items:center;width:19px;height:19px;flex:0 0 auto;border-radius:6px;color:#ff789e;background:rgba(255,120,158,.07);font-size:5px}.v4x-repeat-preview p{margin:0;overflow:hidden;color:#8798b5;font-size:5.8px;white-space:nowrap;text-overflow:ellipsis}.v4x-repeat-progress{height:4px;margin-top:8px;overflow:hidden;border-radius:99px;background:rgba(255,255,255,.05)}.v4x-repeat-progress span{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg,#ff789e,#a98cff)}.v4x-repeat-grid article>button{width:100%;min-height:31px;margin-top:8px;border:0;border-radius:8px;color:white;background:linear-gradient(135deg,#8b56ef,#cf58ff);font-size:6px;font-weight:950;cursor:pointer}.v4x-repeat-empty{margin-top:8px}@media(max-width:760px){.v4x-repeat-hero{align-items:flex-start;flex-direction:column}.v4x-repeat-score{width:100%;text-align:left}.v4x-repeat-stats{grid-template-columns:repeat(2,1fr)}.v4x-repeat-grid{grid-template-columns:1fr}}
 .v4x-avatar-equip-badge{position:absolute;z-index:28;width:25%;aspect-ratio:1;border:1px solid color-mix(in srgb,var(--badge-accent) 35%,transparent);border-radius:10px;overflow:hidden;background:rgba(4,14,34,.78);box-shadow:0 9px 20px rgba(0,0,0,.23),0 0 16px color-mix(in srgb,var(--badge-accent) 10%,transparent);backdrop-filter:blur(8px)}.v4x-avatar-equip-badge img{width:100%;height:100%;object-fit:cover}.v4x-avatar-equip-badge span{position:absolute;left:2px;right:2px;bottom:2px;padding:2px;border-radius:4px;color:#dce8f8;text-align:center;background:rgba(2,10,25,.72);font-size:3.8px;font-weight:900}.v4x-avatar-equip-badge.left-top{left:-4%;top:18%}.v4x-avatar-equip-badge.right-top{right:-4%;top:18%}.v4x-avatar-equip-badge.left-bottom{left:-2%;bottom:14%}.v4x-avatar-equip-badge.right-bottom{right:-2%;bottom:14%}
+
+
+/* =========================================================
+   BİLGİN USTASI V4.1 — READABILITY & DENSITY PASS
+   Daha büyük tipografi, daha ferah kartlar, desktop-first okunabilirlik
+   ========================================================= */
+@media (min-width: 1101px) {
+  html { font-size: 18px; }
+
+  .v4x-root {
+    grid-template-columns: 230px minmax(0, 1fr) 400px;
+    min-height: 760px;
+  }
+  .v4x-root.is-focus-mode { grid-template-columns: 92px minmax(0,1fr); }
+  .v4x-content-canvas { padding: 22px 24px 40px; }
+
+  /* Sol menü */
+  .v4x-side-nav { padding: 16px 12px; }
+  .v4x-brand-block { padding: 0 5px 14px; }
+  .v4x-brand-block .v4-logo-frame { height: 88px; }
+  .v4x-brand-block .v4-brand-copy p { font-size: 10px; line-height: 1.25; }
+  .v4x-brand-block .v4-brand-copy strong { font-size: 16px; }
+  .v4x-nav-stack { gap: 7px; }
+  .v4x-nav-item { min-height: 62px; padding: 10px 11px; gap: 11px; }
+  .v4x-nav-item .v4-nav-icon { width: 38px; height: 38px; border-radius: 11px; }
+  .v4x-nav-item .v4-nav-copy strong { font-size: 15px; line-height: 1.2; }
+  .v4x-nav-item .v4-nav-copy small { margin-top: 4px; font-size: 11px; line-height: 1.25; }
+  .v4x-root.is-focus-mode .v4-brand-block .v4-logo-frame { height: 64px; }
+  .v4x-root.is-focus-mode .v4x-nav-item { min-height: 58px; }
+
+  /* Üst bar */
+  .v4x-topbar { flex-basis: 88px; height: 88px; min-height: 88px; padding: 12px 20px; }
+  .v4x-topbar .v4-topbar-title p { font-size: 11px; }
+  .v4x-topbar .v4-topbar-title h1 { font-size: 28px; }
+  .v4x-player-chip { min-width: 270px; padding: 9px 12px; }
+  .v4-player-avatar { width: 46px; height: 46px; font-size: 18px; }
+  .v4-player-name-row strong { font-size: 15px; }
+  .v4-player-name-row span { font-size: 12px; }
+  .v4-player-meta small { font-size: 11px; margin-top: 5px; }
+  .v4-mini-xp { height: 7px; margin-top: 6px; }
+  .v4x-resource-chip { min-width: 104px; height: 60px; padding: 8px 11px; }
+  .v4-resource-icon { width: 36px; height: 36px; font-size: 18px; }
+  .v4x-resource-chip .v4-resource-copy strong { font-size: 17px; }
+  .v4x-resource-chip .v4-resource-copy small { font-size: 10px; }
+  .v4-sync-chip { min-height: 43px; font-size: 11px; }
+
+  /* Dashboard hero */
+  .v4-mission-hero, .v4-mission-content { min-height: 330px; }
+  .v4-mission-content { padding: 30px; gap: 30px; }
+  .v4-mission-copy { max-width: 760px; }
+  .v4-mission-kicker { font-size: 12px; }
+  .v4-mission-copy h2 { max-width: 760px; font-size: clamp(36px, 3vw, 50px); line-height: 1.08; }
+  .v4-mission-copy > p:not(.v4-mission-kicker) { max-width: 690px; font-size: 16px; line-height: 1.65; }
+  .v4-mission-actions { gap: 12px; margin-top: 24px; }
+  .v4-mission-primary, .v4-mission-secondary { min-height: 50px; padding: 0 20px; font-size: 14px; border-radius: 13px; }
+  .v4-mission-progress-card { width: 230px; padding: 18px; }
+  .v4-mission-progress-card > span { font-size: 11px; }
+  .v4-mission-progress-card > strong { font-size: 18px; }
+  .v4-mission-world-row small, .v4-mission-progress-card > small { font-size: 11px; }
+  .v4-mission-progress { height: 8px; margin: 13px 0 8px; }
+
+  /* Dashboard stat ve paneller */
+  .v4-dashboard-stat-grid { gap: 12px; }
+  .v4-dashboard-stat { min-height: 86px; padding: 16px; gap: 13px; border-radius: 18px; }
+  .v4-dashboard-stat > span { width: 48px; height: 48px; font-size: 19px; }
+  .v4-dashboard-stat strong { font-size: 27px; }
+  .v4-dashboard-stat p { font-size: 14px; margin-top: 6px; }
+  .v4-dashboard-stat small { font-size: 11px; margin-top: 4px; }
+  .v4-dashboard-columns { grid-template-columns: minmax(0,1.38fr) minmax(330px,.72fr); gap: 16px; }
+  .v4-dashboard-panel { padding: 20px; border-radius: 20px; }
+  .v4-panel-heading { margin-bottom: 16px; }
+  .v4-panel-heading p { font-size: 11px; }
+  .v4-panel-heading h3 { font-size: 22px; }
+  .v4-panel-heading > span { font-size: 11px; }
+  .v4-task-list { gap: 9px; }
+  .v4-task-row { min-height: 76px; padding: 12px 14px; gap: 13px; border-radius: 14px; }
+  .v4-task-icon { width: 46px; height: 46px; border-radius: 12px; font-size: 17px; }
+  .v4-task-copy small { font-size: 11px; }
+  .v4-task-copy strong { margin-top: 4px; font-size: 15px; }
+  .v4-task-copy em { margin-top: 4px; font-size: 12px; }
+  .v4-task-reward { min-width: 62px; font-size: 12px; line-height: 1.45; }
+  .v4-task-go { font-size: 21px; }
+  .v4-panel-footer-button { min-height: 42px; padding: 10px 12px; font-size: 13px; }
+  .v4-route-list { gap: 9px; }
+  .v4-route-card { min-height: 67px; padding: 12px; gap: 12px; }
+  .v4-route-number { width: 40px; height: 40px; font-size: 12px; }
+  .v4-route-copy strong { font-size: 14px; }
+  .v4-route-copy small { margin-top: 5px; font-size: 12px; line-height: 1.45; }
+  .v4-break-card { min-height: 74px; padding: 13px; gap: 12px; }
+  .v4-break-icon { width: 43px; height: 43px; font-size: 17px; }
+  .v4-break-card small { font-size: 10px; }
+  .v4-break-card strong { font-size: 14px; }
+  .v4-break-card em { font-size: 11px; }
+  .v4-break-card b { font-size: 12px; }
+  .v4-badge-strip p { font-size: 10px; }
+  .v4-badge-strip span { padding: 7px 9px; font-size: 11px; }
+
+  /* Sağ panel: daha az sıkışık ve okunaklı */
+  .v4x-right-rail { padding: 16px; }
+  .v4x-rail-card, .v4x-rail-character { padding: 16px; margin-bottom: 13px; border-radius: 18px; }
+  .v4x-rail-card header, .v4x-rail-character header { margin-bottom: 12px; }
+  .v4x-rail-card header small, .v4x-rail-character header small { font-size: 10px; line-height: 1.25; }
+  .v4x-rail-card header strong, .v4x-rail-character header strong { font-size: 16px; margin-top: 4px; }
+  .v4x-rail-character header > span { padding: 5px 8px; font-size: 11px; }
+  .v4x-premium-hero-stage { height: 250px; }
+  .v4x-premium-hero-stage > span { left: 10px; top: 10px; padding: 5px 8px; font-size: 10px; }
+  .v4x-rail-actions { gap: 9px; margin-top: 10px; }
+  .v4x-rail-actions button, .v4x-rail-primary, .v4x-rail-secondary { min-height: 43px; padding: 0 12px; font-size: 12px; border-radius: 11px; }
+  .v4x-rail-statrow { gap: 8px; margin-top: 11px; }
+  .v4x-rail-statrow > div { padding: 10px 5px; }
+  .v4x-rail-statrow strong { font-size: 19px; }
+  .v4x-rail-statrow small { font-size: 10px; }
+  .v4x-rail-card > p { font-size: 13px; line-height: 1.6; }
+  .v4x-next-world { margin-top: 10px; padding: 10px; }
+  .v4x-next-world span { font-size: 9px; }
+  .v4x-next-world strong { font-size: 13px; }
+  .v4x-next-world small { font-size: 10px; }
+  .v4x-loop { gap: 7px; }
+  .v4x-loop > div { min-height: 38px; padding: 7px 9px; gap: 10px; }
+  .v4x-loop > div span { width: 25px; height: 25px; font-size: 10px; }
+  .v4x-loop > div strong { font-size: 12px; }
+  .v4x-equipment-slots { gap: 7px; margin-top: 10px; }
+  .v4x-equipment-slots > div { padding: 8px 3px; }
+  .v4x-equipment-slots span { font-size: 12px; }
+  .v4x-equipment-slots small { font-size: 9px; }
+
+  /* Shop */
+  .v4x-shop-hero { min-height: 220px; border-radius: 20px; }
+  .v4x-shop-hero-copy { max-width: 720px; padding: 28px; }
+  .v4x-eyebrow { font-size: 11px; }
+  .v4x-shop-hero h2, .v4x-character-head h2, .v4x-archive-hero h2 { font-size: clamp(30px, 2.4vw, 40px); }
+  .v4x-shop-hero p, .v4x-character-head p, .v4x-archive-hero p { max-width: 680px; font-size: 15px; line-height: 1.6; }
+  .v4x-shop-wallet { width: 190px; padding: 14px; }
+  .v4x-shop-wallet small, .v4x-shop-wallet em { font-size: 10px; }
+  .v4x-shop-wallet strong { font-size: 25px; }
+  .v4x-shop-tabs { gap: 7px; margin-top: 13px; padding: 6px; }
+  .v4x-shop-tabs button { min-height: 42px; padding: 0 17px; font-size: 13px; }
+  .v4x-catalog-controls { gap: 9px; margin-top: 11px; }
+  .v4x-catalog-controls input, .v4x-catalog-controls select, .v4x-catalog-controls button { min-height: 43px; font-size: 13px; }
+  .v4x-item-grid { gap: 12px; margin-top: 13px; }
+  .v4x-item-card { border-radius: 17px; }
+  .v4x-item-rarity { height: 32px; padding: 0 11px; font-size: 10px; }
+  .v4x-item-rarity b { padding: 4px 6px; font-size: 9px; }
+  .v4x-item-art { margin: 0 8px; border-radius: 12px; }
+  .v4x-item-copy { padding: 10px 11px 9px; }
+  .v4x-item-copy small { font-size: 9px; }
+  .v4x-item-copy strong { margin-top: 4px; font-size: 14px; line-height: 1.25; }
+  .v4x-item-copy em { margin-top: 4px; font-size: 11px; }
+  .v4x-item-action { padding: 0 10px 10px; }
+  .v4x-item-action button, .v4x-lock-copy { min-height: 38px; font-size: 12px; }
+
+  /* Character / inventory */
+  .v4x-character-head, .v4x-archive-hero { padding: 21px 23px; border-radius: 19px; }
+  .v4x-character-summary { grid-template-columns: repeat(3, 92px); gap: 8px; }
+  .v4x-character-summary span { padding: 11px; }
+  .v4x-character-summary b { font-size: 21px; }
+  .v4x-character-summary small { font-size: 9px; }
+  .v4x-character-tabs { gap: 7px; margin-top: 12px; padding: 6px; }
+  .v4x-character-tabs button { min-height: 62px; padding: 9px 11px; }
+  .v4x-character-tabs strong { font-size: 13px; }
+  .v4x-character-tabs small { font-size: 10px; }
+  .v4x-inventory-panel, .v4x-pet-manager, .v4x-base-manager, .v4x-style-manager { margin-top: 12px; padding: 15px; border-radius: 18px; }
+  .v4x-inventory-grid { gap: 10px; }
+  .v4x-inventory-card { border-radius: 14px; }
+  .v4x-inventory-preview > span { left: 7px; top: 7px; padding: 4px 6px; font-size: 9px; }
+  .v4x-inventory-copy { padding: 9px 10px; }
+  .v4x-inventory-copy small { font-size: 9px; }
+  .v4x-inventory-copy strong { margin-top: 4px; font-size: 13px; }
+  .v4x-inventory-copy em { margin-top: 4px; font-size: 10px; }
+  .v4x-equip-button { min-height: 36px; margin: 0 9px 9px; width: calc(100% - 18px); font-size: 11px; }
+
+  /* Inspector */
+  .v4x-inspector-card h3 { margin-top: 12px; font-size: 23px; }
+  .v4x-inspector-stats { gap: 8px; margin-top: 11px; }
+  .v4x-inspector-stats > div { padding: 10px; }
+  .v4x-inspector-stats strong { font-size: 15px; }
+  .v4x-inspector-stats small { font-size: 9px; }
+  .v4x-rarity-badge { padding: 5px 8px; font-size: 10px; }
+  .v4x-selected-item-row { gap: 12px; }
+  .v4x-selected-item-row img { width: 96px; height: 96px; }
+  .v4x-selected-item-row div span { font-size: 10px; }
+  .v4x-selected-item-row div strong { font-size: 15px; }
+  .v4x-selected-item-row div small { font-size: 11px; }
+
+  /* Repeat center */
+  .v4x-repeat-hero { padding: 22px 24px; }
+  .v4x-repeat-hero h2 { font-size: clamp(30px, 2.5vw, 40px); }
+  .v4x-repeat-hero p { font-size: 14px; }
+  .v4x-repeat-score strong { font-size: 30px; }
+  .v4x-repeat-score small, .v4x-repeat-score span { font-size: 10px; }
+  .v4x-repeat-stats > div { padding: 13px; }
+  .v4x-repeat-stats strong { font-size: 20px; }
+  .v4x-repeat-stats small { font-size: 10px; }
+  .v4x-repeat-grid article { padding: 16px; }
+  .v4x-repeat-grid header small { font-size: 9px; }
+  .v4x-repeat-grid header strong { font-size: 14px; }
+  .v4x-repeat-grid header > span { font-size: 10px; }
+  .v4x-repeat-preview p { font-size: 11px; }
+  .v4x-repeat-grid article > button { min-height: 40px; font-size: 12px; }
+
+  /* Room builder */
+  .v4x-room-builder { grid-template-columns: 230px minmax(0,1fr); gap: 12px; }
+  .v4x-wall-themes, .v4x-room-palette { padding: 13px; }
+  .v4x-wall-themes > div:first-child small { font-size: 9px; }
+  .v4x-wall-themes > div:first-child strong { font-size: 12px; }
+  .v4x-wall-options button span { font-size: 9px; }
+  .v4x-wall-options em { font-size: 9px; }
+  .v4x-room-hint { padding: 6px 10px; font-size: 10px; }
+  .v4x-room-palette button span { font-size: 10px; }
+  .v4x-room-palette button b { font-size: 9px; }
+  .v4x-room-palette > p { font-size: 10px; }
+}
+
+/* Orta boy masaüstü: okunabilirliği korurken panelleri biraz daralt */
+@media (min-width: 1101px) and (max-width: 1580px) {
+  html { font-size: 17px; }
+  .v4x-root { grid-template-columns: 215px minmax(0,1fr) 360px; }
+  .v4x-item-grid { grid-template-columns: repeat(3,minmax(0,1fr)); }
+  .v4x-inventory-grid { grid-template-columns: repeat(4,minmax(0,1fr)); }
+  .v4-dashboard-columns { grid-template-columns: 1fr; }
+  .v4-mission-copy h2 { font-size: clamp(34px, 3.2vw, 46px); }
+}
+
+/* Tablet: eski kompakt yapıdan daha büyük yazı */
+@media (min-width: 761px) and (max-width: 1100px) {
+  html { font-size: 16px; }
+  .v4x-topbar .v4-topbar-title h1 { font-size: 22px; }
+  .v4x-player-name-row strong { font-size: 13px; }
+  .v4x-resource-chip .v4-resource-copy strong { font-size: 14px; }
+  .v4x-item-copy strong, .v4x-inventory-copy strong { font-size: 12px; }
+  .v4x-item-copy small, .v4x-item-copy em, .v4x-inventory-copy small, .v4x-inventory-copy em { font-size: 9px; }
+  .v4x-item-action button, .v4x-lock-copy, .v4x-equip-button { font-size: 10px; }
+}
+
+/* Mobil: minimum okunabilir tipografi */
+@media (max-width: 760px) {
+  html { font-size: 16px; }
+  .v4x-content-canvas { padding: 14px 12px 94px; }
+  .v4x-topbar { min-height: 70px; padding: 9px 10px; }
+  .v4-player-name-row strong { font-size: 13px; }
+  .v4-player-meta small { font-size: 10px; }
+  .v4x-resource-chip .v4-resource-copy strong { font-size: 13px; }
+  .v4x-shop-hero-copy { max-width: 76%; padding: 18px; }
+  .v4x-shop-hero h2 { font-size: 26px; }
+  .v4x-shop-hero p { font-size: 13px; }
+  .v4x-shop-tabs button { min-height: 38px; font-size: 11px; }
+  .v4x-item-grid { gap: 9px; }
+  .v4x-item-rarity { height: 29px; font-size: 9px; }
+  .v4x-item-copy { padding: 9px; }
+  .v4x-item-copy small { font-size: 9px; }
+  .v4x-item-copy strong { font-size: 12px; }
+  .v4x-item-copy em { font-size: 10px; }
+  .v4x-item-action button, .v4x-lock-copy { min-height: 35px; font-size: 10px; }
+  .v4x-character-tabs strong { font-size: 12px; }
+  .v4x-character-tabs small { font-size: 9px; }
+  .v4x-inventory-copy strong { font-size: 12px; }
+  .v4x-inventory-copy small, .v4x-inventory-copy em { font-size: 9px; }
+  .v4x-equip-button { min-height: 34px; font-size: 10px; }
+  .v4-mission-copy h2 { font-size: 30px; }
+  .v4-mission-copy > p:not(.v4-mission-kicker) { font-size: 14px; }
+  .v4-task-copy strong { font-size: 13px; }
+  .v4-task-copy em { font-size: 11px; }
+}
+
+
+/* V4.1 safety net: kullanıcıya anlam taşıyan mikro metinleri okunabilir tabanın üstünde tut */
+@media (min-width: 1101px) {
+  .v4-root small,
+  .v4-root em { font-size: 11px !important; line-height: 1.4; }
+
+  .v4-loading-kicker, .v4-resume-copy p { font-size: 12px; }
+  .v4-resume-copy small { font-size: 11px !important; }
+
+  .v4x-hero-loop b { font-size: 11px; }
+  .v4x-hero-loop i { font-size: 12px; }
+  .v4x-category-row button,
+  .v4x-rarity-row button,
+  .v4x-owned-toggle { min-height: 38px; padding: 0 12px; font-size: 12px; }
+  .v4x-results-count { font-size: 11px; }
+  .v4x-search input { min-height: 43px; font-size: 13px; }
+  .v4x-catalog-controls select { min-height: 43px; font-size: 12px; }
+  .v4x-legendary-note, .v4x-locked-note, .v4x-inspector-empty { padding: 11px; font-size: 12px; line-height: 1.5; }
+  .v4x-empty strong { font-size: 15px; }
+  .v4x-empty small { font-size: 11px !important; }
+
+  .v4x-real-reward-info p { font-size: 13px; line-height: 1.55; }
+  .v4x-reward-grid article strong { font-size: 14px; }
+  .v4x-reward-grid article button { min-height: 38px; font-size: 12px; }
+  .v4x-pending-rewards b { font-size: 13px; }
+  .v4x-pending-rewards span { font-size: 11px; }
+
+  .v4x-slot-tabs button { min-height: 39px; font-size: 12px; }
+  .v4x-section-title > span { font-size: 11px; }
+  .v4x-room-tabs button { min-height: 52px; }
+  .v4x-room-tabs button strong { font-size: 13px; }
+  .v4x-room-tabs button small { font-size: 10px !important; }
+  .v4x-room-inventory-note p { font-size: 12px; line-height: 1.5; }
+  .v4x-style-grid strong { font-size: 13px; }
+  .v4x-style-grid small { font-size: 10px !important; }
+  .v4x-style-grid b { font-size: 10px; }
+
+  .v4x-archive-progress > span { font-size: 11px; }
+  .v4x-archive-stats strong { font-size: 18px; }
+  .v4x-sticker-categories header strong { font-size: 14px; }
+  .v4x-sticker-categories header span { font-size: 11px; }
+  .v4x-sticker-categories article > div > div b { font-size: 11px; }
+  .v4x-badge-list strong { font-size: 13px; }
+  .v4x-badge-list b { font-size: 10px; }
+  .v4x-dashboard-actions small { font-size: 10px !important; }
+  .v4x-dashboard-actions strong { font-size: 14px; }
+  .v4x-dashboard-actions b { font-size: 11px; }
+
+  .v4x-repeat-preview b { width: 26px; height: 26px; font-size: 10px; }
+  .v4x-avatar-equip-badge span { font-size: 9px; }
+}

@@ -155,7 +155,7 @@ export default function WorldMap({ profile, onClose }) {
 
       <header className="mb-4 flex items-start justify-between gap-4 px-1">
         <div className="min-w-0">
-          <p className="text-[10px] font-black uppercase tracking-[0.22em] text-[#52E3C2]">
+          <p className="text-sm font-black uppercase tracking-[0.22em] text-[#52E3C2]">
             Keşif Haritası
           </p>
 
@@ -220,7 +220,7 @@ export default function WorldMap({ profile, onClose }) {
           </div>
 
           <div className="min-w-0 flex-1">
-            <p className="text-[9px] font-black uppercase tracking-[0.18em] text-[#8793B4]">
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-[#8793B4]">
               Şu an bulunduğun bölge
             </p>
 
@@ -228,7 +228,7 @@ export default function WorldMap({ profile, onClose }) {
               {currentWorld?.title}
             </p>
 
-            <p className="mt-1 text-[10px] font-medium text-[#8793B4]">
+            <p className="mt-1 text-sm font-medium text-[#8793B4]">
               {nextWorld
                 ? `Sonraki bölge Seviye ${nextWorld.unlockLevel}'de açılır.`
                 : "Tüm bölgeleri keşfettin."}
@@ -236,7 +236,7 @@ export default function WorldMap({ profile, onClose }) {
           </div>
 
           <div className="text-right">
-            <p className="text-[9px] font-black uppercase tracking-wider text-[#687494]">
+            <p className="text-xs font-black uppercase tracking-wider text-[#687494]">
               Bölge
             </p>
             <p className="mt-0.5 text-lg font-black text-[#52E3C2]">
@@ -432,7 +432,7 @@ export default function WorldMap({ profile, onClose }) {
 
                     {world.completed && (
                       <span
-                        className="absolute -right-1 -top-1 flex h-5 w-5 items-center justify-center rounded-full border text-[9px] font-black"
+                        className="absolute -right-1 -top-1 flex h-5 w-5 items-center justify-center rounded-full border text-xs font-black"
                         style={{
                           color: "#082119",
                           background: "#52E3C2",
@@ -455,7 +455,7 @@ export default function WorldMap({ profile, onClose }) {
                         />
 
                         <span
-                          className="absolute -bottom-5 whitespace-nowrap rounded-full px-2 py-0.5 text-[7px] font-black uppercase tracking-[0.13em]"
+                          className="absolute -bottom-5 whitespace-nowrap rounded-full px-2 py-0.5 text-xs font-black uppercase tracking-[0.13em]"
                           style={{
                             color: accent,
                             background: "rgba(7,11,29,.88)",
@@ -484,7 +484,7 @@ export default function WorldMap({ profile, onClose }) {
                     }}
                   >
                     <p
-                      className="truncate text-[10px] font-black sm:text-[11px]"
+                      className="truncate text-sm font-black sm:text-sm"
                       style={{
                         color: world.unlocked ? "#F4F7FF" : "#7B86A4",
                       }}
@@ -493,7 +493,7 @@ export default function WorldMap({ profile, onClose }) {
                     </p>
 
                     <p
-                      className="mt-0.5 text-[8px] font-bold uppercase tracking-[0.1em]"
+                      className="mt-0.5 text-xs font-bold uppercase tracking-[0.1em]"
                       style={{
                         color: world.unlocked ? accent : "#687494",
                       }}
@@ -594,7 +594,7 @@ function WorldDetailSheet({
 
             <div className="min-w-0">
               <p
-                className="text-[9px] font-black uppercase tracking-[0.19em]"
+                className="text-xs font-black uppercase tracking-[0.19em]"
                 style={{ color: world.unlocked ? accent : "#687494" }}
               >
                 {world.completed
@@ -631,7 +631,7 @@ function WorldDetailSheet({
           />
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#07101F]/75 via-transparent to-transparent" />
           <span
-            className="absolute bottom-3 left-3 rounded-xl border px-2.5 py-1 text-[9px] font-black uppercase tracking-[0.12em] backdrop-blur-md"
+            className="absolute bottom-3 left-3 rounded-xl border px-2.5 py-1 text-xs font-black uppercase tracking-[0.12em] backdrop-blur-md"
             style={{
               color: world.unlocked ? accent : "#8793B4",
               background: "rgba(7,11,29,.72)",
@@ -656,7 +656,7 @@ function WorldDetailSheet({
               </div>
 
               <div className="flex-1">
-                <p className="text-[9px] font-black uppercase tracking-[0.15em] text-[#687494]">
+                <p className="text-xs font-black uppercase tracking-[0.15em] text-[#687494]">
                   Açılma koşulu
                 </p>
                 <p className="mt-0.5 text-xs font-black text-white">
@@ -673,7 +673,7 @@ function WorldDetailSheet({
 
         <div className="relative z-10 my-5 flex items-center gap-3">
           <div className="h-px flex-1 bg-white/[0.07]" />
-          <p className="text-[9px] font-black uppercase tracking-[0.18em] text-[#687494]">
+          <p className="text-xs font-black uppercase tracking-[0.18em] text-[#687494]">
             Bölge Ödülleri
           </p>
           <div className="h-px flex-1 bg-white/[0.07]" />
@@ -705,12 +705,12 @@ function WorldDetailSheet({
                     />
                   </div>
                   <div className="min-w-0 flex-1">
-                    <p className="truncate text-[11px] font-black text-white">
+                    <p className="truncate text-sm font-black text-white">
                       {item.label}
                     </p>
 
                     <p
-                      className="mt-1 text-[9px] font-bold"
+                      className="mt-1 text-xs font-bold"
                       style={{ color: owned ? "#52E3C2" : "#8793B4" }}
                     >
                       {owned
@@ -764,7 +764,7 @@ function LegendDot({ color, label, pulse = false }) {
         )}
       </span>
 
-      <span className="text-[8px] font-bold uppercase tracking-[0.1em] text-[#687494]">
+      <span className="text-xs font-bold uppercase tracking-[0.1em] text-[#687494]">
         {label}
       </span>
     </div>

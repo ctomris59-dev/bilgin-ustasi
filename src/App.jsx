@@ -464,7 +464,7 @@ function WorldUnlockReveal({ world, onClose }) {
       <div className="pointer-events-none absolute inset-0" style={{ background: `radial-gradient(circle at center, ${world.accent || world.color}18, transparent 45%)` }} />
       <div className="glass-card animate-pop relative w-full max-w-md overflow-hidden p-6 text-center" style={{ borderColor: `${world.accent || world.color}40`, background: "linear-gradient(145deg,rgba(22,30,61,.96),rgba(6,10,24,.97))" }}>
         <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl text-3xl animate-pulse-glow" style={{ color: world.accent, background: `${world.accent}12`, border: `1px solid ${world.accent}30` }}>{world.emoji}</div>
-        <p className="mt-4 text-[9px] font-black uppercase tracking-[.24em]" style={{ color: world.accent }}>Yeni Bölge Keşfedildi</p>
+        <p className="mt-4 text-sm font-black uppercase tracking-[.24em]" style={{ color: world.accent }}>Yeni Bölge Keşfedildi</p>
         <h2 className="font-display mt-1 text-2xl font-black">{world.title}</h2>
         <p className="mt-2 text-xs leading-relaxed text-[#8793B4]">{world.blurb}</p>
         <button onClick={onClose} className="sticker-btn mt-5 w-full py-3 text-sm">Haritaya Eklendi ✓</button>

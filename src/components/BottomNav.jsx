@@ -160,7 +160,7 @@ export default function BottomNav({ active, onChange }) {
                 </span>
 
                 <span
-                  className={`relative z-10 mt-0.5 max-w-full truncate text-[9px] font-black tracking-tight transition-all duration-300 sm:text-[10px] ${
+                  className={`relative z-10 mt-0.5 max-w-full truncate text-xs font-black tracking-tight transition-all duration-300 sm:text-sm ${
                     isActive ? "translate-y-0 opacity-100" : "opacity-55"
                   }`}
                   style={{ color: isActive ? "#F4F7FF" : "#8793B4" }}
