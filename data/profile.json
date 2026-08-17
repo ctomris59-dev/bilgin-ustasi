@@ -1,12 +1,12 @@
 {
   "childName": "Bilgin Adayı",
   "accountCreatedAt": "2026-08-16T11:49:54.152Z",
-  "xp": 136,
-  "coins": 60,
+  "xp": 282,
+  "coins": 132,
   "streak": {
-    "current": 1,
-    "longest": 1,
-    "lastWeekKey": "2026-W33",
+    "current": 2,
+    "longest": 2,
+    "lastWeekKey": "2026-W34",
     "freezesAvailable": 1
   },
   "unlockedItems": [
@@ -74,7 +74,7 @@
         "hint": "Present Perfect = have/has + past participle"
       },
       "addedAt": "2026-08-16T12:46:41.583Z",
-      "resolved": false
+      "resolved": true
     },
     {
       "id": "m1786884401583-q3",
@@ -93,7 +93,7 @@
         "hint": "'see' fiilinin 3. hali (past participle) 'seen'dir."
       },
       "addedAt": "2026-08-16T12:46:41.583Z",
-      "resolved": false
+      "resolved": true
     },
     {
       "id": "m1786884856610-q1",
@@ -112,7 +112,7 @@
         "hint": "Present Perfect = have/has + past participle"
       },
       "addedAt": "2026-08-16T12:54:16.610Z",
-      "resolved": false
+      "resolved": true
     },
     {
       "id": "m1786884856610-q2",
@@ -131,7 +131,7 @@
         "hint": "'have + never + been' yapısına dikkat et."
       },
       "addedAt": "2026-08-16T12:54:16.610Z",
-      "resolved": false
+      "resolved": true
     },
     {
       "id": "m1786884856610-q4",
@@ -169,7 +169,7 @@
         "hint": "Kısa cevaplarda 'have/has' tekrar edilir."
       },
       "addedAt": "2026-08-16T12:54:16.610Z",
-      "resolved": false
+      "resolved": true
     },
     {
       "id": "m1786884856610-q6",
@@ -188,7 +188,7 @@
         "hint": "'yet' genellikle Present Perfect olumsuz cümlelerde kullanılır."
       },
       "addedAt": "2026-08-16T12:54:16.610Z",
-      "resolved": false
+      "resolved": true
     }
   ],
   "history": [
@@ -213,11 +213,22 @@
       "xpEarned": 41,
       "coinsEarned": 12,
       "isRetry": false
+    },
+    {
+      "id": "h1786965137753",
+      "testId": "retry-İngilizce (Orta 2 Seviyesi)-1786965092320",
+      "subject": "İngilizce (Orta 2 Seviyesi)",
+      "date": "2026-08-17T11:12:17.753Z",
+      "correctCount": 6,
+      "totalCount": 7,
+      "xpEarned": 146,
+      "coinsEarned": 72,
+      "isRetry": true
     }
   ],
   "stats": {
     "testsBySubject": {
-      "İngilizce (Orta 2 Seviyesi)": 2
+      "İngilizce (Orta 2 Seviyesi)": 3
     },
     "fullScoreBySubject": {},
     "speedBonusCount": 0,
@@ -245,13 +256,14 @@
   "stickerAlbum": {
     "unlockedIds": [
       "sticker-0-0",
-      "sticker-0-1"
+      "sticker-0-1",
+      "sticker-0-2"
     ]
   },
   "miniGame": {
     "lastRewardDate": null,
     "bestMoves": {}
   },
-  "lastSyncedAt": "2026-08-17T11:05:55.073Z",
+  "lastSyncedAt": "2026-08-17T11:12:17.841Z",
   "gems": 0
 }
