@@ -1,0 +1,251 @@
+{
+  "id": "fenbilimleri-unite2-canlilar-dunyasi-genis-p2",
+  "subject": "Fen Bilimleri",
+  "title": "Ünite 2 - Canlılar Dünyası (Geniş Havuz) (2/4)",
+  "week": 2,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Aşağıdakilerden hangisi bir omurgasız hayvan örneğidir?",
+      "options": [
+        "Salyangoz",
+        "Fare",
+        "Güvercin",
+        "Kedi"
+      ],
+      "correctIndex": 0,
+      "hint": "Bu canlı yumuşak vücutlu, kabuklu bir yumuşakçadır."
+    },
+    {
+      "id": "q2",
+      "text": "Solucanlar hangi hayvan grubuna girer?",
+      "options": [
+        "Omurgalılar",
+        "Omurgasızlar",
+        "Memeliler",
+        "Sürüngenler"
+      ],
+      "correctIndex": 1,
+      "hint": "Solucanların iç iskeleti ve omurgası yoktur."
+    },
+    {
+      "id": "q3",
+      "text": "Aşağıdakilerden hangisi yumurtayla çoğalan bir hayvan grubudur?",
+      "options": [
+        "Sadece memeliler",
+        "Kuşlar",
+        "Sadece insanlar",
+        "Hiçbiri yumurtlamaz"
+      ],
+      "correctIndex": 1,
+      "hint": "Kuşların yuvalarında ne bulunur?"
+    },
+    {
+      "id": "q4",
+      "text": "Bitkiler kendi besinlerini nasıl üretir?",
+      "options": [
+        "Toprağı yiyerek",
+        "Fotosentez yaparak",
+        "Diğer canlıları avlayarak",
+        "Besin üretemezler"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu süreçte güneş ışığı, su ve karbondioksit kullanılır."
+    },
+    {
+      "id": "q5",
+      "text": "Fotosentez için bitkilerin ihtiyaç duyduğu temel unsurlardan biri hangisidir?",
+      "options": [
+        "Tuz",
+        "Güneş ışığı",
+        "Şeker",
+        "Petrol"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu unsur olmadan fotosentez gerçekleşmez."
+    },
+    {
+      "id": "q6",
+      "text": "Çiçekli bitkiler ile çiçeksiz bitkiler arasındaki temel fark nedir?",
+      "options": [
+        "Çiçekli bitkiler yeşil değildir",
+        "Çiçekli bitkiler tohumla, çiçeksizler genelde sporla üreyebilir",
+        "Çiçeksiz bitkiler su içmez",
+        "Hiçbir fark yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Eğrelti otu gibi bitkiler çiçek açmadan çoğalabilir."
+    },
+    {
+      "id": "q7",
+      "text": "Aşağıdakilerden hangisi bir çiçeksiz bitki örneğidir?",
+      "options": [
+        "Gül",
+        "Eğrelti otu",
+        "Lale",
+        "Papatya"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu bitki sporla çoğalır, çiçek açmaz."
+    },
+    {
+      "id": "q8",
+      "text": "Memeli hayvanların çoğu nasıl doğar?",
+      "options": [
+        "Yumurtadan çıkarak",
+        "Canlı doğarak",
+        "Tohumdan",
+        "Sporla"
+      ],
+      "correctIndex": 1,
+      "hint": "Kedi, köpek, insan gibi memelileri düşün."
+    },
+    {
+      "id": "q9",
+      "text": "Aşağıdakilerden hangisi bir memeli hayvan DEĞİLDİR?",
+      "options": [
+        "Yarasa",
+        "Balina",
+        "Timsah",
+        "Fare"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu hayvan bir sürüngendir, memeli değildir."
+    },
+    {
+      "id": "q10",
+      "text": "Yarasalar uçabilen tek memeli grubudur. Bu bilgiye göre yarasalar için ne söylenebilir?",
+      "options": [
+        "Kuş grubuna girerler",
+        "Memeli olsalar da uçabilirler",
+        "Sürüngendirler",
+        "Yumurtlarlar"
+      ],
+      "correctIndex": 1,
+      "hint": "Uçabilmek her zaman kuş olmak anlamına gelmez."
+    },
+    {
+      "id": "q11",
+      "text": "Balinalar suda yaşamalarına rağmen neden balık değil memelidir?",
+      "options": [
+        "Solungaçları olduğu için",
+        "Akciğerle solunum yapıp yavrularını sütle besledikleri için",
+        "Pullu oldukları için",
+        "Yumurtladıkları için"
+      ],
+      "correctIndex": 1,
+      "hint": "Memeli olmanın temel özellikleri solunum ve beslenme şeklidir."
+    },
+    {
+      "id": "q12",
+      "text": "Zorlayıcı soru: Bir canlının kök, gövde, yaprak yapısı yok; kendi besinini üretemiyor ve başka canlılardan besleniyor. Bu canlı hangi grupta olabilir?",
+      "options": [
+        "Bitkiler",
+        "Mantarlar",
+        "Memeliler",
+        "Kuşlar"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu özellikler bitkilerden ayıran temel farklardır."
+    },
+    {
+      "id": "q13",
+      "text": "Zorlayıcı soru: Kuşlar ve balıklar her ikisi de omurgalıdır. Aralarındaki en temel fark hangisidir?",
+      "options": [
+        "Kuşlar yumurtlar, balıklar yumurtlamaz",
+        "Kuşlar akciğerle, balıklar solungaçla solunum yapar",
+        "Kuşların omurgası yoktur",
+        "İkisi de aynı ortamda yaşar"
+      ],
+      "correctIndex": 1,
+      "hint": "Solunum organları yaşadıkları ortama göre farklılaşır."
+    },
+    {
+      "id": "q14",
+      "text": "Zorlayıcı soru: Bir hayvan hem karada hem suda yaşayabiliyor, gençken solungaçla, yetişkinken akciğerle solunum yapıyor. Bu hayvan hangi gruptandır?",
+      "options": [
+        "Sürüngen",
+        "Memeli",
+        "İki yaşamlı (amfibi)",
+        "Kuş"
+      ],
+      "correctIndex": 2,
+      "hint": "Kurbağaların yaşam döngüsünü düşün."
+    },
+    {
+      "id": "q15",
+      "text": "Zorlayıcı soru: Örümcekler böceklere benzese de aslında böcek DEĞİLDİR. Bunun en önemli sebebi nedir?",
+      "options": [
+        "Örümceklerin 8 bacağı, böceklerin 6 bacağı vardır",
+        "Örümcekler uçabilir",
+        "Böcekler daha büyüktür",
+        "Örümceklerin kanadı vardır"
+      ],
+      "correctIndex": 0,
+      "hint": "Bacak sayısı, bu iki grubu ayıran en belirgin özelliktir."
+    },
+    {
+      "id": "q16",
+      "text": "Aşağıdaki canlı gruplarından hangisi omurgalıdır?",
+      "options": [
+        "Böcekler",
+        "Örümcekler",
+        "Kuşlar",
+        "Solucanlar"
+      ],
+      "correctIndex": 2,
+      "hint": "İç iskeletinde omurga bulunan canlıları düşün."
+    },
+    {
+      "id": "q17",
+      "text": "Bir bitkinin yeşil renkli olmasını sağlayan ve fotosentez için gerekli madde nedir?",
+      "options": [
+        "Klorofil",
+        "Su",
+        "Toprak",
+        "Karbondioksit"
+      ],
+      "correctIndex": 0,
+      "hint": "Bu madde bitkilerin yapraklarında bulunur ve yeşil rengi verir."
+    },
+    {
+      "id": "q18",
+      "text": "Fotosentez sonucunda bitkiler hangi gazı üretir?",
+      "options": [
+        "Karbondioksit",
+        "Azot",
+        "Oksijen",
+        "Metan"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu gaz, canlıların solunumu için gereklidir."
+    },
+    {
+      "id": "q19",
+      "text": "Fotosentez için bitkilerin havadan aldığı gaz hangisidir?",
+      "options": [
+        "Oksijen",
+        "Karbondioksit",
+        "Azot",
+        "Hidrojen"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu gaz, fotosentez sürecinde şekere dönüştürülür."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: En sevdiğin hayvan türü hangisi (memeli, kuş, balık vb.)?",
+    "options": [
+      "Memeli",
+      "Kuş",
+      "Balık",
+      "Diğer"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

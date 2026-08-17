@@ -1,0 +1,239 @@
+{
+  "id": "sosyalbilgiler-unite2-evimiz-dunya-genis-p2",
+  "subject": "Sosyal Bilgiler",
+  "title": "Ünite 2 - Evimiz Dünya (Geniş Havuz) (2/4)",
+  "week": 2,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Aşağıdakilerden hangisi bir doğal afet örneğidir?",
+      "options": [
+        "Orman yangını",
+        "Trafik kazası",
+        "Elektrik kesintisi",
+        "Bilgisayar arızası"
+      ],
+      "correctIndex": 0,
+      "hint": "Bu olay genelde kuraklık veya insan hatası sonucu doğada başlar ve doğal çevreyi etkiler."
+    },
+    {
+      "id": "q2",
+      "text": "Sel felaketinde en güvenli davranış hangisidir?",
+      "options": [
+        "Suya girip yüzmeye çalışmak",
+        "Yüksek ve güvenli bir yere çıkmak",
+        "Araba kullanmaya devam etmek",
+        "Suyun içinden yürüyerek geçmek"
+      ],
+      "correctIndex": 1,
+      "hint": "Yükseğe çıkmak, sel sularından korunmanın en güvenli yoludur."
+    },
+    {
+      "id": "q3",
+      "text": "Heyelan (toprak kayması) genellikle hangi tür arazilerde daha sık görülür?",
+      "options": [
+        "Düz ovalarda",
+        "Eğimli, yamaçlı arazilerde",
+        "Çöllerde",
+        "Deniz kıyısında her zaman"
+      ],
+      "correctIndex": 1,
+      "hint": "Eğimli yüzeylerde toprak daha kolay kayabilir."
+    },
+    {
+      "id": "q4",
+      "text": "Bir bölgede sık deprem meydana gelmesinin nedenlerinden biri nedir?",
+      "options": [
+        "Bölgenin nüfusu fazla olduğu için",
+        "Yer kabuğundaki fay hatlarına yakın olması",
+        "Bölgenin denize yakın olması",
+        "Bölgenin çok sıcak olması"
+      ],
+      "correctIndex": 1,
+      "hint": "Depremler, yer kabuğundaki kırıklardan (fay hatlarından) kaynaklanır."
+    },
+    {
+      "id": "q5",
+      "text": "Aşağıdakilerden hangisi bir yerleşim birimi büyüklük sıralamasında en küçüğüdür?",
+      "options": [
+        "Şehir",
+        "Köy",
+        "Kasaba",
+        "Metropol"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu yerleşim biriminde nüfus genellikle daha azdır ve tarım ağırlıklıdır."
+    },
+    {
+      "id": "q6",
+      "text": "Şehirlerde nüfusun kırsal alanlara göre daha yoğun olmasının başlıca sebeplerinden biri nedir?",
+      "options": [
+        "Şehirlerde iş ve eğitim imkanlarının daha fazla olması",
+        "Şehirlerde hiç insan yaşamaması",
+        "Kırsal alanların daha büyük olması",
+        "Hiçbir sebep yoktur"
+      ],
+      "correctIndex": 0,
+      "hint": "İnsanlar genellikle iş ve hizmetlere yakın olmak için şehirlere göç eder."
+    },
+    {
+      "id": "q7",
+      "text": "'Doğal çevre' ile 'beşeri çevre' arasındaki fark nedir?",
+      "options": [
+        "Doğal çevre insan yapımı, beşeri çevre doğaldır",
+        "Doğal çevre doğada var olan, beşeri çevre insan eliyle oluşturulandır",
+        "İkisi aynı şeydir",
+        "Hiçbir fark yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Dağlar, nehirler doğaldır; yollar, binalar insan yapımıdır (beşeri)."
+    },
+    {
+      "id": "q8",
+      "text": "Aşağıdakilerden hangisi bir 'beşeri çevre' unsurudur?",
+      "options": [
+        "Dağ",
+        "Nehir",
+        "Köprü",
+        "Orman"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu yapı, insanlar tarafından inşa edilmiştir."
+    },
+    {
+      "id": "q9",
+      "text": "Aşağıdakilerden hangisi bir 'doğal çevre' unsurudur?",
+      "options": [
+        "Yol",
+        "Bina",
+        "Göl",
+        "Baraj"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu, insan müdahalesi olmadan doğada var olan bir unsurdur."
+    },
+    {
+      "id": "q10",
+      "text": "Bir bölgede yoğun yağmur sonucu meydana gelen ani su baskınına ne denir?",
+      "options": [
+        "Kuraklık",
+        "Sel",
+        "Deprem",
+        "Çığ"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu afet, genelde şiddetli yağışlardan sonra nehir taşkınlarıyla oluşur."
+    },
+    {
+      "id": "q11",
+      "text": "Yüksek dağlık bölgelerde kar kütlelerinin aniden kayarak aşağı inmesine ne denir?",
+      "options": [
+        "Sel",
+        "Çığ",
+        "Heyelan",
+        "Deprem"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu olay genellikle kayak bölgelerinde bir tehlike olarak bilinir."
+    },
+    {
+      "id": "q12",
+      "text": "Deprem çantasında bulunması gereken temel malzemelerden biri hangisidir?",
+      "options": [
+        "Oyuncaklar",
+        "Su, ilk yardım malzemeleri ve el feneri",
+        "Televizyon",
+        "Bilgisayar oyunları"
+      ],
+      "correctIndex": 1,
+      "hint": "Acil durum çantasında hayati ihtiyaçlar öncelikli olmalıdır."
+    },
+    {
+      "id": "q13",
+      "text": "Zorlayıcı soru: Bir haritada iki nokta arası ölçekte 5 cm olarak gösteriliyor ve ölçek '1 cm = 10 km' ise, bu iki nokta arasındaki gerçek mesafe kaç km'dir?",
+      "options": [
+        "15 km",
+        "50 km",
+        "500 km",
+        "5 km"
+      ],
+      "correctIndex": 1,
+      "hint": "5 cm × 10 km/cm işlemini yap."
+    },
+    {
+      "id": "q14",
+      "text": "Bir yerin 'mutlak konumu' ne ile belirtilir?",
+      "options": [
+        "Başka bir yere göre tarifle",
+        "Enlem ve boylam koordinatlarıyla",
+        "Sadece renkle",
+        "Hava durumuyla"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu konum türü, sabit ve evrensel bir referans sistemine dayanır."
+    },
+    {
+      "id": "q15",
+      "text": "Aşağıdakilerden hangisi göreceli konuma bir örnektir?",
+      "options": [
+        "40 derece kuzey enlemi",
+        "Okulun eczanenin karşısında olması",
+        "30 derece doğu boylamı",
+        "Ekvator çizgisi üzerinde olma"
+      ],
+      "correctIndex": 1,
+      "hint": "Göreceli konum, başka bir referans noktasına göre tarif edilir."
+    },
+    {
+      "id": "q16",
+      "text": "Bir bölgede sık orman yangını çıkmasının olası nedenlerinden biri hangisidir?",
+      "options": [
+        "Bölgenin çok nemli olması",
+        "Kuraklık ve yüksek sıcaklıklar",
+        "Bölgede hiç ağaç olmaması",
+        "Bölgenin çok soğuk olması"
+      ],
+      "correctIndex": 1,
+      "hint": "Kuru ve sıcak hava koşulları, yangın riskini artırır."
+    },
+    {
+      "id": "q17",
+      "text": "Orman yangınlarını önlemek için alınabilecek tedbirlerden biri hangisidir?",
+      "options": [
+        "Ormanlık alanlarda ateş yakmamak ve dikkatli olmak",
+        "Ormanlara sık sık ateş yakmak",
+        "Kuru otları toplamamak",
+        "Hiçbir tedbir almamak"
+      ],
+      "correctIndex": 0,
+      "hint": "İnsan kaynaklı yangınların çoğu dikkatsizlikten kaynaklanır."
+    },
+    {
+      "id": "q18",
+      "text": "Aşağıdakilerden hangisi haritalarda kullanılan bir 'lejant/açıklama' unsuru DEĞİLDİR?",
+      "options": [
+        "Sembollerin anlamlarının listesi",
+        "Renklerin ne anlama geldiğinin açıklaması",
+        "Haritanın çizildiği tarih",
+        "Ölçek bilgisi"
+      ],
+      "correctIndex": 2,
+      "hint": "Lejant, haritadaki sembol ve renklerin anlamını açıklayan kısımdır."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Yaşadığın ilin hangi bölgede olduğunu biliyor musun?",
+    "options": [
+      "Evet, biliyorum",
+      "Tam emin değilim",
+      "Bilmiyorum ama merak ediyorum",
+      "Şimdi öğrenmek isterim"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

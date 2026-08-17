@@ -1,0 +1,227 @@
+{
+  "id": "sosyalbilgiler-unite2-evimiz-dunya-genis-p3",
+  "subject": "Sosyal Bilgiler",
+  "title": "Ünite 2 - Evimiz Dünya (Geniş Havuz) (3/4)",
+  "week": 2,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Bir şehir planı (kroki) hangi amaçla kullanılır?",
+      "options": [
+        "Ülkeler arası sınırları göstermek için",
+        "Bir şehrin sokak, bina ve önemli yerlerini detaylı göstermek için",
+        "Sadece hava durumu için",
+        "Dünya haritasını göstermek için"
+      ],
+      "correctIndex": 1,
+      "hint": "Şehir planları, daha küçük ve detaylı alanları gösterir."
+    },
+    {
+      "id": "q2",
+      "text": "Zorlayıcı soru: Bir kişi 'okulum evimin doğusunda' diyor. Bu kişi evden okula giderken hangi yöne doğru hareket etmelidir?",
+      "options": [
+        "Batıya",
+        "Doğuya",
+        "Kuzeye",
+        "Güneye"
+      ],
+      "correctIndex": 1,
+      "hint": "Okul, evin doğusunda olduğuna göre, evden okula gitmek doğu yönünde hareket etmek demektir."
+    },
+    {
+      "id": "q3",
+      "text": "Aşağıdakilerden hangisi bir doğal afet sonrası yapılması gereken doğru davranışlardan biridir?",
+      "options": [
+        "Hasarlı binalara hemen girmek",
+        "Yetkililerin talimatlarını takip etmek",
+        "Elektrikli aletleri kontrolsüz kullanmak",
+        "Panik yapıp koşuşturmak"
+      ],
+      "correctIndex": 1,
+      "hint": "Afet sonrası güvenlik için resmi yönlendirmeleri takip etmek önemlidir."
+    },
+    {
+      "id": "q4",
+      "text": "Türkiye'nin kuzeyinde hangi deniz bulunur?",
+      "options": [
+        "Akdeniz",
+        "Karadeniz",
+        "Ege Denizi",
+        "Marmara Denizi"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu deniz, Türkiye'nin kuzey kıyısında yer alır."
+    },
+    {
+      "id": "q5",
+      "text": "Türkiye'nin güneyinde hangi deniz bulunur?",
+      "options": [
+        "Karadeniz",
+        "Akdeniz",
+        "Marmara Denizi",
+        "Ege Denizi"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu deniz, Türkiye'nin güney kıyısında yer alır."
+    },
+    {
+      "id": "q6",
+      "text": "Türkiye'nin batısında hangi deniz bulunur?",
+      "options": [
+        "Karadeniz",
+        "Akdeniz",
+        "Ege Denizi",
+        "Kızıldeniz"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu deniz, Yunanistan ile aramızdaki sınırın bir parçasıdır."
+    },
+    {
+      "id": "q7",
+      "text": "İstanbul Boğazı hangi iki denizi birbirine bağlar?",
+      "options": [
+        "Akdeniz ve Ege Denizi",
+        "Karadeniz ve Marmara Denizi",
+        "Ege Denizi ve Kızıldeniz",
+        "Marmara ve Akdeniz"
+      ],
+      "correctIndex": 1,
+      "hint": "İstanbul'un konumunu düşün."
+    },
+    {
+      "id": "q8",
+      "text": "Aşağıdakilerden hangisi Türkiye'de sık görülen doğal afetlerden biridir?",
+      "options": [
+        "Deprem",
+        "Volkanik kar fırtınası",
+        "Kum fırtınası",
+        "Kasırga"
+      ],
+      "correctIndex": 0,
+      "hint": "Türkiye, fay hatları üzerinde yer aldığı için bu afetle sıkça karşılaşır."
+    },
+    {
+      "id": "q9",
+      "text": "Bir bölgenin 'yerleşim yeri' seçiminde aşağıdakilerden hangisi genellikle önemli bir faktördür?",
+      "options": [
+        "Su kaynaklarına yakınlık",
+        "Uzaydaki yıldızların konumu",
+        "Ayın evresi",
+        "Kişinin doğum tarihi"
+      ],
+      "correctIndex": 0,
+      "hint": "İnsanlar tarih boyunca su kaynaklarına yakın yerlere yerleşmeyi tercih etmiştir."
+    },
+    {
+      "id": "q10",
+      "text": "Aşağıdakilerden hangisi harita üzerinde bir 'sembol' örneğidir?",
+      "options": [
+        "Bir hastaneyi gösteren artı işareti",
+        "Rastgele bir çizgi",
+        "Herhangi bir renk",
+        "Boş bir alan"
+      ],
+      "correctIndex": 0,
+      "hint": "Semboller, haritalarda belirli yerleri kısa işaretlerle göstermeye yarar."
+    },
+    {
+      "id": "q11",
+      "text": "Zorlayıcı soru: Bir öğrenci yaşadığı ilin denize kıyısı olmadığını, dağlık ve yüksek bir bölgede olduğunu öğreniyor. Bu ile hangi tür ürünlerin daha çok yetiştirilmesini bekleyebiliriz?",
+      "options": [
+        "Deniz ürünleri",
+        "Yükseğe uygun tarım ürünleri (örneğin bazı tahıllar, meyveler)",
+        "Palmiye ağaçları",
+        "Mercan resifleri"
+      ],
+      "correctIndex": 1,
+      "hint": "Yükseklik ve iklim, tarımsal üretimi doğrudan etkiler."
+    },
+    {
+      "id": "q12",
+      "text": "Aşağıdakilerden hangisi bir 'coğrafi bölge' kavramına örnektir?",
+      "options": [
+        "Bir kişinin adı",
+        "Karadeniz Bölgesi",
+        "Bir hayvan türü",
+        "Bir yemek tarifi"
+      ],
+      "correctIndex": 1,
+      "hint": "Türkiye coğrafi olarak farklı bölgelere ayrılmıştır."
+    },
+    {
+      "id": "q13",
+      "text": "Bir bölgede yaşanan kuraklığın olası bir sonucu nedir?",
+      "options": [
+        "Bitki örtüsünün ve tarımın olumsuz etkilenmesi",
+        "Su kaynaklarının artması",
+        "Sel felaketlerinin artması",
+        "Hiçbir etkisi olmaz"
+      ],
+      "correctIndex": 0,
+      "hint": "Uzun süreli yağış azlığı, su kıtlığına ve tarımsal kayıplara yol açar."
+    },
+    {
+      "id": "q14",
+      "text": "Zorlayıcı soru: Bir haritada bir bölge çok yoğun mavi renkle gösterilmiş ve derinlik arttıkça rengin koyulaştığı belirtilmiş. Bu bilgiye göre en koyu mavi bölge hakkında ne söylenebilir?",
+      "options": [
+        "En sığ (az derin) bölgedir",
+        "En derin bölgedir",
+        "Kara parçasıdır",
+        "Yükseklik hakkında bilgi vermez"
+      ],
+      "correctIndex": 1,
+      "hint": "Koyu mavi tonlar genellikle derin su alanlarını temsil eder."
+    },
+    {
+      "id": "q15",
+      "text": "Bir kişi 'Evim, okulun güneyinde' diyorsa, okuldan eve gitmek için hangi yöne gitmelidir?",
+      "options": [
+        "Kuzeye",
+        "Güneye",
+        "Doğuya",
+        "Batıya"
+      ],
+      "correctIndex": 1,
+      "hint": "Ev, okulun güneyinde olduğuna göre, okuldan eve gitmek güney yönünde hareket etmektir."
+    },
+    {
+      "id": "q16",
+      "text": "Aşağıdakilerden hangisi Ege Bölgesi'nde de görülebilecek doğal afet türlerinden biridir?",
+      "options": [
+        "Deprem",
+        "Volkanik kar fırtınası",
+        "Buzul erimesi",
+        "Kum fırtınası"
+      ],
+      "correctIndex": 0,
+      "hint": "Ege Bölgesi de fay hatlarına yakın bir bölgedir."
+    },
+    {
+      "id": "q17",
+      "text": "Bir ilin ekonomik faaliyetleri o ilin coğrafi özelliklerinden nasıl etkilenir?",
+      "options": [
+        "Hiç etkilenmez",
+        "Denize kıyısı olan iller balıkçılık ve turizmden, verimli topraklı iller tarımdan daha çok faydalanabilir",
+        "Sadece nüfusa bağlıdır",
+        "Sadece hava durumuna bağlıdır"
+      ],
+      "correctIndex": 1,
+      "hint": "Coğrafi özellikler, o bölgede hangi ekonomik faaliyetlerin gelişeceğini etkiler."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Yaşadığın ilin hangi bölgede olduğunu biliyor musun?",
+    "options": [
+      "Evet, biliyorum",
+      "Tam emin değilim",
+      "Bilmiyorum ama merak ediyorum",
+      "Şimdi öğrenmek isterim"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

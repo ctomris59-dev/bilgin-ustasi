@@ -1,0 +1,239 @@
+{
+  "id": "fenbilimleri-unite2-canlilar-dunyasi-genis-p3",
+  "subject": "Fen Bilimleri",
+  "title": "Ünite 2 - Canlılar Dünyası (Geniş Havuz) (3/4)",
+  "week": 2,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Aşağıdakilerden hangisi bir yumuşakça (yumuşak vücutlu omurgasız) örneğidir?",
+      "options": [
+        "Karınca",
+        "Salyangoz",
+        "Örümcek",
+        "Solucan"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu canlı genellikle bir kabuğa sahiptir ve yavaş hareket eder."
+    },
+    {
+      "id": "q2",
+      "text": "Zorlayıcı soru: Bir hayvan türü akciğerle solunum yapıyor, yavrularını sütle besliyor ama suda yaşıyor ve yüzgeci var. Bu hayvan hangi grup olabilir?",
+      "options": [
+        "Balık",
+        "Memeli (örneğin balina/yunus)",
+        "Sürüngen",
+        "İki yaşamlı"
+      ],
+      "correctIndex": 1,
+      "hint": "Solunum ve beslenme şekli, yaşadığı ortamdan daha belirleyicidir."
+    },
+    {
+      "id": "q3",
+      "text": "Aşağıdakilerden hangisi bitkilerin genel özelliklerinden biridir?",
+      "options": [
+        "Hareket edip avlanabilirler",
+        "Kendi besinlerini üretebilirler",
+        "Hepsi etçildir",
+        "Hiçbiri güneş ışığına ihtiyaç duymaz"
+      ],
+      "correctIndex": 1,
+      "hint": "Bitkiler, hayvanların aksine kendi besinini üretebilen canlılardır."
+    },
+    {
+      "id": "q4",
+      "text": "Aşağıdakilerden hangisi bir omurgalı hayvan grubu DEĞİLDİR?",
+      "options": [
+        "Balıklar",
+        "Kuşlar",
+        "Böcekler",
+        "Memeliler"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu grup, omurgasızlar arasında yer alır."
+    },
+    {
+      "id": "q5",
+      "text": "Timsahlar hangi hayvan grubuna girer?",
+      "options": [
+        "Memeliler",
+        "Sürüngenler",
+        "İki yaşamlılar",
+        "Kuşlar"
+      ],
+      "correctIndex": 1,
+      "hint": "Vücutları pullu, soğukkanlı bir hayvan grubudur."
+    },
+    {
+      "id": "q6",
+      "text": "Aşağıdakilerden hangisi bir kuşun özelliği DEĞİLDİR?",
+      "options": [
+        "Tüylü vücut",
+        "Yumurtlayarak çoğalma",
+        "Sütle beslenen yavrular",
+        "Gaga"
+      ],
+      "correctIndex": 2,
+      "hint": "Sütle besleme, memelilerin özelliğidir, kuşların değil."
+    },
+    {
+      "id": "q7",
+      "text": "Bir canlının 'omurgalı' sayılabilmesi için hangi yapıya sahip olması gerekir?",
+      "options": [
+        "Kanat",
+        "İç iskelette omurga (bel kemiği)",
+        "Kabuk",
+        "Antenler"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu yapı, vücudun iskeletini oluşturan zincir şeklindeki kemiklerdir."
+    },
+    {
+      "id": "q8",
+      "text": "Zorlayıcı soru: Penguenler kuş oldukları hâlde uçamaz. Bu bilgiye göre aşağıdakilerden hangisi doğrudur?",
+      "options": [
+        "Penguenler kuş sayılmaz",
+        "Her kuş uçabilme yeteneğine sahip olmak zorunda değildir",
+        "Penguenlerin tüyü yoktur",
+        "Penguenler memelidir"
+      ],
+      "correctIndex": 1,
+      "hint": "Kuş sınıflandırması sadece uçma yeteneğine değil, tüy/gaga/yumurtlama gibi diğer ortak özelliklere dayanır."
+    },
+    {
+      "id": "q9",
+      "text": "Aşağıdakilerden hangisi hem bitkiler hem hayvanlar için ortak bir ihtiyaçtır?",
+      "options": [
+        "Güneş ışığı ile beslenme",
+        "Su",
+        "Fotosentez yapma",
+        "Avlanma"
+      ],
+      "correctIndex": 1,
+      "hint": "Tüm canlılar yaşamak için bu maddeye ihtiyaç duyar."
+    },
+    {
+      "id": "q10",
+      "text": "Kelebekler hangi hayvan grubuna girer?",
+      "options": [
+        "Kuşlar",
+        "Böcekler",
+        "Memeliler",
+        "Sürüngenler"
+      ],
+      "correctIndex": 1,
+      "hint": "6 bacaklı, vücudu 3 bölümden oluşan bir omurgasız grubu düşün."
+    },
+    {
+      "id": "q11",
+      "text": "Aşağıdakilerden hangisi bir mantarın canlı özelliği DEĞİLDİR?",
+      "options": [
+        "Beslenme",
+        "Üreme",
+        "Fotosentez yapma",
+        "Büyüme"
+      ],
+      "correctIndex": 2,
+      "hint": "Mantarlar bitkilerden farklı olarak bu süreci gerçekleştiremez."
+    },
+    {
+      "id": "q12",
+      "text": "Bir çiftçi elmalarını sakladığı depoda küf oluştuğunu fark ediyor. Bu duruma sebep olan canlı grubu hangisidir?",
+      "options": [
+        "Bakteriler",
+        "Mantarlar",
+        "Böcekler",
+        "Kuşlar"
+      ],
+      "correctIndex": 1,
+      "hint": "Küf mantarları, nemli ortamlarda besinlerde ürer."
+    },
+    {
+      "id": "q13",
+      "text": "Aşağıdakilerden hangisi bir sürüngen örneğidir?",
+      "options": [
+        "Kaplumbağa",
+        "Kurbağa",
+        "Balık",
+        "Yarasa"
+      ],
+      "correctIndex": 0,
+      "hint": "Bu hayvanın sert bir kabuğu ve pullu derisi vardır."
+    },
+    {
+      "id": "q14",
+      "text": "Bir bilim insanı yeni keşfettiği bir canlının omurgası olmadığını, dış iskeletinin bulunduğunu ve 6 bacağı olduğunu tespit ediyor. Bu canlı hangi grupta olabilir?",
+      "options": [
+        "Memeliler",
+        "Böcekler",
+        "Balıklar",
+        "Kuşlar"
+      ],
+      "correctIndex": 1,
+      "hint": "6 bacak ve dış iskelet, böceklerin belirgin özellikleridir."
+    },
+    {
+      "id": "q15",
+      "text": "Aşağıdakilerden hangisi doğru bir eşleştirmedir?",
+      "options": [
+        "Balık - Akciğer solunumu",
+        "Kuş - Solungaç solunumu",
+        "Memeli - Akciğer solunumu",
+        "Sürüngen - Solungaç solunumu"
+      ],
+      "correctIndex": 2,
+      "hint": "Karada yaşayan omurgalıların çoğu bu organla solunum yapar."
+    },
+    {
+      "id": "q16",
+      "text": "Zorlayıcı soru: Bir canlı grubu hem yumurtayla çoğalıyor hem tüylü hem de gagası var. Bu grup hangisidir?",
+      "options": [
+        "Memeliler",
+        "Kuşlar",
+        "Sürüngenler",
+        "Balıklar"
+      ],
+      "correctIndex": 1,
+      "hint": "Tüy ve gaga, kuşlara özgü belirgin özelliklerdir."
+    },
+    {
+      "id": "q17",
+      "text": "Aşağıdakilerden hangisi omurgasız hayvanların genel bir özelliğidir?",
+      "options": [
+        "Hepsi çok büyüktür",
+        "İç iskeletlerinde omurga bulunmaz",
+        "Hepsi uçabilir",
+        "Hepsi suda yaşar"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu, omurgasızları omurgalılardan ayıran temel özelliktir."
+    },
+    {
+      "id": "q18",
+      "text": "Karıncalar hangi hayvan grubuna girer?",
+      "options": [
+        "Örümcekler",
+        "Böcekler",
+        "Solucanlar",
+        "Yumuşakçalar"
+      ],
+      "correctIndex": 1,
+      "hint": "6 bacaklı ve vücudu üç bölümlüdür."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: En sevdiğin hayvan türü hangisi (memeli, kuş, balık vb.)?",
+    "options": [
+      "Memeli",
+      "Kuş",
+      "Balık",
+      "Diğer"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

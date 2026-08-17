@@ -1,0 +1,239 @@
+{
+  "id": "fenbilimleri-unite2-canlilar-dunyasi-genis-p4",
+  "subject": "Fen Bilimleri",
+  "title": "Ünite 2 - Canlılar Dünyası (Geniş Havuz) (4/4)",
+  "week": 2,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Aşağıdakilerden hangisi bir çiçekli bitki örneğidir?",
+      "options": [
+        "Eğrelti otu",
+        "Yosun",
+        "Gül",
+        "Mantar"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu bitki tohumla üreyen, çiçek açan bir türdür."
+    },
+    {
+      "id": "q2",
+      "text": "Zorlayıcı soru: Bir bitkinin köklerinden aldığı su, yapraklara nasıl taşınır?",
+      "options": [
+        "Bitkiler su taşımaz",
+        "Gövde içindeki iletim borularıyla",
+        "Sadece rüzgarla",
+        "Böcekler taşır"
+      ],
+      "correctIndex": 1,
+      "hint": "Bitkilerin içinde su ve besin taşıyan özel yapılar bulunur."
+    },
+    {
+      "id": "q3",
+      "text": "Aşağıdakilerden hangisi hem bitki hem mantarlarda ortak DEĞİLDİR?",
+      "options": [
+        "Büyüme",
+        "Üreme",
+        "Fotosentez yapabilme",
+        "Beslenme"
+      ],
+      "correctIndex": 2,
+      "hint": "Sadece bitkiler fotosentez yapabilir, mantarlar yapamaz."
+    },
+    {
+      "id": "q4",
+      "text": "Bir canlının 'omurgasız' olması ne anlama gelir?",
+      "options": [
+        "Hiç iskeleti olmadığı anlamına gelir",
+        "İç iskeletinde omurga (bel kemiği) bulunmadığı anlamına gelir",
+        "Çok küçük olduğu anlamına gelir",
+        "Su altında yaşadığı anlamına gelir"
+      ],
+      "correctIndex": 1,
+      "hint": "Bazı omurgasızların dış iskeleti olabilir, ama omurgaları yoktur."
+    },
+    {
+      "id": "q5",
+      "text": "Zorlayıcı soru: Bir canlı grubunda türlerin bazısı karada bazısı suda yaşar, bazısı yumurtlar bazısı canlı doğurur; fakat hepsi akciğerle solunum yapar ve tüyle kaplıdır. Bu tanımda bir hata var, çünkü tüm kuşlar aslında nasıl çoğalır?",
+      "options": [
+        "Yumurtlayarak",
+        "Canlı doğurarak",
+        "Hem yumurtlayarak hem doğurarak",
+        "Hiçbiri, kuşlar çoğalmaz"
+      ],
+      "correctIndex": 0,
+      "hint": "Kuşların tamamı yumurtlayarak çoğalır, bu grubun tanımında bir tutarsızlık vardı."
+    },
+    {
+      "id": "q6",
+      "text": "Aşağıdakilerden hangisi bir omurgasız grubudur?",
+      "options": [
+        "Sürüngenler",
+        "Yumuşakçalar (salyangoz, midye gibi)",
+        "Kuşlar",
+        "Memeliler"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu grup, kabuklu ya da yumuşak vücutlu, omurgasız canlılardan oluşur."
+    },
+    {
+      "id": "q7",
+      "text": "Bitkilerin çiçeklerinin temel görevi nedir?",
+      "options": [
+        "Sadece güzel görünmek",
+        "Üreme (tozlaşma ve tohum oluşumu)",
+        "Su depolamak",
+        "Gölge yapmak"
+      ],
+      "correctIndex": 1,
+      "hint": "Çiçekler, bitkinin üreme organıdır."
+    },
+    {
+      "id": "q8",
+      "text": "Aşağıdaki canlılardan hangisi hem karada hem suda yaşama becerisine sahiptir (amfibi)?",
+      "options": [
+        "Kertenkele",
+        "Kurbağa",
+        "Kartal",
+        "Balina"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu canlı, yaşamının bir kısmını suda, bir kısmını karada geçirir."
+    },
+    {
+      "id": "q9",
+      "text": "Zorlayıcı soru: Bir araştırmacı incelediği bir canlının hem fotosentez yapamadığını hem de hareket edemediğini, sabit durduğunu gözlemliyor. Bu canlı hangi grupta olabilir?",
+      "options": [
+        "Hayvan",
+        "Mantar",
+        "Bitki",
+        "Böcek"
+      ],
+      "correctIndex": 1,
+      "hint": "Fotosentez yapamama bitkileri, hareketsizlik çoğu hayvanı eler - geriye kalan grup mantarlardır."
+    },
+    {
+      "id": "q10",
+      "text": "Aşağıdakilerden hangisi doğru değildir?",
+      "options": [
+        "Tüm memeliler karada yaşar",
+        "Tüm kuşlar tüylüdür",
+        "Tüm balıklar solungaçla solunum yapar",
+        "Tüm böceklerin 6 bacağı vardır"
+      ],
+      "correctIndex": 0,
+      "hint": "Balina ve yunus gibi bazı memeliler suda yaşar."
+    },
+    {
+      "id": "q11",
+      "text": "Yılanlar hangi hayvan grubuna girer?",
+      "options": [
+        "Memeliler",
+        "Sürüngenler",
+        "İki yaşamlılar",
+        "Balıklar"
+      ],
+      "correctIndex": 1,
+      "hint": "Pullu, bacaksız, soğukkanlı bir hayvan grubudur."
+    },
+    {
+      "id": "q12",
+      "text": "Bir hayvanın 'soğukkanlı' olması ne anlama gelir?",
+      "options": [
+        "Vücut sıcaklığı çevresine göre değişir",
+        "Kanının gerçekten soğuk olduğu anlamına gelir",
+        "Hiç ısınamadığı anlamına gelir",
+        "Kışın uyuduğu anlamına gelir"
+      ],
+      "correctIndex": 0,
+      "hint": "Sürüngenler ve balıklar gibi hayvanlar bu özelliğe sahiptir."
+    },
+    {
+      "id": "q13",
+      "text": "Aşağıdakilerden hangisi bir 'sıcakkanlı' hayvan grubudur?",
+      "options": [
+        "Sürüngenler",
+        "Balıklar",
+        "Memeliler",
+        "İki yaşamlılar"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu grup, vücut sıcaklığını çevreden bağımsız sabit tutabilir."
+    },
+    {
+      "id": "q14",
+      "text": "Zorlayıcı soru: Bir öğrenci 'Kuşlar ve memeliler her ikisi de sıcakkanlıdır ama biri tüylü biri kürklüdür' diyor. Bu ifade doğru mudur?",
+      "options": [
+        "Evet, doğrudur",
+        "Hayır, ikisi de soğukkanlıdır",
+        "Hayır, kuşlar soğukkanlıdır",
+        "Hayır, memeliler tüylüdür"
+      ],
+      "correctIndex": 0,
+      "hint": "Her iki grup da sabit vücut sıcaklığına sahiptir, örtüleri farklıdır."
+    },
+    {
+      "id": "q15",
+      "text": "Aşağıdakilerden hangisi doğal ortamında hem avcı hem de av olabilen bir canlıya örnektir?",
+      "options": [
+        "Sadece bitkiler",
+        "Bir kurbağa (böcekleri avlar, yılana av olabilir)",
+        "Sadece mantarlar",
+        "Hiçbir canlı bu şekilde değildir"
+      ],
+      "correctIndex": 1,
+      "hint": "Doğada besin zincirinde birçok canlı hem avcı hem avdır."
+    },
+    {
+      "id": "q16",
+      "text": "Bir öğrencinin bahçesinde gördüğü canlı; 8 bacaklı, ağ ören ve böcekleri avlayan bir canlı. Bu canlı hangisi olabilir?",
+      "options": [
+        "Karınca",
+        "Örümcek",
+        "Kelebek",
+        "Solucan"
+      ],
+      "correctIndex": 1,
+      "hint": "8 bacak ve ağ örme özelliği bu canlıya özgüdür."
+    },
+    {
+      "id": "q17",
+      "text": "Aşağıdakilerden hangisi canlıları sınıflandırmanın faydalarından biri DEĞİLDİR?",
+      "options": [
+        "Canlılar arası benzerlik ve farklılıkları anlamamızı sağlar",
+        "Bilimsel iletişimi kolaylaştırır",
+        "Canlıların sayısını azaltır",
+        "Yeni türleri tanımlamada yardımcı olur"
+      ],
+      "correctIndex": 2,
+      "hint": "Sınıflandırma, canlı sayısını değiştirmez, sadece onları anlamamıza yardımcı olur."
+    },
+    {
+      "id": "q18",
+      "text": "Zorlayıcı soru: Bir mantar türü hem besin üretiminde (peynir, ekmek) hem de tıpta (antibiyotik) kullanılıyor. Bu bilgiye göre mantarlar hakkında ne söylenebilir?",
+      "options": [
+        "Mantarların hepsi zararlıdır",
+        "Mantarlar sadece zararlı canlılardır",
+        "Mantarların insan hayatında hem faydalı hem zararlı türleri vardır",
+        "Mantarlar hiçbir işe yaramaz"
+      ],
+      "correctIndex": 2,
+      "hint": "Maya ve küf mantarlarının faydalı kullanımlarını, parazit mantarların zararlı etkilerini düşün."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: En sevdiğin hayvan türü hangisi (memeli, kuş, balık vb.)?",
+    "options": [
+      "Memeli",
+      "Kuş",
+      "Balık",
+      "Diğer"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

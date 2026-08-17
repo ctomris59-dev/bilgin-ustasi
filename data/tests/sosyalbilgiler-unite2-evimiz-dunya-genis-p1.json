@@ -1,0 +1,239 @@
+{
+  "id": "sosyalbilgiler-unite2-evimiz-dunya-genis-p1",
+  "subject": "Sosyal Bilgiler",
+  "title": "Ünite 2 - Evimiz Dünya (Geniş Havuz) (1/4)",
+  "week": 2,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Fiziki haritalarda akarsu, göl ve denizler hangi renkle gösterilir?",
+      "options": [
+        "Yeşil",
+        "Kahverengi",
+        "Mavi",
+        "Sarı"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu renk suyla ilişkilendirilir."
+    },
+    {
+      "id": "q2",
+      "text": "Fiziki haritalarda yeşil renk genellikle neyi ifade eder?",
+      "options": [
+        "Yüksek dağlık bölgeleri",
+        "Alçak, deniz seviyesine yakın bölgeleri",
+        "Ormanları",
+        "Çölleri"
+      ],
+      "correctIndex": 1,
+      "hint": "Renkler yükseklik bilgisi verir, orman varlığını değil."
+    },
+    {
+      "id": "q3",
+      "text": "Fiziki haritalarda kahverengi tonları koyulaştıkça ne anlama gelir?",
+      "options": [
+        "Yükseklik artar",
+        "Sıcaklık artar",
+        "Nüfus artar",
+        "Yağış artar"
+      ],
+      "correctIndex": 0,
+      "hint": "Dağlık bölgeler genelde bu renk tonuyla gösterilir, ne kadar koyuysa o kadar yüksektir."
+    },
+    {
+      "id": "q4",
+      "text": "Bir yerin başka bir yere göre konumunu (örneğin 'okulumun kuzeyinde bir park var' gibi) tanımlamaya ne denir?",
+      "options": [
+        "Mutlak konum",
+        "Göreceli konum",
+        "Coğrafi konum",
+        "Matematik konum"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu tür konum tanımlama, başka bir noktaya göre yapılır."
+    },
+    {
+      "id": "q5",
+      "text": "Aşağıdakilerden hangisi bir doğal afet değildir?",
+      "options": [
+        "Deprem",
+        "Sel",
+        "Trafik kazası",
+        "Heyelan"
+      ],
+      "correctIndex": 2,
+      "hint": "Doğal afetler doğa kaynaklı olaylardır, insan kaynaklı kazalar değildir."
+    },
+    {
+      "id": "q6",
+      "text": "Deprem sırasında yapılması önerilen en doğru davranışlardan biri hangisidir?",
+      "options": [
+        "Asansöre binmek",
+        "Sağlam bir masanın altına çömelip başını korumak",
+        "Pencereye koşmak",
+        "Panik yapıp koşarak dışarı çıkmaya çalışmak"
+      ],
+      "correctIndex": 1,
+      "hint": "Güvenli bir yerde çömelip başını ve boynunu korumak önemlidir."
+    },
+    {
+      "id": "q7",
+      "text": "Türkiye'nin komşu ülkelerinden biri aşağıdakilerden hangisidir?",
+      "options": [
+        "İtalya",
+        "Almanya",
+        "Yunanistan",
+        "Fransa"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu ülke Türkiye'nin batısında, Ege Denizi'nin karşı kıyısındadır."
+    },
+    {
+      "id": "q8",
+      "text": "Aşağıdakilerden hangisi Türkiye'nin komşularından biri DEĞİLDİR?",
+      "options": [
+        "Suriye",
+        "İran",
+        "Mısır",
+        "Irak"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu ülke Türkiye ile kara sınırı paylaşmaz, Afrika kıtasındadır."
+    },
+    {
+      "id": "q9",
+      "text": "Bir ilde zamanla doğal çevrenin (orman, akarsu vb.) değişmesinde aşağıdakilerden hangisi etkili OLMAZ?",
+      "options": [
+        "Yapılaşma ve şehirleşme",
+        "İklim değişiklikleri",
+        "Bir kişinin adının değişmesi",
+        "Tarım alanlarının genişlemesi"
+      ],
+      "correctIndex": 2,
+      "hint": "Doğal çevre insan faaliyetleri ve doğa olaylarından etkilenir, kişisel bilgilerden etkilenmez."
+    },
+    {
+      "id": "q10",
+      "text": "Zorlayıcı soru: Bir fiziki haritada bir bölge koyu kahverengi, bir başka bölge açık yeşil renkte gösterilmiş. Bu iki bölge hakkında ne söylenebilir?",
+      "options": [
+        "Koyu kahverengi bölge daha alçaktır",
+        "Açık yeşil bölge daha yüksektir",
+        "Koyu kahverengi bölge daha yüksek, açık yeşil bölge daha alçaktır",
+        "İkisi de aynı yükseklikte olmalıdır"
+      ],
+      "correctIndex": 2,
+      "hint": "Renk tonu koyulaştıkça yükseklik artar (kahverengi), açık yeşil ise alçak bölgeleri gösterir."
+    },
+    {
+      "id": "q11",
+      "text": "Bir pusulanın kırmızı ucu her zaman hangi yönü gösterir?",
+      "options": [
+        "Güney",
+        "Kuzey",
+        "Doğu",
+        "Batı"
+      ],
+      "correctIndex": 1,
+      "hint": "Pusulalar Dünya'nın manyetik alanına göre çalışır."
+    },
+    {
+      "id": "q12",
+      "text": "Güneş'in doğduğu yön hangisidir?",
+      "options": [
+        "Kuzey",
+        "Güney",
+        "Doğu",
+        "Batı"
+      ],
+      "correctIndex": 2,
+      "hint": "Sabah güneşin ilk göründüğü yönü düşün."
+    },
+    {
+      "id": "q13",
+      "text": "Güneş'in battığı yön hangisidir?",
+      "options": [
+        "Kuzey",
+        "Güney",
+        "Doğu",
+        "Batı"
+      ],
+      "correctIndex": 3,
+      "hint": "Akşam güneşin kaybolduğu yönü düşün."
+    },
+    {
+      "id": "q14",
+      "text": "Ara yönlerden biri olan 'kuzeydoğu', hangi iki ana yön arasındadır?",
+      "options": [
+        "Kuzey ve batı",
+        "Kuzey ve doğu",
+        "Güney ve doğu",
+        "Güney ve batı"
+      ],
+      "correctIndex": 1,
+      "hint": "İsminde geçen iki ana yönü birleştir."
+    },
+    {
+      "id": "q15",
+      "text": "Siyasi haritalar temel olarak neyi gösterir?",
+      "options": [
+        "Yeryüzü şekillerini",
+        "Ülke ve şehir sınırlarını",
+        "Hava durumunu",
+        "Bitki örtüsünü"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu haritalarda ülkeler farklı renklerle ayrılır."
+    },
+    {
+      "id": "q16",
+      "text": "Trafik haritaları hangi amaçla kullanılır?",
+      "options": [
+        "Yeryüzü şekillerini göstermek için",
+        "Yolları, kavşakları ve ulaşım güzergahlarını göstermek için",
+        "Sadece turistik yerleri göstermek için",
+        "Hava durumunu göstermek için"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu haritalar araç sürücülerine ve yolculara yol bulmada yardımcı olur."
+    },
+    {
+      "id": "q17",
+      "text": "Bir haritanın 'ölçeği' ne işe yarar?",
+      "options": [
+        "Haritanın rengini belirler",
+        "Harita üzerindeki uzunluğun gerçek dünyadaki karşılığını gösterir",
+        "Haritanın yaşını gösterir",
+        "Hiçbir işe yaramaz"
+      ],
+      "correctIndex": 1,
+      "hint": "Ölçek, haritadaki 1 cm'nin gerçekte kaç km olduğunu belirtir."
+    },
+    {
+      "id": "q18",
+      "text": "'İklim' ile 'hava durumu' arasındaki fark nedir?",
+      "options": [
+        "Hiçbir fark yoktur",
+        "İklim uzun süreli, hava durumu kısa süreli (günlük) durumu ifade eder",
+        "Hava durumu uzun süreli, iklim kısa süreli bir kavramdır",
+        "İklim sadece yazın, hava durumu sadece kışın geçerlidir"
+      ],
+      "correctIndex": 1,
+      "hint": "Bir yerin 'genel' hava karakteri iklim, 'bugünkü' durumu ise hava durumudur."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Yaşadığın ilin hangi bölgede olduğunu biliyor musun?",
+    "options": [
+      "Evet, biliyorum",
+      "Tam emin değilim",
+      "Bilmiyorum ama merak ediyorum",
+      "Şimdi öğrenmek isterim"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

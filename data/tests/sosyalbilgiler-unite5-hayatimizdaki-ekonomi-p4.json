@@ -1,0 +1,227 @@
+{
+  "id": "sosyalbilgiler-unite5-hayatimizdaki-ekonomi-p4",
+  "subject": "Sosyal Bilgiler",
+  "title": "Ünite 5 - Hayatımızdaki Ekonomi (4/4)",
+  "week": 5,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Aşağıdakilerden hangisi 'girişimci' kavramını tanımlar?",
+      "options": [
+        "Yeni bir iş fikri geliştirip hayata geçiren kişi",
+        "Sadece bir işte çalışan kişi",
+        "Hiçbir anlamı yoktur",
+        "Sadece tüketim yapan kişi"
+      ],
+      "correctIndex": 0,
+      "hint": "Girişimciler, yeni işletmeler kurarak ekonomiye katkı sağlar."
+    },
+    {
+      "id": "q2",
+      "text": "Bir girişimcinin yeni bir iş kurması, topluma nasıl fayda sağlayabilir?",
+      "options": [
+        "Hiçbir fayda sağlamaz",
+        "Yeni iş imkanları ve ürün/hizmetler yaratabilir",
+        "Sadece kendisine fayda sağlar",
+        "Ekonomiye zarar verir"
+      ],
+      "correctIndex": 1,
+      "hint": "Yeni işletmeler, istihdam ve ekonomik hareketlilik yaratabilir."
+    },
+    {
+      "id": "q3",
+      "text": "Zorlayıcı soru: Bir öğrenci, elindeki malzemelerle küçük el işi ürünler yapıp bunları satmayı planlıyor. Bu davranış hangi ekonomik kavramla ilişkilidir?",
+      "options": [
+        "Girişimcilik",
+        "Sadece tüketim",
+        "Borçlanma",
+        "Hiçbir kavramla ilişkili değildir"
+      ],
+      "correctIndex": 0,
+      "hint": "Kendi ürününü üretip satmayı planlamak, küçük ölçekli bir girişimcilik örneğidir."
+    },
+    {
+      "id": "q4",
+      "text": "Aşağıdakilerden hangisi bir ailenin bütçesinde 'tasarruf kalemine' örnektir?",
+      "options": [
+        "Her ay bankaya belirli bir miktar para yatırmak",
+        "Tüm parayı hemen harcamak",
+        "Hiç plan yapmamak",
+        "Sürekli borç almak"
+      ],
+      "correctIndex": 0,
+      "hint": "Düzenli para biriktirme, tasarrufun bir örneğidir."
+    },
+    {
+      "id": "q5",
+      "text": "Aşağıdakilerden hangisi 'ekonomik özgürlük' kavramını en iyi tanımlar?",
+      "options": [
+        "Bireylerin kendi ekonomik kararlarını (çalışma, tüketim, tasarruf vb.) verebilme özgürlüğü",
+        "Hiç kimsenin çalışmaması gerektiği",
+        "Ekonominin devlet tarafından tamamen kontrol edilmesi gerektiği",
+        "Bu kavramın hiçbir anlamı yoktur"
+      ],
+      "correctIndex": 0,
+      "hint": "Ekonomik özgürlük, bireylerin ekonomik tercihlerini yapabilmesini ifade eder."
+    },
+    {
+      "id": "q6",
+      "text": "Bir ürünün üretiminde kullanılan hammaddenin azalması (kıtlaşması) fiyatı nasıl etkileyebilir?",
+      "options": [
+        "Fiyat düşer",
+        "Fiyat artabilir",
+        "Hiç etkilenmez",
+        "Fiyat sıfırlanır"
+      ],
+      "correctIndex": 1,
+      "hint": "Az bulunan kaynaklar genellikle daha değerli/pahalı hâle gelebilir."
+    },
+    {
+      "id": "q7",
+      "text": "Zorlayıcı soru: İki komşu bölgeden biri tarımda, diğeri sanayide uzmanlaşmış. Bu iki bölge arasında ürün alışverişi (ticaret) yapılması neden faydalı olabilir?",
+      "options": [
+        "Her bölge kendi üretmediği ürünlere erişebilir",
+        "Hiçbir faydası yoktur",
+        "Ticaret her zaman zararlıdır",
+        "Bölgelerin birbirine ihtiyacı yoktur"
+      ],
+      "correctIndex": 0,
+      "hint": "Farklı uzmanlaşmalar, karşılıklı ticaretle her iki tarafın da fayda sağlamasına olanak tanır."
+    },
+    {
+      "id": "q8",
+      "text": "Aşağıdakilerden hangisi 'enflasyon' kavramına dair genel bir açıklamadır?",
+      "options": [
+        "Fiyatların genel düzeyinin zamanla artması",
+        "Fiyatların hiç değişmemesi",
+        "Fiyatların sürekli düşmesi",
+        "Bu kavramın ekonomi ile ilgisi yoktur"
+      ],
+      "correctIndex": 0,
+      "hint": "Enflasyon, satın alma gücünü etkileyen önemli bir ekonomik kavramdır."
+    },
+    {
+      "id": "q9",
+      "text": "Bir ailenin enflasyon dönemlerinde bütçesini daha dikkatli planlaması neden önemlidir?",
+      "options": [
+        "Hiçbir önemi yoktur",
+        "Fiyatlar arttığında aynı bütçeyle daha az şey satın alınabileceği için",
+        "Enflasyon hiçbir şeyi etkilemez",
+        "Bütçe planlaması gereksizdir"
+      ],
+      "correctIndex": 1,
+      "hint": "Fiyat artışları, harcama planlamasını daha önemli hâle getirir."
+    },
+    {
+      "id": "q10",
+      "text": "Aşağıdakilerden hangisi 'kaynakların adil paylaşımı' kavramıyla ilişkilidir?",
+      "options": [
+        "Kaynakların sadece belirli kişilere ayrılması",
+        "Toplumdaki farklı kesimlerin ihtiyaçlarının dengeli şekilde gözetilmesi",
+        "Hiç kimsenin kaynak almaması",
+        "Kaynakların rastgele dağıtılması"
+      ],
+      "correctIndex": 1,
+      "hint": "Adil paylaşım, toplumsal dengeyi gözeten bir yaklaşımı ifade eder."
+    },
+    {
+      "id": "q11",
+      "text": "Bir öğrencinin ailesiyle birlikte market alışverişi listesi hazırlaması hangi ekonomik alışkanlığı geliştirir?",
+      "options": [
+        "Planlı ve bilinçli tüketim",
+        "İsraf",
+        "Borçlanma",
+        "Hiçbir alışkanlık geliştirmez"
+      ],
+      "correctIndex": 0,
+      "hint": "Liste yaparak alışveriş, gereksiz harcamaları önlemeye yardımcı olur."
+    },
+    {
+      "id": "q12",
+      "text": "Aşağıdakilerden hangisi 'ekonomik iş birliğine' bir örnektir?",
+      "options": [
+        "İki ülkenin ticaret anlaşması yapması",
+        "Ülkelerin birbirinden tamamen izole olması",
+        "Hiçbir ülkenin diğerleriyle etkileşime girmemesi",
+        "Ticaretin tamamen yasaklanması"
+      ],
+      "correctIndex": 0,
+      "hint": "Ticaret anlaşmaları, ülkeler arası ekonomik iş birliğinin bir örneğidir."
+    },
+    {
+      "id": "q13",
+      "text": "Zorlayıcı soru: Bir bölge kuraklık yaşadığında tarımsal üretim azalır. Bu durumun ekonomiye olası etkisi nedir?",
+      "options": [
+        "Hiçbir etkisi olmaz",
+        "Gıda fiyatlarında artış ve ekonomik zorluk yaşanabilir",
+        "Ekonomi otomatik olarak güçlenir",
+        "Tarım ürünleri bollaşır"
+      ],
+      "correctIndex": 1,
+      "hint": "Azalan üretim, arz-talep dengesini etkileyerek fiyatları yükseltebilir."
+    },
+    {
+      "id": "q14",
+      "text": "Aşağıdakilerden hangisi 'sürdürülebilir ekonomi' kavramıyla ilişkilidir?",
+      "options": [
+        "Kaynakları gelecek nesilleri düşünerek dengeli kullanmak",
+        "Kaynakları sınırsızca tüketmek",
+        "Hiçbir plan yapmadan üretim yapmak",
+        "Sadece bugünü düşünmek"
+      ],
+      "correctIndex": 0,
+      "hint": "Sürdürülebilirlik, uzun vadeli düşünmeyi gerektirir."
+    },
+    {
+      "id": "q15",
+      "text": "Bir ailenin acil durum fonu (beklenmedik giderler için ayrılan tasarruf) oluşturması neden önerilir?",
+      "options": [
+        "Hiçbir önemi yoktur",
+        "Beklenmedik mali zorluklara karşı bir güvence sağlar",
+        "Parayı israf etmeyi kolaylaştırır",
+        "Sadece zenginler için geçerlidir"
+      ],
+      "correctIndex": 1,
+      "hint": "Acil durum fonu, öngörülemeyen harcamalara karşı bir tampon oluşturur."
+    },
+    {
+      "id": "q16",
+      "text": "Aşağıdakilerden hangisi bir 'ekonomik karar' örneğidir?",
+      "options": [
+        "Bir ürünü almadan önce fiyatları karşılaştırmak",
+        "Hava durumuna bakmak",
+        "Bir şarkı dinlemek",
+        "Bir kitap okumak"
+      ],
+      "correctIndex": 0,
+      "hint": "Fiyat karşılaştırması, doğrudan bir ekonomik karar sürecidir."
+    },
+    {
+      "id": "q17",
+      "text": "Zorlayıcı soru: Bir öğrenci, aldığı harçlığın bir kısmını hemen harcarken bir kısmını da bir hayır kurumuna bağışlamayı tercih ediyor. Bu davranış hangi değerle ilişkilidir?",
+      "options": [
+        "Sorumlu bütçe yönetimi ve sosyal duyarlılık",
+        "Sadece israf",
+        "Hiçbir değerle ilişkili değildir",
+        "Sadece bencillik"
+      ],
+      "correctIndex": 0,
+      "hint": "Hem kendi ihtiyaçlarını hem toplumsal katkıyı düşünmek, olgun bir mali ve sosyal tutumdur."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Harçlığının bir kısmını biriktiriyor musun?",
+    "options": [
+      "Evet, düzenli biriktiriyorum",
+      "Bazen biriktiriyorum",
+      "Hayır, hemen harcıyorum",
+      "Henüz harçlığım yok"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

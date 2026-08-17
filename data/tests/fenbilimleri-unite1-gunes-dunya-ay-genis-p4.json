@@ -1,0 +1,239 @@
+{
+  "id": "fenbilimleri-unite1-gunes-dunya-ay-genis-p4",
+  "subject": "Fen Bilimleri",
+  "title": "Ünite 1 - Güneş, Dünya ve Ay (Geniş Havuz) (4/4)",
+  "week": 1,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Dünya'nın yaklaşık 365 günde tamamladığı hareket hangisidir?",
+      "options": [
+        "Kendi ekseni etrafında dönme",
+        "Güneş etrafında dolanma",
+        "Ay'ın evrelerini tamamlama",
+        "Gelgit oluşturma"
+      ],
+      "correctIndex": 1,
+      "hint": "Bir yıllık sürede gerçekleşen hareket budur."
+    },
+    {
+      "id": "q2",
+      "text": "Ay'ın evrelerini bir baştan diğerine tamamlaması yaklaşık kaç gün sürer?",
+      "options": [
+        "1 gün",
+        "7 gün",
+        "29 gün",
+        "100 gün"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu süre yaklaşık bir aya denk gelir."
+    },
+    {
+      "id": "q3",
+      "text": "Aşağıdakilerden hangisi bir gökbilim (astronomi) terimi DEĞİLDİR?",
+      "options": [
+        "Yörünge",
+        "Evre",
+        "Fotosentez",
+        "Tutulma"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu terim canlılar dünyasıyla, bitkilerle ilgilidir."
+    },
+    {
+      "id": "q4",
+      "text": "Dünya'nın Güneş'e olan mesafesi tam olarak sabit midir?",
+      "options": [
+        "Evet, hep aynıdır",
+        "Hayır, yörünge tam daire olmadığı için mesafe hafifçe değişir",
+        "Sadece yazın değişir",
+        "Mesafe her gün ikiye katlanır"
+      ],
+      "correctIndex": 1,
+      "hint": "Gezegenlerin yörüngeleri tam daire değil, hafif eliptiktir."
+    },
+    {
+      "id": "q5",
+      "text": "Bir astronotun Ay'da Dünya'yı gözlemlemesi mümkün müdür?",
+      "options": [
+        "Hayır, Ay'dan Dünya hiç görünmez",
+        "Evet, Dünya Ay'ın gökyüzünde görünür",
+        "Sadece gece görünür",
+        "Sadece güneş tutulmasında görünür"
+      ],
+      "correctIndex": 1,
+      "hint": "Ay'dan bakıldığında da Dünya bir gökcismi olarak gözlemlenebilir."
+    },
+    {
+      "id": "q6",
+      "text": "Aşağıdaki ifadelerden hangisi doğrudur?",
+      "options": [
+        "Güneş, Dünya'nın etrafında döner",
+        "Dünya, Güneş'in etrafında döner",
+        "Ay, Güneş'in etrafında döner",
+        "Hiçbiri doğru değildir"
+      ],
+      "correctIndex": 1,
+      "hint": "Güneş Sistemi'nin merkezinde Güneş bulunur, gezegenler onun etrafında döner."
+    },
+    {
+      "id": "q7",
+      "text": "Ay'ın yüzeyinde neden bitki ya da hayvan yaşamı yoktur?",
+      "options": [
+        "Çok soğuk olduğu için",
+        "Su, atmosfer ve uygun sıcaklık koşulları olmadığı için",
+        "Işık olmadığı için",
+        "Çok küçük olduğu için"
+      ],
+      "correctIndex": 1,
+      "hint": "Canlı yaşamı için gerekli temel şartların çoğu Ay'da bulunmaz."
+    },
+    {
+      "id": "q8",
+      "text": "Zorlayıcı soru: Eğer Dünya kendi ekseni etrafında hiç dönmeseydi ne olurdu?",
+      "options": [
+        "Mevsimler değişmezdi ama gece-gündüz olurdu",
+        "Dünya'nın bir yüzü sürekli gündüz, diğer yüzü sürekli gece olurdu",
+        "Hiçbir şey değişmezdi",
+        "Ay artık dönmezdi"
+      ],
+      "correctIndex": 1,
+      "hint": "Gece-gündüz döngüsü, Dünya'nın kendi ekseni etrafında dönmesinden kaynaklanır."
+    },
+    {
+      "id": "q9",
+      "text": "Zorlayıcı soru: Bir gözlemci Ay'ı her gece izliyor ve ince bir hilalin giderek büyüdüğünü görüyor. Bu gözlemci hangi evreye doğru ilerliyor demektir?",
+      "options": [
+        "Yeniaya doğru",
+        "Dolunaya doğru",
+        "Son dördüne doğru",
+        "Ay artık büyümez"
+      ],
+      "correctIndex": 1,
+      "hint": "Hilal büyüdükçe Ay, dolunaya doğru ilerler."
+    },
+    {
+      "id": "q10",
+      "text": "Zorlayıcı soru: Güneş tutulması neden her ay gerçekleşmez, oysa Ay her ay Dünya ile Güneş arasından geçer (yeniay evresinde)?",
+      "options": [
+        "Güneş her ay farklı yerdedir",
+        "Ay'ın yörüngesi hafif eğiktir, bu yüzden çoğu ayda tam hizalanma olmaz",
+        "Dünya her ay farklı hızda döner",
+        "Bu bilgi yanlıştır, her ay tutulma olur"
+      ],
+      "correctIndex": 1,
+      "hint": "Tam hizalanma için Ay'ın yörünge eğikliği nadiren uygun olur."
+    },
+    {
+      "id": "q11",
+      "text": "Aşağıdakilerden hangisi Güneş, Dünya ve Ay arasındaki doğru ilişkidir?",
+      "options": [
+        "Ay, Dünya'nın; Dünya, Güneş'in etrafında döner",
+        "Dünya, Ay'ın; Ay, Güneş'in etrafında döner",
+        "Üçü de birbirinden bağımsız hareket eder",
+        "Güneş, hem Dünya hem Ay'ın etrafında döner"
+      ],
+      "correctIndex": 0,
+      "hint": "Küçükten büyüğe doğru bir dönüş hiyerarşisi düşün."
+    },
+    {
+      "id": "q12",
+      "text": "Bir gökbilimci 'Bugün gökyüzünde Ay görünmüyor' dediğinde hangi evreden bahsediyor olabilir?",
+      "options": [
+        "Dolunay",
+        "Yeniay",
+        "İlk dördün",
+        "Şişkin ay"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu evrede Ay'ın aydınlık yüzü tamamen Dünya'dan ters tarafa bakar."
+    },
+    {
+      "id": "q13",
+      "text": "Dünya'nın atmosferi, meteorlara karşı nasıl bir koruma sağlar?",
+      "options": [
+        "Hiçbir koruma sağlamaz",
+        "Çoğu meteoru sürtünmeyle yakar, yüzeye ulaşmasını engeller",
+        "Meteorları geri iter",
+        "Meteorları büyütür"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu yüzden Dünya'da Ay kadar çok krater görülmez."
+    },
+    {
+      "id": "q14",
+      "text": "Aşağıdakilerden hangisi doğrudur?",
+      "options": [
+        "Ay'ın yüzeyinde deniz ve okyanuslar vardır",
+        "Ay'ın yüzeyi kraterlerle kaplı, kuru ve tozludur",
+        "Ay'ın yüzeyinde ormanlar vardır",
+        "Ay'ın yüzeyi tamamen buzla kaplıdır"
+      ],
+      "correctIndex": 1,
+      "hint": "Ay'da sıvı su ve bitki örtüsü bulunmaz."
+    },
+    {
+      "id": "q15",
+      "text": "Bir cismin gökyüzünde 'yıldız' sayılabilmesi için temel şart nedir?",
+      "options": [
+        "Parlak görünmesi",
+        "Kendi ışığını üretmesi",
+        "Gece görünmesi",
+        "Küçük olması"
+      ],
+      "correctIndex": 1,
+      "hint": "Gezegenler ve uydular da parlak görünebilir ama kendi ışıklarını üretmezler."
+    },
+    {
+      "id": "q16",
+      "text": "Aşağıdakilerden hangisi Dünya, Ay ve Güneş'in ortak özelliğidir?",
+      "options": [
+        "Hepsi kendi ışığını üretir",
+        "Hepsi gökcismidir (uzayda bulunur)",
+        "Hepsi aynı büyüklüktedir",
+        "Hepsi aynı sıcaklıktadır"
+      ],
+      "correctIndex": 1,
+      "hint": "Üçü de gökyüzünde/uzayda bulunan cisimlerdir, ama özellikleri farklıdır."
+    },
+    {
+      "id": "q17",
+      "text": "Zorlayıcı soru: Kuzey Yarımküre'de yaz mevsimi yaşanırken Güney Yarımküre'de hangi mevsim yaşanır?",
+      "options": [
+        "Yine yaz",
+        "Kış",
+        "Sonbahar",
+        "Hiçbir mevsim yaşanmaz"
+      ],
+      "correctIndex": 1,
+      "hint": "Dünya'nın eğik ekseni yüzünden iki yarımküre zıt mevsimleri aynı anda yaşar."
+    },
+    {
+      "id": "q18",
+      "text": "Ay'da insanların Dünya'dakinden çok daha yükseğe zıplayabilmesinin temel sebebi nedir?",
+      "options": [
+        "Ay'da hava basıncı yüksektir",
+        "Ay'ın çekim kuvveti Dünya'dan azdır",
+        "Ay'da oksijen fazladır",
+        "Astronotlar çok güçlüdür"
+      ],
+      "correctIndex": 1,
+      "hint": "Daha küçük gökcisimlerinin çekim kuvveti genelde daha azdır."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Gökyüzünde en son ne zaman Ay'ı gözlemledin?",
+    "options": [
+      "Dün akşam",
+      "Bu hafta içinde",
+      "Hatırlamıyorum",
+      "Hiç gözlemlemedim"
+    ],
+    "correctIndex": 1,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

@@ -1,0 +1,227 @@
+{
+  "id": "sosyalbilgiler-unite6-teknoloji-sosyal-bilimler-p3",
+  "subject": "Sosyal Bilgiler",
+  "title": "Ünite 6 - Teknoloji ve Sosyal Bilimler (3/4)",
+  "week": 6,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "İntihalden kaçınmak için ne yapılmalıdır?",
+      "options": [
+        "Kaynakları belirtmek ve kendi cümleleriyle ifade etmek",
+        "Metni olduğu gibi kopyalamak",
+        "Kaynak belirtmemek",
+        "Başkasının fikrini kendi fikriymiş gibi sunmak"
+      ],
+      "correctIndex": 0,
+      "hint": "Kaynak göstermek ve özgün ifade kullanmak, akademik dürüstlüğün gereğidir."
+    },
+    {
+      "id": "q2",
+      "text": "Aşağıdakilerden hangisi teknolojinin çevre üzerindeki olası olumsuz bir etkisidir?",
+      "options": [
+        "Elektronik atıkların çevreye zarar verebilmesi",
+        "Teknolojinin hiç çevresel etkisi yoktur",
+        "Teknoloji her zaman çevreye faydalıdır",
+        "Elektronik atıklar hiç sorun yaratmaz"
+      ],
+      "correctIndex": 0,
+      "hint": "Kullanılmayan elektronik cihazlar, doğru bertaraf edilmezse çevre sorunu yaratabilir."
+    },
+    {
+      "id": "q3",
+      "text": "Aşağıdakilerden hangisi teknolojinin bilimsel araştırmalara katkısına bir örnektir?",
+      "options": [
+        "Veri analiz araçlarının araştırmaları hızlandırması",
+        "Hiçbir katkısı yoktur",
+        "Araştırmaları imkansız hale getirmesi",
+        "Sadece eğlence amaçlı kullanılması"
+      ],
+      "correctIndex": 0,
+      "hint": "Bilgisayarlar ve yazılımlar, büyük veri setlerini analiz etmeyi kolaylaştırır."
+    },
+    {
+      "id": "q4",
+      "text": "Zorlayıcı soru: Bir öğrenci, sosyal medyada gördüğü bir görselin gerçek olup olmadığından emin değil. En doğru yaklaşım nedir?",
+      "options": [
+        "Görseli hemen paylaşmak",
+        "Görselin kaynağını araştırıp doğruluğunu kontrol etmek",
+        "Görseli görmezden gelmek",
+        "Görseli değiştirip paylaşmak"
+      ],
+      "correctIndex": 1,
+      "hint": "Şüpheli içerikleri paylaşmadan önce doğrulamak, sorumlu bir dijital davranıştır."
+    },
+    {
+      "id": "q5",
+      "text": "Aşağıdakilerden hangisi 'e-devlet' hizmetlerine bir örnek olabilir?",
+      "options": [
+        "Devlet hizmetlerine internet üzerinden erişim sağlanması",
+        "Hiçbir anlamı yoktur",
+        "Sadece kağıt üzerinde işlem yapmak",
+        "İnternetsiz hizmet sunumu"
+      ],
+      "correctIndex": 0,
+      "hint": "E-devlet, birçok resmi işlemi çevrimiçi olarak yapmayı mümkün kılar."
+    },
+    {
+      "id": "q6",
+      "text": "Teknolojinin sunduğu kolaylıklardan biri olan 'çevrimiçi bankacılık' ne sağlar?",
+      "options": [
+        "Bankaya gitmeden işlem yapabilme imkanı",
+        "Hiçbir imkan sağlamaz",
+        "Bankacılığı imkansız hale getirir",
+        "Sadece nakit işlemler yapılabilir"
+      ],
+      "correctIndex": 0,
+      "hint": "Bu hizmet, zaman ve mekan bağımsız işlem yapmayı sağlar."
+    },
+    {
+      "id": "q7",
+      "text": "Aşağıdakilerden hangisi teknoloji kullanırken 'göz sağlığını' korumak için önerilen bir davranıştır?",
+      "options": [
+        "Ekrana ara vermeden uzun süre bakmak",
+        "Belirli aralıklarla ekrandan uzaklaşıp göz dinlendirmek",
+        "Işıksız ortamda ekran kullanmak",
+        "Hiçbir önlem almamak"
+      ],
+      "correctIndex": 1,
+      "hint": "Düzenli aralar, göz yorgunluğunu azaltmaya yardımcı olabilir."
+    },
+    {
+      "id": "q8",
+      "text": "Bir öğrencinin gece geç saatlere kadar telefon kullanması hangi olumsuz sonuca yol açabilir?",
+      "options": [
+        "Uyku düzeninin bozulması",
+        "Hiçbir olumsuz sonuç doğurmaz",
+        "Daha iyi uyumasını sağlar",
+        "Sadece olumlu etkileri vardır"
+      ],
+      "correctIndex": 0,
+      "hint": "Ekran ışığı ve geç saatlerde kullanım, uyku kalitesini olumsuz etkileyebilir."
+    },
+    {
+      "id": "q9",
+      "text": "Aşağıdakilerden hangisi teknolojinin sanata katkısına bir örnektir?",
+      "options": [
+        "Dijital sanat ve tasarım araçlarının gelişmesi",
+        "Hiçbir katkısı yoktur",
+        "Sanatı imkansız hale getirmesi",
+        "Sadece geleneksel sanatı yok etmesi"
+      ],
+      "correctIndex": 0,
+      "hint": "Dijital araçlar, yeni sanatsal ifade biçimlerine olanak tanır."
+    },
+    {
+      "id": "q10",
+      "text": "Zorlayıcı soru: Bir öğrenci, çevrimiçi bir oyunda tanımadığı biriyle kişisel bilgilerini (adres, okul adı vb.) paylaşmak isteyen bir mesaj alıyor. En doğru davranış nedir?",
+      "options": [
+        "Bilgileri hemen paylaşmak",
+        "Bilgileri paylaşmamak ve durumu güvenilir bir yetişkine bildirmek",
+        "Karşı tarafa küfretmek",
+        "Hiçbir şey yapmamak"
+      ],
+      "correctIndex": 1,
+      "hint": "Kişisel bilgileri korumak ve güvenilir bir yetişkinden destek almak önemlidir."
+    },
+    {
+      "id": "q11",
+      "text": "Aşağıdakilerden hangisi 'dijital iz' (dijital ayak izi) kavramını en iyi açıklar?",
+      "options": [
+        "İnternette bıraktığımız veri ve bilgi izleri",
+        "Fiziksel bir ayak izi",
+        "Hiçbir anlamı yoktur",
+        "Sadece bir oyun terimi"
+      ],
+      "correctIndex": 0,
+      "hint": "İnternet üzerindeki her paylaşım, bir tür iz bırakır."
+    },
+    {
+      "id": "q12",
+      "text": "Bir kişinin paylaştığı içeriklerin internette uzun süre kalabileceğini bilmesi neden önemlidir?",
+      "options": [
+        "Hiçbir önemi yoktur",
+        "Paylaşımlarını daha dikkatli ve bilinçli yapmasına yardımcı olur",
+        "Paylaşımların hiçbir kalıcılığı yoktur",
+        "Dikkatli olmaya gerek yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Dijital izin kalıcılığını bilmek, sorumlu paylaşım alışkanlıkları geliştirmeye yardımcı olur."
+    },
+    {
+      "id": "q13",
+      "text": "Aşağıdakilerden hangisi teknolojinin bir 'sosyal bilim aracı' olarak kullanımına örnektir?",
+      "options": [
+        "Nüfus verilerini analiz eden yazılımlar",
+        "Hiçbir örnek yoktur",
+        "Teknoloji sosyal bilimlerle hiç ilgili değildir",
+        "Sadece eğlence araçları"
+      ],
+      "correctIndex": 0,
+      "hint": "Veri analiz araçları, demografik ve toplumsal araştırmalara yardımcı olabilir."
+    },
+    {
+      "id": "q14",
+      "text": "Zorlayıcı soru: Bir öğrenci, bir konuda araştırma yaparken hem bir kitaptan hem güvenilir bir web sitesinden bilgi topluyor ve ikisini karşılaştırıyor. Bu yaklaşımın faydası nedir?",
+      "options": [
+        "Bilginin daha kapsamlı ve doğrulanmış olmasını sağlar",
+        "Hiçbir faydası yoktur",
+        "Zaman kaybettirir sadece",
+        "Tek kaynak her zaman yeterlidir"
+      ],
+      "correctIndex": 0,
+      "hint": "Farklı kaynaklardan bilgi toplamak, araştırmanın güvenilirliğini artırır."
+    },
+    {
+      "id": "q15",
+      "text": "Aşağıdakilerden hangisi 'akıllı şehir' (smart city) kavramına bir örnektir?",
+      "options": [
+        "Trafik ışıklarının akıllı sensörlerle yönetilmesi",
+        "Hiçbir örnek yoktur",
+        "Şehirlerin teknolojiyle hiç ilgisi yoktur",
+        "Sadece eski yöntemlerin kullanılması"
+      ],
+      "correctIndex": 0,
+      "hint": "Akıllı şehirler, teknolojiyi kullanarak kentsel hizmetleri iyileştirmeyi amaçlar."
+    },
+    {
+      "id": "q16",
+      "text": "Teknolojinin engelli bireylerin hayatına katkısı nasıl açıklanabilir?",
+      "options": [
+        "Hiçbir katkısı yoktur",
+        "Erişilebilirlik teknolojileri günlük yaşamlarını kolaylaştırabilir",
+        "Teknoloji sadece engelli olmayanlara faydalıdır",
+        "Engelli bireylerin teknolojiyle hiç ilgisi olmamalıdır"
+      ],
+      "correctIndex": 1,
+      "hint": "Sesli okuma yazılımları gibi araçlar, erişilebilirliği artırabilir."
+    },
+    {
+      "id": "q17",
+      "text": "Aşağıdakilerden hangisi 'çevrimiçi öğrenme platformlarının' bir avantajıdır?",
+      "options": [
+        "Zaman ve mekan esnekliği sunması",
+        "Hiçbir avantajı yoktur",
+        "Öğrenmeyi imkansız hale getirmesi",
+        "Sadece belirli kişiler için uygundur"
+      ],
+      "correctIndex": 0,
+      "hint": "Çevrimiçi platformlar, farklı zaman ve yerlerden erişime olanak tanır."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Bugün internette bir bilgiyi doğrulamayı denedin mi?",
+    "options": [
+      "Evet, denedim",
+      "Henüz denemedim ama önemli olduğunu biliyorum",
+      "Hatırlamıyorum",
+      "Söylemek istemiyorum"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

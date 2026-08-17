@@ -1,0 +1,239 @@
+{
+  "id": "turkce-unite6-siir-bilgisi-yazim-kurallari-p1",
+  "subject": "Türkçe",
+  "title": "Ünite 6 - Şiir Bilgisi ve Yazım Kuralları (1/4)",
+  "week": 6,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Bir şiirde her satıra ne denir?",
+      "options": [
+        "Dize (mısra)",
+        "Bent",
+        "Kafiye",
+        "Redif"
+      ],
+      "correctIndex": 0,
+      "hint": "Şiirin her bir satırına verilen isim."
+    },
+    {
+      "id": "q2",
+      "text": "Bir şiirde dizelerin oluşturduğu bölüme (kıtaya) ne denir?",
+      "options": [
+        "Dize",
+        "Bent (kıta)",
+        "Kafiye",
+        "Ölçü"
+      ],
+      "correctIndex": 1,
+      "hint": "Birden fazla dizenin bir araya gelmesiyle oluşan gruba bu ad verilir."
+    },
+    {
+      "id": "q3",
+      "text": "İki dizeden oluşan bir bent birimine ne denir?",
+      "options": [
+        "Dörtlük",
+        "Beyit",
+        "Üçlük",
+        "Bent"
+      ],
+      "correctIndex": 1,
+      "hint": "'Beyit', iki dizelik bir birimdir."
+    },
+    {
+      "id": "q4",
+      "text": "Dört dizeden oluşan bir bent birimine ne denir?",
+      "options": [
+        "Beyit",
+        "Dörtlük",
+        "Üçlük",
+        "İkilik"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu birim, dört satırdan oluşur."
+    },
+    {
+      "id": "q5",
+      "text": "Şiirde dize sonlarındaki ses benzerliğine ne denir?",
+      "options": [
+        "Redif",
+        "Kafiye",
+        "Ölçü",
+        "Ahenk"
+      ],
+      "correctIndex": 1,
+      "hint": "'Dal-bal' gibi ses benzerliklerini düşün."
+    },
+    {
+      "id": "q6",
+      "text": "Kafiyeden sonra gelen, anlamca aynı olan ek veya kelime tekrarına ne denir?",
+      "options": [
+        "Kafiye",
+        "Redif",
+        "Ölçü",
+        "Ahenk"
+      ],
+      "correctIndex": 1,
+      "hint": "'Geldiler-gittiler' örneğinde '-diler' kısmı bu terime bir örnektir (redif eğer anlamca aynıysa)."
+    },
+    {
+      "id": "q7",
+      "text": "Bir şiirde ses ve anlam uyumunun genel adı nedir?",
+      "options": [
+        "Kafiye",
+        "Redif",
+        "Ahenk",
+        "Ölçü"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu terim, şiirin genel müzikal/ses uyumunu ifade eder."
+    },
+    {
+      "id": "q8",
+      "text": "Aşağıdaki dize çiftlerinde 'kuşlar' kelimesinin tekrarı hangi özelliği taşır?",
+      "options": [
+        "Kafiye/redif özelliği taşır",
+        "Hiçbir özellik taşımaz",
+        "Sadece bir yazım hatasıdır",
+        "Bu bir şiir değildir"
+      ],
+      "correctIndex": 0,
+      "hint": "Dize sonlarındaki aynı kelimenin tekrarı, hem kafiye hem redif özelliği taşıyabilir."
+    },
+    {
+      "id": "q9",
+      "text": "Şiirde hece sayısına dayanan ölçüye ne denir?",
+      "options": [
+        "Aruz ölçüsü",
+        "Hece ölçüsü",
+        "Serbest ölçü",
+        "Kafiye ölçüsü"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu ölçü türünde, her dizedeki hece sayısı eşit tutulur."
+    },
+    {
+      "id": "q10",
+      "text": "'Gök-yü-zün-de u-çan kuş-lar' dizesinde kaç hece vardır?",
+      "options": [
+        "7",
+        "8",
+        "9",
+        "6"
+      ],
+      "correctIndex": 1,
+      "hint": "Kelimeleri hecelerine ayırıp say: gök-yü-zün-de(4) u-çan(2) kuş-lar(2) = 8."
+    },
+    {
+      "id": "q11",
+      "text": "Belirli bir ölçüye ve kafiye düzenine bağlı kalmadan yazılan şiirlere ne denir?",
+      "options": [
+        "Hece ölçülü şiir",
+        "Aruz ölçülü şiir",
+        "Serbest şiir",
+        "Kafiyeli şiir"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu şiir türünde, dize uzunlukları ve kafiye zorunlu değildir."
+    },
+    {
+      "id": "q12",
+      "text": "Şiirlerde duygu ve düşüncelerin nasıl bir dille anlatıldığı genellikle nasıldır?",
+      "options": [
+        "Tamamen düz yazı gibi, mecazsız",
+        "Çoğunlukla mecazlı, imgeli ve çağrışımlı bir dille",
+        "Sadece bilimsel terimlerle",
+        "Hiçbir özel dil kullanılmaz"
+      ],
+      "correctIndex": 1,
+      "hint": "Şiir dili, genellikle günlük konuşma dilinden farklı, sanatsal bir anlatım içerir."
+    },
+    {
+      "id": "q13",
+      "text": "Aşağıdakilerden hangisi bir şiirin temel unsurlarından biridir?",
+      "options": [
+        "Dize ve ahenk",
+        "Bölüm ve paragraf",
+        "Özne ve yüklem sadece",
+        "Başlık ve dipnot"
+      ],
+      "correctIndex": 0,
+      "hint": "Dizeler ve ses uyumu (ahenk), şiirin temel yapı taşlarındandır."
+    },
+    {
+      "id": "q14",
+      "text": "Şiirde bir duygunun veya düşüncenin görsel bir imgeyle anlatılmasına ne denir?",
+      "options": [
+        "Kafiye",
+        "İmge (hayal/çağrışım)",
+        "Redif",
+        "Ölçü"
+      ],
+      "correctIndex": 1,
+      "hint": "Şairin okuyucunun zihninde bir görüntü/duygu uyandırmak için kullandığı sanatsal ifadeler."
+    },
+    {
+      "id": "q15",
+      "text": "Bir cümlenin veya kelimenin ilk harfinin büyük yazılması hangi durumlarda gereklidir?",
+      "options": [
+        "Sadece özel isimlerde",
+        "Cümle başında ve özel isimlerde",
+        "Hiçbir zaman gerekli değildir",
+        "Sadece şiirlerde"
+      ],
+      "correctIndex": 1,
+      "hint": "Türkçede büyük harf kullanımı belirli kurallara bağlıdır."
+    },
+    {
+      "id": "q16",
+      "text": "Aşağıdaki cümlelerin hangisinde büyük harf kullanımı doğrudur?",
+      "options": [
+        "ali istanbul'a gitti.",
+        "Ali İstanbul'a gitti.",
+        "Ali istanbul'a Gitti.",
+        "ali İstanbul'a gitti."
+      ],
+      "correctIndex": 1,
+      "hint": "Cümle başı ve özel isimler büyük harfle başlamalıdır."
+    },
+    {
+      "id": "q17",
+      "text": "Gün, ay ve bayram adları cümle içinde nasıl yazılır?",
+      "options": [
+        "Her zaman küçük harfle",
+        "Büyük harfle (özel isim gibi değerlendirilir)",
+        "Kurallar yoktur",
+        "Sadece resmi yazılarda büyük yazılır"
+      ],
+      "correctIndex": 1,
+      "hint": "'Ramazan Bayramı', 'Nisan' gibi örnekleri düşün."
+    },
+    {
+      "id": "q18",
+      "text": "'23 nisan çocuk bayramı' ifadesindeki yazım hatası nedir?",
+      "options": [
+        "Hiçbir hata yoktur",
+        "'Nisan' ve 'Çocuk Bayramı' büyük harfle başlamalıdır",
+        "Sayı yanlış yazılmıştır",
+        "Hiçbir kelime büyük olmamalıdır"
+      ],
+      "correctIndex": 1,
+      "hint": "Ay adları ve özel gün/bayram isimleri büyük harfle başlar."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Hiç şiir yazmayı denedin mi?",
+    "options": [
+      "Evet, denedim",
+      "Hayır ama denemek isterim",
+      "Bilmiyorum",
+      "Söylemek istemiyorum"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "id": "fenbilimleri-unite5-isigin-yayilmasi-p1",
+  "subject": "Fen Bilimleri",
+  "title": "Ünite 5 - Işığın Yayılması (1/4)",
+  "week": 5,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Işık, boş uzayda (ortamda hiçbir engel yokken) nasıl yayılır?",
+      "options": [
+        "Dalgalı bir şekilde",
+        "Doğrusal olarak",
+        "Eğri bir şekilde",
+        "Rastgele yönlerde"
+      ],
+      "correctIndex": 1,
+      "hint": "Bir lazer işaretçisinin ışığını düşün - düz bir çizgi gibi ilerler."
+    },
+    {
+      "id": "q2",
+      "text": "Kendi ışığını üreten cisimlere ne denir?",
+      "options": [
+        "Aydınlatılan cisimler",
+        "Işık kaynağı",
+        "Yansıtıcı cisimler",
+        "Saydam cisimler"
+      ],
+      "correctIndex": 1,
+      "hint": "Güneş, bir mum alevi ve ampul bu gruba girer."
+    },
+    {
+      "id": "q3",
+      "text": "Aşağıdakilerden hangisi doğal bir ışık kaynağıdır?",
+      "options": [
+        "Ampul",
+        "Mum",
+        "Güneş",
+        "El feneri"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu ışık kaynağı, insan yapımı değildir."
+    },
+    {
+      "id": "q4",
+      "text": "Aşağıdakilerden hangisi yapay (insan yapımı) bir ışık kaynağıdır?",
+      "options": [
+        "Güneş",
+        "Yıldızlar",
+        "Şimşek",
+        "Ampul"
+      ],
+      "correctIndex": 3,
+      "hint": "Bu ışık kaynağı, insanlar tarafından üretilmiştir."
+    },
+    {
+      "id": "q5",
+      "text": "Ay, kendi ışığını üretir mi?",
+      "options": [
+        "Evet, çok parlak ışık üretir",
+        "Hayır, Güneş ışığını yansıtır",
+        "Sadece gündüz ışık üretir",
+        "Ay bir ışık kaynağı değildir ve hiç parlamaz"
+      ],
+      "correctIndex": 1,
+      "hint": "Ay bir ışık kaynağı değildir, sadece Güneş'ten aldığı ışığı yansıtır."
+    },
+    {
+      "id": "q6",
+      "text": "Işığın içinden kolayca geçebildiği, arkasındaki cisimlerin net görülebildiği maddelere ne denir?",
+      "options": [
+        "Opak (saydam olmayan)",
+        "Saydam",
+        "Yarı saydam",
+        "Karanlık"
+      ],
+      "correctIndex": 1,
+      "hint": "Cam ve temiz su bu gruba örnektir."
+    },
+    {
+      "id": "q7",
+      "text": "Işığın bir kısmının geçtiği ama arkasının net görülemediği maddelere ne denir?",
+      "options": [
+        "Saydam",
+        "Opak",
+        "Yarı saydam",
+        "Yansıtıcı"
+      ],
+      "correctIndex": 2,
+      "hint": "Buzlu cam veya ince kağıt bu gruba örnektir."
+    },
+    {
+      "id": "q8",
+      "text": "Işığın hiç geçemediği, arkasındaki hiçbir şeyin görülemediği maddelere ne denir?",
+      "options": [
+        "Saydam",
+        "Yarı saydam",
+        "Opak (saydam olmayan)",
+        "Yansıtıcı"
+      ],
+      "correctIndex": 2,
+      "hint": "Tahta, taş, metal gibi maddeleri düşün - bunların arkasını göremeyiz."
+    },
+    {
+      "id": "q9",
+      "text": "Aşağıdakilerden hangisi saydam bir madde örneğidir?",
+      "options": [
+        "Tahta",
+        "Temiz cam",
+        "Karton",
+        "Duvar"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu maddenin arkasını net şekilde görebiliriz."
+    },
+    {
+      "id": "q10",
+      "text": "Aşağıdakilerden hangisi opak (saydam olmayan) bir madde örneğidir?",
+      "options": [
+        "Temiz su",
+        "Cam",
+        "Taş",
+        "İnce tül perde"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu maddenin arkasını hiç göremeyiz, ışık geçmez."
+    },
+    {
+      "id": "q11",
+      "text": "Aşağıdakilerden hangisi yarı saydam bir madde örneğidir?",
+      "options": [
+        "Temiz cam",
+        "Buzlu cam / tül perde",
+        "Beton duvar",
+        "Metal levha"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu maddeden ışık geçer ama arkası net görünmez, bulanık görünür."
+    },
+    {
+      "id": "q12",
+      "text": "Bir ışık kaynağının önüne opak bir cisim konduğunda, cismin arkasında oluşan karanlık bölgeye ne denir?",
+      "options": [
+        "Yansıma",
+        "Gölge",
+        "Kırılma",
+        "Aydınlanma"
+      ],
+      "correctIndex": 1,
+      "hint": "Güneşli bir günde kendi vücudunun arkasında oluşan karanlık alanı düşün."
+    },
+    {
+      "id": "q13",
+      "text": "Gölgenin oluşabilmesi için nelere ihtiyaç vardır?",
+      "options": [
+        "Sadece bir ışık kaynağı yeterlidir",
+        "Bir ışık kaynağı ve ışığı engelleyen bir cisim (opak)",
+        "Sadece opak bir cisim yeterlidir",
+        "Hiçbir şeye ihtiyaç yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Işık olmadan veya engelleyici cisim olmadan gölge oluşmaz."
+    },
+    {
+      "id": "q14",
+      "text": "Işık kaynağı cisme yaklaştıkça gölgenin boyu nasıl değişir?",
+      "options": [
+        "Küçülür",
+        "Büyür",
+        "Değişmez",
+        "Kaybolur"
+      ],
+      "correctIndex": 1,
+      "hint": "Bir el fenerini bir nesneye çok yakın tutarsan gölge nasıl görünür?"
+    },
+    {
+      "id": "q15",
+      "text": "Işık kaynağı cisimden uzaklaştıkça gölgenin boyu nasıl değişir?",
+      "options": [
+        "Büyür",
+        "Küçülür",
+        "Değişmez",
+        "Kaybolur"
+      ],
+      "correctIndex": 1,
+      "hint": "Işık kaynağı uzaklaştıkça ışınlar daha paralel hâle gelir, gölge küçülür."
+    },
+    {
+      "id": "q16",
+      "text": "Bir cismin boyu büyüdükçe (aynı ışık kaynağı sabit kalırsa) gölgesinin boyu nasıl değişir?",
+      "options": [
+        "Küçülür",
+        "Büyür",
+        "Değişmez",
+        "Gölge oluşmaz"
+      ],
+      "correctIndex": 1,
+      "hint": "Daha büyük bir cisim, genellikle daha büyük bir gölge oluşturur."
+    },
+    {
+      "id": "q17",
+      "text": "Güneşin gökyüzündeki konumu (öğlen ile akşamüstü) gölgelerin boyunu nasıl etkiler?",
+      "options": [
+        "Hiç etkilemez",
+        "Öğlen gölgeler kısa, akşamüstü gölgeler uzundur",
+        "Öğlen gölgeler uzun, akşamüstü kısadır",
+        "Gölgeler her zaman aynı boydadır"
+      ],
+      "correctIndex": 1,
+      "hint": "Güneş öğlen tepede olduğunda ışınlar daha dik açıyla gelir, gölgeler kısalır."
+    },
+    {
+      "id": "q18",
+      "text": "Gündüz vakti güneş ışığı bir ağacın üzerine düştüğünde, ağacın arkasında ne oluşur?",
+      "options": [
+        "Yansıma",
+        "Gölge",
+        "Renkli ışık",
+        "Hiçbir şey"
+      ],
+      "correctIndex": 1,
+      "hint": "Ağaç opak bir cisimdir ve ışığı engeller."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Bugün gölgeni ne zaman fark ettin?",
+    "options": [
+      "Sabah",
+      "Öğlen",
+      "Akşam",
+      "Fark etmedim"
+    ],
+    "correctIndex": 3,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

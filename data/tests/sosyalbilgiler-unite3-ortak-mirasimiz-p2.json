@@ -1,0 +1,239 @@
+{
+  "id": "sosyalbilgiler-unite3-ortak-mirasimiz-p2",
+  "subject": "Sosyal Bilgiler",
+  "title": "Ünite 3 - Ortak Mirasımız (2/4)",
+  "week": 3,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Zorlayıcı soru: Bir bölgede birden fazla eski uygarlığın izlerine rastlanması ne anlama gelebilir?",
+      "options": [
+        "Bölgenin tarih boyunca farklı topluluklara ev sahipliği yaptığı anlamına gelebilir",
+        "Hiçbir anlamı yoktur",
+        "Bölgenin hiç tarihi olmadığı anlamına gelir",
+        "Sadece bir uygarlığın var olduğu anlamına gelir"
+      ],
+      "correctIndex": 0,
+      "hint": "Katmanlı tarihi kalıntılar, bir bölgenin uzun ve çeşitli bir geçmişi olduğunu gösterir."
+    },
+    {
+      "id": "q2",
+      "text": "Aşağıdakilerden hangisi bir geleneksel el sanatına örnektir?",
+      "options": [
+        "Cep telefonu üretimi",
+        "Çinicilik/seramik sanatı",
+        "Bilgisayar programlama",
+        "Uydu teknolojisi"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu sanat, nesilden nesile aktarılan eski bir zanaat türüdür."
+    },
+    {
+      "id": "q3",
+      "text": "Bir bölgedeki tarihi kalıntıların korunması için arkeologlar ne yapar?",
+      "options": [
+        "Kalıntıları yok ederler",
+        "Kazı ve araştırma yaparak eserleri belgelerler ve korurlar",
+        "Hiçbir şey yapmazlar",
+        "Kalıntıları satarlar"
+      ],
+      "correctIndex": 1,
+      "hint": "Arkeologlar, geçmişi bilimsel yöntemlerle araştırıp koruma altına alır."
+    },
+    {
+      "id": "q4",
+      "text": "Aşağıdakilerden hangisi 'kültürel miras turizmi' kavramına bir örnektir?",
+      "options": [
+        "Sadece deniz kenarında tatil yapmak",
+        "Tarihi ören yerlerini ve müzeleri ziyaret etmek",
+        "Alışveriş yapmak",
+        "Spor müsabakası izlemek"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu tür turizm, tarihi ve kültürel değerleri görmeye yöneliktir."
+    },
+    {
+      "id": "q5",
+      "text": "Bir toplumun geleneksel yemek kültürü, hangi tür mirasa örnektir?",
+      "options": [
+        "Somut kültürel miras",
+        "Somut olmayan kültürel miras",
+        "Doğal miras",
+        "Hiçbirine girmez"
+      ],
+      "correctIndex": 1,
+      "hint": "Yemek tarifleri ve pişirme gelenekleri, uygulamalı olarak aktarılan bir mirastır."
+    },
+    {
+      "id": "q6",
+      "text": "Aşağıdakilerden hangisi 'kazı çalışması' (arkeolojik kazı) sırasında dikkat edilmesi gereken bir husustur?",
+      "options": [
+        "Eserleri hızlıca ve dikkatsizce çıkarmak",
+        "Bilimsel yöntemlerle, dikkatli ve sistematik çalışmak",
+        "Eserleri gizlice satmak",
+        "Kazı alanını umursamamak"
+      ],
+      "correctIndex": 1,
+      "hint": "Arkeolojik kazılar, titiz ve bilimsel bir süreç gerektirir."
+    },
+    {
+      "id": "q7",
+      "text": "Zorlayıcı soru: Bir öğrenci, evindeki eski bir aile yadigarının (örneğin dedesinin saati) da bir çeşit miras olduğunu öğreniyor. Bu, hangi miras türüne girer?",
+      "options": [
+        "Sadece ulusal miras",
+        "Kişisel/ailevi somut miras",
+        "Hiçbir miras türüne girmez",
+        "Sadece doğal miras"
+      ],
+      "correctIndex": 1,
+      "hint": "Aile yadigarları, küçük ölçekli ama anlamlı somut miraslardır."
+    },
+    {
+      "id": "q8",
+      "text": "Aşağıdakilerden hangisi kültürel çeşitliliğin bir toplum için değerli olmasının sebeplerinden biridir?",
+      "options": [
+        "Farklı bakış açıları ve zenginlik katması",
+        "Toplumu zayıflatması",
+        "Hiçbir değeri olmaması",
+        "Sadece karışıklık yaratması"
+      ],
+      "correctIndex": 0,
+      "hint": "Çeşitlilik, genellikle bir toplumu kültürel açıdan zenginleştirir."
+    },
+    {
+      "id": "q9",
+      "text": "Bir halk masalının kuşaktan kuşağa sözlü olarak aktarılması hangi miras türüne örnektir?",
+      "options": [
+        "Somut kültürel miras",
+        "Somut olmayan kültürel miras",
+        "Doğal miras",
+        "Hiçbirine girmez"
+      ],
+      "correctIndex": 1,
+      "hint": "Sözlü aktarım, fiziksel bir nesne olmadan gerçekleşen bir miras türüdür."
+    },
+    {
+      "id": "q10",
+      "text": "Aşağıdakilerden hangisi tarihi bir eserin restorasyonunun (onarımının) amacıdır?",
+      "options": [
+        "Eseri tamamen yok etmek",
+        "Eserin özgün hâlini koruyarak uzun ömürlü olmasını sağlamak",
+        "Eseri değiştirip yeni bir şeye dönüştürmek",
+        "Hiçbir amacı yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Restorasyon, eserlerin tarihi değerini koruyarak onarılmasıdır."
+    },
+    {
+      "id": "q11",
+      "text": "Bir toplumun geleneksel kıyafetleri (örneğin yöresel kıyafetler), hangi tür bir mirasın parçasıdır?",
+      "options": [
+        "Kültürel miras (hem somut hem somut olmayan yönleri olabilir)",
+        "Sadece doğal miras",
+        "Hiçbir mirasın parçası değildir",
+        "Sadece kişisel eşya"
+      ],
+      "correctIndex": 0,
+      "hint": "Kıyafetler fiziksel (somut) olsa da, dikiş teknikleri ve gelenekleri somut olmayan yönler taşır."
+    },
+    {
+      "id": "q12",
+      "text": "Zorlayıcı soru: Bir bölgede yüzyıllardır uygulanan geleneksel bir el sanatı, günümüzde çok az kişi tarafından biliniyor. Bu durumun olası bir sonucu nedir?",
+      "options": [
+        "Hiçbir sonucu olmaz",
+        "Bu somut olmayan kültürel miras, gelecekte kaybolma riski taşıyabilir",
+        "Sanat otomatik olarak yaygınlaşır",
+        "Bu bir sorun değildir"
+      ],
+      "correctIndex": 1,
+      "hint": "Az sayıda kişi tarafından bilinen gelenekler, aktarılmazsa kaybolma riski taşır."
+    },
+    {
+      "id": "q13",
+      "text": "Aşağıdakilerden hangisi eski uygarlıkların şehir planlaması ile ilgili genel bir katkısı olarak kabul edilir?",
+      "options": [
+        "Sokak ve yerleşim düzenlerinin oluşturulması",
+        "Uzay araçlarının inşası",
+        "İnternetin geliştirilmesi",
+        "Cep telefonu üretimi"
+      ],
+      "correctIndex": 0,
+      "hint": "Eski uygarlıklar, ilk düzenli yerleşim ve şehir planlarını geliştirmiştir."
+    },
+    {
+      "id": "q14",
+      "text": "Bir toplumun mimarisinde (örneğin cami, kilise, tapınak gibi yapılarda) kültürel mirasın izleri nasıl görülebilir?",
+      "options": [
+        "Hiçbir izi görülmez",
+        "Yapı stilleri, o dönemin kültürünü ve inançlarını yansıtabilir",
+        "Mimarinin kültürle hiç ilgisi yoktur",
+        "Sadece modern yapılar kültürü yansıtır"
+      ],
+      "correctIndex": 1,
+      "hint": "Tarihi yapılar, inşa edildikleri dönemin kültürel özelliklerini taşır."
+    },
+    {
+      "id": "q15",
+      "text": "Aşağıdakilerden hangisi 'kültürel miras bilinci' kazanmanın bir yoludur?",
+      "options": [
+        "Tarihi yerleri ve müzeleri ziyaret etmek",
+        "Kültürel mirası önemsememek",
+        "Sadece yabancı kültürleri incelemek",
+        "Hiçbir şey yapmamak"
+      ],
+      "correctIndex": 0,
+      "hint": "Doğrudan deneyim ve gözlem, farkındalığı artırır."
+    },
+    {
+      "id": "q16",
+      "text": "Zorlayıcı soru: Bir öğrenci, ailesinin köklerinin farklı bölgelerden geldiğini öğreniyor ve her bölgenin farklı gelenekleri olduğunu fark ediyor. Bu durum, ailenin kültürel mirası hakkında ne söyler?",
+      "options": [
+        "Ailenin hiç kültürel mirası yoktur",
+        "Ailenin kültürel mirası çeşitli ve zengin kaynaklardan beslenmektedir",
+        "Bu durum bir sorun teşkil eder",
+        "Farklı bölgelerin gelenekleri hiç önemli değildir"
+      ],
+      "correctIndex": 1,
+      "hint": "Farklı köklerden gelen aileler, genellikle zengin bir kültürel çeşitliliğe sahip olabilir."
+    },
+    {
+      "id": "q17",
+      "text": "Aşağıdakilerden hangisi bir 'anıt' (abide) örneğidir?",
+      "options": [
+        "Bir şarkı",
+        "Bir zafer takı veya heykel",
+        "Bir dans",
+        "Bir yemek tarifi"
+      ],
+      "correctIndex": 1,
+      "hint": "Anıtlar, genellikle önemli olayları veya kişileri anmak için yapılan fiziksel yapılardır."
+    },
+    {
+      "id": "q18",
+      "text": "Bir toplumun geleneksel müziği, hangi tür kültürel mirasa girer?",
+      "options": [
+        "Somut kültürel miras",
+        "Somut olmayan kültürel miras",
+        "Doğal miras",
+        "Hiçbirine girmez"
+      ],
+      "correctIndex": 1,
+      "hint": "Müzik, nesilden nesile çalınıp söylenerek aktarılan, dokunulamayan bir mirastır."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Ailende nesilden nesile aktarılan bir gelenek var mı?",
+    "options": [
+      "Evet, var",
+      "Emin değilim",
+      "Hayır, yok",
+      "Araştırmak isterim"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

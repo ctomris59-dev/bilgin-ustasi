@@ -1,0 +1,239 @@
+{
+  "id": "fenbilimleri-unite5-isigin-yayilmasi-p4",
+  "subject": "Fen Bilimleri",
+  "title": "Ünite 5 - Işığın Yayılması (4/4)",
+  "week": 5,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Açık renkli (özellikle beyaz) cisimler ışığı nasıl etkiler?",
+      "options": [
+        "Işığın çoğunu emer",
+        "Işığın çoğunu yansıtır",
+        "Işığı hiç etkilemez",
+        "Işığı yok eder"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu yüzden yazın beyaz kıyafetler daha serin hissettirir."
+    },
+    {
+      "id": "q2",
+      "text": "Bir cismin rengini görebilmemiz nasıl açıklanır?",
+      "options": [
+        "Cisimler kendi renklerini üretir",
+        "Cisim, üzerine düşen ışığın bir kısmını yansıtır, o rengi görürüz",
+        "Renk, ışıkla hiç ilgili değildir",
+        "Karanlıkta da renkleri net görürüz"
+      ],
+      "correctIndex": 1,
+      "hint": "Kırmızı bir elma, kırmızı ışığı yansıtıp diğer renkleri emer."
+    },
+    {
+      "id": "q3",
+      "text": "Zorlayıcı soru: Karanlık bir odada renkli bir cismin rengini görebilir miyiz?",
+      "options": [
+        "Evet, her zaman net görürüz",
+        "Hayır, ışık olmadan renk algılanamaz",
+        "Sadece kırmızı renk görülür",
+        "Karanlıkta renkler daha parlak görünür"
+      ],
+      "correctIndex": 1,
+      "hint": "Renk algısı, ışığın cisimden yansıyıp gözümüze ulaşmasına bağlıdır."
+    },
+    {
+      "id": "q4",
+      "text": "Aşağıdakilerden hangisi bir 'ışık kaynağı olmayan ama parlak görünen' cisme örnektir?",
+      "options": [
+        "Güneş",
+        "Ay",
+        "Mum alevi",
+        "Ampul"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu gökcismi parlak görünse de kendi ışığını üretmez."
+    },
+    {
+      "id": "q5",
+      "text": "Bir gölgenin 'net kenarlı' olması neyi gösterir?",
+      "options": [
+        "Işığın dalgalı yayıldığını",
+        "Işığın doğrusal yayıldığını",
+        "Cismin renkli olduğunu",
+        "Hiçbir şey göstermez"
+      ],
+      "correctIndex": 1,
+      "hint": "Doğrusal yayılan ışık, keskin kenarlı gölgeler oluşturur."
+    },
+    {
+      "id": "q6",
+      "text": "Aşağıdakilerden hangisi 'ışığın bir engelle karşılaştığında geçemeyip durması' anlamına gelir?",
+      "options": [
+        "Yansıma",
+        "Engelleme (opak cisimlerde)",
+        "Kırılma",
+        "Yayılma"
+      ],
+      "correctIndex": 1,
+      "hint": "Opak cisimler, ışığın içinden geçmesini tamamen engeller."
+    },
+    {
+      "id": "q7",
+      "text": "Bir güneş tutulmasında Ay'ın gölgesi Dünya üzerine düştüğünde ne olur?",
+      "options": [
+        "Dünya'nın o bölgesi kararır",
+        "Hiçbir şey olmaz",
+        "Ay parlaklaşır",
+        "Güneş söner"
+      ],
+      "correctIndex": 0,
+      "hint": "Ay, Güneş ışığını engellediği için Dünya'nın belirli bir bölgesine gölge düşer."
+    },
+    {
+      "id": "q8",
+      "text": "Zorlayıcı soru: Bir öğrenci bir masa lambasını bir kitaba çok yakın tutuyor, sonra uzaklaştırıyor. Gözlemlediği gölge değişimi ne olur?",
+      "options": [
+        "Yakınken küçük, uzakken büyük gölge",
+        "Yakınken büyük, uzakken küçük gölge",
+        "Hiç değişmez",
+        "Gölge tamamen kaybolur"
+      ],
+      "correctIndex": 1,
+      "hint": "Işık kaynağı cisme yaklaştıkça gölge büyür."
+    },
+    {
+      "id": "q9",
+      "text": "Aşağıdakilerden hangisi ışığın hem faydalı hem potansiyel zararlı olabileceğini gösteren bir örnektir?",
+      "options": [
+        "Güneş ışığı hem bitkilere fayda sağlar hem aşırı maruziyet ciltte zarar verebilir",
+        "Işığın hiçbir etkisi yoktur",
+        "Işık her zaman sadece faydalıdır",
+        "Işık her zaman sadece zararlıdır"
+      ],
+      "correctIndex": 0,
+      "hint": "Güneş ışığı fotosentez için gereklidir ama aşırı maruz kalmak zararlı olabilir."
+    },
+    {
+      "id": "q10",
+      "text": "Bir bilgisayar veya telefon ekranı, kendi ışığını üretir mi?",
+      "options": [
+        "Hayır, sadece dış ışığı yansıtır",
+        "Evet, ekranlar bir ışık kaynağıdır (arkadan aydınlatmalı)",
+        "Ekranların ışıkla ilgisi yoktur",
+        "Sadece güneş ışığında çalışır"
+      ],
+      "correctIndex": 1,
+      "hint": "Modern ekranlar, kendi içlerinde ışık üreten bir teknolojiye sahiptir."
+    },
+    {
+      "id": "q11",
+      "text": "Aşağıdakilerden hangisi 'gölge oyunlarının' (perde arkasında el ile şekil yapma) temel prensibidir?",
+      "options": [
+        "Ses dalgaları",
+        "Bir ışık kaynağı önüne opak bir cisim (el) koyarak gölge oluşturmak",
+        "Suyun yansıması",
+        "Elektrik akımı"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu geleneksel sanat, ışığın engellenmesiyle gölge oluşturma prensibine dayanır."
+    },
+    {
+      "id": "q12",
+      "text": "Zorlayıcı soru: Bir öğrenci iki tane özdeş top kullanıyor, birini saydam camdan birini opak plastikten. Aynı ışık kaynağı altında hangi top daha belirgin bir gölge oluşturur?",
+      "options": [
+        "Saydam cam top",
+        "Opak plastik top",
+        "İkisi de aynı gölgeyi oluşturur",
+        "Hiçbiri gölge oluşturmaz"
+      ],
+      "correctIndex": 1,
+      "hint": "Opak cisimler ışığı tamamen engellediği için daha net gölge oluşturur."
+    },
+    {
+      "id": "q13",
+      "text": "Aşağıdakilerden hangisi ışığın varlığının bir sonucu DEĞİLDİR?",
+      "options": [
+        "Cisimleri görebilmek",
+        "Gölge oluşumu",
+        "Renkleri ayırt edebilmek",
+        "Sesleri duyabilmek"
+      ],
+      "correctIndex": 3,
+      "hint": "Duyma, ses dalgalarıyla ilgilidir, ışıkla değil."
+    },
+    {
+      "id": "q14",
+      "text": "Bir arı veya kuşun bazı ışık türlerini insanlardan farklı algılayabildiği bilinir. Bu bilgiye göre ne söylenebilir?",
+      "options": [
+        "Tüm canlılar ışığı aynı şekilde algılar",
+        "Farklı canlı türleri ışığı farklı şekillerde algılayabilir",
+        "Hayvanlar hiç ışık algılamaz",
+        "Bu bilimsel olarak imkansızdır"
+      ],
+      "correctIndex": 1,
+      "hint": "Farklı türlerin görme sistemleri farklı gelişmiştir."
+    },
+    {
+      "id": "q15",
+      "text": "Aşağıdakilerden hangisi bir 'ışık kirliliği' örneğidir (genel bilgi)?",
+      "options": [
+        "Doğal gün ışığı",
+        "Şehirlerdeki aşırı yapay aydınlatmanın gece gökyüzünü etkilemesi",
+        "Ay ışığı",
+        "Yıldız ışığı"
+      ],
+      "correctIndex": 1,
+      "hint": "Fazla yapay ışık, gece gökyüzünü aydınlatarak yıldızların görülmesini zorlaştırabilir."
+    },
+    {
+      "id": "q16",
+      "text": "Zorlayıcı soru: Güneş batarken gölgelerin çok uzun görünmesinin sebebi nedir?",
+      "options": [
+        "Güneş o an çok parlaktır",
+        "Güneş ufka yakın olduğu için ışınlar çok eğik açıyla gelir",
+        "Cisimler akşam büyür",
+        "Bu bir yanılsamadır, bilimsel sebebi yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Güneş ufka yaklaştıkça ışınların açısı çok eğik olur, bu da gölgeleri uzatır."
+    },
+    {
+      "id": "q17",
+      "text": "Aşağıdakilerden hangisi doğru bir tanımdır?",
+      "options": [
+        "Gölge, ışığın yansıdığı parlak bir alandır",
+        "Gölge, ışığın opak bir cisim tarafından engellendiği karanlık alandır",
+        "Gölge, sadece gece oluşur",
+        "Gölge, sadece suyun üzerinde oluşur"
+      ],
+      "correctIndex": 1,
+      "hint": "Gölge, ışığın ulaşamadığı bölgedir."
+    },
+    {
+      "id": "q18",
+      "text": "Bir fenerin ışığını bir duvara tuttuğumuzda, duvarda aydınlık bir alan oluşur. Bu alanın kenarları neden genellikle net değil de biraz bulanık olabilir?",
+      "options": [
+        "Işık kaynağının kendisi bir nokta değil, belirli bir büyüklüğe sahip olduğu için",
+        "Bu bilimsel olarak imkansızdır",
+        "Duvarın rengi yüzünden",
+        "Havanın nemi yüzünden"
+      ],
+      "correctIndex": 0,
+      "hint": "Geniş ışık kaynakları, tam gölge yerine kısmi gölge (yarı gölge) bölgeleri de oluşturabilir."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Bugün gölgeni ne zaman fark ettin?",
+    "options": [
+      "Sabah",
+      "Öğlen",
+      "Akşam",
+      "Fark etmedim"
+    ],
+    "correctIndex": 3,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

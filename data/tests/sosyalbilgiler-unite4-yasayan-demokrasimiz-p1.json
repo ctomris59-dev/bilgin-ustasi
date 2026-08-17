@@ -1,0 +1,239 @@
+{
+  "id": "sosyalbilgiler-unite4-yasayan-demokrasimiz-p1",
+  "subject": "Sosyal Bilgiler",
+  "title": "Ünite 4 - Yaşayan Demokrasimiz (1/4)",
+  "week": 4,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Halkın kendi kendini yönetme hakkına sahip olduğu yönetim biçimine ne denir?",
+      "options": [
+        "Monarşi",
+        "Demokrasi",
+        "Diktatörlük",
+        "Oligarşi"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu kelime Yunanca 'halk' ve 'yönetim' anlamına gelen kelimelerden türemiştir."
+    },
+    {
+      "id": "q2",
+      "text": "Demokraside kararlar genel olarak nasıl alınır?",
+      "options": [
+        "Tek bir kişinin isteğiyle",
+        "Halkın oyu veya seçtiği temsilciler aracılığıyla",
+        "Kura ile rastgele",
+        "Hiçbir şekilde alınmaz"
+      ],
+      "correctIndex": 1,
+      "hint": "Demokraside halkın iradesi önemlidir."
+    },
+    {
+      "id": "q3",
+      "text": "Bir ülkede halkın belirli aralıklarla oy kullanarak yöneticilerini seçmesine ne denir?",
+      "options": [
+        "Miras",
+        "Seçim",
+        "Vergi",
+        "Nüfus sayımı"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu süreç, demokratik yönetimlerin temel bir unsurudur."
+    },
+    {
+      "id": "q4",
+      "text": "Cumhuriyet yönetiminde devletin başındaki kişi nasıl belirlenir?",
+      "options": [
+        "Soy yoluyla (kalıtsal olarak)",
+        "Halkın seçimiyle belirli bir süre için",
+        "Kura ile",
+        "Hiçbir yolla belirlenmez"
+      ],
+      "correctIndex": 1,
+      "hint": "Cumhuriyette yönetim, halk tarafından seçilen kişilere emanet edilir, kalıtsal değildir."
+    },
+    {
+      "id": "q5",
+      "text": "Cumhuriyet ile monarşi arasındaki temel fark nedir?",
+      "options": [
+        "Hiçbir fark yoktur",
+        "Cumhuriyette yönetici seçimle, monaride soy yoluyla belirlenir",
+        "Monaride seçim yapılır, cumhuriyette yapılmaz",
+        "İkisi de aynı yöntemi kullanır"
+      ],
+      "correctIndex": 1,
+      "hint": "Monarşide taht genellikle aile içinde miras yoluyla geçer."
+    },
+    {
+      "id": "q6",
+      "text": "'Etkin vatandaş' olmak ne anlama gelir?",
+      "options": [
+        "Toplumsal konulara ilgisiz kalmak",
+        "Toplumsal olaylara ilgi göstermek ve katılım sağlamak",
+        "Sadece kendi işiyle ilgilenmek",
+        "Hiçbir sorumluluk almamak"
+      ],
+      "correctIndex": 1,
+      "hint": "Etkin bir vatandaş, toplumun bir parçası olarak sorumluluk alır."
+    },
+    {
+      "id": "q7",
+      "text": "Aşağıdakilerden hangisi etkin vatandaşlığın bir örneğidir?",
+      "options": [
+        "Toplumu ilgilendiren konularda bilgi sahibi olmak ve fikir beyan etmek",
+        "Hiçbir haberle ilgilenmemek",
+        "Toplumsal sorunları görmezden gelmek",
+        "Sadece kendi çıkarını düşünmek"
+      ],
+      "correctIndex": 0,
+      "hint": "Bilgi sahibi olmak, etkin katılımın ilk adımıdır."
+    },
+    {
+      "id": "q8",
+      "text": "Her bireyin sahip olduğu, doğuştan gelen ve devredilemez haklara ne denir?",
+      "options": [
+        "Ayrıcalıklar",
+        "Temel haklar",
+        "Cezalar",
+        "Vergiler"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu haklar, her insanın sahip olduğu evrensel haklardır."
+    },
+    {
+      "id": "q9",
+      "text": "Aşağıdakilerden hangisi bir temel hak örneğidir?",
+      "options": [
+        "Eğitim hakkı",
+        "Başkasına zarar verme hakkı",
+        "Kurallara uymama hakkı",
+        "Yalan söyleme hakkı"
+      ],
+      "correctIndex": 0,
+      "hint": "Bu hak, her çocuğun eğitim alabilmesini güvence altına alır."
+    },
+    {
+      "id": "q10",
+      "text": "Haklarla birlikte gelen kavram nedir?",
+      "options": [
+        "Ayrıcalıklar",
+        "Sorumluluklar",
+        "Cezalar",
+        "Hiçbir şey"
+      ],
+      "correctIndex": 1,
+      "hint": "Her hakkın karşılığında bazı sorumluluklar da bulunur."
+    },
+    {
+      "id": "q11",
+      "text": "Aşağıdakilerden hangisi bir vatandaşlık sorumluluğuna örnektir?",
+      "options": [
+        "Kurallara ve kanunlara uymak",
+        "Kuralları hiçe saymak",
+        "Sadece haklarını talep etmek",
+        "Sorumluluk almaktan kaçınmak"
+      ],
+      "correctIndex": 0,
+      "hint": "Vatandaşlar, haklarının yanı sıra bazı yükümlülüklere de sahiptir."
+    },
+    {
+      "id": "q12",
+      "text": "Bir demokraside farklı görüşlere sahip insanların bir arada yaşayabilmesi neye bağlıdır?",
+      "options": [
+        "Hoşgörü ve saygıya",
+        "Herkesin aynı düşünmesine",
+        "Farklı görüşlerin yasaklanmasına",
+        "Hiçbir şeye bağlı değildir"
+      ],
+      "correctIndex": 0,
+      "hint": "Demokrasi, farklılıklara saygı temelinde işler."
+    },
+    {
+      "id": "q13",
+      "text": "Bir ülkede yaşayan insanların ihtiyaç duyduklarında başvurabilecekleri kurumlara örnek nedir?",
+      "options": [
+        "Hiçbir kurum yoktur",
+        "Belediyeler, okullar, sağlık kurumları gibi kamu kurumları",
+        "Sadece özel şirketler",
+        "Sadece komşular"
+      ],
+      "correctIndex": 1,
+      "hint": "Kamu kurumları, vatandaşlara çeşitli hizmetler sunar."
+    },
+    {
+      "id": "q14",
+      "text": "Bir sorun yaşandığında (örneğin bir sokak lambası bozulduğunda) hangi kuruma başvurulabilir?",
+      "options": [
+        "Belediye",
+        "Kütüphane",
+        "Müze",
+        "Tiyatro"
+      ],
+      "correctIndex": 0,
+      "hint": "Belediyeler, şehir içi altyapı hizmetlerinden sorumludur."
+    },
+    {
+      "id": "q15",
+      "text": "Bir acil durumda (yangın, kaza vb.) aranması gereken hizmetlerden biri nedir?",
+      "options": [
+        "Kütüphane",
+        "İtfaiye veya acil sağlık hizmetleri",
+        "Müze",
+        "Tiyatro"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu hizmetler, acil durumlarda yardım sağlar."
+    },
+    {
+      "id": "q16",
+      "text": "Demokratik bir toplumda basın (medya) özgürlüğünün önemi nedir?",
+      "options": [
+        "Hiçbir önemi yoktur",
+        "Halkın bilgi edinmesini ve farklı görüşleri duymasını sağlar",
+        "Sadece eğlence amaçlıdır",
+        "Basının hiç özgürlüğü olmamalıdır"
+      ],
+      "correctIndex": 1,
+      "hint": "Özgür basın, demokratik bir toplumun önemli unsurlarından biridir."
+    },
+    {
+      "id": "q17",
+      "text": "Aşağıdakilerden hangisi bir 'oy kullanma hakkının' demokrasideki önemini açıklar?",
+      "options": [
+        "Vatandaşların yönetime katılmasını sağlar",
+        "Hiçbir önemi yoktur",
+        "Sadece bir formaliteden ibarettir",
+        "Sadece belirli kişiler için önemlidir"
+      ],
+      "correctIndex": 0,
+      "hint": "Oy kullanma, vatandaşların seslerini duyurmasının temel yollarından biridir."
+    },
+    {
+      "id": "q18",
+      "text": "Bir demokraside 'çoğunluğun kararına saygı' ile 'azınlık haklarının korunması' arasındaki denge neden önemlidir?",
+      "options": [
+        "Hiçbir önemi yoktur",
+        "Herkesin haklarının korunduğu adil bir toplum için gereklidir",
+        "Sadece çoğunluğun isteği önemlidir",
+        "Azınlıkların hiçbir hakkı olmamalıdır"
+      ],
+      "correctIndex": 1,
+      "hint": "Adil bir demokraside, çoğunluk kararı alırken azınlığın temel hakları da korunmalıdır."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Sınıfında bir karar alınırken oy kullandın mı?",
+    "options": [
+      "Evet, kullandım",
+      "Henüz fırsatım olmadı",
+      "Hatırlamıyorum",
+      "Söylemek istemiyorum"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

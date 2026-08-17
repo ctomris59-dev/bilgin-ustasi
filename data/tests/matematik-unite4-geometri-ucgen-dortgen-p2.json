@@ -1,0 +1,251 @@
+{
+  "id": "matematik-unite4-geometri-ucgen-dortgen-p2",
+  "subject": "Matematik",
+  "title": "Ünite 4 - Temel Geometrik Kavramlar, Üçgen ve Dörtgenler (2/4)",
+  "week": 4,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Bir üçgenin iç açıları toplamı kaç derecedir?",
+      "options": [
+        "90 derece",
+        "180 derece",
+        "270 derece",
+        "360 derece"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu, tüm üçgenler için geçerli sabit bir kuraldır."
+    },
+    {
+      "id": "q2",
+      "text": "Bir üçgenin iki açısı 50 ve 60 derece ise, üçüncü açısı kaç derecedir?",
+      "options": [
+        "60 derece",
+        "70 derece",
+        "80 derece",
+        "90 derece"
+      ],
+      "correctIndex": 1,
+      "hint": "180 - (50+60) işlemini yap."
+    },
+    {
+      "id": "q3",
+      "text": "Bütün açıları 90 dereceden küçük olan üçgene ne denir?",
+      "options": [
+        "Dar açılı üçgen",
+        "Dik üçgen",
+        "Geniş açılı üçgen",
+        "İkizkenar üçgen"
+      ],
+      "correctIndex": 0,
+      "hint": "Bu üçgende hiçbir açı 90 dereceyi geçmez."
+    },
+    {
+      "id": "q4",
+      "text": "Bir açısı 90 dereceden büyük olan üçgene ne denir?",
+      "options": [
+        "Dar açılı üçgen",
+        "Dik üçgen",
+        "Geniş açılı üçgen",
+        "Eşkenar üçgen"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu üçgende bir köşe geniş açılıdır."
+    },
+    {
+      "id": "q5",
+      "text": "Dört kenarı da eşit ve dört açısı da 90 derece olan dörtgene ne denir?",
+      "options": [
+        "Dikdörtgen",
+        "Kare",
+        "Paralelkenar",
+        "Yamuk"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu şekil, hem tüm kenarları eşit hem tüm açıları dik olan özel bir dörtgendir."
+    },
+    {
+      "id": "q6",
+      "text": "Karşılıklı kenarları eşit ve dört açısı da 90 derece olan dörtgene ne denir?",
+      "options": [
+        "Kare",
+        "Dikdörtgen",
+        "Yamuk",
+        "Eşkenar dörtgen"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu şekilde tüm kenarlar eşit olmak zorunda değildir, sadece karşılıklı olanlar."
+    },
+    {
+      "id": "q7",
+      "text": "Karşılıklı kenarları paralel ve eşit olan, açıları 90 derece olmak zorunda olmayan dörtgene ne denir?",
+      "options": [
+        "Kare",
+        "Dikdörtgen",
+        "Paralelkenar",
+        "Yamuk"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu şekil eğik görünebilir ama karşılıklı kenarları hep paraleldir."
+    },
+    {
+      "id": "q8",
+      "text": "Sadece bir çift kenarı paralel olan dörtgene ne denir?",
+      "options": [
+        "Kare",
+        "Paralelkenar",
+        "Yamuk",
+        "Dikdörtgen"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu şekilde diğer çift kenar paralel değildir."
+    },
+    {
+      "id": "q9",
+      "text": "Bir dörtgenin iç açıları toplamı kaç derecedir?",
+      "options": [
+        "180 derece",
+        "270 derece",
+        "360 derece",
+        "450 derece"
+      ],
+      "correctIndex": 2,
+      "hint": "Bir dörtgen, köşegen çizilerek iki üçgene bölünebilir - her üçgen 180 derece."
+    },
+    {
+      "id": "q10",
+      "text": "Bir dörtgenin üç açısı 90, 90 ve 100 derece ise, dördüncü açısı kaç derecedir?",
+      "options": [
+        "70 derece",
+        "80 derece",
+        "90 derece",
+        "100 derece"
+      ],
+      "correctIndex": 1,
+      "hint": "360 - (90+90+100) işlemini yap."
+    },
+    {
+      "id": "q11",
+      "text": "Aşağıdakilerden hangisi bir karenin özelliği DEĞİLDİR?",
+      "options": [
+        "4 eşit kenar",
+        "4 dik açı",
+        "Karşılıklı kenarlar birbirine paralel değildir",
+        "Köşegenleri birbirine eşittir"
+      ],
+      "correctIndex": 2,
+      "hint": "Karede karşılıklı kenarlar HER ZAMAN paraleldir."
+    },
+    {
+      "id": "q12",
+      "text": "Zorlayıcı soru: Bir üçgenin açıları x, x ve 2x olarak veriliyor. x kaç derecedir?",
+      "options": [
+        "30",
+        "45",
+        "60",
+        "90"
+      ],
+      "correctIndex": 1,
+      "hint": "x + x + 2x = 180, yani 4x = 180."
+    },
+    {
+      "id": "q13",
+      "text": "Zorlayıcı soru: Bir dikdörtgenin bir açısı verilmemiş ama diğer üç açının hepsi 90 derece. Dördüncü açı kaç derecedir?",
+      "options": [
+        "45 derece",
+        "90 derece",
+        "180 derece",
+        "270 derece"
+      ],
+      "correctIndex": 1,
+      "hint": "Dikdörtgenin tüm açıları her zaman 90 derecedir."
+    },
+    {
+      "id": "q14",
+      "text": "Aşağıdakilerden hangisi doğru bir ifadedir?",
+      "options": [
+        "Her kare bir dikdörtgendir",
+        "Her dikdörtgen bir karedir",
+        "Kareler ve dikdörtgenler hiç ilişkili değildir",
+        "Kareler üçgen sayılır"
+      ],
+      "correctIndex": 0,
+      "hint": "Kare, dikdörtgenin özel bir hâlidir (tüm kenarları eşit olan dikdörtgen)."
+    },
+    {
+      "id": "q15",
+      "text": "İki doğru parçası birbirini dik açıyla kestiğinde, aralarındaki açı kaç derecedir?",
+      "options": [
+        "45 derece",
+        "90 derece",
+        "180 derece",
+        "60 derece"
+      ],
+      "correctIndex": 1,
+      "hint": "'Dik' kelimesi 90 derece anlamına gelir."
+    },
+    {
+      "id": "q16",
+      "text": "Bir açının ölçüsünü ölçmek için hangi araç kullanılır?",
+      "options": [
+        "Cetvel",
+        "Açıölçer (iletki)",
+        "Pergel",
+        "Gönye"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu araç, yarım daire şeklindedir ve derece işaretleri taşır."
+    },
+    {
+      "id": "q17",
+      "text": "Bir çember çizmek için hangi araç kullanılır?",
+      "options": [
+        "Cetvel",
+        "Açıölçer",
+        "Pergel",
+        "Silgi"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu araç, sabit bir merkez etrafında döndürülerek çember çizmeye yarar."
+    },
+    {
+      "id": "q18",
+      "text": "Aşağıdakilerden hangisi eşkenar üçgenin bir özelliğidir?",
+      "options": [
+        "Tüm açıları 60 derecedir",
+        "Sadece iki kenarı eşittir",
+        "Bir açısı 90 derecedir",
+        "Hiçbir kenarı eşit değildir"
+      ],
+      "correctIndex": 0,
+      "hint": "Eşkenar üçgende tüm kenarlar VE tüm açılar eşittir (180÷3=60)."
+    },
+    {
+      "id": "q19",
+      "text": "Zorlayıcı soru: Eşkenar üçgenin her bir açısı neden 60 derecedir?",
+      "options": [
+        "Rastgele bir sayı olduğu için",
+        "180 derece toplamın 3 eşit açıya bölünmesinden (180÷3)",
+        "Üçgenler her zaman 60 derece içerir",
+        "Bir kuraldır, açıklaması yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Üç açı da eşit olduğuna göre, toplamı üçe bölersin."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Geometri konusunda en sevdiğin şekil hangisi?",
+    "options": [
+      "Üçgen",
+      "Kare/Dikdörtgen",
+      "Çember",
+      "Diğer"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

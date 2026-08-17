@@ -1,0 +1,239 @@
+{
+  "id": "turkce-unite6-siir-bilgisi-yazim-kurallari-p3",
+  "subject": "Türkçe",
+  "title": "Ünite 6 - Şiir Bilgisi ve Yazım Kuralları (3/4)",
+  "week": 6,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Sayılardan sonra sıra bildirmek için hangi işaret kullanılır?",
+      "options": [
+        "Nokta (1. gibi)",
+        "Virgül",
+        "Soru işareti",
+        "Ünlem işareti"
+      ],
+      "correctIndex": 0,
+      "hint": "'1. sınıf', '3. kat' gibi ifadelerdeki işareti düşün."
+    },
+    {
+      "id": "q2",
+      "text": "'Birinci' kelimesi rakamla ve noktayla nasıl yazılır?",
+      "options": [
+        "1",
+        "1.",
+        "1,",
+        "1!"
+      ],
+      "correctIndex": 1,
+      "hint": "Sıra sayıları, rakamdan sonra nokta ile gösterilir."
+    },
+    {
+      "id": "q3",
+      "text": "Bir cümlede art arda sıralanan kelimeler arasına hangi işaret konur?",
+      "options": [
+        "Nokta",
+        "Virgül",
+        "Ünlem işareti",
+        "Soru işareti"
+      ],
+      "correctIndex": 1,
+      "hint": "'Elma, armut ve muz aldım.' cümlesindeki işareti düşün."
+    },
+    {
+      "id": "q4",
+      "text": "Bir cümlede ara söz (ek bilgi) vermek için hangi işaretler kullanılabilir?",
+      "options": [
+        "Virgül veya parantez",
+        "Sadece nokta",
+        "Sadece soru işareti",
+        "Hiçbir işaret kullanılmaz"
+      ],
+      "correctIndex": 0,
+      "hint": "Ara sözler, cümlenin akışını bölmeden ek bilgi vermek için kullanılır."
+    },
+    {
+      "id": "q5",
+      "text": "'Ali, en yakın arkadaşım, bugün gelmedi.' cümlesindeki virgüllerin görevi nedir?",
+      "options": [
+        "Ara sözü (en yakın arkadaşım) cümlenin geri kalanından ayırmak",
+        "Hiçbir görevi yoktur",
+        "Cümleyi sonlandırmak",
+        "Soru sormak"
+      ],
+      "correctIndex": 0,
+      "hint": "Virgüller, ek bilgi veren ara sözü belirginleştirir."
+    },
+    {
+      "id": "q6",
+      "text": "Doğrudan aktarılan (birinin söylediği sözler) ifadeler hangi işaretle gösterilir?",
+      "options": [
+        "Tırnak işareti",
+        "Virgül",
+        "Soru işareti",
+        "Ünlem işareti"
+      ],
+      "correctIndex": 0,
+      "hint": "'Öğretmenim \"Ders çalışın.\" dedi.' cümlesindeki işareti düşün."
+    },
+    {
+      "id": "q7",
+      "text": "Bir cümlede tamamlanmamış bir düşünce veya sözün yarıda kesildiğini göstermek için hangi işaret kullanılır?",
+      "options": [
+        "Nokta",
+        "Virgül",
+        "Üç nokta (...)",
+        "Soru işareti"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu işaret, sözün devam ettiğini veya yarıda kaldığını gösterir."
+    },
+    {
+      "id": "q8",
+      "text": "Zorlayıcı soru: 'Bir varmış, bir yokmuş...' ifadesindeki üç nokta neyi ifade eder?",
+      "options": [
+        "Cümlenin tam bittiğini",
+        "Anlatının devam edeceğini, bir giriş/başlangıç havası verdiğini",
+        "Bir hata olduğunu",
+        "Hiçbir anlamı yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Masal başlangıçlarında üç nokta, hikayenin devam edeceğine dair bir beklenti yaratır."
+    },
+    {
+      "id": "q9",
+      "text": "Bir cümlede iki nokta (:) genellikle ne için kullanılır?",
+      "options": [
+        "Bir liste veya açıklama sunmadan önce",
+        "Cümleyi bitirmek için",
+        "Soru sormak için",
+        "Hayret ifade etmek için"
+      ],
+      "correctIndex": 0,
+      "hint": "'Şunları aldım: elma, armut, muz.' cümlesindeki işareti düşün."
+    },
+    {
+      "id": "q10",
+      "text": "Şiirde ahengi sağlayan unsurlardan biri olan 'ölçü' ne anlama gelir?",
+      "options": [
+        "Şiirin sayfa sayısı",
+        "Dizelerdeki hece veya durak sayısının düzenli olması",
+        "Şiirin başlığı",
+        "Şairin yaşı"
+      ],
+      "correctIndex": 1,
+      "hint": "Ölçü, dizeler arasındaki ses/hece dengesini sağlar."
+    },
+    {
+      "id": "q11",
+      "text": "Aşağıdaki dizelerden hangisi 8 heceli bir hece ölçüsüne uygun olabilir? (Örnek: 'Bahçemizde açan güller')",
+      "options": [
+        "Bah-çe-miz-de a-çan gül-ler (8 hece)",
+        "Bu dize hiç hece içermez",
+        "Bu dize 20 hecedir",
+        "Hece sayısı önemli değildir"
+      ],
+      "correctIndex": 0,
+      "hint": "Kelimeleri hecelerine ayırarak say."
+    },
+    {
+      "id": "q12",
+      "text": "Şiirlerde tekrar eden dizelere veya bölümlere ne denir (nakarat)?",
+      "options": [
+        "Redif",
+        "Nakarat",
+        "Kafiye",
+        "Beyit"
+      ],
+      "correctIndex": 1,
+      "hint": "Şarkı ve şiirlerde belirli aralıklarla tekrar eden kısımlara bu ad verilir."
+    },
+    {
+      "id": "q13",
+      "text": "Bir şiirde şairin duygularını doğrudan ifade ettiği türe ne denir (genel bir kavram)?",
+      "options": [
+        "Epik (destansı) şiir",
+        "Lirik (duygusal) şiir",
+        "Didaktik (öğretici) şiir",
+        "Satirik (yerici) şiir"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu tür şiirlerde aşk, hüzün, sevinç gibi kişisel duygular öne çıkar."
+    },
+    {
+      "id": "q14",
+      "text": "Bir şiirde bir ders/öğüt vermeyi amaçlayan türe ne denir?",
+      "options": [
+        "Lirik şiir",
+        "Didaktik (öğretici) şiir",
+        "Epik şiir",
+        "Pastoral şiir"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu tür şiirler, okuyucuya bir bilgi veya ahlaki mesaj vermeyi amaçlar."
+    },
+    {
+      "id": "q15",
+      "text": "Kahramanlık konularını işleyen şiir türüne ne denir?",
+      "options": [
+        "Epik (destansı) şiir",
+        "Lirik şiir",
+        "Didaktik şiir",
+        "Satirik şiir"
+      ],
+      "correctIndex": 0,
+      "hint": "Bu tür şiirler, savaş, kahramanlık gibi büyük olayları anlatır."
+    },
+    {
+      "id": "q16",
+      "text": "Zorlayıcı soru: Bir şiirde 'Anam, bacım, yurdum' gibi ifadeler kullanılıyor ve derin bir vatan sevgisi anlatılıyor. Bu şiir hangi türe daha yakın olabilir?",
+      "options": [
+        "Lirik/Epik (duygusal ve vatan temalı)",
+        "Sadece bilimsel bir metin",
+        "Bir form",
+        "Bir dilekçe"
+      ],
+      "correctIndex": 0,
+      "hint": "Duygusal ve vatan temalı içerik, lirik veya epik şiir özellikleri taşıyabilir."
+    },
+    {
+      "id": "q17",
+      "text": "Aşağıdakilerden hangisi bir şiirin ses unsurlarından biri DEĞİLDİR?",
+      "options": [
+        "Kafiye",
+        "Redif",
+        "Ölçü",
+        "Konu başlığı"
+      ],
+      "correctIndex": 3,
+      "hint": "Konu başlığı, şiirin içerik unsuru olup ses unsuru değildir."
+    },
+    {
+      "id": "q18",
+      "text": "'Yağmur yağar tenden tene / Sevgi düşer benden sana' dizelerinde kafiye hangi kelimelerdedir?",
+      "options": [
+        "Tene - Sana (ses benzerliği)",
+        "Yağmur - Sevgi",
+        "Yağar - Düşer",
+        "Hiçbir kelimede kafiye yoktur"
+      ],
+      "correctIndex": 0,
+      "hint": "Dize sonlarındaki ses benzerliğine bak."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Hiç şiir yazmayı denedin mi?",
+    "options": [
+      "Evet, denedim",
+      "Hayır ama denemek isterim",
+      "Bilmiyorum",
+      "Söylemek istemiyorum"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

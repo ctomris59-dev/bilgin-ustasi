@@ -1,0 +1,239 @@
+{
+  "id": "matematik-unite6-alan-cisimler-p3",
+  "subject": "Matematik",
+  "title": "Ünite 6 - Alan Ölçme ve Geometrik Cisimler (3/4)",
+  "week": 6,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Dikdörtgenler prizmasının kaç yüzü vardır?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "8"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu cisim, bir ayakkabı kutusuna benzer."
+    },
+    {
+      "id": "q2",
+      "text": "Küp ile kare prizma arasındaki fark nedir?",
+      "options": [
+        "Hiçbir fark yoktur",
+        "Küpün tüm kenarları eşittir, kare prizmanın yükseklik farklı olabilir",
+        "Küpün 4 yüzü vardır",
+        "Kare prizmanın hiç yüzü yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Küp, özel bir kare prizma türüdür - tüm kenarları eşittir."
+    },
+    {
+      "id": "q3",
+      "text": "Bir geometrik cismin düzlem üzerine açılmış hâline ne denir?",
+      "options": [
+        "Yüzey alanı",
+        "Açınım",
+        "Hacim",
+        "Köşegen"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu, bir kutuyu düzleştirdiğinde ortaya çıkan şekildir."
+    },
+    {
+      "id": "q4",
+      "text": "Bir küpün açınımı kaç kareden oluşur?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "8"
+      ],
+      "correctIndex": 2,
+      "hint": "Küpün 6 yüzü olduğuna göre, açınımında da 6 kare bulunur."
+    },
+    {
+      "id": "q5",
+      "text": "Bir dikdörtgenler prizmasının açınımında kaç dikdörtgen bulunur?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "8"
+      ],
+      "correctIndex": 2,
+      "hint": "Prizmanın 6 yüzü olduğuna göre, açınımında 6 dikdörtgen (bazıları kare olabilir) bulunur."
+    },
+    {
+      "id": "q6",
+      "text": "Bir geometrik cismin tüm yüzeylerinin alanlarının toplamına ne denir?",
+      "options": [
+        "Çevre",
+        "Yüzey alanı",
+        "Hacim",
+        "Kenar uzunluğu"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu terim, bir cismin dış yüzeyini kaplamak için gereken toplam alanı ifade eder."
+    },
+    {
+      "id": "q7",
+      "text": "Bir küpün bir kenarı 3 cm ise, bir yüzünün alanı kaç cm²'dir?",
+      "options": [
+        "6",
+        "9",
+        "12",
+        "27"
+      ],
+      "correctIndex": 1,
+      "hint": "Bir yüz karedir, alan = kenar × kenar = 3×3."
+    },
+    {
+      "id": "q8",
+      "text": "Bir küpün bir kenarı 4 cm ise, toplam yüzey alanı kaç cm²'dir? (6 yüz vardır)",
+      "options": [
+        "16",
+        "24",
+        "64",
+        "96"
+      ],
+      "correctIndex": 3,
+      "hint": "Bir yüzün alanı 4×4=16, toplam yüzey alanı = 16×6."
+    },
+    {
+      "id": "q9",
+      "text": "Aşağıdakilerden hangisi 3 boyutlu bir geometrik cisimdir?",
+      "options": [
+        "Kare",
+        "Üçgen",
+        "Küp",
+        "Daire"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu şekil, uzunluk-genişlik-yükseklik olmak üzere üç boyuta sahiptir, diğerleri düzlemseldir (2 boyutlu)."
+    },
+    {
+      "id": "q10",
+      "text": "Aşağıdakilerden hangisi 2 boyutlu bir geometrik şekildir?",
+      "options": [
+        "Küp",
+        "Kare",
+        "Dikdörtgenler prizması",
+        "Kare prizma"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu şekil düzlemseldir, sadece uzunluk ve genişliği vardır."
+    },
+    {
+      "id": "q11",
+      "text": "Bir dikdörtgenler prizmasının karşılıklı yüzleri hakkında ne söylenebilir?",
+      "options": [
+        "Birbirinden tamamen farklıdır",
+        "Birbirine eşit ve paraleldir",
+        "Hiç ilişkileri yoktur",
+        "Sadece bir çift eşittir"
+      ],
+      "correctIndex": 1,
+      "hint": "Prizmanın karşılıklı yüzleri eşit boyuttadır."
+    },
+    {
+      "id": "q12",
+      "text": "Bir küpün her yüzü hangi şekildir?",
+      "options": [
+        "Dikdörtgen",
+        "Kare",
+        "Üçgen",
+        "Daire"
+      ],
+      "correctIndex": 1,
+      "hint": "Küpün tüm kenarları eşit olduğu için her yüzü karedir."
+    },
+    {
+      "id": "q13",
+      "text": "Bir dikdörtgenler prizmasının kaç kenarı vardır?",
+      "options": [
+        "6",
+        "8",
+        "10",
+        "12"
+      ],
+      "correctIndex": 3,
+      "hint": "Prizmanın üst ve alt yüzeylerinde 4'er, dikey olarak 4 kenar bulunur, toplam 12."
+    },
+    {
+      "id": "q14",
+      "text": "Bir dikdörtgenler prizmasının kaç köşesi vardır?",
+      "options": [
+        "6",
+        "8",
+        "10",
+        "12"
+      ],
+      "correctIndex": 1,
+      "hint": "Üst yüzeyde 4, alt yüzeyde 4 köşe olmak üzere toplam 8 köşe vardır."
+    },
+    {
+      "id": "q15",
+      "text": "Aşağıdakilerden hangisi günlük hayattan bir küp örneğidir?",
+      "options": [
+        "Bir top",
+        "Bir zar",
+        "Bir koni (dondurma külahı)",
+        "Bir silindir (konserve kutusu)"
+      ],
+      "correctIndex": 1,
+      "hint": "Zarların şekli genellikle küptür."
+    },
+    {
+      "id": "q16",
+      "text": "Aşağıdakilerden hangisi günlük hayattan bir dikdörtgenler prizması örneğidir?",
+      "options": [
+        "Bir top",
+        "Bir ayakkabı kutusu",
+        "Bir çember",
+        "Bir üçgen cetvel"
+      ],
+      "correctIndex": 1,
+      "hint": "Kutu şeklindeki eşyalar genellikle bu geometrik cisme benzer."
+    },
+    {
+      "id": "q17",
+      "text": "Bir geometrik cismin açınımını çizmenin faydası nedir?",
+      "options": [
+        "Hiçbir faydası yoktur",
+        "Yüzey alanını hesaplamayı ve cismi daha iyi anlamayı kolaylaştırır",
+        "Cismin hacmini azaltır",
+        "Cismi küçültür"
+      ],
+      "correctIndex": 1,
+      "hint": "Açınım, tüm yüzeyleri düz bir zeminde görmemizi sağlar, bu da hesaplamayı kolaylaştırır."
+    },
+    {
+      "id": "q18",
+      "text": "Zorlayıcı problem: Bir dikdörtgenin çevresi 24 cm, kısa kenarı 4 cm ise, uzun kenarı kaç cm'dir?",
+      "options": [
+        "6",
+        "8",
+        "10",
+        "12"
+      ],
+      "correctIndex": 1,
+      "hint": "Çevre=2×(en+boy), 24=2×(4+boy), boy=12-4."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Odandaki eşyalardan hangisi bir dikdörtgenler prizmasına benziyor?",
+    "options": [
+      "Dolap",
+      "Kitap",
+      "Kutu",
+      "Hepsi"
+    ],
+    "correctIndex": 3,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

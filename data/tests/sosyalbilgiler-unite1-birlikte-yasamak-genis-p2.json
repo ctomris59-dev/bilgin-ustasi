@@ -1,0 +1,251 @@
+{
+  "id": "sosyalbilgiler-unite1-birlikte-yasamak-genis-p2",
+  "subject": "Sosyal Bilgiler",
+  "title": "Ünite 1 - Birlikte Yaşamak (Geniş Havuz) (2/4)",
+  "week": 1,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Toplu taşımada yaşlı ya da hamile birine yer vermek hangi değeri gösterir?",
+      "options": [
+        "Bencillik",
+        "Saygı ve empatiyi gösteren bir davranış",
+        "Kayıtsızlık",
+        "Kuralsızlık"
+      ],
+      "correctIndex": 1,
+      "hint": "Başkalarının ihtiyaçlarını düşünmek toplumsal bir erdemdir."
+    },
+    {
+      "id": "q2",
+      "text": "Bir sınıf kuralı olan 'söz alarak konuşma'nın amacı nedir?",
+      "options": [
+        "Öğrencileri susturmak",
+        "Herkesin sırayla ve düzenli bir şekilde fikrini söyleyebilmesini sağlamak",
+        "Sadece öğretmenin konuşmasını sağlamak",
+        "Hiçbir amacı yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu kural, herkesin eşit şekilde söz hakkı bulmasını sağlar."
+    },
+    {
+      "id": "q3",
+      "text": "Aşağıdakilerden hangisi 'dayanışma' örneğidir?",
+      "options": [
+        "Zor durumda olan birine yardım etmek için birlikte hareket etmek",
+        "Kimseyi umursamamak",
+        "Sadece kendi çıkarını düşünmek",
+        "Yardım isteyeni görmezden gelmek"
+      ],
+      "correctIndex": 0,
+      "hint": "Dayanışma, ortak bir amaç için birlikte hareket etmektir."
+    },
+    {
+      "id": "q4",
+      "text": "Bir arkadaşın seninle aynı fikirde olmadığında ne yapmalısın?",
+      "options": [
+        "Onunla küsmelisin",
+        "Görüş farklılığına saygı gösterip nazikçe tartışabilirsin",
+        "Onu susturmaya çalışmalısın",
+        "Onunla hiç konuşmamalısın"
+      ],
+      "correctIndex": 1,
+      "hint": "Farklı fikirlere sahip olmak normaldir, önemli olan saygılı iletişimdir."
+    },
+    {
+      "id": "q5",
+      "text": "Sınıf içinde herkesin fikrini rahatça söyleyebildiği bir ortam neye katkı sağlar?",
+      "options": [
+        "Kaosa",
+        "Güven ve iş birliğine dayalı sağlıklı bir sınıf ortamına",
+        "Hiçbir şeye",
+        "Sadece gürültüye"
+      ],
+      "correctIndex": 1,
+      "hint": "Güvenli bir ortamda herkes daha rahat katılım gösterir."
+    },
+    {
+      "id": "q6",
+      "text": "'Beden dili' nedir?",
+      "options": [
+        "Sadece konuşulan kelimeler",
+        "Jest, mimik ve duruşla iletişim kurma şekli",
+        "Yazılı iletişim",
+        "Sadece göz rengi"
+      ],
+      "correctIndex": 1,
+      "hint": "İletişim sadece sözlerle değil, vücut hareketleriyle de kurulur."
+    },
+    {
+      "id": "q7",
+      "text": "Bir kişinin kollarını kavuşturup somurtarak durması genellikle hangi beden dili sinyalini verir?",
+      "options": [
+        "Mutluluk",
+        "Rahatsızlık veya kapalı bir tutum",
+        "Heyecan",
+        "İlgi"
+      ],
+      "correctIndex": 1,
+      "hint": "Kapalı duruşlar genelde olumsuz bir ruh halini yansıtır."
+    },
+    {
+      "id": "q8",
+      "text": "Aşağıdakilerden hangisi 'aktif dinleme' becerisinin bir parçasıdır?",
+      "options": [
+        "Konuşan kişiye göz teması kurmak",
+        "Telefona bakmak",
+        "Başka bir şeyle ilgilenmek",
+        "Sözünü kesmek"
+      ],
+      "correctIndex": 0,
+      "hint": "Göz teması, dinlediğini gösteren önemli bir işarettir."
+    },
+    {
+      "id": "q9",
+      "text": "Bir grup çalışmasında bir arkadaşın hiç katkı sağlamıyor. En doğru yaklaşım nedir?",
+      "options": [
+        "Onu dışlamak",
+        "Nazikçe konuşup neden katkı sağlamadığını sormak, birlikte çözüm bulmaya çalışmak",
+        "Öğretmene şikayet etmeden onu cezalandırmaya çalışmak",
+        "Onun işini de kendin yapıp hiç konuşmamak"
+      ],
+      "correctIndex": 1,
+      "hint": "Sorunu iletişimle çözmeye çalışmak, en yapıcı yoldur."
+    },
+    {
+      "id": "q10",
+      "text": "Toplumda kurallara neden ihtiyaç duyulur?",
+      "options": [
+        "İnsanların özgürlüğünü tamamen kısıtlamak için",
+        "Herkesin güvenli ve düzenli bir şekilde bir arada yaşayabilmesi için",
+        "Sadece yetişkinleri kontrol etmek için",
+        "Hiçbir sebep yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Kurallar, toplumsal düzeni ve güvenliği sağlar."
+    },
+    {
+      "id": "q11",
+      "text": "Bir arkadaşınla anlaşmazlık yaşadığında 'kazan-kazan' çözümü ne anlama gelir?",
+      "options": [
+        "Sadece senin kazanman",
+        "Sadece karşı tarafın kazanması",
+        "Her iki tarafın da tatmin olacağı bir çözüm bulmak",
+        "Kimsenin kazanmaması"
+      ],
+      "correctIndex": 2,
+      "hint": "İyi bir çözümde her iki taraf da bir şekilde memnun olur."
+    },
+    {
+      "id": "q12",
+      "text": "Aşağıdakilerden hangisi olumlu bir iletişim örneğidir?",
+      "options": [
+        "'Sen hep yanlış yapıyorsun!'",
+        "'Bunu böyle yaparsak daha iyi olabilir, ne düşünüyorsun?'",
+        "'Beni hiç dinlemiyorsun!'",
+        "'Senin fikrin hiç önemli değil'"
+      ],
+      "correctIndex": 1,
+      "hint": "Yapıcı ve davetkar bir dil kullanmak iletişimi güçlendirir."
+    },
+    {
+      "id": "q13",
+      "text": "Bir toplulukta 'çeşitlilik' (farklı kültür, dil, inanç) neden değerlidir?",
+      "options": [
+        "Toplumu zayıflatır",
+        "Farklı bakış açıları ve zenginlik kazandırır",
+        "Hiçbir değeri yoktur",
+        "Sadece karışıklığa sebep olur"
+      ],
+      "correctIndex": 1,
+      "hint": "Farklılıklar, toplumlara yeni fikirler ve zenginlik katar."
+    },
+    {
+      "id": "q14",
+      "text": "Bir kişinin fiziksel özelliği, dini ya da etnik kökeni nedeniyle dışlanmasına ne denir?",
+      "options": [
+        "Hoşgörü",
+        "Ayrımcılık",
+        "Empati",
+        "Dayanışma"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu, kişinin farklı olduğu bir özellik yüzünden adaletsiz davranılmasıdır."
+    },
+    {
+      "id": "q15",
+      "text": "Ayrımcılığa karşı en doğru tutum nedir?",
+      "options": [
+        "Ayrımcılığı desteklemek",
+        "Herkese eşit ve saygılı davranmak",
+        "Görmezden gelmek",
+        "Sadece kendi grubunu düşünmek"
+      ],
+      "correctIndex": 1,
+      "hint": "Eşitlik ve saygı, sağlıklı toplumların temelidir."
+    },
+    {
+      "id": "q16",
+      "text": "Bir sınıfta yeni gelen bir öğrenciye nasıl davranmak en doğrusudur?",
+      "options": [
+        "Onu görmezden gelmek",
+        "Onu sıcak karşılayıp arkadaş olmaya çalışmak",
+        "Ona kaba davranmak",
+        "Onunla hiç konuşmamak"
+      ],
+      "correctIndex": 1,
+      "hint": "Yeni bir ortama uyum sağlamak zor olabilir, destek olmak önemlidir."
+    },
+    {
+      "id": "q17",
+      "text": "'Güven' bir ilişkide neden önemlidir?",
+      "options": [
+        "Hiçbir önemi yoktur",
+        "İnsanların birbirine dürüst davranmasını ve sağlıklı ilişkiler kurmasını sağlar",
+        "Sadece para ile ilgilidir",
+        "Güvenin ilişkilerle bir ilgisi yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Güven, sağlıklı arkadaşlık ve aile ilişkilerinin temel taşıdır."
+    },
+    {
+      "id": "q18",
+      "text": "Bir söz verdiğinde onu tutmak hangi değerle ilgilidir?",
+      "options": [
+        "Bencillik",
+        "Dürüstlük ve güvenilirlik",
+        "Kayıtsızlık",
+        "Rekabet"
+      ],
+      "correctIndex": 1,
+      "hint": "Sözünü tutan bir insan, güvenilir olarak tanınır."
+    },
+    {
+      "id": "q19",
+      "text": "Aşağıdakilerden hangisi 'öfke kontrolü' için sağlıklı bir yöntemdir?",
+      "options": [
+        "Eşyalara zarar vermek",
+        "Derin nefes alıp sakinleşmeye çalışmak",
+        "Bağırıp çağırmak",
+        "Kavga etmek"
+      ],
+      "correctIndex": 1,
+      "hint": "Sakinleşme teknikleri, öfkeyi yapıcı şekilde yönetmeye yardımcı olur."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Bu hafta bir arkadaşına nasıl yardımcı oldun?",
+    "options": [
+      "Ona bir konuda yardım ettim",
+      "Henüz fırsat olmadı",
+      "Hatırlamıyorum",
+      "Bunu paylaşmak istemiyorum"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

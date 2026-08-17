@@ -1,0 +1,239 @@
+{
+  "id": "turkce-unite2-metin-turleri-kok-ek-genis-p1",
+  "subject": "Türkçe",
+  "title": "Ünite 2 - Metin Türleri, Kök ve Ekler (Geniş Havuz) (1/4)",
+  "week": 2,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Kahramanları genellikle hayvanlar olan, sonunda bir ders/öğüt veren kısa öyküye ne denir?",
+      "options": [
+        "Masal",
+        "Fabl",
+        "Haber metni",
+        "Deneme"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu türde genellikle konuşan hayvan karakterler bulunur ve sonunda bir ahlaki ders verilir."
+    },
+    {
+      "id": "q2",
+      "text": "'Peri, cin, dev' gibi olağanüstü unsurlar barındıran, 'Bir varmış bir yokmuş' gibi ifadelerle başlayan anlatı türü hangisidir?",
+      "options": [
+        "Masal",
+        "Haber metni",
+        "Fabl",
+        "Anı"
+      ],
+      "correctIndex": 0,
+      "hint": "Bu tür genellikle belirli bir zaman ve yer belirtmez, hayal gücüne dayanır."
+    },
+    {
+      "id": "q3",
+      "text": "Gerçek bir olayı; ne, nerede, ne zaman, nasıl, neden sorularına cevap vererek anlatan metin türü hangisidir?",
+      "options": [
+        "Masal",
+        "Fabl",
+        "Haber metni",
+        "Şiir"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu tür gazete ve televizyonda sıkça karşımıza çıkar, gerçek olayları anlatır."
+    },
+    {
+      "id": "q4",
+      "text": "'Kitap-çı' kelimesinde kök hangisidir?",
+      "options": [
+        "Kitap",
+        "Çı",
+        "Kitapçı",
+        "Hiçbiri"
+      ],
+      "correctIndex": 0,
+      "hint": "Kök, kelimenin anlam taşıyan ve daha küçük parçalara bölünemeyen ilk hâlidir."
+    },
+    {
+      "id": "q5",
+      "text": "'Göz-lük-çü' kelimesinde kaç tane yapım eki vardır?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "0"
+      ],
+      "correctIndex": 1,
+      "hint": "'-lük' ve '-çü' ekleri kelimeye yeni anlamlar katan yapım ekleridir."
+    },
+    {
+      "id": "q6",
+      "text": "'Yüz' kelimesi hem 'sayı' hem 'insan yüzü' hem de 'yüzmek' anlamında kullanılabilir. Bu tür, yazılışı aynı ama anlamı farklı kelimelere ne denir?",
+      "options": [
+        "Eş anlamlı kelimeler",
+        "Eş sesli (sesteş) kelimeler",
+        "Zıt anlamlı kelimeler",
+        "Terim anlamlı kelimeler"
+      ],
+      "correctIndex": 1,
+      "hint": "'Sesteş' kelimesinin içinde 'ses' geçtiğine dikkat et - sesleri (yazılışları) aynı ama anlamları farklıdır."
+    },
+    {
+      "id": "q7",
+      "text": "Aşağıdaki cümlelerin hangisinde 'kır' kelimesi farklı bir anlamda kullanılmıştır?",
+      "options": [
+        "Kırlarda gezmeyi severim.",
+        "Kır çiçekleri çok güzeldi.",
+        "Camı kırdın mı?",
+        "Kır atı gördün mü?"
+      ],
+      "correctIndex": 2,
+      "hint": "Diğer üç cümlede 'kır' doğa/açık alan anlamındadır, birinde farklı bir eylem anlatılır."
+    },
+    {
+      "id": "q8",
+      "text": "Yapım eki bir kelimeye eklendiğinde ne olur?",
+      "options": [
+        "Kelimenin anlamı hiç değişmez",
+        "Kelimeden yeni ve farklı anlamda bir kelime türer",
+        "Sadece kelimenin sayısı değişir",
+        "Kelime cümleden çıkarılır"
+      ],
+      "correctIndex": 1,
+      "hint": "Örneğin 'göz' kelimesine '-lük' eklenince 'gözlük' - tamamen farklı bir anlam ortaya çıkar."
+    },
+    {
+      "id": "q9",
+      "text": "Bir kişinin kendi hayatını, başından geçenleri kronolojik olarak anlattığı yazı türüne ne denir?",
+      "options": [
+        "Fabl",
+        "Masal",
+        "Otobiyografi",
+        "Fıkra"
+      ],
+      "correctIndex": 2,
+      "hint": "'Oto' kelimesi 'kendi kendine' anlamına gelir - kişi kendi hayatını yazar."
+    },
+    {
+      "id": "q10",
+      "text": "Zorlayıcı soru: 'Dilimiz doğru kullanmalıyız.' cümlesinde 'dil' kelimesi hangi anlamda kullanılmıştır?",
+      "options": [
+        "Ağızdaki organ anlamında",
+        "Konuşma/lisan anlamında",
+        "Ayakkabı dili anlamında",
+        "Terazi dili anlamında"
+      ],
+      "correctIndex": 1,
+      "hint": "Cümlenin tamamına bak - burada bir dil öğrenme/kullanma bağlamı var."
+    },
+    {
+      "id": "q11",
+      "text": "Zorlayıcı soru: 'Göz-lük-çü-lük' kelimesindeki kök ve eklerin doğru ayrımı hangisidir?",
+      "options": [
+        "Göz (kök) + lükçülük (ek)",
+        "Göz (kök) + lük + çü + lük (üç ayrı ek)",
+        "Gözlük (kök) + çülük (ek)",
+        "Gözlükçü (kök) + lük (ek)"
+      ],
+      "correctIndex": 1,
+      "hint": "Kelimeyi en küçük anlamlı parçalarına ayır: göz + lük (gözlük yapar) + çü (satan kişi yapar) + lük (meslek/iş yapar)."
+    },
+    {
+      "id": "q12",
+      "text": "Bir kişinin başka birinin hayatını anlattığı yazı türüne ne denir?",
+      "options": [
+        "Otobiyografi",
+        "Biyografi",
+        "Günlük",
+        "Anı"
+      ],
+      "correctIndex": 1,
+      "hint": "'Bio' kelimesi 'yaşam' anlamına gelir - burada başkasının yaşamı anlatılır."
+    },
+    {
+      "id": "q13",
+      "text": "Bir kişinin günlük yaşadıklarını, o gün itibariyle yazdığı kişisel yazı türüne ne denir?",
+      "options": [
+        "Günlük",
+        "Haber metni",
+        "Masal",
+        "Fabl"
+      ],
+      "correctIndex": 0,
+      "hint": "Bu tür, kişisel ve tarih sırasına göre tutulan bir yazıdır."
+    },
+    {
+      "id": "q14",
+      "text": "Bir yerin, bir gezinin izlenimlerini anlatan yazı türüne ne denir?",
+      "options": [
+        "Gezi yazısı",
+        "Masal",
+        "Fabl",
+        "Şiir"
+      ],
+      "correctIndex": 0,
+      "hint": "Bu tür, bir seyahatten sonra izlenimleri paylaşmak için yazılır."
+    },
+    {
+      "id": "q15",
+      "text": "İki kişi arasında yazılı olarak iletişim kurmak için kullanılan metin türü hangisidir?",
+      "options": [
+        "Mektup",
+        "Masal",
+        "Fabl",
+        "Şiir"
+      ],
+      "correctIndex": 0,
+      "hint": "Bu tür, birine yazılan ve gönderilen bir yazıdır."
+    },
+    {
+      "id": "q16",
+      "text": "Bir isteği veya şikayeti resmi bir makama yazılı olarak bildirmek için kullanılan metin türü hangisidir?",
+      "options": [
+        "Mektup",
+        "Dilekçe",
+        "Günlük",
+        "Anı"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu tür, resmi kurumlara başvuru yapmak için kullanılır."
+    },
+    {
+      "id": "q17",
+      "text": "Ritimli, ölçülü ve duygusal bir anlatım biçimi olan, genellikle dizeler hâlinde yazılan metin türü hangisidir?",
+      "options": [
+        "Şiir",
+        "Haber metni",
+        "Dilekçe",
+        "Fabl"
+      ],
+      "correctIndex": 0,
+      "hint": "Bu tür, mısralardan (dizelerden) oluşur ve genellikle duyguları anlatır."
+    },
+    {
+      "id": "q18",
+      "text": "Sahnede oynanmak üzere yazılan, konuşmalardan oluşan metin türü hangisidir?",
+      "options": [
+        "Tiyatro",
+        "Roman",
+        "Masal",
+        "Fabl"
+      ],
+      "correctIndex": 0,
+      "hint": "Bu tür, oyuncular tarafından sahnede canlandırılır."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: En sevdiğin metin türü hangisi (masal, fabl, haber vb.)?",
+    "options": [
+      "Masal",
+      "Fabl",
+      "Haber metni",
+      "Diğer"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

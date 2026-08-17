@@ -1,0 +1,251 @@
+{
+  "id": "turkce-unite3-cumlenin-ogeleri-p2",
+  "subject": "Türkçe",
+  "title": "Ünite 3 - Cümlenin Ögeleri (2/4)",
+  "week": 3,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Zorlayıcı soru: 'Kardeşim dün akşam bana güzel bir hediye verdi.' cümlesinde 'dün akşam' hangi cümle ögesidir?",
+      "options": [
+        "Özne",
+        "Nesne",
+        "Dolaylı tümleç",
+        "Zarf tümleci"
+      ],
+      "correctIndex": 3,
+      "hint": "'Ne zaman verdi?' sorusuna cevap veren ifade, zarf tümlecidir."
+    },
+    {
+      "id": "q2",
+      "text": "Zorlayıcı soru: 'Kardeşim dün akşam bana güzel bir hediye verdi.' cümlesinde 'hediye' hangi cümle ögesidir?",
+      "options": [
+        "Özne",
+        "Nesne",
+        "Dolaylı tümleç",
+        "Zarf tümleci"
+      ],
+      "correctIndex": 1,
+      "hint": "'Neyi verdi?' sorusuna cevap veren kelime, nesnedir."
+    },
+    {
+      "id": "q3",
+      "text": "Bir cümlede birden fazla zarf tümleci bulunabilir mi?",
+      "options": [
+        "Hayır, sadece bir tane olabilir",
+        "Evet, birden fazla zarf tümleci bulunabilir",
+        "Zarf tümleci hiçbir zaman birden fazla olamaz",
+        "Bu bir kuraldır, asla değişmez"
+      ],
+      "correctIndex": 1,
+      "hint": "Örneğin 'Dün hızlı koştu.' cümlesinde hem zaman hem durum bildiren iki zarf tümleci olabilir."
+    },
+    {
+      "id": "q4",
+      "text": "'Çocuk parkta oyun oynadı.' cümlesinde 'parkta' hangi ögedir?",
+      "options": [
+        "Nesne",
+        "Dolaylı tümleç",
+        "Özne",
+        "Yüklem"
+      ],
+      "correctIndex": 1,
+      "hint": "'Nerede oynadı?' sorusuna cevap veren kelime."
+    },
+    {
+      "id": "q5",
+      "text": "'Çocuk parkta oyun oynadı.' cümlesinde 'oyun' hangi ögedir?",
+      "options": [
+        "Nesne",
+        "Dolaylı tümleç",
+        "Özne",
+        "Yüklem"
+      ],
+      "correctIndex": 0,
+      "hint": "'Neyi oynadı?' sorusuna cevap veren kelime."
+    },
+    {
+      "id": "q6",
+      "text": "Bir cümlede yüklem, isim soylu bir kelime olabilir mi (fiil olmadan)?",
+      "options": [
+        "Hayır, yüklem her zaman fiil olmalıdır",
+        "Evet, 'Bu ev çok güzel.' gibi cümlelerde isim de yüklem olabilir",
+        "Yüklem asla isim olamaz",
+        "Bu kural yalnızca uzun cümlelerde geçerlidir"
+      ],
+      "correctIndex": 1,
+      "hint": "'Güzel' kelimesi burada ek fiil alarak yüklem görevi görür."
+    },
+    {
+      "id": "q7",
+      "text": "Yüklemi fiil olan cümleye ne denir?",
+      "options": [
+        "İsim cümlesi",
+        "Fiil cümlesi",
+        "Soru cümlesi",
+        "Ünlem cümlesi"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu cümle türünde yüklem bir eylem bildirir."
+    },
+    {
+      "id": "q8",
+      "text": "Yüklemi isim soylu bir kelime olan cümleye ne denir?",
+      "options": [
+        "Fiil cümlesi",
+        "İsim cümlesi",
+        "Soru cümlesi",
+        "Ünlem cümlesi"
+      ],
+      "correctIndex": 1,
+      "hint": "'Bu çanta pahalı.' gibi bir cümleyi düşün."
+    },
+    {
+      "id": "q9",
+      "text": "'Hava çok soğuk.' cümlesi hangi tür bir cümledir?",
+      "options": [
+        "Fiil cümlesi",
+        "İsim cümlesi",
+        "Emir cümlesi",
+        "Hiçbiri"
+      ],
+      "correctIndex": 1,
+      "hint": "Yüklem burada bir isim (soğuk) - fiil değil."
+    },
+    {
+      "id": "q10",
+      "text": "'Öğrenciler bahçede top oynadı.' cümlesinin öge dizilişi (özne+tümleç+nesne+yüklem) hangi sırada verilmiştir?",
+      "options": [
+        "Kurallı cümle (özne başta, yüklem sonda)",
+        "Devrik cümle",
+        "Eksik cümle",
+        "Hiçbir düzeni yoktur"
+      ],
+      "correctIndex": 0,
+      "hint": "Türkçede kurallı cümlelerde yüklem genelde sonda bulunur."
+    },
+    {
+      "id": "q11",
+      "text": "Yüklemin cümle sonunda olmadığı, ögelerin yer değiştirdiği cümlelere ne denir?",
+      "options": [
+        "Kurallı cümle",
+        "Devrik cümle",
+        "Eksik cümle",
+        "Ünlem cümlesi"
+      ],
+      "correctIndex": 1,
+      "hint": "'Geldi Ali eve.' gibi bir cümleyi düşün - yüklem başta."
+    },
+    {
+      "id": "q12",
+      "text": "'Geldi mektup postadan.' cümlesi hangi tür bir cümledir (öge dizilişi açısından)?",
+      "options": [
+        "Kurallı cümle",
+        "Devrik cümle",
+        "Soru cümlesi",
+        "Hiçbiri"
+      ],
+      "correctIndex": 1,
+      "hint": "Yüklem ('geldi') cümlenin başında, bu devrik cümle özelliğidir."
+    },
+    {
+      "id": "q13",
+      "text": "Şiirlerde ve günlük konuşmalarda devrik cümle kullanımı neden yaygındır?",
+      "options": [
+        "Devrik cümle her zaman yanlıştır",
+        "Vurguyu değiştirmek ve anlatıma akıcılık katmak için",
+        "Hiçbir sebebi yoktur",
+        "Sadece yazım hatasıdır"
+      ],
+      "correctIndex": 1,
+      "hint": "Devrik cümleler, konuşma dilinde ve edebi eserlerde sıkça tercih edilir."
+    },
+    {
+      "id": "q14",
+      "text": "Zorlayıcı soru: 'Öğretmenimiz bize matematik sorusunu sınıfta çok sabırlı bir şekilde anlattı.' cümlesinde kaç farklı öge türü bulunur (özne, yüklem, nesne, tümleçler)?",
+      "options": [
+        "2",
+        "3",
+        "4 veya daha fazla",
+        "1"
+      ],
+      "correctIndex": 2,
+      "hint": "Cümlede özne (öğretmenimiz), dolaylı tümleç (bize), nesne (matematik sorusunu), zarf tümleçleri (sınıfta, çok sabırlı bir şekilde) ve yüklem (anlattı) bulunur."
+    },
+    {
+      "id": "q15",
+      "text": "'Kuşlar gökyüzünde özgürce uçtu.' cümlesinde 'özgürce' hangi ögedir?",
+      "options": [
+        "Nesne",
+        "Dolaylı tümleç",
+        "Zarf tümleci",
+        "Özne"
+      ],
+      "correctIndex": 2,
+      "hint": "'Nasıl uçtu?' sorusuna cevap veren kelime."
+    },
+    {
+      "id": "q16",
+      "text": "Aşağıdaki cümlelerden hangisinde nesne bulunmaz?",
+      "options": [
+        "Ali kitabı okudu.",
+        "Çocuk uyudu.",
+        "Anne yemeği pişirdi.",
+        "Öğretmen dersi anlattı."
+      ],
+      "correctIndex": 1,
+      "hint": "Bu cümlede yüklemden etkilenen bir varlık (nesne) yoktur, eylem öznenin kendisiyle sınırlıdır."
+    },
+    {
+      "id": "q17",
+      "text": "Nesne almayan, yani geçişsiz olan fiillere örnek hangisidir?",
+      "options": [
+        "Okumak",
+        "Yazmak",
+        "Uyumak",
+        "Yemek"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu eylem, bir nesneyi doğrudan etkilemez."
+    },
+    {
+      "id": "q18",
+      "text": "Nesne alabilen, yani geçişli olan fiillere örnek hangisidir?",
+      "options": [
+        "Uyumak",
+        "Gülmek",
+        "Okumak",
+        "Ağlamak"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu eylem, 'neyi okudu?' sorusuyla bir nesne alabilir."
+    },
+    {
+      "id": "q19",
+      "text": "'Ali eve gitti.' cümlesinde 'eve' hangi ögedir?",
+      "options": [
+        "Nesne",
+        "Dolaylı tümleç",
+        "Özne",
+        "Yüklem"
+      ],
+      "correctIndex": 1,
+      "hint": "'Nereye gitti?' sorusuna cevap veren kelime."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Cümle ögelerinden hangisini bulmak sana en kolay geliyor?",
+    "options": [
+      "Özne",
+      "Yüklem",
+      "Nesne",
+      "Tümleçler"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "id": "sosyalbilgiler-unite4-yasayan-demokrasimiz-p2",
+  "subject": "Sosyal Bilgiler",
+  "title": "Ünite 4 - Yaşayan Demokrasimiz (2/4)",
+  "week": 4,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Bir okul meclisi veya öğrenci konseyi kurulması, hangi demokratik değeri yansıtır?",
+      "options": [
+        "Katılımcı yönetim ve temsil",
+        "Otoriter yönetim",
+        "Hiçbir demokratik değeri yansıtmaz",
+        "Sadece eğlence amaçlıdır"
+      ],
+      "correctIndex": 0,
+      "hint": "Öğrenci konseyleri, gençlerin karar süreçlerine katılmasını sağlar."
+    },
+    {
+      "id": "q2",
+      "text": "Aşağıdakilerden hangisi 'ifade özgürlüğü' kavramını en iyi tanımlar?",
+      "options": [
+        "Herkesin istediğini söyleme hakkı olmaması",
+        "Bireylerin düşüncelerini barışçıl şekilde ifade edebilme hakkı",
+        "Sadece belirli kişilerin konuşabilmesi",
+        "Hiçbir anlamı yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu hak, demokratik toplumların temel değerlerinden biridir."
+    },
+    {
+      "id": "q3",
+      "text": "Bir okulda sınıf başkanı seçimi yapılması hangi demokratik uygulamaya örnektir?",
+      "options": [
+        "Seçim ve temsil",
+        "Otoriter atama",
+        "Kura çekme",
+        "Hiçbir demokratik uygulama değildir"
+      ],
+      "correctIndex": 0,
+      "hint": "Sınıf başkanı seçimi, küçük ölçekte bir demokratik süreçtir."
+    },
+    {
+      "id": "q4",
+      "text": "Aşağıdakilerden hangisi bir vatandaşın toplumsal sorumluluklarından biridir?",
+      "options": [
+        "Vergi ödemek (yetişkinler için)",
+        "Kanunları hiçe saymak",
+        "Toplumsal kurallara uymamak",
+        "Sadece kendi çıkarını düşünmek"
+      ],
+      "correctIndex": 0,
+      "hint": "Vergiler, kamu hizmetlerinin finanse edilmesine yardımcı olur."
+    },
+    {
+      "id": "q5",
+      "text": "Demokratik bir toplumda 'hukukun üstünlüğü' ne anlama gelir?",
+      "options": [
+        "Hiç kimsenin kanunlara uyması gerekmediği",
+        "Herkesin (yöneticiler dahil) kanunlara tabi olduğu",
+        "Sadece halkın kanunlara uyması gerektiği",
+        "Kanunların hiçbir önemi olmadığı"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu ilke, kimsenin kanunların üstünde olmadığını ifade eder."
+    },
+    {
+      "id": "q6",
+      "text": "Aşağıdakilerden hangisi bir demokraside 'güçler ayrılığı' kavramının parçası olabilir?",
+      "options": [
+        "Yasama, yürütme ve yargının ayrı kurumlar olması",
+        "Tüm gücün tek bir kişide toplanması",
+        "Hiçbir ayrım olmaması",
+        "Sadece yasama gücünün var olması"
+      ],
+      "correctIndex": 0,
+      "hint": "Güçler ayrılığı, yetkilerin farklı kurumlar arasında paylaşılmasını sağlar."
+    },
+    {
+      "id": "q7",
+      "text": "Zorlayıcı soru: Bir sınıfta öğrenciler bir karar almak için oylama yapıyor ama azınlıkta kalan öğrencilerin görüşleri de dinleniyor. Bu, hangi demokratik değeri yansıtır?",
+      "options": [
+        "Çoğunluğun kararına saygı ile azınlığın sesinin de duyulması dengesi",
+        "Sadece çoğunluğun her zaman haklı olduğu",
+        "Azınlığın hiç önemi olmadığı",
+        "Hiçbir demokratik değeri yansıtmaz"
+      ],
+      "correctIndex": 0,
+      "hint": "Sağlıklı bir demokraside, herkesin görüşü değerlidir, karar çoğunlukla alınsa bile."
+    },
+    {
+      "id": "q8",
+      "text": "Bir vatandaşın oy kullanma hakkını kullanmaması durumunda ne olabilir?",
+      "options": [
+        "Hiçbir etkisi olmaz",
+        "Seçim sonuçlarına ve yönetime dair sesini duyurmamış olur",
+        "Otomatik olarak cezalandırılır her zaman",
+        "Oy kullanmamak bir haktır ama katılım demokrasi için önemlidir"
+      ],
+      "correctIndex": 3,
+      "hint": "Oy kullanmak bir haktır; ancak yüksek katılım, demokrasinin sağlıklı işlemesine katkı sağlar."
+    },
+    {
+      "id": "q9",
+      "text": "Aşağıdakilerden hangisi 'sivil toplum kuruluşlarının' (dernek, vakıf gibi) topluma katkısına bir örnektir?",
+      "options": [
+        "Toplumsal sorunlara çözüm önerileri geliştirmek",
+        "Hiçbir katkı sağlamamak",
+        "Sadece kendi çıkarlarını düşünmek",
+        "Toplumsal katılımı engellemek"
+      ],
+      "correctIndex": 0,
+      "hint": "Sivil toplum kuruluşları, gönüllü olarak toplumsal konularda çalışır."
+    },
+    {
+      "id": "q10",
+      "text": "Bir demokraside basın-yayın organlarının (gazete, televizyon vb.) doğru ve tarafsız haber vermesi neden önemlidir?",
+      "options": [
+        "Hiçbir önemi yoktur",
+        "Halkın doğru bilgiye ulaşarak bilinçli kararlar almasını sağlar",
+        "Sadece eğlence içindir",
+        "Yanlış bilgi vermek daha iyidir"
+      ],
+      "correctIndex": 1,
+      "hint": "Doğru bilgi, sağlıklı bir demokratik katılım için gereklidir."
+    },
+    {
+      "id": "q11",
+      "text": "Aşağıdakilerden hangisi bir öğrencinin okulda gösterebileceği etkin vatandaşlık davranışına örnektir?",
+      "options": [
+        "Okul kurallarına uymak ve okul etkinliklerine katılmak",
+        "Kurallara uymamak",
+        "Etkinliklere hiç katılmamak",
+        "Sadece kendi çıkarını düşünmek"
+      ],
+      "correctIndex": 0,
+      "hint": "Küçük yaşta gösterilen sorumluluk davranışları, ileride etkin vatandaşlığa temel oluşturur."
+    },
+    {
+      "id": "q12",
+      "text": "'Anayasa' kavramı ne ifade eder?",
+      "options": [
+        "Bir ülkenin en temel, en üst kanunu",
+        "Sadece bir kitap adı",
+        "Bir okul kuralı",
+        "Hiçbir anlamı yoktur"
+      ],
+      "correctIndex": 0,
+      "hint": "Anayasa, bir devletin temel yapısını ve vatandaşların temel haklarını belirler."
+    },
+    {
+      "id": "q13",
+      "text": "Aşağıdakilerden hangisi bir 'kamu hizmeti' örneğidir?",
+      "options": [
+        "Bir özel restoran",
+        "Devlet okulları ve hastaneler",
+        "Bir özel şirket",
+        "Bir kişisel araba"
+      ],
+      "correctIndex": 1,
+      "hint": "Kamu hizmetleri, devlet tarafından vatandaşlara sunulan hizmetlerdir."
+    },
+    {
+      "id": "q14",
+      "text": "Bir vatandaşın 'dilekçe hakkını' kullanması ne anlama gelir?",
+      "options": [
+        "Bir talebini veya şikayetini resmi olarak yetkili makamlara bildirmesi",
+        "Hiçbir şey yapmaması",
+        "Sadece sözlü şikayet etmesi",
+        "Kurallara uymaması"
+      ],
+      "correctIndex": 0,
+      "hint": "Dilekçe hakkı, vatandaşların resmi kurumlara başvurabilmesini sağlar."
+    },
+    {
+      "id": "q15",
+      "text": "Aşağıdakilerden hangisi bir demokraside 'temsili yönetim' kavramını açıklar?",
+      "options": [
+        "Halkın seçtiği temsilciler aracılığıyla yönetilmesi",
+        "Tek bir kişinin doğrudan yönetmesi",
+        "Hiç kimsenin yönetmemesi",
+        "Kura ile yönetici seçilmesi"
+      ],
+      "correctIndex": 0,
+      "hint": "Temsili demokrasilerde halk, kendi adına karar alacak temsilciler seçer."
+    },
+    {
+      "id": "q16",
+      "text": "Zorlayıcı soru: Bir öğrenci, okul yönetimine bir öneri sunmak için dilekçe yazıyor. Bu davranış hangi değerle ilişkilidir?",
+      "options": [
+        "Etkin vatandaşlık ve katılım",
+        "Kurallara uymamak",
+        "Sorumluluktan kaçmak",
+        "Hiçbir değerle ilişkili değildir"
+      ],
+      "correctIndex": 0,
+      "hint": "Görüşlerini resmi yollarla ifade etmek, etkin katılımın bir göstergesidir."
+    },
+    {
+      "id": "q17",
+      "text": "Aşağıdakilerden hangisi bir 'referandum' (halk oylaması) kavramını tanımlar?",
+      "options": [
+        "Belirli bir konuda doğrudan halkın oyuna başvurulması",
+        "Sadece meclisin karar vermesi",
+        "Hiç oylama yapılmaması",
+        "Tek bir kişinin kararı"
+      ],
+      "correctIndex": 0,
+      "hint": "Referandum, önemli bir konuda doğrudan halkın görüşünün alınmasıdır."
+    },
+    {
+      "id": "q18",
+      "text": "Bir toplumda 'azınlık haklarının' korunması neden önemlidir?",
+      "options": [
+        "Hiçbir önemi yoktur",
+        "Herkesin (sayıca az olsa bile) temel haklarının güvence altında olması için",
+        "Sadece çoğunluğun hakları önemlidir",
+        "Azınlıklar toplumun parçası değildir"
+      ],
+      "correctIndex": 1,
+      "hint": "Adil bir toplumda herkesin hakları, sayısal çoğunluktan bağımsız olarak korunmalıdır."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Sınıfında bir karar alınırken oy kullandın mı?",
+    "options": [
+      "Evet, kullandım",
+      "Henüz fırsatım olmadı",
+      "Hatırlamıyorum",
+      "Söylemek istemiyorum"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

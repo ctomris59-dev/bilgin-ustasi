@@ -1,0 +1,239 @@
+{
+  "id": "turkce-unite5-anlatim-bozukluklari-cumle-cesitleri-p3",
+  "subject": "Türkçe",
+  "title": "Ünite 5 - Anlatım Bozuklukları ve Cümle Çeşitleri (3/4)",
+  "week": 5,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "'Çok az azaldı.' cümlesinde ne tür bir sorun olabilir?",
+      "options": [
+        "Hiçbir sorun yoktur, cümle tamamen doğru ve yaygın kullanılır",
+        "'Çok' ve 'az' anlamca çelişebilir gibi görünse de bu ifade dilde kabul edilen bir kullanımdır",
+        "Cümle tamamen anlaşılmazdır",
+        "Devrik cümledir"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu örnekte aslında dilde yaygın kabul gören bir kullanım söz konusudur, ama anlatım bozukluğu örneklerinde dikkatli değerlendirme önemlidir."
+    },
+    {
+      "id": "q2",
+      "text": "Aşağıdaki cümlelerin hangisi basit bir cümledir (tek yüklem)?",
+      "options": [
+        "Ali geldi.",
+        "Ali geldiğinde herkes sevindi.",
+        "Ali geldi ve oturdu.",
+        "Ali geldi, Ayşe gitti."
+      ],
+      "correctIndex": 0,
+      "hint": "Bu cümlede sadece bir yüklem (geldi) vardır."
+    },
+    {
+      "id": "q3",
+      "text": "'Ali geldiğinde herkes sevindi.' cümlesi hangi cümle türüdür?",
+      "options": [
+        "Basit cümle",
+        "Birleşik cümle (yan cümlecik içerir)",
+        "Sıralı cümle",
+        "Ünlem cümlesi"
+      ],
+      "correctIndex": 1,
+      "hint": "'Geldiğinde' bir yardımcı/yan cümlecik oluşturur, temel cümleye bağlıdır."
+    },
+    {
+      "id": "q4",
+      "text": "Zorlayıcı soru: 'Kitap okumayı seven öğrenci, sınıfın en başarılı öğrencisiydi.' cümlesinde kaç yargı (yüklem) bulunur?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "0"
+      ],
+      "correctIndex": 1,
+      "hint": "'Seven' (sıfat-fiil, bir yan yargı) ve 'öğrencisiydi' (ana yargı) olmak üzere 2 yargı bulunur."
+    },
+    {
+      "id": "q5",
+      "text": "Aşağıdaki cümlelerin hangisinde bir soru cümlesi vardır?",
+      "options": [
+        "Bugün hava güzel.",
+        "Bugün hava güzel mi?",
+        "Ne güzel bir hava!",
+        "Hava güzelken dışarı çık."
+      ],
+      "correctIndex": 1,
+      "hint": "Bu cümlede soru eki (mi) kullanılmıştır."
+    },
+    {
+      "id": "q6",
+      "text": "Aşağıdaki cümlelerin hangisinde bir ünlem cümlesi vardır?",
+      "options": [
+        "Bugün hava güzel.",
+        "Bugün hava güzel mi?",
+        "Ne güzel bir hava!",
+        "Hava güzelken dışarı çık."
+      ],
+      "correctIndex": 2,
+      "hint": "Bu cümlede güçlü bir duygu ifadesi ve ünlem işareti kullanılmıştır."
+    },
+    {
+      "id": "q7",
+      "text": "'Ne kadar akıllısın!' cümlesi hangi tür bir cümledir?",
+      "options": [
+        "Soru cümlesi",
+        "Ünlem cümlesi",
+        "Olumsuz cümle",
+        "Şart cümlesi"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu cümle bir hayranlık/şaşkınlık ifade ediyor, gerçek bir soru değildir."
+    },
+    {
+      "id": "q8",
+      "text": "Aşağıdaki cümlelerin hangisi olumsuz bir cümledir?",
+      "options": [
+        "Geldi.",
+        "Gelmedi.",
+        "Geldi mi?",
+        "Ne kadar geldi!"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu cümlede olumsuzluk eki (-me/-ma) kullanılmıştır."
+    },
+    {
+      "id": "q9",
+      "text": "Zorlayıcı soru: 'Yağmur yağıyor ama şemsiyemi almadım, bu yüzden ıslandım.' cümlesi kaç yargı içerir?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "0"
+      ],
+      "correctIndex": 2,
+      "hint": "'Yağmur yağıyor', 'şemsiyemi almadım' ve 'ıslandım' olmak üzere 3 ayrı yargı, bağlaçlarla birbirine bağlanmıştır."
+    },
+    {
+      "id": "q10",
+      "text": "Aşağıdaki cümlelerin hangisi bir bağlı cümle örneğidir?",
+      "options": [
+        "Ali geldi, Ayşe gitti.",
+        "Ali geldi çünkü hava güzeldi.",
+        "Ali geldi.",
+        "Geldi Ali."
+      ],
+      "correctIndex": 1,
+      "hint": "'Çünkü' bağlacı, iki cümleyi neden-sonuç ilişkisiyle birbirine bağlıyor."
+    },
+    {
+      "id": "q11",
+      "text": "Aşağıdaki bağlaçlardan hangisi neden-sonuç ilişkisi kurar?",
+      "options": [
+        "Ve",
+        "Çünkü",
+        "Ama",
+        "Veya"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu bağlaç, bir olayın sebebini açıklar."
+    },
+    {
+      "id": "q12",
+      "text": "Aşağıdaki bağlaçlardan hangisi karşıtlık/zıtlık ilişkisi kurar?",
+      "options": [
+        "Ve",
+        "Çünkü",
+        "Ama/Fakat",
+        "Ki"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu bağlaç, iki farklı/zıt durumu birbirine bağlar."
+    },
+    {
+      "id": "q13",
+      "text": "'Çalıştım ama başarılı olamadım.' cümlesinde 'ama' bağlacı hangi ilişkiyi kurar?",
+      "options": [
+        "Neden-sonuç",
+        "Karşıtlık",
+        "Eşitlik",
+        "Amaç"
+      ],
+      "correctIndex": 1,
+      "hint": "Çalışmak ile başarısız olmak arasında beklenmedik/zıt bir durum var."
+    },
+    {
+      "id": "q14",
+      "text": "Zorlayıcı soru: 'Hem çalıştım hem de dinlendim.' cümlesinde 'hem...hem de' yapısı ne anlam katar?",
+      "options": [
+        "Zıtlık",
+        "Birliktelik/ikisinin bir arada yapıldığını gösterme",
+        "Neden-sonuç",
+        "Şart"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu yapı, iki eylemin birlikte/aynı zamanda yapıldığını gösterir."
+    },
+    {
+      "id": "q15",
+      "text": "Aşağıdaki cümlelerin hangisinde 'veya/ya da' bağlacı kullanılmıştır?",
+      "options": [
+        "Çay ya da kahve içebilirsin.",
+        "Çay ve kahve içtim.",
+        "Çay içtim ama kahve içmedim.",
+        "Çay içtiğim için mutluyum."
+      ],
+      "correctIndex": 0,
+      "hint": "Bu bağlaç, seçenek/alternatif sunar."
+    },
+    {
+      "id": "q16",
+      "text": "'Ya çalışırsın ya da başarısız olursun.' cümlesinde bağlaç hangi anlamı taşır?",
+      "options": [
+        "Birliktelik",
+        "Seçenek/alternatif",
+        "Neden-sonuç",
+        "Karşıtlık"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu yapı, iki seçenekten birini sunuyor."
+    },
+    {
+      "id": "q17",
+      "text": "Aşağıdaki cümlelerin hangisinde anlatım açık ve düzgündür?",
+      "options": [
+        "Kitabı ona verdim, kitap.",
+        "Kitabı ona verdim.",
+        "Verdim kitabı ona kitabı.",
+        "Kitabı kitabı ona verdim."
+      ],
+      "correctIndex": 1,
+      "hint": "Bu cümlede gereksiz tekrar yoktur, anlam nettir."
+    },
+    {
+      "id": "q18",
+      "text": "Bir metinde anlatım bozukluklarını düzeltmenin yararı nedir?",
+      "options": [
+        "Hiçbir yararı yoktur",
+        "Okuyucunun mesajı daha kolay ve doğru anlamasını sağlar",
+        "Metni uzatır",
+        "Anlamı karmaşıklaştırır"
+      ],
+      "correctIndex": 1,
+      "hint": "Düzgün anlatım, iletişimi güçlendirir."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Bugün yazdığın bir cümleyi tekrar okuyup düzelttin mi?",
+    "options": [
+      "Evet, düzelttim",
+      "Henüz fırsatım olmadı",
+      "Hatırlamıyorum",
+      "Söylemek istemiyorum"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

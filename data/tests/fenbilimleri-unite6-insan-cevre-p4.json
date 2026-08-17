@@ -1,0 +1,227 @@
+{
+  "id": "fenbilimleri-unite6-insan-cevre-p4",
+  "subject": "Fen Bilimleri",
+  "title": "Ünite 6 - İnsan ve Çevre (4/4)",
+  "week": 6,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Bir bölgedeki hava kirliliğinin insan sağlığı üzerindeki olası etkisi nedir?",
+      "options": [
+        "Hiçbir etkisi yoktur",
+        "Solunum yolu rahatsızlıklarına yol açabilir",
+        "Sağlığı iyileştirir",
+        "Sadece hayvanları etkiler, insanları etkilemez"
+      ],
+      "correctIndex": 1,
+      "hint": "Kirli hava solumak, akciğer ve solunum sistemini olumsuz etkileyebilir."
+    },
+    {
+      "id": "q2",
+      "text": "Zorlayıcı soru: Bir fabrika, üretim sürecinde filtre kullanarak bacadan çıkan zararlı gazları azaltıyor. Bu uygulamanın amacı nedir?",
+      "options": [
+        "Üretimi yavaşlatmak",
+        "Hava kirliliğini azaltmak",
+        "Maliyeti artırmak sadece",
+        "Hiçbir amacı yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Filtreler, zararlı emisyonların atmosfere karışmadan önce azaltılmasını sağlar."
+    },
+    {
+      "id": "q3",
+      "text": "Aşağıdakilerden hangisi 'organik tarım' kavramıyla ilişkilendirilir?",
+      "options": [
+        "Kimyasal gübre ve ilaç kullanımını en aza indirerek doğal yöntemlerle üretim yapmak",
+        "Sadece kimyasal gübre kullanmak",
+        "Hiç tarım yapmamak",
+        "Sadece plastik ürünler üretmek"
+      ],
+      "correctIndex": 0,
+      "hint": "Organik tarım, çevreye daha az zarar veren doğal yöntemleri tercih eder."
+    },
+    {
+      "id": "q4",
+      "text": "Aşırı kimyasal gübre ve tarım ilacı kullanımının olası bir çevresel sonucu nedir?",
+      "options": [
+        "Toprak ve su kaynaklarının kirlenmesi",
+        "Hiçbir olumsuz etkisi yoktur",
+        "Toprak daha verimli hâle gelir sürekli",
+        "Su kaynakları otomatik temizlenir"
+      ],
+      "correctIndex": 0,
+      "hint": "Kimyasallar, yağmur suyuyla yer altı sularına veya nehirlere karışabilir."
+    },
+    {
+      "id": "q5",
+      "text": "Aşağıdakilerden hangisi bireysel olarak çevreye katkı sağlayan bir alışkanlıktır?",
+      "options": [
+        "Gereksiz elektroniği kapalı tutmak",
+        "Sürekli yeni eşya almak",
+        "Suyu boşa akıtmak",
+        "Çöpleri ayırmadan atmak"
+      ],
+      "correctIndex": 0,
+      "hint": "Küçük bireysel alışkanlıklar, toplamda büyük bir fark yaratabilir."
+    },
+    {
+      "id": "q6",
+      "text": "'Karbon ayak izi' kavramı neyi ifade eder?",
+      "options": [
+        "Bir kişinin/faaliyetin atmosfere saldığı sera gazı miktarı",
+        "Bir kişinin fiziksel ayak izi",
+        "Karbon madenlerinin miktarı",
+        "Hiçbir anlamı yoktur"
+      ],
+      "correctIndex": 0,
+      "hint": "Bu kavram, günlük faaliyetlerimizin çevresel etkisini ölçmeye yardımcı olur."
+    },
+    {
+      "id": "q7",
+      "text": "Zorlayıcı soru: Bir aile, evde güneş panelleri kurdurup elektriğin bir kısmını buradan karşılıyor. Bu, hangi hedefe katkı sağlar?",
+      "options": [
+        "Yenilenemeyen kaynaklara olan bağımlılığı azaltmaya",
+        "Elektrik tüketimini artırmaya",
+        "Hiçbir hedefe katkı sağlamaz",
+        "Çevreyi daha çok kirletmeye"
+      ],
+      "correctIndex": 0,
+      "hint": "Güneş enerjisi, yenilenebilir ve temiz bir kaynaktır."
+    },
+    {
+      "id": "q8",
+      "text": "Aşağıdakilerden hangisi doğal afetlerin (sel, kuraklık) iklim değişikliğiyle olası bağlantısına dair genel bir görüştür?",
+      "options": [
+        "İklim değişikliğinin bu afetlerle hiç ilgisi olmadığı düşünülür",
+        "Bazı bilim insanları iklim değişikliğinin bu tür afetlerin sıklığını/şiddetini etkileyebileceğini öne sürer",
+        "Bu afetler sadece uzaydan kaynaklanır",
+        "Bu konuda hiçbir araştırma yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu, bilim dünyasında araştırılan ve tartışılan güncel bir konudur."
+    },
+    {
+      "id": "q9",
+      "text": "Aşağıdakilerden hangisi 'yeşil alan' (park, orman) oluşturmanın bir şehre faydasıdır?",
+      "options": [
+        "Hava kalitesini iyileştirmeye ve yaşam kalitesini artırmaya yardımcı olur",
+        "Hiçbir faydası yoktur",
+        "Sadece görüntüyü bozar",
+        "Şehri kirletir"
+      ],
+      "correctIndex": 0,
+      "hint": "Yeşil alanlar, hem çevresel hem sosyal faydalar sağlar."
+    },
+    {
+      "id": "q10",
+      "text": "Bir öğrencinin okulda 'ışıkları gereksiz yere açık bırakmama' alışkanlığı hangi çevresel ilkeye katkı sağlar?",
+      "options": [
+        "Enerji tasarrufuna",
+        "Su tasarrufuna",
+        "Geri dönüşüme",
+        "Hiçbirine"
+      ],
+      "correctIndex": 0,
+      "hint": "Gereksiz elektrik kullanımını azaltmak, enerji tasarrufu sağlar."
+    },
+    {
+      "id": "q11",
+      "text": "Zorlayıcı soru: Bir şehirde artan nüfusla birlikte çöp miktarı da artıyor. Bu durumun sürdürülebilir bir çözümü ne olabilir?",
+      "options": [
+        "Çöpleri kontrolsüzce doğaya atmak",
+        "Geri dönüşüm ve atık azaltma programlarını genişletmek",
+        "Hiçbir şey yapmamak",
+        "Sadece daha büyük çöplükler açmak"
+      ],
+      "correctIndex": 1,
+      "hint": "Sürdürülebilir çözümler, uzun vadeli ve çevreye duyarlı yaklaşımlar gerektirir."
+    },
+    {
+      "id": "q12",
+      "text": "Aşağıdakilerden hangisi 'ekosistem' kavramını tanımlar?",
+      "options": [
+        "Sadece bitkilerin bulunduğu alan",
+        "Canlıların ve cansız çevrenin birbirleriyle etkileşim içinde bulunduğu bütün",
+        "Sadece hayvanların yaşadığı yer",
+        "Bir şehrin nüfusu"
+      ],
+      "correctIndex": 1,
+      "hint": "Ekosistem, canlı ve cansız unsurların bir arada, etkileşimli bir sistem oluşturmasıdır."
+    },
+    {
+      "id": "q13",
+      "text": "Bir ekosistemdeki bir türün yok olması, diğer türleri nasıl etkileyebilir?",
+      "options": [
+        "Hiçbir etkisi olmaz, türler birbirinden bağımsızdır",
+        "Besin zinciri ve dengede zincirleme etkiler yaratabilir",
+        "Diğer türler otomatik olarak çoğalır",
+        "Ekosistem hiç değişmez"
+      ],
+      "correctIndex": 1,
+      "hint": "Ekosistemdeki türler genellikle birbirine bağımlıdır (besin zinciri gibi)."
+    },
+    {
+      "id": "q14",
+      "text": "Aşağıdakilerden hangisi 'çevre koruma bilinci' kazanmanın bir yoludur?",
+      "options": [
+        "Çevre konusunda hiç bilgi edinmemek",
+        "Doğa ile ilgili eğitim almak ve bilinçli tüketim alışkanlıkları geliştirmek",
+        "Doğayı umursamamak",
+        "Sadece başkalarının sorumluluğu olduğunu düşünmek"
+      ],
+      "correctIndex": 1,
+      "hint": "Bilinçli davranışlar, bilgi ve farkındalıkla başlar."
+    },
+    {
+      "id": "q15",
+      "text": "Zorlayıcı soru: Bir okulda öğrenciler bir 'çevre kulübü' kurup geri dönüşüm, ağaç dikme ve su tasarrufu projeleri yapıyor. Bu tür etkinliklerin toplumsal faydası nedir?",
+      "options": [
+        "Hiçbir faydası yoktur",
+        "Hem çevreye katkı sağlar hem toplumda çevre bilincini yayar",
+        "Sadece okulu meşgul eder",
+        "Çevreye zarar verir"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu tür projeler, hem doğrudan hem dolaylı (farkındalık yoluyla) fayda sağlar."
+    },
+    {
+      "id": "q16",
+      "text": "Aşağıdakilerden hangisi doğru bir ifadedir?",
+      "options": [
+        "Çevreyi korumak sadece büyüklerin sorumluluğudur",
+        "Her yaştan birey, küçük davranışlarla çevreye katkı sağlayabilir",
+        "Çocukların çevre koruma konusunda hiçbir rolü yoktur",
+        "Çevre koruma sadece devletin işidir"
+      ],
+      "correctIndex": 1,
+      "hint": "Bireysel küçük adımlar (geri dönüşüm, tasarruf), toplu olarak büyük fark yaratabilir."
+    },
+    {
+      "id": "q17",
+      "text": "Bir öğrencinin evde başlatabileceği basit bir çevre projesi hangisi olabilir?",
+      "options": [
+        "Ailesiyle birlikte geri dönüşüm kutuları düzenlemek",
+        "Çöpleri karıştırmadan atmaya devam etmek",
+        "Hiçbir şey yapmamak",
+        "Daha fazla plastik ürün almak"
+      ],
+      "correctIndex": 0,
+      "hint": "Evde basit bir ayrıştırma sistemi kurmak, kolay ve etkili bir başlangıçtır."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Bugün çevre için ne yaptın (geri dönüşüm, tasarruf vb.)?",
+    "options": [
+      "Geri dönüşüm yaptım",
+      "Su/enerji tasarrufu yaptım",
+      "İkisini de yaptım",
+      "Henüz bir şey yapmadım ama bugün yapacağım"
+    ],
+    "correctIndex": 2,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

@@ -1,0 +1,251 @@
+{
+  "id": "matematik-unite4-geometri-ucgen-dortgen-p1",
+  "subject": "Matematik",
+  "title": "Ünite 4 - Temel Geometrik Kavramlar, Üçgen ve Dörtgenler (1/4)",
+  "week": 4,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Uzayda yeri olan ama boyutu (eni, boyu) olmayan geometrik kavrama ne denir?",
+      "options": [
+        "Doğru",
+        "Nokta",
+        "Işın",
+        "Açı"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu en temel geometrik kavramdır, bir kalem ucuyla temsil edilebilir."
+    },
+    {
+      "id": "q2",
+      "text": "İki yönde sonsuza kadar uzayan, düz çizgiye ne denir?",
+      "options": [
+        "Doğru",
+        "Doğru parçası",
+        "Işın",
+        "Nokta"
+      ],
+      "correctIndex": 0,
+      "hint": "Bu şeklin başlangıcı ve sonu yoktur, her iki yönde de sonsuza uzanır."
+    },
+    {
+      "id": "q3",
+      "text": "Bir başlangıç noktası olan ama sonu olmayan, tek yönde sonsuza uzanan doğruya ne denir?",
+      "options": [
+        "Doğru",
+        "Doğru parçası",
+        "Işın",
+        "Nokta"
+      ],
+      "correctIndex": 2,
+      "hint": "Güneş ışınlarını düşün - bir noktadan başlar, tek yöne uzanır."
+    },
+    {
+      "id": "q4",
+      "text": "Başlangıcı ve bitişi belli olan, iki nokta arasındaki doğru parçasına ne denir?",
+      "options": [
+        "Doğru",
+        "Doğru parçası",
+        "Işın",
+        "Açı"
+      ],
+      "correctIndex": 1,
+      "hint": "Bir cetvelle çizdiğin, iki ucu belli olan çizgiyi düşün."
+    },
+    {
+      "id": "q5",
+      "text": "Bir noktadan çıkan iki ışının oluşturduğu şekle ne denir?",
+      "options": [
+        "Doğru",
+        "Açı",
+        "Çember",
+        "Işın"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu şekil, saat kolları gibi iki çizginin birleştiği bir köşe oluşturur."
+    },
+    {
+      "id": "q6",
+      "text": "90 dereceden küçük olan açıya ne denir?",
+      "options": [
+        "Dar açı",
+        "Dik açı",
+        "Geniş açı",
+        "Doğru açı"
+      ],
+      "correctIndex": 0,
+      "hint": "Bu açı, bir dik açıdan daha 'kapalı' görünür."
+    },
+    {
+      "id": "q7",
+      "text": "Tam olarak 90 derece olan açıya ne denir?",
+      "options": [
+        "Dar açı",
+        "Dik açı",
+        "Geniş açı",
+        "Tam açı"
+      ],
+      "correctIndex": 1,
+      "hint": "Bir kare veya dikdörtgenin köşelerindeki açıyı düşün."
+    },
+    {
+      "id": "q8",
+      "text": "90 dereceden büyük, 180 dereceden küçük olan açıya ne denir?",
+      "options": [
+        "Dar açı",
+        "Dik açı",
+        "Geniş açı",
+        "Doğru açı"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu açı, dik açıdan daha 'açık' görünür."
+    },
+    {
+      "id": "q9",
+      "text": "Tam olarak 180 derece olan, bir doğru şeklinde görünen açıya ne denir?",
+      "options": [
+        "Dar açı",
+        "Dik açı",
+        "Geniş açı",
+        "Doğru açı"
+      ],
+      "correctIndex": 3,
+      "hint": "Bu açının iki kolu düz bir çizgi oluşturur."
+    },
+    {
+      "id": "q10",
+      "text": "Tam olarak 360 derece olan açıya ne denir?",
+      "options": [
+        "Dik açı",
+        "Geniş açı",
+        "Doğru açı",
+        "Tam açı"
+      ],
+      "correctIndex": 3,
+      "hint": "Bu açı, bir tam dönüşü ifade eder."
+    },
+    {
+      "id": "q11",
+      "text": "Bir çemberin merkezinden çember üzerindeki bir noktaya çizilen doğru parçasına ne denir?",
+      "options": [
+        "Çap",
+        "Yarıçap",
+        "Kiriş",
+        "Kenar"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu, çemberin merkezini kenarına bağlayan doğru parçasıdır."
+    },
+    {
+      "id": "q12",
+      "text": "Bir çemberin üzerindeki iki noktayı merkezden geçerek birleştiren doğru parçasına ne denir?",
+      "options": [
+        "Yarıçap",
+        "Çap",
+        "Kiriş",
+        "Teğet"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu, çemberin en geniş, merkezden geçen doğru parçasıdır."
+    },
+    {
+      "id": "q13",
+      "text": "Bir çemberin çapı, yarıçapının kaç katıdır?",
+      "options": [
+        "1 katı",
+        "2 katı",
+        "3 katı",
+        "4 katı"
+      ],
+      "correctIndex": 1,
+      "hint": "Çap, merkezden iki yöne uzanan iki yarıçapın toplamıdır."
+    },
+    {
+      "id": "q14",
+      "text": "Bir çemberin yarıçapı 5 cm ise, çapı kaç cm'dir?",
+      "options": [
+        "5 cm",
+        "10 cm",
+        "15 cm",
+        "20 cm"
+      ],
+      "correctIndex": 1,
+      "hint": "Çap = yarıçap × 2."
+    },
+    {
+      "id": "q15",
+      "text": "Bir çemberin çapı 18 cm ise, yarıçapı kaç cm'dir?",
+      "options": [
+        "6 cm",
+        "9 cm",
+        "18 cm",
+        "36 cm"
+      ],
+      "correctIndex": 1,
+      "hint": "Yarıçap = çap ÷ 2."
+    },
+    {
+      "id": "q16",
+      "text": "Üç kenarı da eşit uzunlukta olan üçgene ne denir?",
+      "options": [
+        "Eşkenar üçgen",
+        "İkizkenar üçgen",
+        "Çeşitkenar üçgen",
+        "Dik üçgen"
+      ],
+      "correctIndex": 0,
+      "hint": "'Eş' kelimesi 'aynı/eşit' anlamına gelir, tüm kenarlar eşittir."
+    },
+    {
+      "id": "q17",
+      "text": "İki kenarı eşit uzunlukta olan üçgene ne denir?",
+      "options": [
+        "Eşkenar üçgen",
+        "İkizkenar üçgen",
+        "Çeşitkenar üçgen",
+        "Geniş açılı üçgen"
+      ],
+      "correctIndex": 1,
+      "hint": "'İkiz' kelimesi iki tanesinin eşit olduğunu ima eder."
+    },
+    {
+      "id": "q18",
+      "text": "Üç kenarı da farklı uzunlukta olan üçgene ne denir?",
+      "options": [
+        "Eşkenar üçgen",
+        "İkizkenar üçgen",
+        "Çeşitkenar üçgen",
+        "Dik üçgen"
+      ],
+      "correctIndex": 2,
+      "hint": "'Çeşit' kelimesi farklılığı ifade eder."
+    },
+    {
+      "id": "q19",
+      "text": "Bir açısı 90 derece olan üçgene ne denir?",
+      "options": [
+        "Dar açılı üçgen",
+        "Dik üçgen",
+        "Geniş açılı üçgen",
+        "Eşkenar üçgen"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu üçgende bir köşe tam dik açıdır."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Geometri konusunda en sevdiğin şekil hangisi?",
+    "options": [
+      "Üçgen",
+      "Kare/Dikdörtgen",
+      "Çember",
+      "Diğer"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

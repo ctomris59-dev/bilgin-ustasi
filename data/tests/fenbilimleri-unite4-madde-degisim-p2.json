@@ -1,0 +1,239 @@
+{
+  "id": "fenbilimleri-unite4-madde-degisim-p2",
+  "subject": "Fen Bilimleri",
+  "title": "Ünite 4 - Madde ve Değişim (2/4)",
+  "week": 4,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Bir maddenin ısı alıp vermesi, tanecikleri nasıl etkiler?",
+      "options": [
+        "Hiçbir etkisi olmaz",
+        "Isı alınca tanecikler hızlanır/hareketlenir, ısı verilince yavaşlar",
+        "Isı alınca tanecikler kaybolur",
+        "Tanecikler ısıdan etkilenmez"
+      ],
+      "correctIndex": 1,
+      "hint": "Isı, taneciklerin hareket enerjisini etkiler."
+    },
+    {
+      "id": "q2",
+      "text": "Aşağıdakilerden hangisi katı maddeye örnektir?",
+      "options": [
+        "Su",
+        "Hava",
+        "Buz",
+        "Buhar"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu madde, belirli bir şekli koruyabilir."
+    },
+    {
+      "id": "q3",
+      "text": "Aşağıdakilerden hangisi sıvı maddeye örnektir?",
+      "options": [
+        "Taş",
+        "Zeytinyağı",
+        "Buz",
+        "Oksijen gazı"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu madde, bulunduğu kabın şeklini alır ama akışkandır."
+    },
+    {
+      "id": "q4",
+      "text": "Aşağıdakilerden hangisi gaz maddeye örnektir?",
+      "options": [
+        "Tahta",
+        "Su",
+        "Oksijen",
+        "Demir"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu madde, gözle görülmez ve her yeri doldurur."
+    },
+    {
+      "id": "q5",
+      "text": "Bir maddenin şeklinin ve hacminin sabit olması hangi hâlin özelliğidir?",
+      "options": [
+        "Katı",
+        "Sıvı",
+        "Gaz",
+        "Hiçbiri"
+      ],
+      "correctIndex": 0,
+      "hint": "Bu madde türü, dışarıdan müdahale olmadan şeklini korur."
+    },
+    {
+      "id": "q6",
+      "text": "Bulunduğu kabın şeklini alan ama hacmi sabit olan madde hâli hangisidir?",
+      "options": [
+        "Katı",
+        "Sıvı",
+        "Gaz",
+        "Hiçbiri"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu madde türü, kaba göre şekil değiştirir ama miktarı azalmaz."
+    },
+    {
+      "id": "q7",
+      "text": "Bulunduğu kabın hem şeklini hem hacmini alan madde hâli hangisidir?",
+      "options": [
+        "Katı",
+        "Sıvı",
+        "Gaz",
+        "Hiçbiri"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu madde türü, kabın her köşesine yayılır."
+    },
+    {
+      "id": "q8",
+      "text": "Zorlayıcı soru: Bir buz küpü oda sıcaklığında bırakılırsa hangi hâl değişimleri sırasıyla gerçekleşir?",
+      "options": [
+        "Önce donma sonra buharlaşma",
+        "Önce erime, uzun süre sonra da (eğer ısıtılırsa) buharlaşma",
+        "Önce yoğuşma sonra donma",
+        "Hiçbir değişim olmaz"
+      ],
+      "correctIndex": 1,
+      "hint": "Buz erir, su hâline gelir; su daha da ısınırsa buharlaşabilir."
+    },
+    {
+      "id": "q9",
+      "text": "Soğuk bir içecek bardağının dışında oluşan su damlacıklarının kaynağı nedir?",
+      "options": [
+        "Bardağın kendisi su sızdırıyor",
+        "Havadaki su buharının bardağın soğuk yüzeyinde yoğuşması",
+        "İçecek dışarı taşıyor",
+        "Yağmur suyu"
+      ],
+      "correctIndex": 1,
+      "hint": "Havadaki nem, soğuk yüzeyle temas edince sıvıya dönüşür."
+    },
+    {
+      "id": "q10",
+      "text": "Bir tencerede kaynayan sudan çıkan buharın, tencere kapağının iç yüzünde su damlacıklarına dönüşmesi hangi olaya örnektir?",
+      "options": [
+        "Erime",
+        "Yoğuşma",
+        "Donma",
+        "Süblimleşme"
+      ],
+      "correctIndex": 1,
+      "hint": "Gaz hâlindeki su buharı, soğuk yüzeyle temas edince sıvıya döner."
+    },
+    {
+      "id": "q11",
+      "text": "Islak çamaşırların güneşte kuruması hangi olayla açıklanır?",
+      "options": [
+        "Donma",
+        "Erime",
+        "Buharlaşma",
+        "Yoğuşma"
+      ],
+      "correctIndex": 2,
+      "hint": "Çamaşırdaki su, ısı alarak buhara dönüşüp havaya karışır."
+    },
+    {
+      "id": "q12",
+      "text": "Zorlayıcı soru: Bir maddenin sıcaklığı artarken tanecikleri arasındaki mesafe genellikle nasıl değişir?",
+      "options": [
+        "Azalır",
+        "Artar (madde genleşir)",
+        "Hiç değişmez",
+        "Tanecikler yok olur"
+      ],
+      "correctIndex": 1,
+      "hint": "Isınan maddeler genellikle genleşir çünkü tanecikler daha hızlı hareket edip birbirinden uzaklaşır."
+    },
+    {
+      "id": "q13",
+      "text": "Aşağıdakilerden hangisi ısının bir etkisi DEĞİLDİR?",
+      "options": [
+        "Maddenin hâlini değiştirebilir",
+        "Maddenin sıcaklığını değiştirebilir",
+        "Maddenin rengini her zaman değiştirir",
+        "Maddeyi genleştirebilir"
+      ],
+      "correctIndex": 2,
+      "hint": "Isı, rengi doğrudan her zaman değiştirmez, ama hâl ve sıcaklığı değiştirebilir."
+    },
+    {
+      "id": "q14",
+      "text": "Bir termometrenin içindeki sıvı (genellikle civa veya alkol) sıcaklık arttığında ne yapar?",
+      "options": [
+        "Küçülür",
+        "Genleşir (yükselir)",
+        "Donar",
+        "Buharlaşıp kaybolur"
+      ],
+      "correctIndex": 1,
+      "hint": "Termometreler, sıvının ısıyla genleşmesi prensibiyle çalışır."
+    },
+    {
+      "id": "q15",
+      "text": "Aşağıdakilerden hangisi bir katının sıvıya dönüşmesine (erime) örnektir?",
+      "options": [
+        "Suyun donması",
+        "Tereyağının ısınıp erimesi",
+        "Suyun buharlaşması",
+        "Buharın yoğuşması"
+      ],
+      "correctIndex": 1,
+      "hint": "Katı bir madde ısınıp sıvı hâle geçiyor."
+    },
+    {
+      "id": "q16",
+      "text": "Naftalin topunun zamanla küçülüp yok olmasının sebebi nedir?",
+      "options": [
+        "Erime",
+        "Süblimleşme (katıdan doğrudan gaza geçiş)",
+        "Donma",
+        "Yoğuşma"
+      ],
+      "correctIndex": 1,
+      "hint": "Naftalin, sıvı hâle geçmeden doğrudan gaza dönüşür."
+    },
+    {
+      "id": "q17",
+      "text": "Zorlayıcı soru: Bir maddenin erime noktası ile donma noktası arasında nasıl bir ilişki vardır (aynı madde için)?",
+      "options": [
+        "Erime noktası her zaman donma noktasından yüksektir",
+        "Aynı sıcaklıktadır (örneğin suda 0 derece)",
+        "Aralarında hiç ilişki yoktur",
+        "Erime noktası her zaman donma noktasından düşüktür"
+      ],
+      "correctIndex": 1,
+      "hint": "Bir madde için erime ve donma aynı sıcaklıkta gerçekleşir, sadece ısı alış-verişi yönü farklıdır."
+    },
+    {
+      "id": "q18",
+      "text": "Gazların sıkıştırılabilir olmasının sebebi nedir?",
+      "options": [
+        "Tanecikleri arasında boşluk çok fazladır",
+        "Tanecikleri yoktur",
+        "Tanecikleri birbirine çok sıkı bağlıdır",
+        "Gazlar hiç sıkıştırılamaz"
+      ],
+      "correctIndex": 0,
+      "hint": "Bol boşluk, taneciklerin birbirine yaklaştırılmasına (sıkıştırmaya) olanak tanır."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Bugün hangi hâl değişimini gözlemledin (buz erimesi, su buharlaşması vb.)?",
+    "options": [
+      "Erime",
+      "Buharlaşma",
+      "Donma",
+      "Hiçbirini gözlemlemedim"
+    ],
+    "correctIndex": 3,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

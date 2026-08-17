@@ -1,0 +1,239 @@
+{
+  "id": "sosyalbilgiler-unite1-birlikte-yasamak-genis-p4",
+  "subject": "Sosyal Bilgiler",
+  "title": "Ünite 1 - Birlikte Yaşamak (Geniş Havuz) (4/4)",
+  "week": 1,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Aşağıdakilerden hangisi 'empati kurmanın' bir yoludur?",
+      "options": [
+        "Karşındakinin duygularını önemsememek",
+        "'Sen olsan nasıl hissederdin?' diye düşünmek",
+        "Sadece kendi duygularını düşünmek",
+        "Karşındakini yargılamak"
+      ],
+      "correctIndex": 1,
+      "hint": "Empati, kendini başkasının yerine koyabilme becerisidir."
+    },
+    {
+      "id": "q2",
+      "text": "Bir kişi seninle farklı bir dilde konuşuyor ve seni anlamıyor. En yapıcı tepki hangisidir?",
+      "options": [
+        "Onunla hiç iletişim kurmaya çalışmamak",
+        "Beden dili, resim veya basit kelimelerle iletişim kurmaya çalışmak",
+        "Ona kızmak",
+        "Onu görmezden gelmek"
+      ],
+      "correctIndex": 1,
+      "hint": "İletişim engelleri yaratıcı yöntemlerle aşılabilir."
+    },
+    {
+      "id": "q3",
+      "text": "Aşağıdakilerden hangisi bir 'sosyal kural' örneği DEĞİLDİR?",
+      "options": [
+        "Sırada beklemek",
+        "Selamlaşmak",
+        "Kişisel favori rengin",
+        "Trafik kurallarına uymak"
+      ],
+      "correctIndex": 2,
+      "hint": "Kişisel tercihler, toplumsal bir kural değildir."
+    },
+    {
+      "id": "q4",
+      "text": "Bir kişi başkalarının fikirlerine her zaman açık olmayı reddediyor. Bu davranış hangi eksikliği gösterir?",
+      "options": [
+        "Hoşgörü eksikliği",
+        "Fazla iş birliği",
+        "Aşırı empati",
+        "Hiçbir eksiklik yok"
+      ],
+      "correctIndex": 0,
+      "hint": "Farklı görüşlere kapalı olmak, hoşgörü eksikliğiyle ilişkilidir."
+    },
+    {
+      "id": "q5",
+      "text": "Bir aile üyesiyle anlaşmazlık yaşadığında en sağlıklı yaklaşım nedir?",
+      "options": [
+        "Küsüp konuşmamak",
+        "Sakince oturup konuyu konuşmak",
+        "Bağırıp evi terk etmek",
+        "Sorunu görmezden gelmek"
+      ],
+      "correctIndex": 1,
+      "hint": "Açık iletişim, aile içi sorunları çözmenin en sağlıklı yoludur."
+    },
+    {
+      "id": "q6",
+      "text": "Aşağıdakilerden hangisi topluma faydalı bir gönüllü faaliyet örneğidir?",
+      "options": [
+        "Bir parkı temizlemek için gönüllü olmak",
+        "Sadece kendi evini temizlemek",
+        "Hiçbir şey yapmamak",
+        "Başkalarının çöpünü karıştırmak"
+      ],
+      "correctIndex": 0,
+      "hint": "Toplum yararına yapılan gönüllü işler, sosyal sorumluluğun bir göstergesidir."
+    },
+    {
+      "id": "q7",
+      "text": "Bir grup içinde herkesin farklı güçlü yönleri olması neden önemlidir?",
+      "options": [
+        "Hiçbir önemi yoktur",
+        "Farklı yetenekler bir araya gelince daha kapsamlı sonuçlar elde edilir",
+        "Sadece kargaşaya yol açar",
+        "İşleri yavaşlatır"
+      ],
+      "correctIndex": 1,
+      "hint": "Çeşitlilik, bir grubun farklı bakış açılarıyla daha güçlü çözümler üretmesini sağlar."
+    },
+    {
+      "id": "q8",
+      "text": "Zorlayıcı soru: Bir arkadaşın senin fikrini eleştiriyor ama saygılı bir dille yapıyor. Bu duruma en olgun tepki nedir?",
+      "options": [
+        "Kızıp küsmek",
+        "Eleştiriyi dinleyip düşünmek, gerekirse fikrini geliştirmek",
+        "Onu susturmaya çalışmak",
+        "Onunla asla konuşmamak"
+      ],
+      "correctIndex": 1,
+      "hint": "Yapıcı eleştiri, kişisel gelişime katkı sağlayabilir."
+    },
+    {
+      "id": "q9",
+      "text": "Bir toplulukta herkesin oy kullanma hakkına sahip olması hangi değerle ilgilidir?",
+      "options": [
+        "Ayrımcılık",
+        "Eşitlik ve demokratik katılım",
+        "Kayıtsızlık",
+        "Bencillik"
+      ],
+      "correctIndex": 1,
+      "hint": "Herkesin sesini duyurabilmesi, demokratik bir toplumun temelidir."
+    },
+    {
+      "id": "q10",
+      "text": "Aşağıdakilerden hangisi bir çatışmayı büyütmek yerine küçültür?",
+      "options": [
+        "Sakin bir dil kullanmak",
+        "Bağırmak",
+        "Hakaret etmek",
+        "Sözünü kesmek"
+      ],
+      "correctIndex": 0,
+      "hint": "Sakin bir üslup, gerginliği azaltmaya yardımcı olur."
+    },
+    {
+      "id": "q11",
+      "text": "Bir kişi sürekli başkalarının hatalarını bulup eleştiriyor ama kendi hatalarını kabul etmiyor. Bu davranış neyi gösterir?",
+      "options": [
+        "Olgunluk",
+        "Empati eksikliği ve kendini eleştirememe",
+        "Yüksek sorumluluk bilinci",
+        "İyi bir dinleyici olma"
+      ],
+      "correctIndex": 1,
+      "hint": "Sağlıklı bir kişilik, kendi hatalarını da kabul edebilmeyi içerir."
+    },
+    {
+      "id": "q12",
+      "text": "Zorlayıcı soru: Bir sınıfta iki grup arasında sürekli rekabet var ve bu durum kavgalara yol açıyor. Öğretmenin bu durumu çözmek için önerebileceği en iyi yöntem hangisidir?",
+      "options": [
+        "Grupları daha da ayırmak",
+        "Ortak bir proje ile iki grubu birlikte çalışmaya teşvik etmek",
+        "Rekabeti daha da körüklemek",
+        "Durumu görmezden gelmek"
+      ],
+      "correctIndex": 1,
+      "hint": "Ortak hedefler, rakip grupları iş birliğine yönlendirebilir."
+    },
+    {
+      "id": "q13",
+      "text": "Bir kişi, farklı bir görüşe sahip olduğu için başka birini dışlıyor. Bu davranış hangi değere aykırıdır?",
+      "options": [
+        "Hoşgörü",
+        "Rekabet",
+        "Bencillik",
+        "Kayıtsızlık"
+      ],
+      "correctIndex": 0,
+      "hint": "Farklı görüşlere saygı göstermek, hoşgörünün bir parçasıdır."
+    },
+    {
+      "id": "q14",
+      "text": "Aşağıdakilerden hangisi 'birlikte yaşama kültürünün' bir parçası DEĞİLDİR?",
+      "options": [
+        "Farklılıklara saygı",
+        "Kurallara uyma",
+        "Sadece kendi çıkarını düşünme",
+        "Empati kurma"
+      ],
+      "correctIndex": 2,
+      "hint": "Bencillik, birlikte yaşama kültürüyle çelişir."
+    },
+    {
+      "id": "q15",
+      "text": "Bir grup arkadaşınla planladığınız bir etkinlik iptal olduğunda en olgun tepki nedir?",
+      "options": [
+        "Herkese kızmak",
+        "Hayal kırıklığını anlayışla karşılayıp yeni bir plan yapmaya çalışmak",
+        "Arkadaşlarınla küsmek",
+        "Hiçbir şey söylememek"
+      ],
+      "correctIndex": 1,
+      "hint": "Esneklik ve olumlu bir tutum, zorlu durumlarla başa çıkmaya yardımcı olur."
+    },
+    {
+      "id": "q16",
+      "text": "Aşağıdakilerden hangisi iyi bir 'takım oyuncusunun' özelliğidir?",
+      "options": [
+        "Sadece kendi başarısını düşünmek",
+        "Takım arkadaşlarını desteklemek ve ortak hedefe odaklanmak",
+        "Başkalarının hatalarını öne çıkarmak",
+        "Sorumluluk almamak"
+      ],
+      "correctIndex": 1,
+      "hint": "İyi bir takım oyuncusu, bireysel başarıdan çok ortak başarıyı önemser."
+    },
+    {
+      "id": "q17",
+      "text": "Zorlayıcı soru: Bir öğrenci, sınıf arkadaşının kalemini izinsiz kullandıktan sonra fark ediliyor ve özür diliyor. Arkadaşının en sağlıklı tepkisi ne olmalıdır?",
+      "options": [
+        "Asla affetmemek",
+        "Özrü kabul edip gelecekte izin istemesini nazikçe hatırlatmak",
+        "Ona bağırmak",
+        "Onunla bir daha hiç konuşmamak"
+      ],
+      "correctIndex": 1,
+      "hint": "Özrü kabul etmek ve durumu yapıcı şekilde ele almak, sağlıklı bir ilişkiyi sürdürür."
+    },
+    {
+      "id": "q18",
+      "text": "Bir toplulukta herkesin farklı görüşlere sahip olabileceğini kabul etmek neden önemlidir?",
+      "options": [
+        "Çünkü herkes aynı düşünmek zorundadır",
+        "Çünkü çeşitlilik, daha zengin tartışmalar ve çözümler getirir",
+        "Hiçbir önemi yoktur",
+        "Çünkü farklı görüşler her zaman kavgaya yol açar"
+      ],
+      "correctIndex": 1,
+      "hint": "Farklı bakış açıları, bir konuyu daha kapsamlı değerlendirmeye yardımcı olur."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Bu hafta bir arkadaşına nasıl yardımcı oldun?",
+    "options": [
+      "Ona bir konuda yardım ettim",
+      "Henüz fırsat olmadı",
+      "Hatırlamıyorum",
+      "Bunu paylaşmak istemiyorum"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

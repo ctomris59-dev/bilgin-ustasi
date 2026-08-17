@@ -1,0 +1,227 @@
+{
+  "id": "sosyalbilgiler-unite4-yasayan-demokrasimiz-p4",
+  "subject": "Sosyal Bilgiler",
+  "title": "Ünite 4 - Yaşayan Demokrasimiz (4/4)",
+  "week": 4,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Demokraside 'oy kullanma yaşının' belirlenmiş olması neyi gösterir?",
+      "options": [
+        "Seçme ve seçilme hakkının belirli koşullara bağlı olduğunu",
+        "Herkesin her yaşta oy kullanabildiğini",
+        "Hiçbir kuralın olmadığını",
+        "Bu konunun önemsiz olduğunu"
+      ],
+      "correctIndex": 0,
+      "hint": "Ülkeler, oy kullanma için belirli bir yaş sınırı belirler."
+    },
+    {
+      "id": "q2",
+      "text": "Aşağıdakilerden hangisi bir 'vatandaşlık ödevidir' (genel anlamda)?",
+      "options": [
+        "Kanunlara uymak",
+        "Kanunları görmezden gelmek",
+        "Toplumsal kurallara uymamak",
+        "Sadece kendi çıkarını düşünmek"
+      ],
+      "correctIndex": 0,
+      "hint": "Kanunlara uymak, bir toplumda düzenin sağlanması için gereklidir."
+    },
+    {
+      "id": "q3",
+      "text": "Bir demokraside 'muhalefet' (karşıt görüş) kavramının varlığı neden önemlidir?",
+      "options": [
+        "Hiçbir önemi yoktur",
+        "Farklı görüşlerin dile getirilmesini ve denetim mekanizmasını sağlar",
+        "Muhalefet olmamalıdır",
+        "Sadece kargaşa yaratır"
+      ],
+      "correctIndex": 1,
+      "hint": "Muhalefet, yönetimi denetleyen ve alternatif görüşler sunan önemli bir unsurdur."
+    },
+    {
+      "id": "q4",
+      "text": "Aşağıdakilerden hangisi bir öğrencinin 'sorumluluk sahibi bir vatandaş' olma yolunda atabileceği bir adımdır?",
+      "options": [
+        "Gündemdeki konuları takip etmek ve bilgi sahibi olmak",
+        "Hiçbir haberle ilgilenmemek",
+        "Toplumsal konulara kayıtsız kalmak",
+        "Sadece oyun oynamakla ilgilenmek"
+      ],
+      "correctIndex": 0,
+      "hint": "Bilgi sahibi olmak, bilinçli bir vatandaş olmanın ilk adımıdır."
+    },
+    {
+      "id": "q5",
+      "text": "Bir demokraside 'yargı bağımsızlığı' kavramı ne anlama gelir?",
+      "options": [
+        "Mahkemelerin siyasi baskı olmadan adil karar verebilmesi",
+        "Mahkemelerin hiç önemli olmaması",
+        "Yargının hiç bağımsız olmaması gerektiği",
+        "Bu kavramın hiçbir anlamı yoktur"
+      ],
+      "correctIndex": 0,
+      "hint": "Bağımsız yargı, adil bir hukuk sisteminin temel unsurlarından biridir."
+    },
+    {
+      "id": "q6",
+      "text": "Aşağıdakilerden hangisi 'toplumsal fayda' kavramına bir örnektir?",
+      "options": [
+        "Bir parkın herkesin kullanımına açık olması",
+        "Sadece bir kişinin çıkarına hizmet eden bir uygulama",
+        "Hiçbir kimsenin faydalanmadığı bir şey",
+        "Sadece zenginlerin faydalandığı bir hizmet"
+      ],
+      "correctIndex": 0,
+      "hint": "Toplumsal fayda, geniş kitlelere hizmet eden uygulamaları ifade eder."
+    },
+    {
+      "id": "q7",
+      "text": "Zorlayıcı soru: Bir ülke, vatandaşlarının farklı dilleri, dinleri ve kültürleri olmasına rağmen onları eşit haklarla yönetiyor. Bu durum hangi demokratik değeri yansıtır?",
+      "options": [
+        "Eşitlik ve çoğulculuk",
+        "Ayrımcılık",
+        "Tek tipleştirme",
+        "Hiçbir demokratik değeri yansıtmaz"
+      ],
+      "correctIndex": 0,
+      "hint": "Farklılıklara rağmen eşit haklar tanımak, demokratik bir değerdir."
+    },
+    {
+      "id": "q8",
+      "text": "Aşağıdakilerden hangisi bir 'toplum lideri' seçilirken göz önünde bulundurulması gereken bir özelliktir (genel bir bakış açısı)?",
+      "options": [
+        "Dürüstlük ve sorumluluk bilinci",
+        "Sadece popülerlik",
+        "Hiçbir özellik önemli değildir",
+        "Sadece zenginlik"
+      ],
+      "correctIndex": 0,
+      "hint": "İyi bir lider, toplumun genel yararını gözeten değerlere sahip olmalıdır."
+    },
+    {
+      "id": "q9",
+      "text": "Bir demokraside 'çoğunluk kararı' her zaman kesin doğru mudur?",
+      "options": [
+        "Evet, çoğunluk her zaman haklıdır",
+        "Hayır, çoğunluk kararı da tartışılabilir ve gözden geçirilebilir",
+        "Bu konuda hiç tartışma olmaz",
+        "Çoğunluk kararının hiç önemi yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Demokraside kararlar zaman içinde değerlendirilip gerektiğinde değiştirilebilir."
+    },
+    {
+      "id": "q10",
+      "text": "Aşağıdakilerden hangisi 'kamuoyu' kavramını tanımlar?",
+      "options": [
+        "Halkın belirli bir konu hakkındaki genel görüşü",
+        "Sadece bir kişinin görüşü",
+        "Hiçbir anlamı yoktur",
+        "Sadece yöneticilerin görüşü"
+      ],
+      "correctIndex": 0,
+      "hint": "Kamuoyu, toplumun geneline yayılmış görüş ve düşünceleri ifade eder."
+    },
+    {
+      "id": "q11",
+      "text": "Bir öğrencinin okul gazetesine yazı yazarak görüşlerini paylaşması hangi hakla ilişkilidir?",
+      "options": [
+        "İfade özgürlüğü",
+        "Hiçbir hakla ilişkili değildir",
+        "Sadece bir ödev",
+        "Bir ceza"
+      ],
+      "correctIndex": 0,
+      "hint": "Düşüncelerini yazılı olarak paylaşmak, ifade özgürlüğünün bir uygulamasıdır."
+    },
+    {
+      "id": "q12",
+      "text": "Aşağıdakilerden hangisi 'toplumsal uzlaşı' kavramını en iyi açıklar?",
+      "options": [
+        "Farklı görüşlerin ortak bir noktada buluşabilmesi",
+        "Herkesin aynı fikirde olması zorunluluğu",
+        "Hiçbir uzlaşmanın mümkün olmaması",
+        "Sadece bir tarafın kazanması"
+      ],
+      "correctIndex": 0,
+      "hint": "Uzlaşı, farklı tarafların ortak bir çözümde anlaşabilmesidir."
+    },
+    {
+      "id": "q13",
+      "text": "Zorlayıcı soru: Bir belediye başkanı, göreve geldikten sonra vaatlerini yerine getirmezse vatandaşlar ne yapabilir?",
+      "options": [
+        "Hiçbir şey yapamazlar",
+        "Bir sonraki seçimde farklı bir aday/parti seçebilirler",
+        "Sadece susup beklerler",
+        "Vaatlerin hiç önemi yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Demokraside seçimler, yöneticilerin performansının değerlendirilmesine bir fırsat sunar."
+    },
+    {
+      "id": "q14",
+      "text": "Aşağıdakilerden hangisi bir 'gönüllü kuruluşun' (STK) faaliyetine örnektir?",
+      "options": [
+        "Bir hayvan barınağı için yardım toplamak",
+        "Sadece kar amacı gütmek",
+        "Toplumsal sorunlara kayıtsız kalmak",
+        "Hiçbir faaliyette bulunmamak"
+      ],
+      "correctIndex": 0,
+      "hint": "STK'lar, genellikle toplumsal fayda için gönüllü çalışır."
+    },
+    {
+      "id": "q15",
+      "text": "Bir demokraside 'denge ve denetim' (checks and balances) sisteminin amacı nedir?",
+      "options": [
+        "Gücün tek bir elde toplanmasını önlemek",
+        "Gücü tek bir kişiye vermek",
+        "Hiçbir denetim yapmamak",
+        "Denge kavramının önemi yoktur"
+      ],
+      "correctIndex": 0,
+      "hint": "Bu sistem, farklı kurumların birbirini denetlemesini sağlayarak güç suistimalini önlemeye çalışır."
+    },
+    {
+      "id": "q16",
+      "text": "Aşağıdakilerden hangisi bir öğrencinin sınıfta gösterebileceği demokratik bir davranıştır?",
+      "options": [
+        "Sınıf kararlarına katılıp fikrini paylaşmak",
+        "Kararlara hiç katılmamak",
+        "Başkalarının fikrini önemsememek",
+        "Sadece kendi isteğini dayatmak"
+      ],
+      "correctIndex": 0,
+      "hint": "Katılım ve fikir paylaşımı, demokratik bir tutumun göstergesidir."
+    },
+    {
+      "id": "q17",
+      "text": "Zorlayıcı soru: Bir toplumda insanlar farklı siyasi görüşlere sahip olsalar da birbirlerine saygılı davranıyor ve barış içinde bir arada yaşıyorlar. Bu durum neyi gösterir?",
+      "options": [
+        "Sağlıklı bir demokratik kültürün var olduğunu",
+        "Demokrasinin hiç işlemediğini",
+        "Hiçbir şey göstermez",
+        "Herkesin aynı görüşte olması gerektiğini"
+      ],
+      "correctIndex": 0,
+      "hint": "Farklı görüşlere rağmen barış içinde bir arada yaşamak, olgun bir demokratik kültürün işaretidir."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Sınıfında bir karar alınırken oy kullandın mı?",
+    "options": [
+      "Evet, kullandım",
+      "Henüz fırsatım olmadı",
+      "Hatırlamıyorum",
+      "Söylemek istemiyorum"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

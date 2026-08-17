@@ -1,0 +1,239 @@
+{
+  "id": "fenbilimleri-unite5-isigin-yayilmasi-p2",
+  "subject": "Fen Bilimleri",
+  "title": "Ünite 5 - Işığın Yayılması (2/4)",
+  "week": 5,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Aşağıdakilerden hangisi ışığın doğrusal yayılmasının bir kanıtıdır?",
+      "options": [
+        "Gölgelerin net kenarlı olması",
+        "Suyun akışkan olması",
+        "Metallerin ısıyı iletmesi",
+        "Sesin duyulması"
+      ],
+      "correctIndex": 0,
+      "hint": "Işık dalgalı yayılsaydı, gölgelerin kenarları bulanık olurdu."
+    },
+    {
+      "id": "q2",
+      "text": "Bir gölge, aynı anda birden fazla ışık kaynağından etkilenirse ne olabilir?",
+      "options": [
+        "Hiçbir değişiklik olmaz",
+        "Birden fazla gölge veya daha karmaşık bir gölge oluşabilir",
+        "Gölge tamamen kaybolur",
+        "Işık kaynağı sayısının gölgeyle ilgisi yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Birden fazla ışık kaynağı, birden fazla gölge oluşturabilir."
+    },
+    {
+      "id": "q3",
+      "text": "Zorlayıcı soru: Bir öğrenci öğle vakti dışarıda duruyor ve gölgesinin çok kısa olduğunu fark ediyor. Bunun sebebi nedir?",
+      "options": [
+        "Güneş o an çok uzaktır",
+        "Güneş, gökyüzünde en yüksek noktada (tepede) olduğu için ışınlar dik açıyla gelir",
+        "Öğrenci çok kısadır",
+        "Güneş kaybolmuştur"
+      ],
+      "correctIndex": 1,
+      "hint": "Öğlen, Güneş'in günün en yüksek konumunda olduğu zamandır, bu da en kısa gölgeleri oluşturur."
+    },
+    {
+      "id": "q4",
+      "text": "Ay tutulması sırasında Ay'ın üzerine düşen gölge hangi gökcisminden kaynaklanır?",
+      "options": [
+        "Güneş'ten",
+        "Dünya'dan",
+        "Ay'ın kendisinden",
+        "Yıldızlardan"
+      ],
+      "correctIndex": 1,
+      "hint": "Dünya, Güneş ile Ay arasına girip Ay'a gölge düşürür."
+    },
+    {
+      "id": "q5",
+      "text": "Bir projeksiyon cihazının çalışma prensibinde ışığın hangi özelliğinden yararlanılır?",
+      "options": [
+        "Işığın doğrusal yayılması",
+        "Işığın hiç yayılmaması",
+        "Işığın sadece geceleri var olması",
+        "Işığın rengi olmaması"
+      ],
+      "correctIndex": 0,
+      "hint": "Görüntü, ışığın belirli bir yüzeye doğrusal olarak yansıtılmasıyla oluşturulur."
+    },
+    {
+      "id": "q6",
+      "text": "Aşağıdakilerden hangisi bir ışık kaynağı DEĞİLDİR?",
+      "options": [
+        "Mum alevi",
+        "Ay",
+        "Güneş",
+        "Ampul"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu gökcismi ışık üretmez, sadece yansıtır."
+    },
+    {
+      "id": "q7",
+      "text": "Kararlık bir odada ışık olmadan cisimleri görebilir miyiz?",
+      "options": [
+        "Evet, her zaman görebiliriz",
+        "Hayır, görebilmemiz için ışığa ihtiyaç vardır",
+        "Sadece parlak renkli cisimleri görürüz",
+        "Sadece büyük cisimleri görürüz"
+      ],
+      "correctIndex": 1,
+      "hint": "Görme, cisimlerden gözümüze ulaşan ışıkla gerçekleşir."
+    },
+    {
+      "id": "q8",
+      "text": "Bir cismi görebilmemiz için ışığın izlediği yol nedir?",
+      "options": [
+        "Işık kaynağından cisme, cisimden gözümüze",
+        "Sadece gözümüzden cisme",
+        "Işığın hiçbir yola ihtiyacı yoktur",
+        "Cisimden ışık kaynağına"
+      ],
+      "correctIndex": 0,
+      "hint": "Işık, kaynaktan çıkıp cisme çarpar, sonra yansıyarak gözümüze ulaşır."
+    },
+    {
+      "id": "q9",
+      "text": "Zorlayıcı soru: Bir el feneri ile bir opak cisme farklı açılardan ışık tutuluyor. Gölgenin şekli neden değişebilir?",
+      "options": [
+        "Gölgeler her zaman aynı şekildedir",
+        "Işığın geliş açısı, gölgenin şeklini ve uzunluğunu etkiler",
+        "Gölgeler ışıktan etkilenmez",
+        "Sadece cismin rengi gölgeyi etkiler"
+      ],
+      "correctIndex": 1,
+      "hint": "Işığın açısı değiştikçe, gölgenin düştüğü yer ve şekli de değişir."
+    },
+    {
+      "id": "q10",
+      "text": "Aşağıdakilerden hangisi 'ışığın yansıması' değil, 'ışığın kaynağı' ile ilgilidir?",
+      "options": [
+        "Bir aynanın parlaması",
+        "Güneşin ışık üretmesi",
+        "Suyun ışığı yansıtması",
+        "Bir metalin parlak görünmesi"
+      ],
+      "correctIndex": 1,
+      "hint": "Güneş, kendi ışığını üreten bir kaynaktır, diğerleri yansıma örnekleridir."
+    },
+    {
+      "id": "q11",
+      "text": "Gölgenin rengi genellikle nasıldır?",
+      "options": [
+        "Her zaman kırmızı",
+        "Koyu/siyah tonlarında",
+        "Her zaman beyaz",
+        "Gökkuşağı renklerinde"
+      ],
+      "correctIndex": 1,
+      "hint": "Gölge, ışığın engellendiği bölgedir, bu yüzden karanlık görünür."
+    },
+    {
+      "id": "q12",
+      "text": "Bir güneş saatinin çalışma prensibi neye dayanır?",
+      "options": [
+        "Rüzgara",
+        "Güneş ışığının oluşturduğu gölgenin gün içinde konum değiştirmesine",
+        "Suya",
+        "Elektriğe"
+      ],
+      "correctIndex": 1,
+      "hint": "Güneş saatleri, gölgenin hareketini kullanarak zamanı gösterir."
+    },
+    {
+      "id": "q13",
+      "text": "Aşağıdakilerden hangisi ışığın doğrusal yayılmasının günlük hayattaki bir sonucudur?",
+      "options": [
+        "Köşeleri dönerek arkamızı görebiliriz",
+        "Duvarın arkasındaki bir şeyi doğrudan göremeyiz",
+        "Işık her yöne bükülerek gider",
+        "Gölgeler hiç oluşmaz"
+      ],
+      "correctIndex": 1,
+      "hint": "Işık düz gittiği için, engel varsa arkasını göremeyiz."
+    },
+    {
+      "id": "q14",
+      "text": "Zorlayıcı soru: Bir odada iki farklı yönden gelen iki ışık kaynağı varsa, bir cismin gölgesi kaç tane olabilir?",
+      "options": [
+        "Her zaman sadece 1 tane",
+        "Her ışık kaynağı için ayrı bir gölge, yani birden fazla olabilir",
+        "Gölge hiç oluşmaz",
+        "Sonsuz sayıda gölge oluşur"
+      ],
+      "correctIndex": 1,
+      "hint": "Her bir ışık kaynağı, kendi açısından bir gölge oluşturabilir."
+    },
+    {
+      "id": "q15",
+      "text": "Aşağıdakilerden hangisi 'ışığın bir ortamdan diğerine geçerken yön değiştirmesi' anlamına gelir? (Genel bilgi)",
+      "options": [
+        "Yansıma",
+        "Kırılma",
+        "Gölge oluşumu",
+        "Karanlık"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu olay, örneğin bir kalemi suya batırdığında kırık gibi görünmesini açıklar."
+    },
+    {
+      "id": "q16",
+      "text": "Bir aynaya bakarken kendimizi görebilmemizin sebebi nedir?",
+      "options": [
+        "Ayna kendi ışığını üretir",
+        "Ayna, üzerine gelen ışığı yansıtır",
+        "Aynalar ışığı tamamen emer",
+        "Aynanın bizimle hiçbir ilgisi yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Aynalar, düzgün yansıtıcı yüzeylerdir."
+    },
+    {
+      "id": "q17",
+      "text": "Gece karanlıkta bir el feneri yaktığımızda etrafı görebilmemizin sebebi nedir?",
+      "options": [
+        "Gözlerimiz karanlıkta otomatik ışık üretir",
+        "Fenerden çıkan ışık cisimlere çarpıp gözümüze yansır",
+        "Karanlıkta görme ışığa ihtiyaç duymaz",
+        "Hiçbir bilimsel açıklaması yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Fener, ışık kaynağıdır; bu ışık cisimlere çarpıp yansıyarak gözümüze ulaşır."
+    },
+    {
+      "id": "q18",
+      "text": "Aşağıdakilerden hangisi hem ışık kaynağı hem de ısı kaynağı olabilir?",
+      "options": [
+        "Ay",
+        "Güneş",
+        "Ayna",
+        "Cam"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu gökcismi hem ışık hem ısı yayar."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Bugün gölgeni ne zaman fark ettin?",
+    "options": [
+      "Sabah",
+      "Öğlen",
+      "Akşam",
+      "Fark etmedim"
+    ],
+    "correctIndex": 3,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "id": "matematik-unite6-alan-cisimler-p4",
+  "subject": "Matematik",
+  "title": "Ünite 6 - Alan Ölçme ve Geometrik Cisimler (4/4)",
+  "week": 6,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Zorlayıcı problem: Bir dikdörtgenin alanı 48 cm², bir kenarı 6 cm ise, diğer kenarı kaç cm'dir?",
+      "options": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "correctIndex": 2,
+      "hint": "Alan = en × boy, 48 = 6 × boy."
+    },
+    {
+      "id": "q2",
+      "text": "Zorlayıcı problem: Bir karenin çevresi 36 cm ise, bir kenarı kaç cm'dir?",
+      "options": [
+        "6",
+        "9",
+        "12",
+        "18"
+      ],
+      "correctIndex": 1,
+      "hint": "Çevre = 4 × kenar, 36 ÷ 4 işlemini yap."
+    },
+    {
+      "id": "q3",
+      "text": "Zorlayıcı problem: Bir karenin alanı 64 cm² ise, bir kenarı kaç cm'dir?",
+      "options": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "correctIndex": 2,
+      "hint": "Hangi sayının karesi 64 eder? 8×8=64."
+    },
+    {
+      "id": "q4",
+      "text": "Zorlayıcı problem: Bir bahçenin uzunluğu 15 m, genişliği 8 m'dir. Bu bahçenin çevresini çitle çevirmek için kaç metre çit gerekir?",
+      "options": [
+        "23 m",
+        "46 m",
+        "120 m",
+        "60 m"
+      ],
+      "correctIndex": 1,
+      "hint": "Çevre = 2×(15+8)."
+    },
+    {
+      "id": "q5",
+      "text": "Zorlayıcı problem: Yukarıdaki bahçenin alanı kaç metrekaredir?",
+      "options": [
+        "23 m²",
+        "46 m²",
+        "120 m²",
+        "60 m²"
+      ],
+      "correctIndex": 2,
+      "hint": "Alan = 15 × 8."
+    },
+    {
+      "id": "q6",
+      "text": "Zorlayıcı problem: Bir odanın taban alanı 20 m². Bu tabana 1 m²'ye 4 fayans düşecek şekilde fayans döşenirse, toplam kaç fayans gerekir?",
+      "options": [
+        "40",
+        "60",
+        "80",
+        "100"
+      ],
+      "correctIndex": 2,
+      "hint": "20 × 4 işlemini yap."
+    },
+    {
+      "id": "q7",
+      "text": "Zorlayıcı problem: Kenarı 5 cm olan bir küpün 6 yüzünün toplam alanı (yüzey alanı) kaç cm²'dir?",
+      "options": [
+        "25",
+        "100",
+        "125",
+        "150"
+      ],
+      "correctIndex": 3,
+      "hint": "Bir yüzün alanı 5×5=25, toplam = 25×6."
+    },
+    {
+      "id": "q8",
+      "text": "Zorlayıcı problem: Bir dikdörtgenler prizmasının taban alanı 20 cm², yüksekliği 5 cm'dir. Bu bilgiyle hangi hesaplama yapılabilir? (Hacim = taban alanı × yükseklik formülünü kullan)",
+      "options": [
+        "Hacim = 100 cm³",
+        "Hacim = 25 cm³",
+        "Hacim = 15 cm³",
+        "Hacim hesaplanamaz"
+      ],
+      "correctIndex": 0,
+      "hint": "Hacim = taban alanı × yükseklik = 20 × 5."
+    },
+    {
+      "id": "q9",
+      "text": "Zorlayıcı problem: Bir dikdörtgenin uzun kenarı kısa kenarının 3 katıdır. Kısa kenar 4 cm ise, dikdörtgenin alanı kaç cm²'dir?",
+      "options": [
+        "12",
+        "16",
+        "36",
+        "48"
+      ],
+      "correctIndex": 3,
+      "hint": "Uzun kenar = 4×3=12, alan = 4×12."
+    },
+    {
+      "id": "q10",
+      "text": "Zorlayıcı problem: Bir kare ile bir dikdörtgenin alanları eşittir. Karenin kenarı 6 cm, dikdörtgenin bir kenarı 4 cm ise, diğer kenarı kaç cm'dir?",
+      "options": [
+        "6",
+        "8",
+        "9",
+        "12"
+      ],
+      "correctIndex": 2,
+      "hint": "Kare alanı 6×6=36, dikdörtgen alanı da 36 olmalı: 36÷4."
+    },
+    {
+      "id": "q11",
+      "text": "Zorlayıcı problem: Bir dikdörtgenin çevresi 30 cm'dir. Kenarları tam sayı olduğuna göre, en ve boy toplamı kaç olmalıdır?",
+      "options": [
+        "10",
+        "15",
+        "20",
+        "30"
+      ],
+      "correctIndex": 1,
+      "hint": "Çevre=2×(en+boy), 30=2×(en+boy), en+boy=15."
+    },
+    {
+      "id": "q12",
+      "text": "Zorlayıcı problem: Bir küpün her kenarı 2 katına çıkarılırsa, bir yüzünün alanı kaç katına çıkar?",
+      "options": [
+        "2 katına",
+        "4 katına",
+        "6 katına",
+        "8 katına"
+      ],
+      "correctIndex": 1,
+      "hint": "Kenar 2 katına çıkarsa, alan (kenar×kenar) 2×2=4 katına çıkar."
+    },
+    {
+      "id": "q13",
+      "text": "Zorlayıcı problem: Bir dikdörtgenler prizmasının taban kenarları 3 cm ve 4 cm'dir. Taban alanı kaç cm²'dir?",
+      "options": [
+        "7",
+        "10",
+        "12",
+        "14"
+      ],
+      "correctIndex": 2,
+      "hint": "Taban dikdörtgeninin alanı = 3×4."
+    },
+    {
+      "id": "q14",
+      "text": "Zorlayıcı problem: İki farklı dikdörtgenin çevreleri eşit olabilir mi (boyutları farklı olsa bile)?",
+      "options": [
+        "Hayır, asla olamaz",
+        "Evet, farklı en-boy kombinasyonlarıyla eşit çevre elde edilebilir",
+        "Sadece kareler için mümkündür",
+        "Bu imkansız bir durumdur"
+      ],
+      "correctIndex": 1,
+      "hint": "Örneğin 3x5 (çevre=16) ile 4x4 (çevre=16) - farklı alanlar ama eşit çevre."
+    },
+    {
+      "id": "q15",
+      "text": "Zorlayıcı problem: Bir küpün açınımındaki 6 karenin her birinin kenarı 3 cm ise, açınımın toplam alanı kaç cm²'dir?",
+      "options": [
+        "18",
+        "27",
+        "36",
+        "54"
+      ],
+      "correctIndex": 3,
+      "hint": "Bir karenin alanı 3×3=9, 6 kare için 9×6."
+    },
+    {
+      "id": "q16",
+      "text": "Zorlayıcı problem: Bir dikdörtgenler prizmasının 6 yüzünden 2'si 4x3 cm, 2'si 4x5 cm, 2'si 3x5 cm boyutlarındadır. Toplam yüzey alanı kaç cm²'dir?",
+      "options": [
+        "94",
+        "84",
+        "104",
+        "74"
+      ],
+      "correctIndex": 0,
+      "hint": "2×(4×3) + 2×(4×5) + 2×(3×5) = 24+40+30 = 94."
+    },
+    {
+      "id": "q17",
+      "text": "Zorlayıcı problem: Bir kare bahçenin çevresi 40 metredir. Bu bahçenin alanı kaç metrekaredir?",
+      "options": [
+        "80 m²",
+        "100 m²",
+        "120 m²",
+        "160 m²"
+      ],
+      "correctIndex": 1,
+      "hint": "Önce kenarı bul (40÷4=10), sonra alan (10×10)."
+    },
+    {
+      "id": "q18",
+      "text": "Zorlayıcı problem: Bir dikdörtgenin alanı sabit tutulup (24 cm²) farklı en-boy kombinasyonları denenirse, hangisi mümkün DEĞİLDİR?",
+      "options": [
+        "4 cm x 6 cm",
+        "3 cm x 8 cm",
+        "2 cm x 12 cm",
+        "5 cm x 5 cm"
+      ],
+      "correctIndex": 3,
+      "hint": "5×5=25, bu 24'e eşit değildir, diğerlerinin hepsi 24 eder."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Odandaki eşyalardan hangisi bir dikdörtgenler prizmasına benziyor?",
+    "options": [
+      "Dolap",
+      "Kitap",
+      "Kutu",
+      "Hepsi"
+    ],
+    "correctIndex": 3,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

@@ -1,0 +1,251 @@
+{
+  "id": "matematik-unite3-ondalik-yuzde-p4",
+  "subject": "Matematik",
+  "title": "Ünite 3 - Ondalık Gösterim ve Yüzdeler (4/4)",
+  "week": 3,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "400 sayısının %25'i kaçtır?",
+      "options": [
+        "100",
+        "125",
+        "300",
+        "200"
+      ],
+      "correctIndex": 0,
+      "hint": "400'i 100'e böl, sonra 25 ile çarp."
+    },
+    {
+      "id": "q2",
+      "text": "50 sayısının %10'i kaçtır?",
+      "options": [
+        "5",
+        "15",
+        "45",
+        "10"
+      ],
+      "correctIndex": 0,
+      "hint": "50'i 100'e böl, sonra 10 ile çarp."
+    },
+    {
+      "id": "q3",
+      "text": "300 sayısının %20'i kaçtır?",
+      "options": [
+        "60",
+        "80",
+        "240",
+        "120"
+      ],
+      "correctIndex": 0,
+      "hint": "300'i 100'e böl, sonra 20 ile çarp."
+    },
+    {
+      "id": "q4",
+      "text": "80 sayısının %25'i kaçtır?",
+      "options": [
+        "20",
+        "45",
+        "60",
+        "40"
+      ],
+      "correctIndex": 0,
+      "hint": "80'i 100'e böl, sonra 25 ile çarp."
+    },
+    {
+      "id": "q5",
+      "text": "150 sayısının %10'i kaçtır?",
+      "options": [
+        "15",
+        "25",
+        "135",
+        "30"
+      ],
+      "correctIndex": 0,
+      "hint": "150'i 100'e böl, sonra 10 ile çarp."
+    },
+    {
+      "id": "q6",
+      "text": "500 sayısının %50'i kaçtır?",
+      "options": [
+        "250",
+        "300",
+        "250",
+        "500"
+      ],
+      "correctIndex": 0,
+      "hint": "500'i 100'e böl, sonra 50 ile çarp."
+    },
+    {
+      "id": "q7",
+      "text": "40 sayısının %75'i kaçtır?",
+      "options": [
+        "30",
+        "105",
+        "10",
+        "60"
+      ],
+      "correctIndex": 0,
+      "hint": "40'i 100'e böl, sonra 75 ile çarp."
+    },
+    {
+      "id": "q8",
+      "text": "Zorlayıcı problem: Bir öğrenci matematik sınavının %80'inden 100 üzerinden kaç puan almış olur (sınav 100 puan üzerindense)?",
+      "options": [
+        "70",
+        "75",
+        "80",
+        "85"
+      ],
+      "correctIndex": 2,
+      "hint": "%80'i bulmak için 100'ün %80'ini hesapla."
+    },
+    {
+      "id": "q9",
+      "text": "Zorlayıcı problem: 250 TL'lik bir üründe %20 indirim var. İndirim tutarı kaç TL'dir?",
+      "options": [
+        "40",
+        "50",
+        "60",
+        "70"
+      ],
+      "correctIndex": 1,
+      "hint": "250'nin %20'sini bul: 250÷100×20."
+    },
+    {
+      "id": "q10",
+      "text": "Zorlayıcı problem: 250 TL'lik bir üründe %20 indirim varsa, ürünün indirimli fiyatı kaç TL'dir?",
+      "options": [
+        "190",
+        "200",
+        "210",
+        "220"
+      ],
+      "correctIndex": 1,
+      "hint": "Önce indirim tutarını bul (50 TL), sonra 250'den çıkar."
+    },
+    {
+      "id": "q11",
+      "text": "Zorlayıcı problem: Bir sınıftaki 40 öğrencinin %25'i erkek öğrencidir. Kaç erkek öğrenci vardır?",
+      "options": [
+        "8",
+        "10",
+        "12",
+        "15"
+      ],
+      "correctIndex": 1,
+      "hint": "40'ın %25'ini bul: 40÷100×25."
+    },
+    {
+      "id": "q12",
+      "text": "Zorlayıcı problem: 3,5 + 2,75 işleminin sonucu kaçtır?",
+      "options": [
+        "6,25",
+        "6,15",
+        "5,25",
+        "6,35"
+      ],
+      "correctIndex": 0,
+      "hint": "Virgülleri alt alta getirerek topla, gerekirse sıfır ekle."
+    },
+    {
+      "id": "q13",
+      "text": "Zorlayıcı problem: 10,00 - 4,35 işleminin sonucu kaçtır?",
+      "options": [
+        "5,65",
+        "6,65",
+        "5,55",
+        "5,75"
+      ],
+      "correctIndex": 0,
+      "hint": "10'dan çıkarırken onluk bozmaya dikkat et."
+    },
+    {
+      "id": "q14",
+      "text": "Zorlayıcı problem: Bir marketten alınan 3 ürünün fiyatları 4,50 TL, 2,25 TL ve 1,75 TL ise toplam kaç TL ödenir?",
+      "options": [
+        "8,00",
+        "8,50",
+        "9,00",
+        "7,50"
+      ],
+      "correctIndex": 0,
+      "hint": "Üç fiyatı sırayla topla."
+    },
+    {
+      "id": "q15",
+      "text": "Zorlayıcı problem: %60'ı 30 olan bir sayının tamamı kaçtır?",
+      "options": [
+        "40",
+        "50",
+        "60",
+        "70"
+      ],
+      "correctIndex": 1,
+      "hint": "%60'ı 30 ise, %1'i 0,5'tir; tamamı (%100) için 0,5×100."
+    },
+    {
+      "id": "q16",
+      "text": "Zorlayıcı problem: 0,25 ondalık sayısının yüzde ve kesir gösterimi hangisidir?",
+      "options": [
+        "%25 ve 1/4",
+        "%2,5 ve 1/25",
+        "%250 ve 25/1",
+        "%0,25 ve 1/400"
+      ],
+      "correctIndex": 0,
+      "hint": "0,25 = 25/100 = %25 = 1/4 (sadeleştirilmiş)."
+    },
+    {
+      "id": "q17",
+      "text": "Zorlayıcı problem: Bir kumbarada 3,25 TL bozuk para var. Buna 2,80 TL daha eklenirse kumbarada kaç TL olur?",
+      "options": [
+        "6,05",
+        "5,95",
+        "6,15",
+        "5,05"
+      ],
+      "correctIndex": 0,
+      "hint": "3,25 + 2,80 işlemini yap."
+    },
+    {
+      "id": "q18",
+      "text": "Zorlayıcı problem: Bir öğrenci 20 sorudan 15'ini doğru yaptı. Doğru cevap yüzdesi kaçtır?",
+      "options": [
+        "65%",
+        "70%",
+        "75%",
+        "80%"
+      ],
+      "correctIndex": 2,
+      "hint": "15/20 kesrini yüzdeye çevir: önce sadeleştir (3/4), sonra %'ye çevir."
+    },
+    {
+      "id": "q19",
+      "text": "Zorlayıcı problem: 1 tam 5 kuruş, ondalık gösterimle nasıl yazılır? (1 TL = 100 kuruş)",
+      "options": [
+        "1,05",
+        "1,5",
+        "1,50",
+        "1,005"
+      ],
+      "correctIndex": 0,
+      "hint": "5 kuruş, TL'nin yüzde birler basamağına yazılır."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Ondalık sayılarla ilgili en çok hangi konuda kendine güvendin?",
+    "options": [
+      "Sıralama",
+      "Toplama-çıkarma",
+      "Yüzdeye çevirme",
+      "Basamak değeri"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

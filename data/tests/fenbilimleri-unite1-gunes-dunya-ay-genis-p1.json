@@ -1,0 +1,239 @@
+{
+  "id": "fenbilimleri-unite1-gunes-dunya-ay-genis-p1",
+  "subject": "Fen Bilimleri",
+  "title": "Ünite 1 - Güneş, Dünya ve Ay (Geniş Havuz) (1/4)",
+  "week": 1,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Güneş, gökcisimleri arasında hangi grupta yer alır?",
+      "options": [
+        "Gezegen",
+        "Yıldız",
+        "Uydu",
+        "Meteor"
+      ],
+      "correctIndex": 1,
+      "hint": "Kendi ışığını ve ısısını üreten gökcismine ne denir?"
+    },
+    {
+      "id": "q2",
+      "text": "Güneş esas olarak hangi gazlardan oluşur?",
+      "options": [
+        "Oksijen ve karbon",
+        "Hidrojen ve helyum",
+        "Azot ve oksijen",
+        "Karbon ve azot"
+      ],
+      "correctIndex": 1,
+      "hint": "Evrende en bol bulunan iki hafif gazdır."
+    },
+    {
+      "id": "q3",
+      "text": "Güneş Sistemi'nin merkezinde hangi gökcismi bulunur?",
+      "options": [
+        "Dünya",
+        "Ay",
+        "Güneş",
+        "Jüpiter"
+      ],
+      "correctIndex": 2,
+      "hint": "Diğer tüm gezegenler bu gökcisminin etrafında döner."
+    },
+    {
+      "id": "q4",
+      "text": "Güneş'e çıplak gözle uzun süre bakmak neden tehlikelidir?",
+      "options": [
+        "Baş dönmesi yapar",
+        "Gözlere kalıcı zarar verebilir",
+        "Ürkütücü görünür",
+        "Hiçbir zararı yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Güneş'in yaydığı ışık ve ısı çok güçlüdür."
+    },
+    {
+      "id": "q5",
+      "text": "Güneş'in yüzeyi mi yoksa çekirdeği mi daha sıcaktır?",
+      "options": [
+        "Yüzeyi",
+        "Çekirdeği",
+        "İkisi de aynı sıcaklıktadır",
+        "Güneş'in sıcaklığı yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Enerji üretimi merkezde gerçekleşir."
+    },
+    {
+      "id": "q6",
+      "text": "Aşağıdakilerden hangisi Güneş'in özelliklerinden biri DEĞİLDİR?",
+      "options": [
+        "Kendi ışığını üretir",
+        "Bir yıldızdır",
+        "Kendi etrafında döner",
+        "Dünya'nın uydusudur"
+      ],
+      "correctIndex": 3,
+      "hint": "Uydu olan, Güneş değil Ay'dır."
+    },
+    {
+      "id": "q7",
+      "text": "Ay'ın kendi ışığı yoktur. Öyleyse geceleri neden parlak görünür?",
+      "options": [
+        "Kendi ısısından dolayı",
+        "Güneş ışığını yansıttığı için",
+        "Yıldızlardan ışık aldığı için",
+        "Dünya'dan ışık aldığı için"
+      ],
+      "correctIndex": 1,
+      "hint": "Ay bir ayna gibi düşünülebilir - ışığı kendisi üretmez."
+    },
+    {
+      "id": "q8",
+      "text": "Aşağıdakilerden hangisi Dünya'nın doğal uydusudur?",
+      "options": [
+        "Güneş",
+        "Mars",
+        "Ay",
+        "Venüs"
+      ],
+      "correctIndex": 2,
+      "hint": "Geceleri gökyüzünde gördüğümüz, Dünya'nın etrafında dönen gökcismi."
+    },
+    {
+      "id": "q9",
+      "text": "Ay'ın yüzeyinde sıkça görülen çukur şekillere ne denir ve nasıl oluşur?",
+      "options": [
+        "Vadi, rüzgar aşındırmasıyla oluşur",
+        "Krater, meteor çarpmalarıyla oluşur",
+        "Kanyon, su erozyonuyla oluşur",
+        "Göl, yağmurla oluşur"
+      ],
+      "correctIndex": 1,
+      "hint": "Ay'ın atmosferi olmadığı için meteorlar yüzeye doğrudan çarpar."
+    },
+    {
+      "id": "q10",
+      "text": "Ay'ın atmosferi (hava tabakası) var mıdır?",
+      "options": [
+        "Evet, Dünya'dakiyle aynıdır",
+        "Hayır, atmosferi yoktur",
+        "Evet ama çok kalındır",
+        "Sadece gece atmosferi oluşur"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu yüzden Ay'da rüzgar ve hava olayları olmaz."
+    },
+    {
+      "id": "q11",
+      "text": "Dünya ile Ay'ı karşılaştırdığımızda hangisi doğrudur?",
+      "options": [
+        "Ay, Dünya'dan büyüktür",
+        "Ay, Dünya'dan küçüktür",
+        "İkisi aynı büyüklüktedir",
+        "Karşılaştırma yapılamaz"
+      ],
+      "correctIndex": 1,
+      "hint": "Dünya'nın uydusu olan gökcismi genelde daha küçüktür."
+    },
+    {
+      "id": "q12",
+      "text": "Dünya'nın kendi ekseni etrafında dönmesi hangi olayı oluşturur?",
+      "options": [
+        "Mevsimlerin oluşumu",
+        "Gece ve gündüzün oluşumu",
+        "Ay'ın evrelerinin oluşumu",
+        "Yılın oluşumu"
+      ],
+      "correctIndex": 1,
+      "hint": "Dünya'nın kendi etrafında bir tam dönüşü yaklaşık 24 saat sürer."
+    },
+    {
+      "id": "q13",
+      "text": "Dünya'nın kendi ekseni etrafındaki bir tam dönüşü yaklaşık ne kadar sürer?",
+      "options": [
+        "1 saat",
+        "12 saat",
+        "24 saat",
+        "1 hafta"
+      ],
+      "correctIndex": 2,
+      "hint": "Bir günün uzunluğunu düşün."
+    },
+    {
+      "id": "q14",
+      "text": "Dünya'nın Güneş etrafındaki bir tam dönüşü (turu) yaklaşık ne kadar sürer?",
+      "options": [
+        "1 ay",
+        "6 ay",
+        "1 yıl (365 gün)",
+        "10 yıl"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu süre, bir yılın uzunluğuna karşılık gelir."
+    },
+    {
+      "id": "q15",
+      "text": "Ay'ın Dünya etrafındaki bir tam dönüşü yaklaşık ne kadar sürer?",
+      "options": [
+        "1 gün",
+        "Yaklaşık 1 ay (27-29 gün)",
+        "1 yıl",
+        "1 hafta"
+      ],
+      "correctIndex": 1,
+      "hint": "Ay takviminin isim kaynağını düşün."
+    },
+    {
+      "id": "q16",
+      "text": "Ay'ın Dünya etrafındaki dönüş şekline göre gökyüzünde farklı şekillerde görünmesine ne denir?",
+      "options": [
+        "Ay tutulması",
+        "Ay'ın evreleri",
+        "Ay'ın dönüşü",
+        "Güneş tutulması"
+      ],
+      "correctIndex": 1,
+      "hint": "Hilal, dolunay gibi isimler duydun mu? Bunlar bu olayın farklı aşamalarıdır."
+    },
+    {
+      "id": "q17",
+      "text": "Ay hiç görünmediği zaman hangi evrededir?",
+      "options": [
+        "Dolunay",
+        "Yeniay",
+        "İlk dördün",
+        "Hilal"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu evrede Ay'ın Güneş'e dönük yüzü Dünya'dan görünmez."
+    },
+    {
+      "id": "q18",
+      "text": "Ay'ın tamamen yuvarlak ve parlak göründüğü evreye ne denir?",
+      "options": [
+        "Yeniay",
+        "Hilal",
+        "Dolunay",
+        "Son dördün"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu evrede gece gökyüzü en aydınlık olur."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Gökyüzünde en son ne zaman Ay'ı gözlemledin?",
+    "options": [
+      "Dün akşam",
+      "Bu hafta içinde",
+      "Hatırlamıyorum",
+      "Hiç gözlemlemedim"
+    ],
+    "correctIndex": 1,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

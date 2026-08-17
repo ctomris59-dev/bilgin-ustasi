@@ -1,0 +1,239 @@
+{
+  "id": "matematik-unite5-veri-uzunluk-zaman-p4",
+  "subject": "Matematik",
+  "title": "Ünite 5 - Veri Toplama, Uzunluk ve Zaman Ölçme (4/4)",
+  "week": 5,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Zorlayıcı problem: Okul saat 08:30'da başlayıp 15:45'te bitiyor. Okul günü kaç saat kaç dakika sürer?",
+      "options": [
+        "7 saat 15 dakika",
+        "6 saat 15 dakika",
+        "7 saat 45 dakika",
+        "6 saat 45 dakika"
+      ],
+      "correctIndex": 0,
+      "hint": "15:45 ile 08:30 arasındaki farkı hesapla."
+    },
+    {
+      "id": "q2",
+      "text": "Zorlayıcı problem: 4 kalemin toplam uzunluğu 60 cm ise, bir kalemin ortalama uzunluğu kaç cm'dir (kalemler eşit uzunlukta varsayılırsa)?",
+      "options": [
+        "12 cm",
+        "15 cm",
+        "20 cm",
+        "10 cm"
+      ],
+      "correctIndex": 1,
+      "hint": "60 ÷ 4 işlemini yap."
+    },
+    {
+      "id": "q3",
+      "text": "Zorlayıcı problem: Bir koşu bandı hızı sabit tutulduğunda 10 dakikada 2 km gidiliyor. Aynı hızla 30 dakikada kaç km gidilir?",
+      "options": [
+        "4 km",
+        "6 km",
+        "8 km",
+        "10 km"
+      ],
+      "correctIndex": 1,
+      "hint": "Oranı bul: 10 dakikada 2 km, 30 dakika 3 katı, 2×3 işlemini yap."
+    },
+    {
+      "id": "q4",
+      "text": "Bir cetvel ile ölçüm yaparken hangi birim genellikle kullanılır?",
+      "options": [
+        "Kilometre",
+        "Santimetre",
+        "Ton",
+        "Litre"
+      ],
+      "correctIndex": 1,
+      "hint": "Cetveller genelde küçük mesafeleri ölçmek için kullanılır."
+    },
+    {
+      "id": "q5",
+      "text": "Uzun mesafeleri (örneğin şehirler arası) ölçmek için hangi birim daha uygundur?",
+      "options": [
+        "Milimetre",
+        "Santimetre",
+        "Kilometre",
+        "Desimetre"
+      ],
+      "correctIndex": 2,
+      "hint": "Büyük mesafeler için büyük birimler kullanılır."
+    },
+    {
+      "id": "q6",
+      "text": "Bir kronometre neyi ölçmek için kullanılır?",
+      "options": [
+        "Uzunluk",
+        "Zaman",
+        "Ağırlık",
+        "Sıcaklık"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu araç, genellikle spor müsabakalarında süre tutmak için kullanılır."
+    },
+    {
+      "id": "q7",
+      "text": "Aşağıdakilerden hangisi bir zaman birimi DEĞİLDİR?",
+      "options": [
+        "Saniye",
+        "Dakika",
+        "Metre",
+        "Saat"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu birim, uzunluk ölçmek için kullanılır, zaman için değil."
+    },
+    {
+      "id": "q8",
+      "text": "Bir öğrencinin ders çalışma süresini ölçmek için hangi birimler uygundur?",
+      "options": [
+        "Kilometre ve metre",
+        "Dakika ve saat",
+        "Kilogram ve gram",
+        "Litre ve mililitre"
+      ],
+      "correctIndex": 1,
+      "hint": "Süre, zaman birimleriyle ölçülür."
+    },
+    {
+      "id": "q9",
+      "text": "Aşağıdakilerden hangisi metrik uzunluk birimlerinden en küçüğüdür?",
+      "options": [
+        "Kilometre",
+        "Metre",
+        "Milimetre",
+        "Santimetre"
+      ],
+      "correctIndex": 2,
+      "hint": "'Mili' öneki, binde bir anlamına gelir - en küçük birimdir bu seçenekler arasında."
+    },
+    {
+      "id": "q10",
+      "text": "Bir veri toplama sürecinde 'örneklem' (katılımcı grubu) ne anlama gelir?",
+      "options": [
+        "Araştırmaya katılan kişilerin tamamı",
+        "Sadece bir kişi",
+        "Hiç kimse",
+        "Sadece araştırmacı"
+      ],
+      "correctIndex": 0,
+      "hint": "Örneklem, veri toplanan kişi veya nesnelerin oluşturduğu gruptur."
+    },
+    {
+      "id": "q11",
+      "text": "Bir grafikte eksenlerin (x ve y) etiketlenmesi neden önemlidir?",
+      "options": [
+        "Hiçbir önemi yoktur",
+        "Grafiğin neyi ölçtüğünü anlamamızı sağlar",
+        "Sadece dekoratif amaçlıdır",
+        "Grafiği karmaşıklaştırır"
+      ],
+      "correctIndex": 1,
+      "hint": "Eksen etiketleri, grafiği doğru yorumlamamıza yardımcı olur."
+    },
+    {
+      "id": "q12",
+      "text": "Bir anketten elde edilen sonuçları başkalarıyla paylaşırken en uygun yöntemlerden biri hangisidir?",
+      "options": [
+        "Sadece sözlü anlatım",
+        "Tablo veya grafikle görselleştirme",
+        "Hiç paylaşmamak",
+        "Sadece sayıları karışık şekilde söylemek"
+      ],
+      "correctIndex": 1,
+      "hint": "Görselleştirme, verilerin daha kolay anlaşılmasını sağlar."
+    },
+    {
+      "id": "q13",
+      "text": "Bir zaman diliminde en çok tekrar eden olayı bulmak için hangi istatistiksel ölçü kullanılır?",
+      "options": [
+        "Ortalama",
+        "Mod",
+        "Aralık",
+        "Toplam"
+      ],
+      "correctIndex": 1,
+      "hint": "Mod, en sık tekrarlanan değeri gösterir."
+    },
+    {
+      "id": "q14",
+      "text": "Aşağıdakilerden hangisi 'sayısal (nicel) veri' örneğidir?",
+      "options": [
+        "Favori hayvan",
+        "Sınav notu",
+        "Göz rengi",
+        "Şehir adı"
+      ],
+      "correctIndex": 1,
+      "hint": "Sınav notu, sayısal bir değerdir."
+    },
+    {
+      "id": "q15",
+      "text": "Bir grafik oluştururken uygun ölçek (skala) seçmenin önemi nedir?",
+      "options": [
+        "Hiçbir önemi yoktur",
+        "Verilerin doğru ve anlaşılır şekilde gösterilmesini sağlar",
+        "Grafiği küçültmek içindir",
+        "Sadece renk seçimini etkiler"
+      ],
+      "correctIndex": 1,
+      "hint": "Yanlış ölçek, verilerin yanlış yorumlanmasına yol açabilir."
+    },
+    {
+      "id": "q16",
+      "text": "Zaman dilimlerini karşılaştırırken 'sabah, öğle, akşam' gibi ifadeler neyi belirtir?",
+      "options": [
+        "Kesin saatleri",
+        "Günün genel bölümlerini",
+        "Haftanın günlerini",
+        "Ayları"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu ifadeler, günün yaklaşık zaman dilimlerini tanımlar."
+    },
+    {
+      "id": "q17",
+      "text": "Bir uzunluk ölçerken başlangıç noktasının '0' olması neden önemlidir?",
+      "options": [
+        "Hiçbir önemi yoktur",
+        "Doğru ve tutarlı bir ölçüm yapabilmek için",
+        "Sadece görsel bir tercihtir",
+        "Ölçümü zorlaştırmak için"
+      ],
+      "correctIndex": 1,
+      "hint": "Sıfır noktasından başlamak, doğru ölçüm sağlar."
+    },
+    {
+      "id": "q18",
+      "text": "Bir öğrenci farklı günlerdeki sıcaklık değerlerini kaydedip bir çizgi grafiği çiziyor. Bu grafik neyi göstermeye en uygundur?",
+      "options": [
+        "Sadece tek bir günün sıcaklığını",
+        "Zaman içindeki sıcaklık değişimini/eğilimini",
+        "Sadece en yüksek sıcaklığı",
+        "Hiçbir şeyi göstermez"
+      ],
+      "correctIndex": 1,
+      "hint": "Çizgi grafikleri, zaman içindeki değişimi göstermede güçlüdür."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Bugün ders çalışmak için kaç dakika ayırdın?",
+    "options": [
+      "15 dakika",
+      "30 dakika",
+      "45 dakika veya üzeri",
+      "Henüz başlamadım"
+    ],
+    "correctIndex": 2,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

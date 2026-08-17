@@ -1,0 +1,239 @@
+{
+  "id": "fenbilimleri-unite1-gunes-dunya-ay-genis-p2",
+  "subject": "Fen Bilimleri",
+  "title": "Ünite 1 - Güneş, Dünya ve Ay (Geniş Havuz) (2/4)",
+  "week": 1,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "İnce bir kavis şeklinde görünen Ay evresine ne denir?",
+      "options": [
+        "Dolunay",
+        "Hilal",
+        "İlk dördün",
+        "Şişkin ay"
+      ],
+      "correctIndex": 1,
+      "hint": "Türk bayrağında da bu şekil bulunur."
+    },
+    {
+      "id": "q2",
+      "text": "Ay evrelerinin doğru sıralaması hangisidir (Yeniaydan başlayarak)?",
+      "options": [
+        "Dolunay, Hilal, Yeniay, İlk Dördün",
+        "Yeniay, Hilal, İlk Dördün, Dolunay",
+        "İlk Dördün, Yeniay, Dolunay, Hilal",
+        "Hilal, Dolunay, Yeniay, İlk Dördün"
+      ],
+      "correctIndex": 1,
+      "hint": "Ay, görünmezken başlayıp yavaş yavaş büyüyerek dolunaya ulaşır."
+    },
+    {
+      "id": "q3",
+      "text": "Ay Dünya ile Güneş arasına girip Güneş'i tamamen veya kısmen kapattığında ne oluşur?",
+      "options": [
+        "Ay tutulması",
+        "Güneş tutulması",
+        "Gelgit",
+        "Meteor yağmuru"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu olayda gündüz gökyüzü kararabilir."
+    },
+    {
+      "id": "q4",
+      "text": "Dünya, Güneş ile Ay arasına girip Ay'a gölge düşürdüğünde ne oluşur?",
+      "options": [
+        "Güneş tutulması",
+        "Ay tutulması",
+        "Gelgit",
+        "Yıldız kayması"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu olay genellikle dolunay evresinde gerçekleşir."
+    },
+    {
+      "id": "q5",
+      "text": "Denizlerde görülen su seviyesinin düzenli yükselip alçalmasına (gelgit) en çok hangi gökcismi etki eder?",
+      "options": [
+        "Güneş",
+        "Ay",
+        "Mars",
+        "Yıldızlar"
+      ],
+      "correctIndex": 1,
+      "hint": "Dünya'ya en yakın gökcisminin çekim gücü daha etkilidir."
+    },
+    {
+      "id": "q6",
+      "text": "Dünya'nın ekseninin eğik olması hangi olayla ilişkilidir?",
+      "options": [
+        "Gece-gündüzün oluşumu",
+        "Mevsimlerin oluşumu",
+        "Ay'ın evreleri",
+        "Güneş tutulması"
+      ],
+      "correctIndex": 1,
+      "hint": "Eksen eğikliği, farklı bölgelerin farklı zamanlarda daha çok/az güneş ışığı almasını sağlar."
+    },
+    {
+      "id": "q7",
+      "text": "Aşağıdakilerden hangisi doğrudur?",
+      "options": [
+        "Dünya, Ay'ın etrafında döner",
+        "Ay, Dünya'nın etrafında döner",
+        "Güneş, Dünya'nın etrafında döner",
+        "Hiçbiri birbirinin etrafında dönmez"
+      ],
+      "correctIndex": 1,
+      "hint": "Uydu olan gökcismi, etrafında döndüğü gezegeni çevreler."
+    },
+    {
+      "id": "q8",
+      "text": "Gece gökyüzünde gördüğümüz Ay ışığının asıl kaynağı nedir?",
+      "options": [
+        "Ay'ın kendi enerjisi",
+        "Güneş ışığının yansıması",
+        "Yıldızların ışığı",
+        "Dünya'nın ışığı"
+      ],
+      "correctIndex": 1,
+      "hint": "Ay, ışık üretmez, sadece üzerine düşen ışığı yansıtır."
+    },
+    {
+      "id": "q9",
+      "text": "Bir gökcisminin kendi etrafında dönmesine ne denir?",
+      "options": [
+        "Dolanma hareketi",
+        "Yörünge hareketi",
+        "Kendi ekseni etrafında dönme",
+        "Yer değiştirme"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu hareket gece-gündüzü oluşturur."
+    },
+    {
+      "id": "q10",
+      "text": "Bir gökcisminin başka bir gökcismin etrafında dönmesine ne denir?",
+      "options": [
+        "Dolanma (yörünge) hareketi",
+        "Kendi ekseni etrafında dönme",
+        "Sabit durma",
+        "Titreşim hareketi"
+      ],
+      "correctIndex": 0,
+      "hint": "Dünya'nın Güneş etrafındaki hareketi bu türdendir."
+    },
+    {
+      "id": "q11",
+      "text": "Aşağıdakilerden hangisi Ay hakkında YANLIŞ bir bilgidir?",
+      "options": [
+        "Dünya'nın doğal uydusudur",
+        "Kendi ışığı yoktur",
+        "Atmosferi vardır ve rüzgarlı bir yerdir",
+        "Yüzeyinde kraterler bulunur"
+      ],
+      "correctIndex": 2,
+      "hint": "Ay'ın atmosferi olmadığını daha önce öğrendin."
+    },
+    {
+      "id": "q12",
+      "text": "Güneş'in Dünya'ya olan uzaklığı ile Ay'ın Dünya'ya olan uzaklığı karşılaştırıldığında hangisi doğrudur?",
+      "options": [
+        "Güneş çok daha uzaktır",
+        "Ay çok daha uzaktır",
+        "İkisi eşit uzaklıktadır",
+        "Ay, Güneş'ten daha uzaktır"
+      ],
+      "correctIndex": 0,
+      "hint": "Güneş, Dünya'dan milyonlarca kilometre uzaktadır; Ay çok daha yakındır."
+    },
+    {
+      "id": "q13",
+      "text": "Yeniay evresinden sonra Ay büyümeye başladığında ilk görünen ince kavis şekline ne denir?",
+      "options": [
+        "Dolunay",
+        "Hilal",
+        "Son dördün",
+        "Şişkin ay"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu, yeniaydan sonraki ilk evredir."
+    },
+    {
+      "id": "q14",
+      "text": "Dolunaydan sonra Ay küçülmeye (evre azalmaya) başladığında yarım daire şeklinde göründüğü evreye ne denir?",
+      "options": [
+        "İlk dördün",
+        "Son dördün",
+        "Yeniay",
+        "Hilal"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu evre, dolunaydan sonra, yeniaydan önce gelir."
+    },
+    {
+      "id": "q15",
+      "text": "Ay'ın her zaman Dünya'ya aynı yüzünü göstermesinin sebebi nedir?",
+      "options": [
+        "Ay hiç dönmez",
+        "Ay'ın kendi ekseni etrafındaki dönüş süresi, Dünya etrafındaki dönüş süresiyle aynıdır",
+        "Dünya Ay'a bakmaz",
+        "Tesadüftür, bilimsel bir sebebi yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu iki hareketin süresi birbirine eşittir, bu yüzden hep aynı yüzü görürüz."
+    },
+    {
+      "id": "q16",
+      "text": "Güneş tutulması genellikle günün hangi zamanında gerçekleşir?",
+      "options": [
+        "Gece",
+        "Gündüz",
+        "Akşam üstü sadece",
+        "Herhangi bir saatte olmaz"
+      ],
+      "correctIndex": 1,
+      "hint": "Ay, Güneş ile Dünya arasına girdiğinde Güneş'in görünür olduğu zaman dilimidir."
+    },
+    {
+      "id": "q17",
+      "text": "Ay tutulması genellikle günün hangi zamanında gerçekleşir?",
+      "options": [
+        "Gündüz",
+        "Gece",
+        "Öğle vakti",
+        "Sabah erken"
+      ],
+      "correctIndex": 1,
+      "hint": "Dolunay evresi geceleri görülür."
+    },
+    {
+      "id": "q18",
+      "text": "Aşağıdakilerden hangisi Güneş'in bir özelliğidir?",
+      "options": [
+        "Katı bir yüzeyi vardır",
+        "Gaz kütlesinden oluşur",
+        "Dünya'nın etrafında döner",
+        "Kendi ışığı yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Güneş, esas olarak hidrojen ve helyum gazından oluşur."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Gökyüzünde en son ne zaman Ay'ı gözlemledin?",
+    "options": [
+      "Dün akşam",
+      "Bu hafta içinde",
+      "Hatırlamıyorum",
+      "Hiç gözlemlemedim"
+    ],
+    "correctIndex": 1,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

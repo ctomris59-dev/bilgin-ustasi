@@ -1,0 +1,275 @@
+{
+  "id": "matematik-unite2-kesirler-genis-p3",
+  "subject": "Matematik",
+  "title": "Ünite 2 - Kesirler (Geniş Havuz) (3/4)",
+  "week": 2,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "10/15 kesri sadeleştirilirse ne olur?",
+      "options": [
+        "2/3",
+        "3/3",
+        "2/4",
+        "10/15, sadeleşmez"
+      ],
+      "correctIndex": 0,
+      "hint": "Pay ve paydayı ortak bölenlerine böl."
+    },
+    {
+      "id": "q2",
+      "text": "8/12 kesri sadeleştirilirse ne olur?",
+      "options": [
+        "2/3",
+        "3/3",
+        "2/4",
+        "8/12, sadeleşmez"
+      ],
+      "correctIndex": 0,
+      "hint": "Pay ve paydayı ortak bölenlerine böl."
+    },
+    {
+      "id": "q3",
+      "text": "9/12 kesri sadeleştirilirse ne olur?",
+      "options": [
+        "3/4",
+        "4/4",
+        "3/5",
+        "9/12, sadeleşmez"
+      ],
+      "correctIndex": 0,
+      "hint": "Pay ve paydayı ortak bölenlerine böl."
+    },
+    {
+      "id": "q4",
+      "text": "6/10 kesri sadeleştirilirse ne olur?",
+      "options": [
+        "3/5",
+        "4/5",
+        "3/6",
+        "6/10, sadeleşmez"
+      ],
+      "correctIndex": 0,
+      "hint": "Pay ve paydayı ortak bölenlerine böl."
+    },
+    {
+      "id": "q5",
+      "text": "1/4 + 2/4 işleminin sonucu kaçtır?",
+      "options": [
+        "3/4",
+        "4/4",
+        "1/4",
+        "3/8"
+      ],
+      "correctIndex": 0,
+      "hint": "Paydalar eşitse sadece payları topla."
+    },
+    {
+      "id": "q6",
+      "text": "2/6 + 3/6 işleminin sonucu kaçtır?",
+      "options": [
+        "5/6",
+        "6/6",
+        "2/6",
+        "5/12"
+      ],
+      "correctIndex": 0,
+      "hint": "Paydalar eşitse sadece payları topla."
+    },
+    {
+      "id": "q7",
+      "text": "1/5 + 2/5 işleminin sonucu kaçtır?",
+      "options": [
+        "3/5",
+        "4/5",
+        "1/5",
+        "3/10"
+      ],
+      "correctIndex": 0,
+      "hint": "Paydalar eşitse sadece payları topla."
+    },
+    {
+      "id": "q8",
+      "text": "3/8 + 2/8 işleminin sonucu kaçtır?",
+      "options": [
+        "5/8",
+        "6/8",
+        "3/8",
+        "5/16"
+      ],
+      "correctIndex": 0,
+      "hint": "Paydalar eşitse sadece payları topla."
+    },
+    {
+      "id": "q9",
+      "text": "1/3 + 1/3 işleminin sonucu kaçtır?",
+      "options": [
+        "2/3",
+        "3/3",
+        "1/3",
+        "2/6"
+      ],
+      "correctIndex": 0,
+      "hint": "Paydalar eşitse sadece payları topla."
+    },
+    {
+      "id": "q10",
+      "text": "2/7 + 3/7 işleminin sonucu kaçtır?",
+      "options": [
+        "5/7",
+        "6/7",
+        "2/7",
+        "5/14"
+      ],
+      "correctIndex": 0,
+      "hint": "Paydalar eşitse sadece payları topla."
+    },
+    {
+      "id": "q11",
+      "text": "4/9 + 3/9 işleminin sonucu kaçtır?",
+      "options": [
+        "7/9",
+        "8/9",
+        "4/9",
+        "7/18"
+      ],
+      "correctIndex": 0,
+      "hint": "Paydalar eşitse sadece payları topla."
+    },
+    {
+      "id": "q12",
+      "text": "1/6 + 4/6 işleminin sonucu kaçtır?",
+      "options": [
+        "5/6",
+        "6/6",
+        "1/6",
+        "5/12"
+      ],
+      "correctIndex": 0,
+      "hint": "Paydalar eşitse sadece payları topla."
+    },
+    {
+      "id": "q13",
+      "text": "5/6 - 1/6 işleminin sonucu kaçtır?",
+      "options": [
+        "4/6",
+        "5/6",
+        "6/6",
+        "4/7"
+      ],
+      "correctIndex": 0,
+      "hint": "Paydalar eşitse sadece payları çıkar."
+    },
+    {
+      "id": "q14",
+      "text": "7/8 - 3/8 işleminin sonucu kaçtır?",
+      "options": [
+        "4/8",
+        "5/8",
+        "10/8",
+        "4/9"
+      ],
+      "correctIndex": 0,
+      "hint": "Paydalar eşitse sadece payları çıkar."
+    },
+    {
+      "id": "q15",
+      "text": "6/7 - 2/7 işleminin sonucu kaçtır?",
+      "options": [
+        "4/7",
+        "5/7",
+        "8/7",
+        "4/8"
+      ],
+      "correctIndex": 0,
+      "hint": "Paydalar eşitse sadece payları çıkar."
+    },
+    {
+      "id": "q16",
+      "text": "8/9 - 5/9 işleminin sonucu kaçtır?",
+      "options": [
+        "3/9",
+        "4/9",
+        "13/9",
+        "3/10"
+      ],
+      "correctIndex": 0,
+      "hint": "Paydalar eşitse sadece payları çıkar."
+    },
+    {
+      "id": "q17",
+      "text": "4/5 - 1/5 işleminin sonucu kaçtır?",
+      "options": [
+        "3/5",
+        "4/5",
+        "5/5",
+        "3/6"
+      ],
+      "correctIndex": 0,
+      "hint": "Paydalar eşitse sadece payları çıkar."
+    },
+    {
+      "id": "q18",
+      "text": "5/9 - 2/9 işleminin sonucu kaçtır?",
+      "options": [
+        "3/9",
+        "4/9",
+        "7/9",
+        "3/10"
+      ],
+      "correctIndex": 0,
+      "hint": "Paydalar eşitse sadece payları çıkar."
+    },
+    {
+      "id": "q19",
+      "text": "7/10 - 3/10 işleminin sonucu kaçtır?",
+      "options": [
+        "4/10",
+        "5/10",
+        "10/10",
+        "4/11"
+      ],
+      "correctIndex": 0,
+      "hint": "Paydalar eşitse sadece payları çıkar."
+    },
+    {
+      "id": "q20",
+      "text": "6/8 - 3/8 işleminin sonucu kaçtır?",
+      "options": [
+        "3/8",
+        "4/8",
+        "9/8",
+        "3/9"
+      ],
+      "correctIndex": 0,
+      "hint": "Paydalar eşitse sadece payları çıkar."
+    },
+    {
+      "id": "q21",
+      "text": "24 sayısının 3/8'i kaçtır?",
+      "options": [
+        "9",
+        "17",
+        "3",
+        "6"
+      ],
+      "correctIndex": 0,
+      "hint": "Önce 24'i 8'e böl, sonra 3 ile çarp."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Kesirlerde en çok hangi konuda kendine güvendin?",
+    "options": [
+      "Sıralama",
+      "Toplama-çıkarma",
+      "Bir çokluğun kesri",
+      "Sadeleştirme"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

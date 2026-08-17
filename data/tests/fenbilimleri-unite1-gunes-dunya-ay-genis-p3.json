@@ -1,0 +1,239 @@
+{
+  "id": "fenbilimleri-unite1-gunes-dunya-ay-genis-p3",
+  "subject": "Fen Bilimleri",
+  "title": "Ünite 1 - Güneş, Dünya ve Ay (Geniş Havuz) (3/4)",
+  "week": 1,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Bilim insanları Güneş'i çıplak gözle incelemek yerine ne kullanır?",
+      "options": [
+        "Sadece hayal güçlerini",
+        "Özel filtreli teleskop ve gözlük",
+        "Adi bir dürbün",
+        "Hiçbir alet kullanmazlar"
+      ],
+      "correctIndex": 1,
+      "hint": "Güneş'in zararlı ışınlarından korunmak gerekir."
+    },
+    {
+      "id": "q2",
+      "text": "Ay'ın yüzeyinde kraterlerin bol olmasının temel nedeni nedir?",
+      "options": [
+        "Volkanik patlamalar",
+        "Atmosferi olmadığı için meteorların doğrudan çarpması",
+        "Su erozyonu",
+        "Rüzgar aşındırması"
+      ],
+      "correctIndex": 1,
+      "hint": "Dünya'da atmosfer çoğu meteoru yakar, Ay'da bu koruma yoktur."
+    },
+    {
+      "id": "q3",
+      "text": "Dünya'da mevsimlerin oluşmasında aşağıdakilerden hangisi en etkilidir?",
+      "options": [
+        "Ay'ın evreleri",
+        "Dünya'nın ekseninin eğik olması ve Güneş etrafında dönmesi",
+        "Güneş tutulması",
+        "Gelgit olayları"
+      ],
+      "correctIndex": 1,
+      "hint": "Eksen eğikliği farklı zamanlarda farklı bölgelerin güneş ışığını farklı açıyla almasını sağlar."
+    },
+    {
+      "id": "q4",
+      "text": "Zorlayıcı soru: Ay'ın Dünya çevresindeki dönüşü ile kendi ekseni etrafındaki dönüşü aynı sürede tamamlanıyor. Bunun sonucu olarak ne gözlemleriz?",
+      "options": [
+        "Ay'ın hep farklı yüzünü görürüz",
+        "Ay'ın hep aynı yüzünü görürüz",
+        "Ay hiç dönmüyormuş gibi görünür Dünya'dan",
+        "Ay'ı hiç göremeyiz"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu iki hareketin eşitliği, Ay'ın 'kilitli' görünmesine sebep olur."
+    },
+    {
+      "id": "q5",
+      "text": "Zorlayıcı soru: Bir gece dolunay görüyorsun. Yaklaşık 1 hafta sonra hangi evreyi görmen daha olasıdır?",
+      "options": [
+        "Yeniay",
+        "Son dördün",
+        "Tekrar dolunay",
+        "Hilal (büyüyen)"
+      ],
+      "correctIndex": 1,
+      "hint": "Dolunaydan sonra Ay evreleri küçülme (azalma) yönünde ilerler."
+    },
+    {
+      "id": "q6",
+      "text": "Zorlayıcı soru: Güneş tutulması olabilmesi için Ay'ın hangi evrede olması gerekir?",
+      "options": [
+        "Dolunay",
+        "Yeniay",
+        "İlk dördün",
+        "Son dördün"
+      ],
+      "correctIndex": 1,
+      "hint": "Güneş tutulması için Ay, Güneş ile Dünya arasında olmalı - bu da Ay'ın görünmediği evredir."
+    },
+    {
+      "id": "q7",
+      "text": "Zorlayıcı soru: Ay tutulması olabilmesi için Ay'ın hangi evrede olması gerekir?",
+      "options": [
+        "Yeniay",
+        "Hilal",
+        "Dolunay",
+        "İlk dördün"
+      ],
+      "correctIndex": 2,
+      "hint": "Ay tutulması için Dünya, Güneş ile Ay arasında olmalı - bu da Ay'ın tam göründüğü evredir."
+    },
+    {
+      "id": "q8",
+      "text": "Aşağıdakilerden hangisi doğru bir eşleştirmedir?",
+      "options": [
+        "Güneş = uydu, Ay = yıldız",
+        "Güneş = yıldız, Ay = uydu",
+        "Güneş = gezegen, Ay = yıldız",
+        "Güneş = uydu, Ay = gezegen"
+      ],
+      "correctIndex": 1,
+      "hint": "Işık üreten yıldızdır, bir gezegenin etrafında dönen ise uydudur."
+    },
+    {
+      "id": "q9",
+      "text": "Dünya'nın gece yarısı bölgesinde insanlar neden Güneş'i göremez?",
+      "options": [
+        "Güneş o an sönmüştür",
+        "Dünya'nın o bölgesi Güneş'e dönük değildir",
+        "Ay, Güneş'i kapatmıştır",
+        "Güneş çok uzaklaşmıştır"
+      ],
+      "correctIndex": 1,
+      "hint": "Dünya kendi ekseni etrafında döndüğü için sürekli farklı bölgeler Güneş'e döner."
+    },
+    {
+      "id": "q10",
+      "text": "Ay'ın yüzeyinde ayak izlerinin uzun süre kalabilmesinin sebebi nedir?",
+      "options": [
+        "Ay'da toprak çok yumuşaktır",
+        "Ay'da rüzgar ve hava olayı olmadığı için izler silinmez",
+        "Ay'da sürekli yağmur yağar",
+        "İnsanlar Ay'a hiç gitmemiştir"
+      ],
+      "correctIndex": 1,
+      "hint": "Atmosfer olmadığı için rüzgar da yoktur."
+    },
+    {
+      "id": "q11",
+      "text": "Bir gökbilimci Güneş'in yapısını incelerken hangi bilgiye ulaşabilir?",
+      "options": [
+        "Katı kayalardan oluştuğuna",
+        "Gaz halindeki maddelerden oluştuğuna",
+        "İçinin boş olduğuna",
+        "Buzdan oluştuğuna"
+      ],
+      "correctIndex": 1,
+      "hint": "Güneş'in katı bir yüzeyi yoktur."
+    },
+    {
+      "id": "q12",
+      "text": "Dünya'dan bakıldığında Güneş, Ay'dan çok daha büyük görünmese de gerçekte hangisi daha büyüktür?",
+      "options": [
+        "Ay çok daha büyüktür",
+        "Güneş çok daha büyüktür",
+        "İkisi aynı büyüklüktedir",
+        "Karşılaştırılamaz"
+      ],
+      "correctIndex": 1,
+      "hint": "Güneş, Ay'a göre gökyüzünde küçük görünse de bunun sebebi çok uzakta olmasıdır - gerçekte devasa büyüklüktedir."
+    },
+    {
+      "id": "q13",
+      "text": "Zorlayıcı soru: Güneş, Ay'dan çok daha büyük olduğu hâlde gökyüzünde ikisi de benzer büyüklükte görünür. Bunun sebebi ne olabilir?",
+      "options": [
+        "Güneş aslında küçüktür",
+        "Güneş çok daha uzakta olduğu için küçük görünür",
+        "Ay çok büyüktür",
+        "Gözlerimiz yanılıyordur, ikisi de aynı boyuttadır"
+      ],
+      "correctIndex": 1,
+      "hint": "Uzaklık arttıkça nesneler gözümüze daha küçük görünür."
+    },
+    {
+      "id": "q14",
+      "text": "Aşağıdaki ifadelerden hangisi Dünya için doğrudur?",
+      "options": [
+        "Dünya kendi ışığını üretir",
+        "Dünya, Güneş'in bir uydusudur",
+        "Dünya, Güneş etrafında dolanan bir gezegendir",
+        "Dünya hareket etmez"
+      ],
+      "correctIndex": 2,
+      "hint": "Dünya, Güneş Sistemi'ndeki gezegenlerden biridir."
+    },
+    {
+      "id": "q15",
+      "text": "Ay'ın Dünya'dan görünen şeklinin her gece biraz değişmesinin temel sebebi nedir?",
+      "options": [
+        "Ay'ın şekli gerçekten değişir",
+        "Ay, Dünya ile Güneş arasındaki konumuna göre farklı oranda aydınlanmış görünür",
+        "Ay her gece yer değiştirir",
+        "Bulutlar Ay'ı farklı gösterir"
+      ],
+      "correctIndex": 1,
+      "hint": "Ay'ın kendisi değişmez, sadece Güneş ışığını alan kısmı Dünya'dan farklı görünür."
+    },
+    {
+      "id": "q16",
+      "text": "Güneş sistemi içinde ışık ve ısı üreten tek gökcismi hangisidir?",
+      "options": [
+        "Dünya",
+        "Ay",
+        "Güneş",
+        "Mars"
+      ],
+      "correctIndex": 2,
+      "hint": "Diğer tüm gökcisimleri bu kaynaktan ışık alır veya kendi ışığı yoktur."
+    },
+    {
+      "id": "q17",
+      "text": "Aşağıdakilerden hangisi doğru sıralamadır (Dünya'dan uzaklığa göre)?",
+      "options": [
+        "Ay, sonra Güneş",
+        "Güneş, sonra Ay",
+        "İkisi eşit uzaklıkta",
+        "Sıralama yapılamaz"
+      ],
+      "correctIndex": 1,
+      "hint": "Güneş, Ay'dan çok daha uzaktadır."
+    },
+    {
+      "id": "q18",
+      "text": "Dünya'nın 24 saatte tamamladığı hareket hangisidir?",
+      "options": [
+        "Güneş etrafında dolanma",
+        "Kendi ekseni etrafında dönme",
+        "Ay etrafında dolanma",
+        "Sabit durma"
+      ],
+      "correctIndex": 1,
+      "hint": "Bir günlük sürede gerçekleşen hareket budur."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Gökyüzünde en son ne zaman Ay'ı gözlemledin?",
+    "options": [
+      "Dün akşam",
+      "Bu hafta içinde",
+      "Hatırlamıyorum",
+      "Hiç gözlemlemedim"
+    ],
+    "correctIndex": 1,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

@@ -1,0 +1,263 @@
+{
+  "id": "matematik-unite1-dogalsayilar-genis-p4",
+  "subject": "Matematik",
+  "title": "Ünite 1 - Doğal Sayılar (Geniş Havuz) (4/4)",
+  "week": 1,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "(12 ÷ 4) + 5 işleminin sonucu kaçtır?",
+      "options": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "correctIndex": 2,
+      "hint": "Önce bölmeyi yap: 12÷4=3."
+    },
+    {
+      "id": "q2",
+      "text": "6 + 4 × 2 işleminin sonucu kaçtır?",
+      "options": [
+        "20",
+        "14",
+        "16",
+        "12"
+      ],
+      "correctIndex": 1,
+      "hint": "Çarpma işlemi toplamadan önce yapılır."
+    },
+    {
+      "id": "q3",
+      "text": "(7 - 3) × (2 + 2) işleminin sonucu kaçtır?",
+      "options": [
+        "12",
+        "14",
+        "16",
+        "18"
+      ],
+      "correctIndex": 2,
+      "hint": "Her iki parantezi de önce ayrı ayrı hesapla."
+    },
+    {
+      "id": "q4",
+      "text": "20 ÷ (2 + 2) işleminin sonucu kaçtır?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "10"
+      ],
+      "correctIndex": 1,
+      "hint": "Parantez içi: 2+2=4, sonra böl."
+    },
+    {
+      "id": "q5",
+      "text": "3 × (4 + 1) - 2 işleminin sonucu kaçtır?",
+      "options": [
+        "11",
+        "13",
+        "15",
+        "9"
+      ],
+      "correctIndex": 1,
+      "hint": "Önce parantez, sonra çarpma, en son çıkarma."
+    },
+    {
+      "id": "q6",
+      "text": "(8 + 2) × (9 - 4) işleminin sonucu kaçtır?",
+      "options": [
+        "40",
+        "45",
+        "50",
+        "55"
+      ],
+      "correctIndex": 2,
+      "hint": "İki parantezi ayrı ayrı çöz, sonra çarp."
+    },
+    {
+      "id": "q7",
+      "text": "Zorlayıcı problem: Bir markette 24 kasa elma var, her kasada 18 elma bulunuyor. Toplam kaç elma vardır?",
+      "options": [
+        "402",
+        "422",
+        "432",
+        "442"
+      ],
+      "correctIndex": 2,
+      "hint": "24 × 18 işlemini yap."
+    },
+    {
+      "id": "q8",
+      "text": "Zorlayıcı problem: Ali'nin 350 lirası var. 125 lira harcadı, sonra 80 lira daha kazandı. Şimdi kaç parası var?",
+      "options": [
+        "295",
+        "305",
+        "315",
+        "325"
+      ],
+      "correctIndex": 1,
+      "hint": "Önce çıkar, sonra topla: 350-125+80."
+    },
+    {
+      "id": "q9",
+      "text": "Zorlayıcı problem: Her biri 45 koltuklu 3 otobüste toplam kaç koltuk vardır?",
+      "options": [
+        "125",
+        "135",
+        "145",
+        "115"
+      ],
+      "correctIndex": 1,
+      "hint": "45 × 3 işlemini yap."
+    },
+    {
+      "id": "q10",
+      "text": "Zorlayıcı problem: 5 kutu var, her kutuda 24 kalem var. Bu kalemler 6 çocuğa eşit paylaştırılırsa her çocuğa kaç kalem düşer?",
+      "options": [
+        "18",
+        "20",
+        "22",
+        "24"
+      ],
+      "correctIndex": 1,
+      "hint": "Önce toplam kalemi bul (5×24), sonra 6'ya böl."
+    },
+    {
+      "id": "q11",
+      "text": "Zorlayıcı problem: Bir çiftlikte her gün 45 yumurta toplanıyor. 6 günde toplam kaç yumurta toplanır?",
+      "options": [
+        "250",
+        "260",
+        "270",
+        "280"
+      ],
+      "correctIndex": 2,
+      "hint": "45 × 6 işlemini yap."
+    },
+    {
+      "id": "q12",
+      "text": "Zorlayıcı problem: Bir kitapçıda 3 raf var, her rafta 8 sıra, her sırada 15 kitap var. Toplam kaç kitap vardır?",
+      "options": [
+        "340",
+        "350",
+        "360",
+        "370"
+      ],
+      "correctIndex": 2,
+      "hint": "3 × 8 × 15 işlemini sırayla yap."
+    },
+    {
+      "id": "q13",
+      "text": "Zorlayıcı problem: 1.000 TL'lik bir bilgisayarın fiyatı önce 150 TL arttı, sonra 200 TL indirim yapıldı. Son fiyat nedir?",
+      "options": [
+        "900",
+        "950",
+        "1.000",
+        "1.050"
+      ],
+      "correctIndex": 1,
+      "hint": "1000 + 150 - 200 işlemini yap."
+    },
+    {
+      "id": "q14",
+      "text": "Zorlayıcı problem: Bir fabrika günde 480 ürün üretiyor. 15 günde kaç ürün üretilir?",
+      "options": [
+        "6.200",
+        "6.800",
+        "7.200",
+        "7.800"
+      ],
+      "correctIndex": 2,
+      "hint": "480 × 15 işlemini yap."
+    },
+    {
+      "id": "q15",
+      "text": "Zorlayıcı problem: 250 öğrenci bir yarışmada 25'erli gruplara ayrılıyor. Kaç grup oluşur?",
+      "options": [
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "correctIndex": 2,
+      "hint": "250 ÷ 25 işlemini yap."
+    },
+    {
+      "id": "q16",
+      "text": "Zorlayıcı problem: Bir otoparkta 112 araç kapasitesi var. Şu an 95 araç park etmiş. 37 araba daha gelirse kaç araba yer bulamaz?",
+      "options": [
+        "15",
+        "20",
+        "17",
+        "22"
+      ],
+      "correctIndex": 1,
+      "hint": "Önce boş yer sayısını bul (112-95), sonra 37'den çıkar."
+    },
+    {
+      "id": "q17",
+      "text": "Zorlayıcı problem: Bir çiftçi 3 tarlaya elma ağacı dikiyor. Her tarlada 45 ağaç var, her ağaçtan 25 elma toplanıyor. Toplam kaç elma toplanır?",
+      "options": [
+        "3.175",
+        "3.275",
+        "3.375",
+        "3.475"
+      ],
+      "correctIndex": 2,
+      "hint": "3 × 45 × 25 işlemini sırayla yap."
+    },
+    {
+      "id": "q18",
+      "text": "Zorlayıcı problem: 350 sayfalık bir kitabı günde 25 sayfa okuyan biri kaç günde bitirir?",
+      "options": [
+        "12",
+        "13",
+        "14",
+        "15"
+      ],
+      "correctIndex": 2,
+      "hint": "350 ÷ 25 işlemini yap."
+    },
+    {
+      "id": "q19",
+      "text": "Zorlayıcı problem: Bir sınıfta 32 öğrenci var. Öğretmen onları 4'erli gruplara ayırıp her gruba 6 kalem veriyor. Toplam kaç kalem dağıtılmış olur?",
+      "options": [
+        "42",
+        "44",
+        "46",
+        "48"
+      ],
+      "correctIndex": 3,
+      "hint": "Önce grup sayısını bul (32÷4), sonra kalem sayısıyla çarp."
+    },
+    {
+      "id": "q20",
+      "text": "Zorlayıcı problem: Bir depoda 2.500 kg un var. Her gün 175 kg un kullanılıyor. 10 gün sonra depoda kaç kg un kalır?",
+      "options": [
+        "650",
+        "700",
+        "750",
+        "800"
+      ],
+      "correctIndex": 2,
+      "hint": "Önce 10 günde kullanılan toplamı bul (175×10), sonra çıkar."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Bu ünitede en çok hangi işlem türünde kendine güvendin?",
+    "options": [
+      "Toplama",
+      "Çıkarma",
+      "Çarpma",
+      "Bölme"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "id": "turkce-unite2-metin-turleri-kok-ek-genis-p4",
+  "subject": "Türkçe",
+  "title": "Ünite 2 - Metin Türleri, Kök ve Ekler (Geniş Havuz) (4/4)",
+  "week": 2,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Zorlayıcı soru: 'Çiçek-çi-lik yap-ıyor-um' cümlesinde 'çiçekçilik' kelimesindeki eklerin sırası nedir?",
+      "options": [
+        "Önce '-lik' sonra '-çi'",
+        "Önce '-çi' sonra '-lik'",
+        "İkisi aynı anda eklenir",
+        "Hiç ek yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Önce 'çiçekçi' (satan kişi) oluşur, sonra '-lik' ile meslek/iş anlamı eklenir."
+    },
+    {
+      "id": "q2",
+      "text": "Aşağıdakilerden hangisi bir 'karikatür'ün özelliğidir?",
+      "options": [
+        "Sadece yazıdan oluşur",
+        "Genellikle mizahi ve abartılı çizimlerle bir mesaj verir",
+        "Resmi bir belgedir",
+        "Bilimsel bir rapor türüdür"
+      ],
+      "correctIndex": 1,
+      "hint": "Karikatürler, görsel ve genellikle esprili bir anlatım biçimidir."
+    },
+    {
+      "id": "q3",
+      "text": "'Kitap okuma' etkinliğinde 'okuma stratejisi' kavramı ne anlama gelir?",
+      "options": [
+        "Kitabın kapağının rengi",
+        "Metni daha iyi anlamak için kullanılan yöntemler (tahmin etme, sorular sorma vb.)",
+        "Kitabın sayfa sayısı",
+        "Kitabın yazarının adı"
+      ],
+      "correctIndex": 1,
+      "hint": "Okuma stratejileri, anlamayı kolaylaştıran tekniklerdir."
+    },
+    {
+      "id": "q4",
+      "text": "Aşağıdakilerden hangisi bir dilekçenin bulunması gereken unsurlarından biridir?",
+      "options": [
+        "Şiirsel bir giriş",
+        "Kime yazıldığı, talep ve imza",
+        "Masal unsurları",
+        "Sadece resimler"
+      ],
+      "correctIndex": 1,
+      "hint": "Dilekçeler resmi bir yapıya sahiptir ve belirli unsurlar içermelidir."
+    },
+    {
+      "id": "q5",
+      "text": "'Gör-gü' kelimesinde kök ve ek nasıl ayrılır?",
+      "options": [
+        "Gör (kök) + gü (ek)",
+        "Gö (kök) + rgü (ek)",
+        "Görgü tamamı kök",
+        "Ayrılamaz"
+      ],
+      "correctIndex": 0,
+      "hint": "'Gör-' fiil kökü, '-gü' isim yapan bir ektir."
+    },
+    {
+      "id": "q6",
+      "text": "Bir metinde 'yardımcı düşünce' ne anlama gelir?",
+      "options": [
+        "Ana fikri destekleyen ek bilgiler",
+        "Metnin başlığı",
+        "Yazarın adı",
+        "Metnin sayfa numarası"
+      ],
+      "correctIndex": 0,
+      "hint": "Yardımcı düşünceler, ana fikri açıklamaya veya desteklemeye yarayan detaylardır."
+    },
+    {
+      "id": "q7",
+      "text": "Aşağıdakilerden hangisi 'efsane' türünün özelliğidir?",
+      "options": [
+        "Kesinlikle gerçek ve bilimsel olması gerekir",
+        "Genellikle bir yer, olay veya kişi hakkında nesilden nesile aktarılan, gerçeklikle hayalin karıştığı anlatı olması",
+        "Sadece resmi belgelerde bulunması",
+        "Hiç karakter içermemesi"
+      ],
+      "correctIndex": 1,
+      "hint": "Efsaneler, halk arasında anlatılan ve zamanla değişebilen hikayelerdir."
+    },
+    {
+      "id": "q8",
+      "text": "Zorlayıcı soru: Bir öğrenci 'kitap-çı-lar-ımız-dan' kelimesini kök ve eklerine ayırmaya çalışıyor. Doğru ayrım hangisidir?",
+      "options": [
+        "Kitap (kök) + çı + lar + ımız + dan (dört ek)",
+        "Kitapçı (kök) + larımızdan (tek ek)",
+        "Kitap (kök) + çılarımızdan (tek ek)",
+        "Ayrılamaz"
+      ],
+      "correctIndex": 0,
+      "hint": "Her ek ayrı ayrı bir görev üstlenir: -çı (satıcı), -lar (çoğul), -ımız (bizim), -dan (ayrılma hâli)."
+    },
+    {
+      "id": "q9",
+      "text": "Bir metinde 'bağlam' kelimesi ne anlama gelir?",
+      "options": [
+        "Metnin sayfa sayısı",
+        "Bir kelimenin veya cümlenin içinde bulunduğu metin bütünü/çevresi",
+        "Metnin yazarı",
+        "Metnin başlığı"
+      ],
+      "correctIndex": 1,
+      "hint": "Bağlam, anlamayı etkileyen çevresel metin bilgisidir."
+    },
+    {
+      "id": "q10",
+      "text": "Aşağıdakilerden hangisi bir haber metninin başlığının özelliği olmalıdır?",
+      "options": [
+        "Uzun ve karmaşık olmalı",
+        "Kısa, dikkat çekici ve konuyu özetleyici olmalı",
+        "Hiçbir bilgi vermemeli",
+        "Sadece soru olmalı"
+      ],
+      "correctIndex": 1,
+      "hint": "Haber başlıkları okuyucunun ilgisini çekmeli ve konuyu özetlemelidir."
+    },
+    {
+      "id": "q11",
+      "text": "'Sat-ıcı' kelimesindeki '-ıcı' eki hangi anlamı katar?",
+      "options": [
+        "Küçültme",
+        "Eylemi yapan kişi",
+        "Çoğul",
+        "Zıt anlam"
+      ],
+      "correctIndex": 1,
+      "hint": "'Satmak' eylemini yapan kişiyi ifade eder."
+    },
+    {
+      "id": "q12",
+      "text": "Aşağıdakilerden hangisi bir 'ilan' metninin kullanım amacıdır?",
+      "options": [
+        "Bir bilgiyi topluma duyurmak",
+        "Duygusal bir hikaye anlatmak",
+        "Şiir yazmak",
+        "Masal anlatmak"
+      ],
+      "correctIndex": 0,
+      "hint": "İlanlar, genellikle kısa ve bilgilendirici duyurulardır."
+    },
+    {
+      "id": "q13",
+      "text": "Zorlayıcı soru: Bir metinde hem gerçek bilgiler hem de yazarın kişisel yorumları bir arada bulunuyor. Bu metin hangi türe daha yakın olabilir?",
+      "options": [
+        "Haber metni (tamamen tarafsız olmalı)",
+        "Deneme (kişisel görüş içerebilir)",
+        "Form",
+        "Dilekçe"
+      ],
+      "correctIndex": 1,
+      "hint": "Deneme türü, yazarın kişisel düşüncelerini paylaşmasına izin verir."
+    },
+    {
+      "id": "q14",
+      "text": "Aşağıdakilerden hangisi 'destan' türünün özelliğidir?",
+      "options": [
+        "Kısa ve günlük bir olayı anlatır",
+        "Genellikle kahramanlık ve büyük olayları anlatan, uzun bir manzum eser olması",
+        "Sadece nesir (düzyazı) ile yazılır",
+        "Hiç kahraman içermez"
+      ],
+      "correctIndex": 1,
+      "hint": "Destanlar, milletlerin tarihindeki büyük olayları ve kahramanları anlatan uzun şiirsel eserlerdir."
+    },
+    {
+      "id": "q15",
+      "text": "'Yaz-ar' kelimesinde kök ve ek nasıl ayrılır?",
+      "options": [
+        "Yaz (kök) + ar (ek)",
+        "Ya (kök) + zar (ek)",
+        "Yazar tamamı kök",
+        "Ayrılamaz"
+      ],
+      "correctIndex": 0,
+      "hint": "'Yaz-' fiil kökü, '-ar' ise eylemi yapan kişiyi belirten bir ektir."
+    },
+    {
+      "id": "q16",
+      "text": "Aşağıdakilerden hangisi bir metnin 'sonuç' bölümünün görevidir?",
+      "options": [
+        "Konuyu ilk kez tanıtmak",
+        "Anlatılanları toparlayıp bir kapanış yapmak",
+        "Yeni bir konuya geçmek",
+        "Hiçbir görevi yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Sonuç bölümü, metinde anlatılanları özetleyip bitirir."
+    },
+    {
+      "id": "q17",
+      "text": "Zorlayıcı soru: 'Bahçıvan-lık' ve 'bahçe-ci-lik' kelimeleri arasında nasıl bir ilişki olabilir?",
+      "options": [
+        "Tamamen farklı anlamlardadır",
+        "Benzer/yakın anlamlar taşıyabilirler, her ikisi de bahçeyle ilgili bir uğraşı belirtir",
+        "Zıt anlamlıdırlar",
+        "Hiçbir ilişkileri yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Her iki kelime de farklı eklerle türetilse de bahçeyle ilgili bir meslek/uğraş anlamı taşıyabilir."
+    },
+    {
+      "id": "q18",
+      "text": "Aşağıdakilerden hangisi 'sosyal medya mesajları' metin türünün bir özelliği olabilir?",
+      "options": [
+        "Her zaman çok uzun ve resmi olması",
+        "Genellikle kısa, hızlı ve günlük dile yakın olması",
+        "Sadece şiir formunda olması",
+        "Hiç yazı içermemesi"
+      ],
+      "correctIndex": 1,
+      "hint": "Sosyal medya mesajları genellikle günlük konuşma diline yakın, kısa metinlerdir."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: En sevdiğin metin türü hangisi (masal, fabl, haber vb.)?",
+    "options": [
+      "Masal",
+      "Fabl",
+      "Haber metni",
+      "Diğer"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

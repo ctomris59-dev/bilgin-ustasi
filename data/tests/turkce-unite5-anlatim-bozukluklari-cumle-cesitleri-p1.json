@@ -1,0 +1,239 @@
+{
+  "id": "turkce-unite5-anlatim-bozukluklari-cumle-cesitleri-p1",
+  "subject": "Türkçe",
+  "title": "Ünite 5 - Anlatım Bozuklukları ve Cümle Çeşitleri (1/4)",
+  "week": 5,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Yapısında sadece bir yüklem bulunan cümleye ne denir?",
+      "options": [
+        "Basit cümle",
+        "Birleşik cümle",
+        "Sıralı cümle",
+        "Bağlı cümle"
+      ],
+      "correctIndex": 0,
+      "hint": "Bu cümle türü, tek bir yargı bildirir."
+    },
+    {
+      "id": "q2",
+      "text": "İçinde bir temel, bir veya daha fazla yardımcı cümle (fiilimsi vb.) bulunan cümleye ne denir?",
+      "options": [
+        "Basit cümle",
+        "Birleşik cümle",
+        "Sıralı cümle",
+        "Ünlem cümlesi"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu cümle türünde birden fazla yargı, bir ana yargıya bağlıdır."
+    },
+    {
+      "id": "q3",
+      "text": "Virgülle veya noktalı virgülle birbirine bağlanan, ortak ögeleri paylaşabilen cümlelere ne denir?",
+      "options": [
+        "Basit cümle",
+        "Sıralı cümle",
+        "Birleşik cümle",
+        "Şart cümlesi"
+      ],
+      "correctIndex": 1,
+      "hint": "'Ali geldi, Ayşe gitti.' gibi bir örneği düşün."
+    },
+    {
+      "id": "q4",
+      "text": "'ve, ama, fakat, çünkü' gibi bağlaçlarla birbirine bağlanan cümlelere ne denir?",
+      "options": [
+        "Basit cümle",
+        "Sıralı cümle",
+        "Bağlı cümle",
+        "Devrik cümle"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu cümle türünde bağlaçlar iki cümleyi birbirine bağlar."
+    },
+    {
+      "id": "q5",
+      "text": "'Ali geldi ve kitabını aldı.' cümlesi hangi cümle türüne örnektir?",
+      "options": [
+        "Basit cümle",
+        "Bağlı cümle",
+        "Sıralı cümle",
+        "Ünlem cümlesi"
+      ],
+      "correctIndex": 1,
+      "hint": "'ve' bağlacı, iki cümleyi birbirine bağlıyor."
+    },
+    {
+      "id": "q6",
+      "text": "'Ali geldi, Ayşe gitti.' cümlesi hangi cümle türüne örnektir?",
+      "options": [
+        "Basit cümle",
+        "Bağlı cümle",
+        "Sıralı cümle",
+        "Ünlem cümlesi"
+      ],
+      "correctIndex": 2,
+      "hint": "Cümleler virgülle ayrılmış, bağlaç kullanılmamış."
+    },
+    {
+      "id": "q7",
+      "text": "Yargı bildiren, olumlu bir durumu anlatan cümleye ne denir?",
+      "options": [
+        "Olumlu cümle",
+        "Olumsuz cümle",
+        "Soru cümlesi",
+        "Ünlem cümlesi"
+      ],
+      "correctIndex": 0,
+      "hint": "'Ali geldi.' gibi bir cümleyi düşün."
+    },
+    {
+      "id": "q8",
+      "text": "Bir durumun gerçekleşmediğini bildiren cümleye ne denir?",
+      "options": [
+        "Olumlu cümle",
+        "Olumsuz cümle",
+        "Soru cümlesi",
+        "Ünlem cümlesi"
+      ],
+      "correctIndex": 1,
+      "hint": "'Ali gelmedi.' gibi bir cümleyi düşün."
+    },
+    {
+      "id": "q9",
+      "text": "Bir bilgi almak amacıyla kurulan cümleye ne denir?",
+      "options": [
+        "Olumlu cümle",
+        "Olumsuz cümle",
+        "Soru cümlesi",
+        "Ünlem cümlesi"
+      ],
+      "correctIndex": 2,
+      "hint": "'Geldin mi?' gibi bir cümleyi düşün."
+    },
+    {
+      "id": "q10",
+      "text": "Bir duyguyu (şaşkınlık, sevinç, korku vb.) güçlü bir şekilde ifade eden cümleye ne denir?",
+      "options": [
+        "Olumlu cümle",
+        "Soru cümlesi",
+        "Ünlem cümlesi",
+        "Şart cümlesi"
+      ],
+      "correctIndex": 2,
+      "hint": "'Ne kadar güzel!' gibi bir cümleyi düşün."
+    },
+    {
+      "id": "q11",
+      "text": "Bir cümlede gereksiz yere aynı anlama gelen iki kelimenin kullanılmasına ne denir?",
+      "options": [
+        "Doğru anlatım",
+        "Anlatım bozukluğu (gereksiz sözcük kullanımı)",
+        "Devrik cümle",
+        "Kurallı cümle"
+      ],
+      "correctIndex": 1,
+      "hint": "'Yalnız tek başına kaldı.' cümlesindeki gibi bir tekrar düşün."
+    },
+    {
+      "id": "q12",
+      "text": "'Sınıfa geri döndü.' cümlesinde hangi anlatım bozukluğu vardır?",
+      "options": [
+        "Hiçbir bozukluk yoktur",
+        "'Geri' ve 'döndü' kelimeleri anlamca aynı şeyi tekrarlıyor (gereksiz sözcük)",
+        "Cümle eksiktir",
+        "Cümle devriktir"
+      ],
+      "correctIndex": 1,
+      "hint": "'Dönmek' zaten geriye gitmeyi ifade eder, 'geri' kelimesi gereksizdir."
+    },
+    {
+      "id": "q13",
+      "text": "Aşağıdaki cümlelerin hangisinde anlatım bozukluğu YOKTUR?",
+      "options": [
+        "Tekrar yeniden başladı.",
+        "Yeniden başladı.",
+        "Geri iade etti.",
+        "Aşağı indi geri."
+      ],
+      "correctIndex": 1,
+      "hint": "Bu cümlede gereksiz bir tekrar yoktur."
+    },
+    {
+      "id": "q14",
+      "text": "'İki tarafın da anlaşması yararlı olacaktır.' cümlesinde 'iki' ve 'taraf' kelimelerinin birlikte kullanımı neden sorunludur?",
+      "options": [
+        "Hiçbir sorun yoktur",
+        "'Taraf' kelimesi zaten en az iki tarafı ima eder, 'iki' fazladan bir vurgu olabilir ama bu örnekte kabul edilebilir",
+        "Cümle tamamen yanlıştır",
+        "Bu bir devrik cümledir"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu örnek aslında çoğu durumda kabul edilebilir olsa da, bazı anlatım bozukluğu örneklerinde gereksiz tekrar dikkat çeker."
+    },
+    {
+      "id": "q15",
+      "text": "Bir cümlede özne ile yüklemin uyumsuz olmasına ne denir?",
+      "options": [
+        "Doğru anlatım",
+        "Özne-yüklem uyumsuzluğu (bir tür anlatım bozukluğu)",
+        "Devrik cümle",
+        "Sıralı cümle"
+      ],
+      "correctIndex": 1,
+      "hint": "Örneğin çoğul özneyle tekil yüklem kullanmak bir uyumsuzluk örneğidir (bazı istisnalar hariç)."
+    },
+    {
+      "id": "q16",
+      "text": "Aşağıdaki cümlelerin hangisinde anlam belirsizliği (anlatım bozukluğu) vardır?",
+      "options": [
+        "Ali'nin arkadaşı geldi.",
+        "Ali'nin ve kardeşinin arkadaşı geldi.",
+        "Öğretmen öğrencisine kitabını verdi.",
+        "Kardeşim eve geldi."
+      ],
+      "correctIndex": 2,
+      "hint": "Bu cümlede 'kitabını' kelimesi, öğretmenin mi öğrencinin mi kitabı olduğu belirsizdir."
+    },
+    {
+      "id": "q17",
+      "text": "'Bu proje hem zor hem de kolaydı.' cümlesinde hangi anlatım bozukluğu vardır?",
+      "options": [
+        "Hiçbir bozukluk yoktur",
+        "Anlam çelişkisi (zor ve kolay birbirine zıt kavramlardır)",
+        "Cümle eksiktir",
+        "Devrik cümledir"
+      ],
+      "correctIndex": 1,
+      "hint": "'Zor' ve 'kolay' birbirine zıt anlamlıdır, bu bir çelişki oluşturur."
+    },
+    {
+      "id": "q18",
+      "text": "Aşağıdaki cümlelerin hangisinde anlam çelişkisi vardır?",
+      "options": [
+        "Bugün hava hem sıcak hem soğuktu.",
+        "Bugün hava sıcaktı.",
+        "Bugün hava soğuktu.",
+        "Bugün hava ne sıcak ne soğuktu."
+      ],
+      "correctIndex": 0,
+      "hint": "'Sıcak' ve 'soğuk' aynı anda doğru olamaz, bu bir çelişkidir."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Bugün yazdığın bir cümleyi tekrar okuyup düzelttin mi?",
+    "options": [
+      "Evet, düzelttim",
+      "Henüz fırsatım olmadı",
+      "Hatırlamıyorum",
+      "Söylemek istemiyorum"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

@@ -1,0 +1,227 @@
+{
+  "id": "sosyalbilgiler-unite2-evimiz-dunya-genis-p4",
+  "subject": "Sosyal Bilgiler",
+  "title": "Ünite 2 - Evimiz Dünya (Geniş Havuz) (4/4)",
+  "week": 2,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Bir bölgede yoğun sanayi tesisi bulunmasının çevresel etkilerinden biri ne olabilir?",
+      "options": [
+        "Hava kalitesinin bozulması",
+        "Havanın otomatik olarak temizlenmesi",
+        "Hiçbir etkisi olmaz",
+        "Sadece olumlu etkiler olur"
+      ],
+      "correctIndex": 0,
+      "hint": "Sanayi faaliyetleri bazen çevre kirliliğine yol açabilir."
+    },
+    {
+      "id": "q2",
+      "text": "Aşağıdakilerden hangisi 'çevre bilinci' göstermenin bir yoludur?",
+      "options": [
+        "Çöpleri geri dönüşüme atmak",
+        "Suyu gereksiz yere israf etmek",
+        "Doğaya çöp atmak",
+        "Enerjiyi boşa harcamak"
+      ],
+      "correctIndex": 0,
+      "hint": "Geri dönüşüm, doğal kaynakları korumaya yardımcı olan bir davranıştır."
+    },
+    {
+      "id": "q3",
+      "text": "Türkiye'nin göller açısından genel özelliği hakkında aşağıdakilerden hangisi doğrudur?",
+      "options": [
+        "Türkiye'de göl yoktur",
+        "Türkiye'de çeşitli büyüklüklerde birçok doğal göl bulunur",
+        "Tüm göller yapaydır",
+        "Göller sadece kıyı bölgelerdedir"
+      ],
+      "correctIndex": 1,
+      "hint": "Türkiye'nin farklı bölgelerinde büyüklü küçüklü birçok doğal göl vardır."
+    },
+    {
+      "id": "q4",
+      "text": "Bir bölgede yaşayan insanların yaşam tarzı, o bölgenin coğrafyasından nasıl etkilenebilir?",
+      "options": [
+        "Hiç etkilenmez",
+        "İklim, arazi yapısı gibi özellikler kıyafet, beslenme ve meslek seçimlerini etkileyebilir",
+        "Sadece televizyon programlarını etkiler",
+        "Coğrafyanın yaşam tarzıyla ilgisi yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Örneğin, dağlık bölgelerde hayvancılık, kıyı bölgelerinde balıkçılık daha yaygın olabilir."
+    },
+    {
+      "id": "q5",
+      "text": "Zorlayıcı soru: Bir öğrenci, bir haritada 'batı' yönünün sol tarafta, 'doğu' yönünün sağ tarafta gösterildiğini fark ediyor (harita kuzeyi yukarı gösterecek şekilde çizilmişse). Bu haritada 'güney' hangi yönde olur?",
+      "options": [
+        "Yukarıda",
+        "Aşağıda",
+        "Solda",
+        "Sağda"
+      ],
+      "correctIndex": 1,
+      "hint": "Standart haritalarda kuzey yukarıda ise, güney aşağıdadır."
+    },
+    {
+      "id": "q6",
+      "text": "Aşağıdakilerden hangisi doğal afetlere karşı önceden alınabilecek bir tedbirdir?",
+      "options": [
+        "Hiçbir şey yapmamak",
+        "Bina güvenlik standartlarına uygun yapılar inşa etmek",
+        "Afet planlarını görmezden gelmek",
+        "Acil durum çantası hazırlamamak"
+      ],
+      "correctIndex": 1,
+      "hint": "Depreme dayanıklı binalar, can kaybını azaltmada önemlidir."
+    },
+    {
+      "id": "q7",
+      "text": "Bir yerleşim yerinin 'kırsal' olması ne anlama gelir?",
+      "options": [
+        "Çok yoğun nüfuslu, şehir merkezinde olması",
+        "Şehir dışında, genellikle tarım ve hayvancılığın yaygın olduğu az nüfuslu bir alan olması",
+        "Denizde bulunması",
+        "Uzayda bulunması"
+      ],
+      "correctIndex": 1,
+      "hint": "Kırsal alanlar genellikle köy ve kasabaları kapsar."
+    },
+    {
+      "id": "q8",
+      "text": "Aşağıdakilerden hangisi 'kentsel' (şehirsel) bir alanın özelliğidir?",
+      "options": [
+        "Düşük nüfus yoğunluğu",
+        "Yüksek binalar, yoğun nüfus ve gelişmiş altyapı",
+        "Sadece tarım arazileri",
+        "Hiç insan yaşamaması"
+      ],
+      "correctIndex": 1,
+      "hint": "Şehirler, kırsal alanlara göre daha yoğun ve gelişmiş yapılara sahiptir."
+    },
+    {
+      "id": "q9",
+      "text": "Zorlayıcı soru: Bir bölgede hem yüksek dağlar hem de deniz kıyısı varsa, bu bölgede hangi ekonomik faaliyetlerin bir arada görülmesi beklenebilir?",
+      "options": [
+        "Sadece çölcülük",
+        "Hem dağcılık turizmi hem de balıkçılık/deniz turizmi",
+        "Hiçbir ekonomik faaliyet olmaz",
+        "Sadece madencilik"
+      ],
+      "correctIndex": 1,
+      "hint": "Farklı coğrafi özellikler, farklı ekonomik fırsatlar sunar."
+    },
+    {
+      "id": "q10",
+      "text": "Bir doğal afet sırasında ailenin önceden belirlediği 'buluşma noktası' neden önemlidir?",
+      "options": [
+        "Hiçbir önemi yoktur",
+        "Aile üyelerinin birbirini kaybetmeden güvenli bir yerde buluşmasını sağlar",
+        "Sadece eğlence amaçlıdır",
+        "Sadece tatil planlaması içindir"
+      ],
+      "correctIndex": 1,
+      "hint": "Afet anında iletişim kesilebilir, önceden belirlenmiş bir nokta güvenliği artırır."
+    },
+    {
+      "id": "q11",
+      "text": "Aşağıdakilerden hangisi 'doğal kaynak' örneğidir?",
+      "options": [
+        "Su",
+        "Bilgisayar",
+        "Otomobil",
+        "Cep telefonu"
+      ],
+      "correctIndex": 0,
+      "hint": "Doğada var olan, insan yapımı olmayan kaynakları düşün."
+    },
+    {
+      "id": "q12",
+      "text": "Doğal kaynakların bilinçsizce kullanılmasının olası sonucu nedir?",
+      "options": [
+        "Kaynaklar sonsuza kadar tükenmez",
+        "Kaynakların tükenmesi ve çevresel sorunlar",
+        "Hiçbir olumsuz etkisi yoktur",
+        "Sadece olumlu etkiler olur"
+      ],
+      "correctIndex": 1,
+      "hint": "Doğal kaynakların çoğu sınırlıdır ve dikkatli kullanılmalıdır."
+    },
+    {
+      "id": "q13",
+      "text": "Zorlayıcı soru: Bir öğrenci, yaşadığı ilin hem verimli ovalara hem de büyük bir nehre sahip olduğunu öğreniyor. Bu bilgiye göre bu ilde hangi faaliyetin gelişmiş olması beklenir?",
+      "options": [
+        "Kayak turizmi",
+        "Tarım ve sulama faaliyetleri",
+        "Kutup araştırmaları",
+        "Çöl turizmi"
+      ],
+      "correctIndex": 1,
+      "hint": "Verimli ova ve nehir varlığı, tarımsal faaliyetler için idealdir."
+    },
+    {
+      "id": "q14",
+      "text": "Aşağıdakilerden hangisi haritada 'kuzey' yönünü gösteren yaygın bir semboldür?",
+      "options": [
+        "Bir güneş sembolü",
+        "Bir pusula gülü veya yukarı ok işareti",
+        "Bir yıldız sembolü",
+        "Bir ay sembolü"
+      ],
+      "correctIndex": 1,
+      "hint": "Haritalarda genellikle bir ok veya pusula şekliyle yön belirtilir."
+    },
+    {
+      "id": "q15",
+      "text": "Bir bölgenin denize kıyısı olması hangi ekonomik faaliyeti kolaylaştırır?",
+      "options": [
+        "Balıkçılık ve deniz ticareti",
+        "Kayak turizmi",
+        "Çöl tarımı",
+        "Kutup araştırmaları"
+      ],
+      "correctIndex": 0,
+      "hint": "Deniz kıyısı, su ile ilgili ekonomik faaliyetleri destekler."
+    },
+    {
+      "id": "q16",
+      "text": "Aşağıdakilerden hangisi bir afet sırasında yanlış bir davranıştır?",
+      "options": [
+        "Sakin kalmaya çalışmak",
+        "Yetkililerin uyarılarını dinlemek",
+        "Panik yaparak koşuşturmak",
+        "Güvenli bir alana geçmek"
+      ],
+      "correctIndex": 2,
+      "hint": "Panik, afet anında doğru kararlar almayı zorlaştırır."
+    },
+    {
+      "id": "q17",
+      "text": "Zorlayıcı soru: Bir harita üzerinde 'X' bölgesi denize yakın ve alçak, 'Y' bölgesi ise içerde ve yüksek dağlık. Hangi bölgede sel riski daha yüksek olabilir?",
+      "options": [
+        "X bölgesi (alçak, denize yakın)",
+        "Y bölgesi (yüksek, dağlık)",
+        "İkisinde de risk aynıdır",
+        "Hiçbirinde risk yoktur"
+      ],
+      "correctIndex": 0,
+      "hint": "Alçak ve denize yakın bölgeler, su baskınlarına daha açıktır."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Yaşadığın ilin hangi bölgede olduğunu biliyor musun?",
+    "options": [
+      "Evet, biliyorum",
+      "Tam emin değilim",
+      "Bilmiyorum ama merak ediyorum",
+      "Şimdi öğrenmek isterim"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

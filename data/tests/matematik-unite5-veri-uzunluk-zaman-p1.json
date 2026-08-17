@@ -1,0 +1,239 @@
+{
+  "id": "matematik-unite5-veri-uzunluk-zaman-p1",
+  "subject": "Matematik",
+  "title": "Ünite 5 - Veri Toplama, Uzunluk ve Zaman Ölçme (1/4)",
+  "week": 5,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "2 metre kaç santimetredir?",
+      "options": [
+        "200 cm",
+        "20 cm",
+        "2000 cm",
+        "20000 cm"
+      ],
+      "correctIndex": 0,
+      "hint": "Metrik birimler arasındaki ilişkiyi (10, 100, 1000 kat) düşün."
+    },
+    {
+      "id": "q2",
+      "text": "350 santimetre kaç metredir?",
+      "options": [
+        "3,5 m",
+        "35 m",
+        "350 m",
+        "0,35 m"
+      ],
+      "correctIndex": 0,
+      "hint": "Metrik birimler arasındaki ilişkiyi (10, 100, 1000 kat) düşün."
+    },
+    {
+      "id": "q3",
+      "text": "1 kilometre kaç metredir?",
+      "options": [
+        "1000 m",
+        "100 m",
+        "10000 m",
+        "100000 m"
+      ],
+      "correctIndex": 0,
+      "hint": "Metrik birimler arasındaki ilişkiyi (10, 100, 1000 kat) düşün."
+    },
+    {
+      "id": "q4",
+      "text": "2500 metre kaç kilometredir?",
+      "options": [
+        "2,5 km",
+        "25 km",
+        "0,25 km",
+        "250 km"
+      ],
+      "correctIndex": 0,
+      "hint": "Metrik birimler arasındaki ilişkiyi (10, 100, 1000 kat) düşün."
+    },
+    {
+      "id": "q5",
+      "text": "5 metre kaç desimetredir?",
+      "options": [
+        "50 dm",
+        "5 dm",
+        "500 dm",
+        "0,5 dm"
+      ],
+      "correctIndex": 0,
+      "hint": "Metrik birimler arasındaki ilişkiyi (10, 100, 1000 kat) düşün."
+    },
+    {
+      "id": "q6",
+      "text": "1 metre kaç milimetredir?",
+      "options": [
+        "1000 mm",
+        "100 mm",
+        "10000 mm",
+        "10 mm"
+      ],
+      "correctIndex": 0,
+      "hint": "Metrik birimler arasındaki ilişkiyi (10, 100, 1000 kat) düşün."
+    },
+    {
+      "id": "q7",
+      "text": "45 milimetre kaç santimetredir?",
+      "options": [
+        "4,5 cm",
+        "45 cm",
+        "0,45 cm",
+        "450 cm"
+      ],
+      "correctIndex": 0,
+      "hint": "Metrik birimler arasındaki ilişkiyi (10, 100, 1000 kat) düşün."
+    },
+    {
+      "id": "q8",
+      "text": "7 kilometre kaç metredir?",
+      "options": [
+        "7000 m",
+        "700 m",
+        "70000 m",
+        "70 m"
+      ],
+      "correctIndex": 0,
+      "hint": "Metrik birimler arasındaki ilişkiyi (10, 100, 1000 kat) düşün."
+    },
+    {
+      "id": "q9",
+      "text": "120 santimetre kaç metredir?",
+      "options": [
+        "1,2 m",
+        "12 m",
+        "0,12 m",
+        "120 m"
+      ],
+      "correctIndex": 0,
+      "hint": "Metrik birimler arasındaki ilişkiyi (10, 100, 1000 kat) düşün."
+    },
+    {
+      "id": "q10",
+      "text": "3 metre 25 santimetre, toplam kaç santimetredir?",
+      "options": [
+        "325 cm",
+        "350 cm",
+        "300 cm",
+        "352 cm"
+      ],
+      "correctIndex": 0,
+      "hint": "Metrik birimler arasındaki ilişkiyi (10, 100, 1000 kat) düşün."
+    },
+    {
+      "id": "q11",
+      "text": "1 saat kaç dakikadır?",
+      "options": [
+        "60 dakika",
+        "100 dakika",
+        "24 dakika",
+        "30 dakika"
+      ],
+      "correctIndex": 0,
+      "hint": "Zaman birimleri arasındaki ilişkiyi düşün (60 saniye=1 dakika, 60 dakika=1 saat, 24 saat=1 gün)."
+    },
+    {
+      "id": "q12",
+      "text": "1 dakika kaç saniyedir?",
+      "options": [
+        "60 saniye",
+        "100 saniye",
+        "30 saniye",
+        "120 saniye"
+      ],
+      "correctIndex": 0,
+      "hint": "Zaman birimleri arasındaki ilişkiyi düşün (60 saniye=1 dakika, 60 dakika=1 saat, 24 saat=1 gün)."
+    },
+    {
+      "id": "q13",
+      "text": "1 gün kaç saattir?",
+      "options": [
+        "24 saat",
+        "12 saat",
+        "48 saat",
+        "60 saat"
+      ],
+      "correctIndex": 0,
+      "hint": "Zaman birimleri arasındaki ilişkiyi düşün (60 saniye=1 dakika, 60 dakika=1 saat, 24 saat=1 gün)."
+    },
+    {
+      "id": "q14",
+      "text": "2 saat kaç dakikadır?",
+      "options": [
+        "120 dakika",
+        "100 dakika",
+        "60 dakika",
+        "200 dakika"
+      ],
+      "correctIndex": 0,
+      "hint": "Zaman birimleri arasındaki ilişkiyi düşün (60 saniye=1 dakika, 60 dakika=1 saat, 24 saat=1 gün)."
+    },
+    {
+      "id": "q15",
+      "text": "90 dakika kaç saattir?",
+      "options": [
+        "1,5 saat",
+        "9 saat",
+        "0,9 saat",
+        "2 saat"
+      ],
+      "correctIndex": 0,
+      "hint": "Zaman birimleri arasındaki ilişkiyi düşün (60 saniye=1 dakika, 60 dakika=1 saat, 24 saat=1 gün)."
+    },
+    {
+      "id": "q16",
+      "text": "1 hafta kaç gündür?",
+      "options": [
+        "7 gün",
+        "5 gün",
+        "10 gün",
+        "14 gün"
+      ],
+      "correctIndex": 0,
+      "hint": "Zaman birimleri arasındaki ilişkiyi düşün (60 saniye=1 dakika, 60 dakika=1 saat, 24 saat=1 gün)."
+    },
+    {
+      "id": "q17",
+      "text": "3 saat 30 dakika, toplam kaç dakikadır?",
+      "options": [
+        "210 dakika",
+        "330 dakika",
+        "180 dakika",
+        "200 dakika"
+      ],
+      "correctIndex": 0,
+      "hint": "Zaman birimleri arasındaki ilişkiyi düşün (60 saniye=1 dakika, 60 dakika=1 saat, 24 saat=1 gün)."
+    },
+    {
+      "id": "q18",
+      "text": "1 yıl kaç aydır?",
+      "options": [
+        "12 ay",
+        "10 ay",
+        "24 ay",
+        "6 ay"
+      ],
+      "correctIndex": 0,
+      "hint": "Zaman birimleri arasındaki ilişkiyi düşün (60 saniye=1 dakika, 60 dakika=1 saat, 24 saat=1 gün)."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Bugün ders çalışmak için kaç dakika ayırdın?",
+    "options": [
+      "15 dakika",
+      "30 dakika",
+      "45 dakika veya üzeri",
+      "Henüz başlamadım"
+    ],
+    "correctIndex": 2,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

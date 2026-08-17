@@ -1,0 +1,239 @@
+{
+  "id": "turkce-unite4-fiil-cekimleri-p3",
+  "subject": "Türkçe",
+  "title": "Ünite 4 - Fiil Çekimleri, Zaman ve Kişi Ekleri (3/4)",
+  "week": 4,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "'Gel-di-m' kelimesinde kaç çekim eki bulunur?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "0"
+      ],
+      "correctIndex": 1,
+      "hint": "'-di' zaman eki, '-m' kişi eki - toplam 2 çekim eki."
+    },
+    {
+      "id": "q2",
+      "text": "Aşağıdakilerden hangisi 'olumsuz emir' cümlesine örnektir?",
+      "options": [
+        "Gel!",
+        "Gelme!",
+        "Geldi.",
+        "Gelecek."
+      ],
+      "correctIndex": 1,
+      "hint": "'-me' olumsuzluk eki, emir kipiyle birleşmiş."
+    },
+    {
+      "id": "q3",
+      "text": "'Koşmayın!' cümlesi kime söylenmiştir?",
+      "options": [
+        "Bir kişiye (sen)",
+        "Birden fazla kişiye (siz)",
+        "Kendine (ben)",
+        "Üçüncü bir kişiye (o)"
+      ],
+      "correctIndex": 1,
+      "hint": "'-yın' eki, çoğul ikinci şahsa (siz) yönelik bir emirdir."
+    },
+    {
+      "id": "q4",
+      "text": "Zorlayıcı soru: 'Sınava girdiğimde çok heyecanlıydım.' cümlesinde iki farklı fiil hangi zamanlardadır?",
+      "options": [
+        "İkisi de şimdiki zaman",
+        "'Girdiğimde' geçmiş zaman anlamı taşır, 'heyecanlıydım' de geçmiş zamanı bildirir",
+        "İkisi de gelecek zaman",
+        "Zaman belirtilmemiştir"
+      ],
+      "correctIndex": 1,
+      "hint": "Cümlenin tamamı geçmişte yaşanmış bir durumu anlatıyor."
+    },
+    {
+      "id": "q5",
+      "text": "Bir fiil kökünden yeni bir fiil türetmek için kullanılan eklere ne denir?",
+      "options": [
+        "Çekim eki",
+        "Yapım eki",
+        "Kişi eki",
+        "Zaman eki"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu ekler, kelimenin anlamını değiştirerek yeni bir kelime türetir."
+    },
+    {
+      "id": "q6",
+      "text": "'Göz-le-mek' kelimesinde '-le' eki hangi türde bir ektir?",
+      "options": [
+        "Çekim eki",
+        "Yapım eki (isimden fiil yapan)",
+        "Kişi eki",
+        "Zaman eki"
+      ],
+      "correctIndex": 1,
+      "hint": "'Göz' isminden 'gözlemek' fiilini türeten bir yapım ekidir."
+    },
+    {
+      "id": "q7",
+      "text": "Aşağıdakilerden hangisi 'geniş zamanın olumsuz' çekimine örnektir?",
+      "options": [
+        "Gelir",
+        "Gelmez",
+        "Geldi",
+        "Gelecek"
+      ],
+      "correctIndex": 1,
+      "hint": "'-mez' eki, geniş zamanın olumsuz hâlidir."
+    },
+    {
+      "id": "q8",
+      "text": "'Yağmur yağmazsa dışarı çıkarız.' cümlesinde 'yağmazsa' hangi kip ve zaman özelliğini taşır?",
+      "options": [
+        "Olumsuz şart kipi",
+        "Olumlu emir kipi",
+        "Olumsuz gelecek zaman",
+        "Olumlu geçmiş zaman"
+      ],
+      "correctIndex": 0,
+      "hint": "'-maz-sa' yapısı, olumsuz bir koşulu bildirir."
+    },
+    {
+      "id": "q9",
+      "text": "Bir fiilin kişiye göre nasıl çekimlendiğini incelemek için hangi zamirleri kullanırız?",
+      "options": [
+        "Ben, sen, o, biz, siz, onlar",
+        "Bu, şu, o (işaret zamirleri)",
+        "Kim, ne, nerede (soru zamirleri)",
+        "Hiçbiri"
+      ],
+      "correctIndex": 0,
+      "hint": "Şahıs (kişi) zamirleri, fiil çekiminde kullanılan temel zamirlerdir."
+    },
+    {
+      "id": "q10",
+      "text": "'Okuyorum, okuyorsun, okuyor, okuyoruz, okuyorsunuz, okuyorlar' - bu sıralama neyi gösterir?",
+      "options": [
+        "Bir fiilin farklı zamanlardaki hâllerini",
+        "Bir fiilin şimdiki zamanda tüm şahıslara göre çekimini",
+        "Farklı fiilleri",
+        "Hiçbir şeyi göstermez"
+      ],
+      "correctIndex": 1,
+      "hint": "Aynı fiil (okumak), şimdiki zamanda farklı şahıslara göre çekimlenmiştir."
+    },
+    {
+      "id": "q11",
+      "text": "Zorlayıcı soru: 'Gelecek hafta tatile çıkacağız ama önce ödevlerimizi bitirmeliyiz.' cümlesinde 'bitirmeliyiz' hangi anlamı taşır?",
+      "options": [
+        "Bir olasılık",
+        "Bir zorunluluk/gereklilik",
+        "Bir geçmiş olay",
+        "Bir soru"
+      ],
+      "correctIndex": 1,
+      "hint": "'-meli' eki, bir gerekliliği/zorunluluğu ifade eder."
+    },
+    {
+      "id": "q12",
+      "text": "'-meli/-malı' eki hangi anlamı katar?",
+      "options": [
+        "Yeterlik",
+        "Gereklilik/zorunluluk",
+        "Olumsuzluk",
+        "Soru"
+      ],
+      "correctIndex": 1,
+      "hint": "'Gitmeliyim.' cümlesindeki anlamı düşün - bir şeyi yapmak zorunda olmak."
+    },
+    {
+      "id": "q13",
+      "text": "Aşağıdakilerden hangisi 'gereklilik kipi' örneğidir?",
+      "options": [
+        "Gitti",
+        "Gitmeliyim",
+        "Gidiyor",
+        "Gidecek"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu kelimede '-meli' eki bulunur."
+    },
+    {
+      "id": "q14",
+      "text": "Bir fiil hem zaman hem kişi eki alabilir mi (aynı anda)?",
+      "options": [
+        "Hayır, sadece birini alabilir",
+        "Evet, örneğin 'geldim' hem zaman (-di) hem kişi (-m) eki alır",
+        "Fiiller hiç ek almaz",
+        "Bu bir kural değildir"
+      ],
+      "correctIndex": 1,
+      "hint": "Çoğu çekimli fiilde hem zaman hem kişi eki bir arada bulunur."
+    },
+    {
+      "id": "q15",
+      "text": "'Yazdık' kelimesinde zaman eki ve kişi eki hangileridir?",
+      "options": [
+        "Zaman: -dı, Kişi: -k",
+        "Zaman: -k, Kişi: -dı",
+        "Sadece zaman eki vardır",
+        "Sadece kişi eki vardır"
+      ],
+      "correctIndex": 0,
+      "hint": "'-dı' geçmiş zaman, '-k' 'biz' kişi ekidir."
+    },
+    {
+      "id": "q16",
+      "text": "Aşağıdakilerden hangisi 3. tekil şahıs (o) için doğru bir çekimdir?",
+      "options": [
+        "Geldim",
+        "Geldin",
+        "Geldi",
+        "Geldik"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu kelimede hiçbir kişi eki yoktur, bu da 3. tekil şahsı gösterir."
+    },
+    {
+      "id": "q17",
+      "text": "Zorlayıcı soru: 'Öğretmenimiz bize her zaman doğruyu söylemesini öğütler.' cümlesindeki 'öğütler' fiili hangi zamandadır?",
+      "options": [
+        "Şimdiki zaman",
+        "Geniş zaman",
+        "Geçmiş zaman",
+        "Gelecek zaman"
+      ],
+      "correctIndex": 1,
+      "hint": "'Her zaman' ifadesi, geniş zaman anlamını destekler."
+    },
+    {
+      "id": "q18",
+      "text": "Bir fiilin olumlu, olumsuz ve soru hâllerinin hepsinin var olabilmesi neyi gösterir?",
+      "options": [
+        "Fiillerin farklı şekillerde çekimlenebileceğini",
+        "Fiillerin hiç değişmediğini",
+        "Sadece olumlu çekim olabileceğini",
+        "Hiçbir şeyi göstermez"
+      ],
+      "correctIndex": 0,
+      "hint": "Türkçede fiiller, olumlu/olumsuz/soru gibi farklı biçimlerde çekimlenebilir."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Bugün en çok hangi zamanı (geçmiş, şimdiki, gelecek) kullanarak konuştun?",
+    "options": [
+      "Geçmiş zaman",
+      "Şimdiki zaman",
+      "Gelecek zaman",
+      "Hepsini kullandım"
+    ],
+    "correctIndex": 3,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

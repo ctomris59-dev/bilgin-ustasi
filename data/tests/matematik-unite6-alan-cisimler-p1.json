@@ -1,0 +1,251 @@
+{
+  "id": "matematik-unite6-alan-cisimler-p1",
+  "subject": "Matematik",
+  "title": "Ünite 6 - Alan Ölçme ve Geometrik Cisimler (1/4)",
+  "week": 6,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Kenar uzunlukları 5 cm ve 3 cm olan bir dikdörtgenin çevresi kaç cm'dir?",
+      "options": [
+        "16",
+        "18",
+        "15",
+        "14"
+      ],
+      "correctIndex": 0,
+      "hint": "Çevre = 2 × (uzun kenar + kısa kenar)."
+    },
+    {
+      "id": "q2",
+      "text": "Kenar uzunlukları 8 cm ve 4 cm olan bir dikdörtgenin çevresi kaç cm'dir?",
+      "options": [
+        "24",
+        "26",
+        "32",
+        "22"
+      ],
+      "correctIndex": 0,
+      "hint": "Çevre = 2 × (uzun kenar + kısa kenar)."
+    },
+    {
+      "id": "q3",
+      "text": "Kenar uzunlukları 10 cm ve 6 cm olan bir dikdörtgenin çevresi kaç cm'dir?",
+      "options": [
+        "32",
+        "34",
+        "60",
+        "30"
+      ],
+      "correctIndex": 0,
+      "hint": "Çevre = 2 × (uzun kenar + kısa kenar)."
+    },
+    {
+      "id": "q4",
+      "text": "Kenar uzunlukları 7 cm ve 2 cm olan bir dikdörtgenin çevresi kaç cm'dir?",
+      "options": [
+        "18",
+        "20",
+        "14",
+        "16"
+      ],
+      "correctIndex": 0,
+      "hint": "Çevre = 2 × (uzun kenar + kısa kenar)."
+    },
+    {
+      "id": "q5",
+      "text": "Kenar uzunlukları 12 cm ve 5 cm olan bir dikdörtgenin çevresi kaç cm'dir?",
+      "options": [
+        "34",
+        "36",
+        "60",
+        "32"
+      ],
+      "correctIndex": 0,
+      "hint": "Çevre = 2 × (uzun kenar + kısa kenar)."
+    },
+    {
+      "id": "q6",
+      "text": "Kenar uzunlukları 9 cm ve 9 cm olan bir dikdörtgenin çevresi kaç cm'dir?",
+      "options": [
+        "36",
+        "38",
+        "81",
+        "34"
+      ],
+      "correctIndex": 0,
+      "hint": "Çevre = 2 × (uzun kenar + kısa kenar)."
+    },
+    {
+      "id": "q7",
+      "text": "Kenar uzunlukları 6 cm ve 4 cm olan bir dikdörtgenin çevresi kaç cm'dir?",
+      "options": [
+        "20",
+        "22",
+        "24",
+        "18"
+      ],
+      "correctIndex": 0,
+      "hint": "Çevre = 2 × (uzun kenar + kısa kenar)."
+    },
+    {
+      "id": "q8",
+      "text": "Kenar uzunlukları 15 cm ve 3 cm olan bir dikdörtgenin çevresi kaç cm'dir?",
+      "options": [
+        "36",
+        "38",
+        "45",
+        "34"
+      ],
+      "correctIndex": 0,
+      "hint": "Çevre = 2 × (uzun kenar + kısa kenar)."
+    },
+    {
+      "id": "q9",
+      "text": "Kenar uzunlukları 11 cm ve 7 cm olan bir dikdörtgenin çevresi kaç cm'dir?",
+      "options": [
+        "36",
+        "38",
+        "77",
+        "34"
+      ],
+      "correctIndex": 0,
+      "hint": "Çevre = 2 × (uzun kenar + kısa kenar)."
+    },
+    {
+      "id": "q10",
+      "text": "Kenar uzunlukları 20 cm ve 10 cm olan bir dikdörtgenin çevresi kaç cm'dir?",
+      "options": [
+        "60",
+        "62",
+        "200",
+        "58"
+      ],
+      "correctIndex": 0,
+      "hint": "Çevre = 2 × (uzun kenar + kısa kenar)."
+    },
+    {
+      "id": "q11",
+      "text": "Kenar uzunlukları 5 cm ve 3 cm olan bir dikdörtgenin alanı kaç cm²'dir?",
+      "options": [
+        "15",
+        "20",
+        "16",
+        "12"
+      ],
+      "correctIndex": 0,
+      "hint": "Alan = uzun kenar × kısa kenar."
+    },
+    {
+      "id": "q12",
+      "text": "Kenar uzunlukları 8 cm ve 4 cm olan bir dikdörtgenin alanı kaç cm²'dir?",
+      "options": [
+        "32",
+        "40",
+        "24",
+        "28"
+      ],
+      "correctIndex": 0,
+      "hint": "Alan = uzun kenar × kısa kenar."
+    },
+    {
+      "id": "q13",
+      "text": "Kenar uzunlukları 10 cm ve 6 cm olan bir dikdörtgenin alanı kaç cm²'dir?",
+      "options": [
+        "60",
+        "70",
+        "32",
+        "54"
+      ],
+      "correctIndex": 0,
+      "hint": "Alan = uzun kenar × kısa kenar."
+    },
+    {
+      "id": "q14",
+      "text": "Kenar uzunlukları 7 cm ve 2 cm olan bir dikdörtgenin alanı kaç cm²'dir?",
+      "options": [
+        "14",
+        "21",
+        "18",
+        "12"
+      ],
+      "correctIndex": 0,
+      "hint": "Alan = uzun kenar × kısa kenar."
+    },
+    {
+      "id": "q15",
+      "text": "Kenar uzunlukları 12 cm ve 5 cm olan bir dikdörtgenin alanı kaç cm²'dir?",
+      "options": [
+        "60",
+        "72",
+        "34",
+        "55"
+      ],
+      "correctIndex": 0,
+      "hint": "Alan = uzun kenar × kısa kenar."
+    },
+    {
+      "id": "q16",
+      "text": "Kenar uzunlukları 9 cm ve 9 cm olan bir dikdörtgenin alanı kaç cm²'dir?",
+      "options": [
+        "81",
+        "90",
+        "36",
+        "72"
+      ],
+      "correctIndex": 0,
+      "hint": "Alan = uzun kenar × kısa kenar."
+    },
+    {
+      "id": "q17",
+      "text": "Kenar uzunlukları 6 cm ve 4 cm olan bir dikdörtgenin alanı kaç cm²'dir?",
+      "options": [
+        "24",
+        "30",
+        "20",
+        "20"
+      ],
+      "correctIndex": 0,
+      "hint": "Alan = uzun kenar × kısa kenar."
+    },
+    {
+      "id": "q18",
+      "text": "Kenar uzunlukları 15 cm ve 3 cm olan bir dikdörtgenin alanı kaç cm²'dir?",
+      "options": [
+        "45",
+        "60",
+        "36",
+        "42"
+      ],
+      "correctIndex": 0,
+      "hint": "Alan = uzun kenar × kısa kenar."
+    },
+    {
+      "id": "q19",
+      "text": "Kenar uzunlukları 11 cm ve 7 cm olan bir dikdörtgenin alanı kaç cm²'dir?",
+      "options": [
+        "77",
+        "88",
+        "36",
+        "70"
+      ],
+      "correctIndex": 0,
+      "hint": "Alan = uzun kenar × kısa kenar."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Odandaki eşyalardan hangisi bir dikdörtgenler prizmasına benziyor?",
+    "options": [
+      "Dolap",
+      "Kitap",
+      "Kutu",
+      "Hepsi"
+    ],
+    "correctIndex": 3,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

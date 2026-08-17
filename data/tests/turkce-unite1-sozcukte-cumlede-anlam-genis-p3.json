@@ -1,0 +1,251 @@
+{
+  "id": "turkce-unite1-sozcukte-cumlede-anlam-genis-p3",
+  "subject": "Türkçe",
+  "title": "Ünite 1 - Sözcükte ve Cümlede Anlam (Geniş Havuz) (3/4)",
+  "week": 1,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Aşağıdakilerden hangisi 'hızlı' sözcüğünün zıt anlamlısıdır?",
+      "options": [
+        "Çabuk",
+        "Yavaş",
+        "Süratli",
+        "Ani"
+      ],
+      "correctIndex": 1,
+      "hint": "Hızın karşıtı olan hareket biçimini düşün."
+    },
+    {
+      "id": "q2",
+      "text": "Zorlayıcı soru: 'Kırmızı gülü çok sevdim ama bahçıvan çiçeği kırdı.' cümlesinde 'kırmızı' ve 'kırdı' sözcükleri arasında nasıl bir ilişki vardır?",
+      "options": [
+        "Eş anlamlıdır",
+        "Aralarında hiçbir anlam ilişkisi yoktur, farklı köklerden gelirler",
+        "Zıt anlamlıdır",
+        "Eş seslidir"
+      ],
+      "correctIndex": 1,
+      "hint": "'Kırmızı' bir renk adıdır, 'kırdı' ise 'kırmak' fiilinden gelir - farklı kökenlidirler."
+    },
+    {
+      "id": "q3",
+      "text": "Aşağıdaki cümlelerden hangisinde bir atasözü kullanılmıştır?",
+      "options": [
+        "Bugün okula gittim.",
+        "Ağaç yaşken eğilir.",
+        "Kitabımı unuttum.",
+        "Yarın sınavım var."
+      ],
+      "correctIndex": 1,
+      "hint": "Bu cümle, genç yaşta eğitimin önemini anlatan kalıplaşmış bir sözdür."
+    },
+    {
+      "id": "q4",
+      "text": "'Ağaç yaşken eğilir.' atasözü ne anlatır?",
+      "options": [
+        "Ağaçların büyümesini",
+        "Eğitimin küçük yaşta daha etkili olduğunu",
+        "Ormancılığı",
+        "Bahçıvanlığı"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu atasözü, erken yaşta öğrenmenin/şekillenmenin daha kolay olduğunu anlatır."
+    },
+    {
+      "id": "q5",
+      "text": "Aşağıdaki cümlelerin hangisinde iki nokta (:) kullanımı doğrudur?",
+      "options": [
+        "Şunları aldım kalem, defter, silgi.",
+        "Şunları aldım: kalem, defter, silgi.",
+        "Şunları: aldım kalem, defter, silgi.",
+        "Şunları aldım kalem: defter, silgi."
+      ],
+      "correctIndex": 1,
+      "hint": "İki nokta, bir liste veya açıklama vermeden önce kullanılır."
+    },
+    {
+      "id": "q6",
+      "text": "Bir cümlede tamamlanmamış bir düşünceyi veya sözü belirtmek için hangi işaret kullanılır?",
+      "options": [
+        "Nokta",
+        "Virgül",
+        "Üç nokta (...)",
+        "Ünlem işareti"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu işaret, sözün yarıda kesildiğini gösterir."
+    },
+    {
+      "id": "q7",
+      "text": "'Parantez içinde ek bilgi vermek' hangi noktalama işaretiyle yapılır?",
+      "options": [
+        "Virgül",
+        "Parantez ( )",
+        "Ünlem işareti",
+        "Soru işareti"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu işaret, ana cümleye ek bir açıklama eklerken kullanılır."
+    },
+    {
+      "id": "q8",
+      "text": "Aşağıdakilerden hangisi 'geniş' sözcüğünün zıt anlamlısıdır?",
+      "options": [
+        "Büyük",
+        "Dar",
+        "Uzun",
+        "Kısa"
+      ],
+      "correctIndex": 1,
+      "hint": "Bir alanın genişliğinin karşıtını düşün."
+    },
+    {
+      "id": "q9",
+      "text": "'Karanlık' sözcüğünün zıt anlamlısı nedir?",
+      "options": [
+        "Kara",
+        "Aydınlık",
+        "Gece",
+        "Loş"
+      ],
+      "correctIndex": 1,
+      "hint": "Işığın bol olduğu durumu ifade eden sözcüğü düşün."
+    },
+    {
+      "id": "q10",
+      "text": "Aşağıdaki sözcük çiftlerinden hangisi zıt anlamlıdır?",
+      "options": [
+        "Mutlu - sevinçli",
+        "Güzel - hoş",
+        "Kalabalık - tenha",
+        "Hızlı - süratli"
+      ],
+      "correctIndex": 2,
+      "hint": "Kalabalık bir yerin karşıtı, boş/az insanlı bir yer olur."
+    },
+    {
+      "id": "q11",
+      "text": "'Deniz gibi göz' ifadesinde hangi anlatım özelliği kullanılmıştır?",
+      "options": [
+        "Gerçek anlam",
+        "Benzetme",
+        "Zıt anlam",
+        "Terim anlam"
+      ],
+      "correctIndex": 1,
+      "hint": "Gözler, denize benzetiliyor."
+    },
+    {
+      "id": "q12",
+      "text": "Zorlayıcı soru: 'Kalbi taş kesildi.' cümlesinde altı çizili ifade neyi anlatmak için kullanılmıştır?",
+      "options": [
+        "Kalbin gerçekten taşa dönüştüğünü",
+        "Kişinin çok duygusuz/katı bir hâl aldığını",
+        "Kalp hastalığını",
+        "Kalbin ağırlaştığını"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu bir mecaz ifadedir, kişinin duygusal durumunu anlatır."
+    },
+    {
+      "id": "q13",
+      "text": "Aşağıdaki cümlelerden hangisinde bir soru cümlesi kullanılmıştır?",
+      "options": [
+        "Bugün hava çok güzel.",
+        "Saat kaç acaba?",
+        "Kitabımı okudum.",
+        "Yarın tatil."
+      ],
+      "correctIndex": 1,
+      "hint": "Bu cümle bir merak/soru ifade ediyor."
+    },
+    {
+      "id": "q14",
+      "text": "'Kalemin ucu kırıldı.' cümlesinde 'uç' sözcüğü hangi anlamda kullanılmıştır?",
+      "options": [
+        "Mecaz anlam",
+        "Gerçek anlam",
+        "Terim anlam",
+        "Zıt anlam"
+      ],
+      "correctIndex": 1,
+      "hint": "Kalemin gerçek bir ucu vardır, burada gerçek anlamda kullanılmıştır."
+    },
+    {
+      "id": "q15",
+      "text": "'Dağın eteğinde bir köy vardı.' cümlesinde 'etek' sözcüğü hangi anlamda kullanılmıştır?",
+      "options": [
+        "Gerçek anlam (giysi)",
+        "Mecaz anlam (dağın alt kısmı)",
+        "Terim anlam",
+        "Zıt anlam"
+      ],
+      "correctIndex": 1,
+      "hint": "Burada giysi anlamında değil, dağın bir bölümünü ifade eden bir kullanım var."
+    },
+    {
+      "id": "q16",
+      "text": "Aşağıdakilerden hangisi 'kolay' sözcüğünün zıt anlamlısıdır?",
+      "options": [
+        "Basit",
+        "Zor",
+        "Rahat",
+        "Hafif"
+      ],
+      "correctIndex": 1,
+      "hint": "Kolay olmayan durumu ifade eden sözcüğü düşün."
+    },
+    {
+      "id": "q17",
+      "text": "'Temiz' sözcüğünün zıt anlamlısı hangisidir?",
+      "options": [
+        "Parlak",
+        "Kirli",
+        "Düzenli",
+        "Yeni"
+      ],
+      "correctIndex": 1,
+      "hint": "Temizliğin karşıtı olan durumu düşün."
+    },
+    {
+      "id": "q18",
+      "text": "Zorlayıcı soru: 'Bu haberi duyunca çok üzüldüm.' cümlesindeki 'duymak' sözcüğü hangi anlamda kullanılmıştır?",
+      "options": [
+        "Sadece kulakla algılamak (gerçek anlam)",
+        "Öğrenmek/haberdar olmak (mecaz/genişlemiş anlam)",
+        "Hissetmek (dokunma anlamında)",
+        "Görmek"
+      ],
+      "correctIndex": 1,
+      "hint": "Burada 'duymak', bir bilgiyi öğrenmek anlamında kullanılmış, sadece işitme değil."
+    },
+    {
+      "id": "q19",
+      "text": "Aşağıdaki cümlelerden hangisinde bir ünlem cümlesi kullanılmıştır?",
+      "options": [
+        "Bugün okula gittim.",
+        "Ne kadar güzel bir manzara!",
+        "Saat kaçta geleceksin?",
+        "Kitabı okudum."
+      ],
+      "correctIndex": 1,
+      "hint": "Bu cümle bir hayranlık/şaşkınlık ifade ediyor."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Bu hafta okuduğun en sevdiğin kitap ya da hikaye hangisiydi?",
+    "options": [
+      "Bir kitap okudum",
+      "Henüz okumadım",
+      "Hatırlamıyorum",
+      "Söylemek istemiyorum"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

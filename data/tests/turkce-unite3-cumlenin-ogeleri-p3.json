@@ -1,0 +1,251 @@
+{
+  "id": "turkce-unite3-cumlenin-ogeleri-p3",
+  "subject": "Türkçe",
+  "title": "Ünite 3 - Cümlenin Ögeleri (3/4)",
+  "week": 3,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Aşağıdaki cümlelerin hangisinde özne gizlidir (açıkça yazılmamıştır)?",
+      "options": [
+        "Ben okula gittim.",
+        "Okula gittim.",
+        "Ali okula gitti.",
+        "Öğrenciler okula gitti."
+      ],
+      "correctIndex": 1,
+      "hint": "Bu cümlede özne yazılmamış ama fiildeki ekten (-m) anlaşılıyor."
+    },
+    {
+      "id": "q2",
+      "text": "Zorlayıcı soru: 'Yorgun ama mutlu bir şekilde eve döndük.' cümlesinde özne nedir?",
+      "options": [
+        "Yorgun",
+        "Mutlu",
+        "Biz (gizli özne)",
+        "Eve"
+      ],
+      "correctIndex": 2,
+      "hint": "'-k' kişi eki, hangi şahıs zamirini gösterir?"
+    },
+    {
+      "id": "q3",
+      "text": "'Deniz kenarında yürüdük.' cümlesinde 'deniz kenarında' hangi ögedir?",
+      "options": [
+        "Nesne",
+        "Dolaylı tümleç",
+        "Özne",
+        "Yüklem"
+      ],
+      "correctIndex": 1,
+      "hint": "'Nerede yürüdük?' sorusuna cevap veren ifade."
+    },
+    {
+      "id": "q4",
+      "text": "Bir cümlede aynı anda hem nesne hem dolaylı tümleç bulunabilir mi?",
+      "options": [
+        "Hayır, asla bir arada bulunamazlar",
+        "Evet, örneğin 'Ona kitabı verdim.' cümlesinde ikisi de vardır",
+        "Sadece soru cümlelerinde bir arada bulunabilirler",
+        "Bu bir kural değildir"
+      ],
+      "correctIndex": 1,
+      "hint": "'Ona' dolaylı tümleç, 'kitabı' nesnedir - aynı cümlede olabilirler."
+    },
+    {
+      "id": "q5",
+      "text": "'Ona kitabı verdim.' cümlesinde 'ona' hangi ögedir?",
+      "options": [
+        "Nesne",
+        "Dolaylı tümleç",
+        "Özne",
+        "Zarf tümleci"
+      ],
+      "correctIndex": 1,
+      "hint": "'Kime verdim?' sorusuna cevap veren kelime."
+    },
+    {
+      "id": "q6",
+      "text": "'Ona kitabı verdim.' cümlesinde 'kitabı' hangi ögedir?",
+      "options": [
+        "Nesne",
+        "Dolaylı tümleç",
+        "Özne",
+        "Zarf tümleci"
+      ],
+      "correctIndex": 0,
+      "hint": "'Neyi verdim?' sorusuna cevap veren kelime."
+    },
+    {
+      "id": "q7",
+      "text": "Aşağıdaki sorulardan hangisi özneyi bulmaya yardımcı olur?",
+      "options": [
+        "Ne zaman?",
+        "Kim/ne?",
+        "Nerede?",
+        "Nasıl?"
+      ],
+      "correctIndex": 1,
+      "hint": "Özneyi bulmak için eylemi kimin/neyin yaptığını sorarız."
+    },
+    {
+      "id": "q8",
+      "text": "Aşağıdaki sorulardan hangisi nesneyi bulmaya yardımcı olur?",
+      "options": [
+        "Ne zaman?",
+        "Neyi/kimi?",
+        "Nerede?",
+        "Kim?"
+      ],
+      "correctIndex": 1,
+      "hint": "Nesneyi bulmak için yüklemden etkilenen şeyi sorarız."
+    },
+    {
+      "id": "q9",
+      "text": "Aşağıdaki sorulardan hangisi zarf tümlecini bulmaya yardımcı olur?",
+      "options": [
+        "Kim?",
+        "Neyi?",
+        "Nasıl/Ne zaman/Ne kadar?",
+        "Kime?"
+      ],
+      "correctIndex": 2,
+      "hint": "Zarf tümleci, eylemin durumunu, zamanını veya derecesini gösterir."
+    },
+    {
+      "id": "q10",
+      "text": "Aşağıdaki sorulardan hangisi dolaylı tümleci bulmaya yardımcı olur?",
+      "options": [
+        "Kim?",
+        "Nasıl?",
+        "Kime/Nereye/Nerede/Nereden?",
+        "Ne kadar?"
+      ],
+      "correctIndex": 2,
+      "hint": "Dolaylı tümleç, yön ve yer bildiren hâl ekleriyle ilgili sorulara cevap verir."
+    },
+    {
+      "id": "q11",
+      "text": "Zorlayıcı soru: 'Sınıf başkanı arkadaşlarına önemli bir duyuruyu heyecanla yaptı.' cümlesinde 'heyecanla' hangi ögedir?",
+      "options": [
+        "Nesne",
+        "Dolaylı tümleç",
+        "Zarf tümleci",
+        "Özne"
+      ],
+      "correctIndex": 2,
+      "hint": "'Nasıl yaptı?' sorusuna cevap veren ifade, zarf tümlecidir."
+    },
+    {
+      "id": "q12",
+      "text": "Zorlayıcı soru: 'Sınıf başkanı arkadaşlarına önemli bir duyuruyu heyecanla yaptı.' cümlesinde özne hangisidir?",
+      "options": [
+        "Arkadaşlarına",
+        "Duyuruyu",
+        "Sınıf başkanı",
+        "Heyecanla"
+      ],
+      "correctIndex": 2,
+      "hint": "Duyuruyu kim yaptı?"
+    },
+    {
+      "id": "q13",
+      "text": "Aşağıdaki cümlelerin hangisinde yüklem başta yer alır (devrik cümle)?",
+      "options": [
+        "Ali okula gitti.",
+        "Gitti Ali okula.",
+        "Ali, okula erken gitti.",
+        "Okula giden Ali, erken vardı."
+      ],
+      "correctIndex": 1,
+      "hint": "Bu cümlede eylem ('gitti') en başta yer almış."
+    },
+    {
+      "id": "q14",
+      "text": "'Anlattı öğretmen dersi heyecanla.' cümlesi hangi tür cümledir?",
+      "options": [
+        "Kurallı cümle",
+        "Devrik cümle",
+        "Soru cümlesi",
+        "Ünlem cümlesi"
+      ],
+      "correctIndex": 1,
+      "hint": "Yüklem cümlenin başında yer alıyor, bu devrik cümle özelliğidir."
+    },
+    {
+      "id": "q15",
+      "text": "Bir cümlede özne olmadan (gizli özne bile olmadan) yüklem bulunabilir mi?",
+      "options": [
+        "Hayır, bir öznesi (açık veya gizli) olmalıdır",
+        "Evet, öznesiz cümle mümkündür",
+        "Bu konuda kesin bir kural yoktur",
+        "Yüklem hiçbir zaman özne gerektirmez"
+      ],
+      "correctIndex": 0,
+      "hint": "Her fiilin bir öznesi vardır, açıkça yazılmasa bile ekten anlaşılır."
+    },
+    {
+      "id": "q16",
+      "text": "'Kediler bahçede güneşleniyor.' cümlesinde 'bahçede' hangi ögedir?",
+      "options": [
+        "Nesne",
+        "Dolaylı tümleç",
+        "Özne",
+        "Yüklem"
+      ],
+      "correctIndex": 1,
+      "hint": "'Nerede güneşleniyor?' sorusuna cevap veren kelime."
+    },
+    {
+      "id": "q17",
+      "text": "Aşağıdaki cümlelerin hangisi bir isim cümlesidir?",
+      "options": [
+        "Ali koştu.",
+        "Bu araba çok hızlı.",
+        "Kuşlar uçtu.",
+        "Çocuklar oynadı."
+      ],
+      "correctIndex": 1,
+      "hint": "Bu cümlede yüklem 'hızlı' isim soylu bir kelimedir, fiil değildir."
+    },
+    {
+      "id": "q18",
+      "text": "Zorlayıcı soru: 'Küçük kardeşim geçen hafta parkta arkadaşlarıyla neşeyle oynadı.' cümlesinde kaç tane zarf tümleci vardır?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "0"
+      ],
+      "correctIndex": 1,
+      "hint": "'Geçen hafta' (zaman) ve 'neşeyle' (durum) olmak üzere iki zarf tümleci vardır - 'parkta' dolaylı tümleçtir, 'arkadaşlarıyla' ayrı bir tümleçtir."
+    },
+    {
+      "id": "q19",
+      "text": "'Bu kitabı çok beğendim.' cümlesinde nesne hangisidir?",
+      "options": [
+        "Bu kitabı",
+        "Çok",
+        "Beğendim",
+        "Hiçbiri"
+      ],
+      "correctIndex": 0,
+      "hint": "'Neyi beğendim?' sorusuna cevap veren ifade."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Cümle ögelerinden hangisini bulmak sana en kolay geliyor?",
+    "options": [
+      "Özne",
+      "Yüklem",
+      "Nesne",
+      "Tümleçler"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

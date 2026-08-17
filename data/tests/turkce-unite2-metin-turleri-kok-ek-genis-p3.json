@@ -1,0 +1,239 @@
+{
+  "id": "turkce-unite2-metin-turleri-kok-ek-genis-p3",
+  "subject": "Türkçe",
+  "title": "Ünite 2 - Metin Türleri, Kök ve Ekler (Geniş Havuz) (3/4)",
+  "week": 2,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Bir metinde 'kronolojik sıra' ne anlama gelir?",
+      "options": [
+        "Olayların önem sırasına göre anlatılması",
+        "Olayların zaman sırasına göre (önce-sonra) anlatılması",
+        "Olayların rastgele anlatılması",
+        "Sadece son olayın anlatılması"
+      ],
+      "correctIndex": 1,
+      "hint": "'Kronoloji' zamanla ilgili bir kavramdır."
+    },
+    {
+      "id": "q2",
+      "text": "Aşağıdakilerden hangisi bir günlüğün tipik özelliğidir?",
+      "options": [
+        "Resmi bir dille yazılması gerekir",
+        "Kişisel ve tarih belirtilerek yazılması",
+        "Başkaları için yazılması gerekir",
+        "Kurgusal olması gerekir"
+      ],
+      "correctIndex": 1,
+      "hint": "Günlükler genellikle kişisel düşünce ve deneyimleri, günü belirterek anlatır."
+    },
+    {
+      "id": "q3",
+      "text": "'Öğret-men' kelimesinde kök ve ek nasıl ayrılır?",
+      "options": [
+        "Öğret (kök) + men (ek)",
+        "Öğ (kök) + retmen (ek)",
+        "Öğretmen tamamı kök",
+        "Ayrılamaz"
+      ],
+      "correctIndex": 0,
+      "hint": "'Öğret-' fiil kökü, '-men' ise mesleği belirten bir yapım ekidir."
+    },
+    {
+      "id": "q4",
+      "text": "Zorlayıcı soru: Bir öğrenci, okuduğu bir metnin hem gerçek bir olayı anlattığını hem de tarih ve yer belirttiğini fark ediyor. Bu metin hangi tür olabilir?",
+      "options": [
+        "Masal",
+        "Fabl",
+        "Haber metni veya anı",
+        "Şiir"
+      ],
+      "correctIndex": 2,
+      "hint": "Gerçek olaylar ve belirli tarih/yer bilgisi, kurgusal türlerden çok bilgilendirici/anı türlerine işaret eder."
+    },
+    {
+      "id": "q5",
+      "text": "Aşağıdakilerden hangisi bir 'anı' metninin özelliğidir?",
+      "options": [
+        "Yazarın kendi yaşadığı ve hatırladığı olayları anlatması",
+        "Tamamen hayal ürünü olması",
+        "Sadece gelecekle ilgili olması",
+        "Resmi bir başvuru olması"
+      ],
+      "correctIndex": 0,
+      "hint": "Anılar, kişinin geçmişte yaşadığı ve hatırladığı deneyimleri anlatır."
+    },
+    {
+      "id": "q6",
+      "text": "'Bilgisayar' kelimesi hangi iki kelimenin birleşiminden türetilmiş olabilir?",
+      "options": [
+        "Bilgi + sayar",
+        "Bil + gisayar",
+        "Bilgisa + yar",
+        "Hiçbiri"
+      ],
+      "correctIndex": 0,
+      "hint": "Bu kelime, 'bilgi' ve 'saymak' fiilinin bir araya gelmesiyle oluşmuştur."
+    },
+    {
+      "id": "q7",
+      "text": "Aşağıdakilerden hangisi haber metninin temel sorularından biri DEĞİLDİR?",
+      "options": [
+        "Ne oldu?",
+        "Nerede oldu?",
+        "Hangi renk?",
+        "Ne zaman oldu?"
+      ],
+      "correctIndex": 2,
+      "hint": "Haber metinleri 5N1K (ne, nerede, ne zaman, nasıl, neden, kim) sorularına cevap verir, renk bunlardan biri değildir."
+    },
+    {
+      "id": "q8",
+      "text": "'Su-cu' kelimesinde '-cu' eki ne anlam katar?",
+      "options": [
+        "Küçültme anlamı",
+        "Meslek/satıcı anlamı",
+        "Çoğul anlamı",
+        "Zıt anlam"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu ek, genellikle bir şeyi satan/yapan kişi anlamı katar (sütçü, gazeteci gibi)."
+    },
+    {
+      "id": "q9",
+      "text": "Aşağıdakilerden hangisi '-lik/-lık' ekiyle türetilmiş bir kelimedir?",
+      "options": [
+        "Kitaplık",
+        "Kitaplar",
+        "Kitaba",
+        "Kitaptan"
+      ],
+      "correctIndex": 0,
+      "hint": "Bu ek, bir şeyin saklandığı/bulunduğu yeri belirtir (kitaplık, tuzluk gibi)."
+    },
+    {
+      "id": "q10",
+      "text": "Zorlayıcı soru: 'Öğrenci-ler-imiz-in kitap-lar-ı' ifadesinde kaç farklı kelime kökü bulunur?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctIndex": 1,
+      "hint": "'Öğrenci' ve 'kitap' olmak üzere iki farklı kök vardır, geri kalanı ektir."
+    },
+    {
+      "id": "q11",
+      "text": "Aşağıdakilerden hangisi bir tiyatro metninin özelliğidir?",
+      "options": [
+        "Sadece anlatıcı sesiyle aktarılır",
+        "Karakterlerin konuşmaları ve sahne yönergeleri içerir",
+        "Şiirsel ölçüye uymak zorundadır",
+        "Gerçek olay olmak zorundadır"
+      ],
+      "correctIndex": 1,
+      "hint": "Tiyatro metinlerinde karakterlerin ne söyleyeceği ve nasıl hareket edeceği belirtilir."
+    },
+    {
+      "id": "q12",
+      "text": "'Sev-gi' kelimesinde kök ve ek nasıl ayrılır?",
+      "options": [
+        "Sev (kök) + gi (ek)",
+        "Se (kök) + vgi (ek)",
+        "Sevgi tamamı kök",
+        "Ayrılamaz"
+      ],
+      "correctIndex": 0,
+      "hint": "'Sev-' fiil kökü, '-gi' ise isim yapan bir yapım ekidir."
+    },
+    {
+      "id": "q13",
+      "text": "Aşağıdakilerden hangisi bilgilendirici metin türlerinden biri DEĞİLDİR?",
+      "options": [
+        "Form",
+        "Fabl",
+        "İlan",
+        "Grafik"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu tür, öyküleyici (kurgusal) bir metin türüdür, bilgilendirici değil."
+    },
+    {
+      "id": "q14",
+      "text": "Bir 'reklam' metninin temel amacı nedir?",
+      "options": [
+        "Bir ürünü veya hizmeti tanıtıp satın almaya teşvik etmek",
+        "Sadece eğlendirmek",
+        "Bir olayı tarafsız anlatmak",
+        "Kişisel duyguları paylaşmak"
+      ],
+      "correctIndex": 0,
+      "hint": "Reklamlar, genellikle bir şeyi satmak veya tanıtmak amacı taşır."
+    },
+    {
+      "id": "q15",
+      "text": "'Öğren-ci' kelimesinde '-ci' eki hangi anlamı katar?",
+      "options": [
+        "Meslek/eylemi yapan kişi anlamı",
+        "Küçültme anlamı",
+        "Çoğul anlamı",
+        "Zıt anlam"
+      ],
+      "correctIndex": 0,
+      "hint": "'Öğrenmek' eylemini yapan kişiyi belirtir."
+    },
+    {
+      "id": "q16",
+      "text": "Aşağıdakilerden hangisi bir 'form' metninin kullanım amacıdır?",
+      "options": [
+        "Duygusal bir hikaye anlatmak",
+        "Belirli bilgileri düzenli bir şekilde toplamak",
+        "Şiirsel anlatım yapmak",
+        "Masal anlatmak"
+      ],
+      "correctIndex": 1,
+      "hint": "Formlar, isim, adres gibi bilgileri düzenli bir şekilde kaydetmek için kullanılır."
+    },
+    {
+      "id": "q17",
+      "text": "Bir kelimenin köküne gelen ilk yapım eki neyi değiştirir?",
+      "options": [
+        "Hiçbir şeyi değiştirmez",
+        "Kelimenin temel anlamını veya türünü değiştirebilir",
+        "Sadece kelimenin uzunluğunu değiştirir",
+        "Kelimeyi siler"
+      ],
+      "correctIndex": 1,
+      "hint": "Örneğin 'göz' (isim) + '-le' eki 'gözle-' (fiil) yapabilir."
+    },
+    {
+      "id": "q18",
+      "text": "'Sınıf-ta' kelimesindeki '-ta' eki hangi tür ektir?",
+      "options": [
+        "Yapım eki",
+        "Çekim eki (durum/hâl eki)",
+        "Kök",
+        "Hiçbiri"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu ek, kelimenin 'nerede' olduğunu belirtir, yeni bir kelime türetmez."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: En sevdiğin metin türü hangisi (masal, fabl, haber vb.)?",
+    "options": [
+      "Masal",
+      "Fabl",
+      "Haber metni",
+      "Diğer"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

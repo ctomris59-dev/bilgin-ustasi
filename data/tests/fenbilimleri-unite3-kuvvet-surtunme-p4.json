@@ -1,0 +1,239 @@
+{
+  "id": "fenbilimleri-unite3-kuvvet-surtunme-p4",
+  "subject": "Fen Bilimleri",
+  "title": "Ünite 3 - Kuvvetin Ölçülmesi ve Sürtünme (4/4)",
+  "week": 3,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Bir kar topunun düz bir zeminde daha kolay yuvarlanmasının sebebi nedir?",
+      "options": [
+        "Kar topu hafiftir",
+        "Düz zeminlerde sürtünme genellikle daha azdır",
+        "Kar topu manyetiktir",
+        "Hiçbir sebep yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Engebeli/pürüzlü zeminlerde yuvarlanmak daha zordur."
+    },
+    {
+      "id": "q2",
+      "text": "Bir kayak sporcusunun kayaklarına özel cila sürülmesinin amacı nedir?",
+      "options": [
+        "Kayakları ağırlaştırmak",
+        "Kar ile kayak arasındaki sürtünmeyi azaltmak",
+        "Kayakları renklendirmek",
+        "Sürtünmeyi artırmak"
+      ],
+      "correctIndex": 1,
+      "hint": "Daha az sürtünme, sporcunun daha hızlı kaymasını sağlar."
+    },
+    {
+      "id": "q3",
+      "text": "Zorlayıcı soru: Bir cisim hem yerde sürükleniyor hem de havada hareket ediyor olsaydı, hangi tür sürtünmeyle karşılaşırdı?",
+      "options": [
+        "Sadece yerle olan sürtünme",
+        "Hem yerle olan sürtünme hem hava direnci (hava sürtünmesi)",
+        "Hiçbir sürtünme olmazdı",
+        "Sadece hava direnci"
+      ],
+      "correctIndex": 1,
+      "hint": "Cisim aynı anda birden fazla ortamla temas hâlindeyse, birden fazla sürtünme etkisi olabilir."
+    },
+    {
+      "id": "q4",
+      "text": "Aşağıdakilerden hangisi 'kütlesi küçük' bir cisme örnektir?",
+      "options": [
+        "Bir fil",
+        "Bir karınca",
+        "Bir otomobil",
+        "Bir bina"
+      ],
+      "correctIndex": 1,
+      "hint": "Küçük ve hafif cisimlerin kütlesi de küçüktür."
+    },
+    {
+      "id": "q5",
+      "text": "Bir cisim suya batırıldığında, suyun cisme uyguladığı ve onu yukarı doğru iten kuvvete ne denir? (Genel bilgi)",
+      "options": [
+        "Sürtünme kuvveti",
+        "Kaldırma kuvveti",
+        "Yerçekimi kuvveti",
+        "Manyetik kuvvet"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu kuvvet, cisimlerin suda daha hafif hissettirmesini sağlar."
+    },
+    {
+      "id": "q6",
+      "text": "Aşağıdakilerden hangisi kuvvetin günlük hayatta kullanıldığı bir örnek DEĞİLDİR?",
+      "options": [
+        "Bir arabayı sürmek",
+        "Bir topu tekmelemek",
+        "Bir şarkı dinlemek",
+        "Bir kapıyı itmek"
+      ],
+      "correctIndex": 2,
+      "hint": "Müzik dinlemek, fiziksel bir kuvvet uygulaması değildir."
+    },
+    {
+      "id": "q7",
+      "text": "Zorlayıcı soru: Bir öğrenci iki özdeş kutuyu, birini pürüzsüz masada, diğerini halı üzerinde itiyor. Hangisini itmek daha az kuvvet gerektirir?",
+      "options": [
+        "Pürüzsüz masadaki kutu",
+        "Halı üzerindeki kutu",
+        "İkisi de aynı kuvveti gerektirir",
+        "Hiçbirini itmek mümkün değildir"
+      ],
+      "correctIndex": 0,
+      "hint": "Pürüzsüz yüzeylerde sürtünme az olduğu için daha az kuvvet yeterlidir."
+    },
+    {
+      "id": "q8",
+      "text": "Bir cismin ağırlığı arttıkça, o cisimle yer arasındaki sürtünme kuvveti genellikle nasıl değişir?",
+      "options": [
+        "Azalır",
+        "Artar",
+        "Hiç değişmez",
+        "Sıfır olur"
+      ],
+      "correctIndex": 1,
+      "hint": "Daha ağır cisimler, yüzeye daha fazla baskı yapar, bu da sürtünmeyi artırabilir."
+    },
+    {
+      "id": "q9",
+      "text": "Aşağıdakilerden hangisi 'Newton' biriminin kullanıldığı bir ölçümdür?",
+      "options": [
+        "Bir kitabın uzunluğu",
+        "Bir çantanın ağırlığı",
+        "Bir yolculuğun süresi",
+        "Bir odanın sıcaklığı"
+      ],
+      "correctIndex": 1,
+      "hint": "Ağırlık, bir kuvvet olduğu için Newton biriminde ölçülür."
+    },
+    {
+      "id": "q10",
+      "text": "Bir sporcu koşu ayakkabısı yerine terlikle koşarsa ne olabilir?",
+      "options": [
+        "Hiçbir fark olmaz",
+        "Sürtünme yetersiz kalabilir ve kayma riski artabilir",
+        "Daha hızlı koşar",
+        "Terlikler sürtünmeyi çok fazla artırır"
+      ],
+      "correctIndex": 1,
+      "hint": "Koşu ayakkabılarının tabanı, özel olarak yeterli sürtünme sağlayacak şekilde tasarlanmıştır."
+    },
+    {
+      "id": "q11",
+      "text": "Bir cisme uygulanan kuvvetin büyüklüğü arttıkça, cismin hareketi (hareketsizken) genellikle nasıl etkilenir?",
+      "options": [
+        "Hiç etkilenmez",
+        "Daha büyük kuvvet, cismi daha kolay hareket ettirebilir",
+        "Cisim asla hareket etmez",
+        "Cisim küçülür"
+      ],
+      "correctIndex": 1,
+      "hint": "Daha büyük bir kuvvet, sürtünmeyi yenip cismi hareket ettirmede daha etkilidir."
+    },
+    {
+      "id": "q12",
+      "text": "Aşağıdakilerden hangisi doğru bir örnek eşleştirmesidir?",
+      "options": [
+        "İtme kuvveti - bir çekmeceyi kendine doğru çekmek",
+        "Çekme kuvveti - bir arabayı öne doğru itmek",
+        "İtme kuvveti - bir kapıyı iterek kapatmak",
+        "Çekme kuvveti - bir topu tekmelemek"
+      ],
+      "correctIndex": 2,
+      "hint": "Kapıyı kapatmak için onu kendinden uzağa doğru iteriz."
+    },
+    {
+      "id": "q13",
+      "text": "Bir bilim insanı bir cismin kütlesini ölçmek istiyor ama elinde sadece dinamometre var. Bu mümkün müdür?",
+      "options": [
+        "Evet, dinamometre hem kütle hem ağırlık ölçer",
+        "Hayır, dinamometre kuvvet (ağırlık) ölçer, kütle için terazi gerekir",
+        "Kütle hiçbir aletle ölçülemez",
+        "Dinamometre sadece sıcaklık ölçer"
+      ],
+      "correctIndex": 1,
+      "hint": "Dinamometre kuvvet ölçer; kütle ölçmek için farklı bir araç (terazi) gerekir."
+    },
+    {
+      "id": "q14",
+      "text": "Zorlayıcı soru: Sürtünme kuvveti olmasaydı, yürümek mümkün olur muydu?",
+      "options": [
+        "Evet, çok daha kolay yürünürdü",
+        "Hayır, ayaklarımız yerde kayar ve ilerleyemezdik",
+        "Sürtünmenin yürümekle ilgisi yoktur",
+        "Yürümek için sürtünmeye gerek yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Yürürken ayaklarımız yere sürtünme sayesinde tutunur ve bizi ileri itebiliriz."
+    },
+    {
+      "id": "q15",
+      "text": "Aşağıdakilerden hangisi bir 'kuvvet ölçer' aracın diğer adıdır?",
+      "options": [
+        "Termometre",
+        "Dinamometre",
+        "Barometre",
+        "Higrometre"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu, kuvveti (ağırlığı) ölçen bilimsel bir araçtır."
+    },
+    {
+      "id": "q16",
+      "text": "Bir masa üzerindeki kitap neden aşağı düşmez?",
+      "options": [
+        "Kitabın ağırlığı yoktur",
+        "Masa, kitabın ağırlığına eşit bir destek (tepki) kuvveti uygular",
+        "Yerçekimi kitaba etki etmez",
+        "Kitap havada asılı kalır"
+      ],
+      "correctIndex": 1,
+      "hint": "Masa, kitabı desteklerken yerçekimine karşı bir tepki kuvveti uygular, bu dengeyi sağlar."
+    },
+    {
+      "id": "q17",
+      "text": "Zorlayıcı soru: Bir cisim hem itiliyor hem de sürtünme kuvveti ona karşı etki ediyor. Cismin hareket etmesi için ne olmalıdır?",
+      "options": [
+        "İtme kuvveti sürtünme kuvvetinden büyük olmalı",
+        "Sürtünme kuvveti her zaman kazanır",
+        "İtme kuvveti hiç gerekmez",
+        "İkisi eşit olmalı ki hareket etsin"
+      ],
+      "correctIndex": 0,
+      "hint": "Cismin hareket edebilmesi için itme kuvvetinin, karşı koyan sürtünme kuvvetini yenmesi gerekir."
+    },
+    {
+      "id": "q18",
+      "text": "Aşağıdakilerden hangisi doğru bir ifadedir?",
+      "options": [
+        "Sürtünme her zaman zararlıdır",
+        "Sürtünme hem faydalı hem zararlı olabilir, duruma göre değişir",
+        "Sürtünme sadece Dünya'da vardır",
+        "Sürtünme sadece katı cisimlerde görülür"
+      ],
+      "correctIndex": 1,
+      "hint": "Yürümek için sürtünme faydalıyken, makine aşınması için zararlıdır - bağlama göre değişir."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Bugün hangi kuvveti (itme/çekme) en çok kullandın?",
+    "options": [
+      "İtme",
+      "Çekme",
+      "İkisini de kullandım",
+      "Hatırlamıyorum"
+    ],
+    "correctIndex": 2,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

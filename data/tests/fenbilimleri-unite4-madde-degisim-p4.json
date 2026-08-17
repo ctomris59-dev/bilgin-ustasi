@@ -1,0 +1,239 @@
+{
+  "id": "fenbilimleri-unite4-madde-degisim-p4",
+  "subject": "Fen Bilimleri",
+  "title": "Ünite 4 - Madde ve Değişim (4/4)",
+  "week": 4,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Zorlayıcı soru: Bir gazın hacmi azaltılırsa (sıkıştırılırsa) ne olur?",
+      "options": [
+        "Tanecikler kaybolur",
+        "Tanecikler birbirine yaklaşır",
+        "Tanecik sayısı artar",
+        "Hiçbir şey olmaz"
+      ],
+      "correctIndex": 1,
+      "hint": "Sıkıştırma, taneciklerin arasındaki boşluğu azaltır, tanecik sayısını değiştirmez."
+    },
+    {
+      "id": "q2",
+      "text": "Aşağıdakilerden hangisi maddenin 'ısı alışverişi ile hâl değiştirmesine' örnek DEĞİLDİR?",
+      "options": [
+        "Buzun erimesi",
+        "Suyun kaynaması",
+        "Bir kitabın sayfalarının yırtılması",
+        "Suyun donması"
+      ],
+      "correctIndex": 2,
+      "hint": "Yırtılma, fiziksel bir kuvvet sonucu oluşur, ısı alışverişiyle ilgili değildir."
+    },
+    {
+      "id": "q3",
+      "text": "Aşağıdakilerden hangisi doğru bir sıralamadır (tanecikler arası boşluk azdan çoğa)?",
+      "options": [
+        "Gaz < Sıvı < Katı",
+        "Katı < Sıvı < Gaz",
+        "Sıvı < Katı < Gaz",
+        "Hepsi eşittir"
+      ],
+      "correctIndex": 1,
+      "hint": "Katıda en az boşluk, gazda en çok boşluk vardır."
+    },
+    {
+      "id": "q4",
+      "text": "Bir çelik köprünün yazın hafifçe uzayıp kışın kısalmasının sebebi nedir?",
+      "options": [
+        "Metal genleşme ve büzülme özelliği gösterir (sıcaklığa bağlı)",
+        "Köprü her zaman aynı boyuttadır",
+        "Bu bir hayal ürünüdür, gerçekte olmaz",
+        "Sadece yağmur etkiler"
+      ],
+      "correctIndex": 0,
+      "hint": "Sıcaklık arttıkça metaller genleşir (uzar), soğukta büzülür (kısalır)."
+    },
+    {
+      "id": "q5",
+      "text": "Zorlayıcı soru: Bir tren rayının parçaları arasında neden küçük boşluklar bırakılır?",
+      "options": [
+        "Estetik için",
+        "Sıcak havada genleşen metalin boşluğa sığması, aksi hâlde ray bükülebilir",
+        "Boşluklar tesadüfen oluşur",
+        "Trenlerin daha hızlı gitmesi için"
+      ],
+      "correctIndex": 1,
+      "hint": "Metal genleşmesi hesaba katılmazsa raylar yaz sıcağında bükülebilir."
+    },
+    {
+      "id": "q6",
+      "text": "Aşağıdakilerden hangisi 'hâl değişiminin geri döndürülebilir' olduğunu gösteren bir örnektir?",
+      "options": [
+        "Suyun donup sonra tekrar erimesi",
+        "Bir yumurtanın pişirilmesi",
+        "Kağıdın yanması",
+        "Sütün ekşimesi"
+      ],
+      "correctIndex": 0,
+      "hint": "Su, dondurulup sonra tekrar eritilebilir - bu geri dönüşümlü bir fiziksel değişimdir."
+    },
+    {
+      "id": "q7",
+      "text": "Yumurtanın pişmesi gibi bazı değişimler neden 'geri döndürülemez'?",
+      "options": [
+        "Çünkü madde tamamen yeni bir kimyasal yapıya dönüşür",
+        "Çünkü çok soğuktur",
+        "Çünkü ısı hiç etkili değildir",
+        "Aslında geri döndürülebilir"
+      ],
+      "correctIndex": 0,
+      "hint": "Pişmiş yumurta tekrar çiğ hâle getirilemez çünkü kimyasal bir değişim geçirmiştir."
+    },
+    {
+      "id": "q8",
+      "text": "Aşağıdakilerden hangisi 'fiziksel değişime' bir örnektir (madde türü değişmez)?",
+      "options": [
+        "Kağıdın yanması",
+        "Suyun buharlaşması",
+        "Demirin paslanması",
+        "Sütün ekşimesi"
+      ],
+      "correctIndex": 1,
+      "hint": "Su buharlaştığında hâlini değiştirir ama hâlâ sudur, yeni bir madde oluşmaz."
+    },
+    {
+      "id": "q9",
+      "text": "Aşağıdakilerden hangisi 'kimyasal değişime' bir örnektir (yeni madde oluşur)?",
+      "options": [
+        "Suyun donması",
+        "Buzun erimesi",
+        "Odunun yanıp küle dönüşmesi",
+        "Suyun buharlaşması"
+      ],
+      "correctIndex": 2,
+      "hint": "Yanma, orijinal maddeyi tamamen farklı yeni maddelere (kül, gaz) dönüştürür."
+    },
+    {
+      "id": "q10",
+      "text": "Zorlayıcı soru: Bir maddenin hem fiziksel hem kimyasal değişime uğrayabileceği bir örnek düşünelim - mumun yanması. Bu süreçte ne olur?",
+      "options": [
+        "Sadece fiziksel değişim olur (erime)",
+        "Hem erime (fiziksel) hem yanma (kimyasal) birlikte gerçekleşir",
+        "Hiçbir değişim olmaz",
+        "Sadece kimyasal değişim olur"
+      ],
+      "correctIndex": 1,
+      "hint": "Mum önce erir (fiziksel), sonra yanarak farklı gazlara dönüşür (kimyasal)."
+    },
+    {
+      "id": "q11",
+      "text": "Aşağıdakilerden hangisi maddenin hâl değişiminde KAYBOLMAYAN bir özelliktir?",
+      "options": [
+        "Şekli",
+        "Kütlesi (madde miktarı)",
+        "Hacmi her zaman",
+        "Yoğunluğu her zaman"
+      ],
+      "correctIndex": 1,
+      "hint": "Hâl değişiminde madde miktarı (kütle) korunur, şekil ve bazen hacim değişebilir."
+    },
+    {
+      "id": "q12",
+      "text": "Bir cam bardağın neden ısıya dayanıklı özel camdan yapılması önerilir (sıcak sıvılar için)?",
+      "options": [
+        "Sıradan cam, ani sıcaklık değişimlerinde çatlayabilir",
+        "Sıradan cam daha pahalıdır",
+        "Sıradan cam rengi değişir",
+        "Hiçbir farkı yoktur"
+      ],
+      "correctIndex": 0,
+      "hint": "Ani genleşme farkları, sıradan camda çatlaklara yol açabilir."
+    },
+    {
+      "id": "q13",
+      "text": "Aşağıdakilerden hangisi 'ısı iletkenliği' yüksek bir malzemedir?",
+      "options": [
+        "Tahta",
+        "Bakır",
+        "Strafor",
+        "Kumaş"
+      ],
+      "correctIndex": 1,
+      "hint": "Metaller genellikle ısıyı iyi iletir, bu yüzden tencere tabanlarında kullanılır."
+    },
+    {
+      "id": "q14",
+      "text": "Bir termos neden içindeki sıvının sıcaklığını uzun süre koruyabilir?",
+      "options": [
+        "İçi boş olduğu için",
+        "Özel yalıtım katmanları ısı kaybını/alışını yavaşlatır",
+        "Termoslar ısı üretir",
+        "Hiçbir bilimsel sebebi yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Termoslar, ısının dışarı kaçmasını veya içeri girmesini yavaşlatan bir tasarıma sahiptir."
+    },
+    {
+      "id": "q15",
+      "text": "Zorlayıcı soru: Bir öğrenci iki özdeş bardağa aynı miktarda sıcak su koyuyor, birini termosa birini normal bardağa koyuyor. 1 saat sonra hangisi daha sıcak olur?",
+      "options": [
+        "Normal bardaktaki su",
+        "Termostaki su",
+        "İkisi de aynı sıcaklıkta olur",
+        "İkisi de tamamen soğur"
+      ],
+      "correctIndex": 1,
+      "hint": "Termosun yalıtımı, ısı kaybını yavaşlatır."
+    },
+    {
+      "id": "q16",
+      "text": "Aşağıdakilerden hangisi doğru bir ifadedir?",
+      "options": [
+        "Tüm maddeler aynı sıcaklıkta erir",
+        "Farklı maddelerin erime ve kaynama noktaları farklıdır",
+        "Erime noktası her madde için 0 derecedir",
+        "Kaynama noktası her madde için 100 derecedir"
+      ],
+      "correctIndex": 1,
+      "hint": "Her maddenin kendine özgü erime ve kaynama sıcaklığı vardır."
+    },
+    {
+      "id": "q17",
+      "text": "Bir maddenin 'ısı sığası/kapasitesi' yüksekse ne anlama gelir (genel fikir)?",
+      "options": [
+        "Çok çabuk ısınır",
+        "Isınması için daha fazla ısı enerjisi gerekir",
+        "Hiç ısınmaz",
+        "Sadece soğuyabilir"
+      ],
+      "correctIndex": 1,
+      "hint": "Yüksek ısı kapasiteli maddeler, sıcaklıklarını değiştirmek için daha fazla enerjiye ihtiyaç duyar."
+    },
+    {
+      "id": "q18",
+      "text": "Suyun ısı kapasitesinin yüksek olması, denizlerin/okyanusların iklim üzerindeki etkisiyle nasıl ilişkilidir?",
+      "options": [
+        "Hiçbir ilişkisi yoktur",
+        "Denizler yavaş ısınıp yavaş soğuduğu için kıyı bölgelerin iklimini dengeler",
+        "Denizler hiç ısı almaz",
+        "Denizler her zaman donmuş hâldedir"
+      ],
+      "correctIndex": 1,
+      "hint": "Suyun yüksek ısı kapasitesi, kıyı iklimlerini daha ılıman yapmaya yardımcı olur."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Bugün hangi hâl değişimini gözlemledin (buz erimesi, su buharlaşması vb.)?",
+    "options": [
+      "Erime",
+      "Buharlaşma",
+      "Donma",
+      "Hiçbirini gözlemlemedim"
+    ],
+    "correctIndex": 3,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

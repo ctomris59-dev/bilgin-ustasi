@@ -1,0 +1,239 @@
+{
+  "id": "turkce-unite6-siir-bilgisi-yazim-kurallari-p4",
+  "subject": "Türkçe",
+  "title": "Ünite 6 - Şiir Bilgisi ve Yazım Kuralları (4/4)",
+  "week": 6,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Bir şiirin başlığı neden önemlidir?",
+      "options": [
+        "Hiçbir önemi yoktur",
+        "Şiirin konusuna veya temasına dair bir ipucu verebilir",
+        "Sadece süs amaçlıdır",
+        "Şiirin uzunluğunu gösterir"
+      ],
+      "correctIndex": 1,
+      "hint": "Başlıklar genellikle okuyucuyu şiirin içeriğine hazırlar."
+    },
+    {
+      "id": "q2",
+      "text": "Aşağıdakilerden hangisi doğru bir yazım kuralına örnektir?",
+      "options": [
+        "'Çankaya'ya gittim.' (kesme işaretiyle)",
+        "'Çankayaya gittim.' (kesmesiz)",
+        "'çankaya'ya gittim.' (küçük harfle)",
+        "'ÇANKAYA'ya Gittim.' (karışık büyük-küçük)"
+      ],
+      "correctIndex": 0,
+      "hint": "Özel isme gelen ek, kesme işaretiyle ayrılır ve özel isim büyük harfle başlar."
+    },
+    {
+      "id": "q3",
+      "text": "Bir metinde tutarlı ve doğru yazım kullanmanın önemi nedir?",
+      "options": [
+        "Hiçbir önemi yoktur",
+        "Metnin profesyonel, anlaşılır ve güvenilir görünmesini sağlar",
+        "Metni uzatır sadece",
+        "Anlamı değiştirmez"
+      ],
+      "correctIndex": 1,
+      "hint": "Doğru yazım, yazılı iletişimin kalitesini artırır."
+    },
+    {
+      "id": "q4",
+      "text": "'Herşey' yazımı doğru mudur?",
+      "options": [
+        "Evet, bitişik yazılır",
+        "Hayır, 'her şey' ayrı yazılır",
+        "Her iki yazım da doğrudur",
+        "Bu kelime hiç kullanılmaz"
+      ],
+      "correctIndex": 1,
+      "hint": "'Her' belirteci, çoğu durumda kendinden sonraki kelimeden ayrı yazılır."
+    },
+    {
+      "id": "q5",
+      "text": "'Hiç bir şey' mi yoksa 'hiçbir şey' mi doğru yazımdır?",
+      "options": [
+        "Hiç bir şey (ayrı)",
+        "Hiçbir şey ('hiçbir' bitişik, 'şey' ayrı)",
+        "Hiçbirşey (tamamen bitişik)",
+        "Hiçbir de doğru hiç bir de doğru"
+      ],
+      "correctIndex": 1,
+      "hint": "'Hiçbir' kelimesi bitişik yazılan bir kelimedir, 'şey' ise ayrı bir kelimedir."
+    },
+    {
+      "id": "q6",
+      "text": "Zorlayıcı soru: 'Bu gün hava çok güzel.' cümlesinde bir yazım hatası var mıdır?",
+      "options": [
+        "Hayır, doğrudur",
+        "Evet, 'bugün' (zaman zarfı anlamında) bitişik yazılmalıdır",
+        "Cümlenin tamamı yanlıştır",
+        "Hiçbir kural bu konuda yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "'Bugün' kelime, 'bu gün' (işaret sıfatı + isim) anlamından farklı olarak zaman zarfı anlamında bitişik yazılır."
+    },
+    {
+      "id": "q7",
+      "text": "'Bu gün' (ayrı) ile 'bugün' (bitişik) arasındaki anlam farkı nedir?",
+      "options": [
+        "Hiçbir fark yoktur",
+        "'Bugün' zaman zarfıdır (today), 'bu gün' belirli bir günü işaret eder (this day)",
+        "İkisi de aynı anlama gelir her zaman",
+        "Sadece yazım farkı var, anlam aynı"
+      ],
+      "correctIndex": 1,
+      "hint": "Bağlama göre bu iki yazım farklı anlamlar taşıyabilir."
+    },
+    {
+      "id": "q8",
+      "text": "Aşağıdaki kelimelerden hangisi doğru yazılmıştır?",
+      "options": [
+        "Yanlız",
+        "Yalnız",
+        "Yanlız (tekrar)",
+        "İkisi de yanlış"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu kelimenin doğru yazımını hatırla: 'yalnız'."
+    },
+    {
+      "id": "q9",
+      "text": "Aşağıdaki kelimelerden hangisi doğru yazılmıştır?",
+      "options": [
+        "Herkez",
+        "Herkes",
+        "Herkez (tekrar)",
+        "İkisi de yanlış"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu kelimenin doğru yazımı 'herkes' şeklindedir."
+    },
+    {
+      "id": "q10",
+      "text": "'Çok şükür' ifadesindeki 'çok' kelimesi nasıl yazılır?",
+      "options": [
+        "Ayrı yazılır (çok şükür)",
+        "Bitişik yazılır (çokşükür)",
+        "Kısaltma ile yazılır",
+        "Hiçbir kural yoktur"
+      ],
+      "correctIndex": 0,
+      "hint": "Bu, iki ayrı kelimeden oluşan bir ifadedir."
+    },
+    {
+      "id": "q11",
+      "text": "Zorlayıcı soru: Bir öğrenci yazdığı bir şiirde 'gökyüzü', 'çok güzel' ve 'her zaman' kelimelerini kullanıyor. Bunlardan hangisi bitişik yazılması gereken bir kelimedir?",
+      "options": [
+        "Gökyüzü",
+        "Çok güzel",
+        "Her zaman",
+        "Hiçbiri bitişik yazılmaz"
+      ],
+      "correctIndex": 0,
+      "hint": "'Gök' ve 'yüzü' kelimeleri birleşerek kalıplaşmış bir kelime oluşturur, bu yüzden bitişik yazılır."
+    },
+    {
+      "id": "q12",
+      "text": "Aşağıdakilerden hangisi doğru bir kısaltma kullanımıdır?",
+      "options": [
+        "Kg. (nokta ile)",
+        "kg (noktasız, küçük harf)",
+        "KG.",
+        "Kg"
+      ],
+      "correctIndex": 1,
+      "hint": "Ölçü birimlerinin kısaltmaları genellikle küçük harfle ve noktasız yazılır."
+    },
+    {
+      "id": "q13",
+      "text": "'TL' kısaltması hangi ölçü biriminin kısaltmasıdır?",
+      "options": [
+        "Türk Lirası (para birimi)",
+        "Türkiye Lokasyonu",
+        "Toplam Litre",
+        "Hiçbiri"
+      ],
+      "correctIndex": 0,
+      "hint": "Bu kısaltma, ülkemizin para birimini temsil eder."
+    },
+    {
+      "id": "q14",
+      "text": "Bir şiirde 'imge' kullanmanın amacı nedir?",
+      "options": [
+        "Hiçbir amacı yoktur",
+        "Okuyucunun zihninde canlı bir görüntü veya duygu uyandırmak",
+        "Şiiri uzatmak",
+        "Şiiri anlaşılmaz yapmak"
+      ],
+      "correctIndex": 1,
+      "hint": "İmgeler, soyut duyguları somut ve etkileyici bir şekilde ifade etmeye yardımcı olur."
+    },
+    {
+      "id": "q15",
+      "text": "Aşağıdakilerden hangisi bir şiirde 'benzetme' (teşbih) örneğidir?",
+      "options": [
+        "Gözleri deniz gibiydi.",
+        "Gözlerini kapadı.",
+        "Denize gitti.",
+        "Bugün hava güzeldi."
+      ],
+      "correctIndex": 0,
+      "hint": "Bu ifadede gözler, denize benzetiliyor - 'gibi' benzetme edatı kullanılmış."
+    },
+    {
+      "id": "q16",
+      "text": "Zorlayıcı soru: Bir şiirde 'Yıldızlar gökyüzünün gözyaşlarıdır' dizesinde hangi söz sanatı kullanılmıştır?",
+      "options": [
+        "Benzetme/istiare (yıldızlar, gözyaşına benzetiliyor, doğrudan eşitleniyor)",
+        "Gerçek anlam kullanımı",
+        "Hiçbir söz sanatı yoktur",
+        "Sadece bir bilgi cümlesidir"
+      ],
+      "correctIndex": 0,
+      "hint": "Yıldızlar, doğrudan gözyaşı olarak nitelendiriliyor - bu bir istiare (eğretileme) örneğidir."
+    },
+    {
+      "id": "q17",
+      "text": "Şiir yazarken ahenk unsurlarına (kafiye, ölçü, redif) dikkat etmenin faydası nedir?",
+      "options": [
+        "Hiçbir faydası yoktur",
+        "Şiire müzikal bir uyum ve akıcılık katar",
+        "Şiiri anlaşılmaz yapar",
+        "Sadece uzunluğunu artırır"
+      ],
+      "correctIndex": 1,
+      "hint": "Ses uyumu, şiirin okunurken kulağa hoş gelmesini sağlar."
+    },
+    {
+      "id": "q18",
+      "text": "Aşağıdakilerden hangisi doğru bir genel yazım/noktalama alışkanlığıdır?",
+      "options": [
+        "Cümle sonunda uygun noktalama işaretini kullanmak ve özel isimleri büyük harfle yazmak",
+        "Noktalama işaretlerini hiç kullanmamak",
+        "Her kelimeyi büyük harfle yazmak",
+        "Cümle sonlarını boş bırakmak"
+      ],
+      "correctIndex": 0,
+      "hint": "Doğru noktalama ve büyük harf kullanımı, yazının anlaşılırlığını artıran temel kurallardır."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Hiç şiir yazmayı denedin mi?",
+    "options": [
+      "Evet, denedim",
+      "Hayır ama denemek isterim",
+      "Bilmiyorum",
+      "Söylemek istemiyorum"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

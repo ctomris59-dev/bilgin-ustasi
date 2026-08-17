@@ -1,0 +1,263 @@
+{
+  "id": "matematik-unite1-dogalsayilar-genis-p2",
+  "subject": "Matematik",
+  "title": "Ünite 1 - Doğal Sayılar (Geniş Havuz) (2/4)",
+  "week": 1,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "9.000 - 4.567 işleminin sonucu kaçtır?",
+      "options": [
+        "4.433",
+        "4.543",
+        "4.333",
+        "4.533"
+      ],
+      "correctIndex": 0,
+      "hint": "Onluk bozarak çıkar."
+    },
+    {
+      "id": "q2",
+      "text": "10.000 - 1 işleminin sonucu kaçtır?",
+      "options": [
+        "9.999",
+        "9.000",
+        "9.990",
+        "10.001"
+      ],
+      "correctIndex": 0,
+      "hint": "Bütün basamaklardan 1 tane onluk bozulur."
+    },
+    {
+      "id": "q3",
+      "text": "542 - 378 işleminin sonucu kaçtır?",
+      "options": [
+        "174",
+        "164",
+        "154",
+        "184"
+      ],
+      "correctIndex": 1,
+      "hint": "Birler basamağında onluk bozman gerekecek."
+    },
+    {
+      "id": "q4",
+      "text": "100.000 - 45.678 işleminin sonucu kaçtır?",
+      "options": [
+        "54.322",
+        "55.322",
+        "54.422",
+        "53.322"
+      ],
+      "correctIndex": 0,
+      "hint": "Basamak basamak, dikkatli onluk bozarak çıkar."
+    },
+    {
+      "id": "q5",
+      "text": "7.654 - 2.345 işleminin sonucu kaçtır?",
+      "options": [
+        "5.309",
+        "5.409",
+        "5.209",
+        "5.319"
+      ],
+      "correctIndex": 0,
+      "hint": "Sağdan sola sırayla çıkar."
+    },
+    {
+      "id": "q6",
+      "text": "5.002 - 2.456 işleminin sonucu kaçtır?",
+      "options": [
+        "2.546",
+        "2.646",
+        "2.456",
+        "2.556"
+      ],
+      "correctIndex": 0,
+      "hint": "Sıfırlardan onluk bozman gerekiyor, dikkatli ol."
+    },
+    {
+      "id": "q7",
+      "text": "1.000.000 - 1 işleminin sonucu kaçtır?",
+      "options": [
+        "999.999",
+        "900.000",
+        "999.990",
+        "1.000"
+      ],
+      "correctIndex": 0,
+      "hint": "Tüm basamaklar 9 olacak şekilde bozulur."
+    },
+    {
+      "id": "q8",
+      "text": "834 - 567 işleminin sonucu kaçtır?",
+      "options": [
+        "277",
+        "267",
+        "257",
+        "247"
+      ],
+      "correctIndex": 1,
+      "hint": "Onlar basamağında bozma gerekebilir."
+    },
+    {
+      "id": "q9",
+      "text": "25.000 - 17.850 işleminin sonucu kaçtır?",
+      "options": [
+        "7.150",
+        "7.250",
+        "7.050",
+        "8.150"
+      ],
+      "correctIndex": 0,
+      "hint": "Basamak basamak dikkatli çıkar."
+    },
+    {
+      "id": "q10",
+      "text": "6.000 - 2.345 işleminin sonucu kaçtır?",
+      "options": [
+        "3.655",
+        "3.755",
+        "3.565",
+        "3.645"
+      ],
+      "correctIndex": 0,
+      "hint": "Sıfırlı sayıdan çıkarırken zincirleme bozma yaparsın."
+    },
+    {
+      "id": "q11",
+      "text": "24 × 15 işleminin sonucu kaçtır?",
+      "options": [
+        "340",
+        "360",
+        "350",
+        "380"
+      ],
+      "correctIndex": 1,
+      "hint": "24×10=240, 24×5=120, topla."
+    },
+    {
+      "id": "q12",
+      "text": "125 × 8 işleminin sonucu kaçtır?",
+      "options": [
+        "900",
+        "1.000",
+        "1.100",
+        "950"
+      ],
+      "correctIndex": 1,
+      "hint": "125×8, 100×8 ve 25×8'i ayrı ayrı düşün."
+    },
+    {
+      "id": "q13",
+      "text": "45 × 20 işleminin sonucu kaçtır?",
+      "options": [
+        "800",
+        "900",
+        "850",
+        "950"
+      ],
+      "correctIndex": 1,
+      "hint": "45×2=90, sonuna bir sıfır ekle."
+    },
+    {
+      "id": "q14",
+      "text": "999 × 2 işleminin sonucu kaçtır?",
+      "options": [
+        "1.898",
+        "1.998",
+        "1.988",
+        "2.998"
+      ],
+      "correctIndex": 1,
+      "hint": "1000×2'den 2 çıkar."
+    },
+    {
+      "id": "q15",
+      "text": "12 × 12 işleminin sonucu kaçtır?",
+      "options": [
+        "124",
+        "144",
+        "134",
+        "154"
+      ],
+      "correctIndex": 1,
+      "hint": "12 kere 12, bir kare sayıdır."
+    },
+    {
+      "id": "q16",
+      "text": "100 × 45 işleminin sonucu kaçtır?",
+      "options": [
+        "450",
+        "4.500",
+        "45.000",
+        "4.050"
+      ],
+      "correctIndex": 1,
+      "hint": "100 ile çarpınca iki sıfır ekle."
+    },
+    {
+      "id": "q17",
+      "text": "36 × 25 işleminin sonucu kaçtır?",
+      "options": [
+        "800",
+        "900",
+        "850",
+        "950"
+      ],
+      "correctIndex": 1,
+      "hint": "36×25 = 36×100÷4 şeklinde de düşünebilirsin."
+    },
+    {
+      "id": "q18",
+      "text": "15 × 15 işleminin sonucu kaçtır?",
+      "options": [
+        "215",
+        "225",
+        "235",
+        "245"
+      ],
+      "correctIndex": 1,
+      "hint": "15'in karesi."
+    },
+    {
+      "id": "q19",
+      "text": "240 × 3 işleminin sonucu kaçtır?",
+      "options": [
+        "620",
+        "720",
+        "700",
+        "740"
+      ],
+      "correctIndex": 1,
+      "hint": "24×3=72, sonuna sıfır ekle."
+    },
+    {
+      "id": "q20",
+      "text": "18 × 11 işleminin sonucu kaçtır?",
+      "options": [
+        "188",
+        "198",
+        "208",
+        "178"
+      ],
+      "correctIndex": 1,
+      "hint": "18×10 + 18 şeklinde düşün."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Bu ünitede en çok hangi işlem türünde kendine güvendin?",
+    "options": [
+      "Toplama",
+      "Çıkarma",
+      "Çarpma",
+      "Bölme"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

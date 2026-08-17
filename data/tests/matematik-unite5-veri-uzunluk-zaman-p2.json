@@ -1,0 +1,239 @@
+{
+  "id": "matematik-unite5-veri-uzunluk-zaman-p2",
+  "subject": "Matematik",
+  "title": "Ünite 5 - Veri Toplama, Uzunluk ve Zaman Ölçme (2/4)",
+  "week": 5,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "150 saniye kaç dakikadır?",
+      "options": [
+        "2,5 dakika",
+        "1,5 dakika",
+        "15 dakika",
+        "25 dakika"
+      ],
+      "correctIndex": 0,
+      "hint": "Zaman birimleri arasındaki ilişkiyi düşün (60 saniye=1 dakika, 60 dakika=1 saat, 24 saat=1 gün)."
+    },
+    {
+      "id": "q2",
+      "text": "Saat 14:00'ten 16:30'a kadar kaç saat kaç dakika geçer?",
+      "options": [
+        "2 saat 30 dakika",
+        "1 saat 30 dakika",
+        "3 saat",
+        "2 saat"
+      ],
+      "correctIndex": 0,
+      "hint": "Zaman birimleri arasındaki ilişkiyi düşün (60 saniye=1 dakika, 60 dakika=1 saat, 24 saat=1 gün)."
+    },
+    {
+      "id": "q3",
+      "text": "Bir sınıftaki öğrencilerin en sevdiği renkleri öğrenmek için yapılan çalışmaya ne denir?",
+      "options": [
+        "Deney",
+        "Anket/Veri toplama çalışması",
+        "Sınav",
+        "Ödev"
+      ],
+      "correctIndex": 1,
+      "hint": "Bilgi toplamak için insanlara sorular sorma sürecine bu denir."
+    },
+    {
+      "id": "q4",
+      "text": "Toplanan verileri düzenli satır ve sütunlarla göstermeye ne denir?",
+      "options": [
+        "Grafik",
+        "Tablo",
+        "Anket",
+        "Ölçek"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu, verileri satır-sütun formatında düzenler."
+    },
+    {
+      "id": "q5",
+      "text": "Verileri sütunlar (çubuklar) hâlinde görsel olarak gösteren grafiğe ne denir?",
+      "options": [
+        "Sütun (çubuk) grafiği",
+        "Daire grafiği",
+        "Çizgi grafiği",
+        "Tablo"
+      ],
+      "correctIndex": 0,
+      "hint": "Bu grafik türünde her kategori bir çubukla temsil edilir."
+    },
+    {
+      "id": "q6",
+      "text": "Bir bütünün parçalarını dilim şeklinde gösteren grafiğe ne denir?",
+      "options": [
+        "Sütun grafiği",
+        "Daire (pasta) grafiği",
+        "Çizgi grafiği",
+        "Tablo"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu grafik, bir pastanın dilimlerine benzer."
+    },
+    {
+      "id": "q7",
+      "text": "Zaman içindeki değişimi göstermek için en uygun grafik türü hangisidir?",
+      "options": [
+        "Daire grafiği",
+        "Çizgi grafiği",
+        "Sadece tablo",
+        "Hiçbiri"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu grafik türü, noktaları birleştirerek bir eğilim/trend gösterir."
+    },
+    {
+      "id": "q8",
+      "text": "Bir grafikte 'en çok tercih edilen' kategoriyi bulmak için neye bakılır?",
+      "options": [
+        "En kısa çubuğa/dilime",
+        "En uzun çubuğa/en büyük dilime",
+        "Grafiğin rengine",
+        "Grafiğin başlığına"
+      ],
+      "correctIndex": 1,
+      "hint": "En fazla veri, en büyük görsel temsille gösterilir."
+    },
+    {
+      "id": "q9",
+      "text": "Bir anketin güvenilir olması için katılımcı sayısı nasıl olmalıdır?",
+      "options": [
+        "Çok az olmalı (1-2 kişi)",
+        "Yeterince fazla olmalı",
+        "Hiç katılımcı olmamalı",
+        "Sadece 1 kişi yeterlidir"
+      ],
+      "correctIndex": 1,
+      "hint": "Daha fazla katılımcı, daha güvenilir sonuçlar verir."
+    },
+    {
+      "id": "q10",
+      "text": "Bir veri setindeki 'en sık tekrar eden değere' ne denir?",
+      "options": [
+        "Ortalama",
+        "Mod (tepe değer)",
+        "Medyan",
+        "Aralık"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu terim, en çok tekrarlanan veriyi ifade eder."
+    },
+    {
+      "id": "q11",
+      "text": "Bir veri setindeki tüm değerlerin toplamının, veri sayısına bölünmesiyle bulunan değere ne denir?",
+      "options": [
+        "Mod",
+        "Aritmetik ortalama",
+        "Medyan",
+        "Aralık"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu, 'ortalama' olarak da bilinir."
+    },
+    {
+      "id": "q12",
+      "text": "5 öğrencinin sınav notları 70, 80, 90, 60, 100 ise, bu notların toplamı kaçtır?",
+      "options": [
+        "380",
+        "400",
+        "420",
+        "350"
+      ],
+      "correctIndex": 1,
+      "hint": "Tüm notları topla: 70+80+90+60+100."
+    },
+    {
+      "id": "q13",
+      "text": "Bir grafik oluştururken 'başlık' neden önemlidir?",
+      "options": [
+        "Hiçbir önemi yoktur",
+        "Grafiğin neyi gösterdiğini anlamamıza yardımcı olur",
+        "Sadece süslemek içindir",
+        "Grafiği küçültür"
+      ],
+      "correctIndex": 1,
+      "hint": "Başlık, grafiğin konusunu açıkça belirtir."
+    },
+    {
+      "id": "q14",
+      "text": "Bir sütun grafiğinde dikey eksen (y ekseni) genellikle neyi gösterir?",
+      "options": [
+        "Kategorileri",
+        "Sayısal değerleri/miktarı",
+        "Sadece renkleri",
+        "Hiçbir şey göstermez"
+      ],
+      "correctIndex": 1,
+      "hint": "Dikey eksen, genellikle 'kaç tane' sorusuna cevap verir."
+    },
+    {
+      "id": "q15",
+      "text": "Aşağıdakilerden hangisi bir 'kategorik veri' örneğidir?",
+      "options": [
+        "Boy uzunluğu (cm)",
+        "Favori renk",
+        "Yaş (yıl)",
+        "Sıcaklık (derece)"
+      ],
+      "correctIndex": 1,
+      "hint": "Kategorik veri, sayısal değil, gruplara ayrılan veridir (renkler, isimler gibi)."
+    },
+    {
+      "id": "q16",
+      "text": "Bir öğretmen sınıftaki öğrencilerin boy uzunluklarını ölçüp kaydediyor. Bu ne tür bir veridir?",
+      "options": [
+        "Kategorik veri",
+        "Sayısal (sürekli) veri",
+        "Renk verisi",
+        "İsim verisi"
+      ],
+      "correctIndex": 1,
+      "hint": "Boy uzunluğu, sayısal bir ölçümdür."
+    },
+    {
+      "id": "q17",
+      "text": "Bir veri toplama sürecinde ilk adım genellikle nedir?",
+      "options": [
+        "Sonuçları yorumlamak",
+        "Neyin araştırılacağına (soruya) karar vermek",
+        "Grafik çizmek",
+        "Rapor yazmak"
+      ],
+      "correctIndex": 1,
+      "hint": "Önce ne öğrenmek istediğine karar vermelisin."
+    },
+    {
+      "id": "q18",
+      "text": "Aşağıdakilerden hangisi bir grafik türü DEĞİLDİR?",
+      "options": [
+        "Sütun grafiği",
+        "Daire grafiği",
+        "Çizgi grafiği",
+        "Sözlük"
+      ],
+      "correctIndex": 3,
+      "hint": "Bu, kelimelerin anlamlarını içeren bir kaynak kitaptır, grafik değildir."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Bugün ders çalışmak için kaç dakika ayırdın?",
+    "options": [
+      "15 dakika",
+      "30 dakika",
+      "45 dakika veya üzeri",
+      "Henüz başlamadım"
+    ],
+    "correctIndex": 2,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

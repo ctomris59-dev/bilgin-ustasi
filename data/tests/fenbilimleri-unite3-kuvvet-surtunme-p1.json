@@ -1,0 +1,239 @@
+{
+  "id": "fenbilimleri-unite3-kuvvet-surtunme-p1",
+  "subject": "Fen Bilimleri",
+  "title": "Ünite 3 - Kuvvetin Ölçülmesi ve Sürtünme (1/4)",
+  "week": 3,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Bir cismi itmek veya çekmek eylemine ne denir?",
+      "options": [
+        "Enerji",
+        "Kuvvet",
+        "Hareket",
+        "Hız"
+      ],
+      "correctIndex": 1,
+      "hint": "Bir kapıyı açarken yaptığın eylemi düşün."
+    },
+    {
+      "id": "q2",
+      "text": "Kuvvetin ölçü birimi nedir?",
+      "options": [
+        "Kilogram",
+        "Newton",
+        "Metre",
+        "Litre"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu birim, bir bilim insanının adından gelir."
+    },
+    {
+      "id": "q3",
+      "text": "Kuvveti ölçmek için hangi araç kullanılır?",
+      "options": [
+        "Terazi",
+        "Dinamometre",
+        "Termometre",
+        "Metre"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu araç, bir yay mekanizmasıyla çalışır."
+    },
+    {
+      "id": "q4",
+      "text": "Bir cismin üzerindeki madde miktarına ne denir?",
+      "options": [
+        "Ağırlık",
+        "Kütle",
+        "Hacim",
+        "Yoğunluk"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu değer, cismin nerede olduğuna bağlı olarak değişmez."
+    },
+    {
+      "id": "q5",
+      "text": "Bir cisme yerçekiminin uyguladığı kuvvete ne denir?",
+      "options": [
+        "Kütle",
+        "Ağırlık",
+        "Hacim",
+        "Sürtünme"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu değer, Dünya'da ve Ay'da farklı olabilir."
+    },
+    {
+      "id": "q6",
+      "text": "Kütle ile ağırlık arasındaki temel fark nedir?",
+      "options": [
+        "Hiçbir fark yoktur, aynı şeydir",
+        "Kütle sabittir, ağırlık bulunduğu yere (yerçekimine) göre değişir",
+        "Ağırlık sabittir, kütle değişir",
+        "İkisi de aynı birimle ölçülür"
+      ],
+      "correctIndex": 1,
+      "hint": "Bir astronotun Ay'da kütlesi aynı kalır ama ağırlığı değişir."
+    },
+    {
+      "id": "q7",
+      "text": "Bir cismin Ay'daki ağırlığı, Dünya'daki ağırlığına göre nasıldır?",
+      "options": [
+        "Daha fazladır",
+        "Daha azdır",
+        "Tamamen aynıdır",
+        "Ay'da ağırlık ölçülemez"
+      ],
+      "correctIndex": 1,
+      "hint": "Ay'ın çekim kuvveti Dünya'dan daha azdır."
+    },
+    {
+      "id": "q8",
+      "text": "Bir cismin kütlesi Ay'da Dünya'dakine göre nasıl değişir?",
+      "options": [
+        "Artar",
+        "Azalır",
+        "Değişmez",
+        "İkiye katlanır"
+      ],
+      "correctIndex": 2,
+      "hint": "Kütle, madde miktarını gösterir ve konumdan etkilenmez."
+    },
+    {
+      "id": "q9",
+      "text": "İki yüzey birbirine temas edip hareket ederken oluşan, hareketi zorlaştıran kuvvete ne denir?",
+      "options": [
+        "Yerçekimi",
+        "Sürtünme kuvveti",
+        "İtme kuvveti",
+        "Manyetik kuvvet"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu kuvvet, yüzeyler arasındaki temastan kaynaklanır."
+    },
+    {
+      "id": "q10",
+      "text": "Pürüzlü bir yüzeyde sürtünme kuvveti, pürüzsüz bir yüzeye göre nasıldır?",
+      "options": [
+        "Daha azdır",
+        "Daha fazladır",
+        "Aynıdır",
+        "Hiç sürtünme olmaz"
+      ],
+      "correctIndex": 1,
+      "hint": "Pürüzlü yüzeyler, hareketi daha çok zorlaştırır."
+    },
+    {
+      "id": "q11",
+      "text": "Buz üzerinde kayarken sürtünme kuvveti neden azdır?",
+      "options": [
+        "Buz çok pürüzlüdür",
+        "Buzun yüzeyi kaygan ve düzdür",
+        "Buz çok ağırdır",
+        "Buz hiç madde içermez"
+      ],
+      "correctIndex": 1,
+      "hint": "Düz ve kaygan yüzeylerde sürtünme azalır."
+    },
+    {
+      "id": "q12",
+      "text": "Arabaların lastikleri neden dişli (desenli) yapılır?",
+      "options": [
+        "Sadece görünüş için",
+        "Yol ile lastik arasındaki sürtünmeyi artırıp kaymayı önlemek için",
+        "Sürtünmeyi tamamen ortadan kaldırmak için",
+        "Arabayı hafifletmek için"
+      ],
+      "correctIndex": 1,
+      "hint": "Daha fazla sürtünme, arabanın yolda daha iyi tutunmasını sağlar."
+    },
+    {
+      "id": "q13",
+      "text": "Makine parçalarına yağ sürülmesinin amacı nedir?",
+      "options": [
+        "Sürtünmeyi artırmak",
+        "Sürtünmeyi azaltmak",
+        "Parçaları ağırlaştırmak",
+        "Parçaları renklendirmek"
+      ],
+      "correctIndex": 1,
+      "hint": "Yağ, yüzeyler arasında kayganlık sağlar."
+    },
+    {
+      "id": "q14",
+      "text": "Aşağıdakilerden hangisi sürtünmenin faydalı olduğu bir durumdur?",
+      "options": [
+        "Ayakkabı tabanının yerde kaymaması",
+        "Buzda kayarken hız kaybetmemek",
+        "Bir makinenin ısınıp yıpranması",
+        "Sürtünmenin hiçbir faydası yoktur"
+      ],
+      "correctIndex": 0,
+      "hint": "Yürürken düşmemek için sürtünmeye ihtiyaç duyarız."
+    },
+    {
+      "id": "q15",
+      "text": "Aşağıdakilerden hangisi sürtünmenin zararlı olduğu bir durumdur?",
+      "options": [
+        "Yürürken ayakkabının kaymaması",
+        "Bir arabanın lastiklerinin zamanla aşınması",
+        "Bir kalemi kağıda tutabilmek",
+        "Bir merdivende kaymamak"
+      ],
+      "correctIndex": 1,
+      "hint": "Sürekli sürtünme, malzemelerin aşınmasına ve enerji kaybına neden olabilir."
+    },
+    {
+      "id": "q16",
+      "text": "Bir cisme uygulanan kuvvet, cismin hareketini nasıl etkileyebilir?",
+      "options": [
+        "Hiçbir etkisi olmaz",
+        "Cismi hızlandırabilir, yavaşlatabilir veya yönünü değiştirebilir",
+        "Sadece rengini değiştirir",
+        "Sadece boyutunu değiştirir"
+      ],
+      "correctIndex": 1,
+      "hint": "Kuvvet, bir cismin hareket durumunu değiştirebilen bir etkidir."
+    },
+    {
+      "id": "q17",
+      "text": "Bir kuvvetin yönü olması ne anlama gelir?",
+      "options": [
+        "Kuvvetler her zaman aynı yönde uygulanır",
+        "Kuvvet, belirli bir doğrultuda (örneğin yukarı, aşağı, sağa) uygulanabilir",
+        "Kuvvetlerin yönü yoktur",
+        "Yön, kuvvetle ilgisiz bir kavramdır"
+      ],
+      "correctIndex": 1,
+      "hint": "Bir kapıyı iterken veya çekerken farklı yönlerde kuvvet uygularsın."
+    },
+    {
+      "id": "q18",
+      "text": "Aynı büyüklükte ama zıt yönde iki kuvvet bir cisme uygulanırsa ne olur?",
+      "options": [
+        "Cisim çok hızlı hareket eder",
+        "Kuvvetler birbirini dengeler, cisim hareket etmeyebilir",
+        "Cisim havaya uçar",
+        "İkisi de aynı yönde toplanır"
+      ],
+      "correctIndex": 1,
+      "hint": "İp çekme oyununda iki taraf eşit güç uygularsa ip hareket etmez."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Bugün hangi kuvveti (itme/çekme) en çok kullandın?",
+    "options": [
+      "İtme",
+      "Çekme",
+      "İkisini de kullandım",
+      "Hatırlamıyorum"
+    ],
+    "correctIndex": 2,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

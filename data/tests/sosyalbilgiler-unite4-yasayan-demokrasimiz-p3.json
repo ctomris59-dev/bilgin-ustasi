@@ -1,0 +1,227 @@
+{
+  "id": "sosyalbilgiler-unite4-yasayan-demokrasimiz-p3",
+  "subject": "Sosyal Bilgiler",
+  "title": "Ünite 4 - Yaşayan Demokrasimiz (3/4)",
+  "week": 4,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Aşağıdakilerden hangisi 'yerel yönetim' kavramına bir örnektir?",
+      "options": [
+        "Belediye",
+        "Uluslararası bir kuruluş",
+        "Bir özel şirket",
+        "Bir spor kulübü"
+      ],
+      "correctIndex": 0,
+      "hint": "Belediyeler, şehir/ilçe düzeyinde hizmet veren yerel yönetim birimleridir."
+    },
+    {
+      "id": "q2",
+      "text": "Bir okulda 'öğrenci hakları ve sorumlulukları' konusunda bilgilendirme yapılması neden önemlidir?",
+      "options": [
+        "Hiçbir önemi yoktur",
+        "Öğrencilerin haklarını bilip sorumluluklarını da yerine getirmesini sağlar",
+        "Sadece zaman kaybıdır",
+        "Öğrencilerin hiç hakkı olmamalıdır"
+      ],
+      "correctIndex": 1,
+      "hint": "Farkındalık, hem hakların korunmasına hem sorumlulukların yerine getirilmesine yardımcı olur."
+    },
+    {
+      "id": "q3",
+      "text": "Aşağıdakilerden hangisi demokratik bir toplumda 'çoğulculuk' kavramını yansıtır?",
+      "options": [
+        "Farklı görüş ve düşüncelerin bir arada var olabilmesi",
+        "Sadece tek bir görüşün kabul edilmesi",
+        "Farklılıkların yasaklanması",
+        "Hiçbir görüşün önemli olmaması"
+      ],
+      "correctIndex": 0,
+      "hint": "Çoğulculuk, farklı seslerin bir arada duyulabilmesini ifade eder."
+    },
+    {
+      "id": "q4",
+      "text": "Zorlayıcı soru: Bir ülkede seçimler düzenli aralıklarla ve adil şekilde yapılıyor. Bu durum demokrasi açısından ne ifade eder?",
+      "options": [
+        "Demokratik bir sürecin işlediğini gösterir",
+        "Hiçbir şey ifade etmez",
+        "Demokrasinin olmadığını gösterir",
+        "Sadece bir formalitedir"
+      ],
+      "correctIndex": 0,
+      "hint": "Düzenli ve adil seçimler, demokratik yönetimin temel göstergelerinden biridir."
+    },
+    {
+      "id": "q5",
+      "text": "Aşağıdakilerden hangisi bir 'kamu kurumuna' örnektir?",
+      "options": [
+        "Bir özel mağaza",
+        "Nüfus müdürlüğü",
+        "Bir özel fabrika",
+        "Bir kişisel blog"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu kurum, vatandaşlık kayıtlarıyla ilgili resmi işlemleri yürütür."
+    },
+    {
+      "id": "q6",
+      "text": "Bir vatandaşın trafik kurallarına uyması hangi kavramla ilişkilidir?",
+      "options": [
+        "Toplumsal sorumluluk",
+        "Bireysel özgürlük ihlali",
+        "Hiçbir kavramla ilişkili değildir",
+        "Sadece kişisel tercih"
+      ],
+      "correctIndex": 0,
+      "hint": "Kurallara uymak, hem kendi hem başkalarının güvenliği için bir sorumluluktur."
+    },
+    {
+      "id": "q7",
+      "text": "Aşağıdakilerden hangisi 'aktif katılımın' okul ortamındaki bir örneğidir?",
+      "options": [
+        "Sınıf tartışmalarına katılmak ve fikir beyan etmek",
+        "Derslerde hiç konuşmamak",
+        "Etkinliklere hiç katılmamak",
+        "Görüş bildirmekten kaçınmak"
+      ],
+      "correctIndex": 0,
+      "hint": "Aktif katılım, fikirlerini paylaşmayı ve sürece dahil olmayı içerir."
+    },
+    {
+      "id": "q8",
+      "text": "Bir toplumda 'hesap verebilirlik' kavramı ne anlama gelir?",
+      "options": [
+        "Yöneticilerin aldıkları kararlardan sorumlu tutulabilmesi",
+        "Hiç kimsenin sorumlu olmaması",
+        "Sadece halkın sorumlu olması",
+        "Hesap verebilirliğin hiçbir anlamı yoktur"
+      ],
+      "correctIndex": 0,
+      "hint": "Bu kavram, yöneticilerin şeffaf ve sorumlu davranmasını gerektirir."
+    },
+    {
+      "id": "q9",
+      "text": "Aşağıdakilerden hangisi 'şeffaflık' kavramını en iyi açıklar?",
+      "options": [
+        "Kararların ve süreçlerin açık ve anlaşılır olması",
+        "Her şeyin gizli tutulması",
+        "Hiçbir bilginin paylaşılmaması",
+        "Sadece belirli kişilerin bilgiye ulaşabilmesi"
+      ],
+      "correctIndex": 0,
+      "hint": "Şeffaflık, halkın yönetim süreçleri hakkında bilgi sahibi olabilmesini sağlar."
+    },
+    {
+      "id": "q10",
+      "text": "Zorlayıcı soru: Bir belediye, yapacağı bir projeyi halka açık bir toplantıda anlatıp görüş alıyor. Bu uygulama hangi demokratik değeri yansıtır?",
+      "options": [
+        "Katılımcı yönetim ve şeffaflık",
+        "Otoriter karar alma",
+        "Halkın görüşünün önemsenmemesi",
+        "Hiçbir demokratik değeri yansıtmaz"
+      ],
+      "correctIndex": 0,
+      "hint": "Halkın görüşünü almak, katılımcı ve şeffaf bir yönetim anlayışının göstergesidir."
+    },
+    {
+      "id": "q11",
+      "text": "Aşağıdakilerden hangisi bir demokraside basın özgürlüğünün sınırları olabileceğine dair genel bir anlayışı yansıtır?",
+      "options": [
+        "Basın özgürlüğü, başkalarının haklarına zarar vermeyecek şekilde kullanılmalıdır",
+        "Basının hiçbir sınırı olmamalıdır",
+        "Basın özgürlüğü hiç var olmamalıdır",
+        "Bu konuda hiçbir görüş yoktur"
+      ],
+      "correctIndex": 0,
+      "hint": "Özgürlükler genellikle başkalarının haklarına saygı çerçevesinde kullanılır."
+    },
+    {
+      "id": "q12",
+      "text": "Bir vatandaşın toplum yararına gönüllü çalışmalara katılması hangi kavramla ilişkilidir?",
+      "options": [
+        "Etkin vatandaşlık ve sosyal sorumluluk",
+        "Bireysel çıkar",
+        "Kayıtsızlık",
+        "Hiçbir kavramla ilişkili değildir"
+      ],
+      "correctIndex": 0,
+      "hint": "Gönüllülük, toplumsal sorumluluğun güzel bir örneğidir."
+    },
+    {
+      "id": "q13",
+      "text": "Aşağıdakilerden hangisi 'yasal hakların' bir vatandaşa sağladığı güvenceye örnektir?",
+      "options": [
+        "Haksızlığa uğradığında hukuki yollara başvurabilmesi",
+        "Hiçbir güvence sağlamaması",
+        "Sadece belirli kişilere hak tanınması",
+        "Yasaların hiçbir önemi olmaması"
+      ],
+      "correctIndex": 0,
+      "hint": "Yasal haklar, vatandaşların haksızlığa karşı korunmasını sağlar."
+    },
+    {
+      "id": "q14",
+      "text": "Zorlayıcı soru: Bir öğrenci, sınıf arkadaşlarının farklı görüşlerini dinleyip saygı gösteriyor, kendi görüşünü de nazikçe paylaşıyor. Bu davranış hangi demokratik değeri yansıtır?",
+      "options": [
+        "Hoşgörü ve etkin katılım",
+        "Otoriter tutum",
+        "Kayıtsızlık",
+        "Hiçbir demokratik değeri yansıtmaz"
+      ],
+      "correctIndex": 0,
+      "hint": "Farklı görüşlere saygı ve kendi fikrini ifade etme, demokratik bir tutumdur."
+    },
+    {
+      "id": "q15",
+      "text": "Aşağıdakilerden hangisi bir 'sağlık kurumuna' örnektir?",
+      "options": [
+        "Hastane",
+        "Kütüphane",
+        "Müze",
+        "Tiyatro"
+      ],
+      "correctIndex": 0,
+      "hint": "Bu kurum, sağlık hizmeti sunar."
+    },
+    {
+      "id": "q16",
+      "text": "Bir yangın durumunda hangi hizmet birimine başvurulmalıdır?",
+      "options": [
+        "İtfaiye",
+        "Kütüphane",
+        "Belediye park bahçeler birimi",
+        "Müze"
+      ],
+      "correctIndex": 0,
+      "hint": "Bu birim, yangınla mücadele konusunda uzmandır."
+    },
+    {
+      "id": "q17",
+      "text": "Aşağıdakilerden hangisi bir eğitim kurumuna örnektir?",
+      "options": [
+        "Hastane",
+        "Okul",
+        "İtfaiye",
+        "Belediye"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu kurum, öğrencilere eğitim ve öğretim hizmeti sunar."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Sınıfında bir karar alınırken oy kullandın mı?",
+    "options": [
+      "Evet, kullandım",
+      "Henüz fırsatım olmadı",
+      "Hatırlamıyorum",
+      "Söylemek istemiyorum"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

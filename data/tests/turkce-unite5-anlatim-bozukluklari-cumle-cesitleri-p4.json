@@ -1,0 +1,239 @@
+{
+  "id": "turkce-unite5-anlatim-bozukluklari-cumle-cesitleri-p4",
+  "subject": "Türkçe",
+  "title": "Ünite 5 - Anlatım Bozuklukları ve Cümle Çeşitleri (4/4)",
+  "week": 5,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Zorlayıcı soru: 'Öğretmenimiz sınavdan önce bize hem çok çalışmamızı hem de dinlenmemizi söyledi.' cümlesinde bir anlatım sorunu var mı?",
+      "options": [
+        "Evet, 'çok çalışma' ile 'dinlenme' çelişkili görünebilir ama bağlamda dengeli çalışmayı öneriyor olabilir, bu yüzden aslında sorunlu değildir",
+        "Cümle tamamen anlaşılmazdır",
+        "Cümle devriktir sadece",
+        "Hiçbir açıklama yapılamaz"
+      ],
+      "correctIndex": 0,
+      "hint": "Bu cümle aslında dengeli bir tavsiye veriyor olabilir; bağlama göre değerlendirme önemlidir."
+    },
+    {
+      "id": "q2",
+      "text": "Aşağıdaki cümlelerin hangisinde 'çünkü' bağlacı doğru kullanılmıştır?",
+      "options": [
+        "Çünkü yağmur yağıyordu dışarı çıkmadık.",
+        "Dışarı çıkmadık çünkü yağmur yağıyordu.",
+        "Yağmur çünkü yağıyordu dışarı çıkmadık.",
+        "Dışarı yağmur çünkü çıkmadık yağıyordu."
+      ],
+      "correctIndex": 1,
+      "hint": "'Çünkü' bağlacı, genellikle neden bildiren cümlenin başında, ana cümleden sonra kullanılır."
+    },
+    {
+      "id": "q3",
+      "text": "Bir cümlede 'her ikisi de' ifadesi kullanılırken dikkat edilmesi gereken nedir?",
+      "options": [
+        "Bu ifade her zaman gereksizdir",
+        "Bu ifade, iki unsurun ikisini de kapsadığını netleştirmek için kullanılabilir, gereksiz tekrar oluşturmamalıdır",
+        "Bu ifade asla kullanılmamalıdır",
+        "Hiçbir kural yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu ifade doğru bağlamda kullanıldığında anlamı netleştirir, ama gereksiz tekrarla kullanılırsa anlatım bozukluğu oluşturabilir."
+    },
+    {
+      "id": "q4",
+      "text": "Aşağıdaki cümlelerin hangisi bir 'sıralı cümle' örneğidir?",
+      "options": [
+        "Ali geldi ve oturdu.",
+        "Ali geldi, oturdu, kitabını açtı.",
+        "Ali geldiği için oturdu.",
+        "Ali gelirse otururuz."
+      ],
+      "correctIndex": 1,
+      "hint": "Bu cümlede birden fazla yargı, virgüllerle art arda sıralanmıştır."
+    },
+    {
+      "id": "q5",
+      "text": "Zorlayıcı soru: 'Yağmur yağdı, sokaklar ıslandı, insanlar şemsiye açtı.' cümlesi kaç basit cümlenin sıralanmasıyla oluşmuştur?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctIndex": 2,
+      "hint": "Üç ayrı yargı (yağmur yağdı, sokaklar ıslandı, insanlar şemsiye açtı) virgüllerle sıralanmış."
+    },
+    {
+      "id": "q6",
+      "text": "Aşağıdaki cümlelerin hangisinde gereksiz bir sözcük kullanımı vardır?",
+      "options": [
+        "Eve döndü.",
+        "Eve geri döndü.",
+        "Okula gitti.",
+        "Kitap okudu."
+      ],
+      "correctIndex": 1,
+      "hint": "'Dönmek' zaten geriye gitme anlamı taşır, 'geri' kelimesi gereksizdir."
+    },
+    {
+      "id": "q7",
+      "text": "'Balkona çıkıp havayı seyretti.' cümlesi hangi tür bir cümledir?",
+      "options": [
+        "Basit cümle",
+        "Birleşik cümle (bağ-fiil içerir)",
+        "Sıralı cümle",
+        "Bağlı cümle"
+      ],
+      "correctIndex": 1,
+      "hint": "'-ip' bağ-fiil eki, iki eylemi birbirine bağlayarak birleşik bir yapı oluşturur."
+    },
+    {
+      "id": "q8",
+      "text": "Aşağıdakilerden hangisi anlam açısından tutarlı bir cümledir?",
+      "options": [
+        "Bugün hem çok sıcak hem çok soğuktu.",
+        "Bugün hava çok sıcaktı.",
+        "Küçücük dev bir bina gördüm.",
+        "Aşırı derecede az yağmur yağdı çok fazla."
+      ],
+      "correctIndex": 1,
+      "hint": "Bu cümlede çelişki veya gereksiz tekrar yoktur."
+    },
+    {
+      "id": "q9",
+      "text": "'Küçücük dev bir bina gördüm.' cümlesinde ne tür bir sorun vardır?",
+      "options": [
+        "Hiçbir sorun yoktur",
+        "'Küçücük' ve 'dev' kelimeleri birbirine anlamca zıttır, bu bir çelişki oluşturur",
+        "Cümle eksiktir",
+        "Devrik cümledir"
+      ],
+      "correctIndex": 1,
+      "hint": "'Küçücük' (çok küçük) ve 'dev' (çok büyük) aynı cümlede çelişki yaratır."
+    },
+    {
+      "id": "q10",
+      "text": "Bir cümlede anlam belirsizliğini önlemek için ne yapılabilir?",
+      "options": [
+        "Kelimeleri rastgele sıralamak",
+        "Kelimelerin doğru sırada ve açık bir şekilde kullanılmasına dikkat etmek",
+        "Hiçbir şey yapmamak",
+        "Cümleyi olabildiğince kısaltmak her zaman"
+      ],
+      "correctIndex": 1,
+      "hint": "Doğru sözcük sırası ve netlik, anlaşılırlığı artırır."
+    },
+    {
+      "id": "q11",
+      "text": "Zorlayıcı soru: 'Öğretmen, öğrencisinin ve kendi defterini karıştırdı.' cümlesinde ne tür bir belirsizlik olabilir?",
+      "options": [
+        "Hiçbir belirsizlik yoktur",
+        "'Kendi defterini' ifadesindeki 'kendi' kimin defterine işaret ettiği açık değildir",
+        "Cümle tamamen anlaşılmazdır",
+        "Cümle devriktir"
+      ],
+      "correctIndex": 1,
+      "hint": "'Kendi' zamiri burada öğretmene mi öğrenciye mi işaret ettiği net değildir."
+    },
+    {
+      "id": "q12",
+      "text": "Aşağıdaki cümlelerin hangisi net ve anlaşılır bir şekilde kurulmuştur?",
+      "options": [
+        "Öğretmen kendi defterini karıştırdı.",
+        "Öğretmen, öğrencisinin ve kendi defterini karıştırdı.",
+        "Karıştırdı öğretmen kendi ve öğrencisinin defterini.",
+        "Defterini öğretmen öğrencisinin karıştırdı kendi ve."
+      ],
+      "correctIndex": 0,
+      "hint": "Bu cümlede kimin defterinin karıştırıldığı açıkça belirtilmiştir."
+    },
+    {
+      "id": "q13",
+      "text": "Bir cümlenin 'yapı bakımından bozuk' olması ne anlama gelir?",
+      "options": [
+        "Cümlenin dilbilgisi kurallarına uygun kurulmadığı anlamına gelir",
+        "Cümlenin çok uzun olduğu anlamına gelir",
+        "Cümlenin hiç anlamı olmadığı anlamına gelir",
+        "Hiçbir anlamı yoktur"
+      ],
+      "correctIndex": 0,
+      "hint": "Yapısal bozukluk, cümlenin dilbilgisel kurallara aykırı kurulmasıdır."
+    },
+    {
+      "id": "q14",
+      "text": "Aşağıdaki cümlelerin hangisinde yapı bozukluğu vardır?",
+      "options": [
+        "Ali okula erken gitti.",
+        "Ali erken okula gitti çünkü.",
+        "Ali erken gitti okula.",
+        "Erken gitti Ali okula."
+      ],
+      "correctIndex": 1,
+      "hint": "'Çünkü' bağlacının cümle sonunda tek başına kalması, yapısal bir bozukluk oluşturur."
+    },
+    {
+      "id": "q15",
+      "text": "Zorlayıcı soru: Bir öğrenci yazdığı bir metni tekrar okuyup anlatım bozukluklarını düzeltiyor. Bu davranış hangi beceriyi geliştirir?",
+      "options": [
+        "Hiçbir beceri geliştirmez",
+        "Yazma ve dil bilgisi becerisini, ayrıca kendi kendini düzeltme (öz değerlendirme) yeteneğini geliştirir",
+        "Sadece zaman kaybettirir",
+        "Yazmayı zorlaştırır"
+      ],
+      "correctIndex": 1,
+      "hint": "Kendi yazdığını gözden geçirmek, önemli bir yazma ve dil becerisidir."
+    },
+    {
+      "id": "q16",
+      "text": "Aşağıdakilerden hangisi iyi bir yazının özelliklerinden biridir?",
+      "options": [
+        "Anlaşılır ve tutarlı cümleler içermesi",
+        "Gereksiz tekrarlar içermesi",
+        "Çelişkili ifadeler barındırması",
+        "Belirsiz anlatımlar içermesi"
+      ],
+      "correctIndex": 0,
+      "hint": "Açık ve tutarlı anlatım, kaliteli bir yazının temel özelliğidir."
+    },
+    {
+      "id": "q17",
+      "text": "Bir cümle kurarken 'kime, neyi, nasıl, ne zaman' gibi soruları göz önünde bulundurmak neden faydalıdır?",
+      "options": [
+        "Hiçbir faydası yoktur",
+        "Cümlenin eksiksiz ve anlaşılır olmasına yardımcı olur",
+        "Cümleyi karmaşıklaştırır",
+        "Sadece zaman kaybıdır"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu sorular, cümlenin ögelerinin eksiksiz olmasına yardımcı olur."
+    },
+    {
+      "id": "q18",
+      "text": "Zorlayıcı soru: 'Bu konuyu hem anladım hem de anlamadım.' cümlesinde ne tür bir sorun vardır?",
+      "options": [
+        "Hiçbir sorun yoktur, bu tam bir kararsızlığı doğal şekilde anlatır",
+        "Bu ifade kararsızlığı anlatmak için kullanılabilir ama 'kısmen anladım' gibi daha net bir ifade tercih edilebilir",
+        "Cümle tamamen anlamsızdır",
+        "Cümle devriktir"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu cümle bir belirsizliği anlatmaya çalışıyor olsa da, daha net bir ifade tercih edilebilir."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Bugün yazdığın bir cümleyi tekrar okuyup düzelttin mi?",
+    "options": [
+      "Evet, düzelttim",
+      "Henüz fırsatım olmadı",
+      "Hatırlamıyorum",
+      "Söylemek istemiyorum"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

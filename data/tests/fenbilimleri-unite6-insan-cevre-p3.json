@@ -1,0 +1,227 @@
+{
+  "id": "fenbilimleri-unite6-insan-cevre-p3",
+  "subject": "Fen Bilimleri",
+  "title": "Ünite 6 - İnsan ve Çevre (3/4)",
+  "week": 6,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Deniz kirliliğinin deniz canlıları üzerindeki olası etkisi nedir?",
+      "options": [
+        "Hiçbir etkisi yoktur",
+        "Deniz canlıları plastik/atıkları yutabilir veya yaşam alanları zarar görebilir",
+        "Deniz canlıları daha sağlıklı olur",
+        "Kirlilik deniz canlılarına fayda sağlar"
+      ],
+      "correctIndex": 1,
+      "hint": "Deniz çöpleri, balıklar ve diğer canlılar için tehlike oluşturabilir."
+    },
+    {
+      "id": "q2",
+      "text": "Aşağıdakilerden hangisi 'iklim değişikliği' ile ilişkilendirilen bir kavramdır?",
+      "options": [
+        "Sera gazı emisyonları",
+        "Geri dönüşüm kutuları",
+        "Okul üniforması",
+        "Kütüphane kitapları"
+      ],
+      "correctIndex": 0,
+      "hint": "Atmosferdeki bazı gazların artması, küresel iklimi etkileyebilir."
+    },
+    {
+      "id": "q3",
+      "text": "Aşağıdakilerden hangisi karbon ayak izini azaltmaya yardımcı olabilecek bir davranıştır?",
+      "options": [
+        "Daha fazla araba kullanmak",
+        "Toplu taşıma veya bisiklet kullanmak",
+        "Elektroniği sürekli açık bırakmak",
+        "Daha fazla tek kullanımlık ürün tüketmek"
+      ],
+      "correctIndex": 1,
+      "hint": "Daha az bireysel araç kullanımı, karbon salınımını azaltabilir."
+    },
+    {
+      "id": "q4",
+      "text": "Zorlayıcı soru: Bir okul, geri dönüşüm programı başlatıp öğrencileri katılmaya teşvik ediyor. Bu, hangi hedefe katkıda bulunur?",
+      "options": [
+        "Çevre bilincini artırmaya ve atık miktarını azaltmaya",
+        "Hiçbir hedefe katkıda bulunmaz",
+        "Sadece okulu meşgul eder",
+        "Çevreyi daha çok kirletir"
+      ],
+      "correctIndex": 0,
+      "hint": "Erken yaşta çevre bilinci kazanmak, uzun vadeli olumlu alışkanlıklar oluşturur."
+    },
+    {
+      "id": "q5",
+      "text": "Aşağıdakilerden hangisi 'su kaynaklarını koruma' yöntemlerinden biridir?",
+      "options": [
+        "Suyu gereksiz yere akıtmak",
+        "Musluk kaçaklarını onarmak",
+        "Sürekli uzun duş almak",
+        "Bahçeyi öğlen sıcağında sulamak"
+      ],
+      "correctIndex": 1,
+      "hint": "Kaçakları onarmak, boşa giden suyu önler."
+    },
+    {
+      "id": "q6",
+      "text": "Bahçe sulamasının sabah erken veya akşam geç saatlerde yapılması neden önerilir?",
+      "options": [
+        "Hiçbir sebebi yoktur",
+        "Öğlen sıcağında su daha hızlı buharlaşır, bu saatlerde israf azalır",
+        "Bitkiler geceleri su içmez",
+        "Sadece gelenek gereğidir"
+      ],
+      "correctIndex": 1,
+      "hint": "Serin saatlerde sulama, suyun toprağa daha iyi nüfuz etmesini sağlar."
+    },
+    {
+      "id": "q7",
+      "text": "Aşağıdakilerden hangisi 'atık azaltma' (reduce) kavramına bir örnektir?",
+      "options": [
+        "Gereksiz ambalajlı ürünler yerine az ambalajlı ürün tercih etmek",
+        "Her gün yeni bir şey satın almak",
+        "Kullan-at ürünleri tercih etmek",
+        "Hiç düşünmeden tüketmek"
+      ],
+      "correctIndex": 0,
+      "hint": "Atık azaltma, en baştan daha az çöp üretmeyi hedefler."
+    },
+    {
+      "id": "q8",
+      "text": "'Azalt, Yeniden Kullan, Geri Dönüştür' (3R) ilkesinin sırası neden önemlidir?",
+      "options": [
+        "Önce azaltma, sonra yeniden kullanma, en son geri dönüşüm tercih edilmelidir",
+        "Sıralamanın hiç önemi yoktur",
+        "Sadece geri dönüşüm yeterlidir",
+        "Sadece azaltmak yeterlidir"
+      ],
+      "correctIndex": 0,
+      "hint": "En az atık üretmek (azaltmak), en etkili ilk adımdır."
+    },
+    {
+      "id": "q9",
+      "text": "Aşağıdakilerden hangisi 'yeniden kullanma' (reuse) kavramına bir örnektir?",
+      "options": [
+        "Bir cam kavanozu saklama kabı olarak tekrar kullanmak",
+        "Kavanozu çöpe atmak",
+        "Kavanozu hemen geri dönüşüme atmak",
+        "Kavanozu kırmak"
+      ],
+      "correctIndex": 0,
+      "hint": "Yeniden kullanma, bir eşyayı atmadan tekrar farklı amaçla kullanmaktır."
+    },
+    {
+      "id": "q10",
+      "text": "Zorlayıcı soru: Bir öğrenci, kullanılmış bir kavanozu boyayarak kalemlik yapıyor. Bu davranış hangi ilkeye örnektir?",
+      "options": [
+        "Azaltma",
+        "Yeniden kullanma",
+        "Geri dönüşüm",
+        "Hiçbiri"
+      ],
+      "correctIndex": 1,
+      "hint": "Kavanoz, atılmadan farklı bir amaçla tekrar kullanılıyor."
+    },
+    {
+      "id": "q11",
+      "text": "Aşağıdakilerden hangisi doğal kaynakların korunmasına katkıda bulunan bir davranıştır?",
+      "options": [
+        "Kağıdı iki tarafını da kullanmak",
+        "Kağıdı bir kez kullanıp atmak",
+        "Gereksiz baskı almak",
+        "Kağıt israfını artırmak"
+      ],
+      "correctIndex": 0,
+      "hint": "Kağıdın her iki yüzünü kullanmak, tüketimi azaltır."
+    },
+    {
+      "id": "q12",
+      "text": "Bir çevre bilincine sahip birey olarak alışverişte hangi davranış daha uygun olur?",
+      "options": [
+        "Tek kullanımlık plastik yerine bez torba kullanmak",
+        "Her seferinde yeni plastik poşet almak",
+        "Poşetleri hemen çöpe atmak",
+        "Hiçbirine dikkat etmemek"
+      ],
+      "correctIndex": 0,
+      "hint": "Bez torbalar, tekrar tekrar kullanılabildiği için atık üretimini azaltır."
+    },
+    {
+      "id": "q13",
+      "text": "Aşağıdakilerden hangisi 'hava kalitesini iyileştirmeye' yardımcı olan bir eylemdir?",
+      "options": [
+        "Daha fazla ağaç dikmek",
+        "Ormanları yok etmek",
+        "Fabrika bacalarına filtre takmamak",
+        "Daha fazla fosil yakıt kullanmak"
+      ],
+      "correctIndex": 0,
+      "hint": "Ağaçlar, havadaki karbondioksiti alıp oksijen üretir."
+    },
+    {
+      "id": "q14",
+      "text": "Zorlayıcı soru: Bir şehir, toplu taşımayı ücretsiz yaparak özel araç kullanımını azaltmayı hedefliyor. Bu politikanın olası çevresel etkisi nedir?",
+      "options": [
+        "Hava kirliliğinin artması",
+        "Egzoz gazı emisyonlarının azalması, hava kalitesinin iyileşmesi",
+        "Hiçbir etkisi olmaz",
+        "Sadece trafiği artırır"
+      ],
+      "correctIndex": 1,
+      "hint": "Daha az özel araç kullanımı, genellikle daha az egzoz emisyonu anlamına gelir."
+    },
+    {
+      "id": "q15",
+      "text": "Aşağıdakilerden hangisi bir 'atık yönetimi' basamağı DEĞİLDİR?",
+      "options": [
+        "Azaltma",
+        "Yeniden kullanma",
+        "Geri dönüştürme",
+        "Doğaya rastgele atma"
+      ],
+      "correctIndex": 3,
+      "hint": "Bu, çevreye zarar veren, önerilmeyen bir davranıştır, atık yönetimi ilkesi değildir."
+    },
+    {
+      "id": "q16",
+      "text": "Pil ve bataryaların özel toplama kutularına atılması neden önemlidir?",
+      "options": [
+        "Piller normal çöple karışırsa toprağa/suya zararlı kimyasal sızdırabilir",
+        "Pillerin hiç zararı yoktur",
+        "Sadece estetik bir tercihtir",
+        "Piller normal çöp kutularında daha iyi durur"
+      ],
+      "correctIndex": 0,
+      "hint": "Piller, içerdikleri kimyasallar nedeniyle özel işlem gerektirir."
+    },
+    {
+      "id": "q17",
+      "text": "Aşağıdakilerden hangisi elektronik atık (e-atık) örneğidir?",
+      "options": [
+        "Eski bir cep telefonu",
+        "Bir muz kabuğu",
+        "Kağıt bir kitap",
+        "Bir cam şişe"
+      ],
+      "correctIndex": 0,
+      "hint": "Elektronik cihazlar, kullanım ömrü bittiğinde özel bir atık kategorisine girer."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Bugün çevre için ne yaptın (geri dönüşüm, tasarruf vb.)?",
+    "options": [
+      "Geri dönüşüm yaptım",
+      "Su/enerji tasarrufu yaptım",
+      "İkisini de yaptım",
+      "Henüz bir şey yapmadım ama bugün yapacağım"
+    ],
+    "correctIndex": 2,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

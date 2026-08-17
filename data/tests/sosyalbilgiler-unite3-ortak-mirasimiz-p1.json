@@ -1,0 +1,239 @@
+{
+  "id": "sosyalbilgiler-unite3-ortak-mirasimiz-p1",
+  "subject": "Sosyal Bilgiler",
+  "title": "Ünite 3 - Ortak Mirasımız (1/4)",
+  "week": 3,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Geçmişten günümüze aktarılan, dokunulabilen (bina, eser, alet gibi) miras ögelerine ne denir?",
+      "options": [
+        "Somut kültürel miras",
+        "Somut olmayan kültürel miras",
+        "Doğal miras",
+        "Kişisel miras"
+      ],
+      "correctIndex": 0,
+      "hint": "'Somut' kelimesi, dokunulabilir/fiziksel olanı ifade eder."
+    },
+    {
+      "id": "q2",
+      "text": "Geçmişten günümüze aktarılan, dokunulamayan (gelenek, dil, müzik gibi) miras ögelerine ne denir?",
+      "options": [
+        "Somut kültürel miras",
+        "Somut olmayan kültürel miras",
+        "Doğal miras",
+        "Kişisel miras"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu miras türü, fiziksel bir nesne değil, bir uygulama ya da bilgidir."
+    },
+    {
+      "id": "q3",
+      "text": "Aşağıdakilerden hangisi somut kültürel mirasa bir örnektir?",
+      "options": [
+        "Bir halk türküsü",
+        "Tarihi bir cami",
+        "Bir el sanatı geleneği",
+        "Bir yemek tarifi"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu, dokunulabilir ve fiziksel bir yapıdır."
+    },
+    {
+      "id": "q4",
+      "text": "Aşağıdakilerden hangisi somut olmayan kültürel mirasa bir örnektir?",
+      "options": [
+        "Bir müze binası",
+        "Bir heykel",
+        "Geleneksel bir halk oyunu",
+        "Antik bir kalıntı"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu, nesilden nesile öğretilen bir uygulamadır, fiziksel bir nesne değildir."
+    },
+    {
+      "id": "q5",
+      "text": "Kültürel mirası korumak neden önemlidir?",
+      "options": [
+        "Hiçbir önemi yoktur",
+        "Geçmişimizi anlamamıza ve gelecek nesillere aktarmamıza yardımcı olur",
+        "Sadece turistleri memnun etmek içindir",
+        "Kültürel miras zamanla otomatik korunur"
+      ],
+      "correctIndex": 1,
+      "hint": "Kültürel miras, bir toplumun kimliğinin ve tarihinin bir parçasıdır."
+    },
+    {
+      "id": "q6",
+      "text": "Tarihi bir yapıyı tahrip etmek (zarar vermek) neden yanlıştır?",
+      "options": [
+        "Hiçbir sakıncası yoktur",
+        "Geri getirilemez bir kültürel kaybın yaşanmasına neden olabilir",
+        "Yapılar zaten kendiliğinden yıkılır",
+        "Tarihi yapıların hiçbir değeri yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Tarihi eserler, bir kez zarar görünce genellikle aynı hâline geri getirilemez."
+    },
+    {
+      "id": "q7",
+      "text": "Anadolu, tarih boyunca birçok farklı uygarlığa ev sahipliği yapmış bir bölgedir. Bu durum Anadolu'nun kültürel açıdan ne olmasını sağlamıştır?",
+      "options": [
+        "Kültürel açıdan tek düze bir bölge",
+        "Zengin ve çeşitli bir kültürel mirasa sahip bir bölge",
+        "Hiçbir kültürel değeri olmayan bir bölge",
+        "Sadece tek bir kültürün yaşadığı bölge"
+      ],
+      "correctIndex": 1,
+      "hint": "Birçok uygarlığın izlerini taşıyan bir bölge, kültürel açıdan zengin olur."
+    },
+    {
+      "id": "q8",
+      "text": "Aşağıdakilerden hangisi genel olarak eski uygarlıkların insanlığa bıraktığı katkılardan biri olarak kabul edilir?",
+      "options": [
+        "Yazının geliştirilmesi",
+        "Cep telefonunun icadı",
+        "Uzay araştırmaları",
+        "İnternetin bulunması"
+      ],
+      "correctIndex": 0,
+      "hint": "Yazı, tarihin en eski ve en önemli buluşlarından biridir."
+    },
+    {
+      "id": "q9",
+      "text": "Eski uygarlıkların tarımsal faaliyetlerini geliştirmede hangi doğal kaynak büyük önem taşımıştır?",
+      "options": [
+        "Petrol",
+        "Su (nehirler, sulama)",
+        "Kömür",
+        "Elektrik"
+      ],
+      "correctIndex": 1,
+      "hint": "Su, tarımın ve yerleşik hayatın temel gereksinimlerinden biridir."
+    },
+    {
+      "id": "q10",
+      "text": "Bir toplumun kültürel mirasının parçası olan gelenekler, nesilden nesile nasıl aktarılır?",
+      "options": [
+        "Hiçbir şekilde aktarılmaz",
+        "Aile, topluluk ve eğitim yoluyla",
+        "Sadece kitaplarla",
+        "Sadece internetle"
+      ],
+      "correctIndex": 1,
+      "hint": "Gelenekler genellikle sözlü ve uygulamalı olarak aktarılır."
+    },
+    {
+      "id": "q11",
+      "text": "Aşağıdakilerden hangisi bir 'somut olmayan kültürel miras' örneğidir?",
+      "options": [
+        "Bir kale",
+        "Geleneksel bir el sanatı (örneğin halı dokumacılığı)",
+        "Bir müze",
+        "Bir anıt"
+      ],
+      "correctIndex": 1,
+      "hint": "El sanatları, bir beceri ve bilgi aktarımı içerir, fiziksel bir yapı değildir."
+    },
+    {
+      "id": "q12",
+      "text": "UNESCO gibi kuruluşların kültürel mirası koruma çalışmalarının amacı nedir?",
+      "options": [
+        "Kültürel mirası yok etmek",
+        "Önemli kültürel ve doğal mirasları gelecek nesillere aktarmak için korumak",
+        "Hiçbir amacı yoktur",
+        "Sadece belirli ülkelere yardım etmek"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu tür kuruluşlar, dünya mirasının korunmasına katkı sağlar."
+    },
+    {
+      "id": "q13",
+      "text": "Bir müzenin toplumsal işlevi nedir?",
+      "options": [
+        "Sadece eğlence sağlamak",
+        "Tarihi ve kültürel eserleri koruyup sergileyerek insanları bilgilendirmek",
+        "Hiçbir işlevi yoktur",
+        "Sadece turistlerin ilgisini çekmek"
+      ],
+      "correctIndex": 1,
+      "hint": "Müzeler, geçmişi öğrenmemize ve anlamamıza yardımcı olur."
+    },
+    {
+      "id": "q14",
+      "text": "Aşağıdakilerden hangisi kültürel mirası koruma yollarından biridir?",
+      "options": [
+        "Tarihi eserlere zarar vermek",
+        "Tarihi eserleri ve gelenekleri gelecek nesillere aktarmaya özen göstermek",
+        "Kültürel mirası önemsememek",
+        "Sadece yeni şeylere değer vermek"
+      ],
+      "correctIndex": 1,
+      "hint": "Bilinçli koruma çabaları, mirasın yaşamasını sağlar."
+    },
+    {
+      "id": "q15",
+      "text": "Farklı kültürlerin birbirinden etkilenmesine (örneğin yemek, müzik, sanat alanında) ne denir?",
+      "options": [
+        "Kültürel yalıtım",
+        "Kültürel etkileşim",
+        "Kültürel yok oluş",
+        "Kültürel donma"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu süreç, kültürlerin birbirine karşılıklı etki etmesini ifade eder."
+    },
+    {
+      "id": "q16",
+      "text": "Aşağıdakilerden hangisi kültürel etkileşimin olumlu bir sonucu olabilir?",
+      "options": [
+        "Kültürlerin zenginleşmesi ve çeşitliliğin artması",
+        "Kültürlerin tamamen yok olması",
+        "Hiçbir etkisi olmaması",
+        "Sadece kargaşa yaratması"
+      ],
+      "correctIndex": 0,
+      "hint": "Farklı kültürlerin etkileşimi, genellikle karşılıklı zenginleşmeye yol açar."
+    },
+    {
+      "id": "q17",
+      "text": "Bir toplumun dili, o toplumun kültürel mirasının hangi türüne girer?",
+      "options": [
+        "Somut kültürel miras",
+        "Somut olmayan kültürel miras",
+        "Doğal miras",
+        "Hiçbirine girmez"
+      ],
+      "correctIndex": 1,
+      "hint": "Dil, fiziksel bir nesne değildir, nesilden nesile aktarılan bir değerdir."
+    },
+    {
+      "id": "q18",
+      "text": "Aşağıdakilerden hangisi doğal mirasa bir örnektir?",
+      "options": [
+        "Tarihi bir cami",
+        "Doğal bir milli park",
+        "Bir müze",
+        "Bir heykel"
+      ],
+      "correctIndex": 1,
+      "hint": "Doğal miras, insan yapımı olmayan, doğada var olan değerli alanları kapsar."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Ailende nesilden nesile aktarılan bir gelenek var mı?",
+    "options": [
+      "Evet, var",
+      "Emin değilim",
+      "Hayır, yok",
+      "Araştırmak isterim"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

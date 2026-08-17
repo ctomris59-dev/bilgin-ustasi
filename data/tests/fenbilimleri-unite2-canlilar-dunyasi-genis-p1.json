@@ -1,0 +1,251 @@
+{
+  "id": "fenbilimleri-unite2-canlilar-dunyasi-genis-p1",
+  "subject": "Fen Bilimleri",
+  "title": "Ünite 2 - Canlılar Dünyası (Geniş Havuz) (1/4)",
+  "week": 2,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Aşağıdakilerden hangisi bitki değildir?",
+      "options": [
+        "Kaktüs",
+        "Ağaç",
+        "Patates",
+        "Mantar"
+      ],
+      "correctIndex": 3,
+      "hint": "Bu canlı grubu kök, gövde, yaprak ve çiçeğe sahip değildir."
+    },
+    {
+      "id": "q2",
+      "text": "Mantarlar neden bitki olarak sınıflandırılmaz?",
+      "options": [
+        "Çok küçük oldukları için",
+        "Fotosentez yapamadıkları için",
+        "Yeşil renkli oldukları için",
+        "Toprakta yaşadıkları için"
+      ],
+      "correctIndex": 1,
+      "hint": "Bitkiler kendi besinini güneş ışığıyla üretir, mantarlar bunu yapamaz."
+    },
+    {
+      "id": "q3",
+      "text": "Sütü peynire dönüştüren mantar türü hangisidir?",
+      "options": [
+        "Küf mantarı",
+        "Şapkalı mantar",
+        "Maya mantarı",
+        "Parazit mantar"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu mantar türü aynı zamanda hamurun kabarmasını da sağlar."
+    },
+    {
+      "id": "q4",
+      "text": "Ekmek, limon gibi besinleri küflendiren mantar türü hangisidir?",
+      "options": [
+        "Maya mantarı",
+        "Küf mantarı",
+        "Şapkalı mantar",
+        "Hiçbiri"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu mantarlar aynı zamanda bitki ve hayvan atıklarının çürümesini sağlar."
+    },
+    {
+      "id": "q5",
+      "text": "Penisilin adlı antibiyotiğin üretiminde kullanılan mantar türü hangisidir?",
+      "options": [
+        "Maya mantarı",
+        "Şapkalı mantar",
+        "Küf mantarı",
+        "Parazit mantar"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu mantar türü aynı zamanda besinleri küflendiren türle aynıdır."
+    },
+    {
+      "id": "q6",
+      "text": "Hamurun mayalanıp kabarmasını sağlayan mantar türü hangisidir?",
+      "options": [
+        "Küf mantarı",
+        "Maya mantarı",
+        "Şapkalı mantar",
+        "Parazit mantar"
+      ],
+      "correctIndex": 1,
+      "hint": "Ekmek yapımında kullanılan mantar türüdür."
+    },
+    {
+      "id": "q7",
+      "text": "Bitki ve hayvanlarda hastalığa neden olan mantar türüne ne denir?",
+      "options": [
+        "Maya mantarı",
+        "Şapkalı mantar",
+        "Parazit mantar",
+        "Küf mantarı"
+      ],
+      "correctIndex": 2,
+      "hint": "Pamukçuk, saçkıran gibi hastalıklara bu tür mantarlar sebep olur."
+    },
+    {
+      "id": "q8",
+      "text": "Aşağıdakilerden hangisi omurgalı hayvan grubuna girmez?",
+      "options": [
+        "Balık",
+        "Kuş",
+        "Solucan",
+        "Memeli"
+      ],
+      "correctIndex": 2,
+      "hint": "Omurgalı hayvanların iç iskeletinde bir omurga (bel kemiği) bulunur."
+    },
+    {
+      "id": "q9",
+      "text": "Memelilerin ortak özelliği aşağıdakilerden hangisidir?",
+      "options": [
+        "Yumurtayla çoğalırlar",
+        "Yavrularını sütle beslerler",
+        "Solungaçla solunum yaparlar",
+        "Vücutları pullarla kaplıdır"
+      ],
+      "correctIndex": 1,
+      "hint": "İnsan da bir memelidir - bebekler nasıl beslenir?"
+    },
+    {
+      "id": "q10",
+      "text": "Balıklar solunumlarını hangi organla gerçekleştirir?",
+      "options": [
+        "Akciğer",
+        "Deri",
+        "Solungaç",
+        "Trake"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu organ, balıkların suda oksijen almasını sağlar."
+    },
+    {
+      "id": "q11",
+      "text": "Canlıları sınıflandırırken hangi özellikleri dikkate alırız?",
+      "options": [
+        "Sadece rengini",
+        "Sadece boyunu",
+        "Benzerlik ve farklılıklarını",
+        "Sadece yaşadığı yeri"
+      ],
+      "correctIndex": 2,
+      "hint": "Bilim insanları canlıları gruplarken birden fazla özelliği birlikte değerlendirir."
+    },
+    {
+      "id": "q12",
+      "text": "Vücudu pullarla kaplı, suda yaşayan ve solungaçla solunum yapan hayvan grubu hangisidir?",
+      "options": [
+        "Kuşlar",
+        "Memeliler",
+        "Balıklar",
+        "Sürüngenler"
+      ],
+      "correctIndex": 2,
+      "hint": "Akvaryumda gördüğün hayvanları düşün."
+    },
+    {
+      "id": "q13",
+      "text": "Kuşların vücudunu kaplayan yapı nedir?",
+      "options": [
+        "Pul",
+        "Kürk",
+        "Tüy",
+        "Kabuk"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu yapı, kuşların uçmasına da yardımcı olur."
+    },
+    {
+      "id": "q14",
+      "text": "Sürüngenlerin vücudu genellikle neyle kaplıdır?",
+      "options": [
+        "Tüy",
+        "Pul",
+        "Yumuşak deri",
+        "Kürk"
+      ],
+      "correctIndex": 1,
+      "hint": "Kertenkele ve yılan gibi hayvanları düşün."
+    },
+    {
+      "id": "q15",
+      "text": "Kurbağalar hem suda hem karada yaşayabilen hayvan grubuna örnektir. Bu gruba ne denir?",
+      "options": [
+        "Sürüngenler",
+        "Kuşlar",
+        "İki yaşamlılar (amfibiler)",
+        "Memeliler"
+      ],
+      "correctIndex": 2,
+      "hint": "'İki yaşamlı' ifadesi hem su hem kara yaşamını anlatır."
+    },
+    {
+      "id": "q16",
+      "text": "Aşağıdakilerden hangisi omurgasız hayvan grubuna girer?",
+      "options": [
+        "Kedi",
+        "Kartal",
+        "Karınca",
+        "Yılan"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu hayvanın iç iskeletinde omurga bulunmaz, dış iskelete sahiptir."
+    },
+    {
+      "id": "q17",
+      "text": "Böceklerin vücudu kaç ana bölümden oluşur?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctIndex": 2,
+      "hint": "Baş, göğüs ve karın bölümlerini düşün."
+    },
+    {
+      "id": "q18",
+      "text": "Örümcekler kaç bacaklıdır?",
+      "options": [
+        "4",
+        "6",
+        "8",
+        "10"
+      ],
+      "correctIndex": 2,
+      "hint": "Böceklerden farklı olarak bu sayı daha fazladır."
+    },
+    {
+      "id": "q19",
+      "text": "Böceklerin bacak sayısı kaçtır?",
+      "options": [
+        "4",
+        "6",
+        "8",
+        "10"
+      ],
+      "correctIndex": 1,
+      "hint": "Karınca, arı gibi böcekleri düşün."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: En sevdiğin hayvan türü hangisi (memeli, kuş, balık vb.)?",
+    "options": [
+      "Memeli",
+      "Kuş",
+      "Balık",
+      "Diğer"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

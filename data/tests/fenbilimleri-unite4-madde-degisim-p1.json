@@ -1,0 +1,239 @@
+{
+  "id": "fenbilimleri-unite4-madde-degisim-p1",
+  "subject": "Fen Bilimleri",
+  "title": "Ünite 4 - Madde ve Değişim (1/4)",
+  "week": 4,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Maddeyi oluşturan çok küçük, gözle görülemeyen yapı birimlerine ne denir?",
+      "options": [
+        "Hücre",
+        "Tanecik",
+        "Molekül sadece sıvılarda bulunur",
+        "Atom sadece katılarda bulunur"
+      ],
+      "correctIndex": 1,
+      "hint": "Tüm maddeler bu küçük yapı birimlerinden oluşur."
+    },
+    {
+      "id": "q2",
+      "text": "Maddenin tanecikli yapısına göre, tanecikler arasında ne bulunur?",
+      "options": [
+        "Hiçbir şey, tamamen doludur",
+        "Boşluk",
+        "Sadece su",
+        "Sadece hava"
+      ],
+      "correctIndex": 1,
+      "hint": "Taneciklerin birbirine tam yapışık olmadığını düşün."
+    },
+    {
+      "id": "q3",
+      "text": "Katı maddelerdeki taneciklerin düzeni nasıldır?",
+      "options": [
+        "Çok gevşek ve dağınık",
+        "Sıkı ve düzenli",
+        "Hiç düzenli değil",
+        "Tanecik yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Katılar şeklini korur çünkü tanecikleri sıkı bir düzende bulunur."
+    },
+    {
+      "id": "q4",
+      "text": "Sıvı maddelerdeki taneciklerin düzeni katılara göre nasıldır?",
+      "options": [
+        "Daha sıkı",
+        "Daha gevşek, birbirine göre kayabilir",
+        "Tamamen aynı",
+        "Hiç tanecik yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Sıvılar, bulundukları kabın şeklini alır çünkü tanecikleri daha serbesttir."
+    },
+    {
+      "id": "q5",
+      "text": "Gaz maddelerdeki tanecikler arasındaki boşluk, katı ve sıvılara göre nasıldır?",
+      "options": [
+        "Daha azdır",
+        "Çok daha fazladır",
+        "Hiç boşluk yoktur",
+        "Aynıdır"
+      ],
+      "correctIndex": 1,
+      "hint": "Gazlar, bulundukları her yeri doldurur çünkü tanecikleri çok serbesttir."
+    },
+    {
+      "id": "q6",
+      "text": "Bir maddenin ne kadar sıcak veya soğuk olduğunu gösteren büyüklüğe ne denir?",
+      "options": [
+        "Isı",
+        "Sıcaklık",
+        "Hacim",
+        "Kütle"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu değer, bir termometre ile ölçülür."
+    },
+    {
+      "id": "q7",
+      "text": "Sıcaklığı ölçmek için hangi araç kullanılır?",
+      "options": [
+        "Terazi",
+        "Termometre",
+        "Dinamometre",
+        "Cetvel"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu araç, günlük hayatta ateşimizi ölçerken de kullanılır."
+    },
+    {
+      "id": "q8",
+      "text": "Isı ile sıcaklık arasındaki fark nedir?",
+      "options": [
+        "Hiçbir fark yoktur, aynı şeydir",
+        "Isı bir enerji türüdür, sıcaklık bu enerjinin bir ölçüsüdür",
+        "Sıcaklık bir enerji türüdür, ısı bir ölçüdür",
+        "İkisi de aynı birimle ölçülür"
+      ],
+      "correctIndex": 1,
+      "hint": "Isı, sıcak bir maddeden soğuk bir maddeye akan enerjidir."
+    },
+    {
+      "id": "q9",
+      "text": "Sıcak bir çay bardağı, soğuk bir masaya konduğunda ısı nasıl akar?",
+      "options": [
+        "Masadan çaya doğru",
+        "Çaydan masaya doğru",
+        "Isı akışı olmaz",
+        "Her iki yöne eşit akar"
+      ],
+      "correctIndex": 1,
+      "hint": "Isı her zaman sıcaktan soğuğa doğru akar."
+    },
+    {
+      "id": "q10",
+      "text": "Katı bir maddenin ısı alarak sıvı hâle geçmesine ne denir?",
+      "options": [
+        "Donma",
+        "Erime",
+        "Buharlaşma",
+        "Yoğuşma"
+      ],
+      "correctIndex": 1,
+      "hint": "Buz ısındığında suya dönüşür - bu olaya ne denir?"
+    },
+    {
+      "id": "q11",
+      "text": "Sıvı bir maddenin ısı vererek katı hâle geçmesine ne denir?",
+      "options": [
+        "Erime",
+        "Donma",
+        "Buharlaşma",
+        "Süblimleşme"
+      ],
+      "correctIndex": 1,
+      "hint": "Su dondurucuya konduğunda buza dönüşür - bu olaya ne denir?"
+    },
+    {
+      "id": "q12",
+      "text": "Sıvı bir maddenin ısı alarak gaz hâline geçmesine ne denir?",
+      "options": [
+        "Erime",
+        "Donma",
+        "Buharlaşma",
+        "Yoğuşma"
+      ],
+      "correctIndex": 2,
+      "hint": "Kaynayan suyun buhara dönüşmesini düşün."
+    },
+    {
+      "id": "q13",
+      "text": "Gaz hâlindeki bir maddenin ısı vererek sıvı hâline geçmesine ne denir?",
+      "options": [
+        "Buharlaşma",
+        "Yoğuşma",
+        "Erime",
+        "Donma"
+      ],
+      "correctIndex": 1,
+      "hint": "Soğuk bir bardağın dışında oluşan su damlacıklarını düşün - havadaki su buharı yoğuşur."
+    },
+    {
+      "id": "q14",
+      "text": "Katı bir maddenin sıvı hâle geçmeden doğrudan gaz hâline geçmesine ne denir?",
+      "options": [
+        "Erime",
+        "Süblimleşme",
+        "Yoğuşma",
+        "Donma"
+      ],
+      "correctIndex": 1,
+      "hint": "Naftalin veya kuru buzun doğrudan buharlaşmasını düşün."
+    },
+    {
+      "id": "q15",
+      "text": "Maddenin hâl değişimlerinden hangisinde madde ısı ALIR?",
+      "options": [
+        "Donma",
+        "Yoğuşma",
+        "Erime",
+        "Hiçbirinde ısı alınmaz"
+      ],
+      "correctIndex": 2,
+      "hint": "Katıdan sıvıya geçiş, dışarıdan ısı gerektirir."
+    },
+    {
+      "id": "q16",
+      "text": "Maddenin hâl değişimlerinden hangisinde madde ısı VERİR?",
+      "options": [
+        "Erime",
+        "Buharlaşma",
+        "Donma",
+        "Hiçbirinde ısı verilmez"
+      ],
+      "correctIndex": 2,
+      "hint": "Sıvıdan katıya geçiş, ısının dışarı çıkmasıyla gerçekleşir."
+    },
+    {
+      "id": "q17",
+      "text": "Suyun kaynama noktası deniz seviyesinde kaç derecedir?",
+      "options": [
+        "0 derece",
+        "50 derece",
+        "100 derece",
+        "200 derece"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu, suyun buhara dönüştüğü sıcaklıktır."
+    },
+    {
+      "id": "q18",
+      "text": "Suyun donma noktası kaç derecedir?",
+      "options": [
+        "-10 derece",
+        "0 derece",
+        "10 derece",
+        "100 derece"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu, suyun buza dönüştüğü sıcaklıktır."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Bugün hangi hâl değişimini gözlemledin (buz erimesi, su buharlaşması vb.)?",
+    "options": [
+      "Erime",
+      "Buharlaşma",
+      "Donma",
+      "Hiçbirini gözlemlemedim"
+    ],
+    "correctIndex": 3,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

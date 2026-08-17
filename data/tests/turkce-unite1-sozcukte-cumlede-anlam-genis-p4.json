@@ -1,0 +1,251 @@
+{
+  "id": "turkce-unite1-sozcukte-cumlede-anlam-genis-p4",
+  "subject": "Türkçe",
+  "title": "Ünite 1 - Sözcükte ve Cümlede Anlam (Geniş Havuz) (4/4)",
+  "week": 1,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "'İğneyle kuyu kazmak' deyimi ne anlama gelir?",
+      "options": [
+        "Hızlı iş yapmak",
+        "Çok zor ve sabır isteyen bir işi yapmak",
+        "Kolay iş yapmak",
+        "İş yapmamak"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu deyim, çok zahmetli ve uzun süren bir çabayı anlatır."
+    },
+    {
+      "id": "q2",
+      "text": "'Gözden düşmek' deyimi ne anlama gelir?",
+      "options": [
+        "Düşmek (fiziksel)",
+        "Değerini/güvenilirliğini kaybetmek",
+        "Gözlük takmak",
+        "Uyumak"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu deyim, birinin başkalarının gözünde değer kaybetmesini anlatır."
+    },
+    {
+      "id": "q3",
+      "text": "Aşağıdakilerden hangisi 'kalabalık' sözcüğünün eş anlamlısıdır?",
+      "options": [
+        "Tenha",
+        "İzdiham/yoğun",
+        "Sessiz",
+        "Boş"
+      ],
+      "correctIndex": 1,
+      "hint": "Çok sayıda insanın bulunduğu durumu ifade eden sözcüğü düşün."
+    },
+    {
+      "id": "q4",
+      "text": "'Üzülmek' sözcüğünün zıt anlamlısı hangisidir?",
+      "options": [
+        "Ağlamak",
+        "Sevinmek",
+        "Düşünmek",
+        "Beklemek"
+      ],
+      "correctIndex": 1,
+      "hint": "Üzüntünün karşıtı olan duyguyu düşün."
+    },
+    {
+      "id": "q5",
+      "text": "Aşağıdaki cümlelerin hangisinde virgül kullanımı doğrudur?",
+      "options": [
+        "Kalem defter ve silgi aldım.",
+        "Kalem, defter ve silgi aldım.",
+        "Kalem defter, ve silgi aldım.",
+        "Kalem, defter, ve, silgi aldım."
+      ],
+      "correctIndex": 1,
+      "hint": "Sıralanan sözcükler arasına virgül konur, 've' bağlacından önce virgül konmaz."
+    },
+    {
+      "id": "q6",
+      "text": "Zorlayıcı soru: 'Kitabın kapağı yeşildi ama içeriği hiç de yeşil bir konudan bahsetmiyordu, tam tersine çölleri anlatıyordu.' cümlesinde 'yeşil' sözcüğünün iki kullanımı arasındaki fark nedir?",
+      "options": [
+        "İkisi de aynı anlamdadır",
+        "Biri renk (gerçek anlam), diğeri tazelik/çevre teması (mecaz anlam) olabilir",
+        "İkisi de mecazdır",
+        "İkisi de terim anlamdadır"
+      ],
+      "correctIndex": 1,
+      "hint": "İlk kullanım renk, ikinci kullanım ise çevre/doğa temasıyla ilişkili mecazi bir kullanım olabilir."
+    },
+    {
+      "id": "q7",
+      "text": "Aşağıdakilerden hangisi 'başarılı' sözcüğünün zıt anlamlısıdır?",
+      "options": [
+        "Zeki",
+        "Başarısız",
+        "Çalışkan",
+        "Yetenekli"
+      ],
+      "correctIndex": 1,
+      "hint": "Başarının karşıtı olan durumu düşün."
+    },
+    {
+      "id": "q8",
+      "text": "'Kulaktan kulağa yayılmak' deyimi ne anlama gelir?",
+      "options": [
+        "Bir haberin hızla insandan insana yayılması",
+        "Kulak ağrısı",
+        "Sessiz kalmak",
+        "Duymamak"
+      ],
+      "correctIndex": 0,
+      "hint": "Bu deyim, bir bilginin sözlü olarak hızla yayılmasını anlatır."
+    },
+    {
+      "id": "q9",
+      "text": "Aşağıdaki cümlelerden hangisinde 'yüz' sözcüğü sayı anlamında kullanılmıştır?",
+      "options": [
+        "Yüzünü yıkadı.",
+        "Yüz kişi geldi.",
+        "Yüzü gülüyordu.",
+        "Yüzüne baktı."
+      ],
+      "correctIndex": 1,
+      "hint": "Bu cümlede 'yüz', bir miktarı ifade ediyor."
+    },
+    {
+      "id": "q10",
+      "text": "Aşağıdaki cümlelerden hangisinde 'yüz' sözcüğü 'surat' anlamında kullanılmıştır?",
+      "options": [
+        "Yüz kişi geldi.",
+        "Yüzünü yıkadı.",
+        "Nehirde yüzdü.",
+        "Yüz lira harcadı."
+      ],
+      "correctIndex": 1,
+      "hint": "Bu cümlede 'yüz', vücudun bir bölümünü ifade ediyor."
+    },
+    {
+      "id": "q11",
+      "text": "'Kolay gelsin' ifadesi hangi durumda kullanılır?",
+      "options": [
+        "Birine veda ederken",
+        "Çalışan birine iyi dilekte bulunurken",
+        "Birini tebrik ederken",
+        "Birine kızarken"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu, iş yapan birine söylenen nazik bir ifadedir."
+    },
+    {
+      "id": "q12",
+      "text": "Zorlayıcı soru: 'Sabırla koruk helva olur.' atasözünün anlamı nedir?",
+      "options": [
+        "Koruğun tatlı olduğu",
+        "Sabırla beklenirse zor işlerin bile sonunda güzel sonuçlar doğurabileceği",
+        "Helva yapımının kolay olduğu",
+        "Meyvelerin olgunlaşması"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu atasözü, sabrın zamanla iyi sonuçlar getirebileceğini anlatır."
+    },
+    {
+      "id": "q13",
+      "text": "Aşağıdakilerden hangisi 'cömert' sözcüğünün zıt anlamlısıdır?",
+      "options": [
+        "Yardımsever",
+        "Cimri",
+        "Nazik",
+        "Sıcakkanlı"
+      ],
+      "correctIndex": 1,
+      "hint": "Cömertliğin karşıtı olan huyu düşün."
+    },
+    {
+      "id": "q14",
+      "text": "Bir cümlede 've, ile, ama, fakat' gibi sözcüklerin genel adı nedir?",
+      "options": [
+        "İsim",
+        "Bağlaç",
+        "Sıfat",
+        "Zamir"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu sözcükler, cümleleri veya sözcükleri birbirine bağlar."
+    },
+    {
+      "id": "q15",
+      "text": "Aşağıdaki cümlelerden hangisinde 'fakat' bağlacı doğru kullanılmıştır?",
+      "options": [
+        "Kitabı okudum fakat çok sıkıcıydı.",
+        "Kitabı fakat okudum.",
+        "Fakat kitabı okudum çok sıkıcıydı.",
+        "Kitabı okudum, çok, fakat sıkıcıydı."
+      ],
+      "correctIndex": 0,
+      "hint": "'Fakat', iki farklı durumu karşılaştırırken cümlenin ortasında kullanılır."
+    },
+    {
+      "id": "q16",
+      "text": "'Adım adım ilerlemek' deyimi ne anlama gelir?",
+      "options": [
+        "Hızlı hareket etmek",
+        "Yavaş ama düzenli ve istikrarlı bir şekilde ilerlemek",
+        "Geri geri gitmek",
+        "Hiç hareket etmemek"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu deyim, sabırlı ve düzenli bir ilerlemeyi anlatır."
+    },
+    {
+      "id": "q17",
+      "text": "Zorlayıcı soru: 'Öğretmenimiz sınıfa girdiğinde herkes ayağa kalktı.' cümlesinde 'ayağa kalkmak' ifadesi ne anlamda kullanılmıştır?",
+      "options": [
+        "Mecaz anlamda, isyan etmek",
+        "Gerçek anlamda, fiziksel olarak ayağa kalkma eylemi",
+        "Terim anlamda",
+        "Zıt anlamda"
+      ],
+      "correctIndex": 1,
+      "hint": "Burada gerçekten ayağa kalkma eylemi anlatılıyor, saygı göstergesi olarak."
+    },
+    {
+      "id": "q18",
+      "text": "Aşağıdakilerden hangisi 'neşeli' sözcüğünün eş anlamlısıdır?",
+      "options": [
+        "Üzgün",
+        "Şen/keyifli",
+        "Kızgın",
+        "Yorgun"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu sözcük, neşeli olmakla aynı anlamı taşır."
+    },
+    {
+      "id": "q19",
+      "text": "Bir cümlenin sonunda bilgi/haber verildiğinde hangi noktalama işareti kullanılır?",
+      "options": [
+        "Soru işareti",
+        "Ünlem işareti",
+        "Nokta",
+        "Virgül"
+      ],
+      "correctIndex": 2,
+      "hint": "Düz bir bilgi cümlesi genellikle bu işaretle biter."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Bu hafta okuduğun en sevdiğin kitap ya da hikaye hangisiydi?",
+    "options": [
+      "Bir kitap okudum",
+      "Henüz okumadım",
+      "Hatırlamıyorum",
+      "Söylemek istemiyorum"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

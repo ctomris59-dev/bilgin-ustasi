@@ -1,0 +1,239 @@
+{
+  "id": "fenbilimleri-unite6-insan-cevre-p1",
+  "subject": "Fen Bilimleri",
+  "title": "Ünite 6 - İnsan ve Çevre (1/4)",
+  "week": 6,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Havanın, insan faaliyetleri (fabrika dumanı, egzoz gazı vb.) nedeniyle kirletilmesine ne denir?",
+      "options": [
+        "Su kirliliği",
+        "Hava kirliliği",
+        "Toprak kirliliği",
+        "Gürültü kirliliği"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu kirlilik türü, soluduğumuz havayla ilgilidir."
+    },
+    {
+      "id": "q2",
+      "text": "Denizlere, göllere ve nehirlere zararlı maddelerin karışmasına ne denir?",
+      "options": [
+        "Hava kirliliği",
+        "Su kirliliği",
+        "Işık kirliliği",
+        "Ses kirliliği"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu kirlilik türü, içme ve kullanma suyu kaynaklarını etkiler."
+    },
+    {
+      "id": "q3",
+      "text": "Toprağa zararlı kimyasalların veya çöplerin karışmasına ne denir?",
+      "options": [
+        "Hava kirliliği",
+        "Su kirliliği",
+        "Toprak kirliliği",
+        "Gürültü kirliliği"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu kirlilik türü, tarım ve bitki yetişmesini olumsuz etkileyebilir."
+    },
+    {
+      "id": "q4",
+      "text": "Aşağıdakilerden hangisi hava kirliliğine bir örnektir?",
+      "options": [
+        "Fabrika bacalarından çıkan duman",
+        "Temiz içme suyu",
+        "Verimli tarım toprağı",
+        "Güneş ışığı"
+      ],
+      "correctIndex": 0,
+      "hint": "Bu, havaya zararlı gazlar/parçacıklar karışmasına örnektir."
+    },
+    {
+      "id": "q5",
+      "text": "Kullanılmış maddelerin (kağıt, plastik, cam vb.) yeniden işlenerek tekrar kullanılabilir hâle getirilmesine ne denir?",
+      "options": [
+        "Çöp yakma",
+        "Geri dönüşüm",
+        "Toprağa gömme",
+        "Yakma"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu süreç, atıkları yeniden değerlendirerek çevreye faydalı olur."
+    },
+    {
+      "id": "q6",
+      "text": "Geri dönüşümün çevreye faydalarından biri nedir?",
+      "options": [
+        "Doğal kaynakların gereksiz tüketimini azaltır",
+        "Çevreyi kirletir",
+        "Hiçbir faydası yoktur",
+        "Sadece parayı azaltır"
+      ],
+      "correctIndex": 0,
+      "hint": "Geri dönüşüm, yeni hammadde ihtiyacını azaltarak doğal kaynakları korur."
+    },
+    {
+      "id": "q7",
+      "text": "Aşağıdakilerden hangisi geri dönüştürülebilir bir malzemedir?",
+      "options": [
+        "Cam şişe",
+        "Yemek artığı (organik atık ayrı işlem görür)",
+        "Islak mendil",
+        "Pil (özel toplanır, farklı işlem)"
+      ],
+      "correctIndex": 0,
+      "hint": "Cam, birçok kez yeniden eritilip kullanılabilir."
+    },
+    {
+      "id": "q8",
+      "text": "Kağıt geri dönüşümünün önemli bir faydası nedir?",
+      "options": [
+        "Ağaç kesimini azaltmaya yardımcı olur",
+        "Ağaç kesimini artırır",
+        "Hiçbir faydası yoktur",
+        "Sadece suyu kirletir"
+      ],
+      "correctIndex": 0,
+      "hint": "Kağıt, ağaçlardan üretilir; geri dönüşüm yeni ağaç kesimini azaltabilir."
+    },
+    {
+      "id": "q9",
+      "text": "Aşağıdakilerden hangisi doğal bir kaynaktır?",
+      "options": [
+        "Plastik şişe",
+        "Su",
+        "Otomobil",
+        "Bilgisayar"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu kaynak, doğada var olan ve insan yapımı olmayan bir maddedir."
+    },
+    {
+      "id": "q10",
+      "text": "Doğal kaynakların bilinçsizce tüketilmesinin olası sonucu nedir?",
+      "options": [
+        "Kaynaklar sonsuza kadar tükenmez",
+        "Kaynakların azalması veya tükenmesi",
+        "Hiçbir olumsuz etkisi yoktur",
+        "Kaynaklar kendiliğinden çoğalır"
+      ],
+      "correctIndex": 1,
+      "hint": "Bazı doğal kaynaklar sınırlıdır ve dikkatli kullanılmalıdır."
+    },
+    {
+      "id": "q11",
+      "text": "'Sürdürülebilirlik' kavramı ne anlama gelir?",
+      "options": [
+        "Kaynakları sınırsızca tüketmek",
+        "Bugünün ihtiyaçlarını karşılarken gelecek nesillerin ihtiyaçlarını da düşünmek",
+        "Hiçbir kaynağı kullanmamak",
+        "Sadece bugünü düşünmek"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu kavram, uzun vadeli düşünmeyi ve dengeyi içerir."
+    },
+    {
+      "id": "q12",
+      "text": "Aşağıdakilerden hangisi su tasarrufu sağlayan bir davranıştır?",
+      "options": [
+        "Musluğu diş fırçalarken açık bırakmak",
+        "Diş fırçalarken musluğu kapatmak",
+        "Uzun süre duş almak",
+        "Bahçeyi gün ortasında sulamak"
+      ],
+      "correctIndex": 1,
+      "hint": "Gereksiz su akışını önlemek, tasarruf sağlar."
+    },
+    {
+      "id": "q13",
+      "text": "Aşağıdakilerden hangisi enerji tasarrufu sağlayan bir davranıştır?",
+      "options": [
+        "Kullanılmayan odalarda ışıkları açık bırakmak",
+        "Odadan çıkarken ışıkları kapatmak",
+        "Klimayı sürekli en düşük dereceye ayarlamak",
+        "Elektronik cihazları hiç kapatmamak"
+      ],
+      "correctIndex": 1,
+      "hint": "Gereksiz kullanılmayan ışıkları kapatmak enerji tasarrufu sağlar."
+    },
+    {
+      "id": "q14",
+      "text": "Ormanların yok edilmesine (kesilmesine) ne denir?",
+      "options": [
+        "Ağaçlandırma",
+        "Ormansızlaşma",
+        "Sulama",
+        "Geri dönüşüm"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu terim, orman alanlarının azalmasını ifade eder."
+    },
+    {
+      "id": "q15",
+      "text": "Ormansızlaşmanın çevreye olası olumsuz etkilerinden biri nedir?",
+      "options": [
+        "Hayvanların yaşam alanlarının azalması",
+        "Hava kalitesinin iyileşmesi",
+        "Hiçbir olumsuz etkisi yoktur",
+        "Toprak erozyonunun azalması"
+      ],
+      "correctIndex": 0,
+      "hint": "Ormanlar, birçok canlının doğal yaşam alanıdır."
+    },
+    {
+      "id": "q16",
+      "text": "Ağaçlandırma (yeni ağaç dikme) çalışmalarının faydası nedir?",
+      "options": [
+        "Hava kalitesini kötüleştirir",
+        "Oksijen üretimini artırır ve yaşam alanlarını destekler",
+        "Hiçbir faydası yoktur",
+        "Sadece görünüşü değiştirir"
+      ],
+      "correctIndex": 1,
+      "hint": "Ağaçlar fotosentez yaparak oksijen üretir."
+    },
+    {
+      "id": "q17",
+      "text": "Aşağıdakilerden hangisi 'yenilenebilir enerji kaynağına' bir örnektir?",
+      "options": [
+        "Kömür",
+        "Güneş enerjisi",
+        "Petrol",
+        "Doğalgaz"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu enerji kaynağı, sürekli olarak (her gün) yeniden elde edilebilir."
+    },
+    {
+      "id": "q18",
+      "text": "Aşağıdakilerden hangisi 'yenilenemeyen enerji kaynağına' bir örnektir?",
+      "options": [
+        "Rüzgar enerjisi",
+        "Güneş enerjisi",
+        "Kömür",
+        "Su enerjisi (hidroelektrik)"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu kaynak, oluşması milyonlarca yıl sürer ve tükenebilir."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Bugün çevre için ne yaptın (geri dönüşüm, tasarruf vb.)?",
+    "options": [
+      "Geri dönüşüm yaptım",
+      "Su/enerji tasarrufu yaptım",
+      "İkisini de yaptım",
+      "Henüz bir şey yapmadım ama bugün yapacağım"
+    ],
+    "correctIndex": 2,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

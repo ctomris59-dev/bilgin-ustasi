@@ -1,0 +1,239 @@
+{
+  "id": "turkce-unite5-anlatim-bozukluklari-cumle-cesitleri-p2",
+  "subject": "Türkçe",
+  "title": "Ünite 5 - Anlatım Bozuklukları ve Cümle Çeşitleri (2/4)",
+  "week": 5,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Bir cümlede gerekli bir ögenin eksik bırakılmasına ne denir?",
+      "options": [
+        "Anlatım bozukluğu (eksik öge)",
+        "Doğru anlatım",
+        "Sıralı cümle",
+        "Devrik cümle"
+      ],
+      "correctIndex": 0,
+      "hint": "Cümlenin anlamını tam vermek için gerekli bir kelime/öge eksik olabilir."
+    },
+    {
+      "id": "q2",
+      "text": "Zorlayıcı soru: 'Öğrenciler sınava hazırlanmalı ve başarılı olmak için.' cümlesinde hangi bozukluk vardır?",
+      "options": [
+        "Hiçbir bozukluk yoktur",
+        "Cümlenin yapısı bozuk, eksik/yanlış bağlanmış (anlam ve yapı bakımından tutarsız)",
+        "Cümle mükemmeldir",
+        "Devrik cümledir sadece"
+      ],
+      "correctIndex": 1,
+      "hint": "Cümlenin sonunda 'için' bağlacının kullanımı yapısal olarak tutarsızdır."
+    },
+    {
+      "id": "q3",
+      "text": "Aşağıdaki cümlelerin hangisi dilbilgisi açısından doğru ve anlaşılırdır?",
+      "options": [
+        "Öğrenciler başarılı olmak için çok çalıştılar.",
+        "Öğrenciler için çok çalıştılar başarılı olmak.",
+        "Çalıştılar öğrenciler başarılı olmak için çok.",
+        "Başarılı öğrenciler için çok çalıştılar olmak."
+      ],
+      "correctIndex": 0,
+      "hint": "Bu cümle, hem anlam hem yapı bakımından düzgün kurulmuştur."
+    },
+    {
+      "id": "q4",
+      "text": "Bir cümlede gereksiz yere ekleme yapılan sözcüklere ne ad verilir (anlatım bozukluğu bağlamında)?",
+      "options": [
+        "Gereksiz sözcük",
+        "Yapım eki",
+        "Çekim eki",
+        "Kök"
+      ],
+      "correctIndex": 0,
+      "hint": "Cümlenin anlamına hiçbir katkısı olmayan, fazladan eklenen kelimeler bu şekilde adlandırılır."
+    },
+    {
+      "id": "q5",
+      "text": "'Sabah kahvaltısını erkenden yaptı.' cümlesinde hangi anlatım bozukluğu olabilir?",
+      "options": [
+        "Hiçbir bozukluk yoktur, cümle doğrudur",
+        "'Sabah' ve 'kahvaltı' kelimeleri anlamca örtüşüyor olabilir (bazı bağlamlarda tekrar sayılabilir)",
+        "Cümle eksiktir",
+        "Devrik cümledir"
+      ],
+      "correctIndex": 1,
+      "hint": "'Kahvaltı' zaten sabah yenilen öğün olduğu için 'sabah kahvaltısı' bazı durumlarda gereksiz bir vurgu olarak görülebilir."
+    },
+    {
+      "id": "q6",
+      "text": "Aşağıdaki cümlelerin hangisinde gereksiz sözcük kullanımı YOKTUR?",
+      "options": [
+        "Eve geri döndü.",
+        "Eve döndü.",
+        "Yukarı çıktı yukarı.",
+        "Aşağı indi aşağı."
+      ],
+      "correctIndex": 1,
+      "hint": "Bu cümlede hiçbir kelime gereksiz tekrar oluşturmuyor."
+    },
+    {
+      "id": "q7",
+      "text": "Bir cümlede birbirine bağlanan ögelerin uyumsuz olmasına ne denir?",
+      "options": [
+        "Bağlaç uyumsuzluğu / anlatım bozukluğu",
+        "Doğru anlatım",
+        "Kurallı cümle",
+        "Devrik cümle"
+      ],
+      "correctIndex": 0,
+      "hint": "Bağlaçlarla bağlanan ögeler, aynı türde ve uyumlu olmalıdır."
+    },
+    {
+      "id": "q8",
+      "text": "'Kitap ve kalemleri aldım.' cümlesinde bir sorun var mı?",
+      "options": [
+        "Hayır, cümle tamamen doğrudur",
+        "Evet, 'kitap' tekil, 'kalemleri' çoğul - anlam belirsizliği oluşabilir (kaç kitap alındığı net değil)",
+        "Cümle hiç anlaşılmıyor",
+        "Bu bir devrik cümledir"
+      ],
+      "correctIndex": 1,
+      "hint": "Ögelerin sayı bakımından tutarlı olması, anlamın netliği için önemlidir."
+    },
+    {
+      "id": "q9",
+      "text": "Zorlayıcı soru: 'Bu kitabı okudum ve çok bilgi sahibi oldum bu konuda.' cümlesinde nasıl bir anlatım sorunu vardır?",
+      "options": [
+        "Hiçbir sorun yoktur",
+        "Cümlenin sonundaki 'bu konuda' ifadesi, cümlenin akışını bozuyor, daha uygun bir yere taşınmalı",
+        "Cümle mükemmeldir",
+        "Devrik cümledir sadece, sorun değildir"
+      ],
+      "correctIndex": 1,
+      "hint": "Daha akıcı bir anlatım için 'Bu konuda bu kitabı okudum ve çok bilgi sahibi oldum.' şeklinde düzenlenebilir."
+    },
+    {
+      "id": "q10",
+      "text": "Aşağıdaki cümlelerin hangisi daha açık ve anlaşılır bir anlatıma sahiptir?",
+      "options": [
+        "Öğretmen öğrenciye kitabını verdi. (kimin kitabı belirsiz)",
+        "Öğretmen kendi kitabını öğrenciye verdi.",
+        "Kitabını öğrenciye öğretmen verdi.",
+        "Verdi öğretmen kitabını öğrenciye."
+      ],
+      "correctIndex": 1,
+      "hint": "Bu cümlede kimin kitabı olduğu net bir şekilde belirtilmiştir."
+    },
+    {
+      "id": "q11",
+      "text": "Bir yazıda anlatım bozukluklarından kaçınmak neden önemlidir?",
+      "options": [
+        "Hiçbir önemi yoktur",
+        "Mesajın açık, anlaşılır ve doğru şekilde iletilmesini sağlar",
+        "Yazıyı uzatır",
+        "Anlamı belirsizleştirir"
+      ],
+      "correctIndex": 1,
+      "hint": "Doğru anlatım, iletişimin etkili olmasını sağlar."
+    },
+    {
+      "id": "q12",
+      "text": "Aşağıdakilerden hangisi 'devrik cümle' örneğidir?",
+      "options": [
+        "Ali okula gitti.",
+        "Gitti Ali okula.",
+        "Ali, erken saatte okula gitti.",
+        "Okula giden Ali erken vardı."
+      ],
+      "correctIndex": 1,
+      "hint": "Yüklem cümlenin başında yer almış."
+    },
+    {
+      "id": "q13",
+      "text": "Devrik cümle kullanmak bir anlatım bozukluğu mudur?",
+      "options": [
+        "Evet, her zaman yanlıştır",
+        "Hayır, devrik cümle kasıtlı ve doğru bir anlatım biçimidir, bozukluk değildir",
+        "Devrik cümle hiç kullanılmamalıdır",
+        "Bu bir kural ihlalidir her zaman"
+      ],
+      "correctIndex": 1,
+      "hint": "Devrik cümleler, vurgu değiştirmek için kasıtlı olarak kullanılan geçerli bir cümle yapısıdır."
+    },
+    {
+      "id": "q14",
+      "text": "Aşağıdaki cümlelerin hangisinde anlatım bozukluğu vardır?",
+      "options": [
+        "Kitabı okudum, çok beğendim.",
+        "Kitabı okudum ve okudum tekrar.",
+        "Kitabı beğenerek okudum.",
+        "Kitabı hızlıca okudum."
+      ],
+      "correctIndex": 1,
+      "hint": "'Okudum' kelimesi gereksiz yere tekrar edilmiş."
+    },
+    {
+      "id": "q15",
+      "text": "'Yarın belki gelebilirim, kesin geleceğim.' cümlesinde ne tür bir sorun vardır?",
+      "options": [
+        "Hiçbir sorun yoktur",
+        "'Belki' (olasılık) ile 'kesin' (kesinlik) kelimeleri birbiriyle çelişiyor",
+        "Cümle eksiktir",
+        "Devrik cümledir"
+      ],
+      "correctIndex": 1,
+      "hint": "'Belki' ihtimal, 'kesin' ise kesinlik bildirir - bu ikisi aynı cümlede çelişki yaratır."
+    },
+    {
+      "id": "q16",
+      "text": "Zorlayıcı soru: 'Sanırım kesinlikle haklısın.' cümlesinde hangi anlatım bozukluğu vardır?",
+      "options": [
+        "Hiçbir bozukluk yoktur",
+        "'Sanırım' (belirsizlik) ile 'kesinlikle' (kesinlik) kelimeleri çelişki oluşturuyor",
+        "Cümle devriktir sadece",
+        "Cümle eksiktir"
+      ],
+      "correctIndex": 1,
+      "hint": "'Sanırım' bir tahmin, 'kesinlikle' ise kesin bir yargı bildirir - ikisi bir arada anlam çelişkisi yaratır."
+    },
+    {
+      "id": "q17",
+      "text": "Bir cümlenin anlaşılır olması için hangi unsurlara dikkat edilmelidir?",
+      "options": [
+        "Sadece uzunluğuna",
+        "Doğru sözcük seçimi, mantıklı ilişkiler ve gereksiz tekrarlardan kaçınma",
+        "Sadece kafiyeli olmasına",
+        "Hiçbir unsura dikkat edilmez"
+      ],
+      "correctIndex": 1,
+      "hint": "İyi bir cümle, hem doğru kelimeler hem mantıklı bir yapı gerektirir."
+    },
+    {
+      "id": "q18",
+      "text": "Aşağıdaki cümlelerin hangisinde bir anlatım bozukluğu YOKTUR?",
+      "options": [
+        "Çok az azaldı.",
+        "Biraz azaldı.",
+        "Aşırı derecede çoğaldı çok fazla.",
+        "İki tarafın ikisi de geldi."
+      ],
+      "correctIndex": 1,
+      "hint": "Bu cümlede gereksiz tekrar veya çelişki yoktur."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Bugün yazdığın bir cümleyi tekrar okuyup düzelttin mi?",
+    "options": [
+      "Evet, düzelttim",
+      "Henüz fırsatım olmadı",
+      "Hatırlamıyorum",
+      "Söylemek istemiyorum"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

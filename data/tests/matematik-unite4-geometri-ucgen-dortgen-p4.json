@@ -1,0 +1,239 @@
+{
+  "id": "matematik-unite4-geometri-ucgen-dortgen-p4",
+  "subject": "Matematik",
+  "title": "Ünite 4 - Temel Geometrik Kavramlar, Üçgen ve Dörtgenler (4/4)",
+  "week": 4,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Bir üçgenin adı, hangi özelliklerine göre verilebilir?",
+      "options": [
+        "Sadece rengine göre",
+        "Kenar uzunluklarına veya açı ölçülerine göre",
+        "Sadece boyutuna göre",
+        "Hiçbir özelliğine göre"
+      ],
+      "correctIndex": 1,
+      "hint": "Üçgenler hem kenarlarına (eşkenar, ikizkenar, çeşitkenar) hem açılarına (dar, dik, geniş) göre adlandırılır."
+    },
+    {
+      "id": "q2",
+      "text": "Zorlayıcı soru: Bir dikdörtgenin köşegenleri hakkında ne söylenebilir?",
+      "options": [
+        "Birbirine eşittir ve birbirini ortalar",
+        "Birbirinden farklı uzunluktadır",
+        "Hiç kesişmezler",
+        "Sadece biri vardır"
+      ],
+      "correctIndex": 0,
+      "hint": "Dikdörtgenin iki köşegeni her zaman eşit uzunluktadır ve ortada kesişirler."
+    },
+    {
+      "id": "q3",
+      "text": "Aşağıdakilerden hangisi 'geniş açı' için doğru bir örnektir?",
+      "options": [
+        "45 derece",
+        "90 derece",
+        "120 derece",
+        "30 derece"
+      ],
+      "correctIndex": 2,
+      "hint": "90 ile 180 derece arasındaki bir değeri seç."
+    },
+    {
+      "id": "q4",
+      "text": "Bir açı hem dar hem dik hem geniş açı özelliği aynı anda taşıyabilir mi?",
+      "options": [
+        "Evet, her zaman",
+        "Hayır, bir açı sadece bir türe aittir",
+        "Sadece bazen",
+        "Bu sorunun cevabı yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Bir açının ölçüsü tek bir değerdir, bu da onu tek bir kategoriye sokar."
+    },
+    {
+      "id": "q5",
+      "text": "Zorlayıcı soru: Bir üçgen hem ikizkenar hem dik açılı olabilir mi?",
+      "options": [
+        "Hayır, asla olamaz",
+        "Evet, iki eşit kenarı olup bir açısı 90 derece olabilir",
+        "Sadece eşkenar üçgenler dik olabilir",
+        "Bu bir çelişkidir"
+      ],
+      "correctIndex": 1,
+      "hint": "Bir üçgen aynı anda birden fazla sınıflandırma özelliğine sahip olabilir."
+    },
+    {
+      "id": "q6",
+      "text": "Aşağıdakilerden hangisi bir 'eşkenar dörtgenin' (rombus) özelliğidir?",
+      "options": [
+        "Dört kenarı da eşittir ama açıları 90 derece olmak zorunda değildir",
+        "Sadece iki kenarı eşittir",
+        "Hiç eşit kenarı yoktur",
+        "Sadece üçgenler için kullanılan bir terimdir"
+      ],
+      "correctIndex": 0,
+      "hint": "Eşkenar dörtgen, kareye benzer ama açıları farklı olabilir - sadece kenarları eşittir."
+    },
+    {
+      "id": "q7",
+      "text": "Bir gönye, hangi açıyı çizmek için özellikle kullanışlıdır?",
+      "options": [
+        "Dar açı",
+        "Dik açı (90 derece)",
+        "Tam açı",
+        "Hiçbiri için kullanılmaz"
+      ],
+      "correctIndex": 1,
+      "hint": "Gönyeler genellikle L şeklindedir ve dik açı oluşturur."
+    },
+    {
+      "id": "q8",
+      "text": "Zorlayıcı soru: Bir dörtgenin dört açısı da birbirine eşitse, her açı kaç derecedir?",
+      "options": [
+        "45 derece",
+        "60 derece",
+        "90 derece",
+        "120 derece"
+      ],
+      "correctIndex": 2,
+      "hint": "360 dereceyi 4 eşit açıya böl."
+    },
+    {
+      "id": "q9",
+      "text": "Aşağıdakilerden hangisi doğru bir tanımdır?",
+      "options": [
+        "Çokgen, sadece 3 kenarlı şekillere denir",
+        "Çokgen, düz kenarlarla çevrili kapalı şekillere denir",
+        "Çokgen, sadece dairesel şekillere denir",
+        "Çokgen bir açı türüdür"
+      ],
+      "correctIndex": 1,
+      "hint": "Üçgen, dörtgen, beşgen gibi şekillerin genel adı çokgendir."
+    },
+    {
+      "id": "q10",
+      "text": "Bir beşgenin kaç kenarı vardır?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "3"
+      ],
+      "correctIndex": 1,
+      "hint": "'Beş' öneki, kenar sayısını belirtir."
+    },
+    {
+      "id": "q11",
+      "text": "Zorlayıcı soru: Bir çemberin merkezinden geçmeyen, çember üzerindeki iki noktayı birleştiren doğru parçasına ne denir?",
+      "options": [
+        "Çap",
+        "Yarıçap",
+        "Kiriş",
+        "Teğet"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu doğru parçası merkezden geçmez, çapın aksine."
+    },
+    {
+      "id": "q12",
+      "text": "Aşağıdakilerden hangisi bir altıgenin kenar sayısıdır?",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correctIndex": 1,
+      "hint": "'Altı' öneki kenar sayısını belirtir."
+    },
+    {
+      "id": "q13",
+      "text": "Bir üçgen çizerken üç kenarın uzunluğu bilindiğinde, kaç farklı üçgen çizilebilir (kenar uzunlukları sabit tutulursa)?",
+      "options": [
+        "Sonsuz sayıda",
+        "Sadece 1 tane (şekil ve büyüklük olarak aynı)",
+        "Hiç çizilemez",
+        "Tam olarak 3 tane"
+      ],
+      "correctIndex": 1,
+      "hint": "Üç kenar uzunluğu belirlendiğinde üçgenin şekli kesinleşir."
+    },
+    {
+      "id": "q14",
+      "text": "Zorlayıcı soru: Bir üçgenin kenarları 3 cm, 4 cm ve 10 cm olabilir mi?",
+      "options": [
+        "Evet, her zaman üçgen oluşturulabilir",
+        "Hayır, iki kenarın toplamı üçüncü kenardan büyük olmalı ama burada 3+4=7, 10'dan küçük",
+        "Sadece kare şeklinde olur",
+        "Bu bir çember oluşturur"
+      ],
+      "correctIndex": 1,
+      "hint": "Üçgen eşitsizliği kuralına göre iki kenarın toplamı üçüncü kenardan büyük olmalıdır."
+    },
+    {
+      "id": "q15",
+      "text": "Aşağıdakilerden hangisi bir 'çokgenin köşe sayısı' ile 'kenar sayısı' arasındaki ilişkiyi doğru açıklar?",
+      "options": [
+        "Köşe sayısı her zaman kenar sayısından fazladır",
+        "Köşe sayısı ve kenar sayısı her zaman eşittir",
+        "Kenar sayısı her zaman köşe sayısından fazladır",
+        "Aralarında hiç ilişki yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Bir çokgende her köşe iki kenarın birleştiği noktadır, sayıları eşittir."
+    },
+    {
+      "id": "q16",
+      "text": "Zorlayıcı soru: Bir yamuğun paralel olmayan kenarları eşit uzunluktaysa, bu yamuğa ne denir?",
+      "options": [
+        "Dik yamuk",
+        "İkizkenar yamuk",
+        "Eşkenar yamuk",
+        "Kare yamuk"
+      ],
+      "correctIndex": 1,
+      "hint": "'İkizkenar' terimi, iki kenarın eşit olduğunu belirtir - üçgenlerdeki gibi."
+    },
+    {
+      "id": "q17",
+      "text": "Aşağıdakilerden hangisi bir açının 'kenarları' için doğru terimdir?",
+      "options": [
+        "Açıyı oluşturan iki ışın",
+        "Açının rengi",
+        "Açının derecesi",
+        "Açının merkezi"
+      ],
+      "correctIndex": 0,
+      "hint": "Bir açı, ortak bir noktadan çıkan iki ışından oluşur, bu ışınlara açının kenarları denir."
+    },
+    {
+      "id": "q18",
+      "text": "Bir açının köşesi (tepe noktası) nedir?",
+      "options": [
+        "Açıyı oluşturan iki ışının birleştiği ortak nokta",
+        "Açının en uzak noktası",
+        "Açının derecesi",
+        "Açının kenar uzunluğu"
+      ],
+      "correctIndex": 0,
+      "hint": "Bu, iki ışının başladığı ortak noktadır."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Geometri konusunda en sevdiğin şekil hangisi?",
+    "options": [
+      "Üçgen",
+      "Kare/Dikdörtgen",
+      "Çember",
+      "Diğer"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

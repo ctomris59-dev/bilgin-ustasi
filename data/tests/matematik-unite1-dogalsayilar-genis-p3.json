@@ -1,0 +1,263 @@
+{
+  "id": "matematik-unite1-dogalsayilar-genis-p3",
+  "subject": "Matematik",
+  "title": "Ünite 1 - Doğal Sayılar (Geniş Havuz) (3/4)",
+  "week": 1,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "144 ÷ 12 işleminin sonucu kaçtır?",
+      "options": [
+        "11",
+        "12",
+        "13",
+        "14"
+      ],
+      "correctIndex": 1,
+      "hint": "12×12 kaç eder, kontrol et."
+    },
+    {
+      "id": "q2",
+      "text": "156 ÷ 12 işleminde bölüm ve kalan nedir?",
+      "options": [
+        "Bölüm 12, kalan 12",
+        "Bölüm 13, kalan 0",
+        "Bölüm 13, kalan 1",
+        "Bölüm 14, kalan 0"
+      ],
+      "correctIndex": 1,
+      "hint": "12×13'ü hesapla."
+    },
+    {
+      "id": "q3",
+      "text": "100 ÷ 7 işleminde bölüm ve kalan nedir?",
+      "options": [
+        "Bölüm 13, kalan 9",
+        "Bölüm 14, kalan 2",
+        "Bölüm 15, kalan 0",
+        "Bölüm 14, kalan 3"
+      ],
+      "correctIndex": 1,
+      "hint": "7×14=98, kalanı bul."
+    },
+    {
+      "id": "q4",
+      "text": "245 ÷ 5 işleminin sonucu kaçtır?",
+      "options": [
+        "45",
+        "49",
+        "51",
+        "55"
+      ],
+      "correctIndex": 1,
+      "hint": "245'i 5'e böl, 5×49'u kontrol et."
+    },
+    {
+      "id": "q5",
+      "text": "500 ÷ 25 işleminin sonucu kaçtır?",
+      "options": [
+        "15",
+        "20",
+        "25",
+        "30"
+      ],
+      "correctIndex": 1,
+      "hint": "25×20 kaç eder?"
+    },
+    {
+      "id": "q6",
+      "text": "81 ÷ 9 işleminin sonucu kaçtır?",
+      "options": [
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "correctIndex": 1,
+      "hint": "9'un kaç katı 81 eder?"
+    },
+    {
+      "id": "q7",
+      "text": "1.000 ÷ 8 işleminin sonucu kaçtır?",
+      "options": [
+        "115",
+        "125",
+        "135",
+        "105"
+      ],
+      "correctIndex": 1,
+      "hint": "8×125'i kontrol et."
+    },
+    {
+      "id": "q8",
+      "text": "63 ÷ 7 işleminin sonucu kaçtır?",
+      "options": [
+        "8",
+        "9",
+        "10",
+        "7"
+      ],
+      "correctIndex": 1,
+      "hint": "7'nin çarpım tablosunu düşün."
+    },
+    {
+      "id": "q9",
+      "text": "90 ÷ 4 işleminde bölüm ve kalan nedir?",
+      "options": [
+        "Bölüm 21, kalan 2",
+        "Bölüm 22, kalan 2",
+        "Bölüm 22, kalan 1",
+        "Bölüm 23, kalan 0"
+      ],
+      "correctIndex": 1,
+      "hint": "4×22=88, kalanı bul."
+    },
+    {
+      "id": "q10",
+      "text": "288 ÷ 12 işleminin sonucu kaçtır?",
+      "options": [
+        "22",
+        "23",
+        "24",
+        "25"
+      ],
+      "correctIndex": 2,
+      "hint": "12×24'ü kontrol et."
+    },
+    {
+      "id": "q11",
+      "text": "6² (6'nın karesi) kaçtır?",
+      "options": [
+        "12",
+        "36",
+        "18",
+        "24"
+      ],
+      "correctIndex": 1,
+      "hint": "6×6 işlemini yap."
+    },
+    {
+      "id": "q12",
+      "text": "9² (9'un karesi) kaçtır?",
+      "options": [
+        "18",
+        "72",
+        "81",
+        "90"
+      ],
+      "correctIndex": 2,
+      "hint": "9×9 işlemini yap."
+    },
+    {
+      "id": "q13",
+      "text": "4³ (4'ün küpü) kaçtır?",
+      "options": [
+        "12",
+        "16",
+        "48",
+        "64"
+      ],
+      "correctIndex": 3,
+      "hint": "4×4×4 işlemini yap."
+    },
+    {
+      "id": "q14",
+      "text": "10² (10'un karesi) kaçtır?",
+      "options": [
+        "20",
+        "100",
+        "1.000",
+        "10"
+      ],
+      "correctIndex": 1,
+      "hint": "10×10 işlemini yap."
+    },
+    {
+      "id": "q15",
+      "text": "2³ (2'nin küpü) kaçtır?",
+      "options": [
+        "4",
+        "6",
+        "8",
+        "9"
+      ],
+      "correctIndex": 2,
+      "hint": "2×2×2 işlemini yap."
+    },
+    {
+      "id": "q16",
+      "text": "5² (5'in karesi) kaçtır?",
+      "options": [
+        "10",
+        "15",
+        "20",
+        "25"
+      ],
+      "correctIndex": 3,
+      "hint": "5×5 işlemini yap."
+    },
+    {
+      "id": "q17",
+      "text": "3³ (3'ün küpü) kaçtır?",
+      "options": [
+        "9",
+        "18",
+        "27",
+        "36"
+      ],
+      "correctIndex": 2,
+      "hint": "3×3×3 işlemini yap."
+    },
+    {
+      "id": "q18",
+      "text": "12² (12'nin karesi) kaçtır?",
+      "options": [
+        "24",
+        "124",
+        "144",
+        "154"
+      ],
+      "correctIndex": 2,
+      "hint": "12×12 işlemini yap."
+    },
+    {
+      "id": "q19",
+      "text": "(5 + 3) × 2 işleminin sonucu kaçtır?",
+      "options": [
+        "11",
+        "13",
+        "16",
+        "18"
+      ],
+      "correctIndex": 2,
+      "hint": "Önce parantez içini işle."
+    },
+    {
+      "id": "q20",
+      "text": "10 - (4 + 2) işleminin sonucu kaçtır?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correctIndex": 1,
+      "hint": "Parantez içi önce: 4+2=6."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Bu ünitede en çok hangi işlem türünde kendine güvendin?",
+    "options": [
+      "Toplama",
+      "Çıkarma",
+      "Çarpma",
+      "Bölme"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

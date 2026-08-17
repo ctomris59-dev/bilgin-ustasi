@@ -1,0 +1,239 @@
+{
+  "id": "fenbilimleri-unite3-kuvvet-surtunme-p3",
+  "subject": "Fen Bilimleri",
+  "title": "Ünite 3 - Kuvvetin Ölçülmesi ve Sürtünme (3/4)",
+  "week": 3,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Su üzerinde kayak yaparken (su kayağı) sürtünme neden daha azdır (kara göre)?",
+      "options": [
+        "Su, karadan daha pürüzlüdür",
+        "Su daha akışkan ve pürüzsüz bir ortamdır",
+        "Suda yerçekimi yoktur",
+        "Su hiç madde içermez"
+      ],
+      "correctIndex": 1,
+      "hint": "Akışkan ve düz yüzeyler genelde daha az sürtünme oluşturur."
+    },
+    {
+      "id": "q2",
+      "text": "Bir arabanın frenleri aşırı kullanıldığında neden ısınabilir?",
+      "options": [
+        "Motor çok çalıştığı için",
+        "Sürtünme, harekete karşı direnç gösterirken ısı enerjisi açığa çıkarır",
+        "Arabalar her zaman ısınır",
+        "Frenler elektrikle çalışır"
+      ],
+      "correctIndex": 1,
+      "hint": "Sürtünme, kinetik enerjinin bir kısmını ısıya dönüştürür."
+    },
+    {
+      "id": "q3",
+      "text": "Aşağıdakilerden hangisi kuvvetin ölçülmesinde kullanılan birimdir?",
+      "options": [
+        "Litre",
+        "Newton",
+        "Derece",
+        "Saat"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu birim, İngiliz bilim insanı Isaac Newton'un adından gelir."
+    },
+    {
+      "id": "q4",
+      "text": "Bir cisme uygulanan kuvvet arttıkça, dinamometredeki yay ne olur?",
+      "options": [
+        "Kısalır",
+        "Daha fazla uzar",
+        "Hiç değişmez",
+        "Kırılır her zaman"
+      ],
+      "correctIndex": 1,
+      "hint": "Daha büyük kuvvet, yayı daha fazla gerer."
+    },
+    {
+      "id": "q5",
+      "text": "Zorlayıcı soru: Bir öğrenci iki farklı yüzeyde (biri pürüzlü, biri düz) aynı kutuyu çekiyor. Hangi yüzeyde daha fazla kuvvet harcaması gerekir?",
+      "options": [
+        "Düz yüzeyde",
+        "Pürüzlü yüzeyde",
+        "İkisinde de aynı kuvvet gerekir",
+        "Hiçbirinde kuvvet gerekmez"
+      ],
+      "correctIndex": 1,
+      "hint": "Pürüzlü yüzeylerde sürtünme fazla olduğu için daha fazla kuvvet gerekir."
+    },
+    {
+      "id": "q6",
+      "text": "Aşağıdakilerden hangisi 'kütlesi büyük' bir cisme örnektir (günlük hayattan)?",
+      "options": [
+        "Bir tüy",
+        "Bir kamyon",
+        "Bir kağıt parçası",
+        "Bir sabun köpüğü"
+      ],
+      "correctIndex": 1,
+      "hint": "Kütle, madde miktarıyla ilgilidir - büyük ve yoğun cisimlerin kütlesi fazladır."
+    },
+    {
+      "id": "q7",
+      "text": "Bir cismin ağırlığının sıfır olabileceği bir durum var mıdır?",
+      "options": [
+        "Hayır, hiçbir zaman sıfır olamaz",
+        "Evet, yerçekiminin olmadığı ortamlarda (uzay boşluğu gibi)",
+        "Sadece suda sıfır olur",
+        "Sadece gece sıfır olur"
+      ],
+      "correctIndex": 1,
+      "hint": "Uzayda, yerçekiminin çok zayıf olduğu yerlerde ağırlıksızlık hissedilir."
+    },
+    {
+      "id": "q8",
+      "text": "Kar üzerinde yürürken kayak takmanın avantajı nedir?",
+      "options": [
+        "Kayak, vücut ağırlığını daha geniş bir alana yayarak kara batmayı azaltır",
+        "Kayaklar sürtünmeyi artırır",
+        "Kayaklar ağırlığı artırır",
+        "Hiçbir avantajı yoktur"
+      ],
+      "correctIndex": 0,
+      "hint": "Geniş taban, basıncı azaltarak kara batmayı önler."
+    },
+    {
+      "id": "q9",
+      "text": "Aşağıdakilerden hangisi hem kuvvet hem sürtünme ile ilgili doğru bir ifadedir?",
+      "options": [
+        "Sürtünme bir tür kuvvettir",
+        "Sürtünme kuvvetle hiç ilgili değildir",
+        "Kuvvet sadece sürtünmeden oluşur",
+        "Sürtünme sadece suda oluşur"
+      ],
+      "correctIndex": 0,
+      "hint": "Sürtünme, hareketi engelleyen bir kuvvet türüdür."
+    },
+    {
+      "id": "q10",
+      "text": "Bir cismi yerden kaldırmak için uyguladığımız kuvvet, hangi kuvveti yenmeye çalışır?",
+      "options": [
+        "Sürtünme kuvvetini",
+        "Yerçekimi (ağırlık) kuvvetini",
+        "Manyetik kuvveti",
+        "Elektrik kuvvetini"
+      ],
+      "correctIndex": 1,
+      "hint": "Cismi kaldırırken onu aşağı çeken kuvvete karşı çalışırız."
+    },
+    {
+      "id": "q11",
+      "text": "Zorlayıcı soru: Bir kutunun ağırlığı dinamometre ile 20 Newton ölçülmüştür. Bu kutu Ay'a götürülürse dinamometredeki ölçüm ne olur?",
+      "options": [
+        "20 Newton'dan fazla olur",
+        "20 Newton'dan az olur",
+        "Tam olarak 20 Newton kalır",
+        "Ölçüm mümkün değildir"
+      ],
+      "correctIndex": 1,
+      "hint": "Ay'ın çekim kuvveti azdır, bu yüzden ağırlık (Newton cinsinden) azalır."
+    },
+    {
+      "id": "q12",
+      "text": "Aşağıdakilerden hangisi bir 'dengelenmiş kuvvet' durumuna örnektir?",
+      "options": [
+        "Bir cismin hızlanması",
+        "Bir masanın üzerinde duran bir kitabın hareketsiz kalması",
+        "Bir arabanın aniden durması",
+        "Bir topun havaya fırlatılması"
+      ],
+      "correctIndex": 1,
+      "hint": "Kitap hareketsizdir çünkü yerçekimi ve masanın desteği birbirini dengeler."
+    },
+    {
+      "id": "q13",
+      "text": "Suda yüzerken kolları ve bacakları hareket ettirmek neden bizi ileri iter?",
+      "options": [
+        "Suyun bize uyguladığı tepki kuvveti (itme-çekme) sayesinde",
+        "Su hiçbir kuvvet uygulamaz",
+        "Sadece kütlemiz azaldığı için",
+        "Suyun sıcaklığı sayesinde"
+      ],
+      "correctIndex": 0,
+      "hint": "Suyu iterken, su da bize karşı bir kuvvet uygular, bu bizi ileri iter."
+    },
+    {
+      "id": "q14",
+      "text": "Bir bisikletçi tepe yukarı giderken neden daha fazla kuvvet harcar?",
+      "options": [
+        "Yerçekimine karşı çalıştığı için",
+        "Sürtünme hiç etkili değildir",
+        "Bisiklet daha ağır hâle gelir",
+        "Hiçbir sebep yoktur"
+      ],
+      "correctIndex": 0,
+      "hint": "Yokuş yukarı giderken yerçekimine karşı ekstra kuvvet gerekir."
+    },
+    {
+      "id": "q15",
+      "text": "Zorlayıcı soru: Aynı ağırlıktaki iki kutudan biri düz tabanlı, diğeri tekerlekli. Hangisini çekmek daha kolaydır?",
+      "options": [
+        "Düz tabanlı kutu",
+        "Tekerlekli kutu",
+        "İkisi de aynı zorluktadır",
+        "Hiçbirini çekmek mümkün değildir"
+      ],
+      "correctIndex": 1,
+      "hint": "Tekerlekler, kayma sürtünmesini yuvarlanma sürtünmesine çevirerek hareketi kolaylaştırır."
+    },
+    {
+      "id": "q16",
+      "text": "Aşağıdakilerden hangisi 'yuvarlanma sürtünmesinin' kayma sürtünmesinden genellikle daha az olmasının bir sonucudur?",
+      "options": [
+        "Tekerlekli araçların itilmesi daha kolaydır",
+        "Tekerlekli araçlar daha ağırdır",
+        "Tekerlekler hiç sürtünme oluşturmaz",
+        "Yuvarlanma imkansızdır"
+      ],
+      "correctIndex": 0,
+      "hint": "Bu yüzden valizlere ve arabalar tekerlek takılır."
+    },
+    {
+      "id": "q17",
+      "text": "Bir cismin ağırlığını etkileyen temel faktör nedir?",
+      "options": [
+        "Cismin rengi",
+        "Bulunduğu gezegenin/yerin çekim kuvveti",
+        "Cismin şekli",
+        "Cismin sıcaklığı"
+      ],
+      "correctIndex": 1,
+      "hint": "Farklı gezegenlerin çekim kuvveti farklıdır, bu da ağırlığı etkiler."
+    },
+    {
+      "id": "q18",
+      "text": "Aşağıdakilerden hangisi doğrudur?",
+      "options": [
+        "Kütle birimi Newton'dur",
+        "Ağırlık birimi kilogramdır",
+        "Kütle birimi kilogram, ağırlık birimi Newton'dur",
+        "İkisinin de birimi aynıdır"
+      ],
+      "correctIndex": 2,
+      "hint": "Kütle (kg) ve ağırlık (N) farklı fiziksel büyüklüklerdir, farklı birimlere sahiptirler."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Bugün hangi kuvveti (itme/çekme) en çok kullandın?",
+    "options": [
+      "İtme",
+      "Çekme",
+      "İkisini de kullandım",
+      "Hatırlamıyorum"
+    ],
+    "correctIndex": 2,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

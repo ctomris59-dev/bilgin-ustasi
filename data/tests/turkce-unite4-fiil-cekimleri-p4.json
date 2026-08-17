@@ -1,0 +1,239 @@
+{
+  "id": "turkce-unite4-fiil-cekimleri-p4",
+  "subject": "Türkçe",
+  "title": "Ünite 4 - Fiil Çekimleri, Zaman ve Kişi Ekleri (4/4)",
+  "week": 4,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "'Gelecek misin?' cümlesi hangi özellikleri taşır?",
+      "options": [
+        "Olumlu ve haber kipinde",
+        "Soru ve gelecek zamanda",
+        "Olumsuz ve geçmiş zamanda",
+        "Emir kipinde"
+      ],
+      "correctIndex": 1,
+      "hint": "Cümlede hem soru eki (mi) hem gelecek zaman eki (-ecek) var."
+    },
+    {
+      "id": "q2",
+      "text": "Aşağıdakilerden hangisi 'geniş zamanın soru' hâline örnektir?",
+      "options": [
+        "Gelir misin?",
+        "Geldin mi?",
+        "Geliyor musun?",
+        "Gelecek misin?"
+      ],
+      "correctIndex": 0,
+      "hint": "Bu cümlede geniş zaman eki (-ir) ile soru eki birlikte kullanılmış."
+    },
+    {
+      "id": "q3",
+      "text": "Bir fiil çekimlenirken önce hangi ek, sonra hangi ek gelir (genel kural)?",
+      "options": [
+        "Önce kişi eki, sonra zaman eki",
+        "Önce zaman/kip eki, sonra kişi eki",
+        "İkisi aynı anda gelir, sıra önemli değildir",
+        "Hiçbir kural yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Örneğin 'geldim' kelimesinde önce zaman eki (-di), sonra kişi eki (-m) gelir."
+    },
+    {
+      "id": "q4",
+      "text": "Zorlayıcı soru: 'Sabahları erken kalkardım ama şimdi geç kalkıyorum.' cümlesinde iki farklı fiil çekiminin (kalkardım, kalkıyorum) anlam farkı nedir?",
+      "options": [
+        "İkisi de aynı anlamı taşır",
+        "'Kalkardım' geçmişteki bir alışkanlığı, 'kalkıyorum' şu anki durumu anlatır",
+        "İkisi de gelecek zamandır",
+        "Hiçbir anlam farkı yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "'-ardı' geçmişteki alışkanlığı, '-yor' şimdiki durumu ifade eder."
+    },
+    {
+      "id": "q5",
+      "text": "'-irdi/-ardı' eki genellikle hangi anlamı taşır?",
+      "options": [
+        "Geçmişte tekrarlanan bir alışkanlık",
+        "Şimdiki an",
+        "Kesin bir gelecek",
+        "Bir soru"
+      ],
+      "correctIndex": 0,
+      "hint": "'Her gün oynardık.' cümlesindeki anlamı düşün."
+    },
+    {
+      "id": "q6",
+      "text": "Aşağıdakilerden hangisi 'geçmişte alışkanlık' bildiren bir cümledir?",
+      "options": [
+        "Yarın oynayacağız.",
+        "Her gün oynardık.",
+        "Şimdi oynuyoruz.",
+        "Oynar mısın?"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu cümlede geçmişte tekrar eden bir eylem anlatılıyor."
+    },
+    {
+      "id": "q7",
+      "text": "Fiillerin farklı zamanlarda çekimlenmesinin dildeki önemi nedir?",
+      "options": [
+        "Hiçbir önemi yoktur",
+        "Olayların ne zaman gerçekleştiğini açıkça ifade etmemizi sağlar",
+        "Sadece yazım kuralı gereğidir",
+        "Anlamı değiştirmez"
+      ],
+      "correctIndex": 1,
+      "hint": "Zaman ekleri, iletişimde zamansal netlik sağlar."
+    },
+    {
+      "id": "q8",
+      "text": "'Kitap okurken müzik dinlerim.' cümlesinde 'okurken' hangi yapıyı oluşturur?",
+      "options": [
+        "Zaman zarfı (bağ-fiil) - eş zamanlılık bildirir",
+        "Emir kipi",
+        "Soru kipi",
+        "Şart kipi"
+      ],
+      "correctIndex": 0,
+      "hint": "'-ken' eki, iki eylemin aynı anda gerçekleştiğini gösterir."
+    },
+    {
+      "id": "q9",
+      "text": "Zorlayıcı soru: 'Ders çalışmadan sınava girmemelisin.' cümlesinde kaç fiil (eylem bildiren yapı) bulunur?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "0"
+      ],
+      "correctIndex": 1,
+      "hint": "'Çalışmadan' ve 'girmemelisin' olmak üzere iki eylem yapısı bulunur."
+    },
+    {
+      "id": "q10",
+      "text": "Aşağıdakilerden hangisi doğru bir çekim örneğidir (1. çoğul şahıs, geçmiş zaman)?",
+      "options": [
+        "Geldim",
+        "Geldiniz",
+        "Geldik",
+        "Geldiler"
+      ],
+      "correctIndex": 2,
+      "hint": "'-k' eki, 'biz' anlamını taşıyan kişi ekidir."
+    },
+    {
+      "id": "q11",
+      "text": "Aşağıdakilerden hangisi doğru bir çekim örneğidir (2. çoğul şahıs, şimdiki zaman)?",
+      "options": [
+        "Geliyorum",
+        "Geliyorsunuz",
+        "Geliyor",
+        "Geliyoruz"
+      ],
+      "correctIndex": 1,
+      "hint": "'-sunuz' eki, 'siz' anlamını taşıyan kişi ekidir."
+    },
+    {
+      "id": "q12",
+      "text": "Bir fiil hem olumsuzluk hem soru eki alabilir mi (aynı anda)?",
+      "options": [
+        "Hayır, asla birlikte kullanılamazlar",
+        "Evet, örneğin 'Gelmedin mi?' cümlesinde ikisi de vardır",
+        "Sadece emir kipinde birlikte kullanılabilirler",
+        "Bu bir kural değildir"
+      ],
+      "correctIndex": 1,
+      "hint": "'-me' olumsuzluk ve 'mi' soru eki bir arada kullanılabilir."
+    },
+    {
+      "id": "q13",
+      "text": "'Gelmedin mi?' cümlesi hangi özellikleri taşır?",
+      "options": [
+        "Olumlu ve haber kipi",
+        "Olumsuz ve soru",
+        "Sadece olumsuz",
+        "Sadece soru"
+      ],
+      "correctIndex": 1,
+      "hint": "Cümlede hem olumsuzluk (-me) hem soru (mi) eki var."
+    },
+    {
+      "id": "q14",
+      "text": "Zorlayıcı soru: 'Eğer erken kalkarsam kahvaltı yapabilirim.' cümlesinde kaç farklı fiil kipi/eki kullanılmıştır?",
+      "options": [
+        "Sadece 1",
+        "En az 2 (şart ve yeterlik)",
+        "Hiç kullanılmamıştır",
+        "Sadece emir kipi"
+      ],
+      "correctIndex": 1,
+      "hint": "'Kalkarsam' şart kipini, 'yapabilirim' yeterlik ekini içerir."
+    },
+    {
+      "id": "q15",
+      "text": "Aşağıdakilerden hangisi 'yeterlik olumsuzluğu' bildirir (yapamama)?",
+      "options": [
+        "Yapabilirim",
+        "Yapamam",
+        "Yaptım",
+        "Yapacağım"
+      ],
+      "correctIndex": 1,
+      "hint": "'-ama/-eme' yapısı, bir şeyi yapamama anlamı taşır."
+    },
+    {
+      "id": "q16",
+      "text": "'Koşamıyorum.' kelimesinin anlamı nedir?",
+      "options": [
+        "Koşma imkanım/gücüm yok",
+        "Koşmak istemiyorum",
+        "Koştum",
+        "Koşacağım"
+      ],
+      "correctIndex": 0,
+      "hint": "'-ama' olumsuz yeterlik eki, bir şeyi yapamama durumunu ifade eder."
+    },
+    {
+      "id": "q17",
+      "text": "Aşağıdakilerden hangisi doğru bir eşleştirmedir?",
+      "options": [
+        "-yor: geçmiş zaman",
+        "-ecek: gelecek zaman",
+        "-di: gelecek zaman",
+        "-miş: şimdiki zaman"
+      ],
+      "correctIndex": 1,
+      "hint": "'-ecek/-acak' eki, gelecekte olacak bir eylemi bildirir."
+    },
+    {
+      "id": "q18",
+      "text": "Zorlayıcı soru: Bir öğrenci, bir metinde geçen 'gelmiş', 'gelecek', 'geliyor', 'geldi' kelimelerinin hepsinin aynı fiil kökünden (gel-) farklı zaman ekleriyle türediğini fark ediyor. Bu gözlem neyi gösterir?",
+      "options": [
+        "Türkçede fiil kökleri, farklı zaman eklerini alarak farklı zaman anlamları kazanabilir",
+        "Bu kelimelerin hiçbir ortak yönü yoktur",
+        "Fiiller hiç değişmez",
+        "Bu bir tesadüftür, kuralı yoktur"
+      ],
+      "correctIndex": 0,
+      "hint": "Aynı kök, farklı zaman ekleriyle farklı zamansal anlamlar kazanabilir - bu Türkçenin eklemeli yapısının bir özelliğidir."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Bugün en çok hangi zamanı (geçmiş, şimdiki, gelecek) kullanarak konuştun?",
+    "options": [
+      "Geçmiş zaman",
+      "Şimdiki zaman",
+      "Gelecek zaman",
+      "Hepsini kullandım"
+    ],
+    "correctIndex": 3,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

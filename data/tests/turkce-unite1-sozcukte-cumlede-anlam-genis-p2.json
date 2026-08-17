@@ -1,0 +1,251 @@
+{
+  "id": "turkce-unite1-sozcukte-cumlede-anlam-genis-p2",
+  "subject": "Türkçe",
+  "title": "Ünite 1 - Sözcükte ve Cümlede Anlam (Geniş Havuz) (2/4)",
+  "week": 1,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "'Aslan gibi güçlüydü.' cümlesinde hangi söz sanatı/anlatım özelliği kullanılmıştır?",
+      "options": [
+        "Gerçek anlam",
+        "Benzetme (mecaz)",
+        "Zıt anlam",
+        "Terim anlam"
+      ],
+      "correctIndex": 1,
+      "hint": "Bir kişi doğrudan aslan değildir, ona benzetiliyor."
+    },
+    {
+      "id": "q2",
+      "text": "'Ayağına taş değdi.' cümlesindeki 'taş' sözcüğü hangi anlamda kullanılmıştır?",
+      "options": [
+        "Mecaz anlam",
+        "Gerçek anlam",
+        "Terim anlam",
+        "Zıt anlam"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu cümlede taş, gerçek bir cismi ifade ediyor, gerçek anlamda kullanılmış."
+    },
+    {
+      "id": "q3",
+      "text": "'Kafası çalışıyor.' cümlesinde 'çalışmak' hangi anlamda kullanılmıştır?",
+      "options": [
+        "Gerçek anlam",
+        "Mecaz anlam (zeki olmak)",
+        "Terim anlam",
+        "Zıt anlam"
+      ],
+      "correctIndex": 1,
+      "hint": "Burada gerçek bir çalışma eylemi yok, zekayı ifade eden bir kullanım var."
+    },
+    {
+      "id": "q4",
+      "text": "Aşağıdakilerden hangisi bir deyimdir?",
+      "options": [
+        "Kalem kırmak",
+        "Ağzı kulaklarına varmak (çok sevinmek)",
+        "Kitap okumak",
+        "Su içmek"
+      ],
+      "correctIndex": 1,
+      "hint": "Deyimler, kalıplaşmış ve gerçek anlamından farklı bir anlam taşıyan söz gruplarıdır."
+    },
+    {
+      "id": "q5",
+      "text": "'Damlaya damlaya göl olur.' bir atasözüdür. Bu atasözü ne anlatır?",
+      "options": [
+        "Su içmenin önemini",
+        "Küçük birikimlerin zamanla büyük olacağını",
+        "Göllerin nasıl oluştuğunu",
+        "Yağmurun zararlarını"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu atasözü, sabırla biriktirmenin faydasını anlatır."
+    },
+    {
+      "id": "q6",
+      "text": "Atasözleri ile deyimler arasındaki temel fark nedir?",
+      "options": [
+        "Hiçbir fark yoktur",
+        "Atasözleri bir öğüt/ders içerir, deyimler genellikle bir durumu anlatır",
+        "Deyimler daha uzundur",
+        "Atasözleri kafiyeli olmak zorundadır"
+      ],
+      "correctIndex": 1,
+      "hint": "Atasözleri genellikle nesilden nesile aktarılan bir öğüt içerir."
+    },
+    {
+      "id": "q7",
+      "text": "'Kitap okumak' ile 'roman okumak' ifadeleri arasındaki anlam ilişkisi nedir?",
+      "options": [
+        "Zıt anlamlı",
+        "Genel anlam - özel anlam ilişkisi",
+        "Eş sesli",
+        "Hiçbir ilişki yok"
+      ],
+      "correctIndex": 1,
+      "hint": "'Kitap' genel bir kavram, 'roman' ise kitabın bir türüdür (daha özel)."
+    },
+    {
+      "id": "q8",
+      "text": "Aşağıdaki cümlelerden hangisinde neden-sonuç ilişkisi vardır?",
+      "options": [
+        "Bugün hava güzel.",
+        "Yağmur yağdığı için okula geç kaldım.",
+        "Kitabı okudum.",
+        "Yarın pazar günü."
+      ],
+      "correctIndex": 1,
+      "hint": "'için' bağlacı, bir sebep-sonuç ilişkisi kurar."
+    },
+    {
+      "id": "q9",
+      "text": "Aşağıdaki cümlelerden hangisinde amaç-sonuç ilişkisi vardır?",
+      "options": [
+        "Kitabı aldım.",
+        "Başarılı olmak için çok çalıştı.",
+        "Bugün pazartesi.",
+        "Hava soğuk."
+      ],
+      "correctIndex": 1,
+      "hint": "'için' burada bir amacı belirtiyor."
+    },
+    {
+      "id": "q10",
+      "text": "'Kedi köpekten daha çeviktir.' cümlesi ne tür bir cümledir?",
+      "options": [
+        "Neden-sonuç cümlesi",
+        "Karşılaştırma cümlesi",
+        "Amaç cümlesi",
+        "Soru cümlesi"
+      ],
+      "correctIndex": 1,
+      "hint": "İki varlık birbirine göre kıyaslanıyor."
+    },
+    {
+      "id": "q11",
+      "text": "Aşağıdakilerden hangisi 'küçük' sözcüğünün eş anlamlısıdır?",
+      "options": [
+        "Ufak",
+        "Büyük",
+        "Geniş",
+        "Uzun"
+      ],
+      "correctIndex": 0,
+      "hint": "Bu sözcük, 'küçük' ile aynı anlama gelir."
+    },
+    {
+      "id": "q12",
+      "text": "'Zeki' sözcüğünün zıt anlamlısı hangisidir?",
+      "options": [
+        "Akıllı",
+        "Aptal",
+        "Bilgili",
+        "Çalışkan"
+      ],
+      "correctIndex": 1,
+      "hint": "Zekanın karşıtı olan sözcüğü düşün."
+    },
+    {
+      "id": "q13",
+      "text": "Aşağıdaki cümlelerin hangisinde büyük harf kullanımı YANLIŞTIR?",
+      "options": [
+        "Ahmet İstanbul'a gitti.",
+        "ahmet istanbul'a gitti.",
+        "Ayşe okula gidiyor.",
+        "Türkiye güzel bir ülkedir."
+      ],
+      "correctIndex": 1,
+      "hint": "Özel isimler ve cümle başları büyük harfle başlamalıdır."
+    },
+    {
+      "id": "q14",
+      "text": "Cümle içinde özel isimler (kişi, şehir, ülke adları) nasıl yazılır?",
+      "options": [
+        "Küçük harfle",
+        "Büyük harfle başlayarak",
+        "Hep büyük harfle",
+        "Kurallar yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Özel isimlerin ilk harfi her zaman büyük yazılır."
+    },
+    {
+      "id": "q15",
+      "text": "Bir cümlenin ilk harfi nasıl yazılmalıdır?",
+      "options": [
+        "Küçük harfle",
+        "Büyük harfle",
+        "Farketmez",
+        "Rakamla"
+      ],
+      "correctIndex": 1,
+      "hint": "Türkçede her cümle büyük harfle başlar."
+    },
+    {
+      "id": "q16",
+      "text": "'Elinden geleni yapmak' deyimi ne anlama gelir?",
+      "options": [
+        "Hiçbir şey yapmamak",
+        "Yapabileceği her şeyi yapmaya çalışmak",
+        "Başkasına yaptırmak",
+        "Yorulmak"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu deyim, en iyi çabayı göstermeyi anlatır."
+    },
+    {
+      "id": "q17",
+      "text": "'Göz kulak olmak' deyimi ne anlama gelir?",
+      "options": [
+        "Uyumak",
+        "Birine dikkatle bakıp korumak, ilgilenmek",
+        "Görmemek",
+        "Duymamak"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu deyim, bir şeye/kişiye dikkat etmeyi anlatır."
+    },
+    {
+      "id": "q18",
+      "text": "'Bal tutan parmağını yalar.' atasözü ne anlatır?",
+      "options": [
+        "Herkesin bal yemesi gerektiğini",
+        "Bir işin başında olan kişinin ondan bir şekilde faydalanacağını",
+        "Balın tatlı olduğunu",
+        "Parmakların önemini"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu atasözü, bir işe yakın olanın ondan pay alacağını anlatır."
+    },
+    {
+      "id": "q19",
+      "text": "Aşağıdaki cümlelerin hangisinde 'göz' sözcüğü mecaz anlamda kullanılmıştır?",
+      "options": [
+        "Gözlerim ağrıyor.",
+        "Bu işin gözü var, dikkatli ol.",
+        "Gözlüğümü taktım.",
+        "Gözünü kapadı."
+      ],
+      "correctIndex": 1,
+      "hint": "Burada 'göz' gerçek görme organı değil, bir dikkat/önem anlamı taşıyor."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Bu hafta okuduğun en sevdiğin kitap ya da hikaye hangisiydi?",
+    "options": [
+      "Bir kitap okudum",
+      "Henüz okumadım",
+      "Hatırlamıyorum",
+      "Söylemek istemiyorum"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

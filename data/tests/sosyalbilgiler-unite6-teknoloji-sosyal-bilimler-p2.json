@@ -1,0 +1,239 @@
+{
+  "id": "sosyalbilgiler-unite6-teknoloji-sosyal-bilimler-p2",
+  "subject": "Sosyal Bilgiler",
+  "title": "Ünite 6 - Teknoloji ve Sosyal Bilimler (2/4)",
+  "week": 6,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Aşağıdakilerden hangisi teknolojinin sağlık alanına katkısına bir örnektir?",
+      "options": [
+        "Tıbbi görüntüleme cihazları (röntgen, MR gibi)",
+        "Hiçbir katkısı yoktur",
+        "Sağlığa zarar vermesi",
+        "Sadece eğlence amaçlı kullanılması"
+      ],
+      "correctIndex": 0,
+      "hint": "Bu tür cihazlar, hastalıkların teşhisine yardımcı olur."
+    },
+    {
+      "id": "q2",
+      "text": "Zorlayıcı soru: Bir öğrenci, internette gördüğü bir bilgiyi paylaşmadan önce kaynağını araştırıyor ve doğruluğunu kontrol ediyor. Bu davranış hangi beceriyi gösterir?",
+      "options": [
+        "Medya okuryazarlığı ve eleştirel düşünme",
+        "Dikkatsizlik",
+        "Hiçbir beceri göstermez",
+        "Yanlış bilgi yayma isteği"
+      ],
+      "correctIndex": 0,
+      "hint": "Bilgiyi doğrulama alışkanlığı, medya okuryazarlığının önemli bir parçasıdır."
+    },
+    {
+      "id": "q3",
+      "text": "Aşağıdakilerden hangisi teknoloji bağımlılığının olası bir belirtisi olabilir?",
+      "options": [
+        "Dengeli ve kontrollü kullanım",
+        "Sürekli ekran başında olma isteği ve diğer aktivitelere zaman ayıramama",
+        "Ara sıra teknoloji kullanma",
+        "Teknolojiyi hiç kullanmama"
+      ],
+      "correctIndex": 1,
+      "hint": "Aşırı ve kontrolsüz kullanım, bağımlılık belirtisi olabilir."
+    },
+    {
+      "id": "q4",
+      "text": "Bir ailenin ekran süresi konusunda kurallar belirlemesi neden faydalı olabilir?",
+      "options": [
+        "Hiçbir faydası yoktur",
+        "Dengeli bir yaşam tarzını desteklemeye yardımcı olabilir",
+        "Kuralların hiç önemi yoktur",
+        "Çocukların özgürlüğünü tamamen kısıtlar"
+      ],
+      "correctIndex": 1,
+      "hint": "Makul sınırlar, sağlıklı alışkanlıklar geliştirmeye yardımcı olabilir."
+    },
+    {
+      "id": "q5",
+      "text": "Aşağıdakilerden hangisi 'sahte haber' (yalan haber) kavramını tanımlar?",
+      "options": [
+        "Doğrulanmış ve güvenilir bilgi",
+        "Yanlış veya yanıltıcı şekilde sunulan bilgi",
+        "Resmi bir kaynaktan gelen haber",
+        "Bilimsel bir makale"
+      ],
+      "correctIndex": 1,
+      "hint": "Sahte haberler, genellikle yanıltıcı veya doğrulanmamış bilgiler içerir."
+    },
+    {
+      "id": "q6",
+      "text": "Bir haberin güvenilirliğini değerlendirirken nelere dikkat edilmelidir?",
+      "options": [
+        "Sadece başlığa bakmak",
+        "Kaynağın güvenilirliğine ve bilginin doğrulanabilirliğine bakmak",
+        "Hiçbir şeye dikkat etmemek",
+        "Sadece resimlere bakmak"
+      ],
+      "correctIndex": 1,
+      "hint": "Güvenilir kaynaklar ve doğrulanabilir bilgiler, haberin geçerliliğini artırır."
+    },
+    {
+      "id": "q7",
+      "text": "Aşağıdakilerden hangisi teknolojinin ulaşım alanındaki bir katkısıdır?",
+      "options": [
+        "Hiçbir katkısı yoktur",
+        "Hızlı ve konforlu ulaşım araçlarının geliştirilmesi",
+        "Ulaşımı imkansız hale getirmesi",
+        "Sadece eğlence amaçlı kullanılması"
+      ],
+      "correctIndex": 1,
+      "hint": "Teknoloji, ulaşım araçlarının hız ve konforunu artırmıştır."
+    },
+    {
+      "id": "q8",
+      "text": "Zorlayıcı soru: Bir öğrenci, sosyal medyada gördüğü bir iddiayı doğrulamadan arkadaşlarına yayıyor ve bu iddia sonradan yanlış çıkıyor. Bu durumda hangi ders çıkarılabilir?",
+      "options": [
+        "Bilgi paylaşmadan önce kaynağını kontrol etmenin önemi",
+        "Hiçbir ders çıkarılamaz",
+        "Her paylaşım doğrudur, kontrol gerekmez",
+        "Sosyal medya her zaman güvenilirdir"
+      ],
+      "correctIndex": 0,
+      "hint": "Bu deneyim, bilgiyi doğrulamanın önemini gösterir."
+    },
+    {
+      "id": "q9",
+      "text": "Aşağıdakilerden hangisi 'kişisel veri' örneğidir?",
+      "options": [
+        "Ev adresi",
+        "Bir şehrin nüfusu",
+        "Bir ülkenin bayrağı",
+        "Bir kitabın adı"
+      ],
+      "correctIndex": 0,
+      "hint": "Kişisel veri, bir bireyi tanımlayan özel bilgilerdir."
+    },
+    {
+      "id": "q10",
+      "text": "İnternette kişisel verilerin korunması neden önemlidir?",
+      "options": [
+        "Hiçbir önemi yoktur",
+        "Kötüye kullanımı ve gizlilik ihlallerini önlemek için",
+        "Verileri herkesle paylaşmak daha iyidir",
+        "Kişisel verilerin hiçbir değeri yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Kişisel bilgilerin korunması, güvenlik ve mahremiyet açısından önemlidir."
+    },
+    {
+      "id": "q11",
+      "text": "Aşağıdakilerden hangisi 'yapay zeka' kavramına en yakın bir tanımdır?",
+      "options": [
+        "İnsan zekasını taklit eden bilgisayar sistemleri",
+        "Sadece bir oyun türü",
+        "Hiçbir anlamı yoktur",
+        "Sadece bir film konusu"
+      ],
+      "correctIndex": 0,
+      "hint": "Yapay zeka, çeşitli görevleri yerine getirebilen akıllı bilgisayar sistemlerini ifade eder."
+    },
+    {
+      "id": "q12",
+      "text": "Teknolojinin tarım alanındaki katkılarından biri nedir?",
+      "options": [
+        "Hiçbir katkısı yoktur",
+        "Verimliliği artıran modern tarım teknikleri ve makineler",
+        "Tarımı imkansız hale getirmesi",
+        "Sadece eğlence amaçlı kullanılması"
+      ],
+      "correctIndex": 1,
+      "hint": "Modern tarım teknolojileri, üretimi ve verimliliği artırabilir."
+    },
+    {
+      "id": "q13",
+      "text": "Aşağıdakilerden hangisi 'çevrimiçi güvenlik' için önerilen bir davranıştır?",
+      "options": [
+        "Bilinmeyen bağlantılara tıklamamak",
+        "Her bağlantıya tıklamak",
+        "Şifreleri paylaşmak",
+        "Kişisel bilgileri her yerde paylaşmak"
+      ],
+      "correctIndex": 0,
+      "hint": "Bilinmeyen/şüpheli bağlantılar, güvenlik riski taşıyabilir."
+    },
+    {
+      "id": "q14",
+      "text": "Bir öğrencinin çevrimiçi araştırma yaparken birden fazla kaynağı karşılaştırması neden önemlidir?",
+      "options": [
+        "Hiçbir önemi yoktur",
+        "Bilginin doğruluğunu teyit etmeye yardımcı olur",
+        "Zaman kaybıdır",
+        "Tek kaynak her zaman yeterlidir"
+      ],
+      "correctIndex": 1,
+      "hint": "Birden fazla kaynağı karşılaştırmak, bilginin güvenilirliğini artırır."
+    },
+    {
+      "id": "q15",
+      "text": "Aşağıdakilerden hangisi teknolojinin iletişim alanında sağladığı bir kolaylıktır?",
+      "options": [
+        "Uzaktaki kişilerle anında görüntülü konuşabilme",
+        "İletişimi imkansız hale getirmesi",
+        "Hiçbir kolaylık sağlamaması",
+        "İletişimi yavaşlatması"
+      ],
+      "correctIndex": 0,
+      "hint": "Görüntülü görüşme uygulamaları, mesafeleri kısaltan bir teknoloji örneğidir."
+    },
+    {
+      "id": "q16",
+      "text": "Zorlayıcı soru: Bir öğrenci, internette araştırma yaparken hem resmi bir kurumun sitesini hem de anonim bir bloğu kaynak olarak kullanıyor. Hangi kaynağa daha çok güvenilmelidir?",
+      "options": [
+        "Anonim blog",
+        "Resmi kurumun sitesi",
+        "İkisi de eşit güvenilirliktedir",
+        "Hiçbirine güvenilmemelidir"
+      ],
+      "correctIndex": 1,
+      "hint": "Resmi ve tanınmış kurumlar, genellikle daha güvenilir bilgi kaynaklarıdır."
+    },
+    {
+      "id": "q17",
+      "text": "Aşağıdakilerden hangisi teknolojinin sunduğu bir avantajdır?",
+      "options": [
+        "Bilgiye hızlı erişim",
+        "Bilgiye erişimi imkansız hale getirmesi",
+        "Hiçbir avantajı yoktur",
+        "Öğrenmeyi zorlaştırması"
+      ],
+      "correctIndex": 0,
+      "hint": "İnternet, geniş bir bilgi kaynağına hızlı erişim sağlar."
+    },
+    {
+      "id": "q18",
+      "text": "Bir öğrencinin ödevini yaparken internetten bulduğu bilgiyi olduğu gibi kopyalayıp kendi ödeviymiş gibi sunması hangi kavramla ilişkilidir?",
+      "options": [
+        "İntihal (fikir hırsızlığı)",
+        "Doğru araştırma yöntemi",
+        "Hiçbir kavramla ilişkili değildir",
+        "Önerilen bir davranış"
+      ],
+      "correctIndex": 0,
+      "hint": "Başkasının çalışmasını kendi çalışmasıymış gibi sunmak etik bir sorundur."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Bugün internette bir bilgiyi doğrulamayı denedin mi?",
+    "options": [
+      "Evet, denedim",
+      "Henüz denemedim ama önemli olduğunu biliyorum",
+      "Hatırlamıyorum",
+      "Söylemek istemiyorum"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "id": "fenbilimleri-unite6-insan-cevre-p2",
+  "subject": "Fen Bilimleri",
+  "title": "Ünite 6 - İnsan ve Çevre (2/4)",
+  "week": 6,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Rüzgar enerjisi neden yenilenebilir bir kaynak olarak kabul edilir?",
+      "options": [
+        "Rüzgar sürekli ve doğal olarak oluşur, tükenmez",
+        "Rüzgar çok nadir eser",
+        "Rüzgar insan yapımıdır",
+        "Rüzgar sınırlı bir kaynaktır"
+      ],
+      "correctIndex": 0,
+      "hint": "Doğa, sürekli rüzgar üretir, bu yüzden tükenme riski yoktur."
+    },
+    {
+      "id": "q2",
+      "text": "Plastik atıkların doğada uzun yıllar boyunca bozunmamasının çevresel bir sorunu nedir?",
+      "options": [
+        "Hiçbir sorun yaratmaz",
+        "Doğal ortamlarda birikip canlılara zarar verebilir",
+        "Plastikler hemen kaybolur",
+        "Plastikler faydalı besindir"
+      ],
+      "correctIndex": 1,
+      "hint": "Plastik, doğada çok uzun süre (yüzyıllar) kalabilir ve canlılara zarar verebilir."
+    },
+    {
+      "id": "q3",
+      "text": "Aşağıdakilerden hangisi 'geri dönüşüm kutularının' renk kodlamasında genellikle kağıt için kullanılır?",
+      "options": [
+        "Mavi",
+        "Yeşil",
+        "Sarı",
+        "Kırmızı"
+      ],
+      "correctIndex": 0,
+      "hint": "Türkiye'de genel geri dönüşüm renk şemasında kağıt için sıkça bu renk kullanılır."
+    },
+    {
+      "id": "q4",
+      "text": "Aşağıdakilerden hangisi 'geri dönüşüm kutularının' renk kodlamasında genellikle cam için kullanılır?",
+      "options": [
+        "Sarı",
+        "Yeşil",
+        "Kırmızı",
+        "Turuncu"
+      ],
+      "correctIndex": 1,
+      "hint": "Cam geri dönüşüm kutuları genellikle bu renkte olur."
+    },
+    {
+      "id": "q5",
+      "text": "Bir okul veya evde çöpleri ayrıştırmanın (kağıt, cam, plastik ayrı ayrı) önemi nedir?",
+      "options": [
+        "Hiçbir önemi yoktur",
+        "Geri dönüşüm sürecini kolaylaştırır ve verimli hâle getirir",
+        "Çöpü daha çok kirletir",
+        "Sadece zaman kaybıdır"
+      ],
+      "correctIndex": 1,
+      "hint": "Ayrıştırılmış atıklar, geri dönüşüm tesislerinde daha kolay işlenir."
+    },
+    {
+      "id": "q6",
+      "text": "Aşağıdakilerden hangisi çevreyi koruma yollarından biri DEĞİLDİR?",
+      "options": [
+        "Geri dönüşüm yapmak",
+        "Suyu israf etmek",
+        "Enerji tasarrufu yapmak",
+        "Ağaç dikmek"
+      ],
+      "correctIndex": 1,
+      "hint": "İsraf, çevre korumaya değil, kaynak tüketimine katkıda bulunur."
+    },
+    {
+      "id": "q7",
+      "text": "Zorlayıcı soru: Bir fabrika atık sularını arıtmadan doğrudan nehre bırakırsa ne olabilir?",
+      "options": [
+        "Hiçbir olumsuz etki olmaz",
+        "Nehirdeki canlı yaşamı zarar görebilir ve su kirlenir",
+        "Nehir daha temiz olur",
+        "Su kalitesi otomatik olarak iyileşir"
+      ],
+      "correctIndex": 1,
+      "hint": "Arıtılmamış atık sular, zararlı kimyasallar içerebilir ve ekosistemi olumsuz etkiler."
+    },
+    {
+      "id": "q8",
+      "text": "Araçların egzozundan çıkan gazlar hangi tür kirliliğe katkıda bulunur?",
+      "options": [
+        "Su kirliliği",
+        "Hava kirliliği",
+        "Toprak kirliliği sadece",
+        "Hiçbir kirliliğe katkısı yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Egzoz gazları, havaya karışan zararlı maddeler içerir."
+    },
+    {
+      "id": "q9",
+      "text": "Toplu taşıma kullanmanın çevresel bir faydası nedir?",
+      "options": [
+        "Daha fazla araç trafiğe çıkar",
+        "Kişi başına düşen egzoz gazı emisyonunu azaltabilir",
+        "Hiçbir faydası yoktur",
+        "Hava kirliliğini artırır"
+      ],
+      "correctIndex": 1,
+      "hint": "Daha az özel araç kullanımı, toplam kirliliği azaltabilir."
+    },
+    {
+      "id": "q10",
+      "text": "Bisiklet kullanmanın çevresel bir avantajı nedir?",
+      "options": [
+        "Egzoz gazı üretmez, çevre dostu bir ulaşım şeklidir",
+        "Çok fazla yakıt tüketir",
+        "Hava kirliliğine katkıda bulunur",
+        "Hiçbir avantajı yoktur"
+      ],
+      "correctIndex": 0,
+      "hint": "Bisikletler, motor kullanmadığı için hava kirliliği oluşturmaz."
+    },
+    {
+      "id": "q11",
+      "text": "Aşağıdakilerden hangisi 'biyoçeşitlilik' kavramını en iyi açıklar?",
+      "options": [
+        "Sadece bir bitki türü",
+        "Bir bölgedeki canlı türlerinin çeşitliliği ve zenginliği",
+        "Sadece hayvanların sayısı",
+        "Hava kalitesi"
+      ],
+      "correctIndex": 1,
+      "hint": "Biyoçeşitlilik, farklı bitki ve hayvan türlerinin bir arada bulunmasını ifade eder."
+    },
+    {
+      "id": "q12",
+      "text": "Biyoçeşitliliğin azalması (bazı türlerin yok olması) neden endişe vericidir?",
+      "options": [
+        "Hiçbir önemi yoktur",
+        "Ekosistem dengesini bozabilir ve gelecekteki kaynaklara zarar verebilir",
+        "Doğaya faydalıdır",
+        "Sadece görsel bir sorundur"
+      ],
+      "correctIndex": 1,
+      "hint": "Her tür, ekosistemde bir role sahiptir; kaybı zincirleme etkiler yaratabilir."
+    },
+    {
+      "id": "q13",
+      "text": "Aşağıdakilerden hangisi 'çevre dostu' bir davranış örneğidir?",
+      "options": [
+        "Tek kullanımlık plastik yerine tekrar kullanılabilir su şişesi kullanmak",
+        "Her gün yeni plastik poşet almak",
+        "Çöpleri doğaya atmak",
+        "Suyu gereksiz yere akıtmak"
+      ],
+      "correctIndex": 0,
+      "hint": "Tekrar kullanılabilir ürünler, atık miktarını azaltır."
+    },
+    {
+      "id": "q14",
+      "text": "Aşağıdakilerden hangisi 'gürültü kirliliğine' bir örnektir?",
+      "options": [
+        "Sessiz bir kütüphane",
+        "Sürekli yüksek sesle çalan müzik veya trafik gürültüsü",
+        "Doğal kuş sesleri",
+        "Fısıltıyla konuşma"
+      ],
+      "correctIndex": 1,
+      "hint": "Rahatsız edici, yüksek ve sürekli sesler bu kirlilik türüne örnektir."
+    },
+    {
+      "id": "q15",
+      "text": "Zorlayıcı soru: Bir şehirde çok fazla araç trafiği olduğunda, hangi kirlilik türlerinin birlikte artması beklenir?",
+      "options": [
+        "Sadece su kirliliği",
+        "Hem hava kirliliği hem gürültü kirliliği",
+        "Sadece toprak kirliliği",
+        "Hiçbiri artmaz"
+      ],
+      "correctIndex": 1,
+      "hint": "Araçlar hem egzoz gazı (hava kirliliği) hem motor sesi (gürültü kirliliği) üretir."
+    },
+    {
+      "id": "q16",
+      "text": "Aşağıdakilerden hangisi evde enerji tasarrufu için önerilen bir yöntemdir?",
+      "options": [
+        "LED ampuller kullanmak",
+        "Eski, verimsiz ampulleri tercih etmek",
+        "Cihazları bekleme modunda bırakmak",
+        "Klimayı sürekli çalıştırmak"
+      ],
+      "correctIndex": 0,
+      "hint": "LED ampuller, daha az enerji harcayarak aynı aydınlatmayı sağlar."
+    },
+    {
+      "id": "q17",
+      "text": "Kompost yapmak (organik atıkları doğal gübreye dönüştürmek) neden faydalıdır?",
+      "options": [
+        "Atık miktarını azaltır ve doğal gübre üretir",
+        "Çevreyi kirletir",
+        "Hiçbir faydası yoktur",
+        "Sadece koku yapar"
+      ],
+      "correctIndex": 0,
+      "hint": "Kompost, organik atıkları yeniden değerlendirerek toprağı besler."
+    },
+    {
+      "id": "q18",
+      "text": "Aşağıdakilerden hangisi deniz kirliliğine katkıda bulunan bir davranıştır?",
+      "options": [
+        "Plastik atıkları geri dönüşüme atmak",
+        "Plastik çöpleri denize/kıyıya atmak",
+        "Deniz temizliği etkinliklerine katılmak",
+        "Deniz canlılarını korumak"
+      ],
+      "correctIndex": 1,
+      "hint": "Denize atılan çöpler, deniz canlılarına ciddi zarar verebilir."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Bugün çevre için ne yaptın (geri dönüşüm, tasarruf vb.)?",
+    "options": [
+      "Geri dönüşüm yaptım",
+      "Su/enerji tasarrufu yaptım",
+      "İkisini de yaptım",
+      "Henüz bir şey yapmadım ama bugün yapacağım"
+    ],
+    "correctIndex": 2,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

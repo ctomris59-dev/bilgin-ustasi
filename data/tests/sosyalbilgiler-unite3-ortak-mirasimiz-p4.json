@@ -1,0 +1,227 @@
+{
+  "id": "sosyalbilgiler-unite3-ortak-mirasimiz-p4",
+  "subject": "Sosyal Bilgiler",
+  "title": "Ünite 3 - Ortak Mirasımız (4/4)",
+  "week": 3,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Bir toplumun geleneksel oyunları (örneğin çocuk oyunları), hangi tür mirasa örnektir?",
+      "options": [
+        "Somut kültürel miras",
+        "Somut olmayan kültürel miras",
+        "Doğal miras",
+        "Hiçbirine girmez"
+      ],
+      "correctIndex": 1,
+      "hint": "Oyunlar, oynanarak ve öğretilerek aktarılan, fiziksel olmayan bir mirastır."
+    },
+    {
+      "id": "q2",
+      "text": "Aşağıdakilerden hangisi 'tarihi bir kentin' korunmasında dikkat edilmesi gereken bir husustur?",
+      "options": [
+        "Modern binalarla rastgele karıştırmak",
+        "Özgün mimari dokuyu koruyarak restorasyon yapmak",
+        "Tarihi binaları yıkıp yenilerini yapmak",
+        "Hiçbir özen göstermemek"
+      ],
+      "correctIndex": 1,
+      "hint": "Tarihi dokunun korunması, kentin kültürel kimliğini sürdürmesine yardımcı olur."
+    },
+    {
+      "id": "q3",
+      "text": "Zorlayıcı soru: Bir müze, tarihi bir eseri sergilerken onun hangi dönemden kaldığını, kimler tarafından kullanıldığını ve nasıl bulunduğunu da anlatıyor. Bu bilgilerin sunulması neden önemlidir?",
+      "options": [
+        "Hiçbir önemi yoktur",
+        "Ziyaretçilerin eseri daha iyi anlamasını ve bağlamını kavramasını sağlar",
+        "Sadece eseri süslemek içindir",
+        "Bilgiler eseri değersizleştirir"
+      ],
+      "correctIndex": 1,
+      "hint": "Bağlamsal bilgi, bir eserin tarihi ve kültürel önemini anlamamıza yardımcı olur."
+    },
+    {
+      "id": "q4",
+      "text": "Aşağıdakilerden hangisi 'kültürel kimlik' kavramıyla ilişkilidir?",
+      "options": [
+        "Bir toplumun dil, gelenek ve değerleriyle şekillenen özgün karakteri",
+        "Sadece bir kişinin fiziksel görünümü",
+        "Hiçbir anlamı yoktur",
+        "Sadece bir ülkenin bayrağı"
+      ],
+      "correctIndex": 0,
+      "hint": "Kültürel kimlik, bir toplumun kendine özgü değerlerini ve özelliklerini yansıtır."
+    },
+    {
+      "id": "q5",
+      "text": "Bir toplumda geleneksel el sanatlarının (örneğin dokumacılık) günümüzde de sürdürülmesi neyi sağlar?",
+      "options": [
+        "Bu sanatların unutulmasını hızlandırır",
+        "Bu sanatların yaşatılmasına ve gelecek nesillere aktarılmasına katkı sağlar",
+        "Hiçbir katkısı yoktur",
+        "Sadece geçmişte kalmasını sağlar"
+      ],
+      "correctIndex": 1,
+      "hint": "Aktif olarak uygulanan gelenekler, daha kolay yaşatılır."
+    },
+    {
+      "id": "q6",
+      "text": "Aşağıdakilerden hangisi 'tarih öncesi dönem' (yazının henüz kullanılmadığı dönem) hakkında bilgi edinmemizi sağlayan temel kaynaktır?",
+      "options": [
+        "Yazılı belgeler",
+        "Arkeolojik buluntular (aletler, kalıntılar vb.)",
+        "Gazete haberleri",
+        "İnternet siteleri"
+      ],
+      "correctIndex": 1,
+      "hint": "Yazı henüz olmadığı için, bu dönem hakkındaki bilgiler kazı ve buluntulardan elde edilir."
+    },
+    {
+      "id": "q7",
+      "text": "Bir toplumun mimarisinde kullanılan yerel malzemeler (taş, ahşap vb.), o bölge hakkında ne gösterebilir?",
+      "options": [
+        "Hiçbir şey göstermez",
+        "Bölgenin doğal kaynaklarını ve yapı geleneklerini yansıtabilir",
+        "Sadece rastgele seçilmiştir",
+        "Bölgenin tarihiyle hiç ilgisi yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Yapı malzemeleri, genellikle o bölgede kolayca bulunan doğal kaynaklarla ilişkilidir."
+    },
+    {
+      "id": "q8",
+      "text": "Zorlayıcı soru: Bir toplumda kuşaklar arasında geleneksel bilgi aktarımı azaldığında, hangi tür bir kültürel kayıp riski oluşur?",
+      "options": [
+        "Somut mirasların kaybı riski artar sadece",
+        "Somut olmayan kültürel mirasın (bilgi, beceri, gelenek) kaybolma riski artar",
+        "Hiçbir risk oluşmaz",
+        "Sadece doğal miras etkilenir"
+      ],
+      "correctIndex": 1,
+      "hint": "Sözlü ve uygulamalı olarak aktarılan miras, aktarım kesilirse kaybolabilir."
+    },
+    {
+      "id": "q9",
+      "text": "Aşağıdakilerden hangisi bir toplumun 'kimlik değerlerinden' biri olarak kabul edilebilir?",
+      "options": [
+        "Dil",
+        "Hava durumu",
+        "Trafik kuralları",
+        "Döviz kuru"
+      ],
+      "correctIndex": 0,
+      "hint": "Dil, bir toplumun kimliğinin en temel unsurlarından biridir."
+    },
+    {
+      "id": "q10",
+      "text": "Bir tarihi eserin 'orijinal (özgün) hâlinin korunması' neden önemlidir?",
+      "options": [
+        "Hiçbir önemi yoktur",
+        "Eserin gerçek tarihi ve kültürel değerini yansıtması için",
+        "Sadece görsel amaçlıdır",
+        "Eserleri değiştirmek daha iyidir"
+      ],
+      "correctIndex": 1,
+      "hint": "Özgünlük, bir eserin tarihi doğruluğunu ve değerini korur."
+    },
+    {
+      "id": "q11",
+      "text": "Aşağıdakilerden hangisi kültürel mirasın topluma sağladığı faydalardan biridir?",
+      "options": [
+        "Toplumsal kimlik ve aidiyet duygusunu güçlendirmek",
+        "Toplumu zayıflatmak",
+        "Hiçbir faydası yoktur",
+        "Sadece maddi kazanç sağlamak"
+      ],
+      "correctIndex": 0,
+      "hint": "Kültürel miras, insanların bir topluma ait olma hissini güçlendirebilir."
+    },
+    {
+      "id": "q12",
+      "text": "Bir öğrencinin okulda kültürel miras hakkında bilgi edinmesi neden faydalıdır?",
+      "options": [
+        "Hiçbir faydası yoktur",
+        "Geçmişi anlamasına ve kültürel değerlere saygı duymasına yardımcı olur",
+        "Sadece sınav için gereklidir",
+        "Zaman kaybıdır"
+      ],
+      "correctIndex": 1,
+      "hint": "Eğitim, farkındalık ve saygı geliştirmenin önemli bir yoludur."
+    },
+    {
+      "id": "q13",
+      "text": "Zorlayıcı soru: Bir bölgede yapılan bir kazıda, farklı dönemlere ait katmanlar (örneğin en altta çok eski, üstte daha yakın döneme ait kalıntılar) bulunuyor. Bu bulgu neyi gösterir?",
+      "options": [
+        "Bölgenin sadece tek bir dönemde yerleşim gördüğünü",
+        "Bölgenin farklı zaman dilimlerinde sürekli yerleşim gördüğünü",
+        "Hiçbir şey göstermez",
+        "Kazının yanlış yapıldığını"
+      ],
+      "correctIndex": 1,
+      "hint": "Katmanlı yerleşimler, bir bölgenin uzun süre boyunca kullanıldığını gösterir."
+    },
+    {
+      "id": "q14",
+      "text": "Aşağıdakilerden hangisi 'kültürel miras' ile 'doğal miras' arasındaki temel farkı açıklar?",
+      "options": [
+        "Kültürel miras insan yapımı/insan kaynaklı, doğal miras doğada kendiliğinden oluşandır",
+        "İkisi arasında hiç fark yoktur",
+        "Doğal miras insan yapımıdır",
+        "Kültürel miras her zaman doğaldır"
+      ],
+      "correctIndex": 0,
+      "hint": "Bir tapınak kültürel mirasa, bir milli park doğal mirasa örnektir."
+    },
+    {
+      "id": "q15",
+      "text": "Bir toplumun geleneksel tıbbi bilgileri (bitkisel tedaviler vb.), hangi tür mirasa örnektir?",
+      "options": [
+        "Somut kültürel miras",
+        "Somut olmayan kültürel miras",
+        "Doğal miras",
+        "Hiçbirine girmez"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu bilgiler, nesilden nesile sözlü ve uygulamalı olarak aktarılır."
+    },
+    {
+      "id": "q16",
+      "text": "Aşağıdakilerden hangisi kültürel mirası tanıtmanın bir yoludur?",
+      "options": [
+        "Belgeseller ve kitaplar hazırlamak",
+        "Mirası saklamak, kimseyle paylaşmamak",
+        "Hiçbir şey yapmamak",
+        "Mirası önemsememek"
+      ],
+      "correctIndex": 0,
+      "hint": "Belgesel ve yayınlar, kültürel mirası geniş kitlelere tanıtmaya yardımcı olur."
+    },
+    {
+      "id": "q17",
+      "text": "Bir öğrenci, ailesiyle birlikte bir tarihi ören yerini ziyaret ediyor ve rehberden bilgi alıyor. Bu deneyim öğrenciye ne kazandırabilir?",
+      "options": [
+        "Hiçbir şey kazandırmaz",
+        "Tarih ve kültürel miras konusunda somut bir öğrenme deneyimi kazandırır",
+        "Sadece yorgunluk verir",
+        "Zaman kaybettirir"
+      ],
+      "correctIndex": 1,
+      "hint": "Yerinde gözlem ve deneyim, öğrenmeyi daha kalıcı hâle getirebilir."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Ailende nesilden nesile aktarılan bir gelenek var mı?",
+    "options": [
+      "Evet, var",
+      "Emin değilim",
+      "Hayır, yok",
+      "Araştırmak isterim"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

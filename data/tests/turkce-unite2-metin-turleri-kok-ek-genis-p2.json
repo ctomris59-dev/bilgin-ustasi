@@ -1,0 +1,239 @@
+{
+  "id": "turkce-unite2-metin-turleri-kok-ek-genis-p2",
+  "subject": "Türkçe",
+  "title": "Ünite 2 - Metin Türleri, Kök ve Ekler (Geniş Havuz) (2/4)",
+  "week": 2,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Bir konuda kişisel görüş ve düşünceleri, kesin bir sonuca varmadan anlatan yazı türüne ne denir?",
+      "options": [
+        "Deneme",
+        "Haber metni",
+        "Masal",
+        "Fabl"
+      ],
+      "correctIndex": 0,
+      "hint": "Bu tür, yazarın kendi fikirlerini serbestçe paylaştığı bir yazı biçimidir."
+    },
+    {
+      "id": "q2",
+      "text": "Aşağıdakilerden hangisi 'öyküleyici' (olay anlatan) metin türlerinden biridir?",
+      "options": [
+        "Fabl",
+        "Dilekçe",
+        "Grafik",
+        "Form"
+      ],
+      "correctIndex": 0,
+      "hint": "Bu tür, bir olayı zaman içinde anlatır."
+    },
+    {
+      "id": "q3",
+      "text": "Aşağıdakilerden hangisi 'bilgilendirici' metin türlerinden biridir?",
+      "options": [
+        "Masal",
+        "Haber metni",
+        "Fabl",
+        "Şiir"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu tür, okuyucuya gerçek bilgi vermek amacındadır."
+    },
+    {
+      "id": "q4",
+      "text": "'Kalem-lik' kelimesinde kök ve ek nasıl ayrılır?",
+      "options": [
+        "Kalem (kök) + lik (ek)",
+        "Kale (kök) + mlik (ek)",
+        "Kalemli (kök) + k (ek)",
+        "Ayrılamaz"
+      ],
+      "correctIndex": 0,
+      "hint": "'Kalem' anlamlı bir kök, '-lik' ise ona eklenen bir yapım ekidir."
+    },
+    {
+      "id": "q5",
+      "text": "'Ev-ci-lik' kelimesindeki eklerin görevi nedir?",
+      "options": [
+        "Kelimeyi kısaltmak",
+        "Kelimeden yeni anlamlar türetmek (ev > evci > evcilik)",
+        "Kelimeyi çoğul yapmak",
+        "Hiçbir görevi yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Her ek, kelimeye adım adım yeni bir anlam katar."
+    },
+    {
+      "id": "q6",
+      "text": "Aşağıdakilerden hangisi bir kökten yapım ekiyle türetilmiş bir kelimedir?",
+      "options": [
+        "Kitaplar",
+        "Kitapçı",
+        "Kitabı",
+        "Kitaba"
+      ],
+      "correctIndex": 1,
+      "hint": "Yapım eki, kelimenin anlamını değiştirip yeni bir kelime türetir - '-çı' eki satıcı anlamı katar."
+    },
+    {
+      "id": "q7",
+      "text": "'Kitaplar' kelimesindeki '-lar' eki hangi tür ektir?",
+      "options": [
+        "Yapım eki",
+        "Çekim eki (çoğul eki)",
+        "Kök",
+        "Hiçbiri"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu ek, kelimenin anlamını değiştirmez, sadece sayısını (çoğul) belirtir."
+    },
+    {
+      "id": "q8",
+      "text": "Yapım eki ile çekim eki arasındaki temel fark nedir?",
+      "options": [
+        "Hiçbir fark yoktur",
+        "Yapım eki yeni kelime türetir, çekim eki kelimenin görevini/durumunu değiştirir ama yeni kelime türetmez",
+        "Çekim eki daha uzundur",
+        "Yapım eki sadece isimlere gelir"
+      ],
+      "correctIndex": 1,
+      "hint": "Yapım eki anlamı değiştirir (göz->gözlük), çekim eki durumu belirtir (evler, evde gibi)."
+    },
+    {
+      "id": "q9",
+      "text": "Aşağıdaki metin türlerinden hangisi genellikle bir olayı, kişileri ve zamanı içeren kurgusal bir anlatıdır?",
+      "options": [
+        "Hikaye",
+        "Form",
+        "Dilekçe",
+        "Grafik"
+      ],
+      "correctIndex": 0,
+      "hint": "Bu tür, bir olay örgüsü ve karakterler içeren düzyazı anlatım biçimidir."
+    },
+    {
+      "id": "q10",
+      "text": "Bir metnin 'ana fikrini' bulmak ne demektir?",
+      "options": [
+        "Metindeki en uzun cümleyi bulmak",
+        "Yazarın metinde vermek istediği temel mesajı belirlemek",
+        "Metindeki tüm kelimeleri saymak",
+        "Metnin başlığını değiştirmek"
+      ],
+      "correctIndex": 1,
+      "hint": "Ana fikir, yazarın okuyucuya iletmek istediği en önemli düşüncedir."
+    },
+    {
+      "id": "q11",
+      "text": "Bir metni özetlerken en önemli ilkelerden biri nedir?",
+      "options": [
+        "Metnin tamamını aynen kopyalamak",
+        "Sadece en önemli noktaları kendi cümlelerinle kısaca ifade etmek",
+        "Metne hiç dokunmadan bırakmak",
+        "Sadece giriş cümlesini yazmak"
+      ],
+      "correctIndex": 1,
+      "hint": "Özet, metnin ana noktalarının kısaca ifade edilmesidir."
+    },
+    {
+      "id": "q12",
+      "text": "'Balık-çı-lık' kelimesindeki kök hangisidir?",
+      "options": [
+        "Balık",
+        "Çı",
+        "Lık",
+        "Balıkçı"
+      ],
+      "correctIndex": 0,
+      "hint": "'Balık' anlam taşıyan ve bölünemeyen ilk parçadır."
+    },
+    {
+      "id": "q13",
+      "text": "Aşağıdakilerden hangisi bir masalın tipik özelliğidir?",
+      "options": [
+        "Gerçek tarihi olaylara dayanması",
+        "Olağanüstü unsurlar (peri, dev vb.) içermesi",
+        "Sadece bilgi vermesi",
+        "Resmi bir dille yazılması"
+      ],
+      "correctIndex": 1,
+      "hint": "Masallarda hayal gücüne dayalı, gerçek dışı öğeler sıkça bulunur."
+    },
+    {
+      "id": "q14",
+      "text": "Aşağıdakilerden hangisi bir fablın tipik özelliğidir?",
+      "options": [
+        "Kahramanların insan olması zorunludur",
+        "Sonunda bir ders/öğüt (ahlaki mesaj) verilmesi",
+        "Gerçek bir haberi anlatması",
+        "Resmi bir başvuru olması"
+      ],
+      "correctIndex": 1,
+      "hint": "Fabllar, genellikle konuşan hayvanlarla bir ahlaki ders verir."
+    },
+    {
+      "id": "q15",
+      "text": "Bir haber metninin en önemli özelliği nedir?",
+      "options": [
+        "Hayal ürünü olması",
+        "Gerçek ve doğrulanabilir bilgi içermesi",
+        "Şiirsel bir dille yazılması",
+        "Sadece duygu içermesi"
+      ],
+      "correctIndex": 1,
+      "hint": "Haber metinleri gerçek olayları objektif şekilde aktarmalıdır."
+    },
+    {
+      "id": "q16",
+      "text": "Zorlayıcı soru: 'Kitap-lık-lar-ımız-da' kelimesinde kaç farklı ek bulunmaktadır (yaklaşık olarak)?",
+      "options": [
+        "1",
+        "2",
+        "En az 3 (yapım ve çekim ekleri karışık)",
+        "Hiç ek yoktur"
+      ],
+      "correctIndex": 2,
+      "hint": "'-lık' yapım eki, '-lar' çoğul eki, '-ımız' iyelik eki, '-da' hâl eki - birden fazla ek art arda gelmiştir."
+    },
+    {
+      "id": "q17",
+      "text": "Aşağıdakilerden hangisi bir mektubun temel bölümlerinden biri DEĞİLDİR?",
+      "options": [
+        "Hitap (Sevgili... gibi)",
+        "Gövde (asıl mesaj)",
+        "İmza",
+        "Deney sonuçları"
+      ],
+      "correctIndex": 3,
+      "hint": "Bu, bir bilimsel rapor unsuru olup mektupta bulunmaz."
+    },
+    {
+      "id": "q18",
+      "text": "'Gel-di-m' kelimesinde kaç tane ek bulunur?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "0"
+      ],
+      "correctIndex": 1,
+      "hint": "'-di' zaman eki, '-m' kişi ekidir."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: En sevdiğin metin türü hangisi (masal, fabl, haber vb.)?",
+    "options": [
+      "Masal",
+      "Fabl",
+      "Haber metni",
+      "Diğer"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "id": "fenbilimleri-unite4-madde-degisim-p3",
+  "subject": "Fen Bilimleri",
+  "title": "Ünite 4 - Madde ve Değişim (3/4)",
+  "week": 4,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Katıların sıkıştırılamamasının (neredeyse hiç) sebebi nedir?",
+      "options": [
+        "Tanecikleri çok sıkı ve düzenli dizilidir, boşluk azdır",
+        "Katılarda hiç tanecik yoktur",
+        "Katılar her zaman gaz gibi davranır",
+        "Katılar sıvıdan daha az yoğundur"
+      ],
+      "correctIndex": 0,
+      "hint": "Az boşluk, sıkıştırmayı zorlaştırır."
+    },
+    {
+      "id": "q2",
+      "text": "Bir sıvı ısıtıldığında sıcaklığı sürekli artar mı?",
+      "options": [
+        "Evet, kaynama noktasına kadar sürekli artar, sonra sabit kalır (kaynarken)",
+        "Hayır, hiç artmaz",
+        "Sıcaklık hep sabittir",
+        "Sadece azalır"
+      ],
+      "correctIndex": 0,
+      "hint": "Kaynama sırasında verilen ısı, hâl değişimi için kullanılır, sıcaklığı artırmaya değil."
+    },
+    {
+      "id": "q3",
+      "text": "Aşağıdakilerden hangisi maddenin tanecikli yapısını destekleyen bir kanıt olabilir?",
+      "options": [
+        "Şekerin suda çözünüp gözden kaybolması",
+        "Suyun her zaman aynı renkte olması",
+        "Taşların sert olması",
+        "Havanın görünmez olması"
+      ],
+      "correctIndex": 0,
+      "hint": "Şeker taneciklerinin su tanecikleri arasındaki boşluklara dağılması, tanecikli yapıyı destekler."
+    },
+    {
+      "id": "q4",
+      "text": "Zorlayıcı soru: Bir bardak sıcak su ile bir bardak soğuk su karıştırılırsa, karışımın sıcaklığı hakkında ne söylenebilir?",
+      "options": [
+        "Sıcak sudan da yüksek olur",
+        "İki suyun sıcaklığı arasında bir değer olur",
+        "Soğuk sudan da düşük olur",
+        "Hiç değişmez"
+      ],
+      "correctIndex": 1,
+      "hint": "Isı, sıcak sudan soğuk suya akar ve ortalama bir sıcaklığa ulaşılır."
+    },
+    {
+      "id": "q5",
+      "text": "Aşağıdakilerden hangisi ısı alışverişine bir örnektir?",
+      "options": [
+        "Bir buz küpünün elde erimesi",
+        "Bir kitabın rengi",
+        "Bir taşın sertliği",
+        "Bir masanın uzunluğu"
+      ],
+      "correctIndex": 0,
+      "hint": "Elden buza ısı akışı, buzun erimesine sebep olur."
+    },
+    {
+      "id": "q6",
+      "text": "Metallerin ısıyı iletme özelliği nasıldır?",
+      "options": [
+        "Çok kötü iletirler",
+        "İyi iletirler",
+        "Hiç iletmezler",
+        "Sadece bazı metaller iletir"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu yüzden metal kaşıklar sıcak çorbada çabuk ısınır."
+    },
+    {
+      "id": "q7",
+      "text": "Tahta veya plastik gibi malzemeler ısıyı nasıl iletir?",
+      "options": [
+        "Çok iyi iletirler",
+        "Kötü iletirler (yalıtkandırlar)",
+        "Metaller kadar iyi iletirler",
+        "Hiç ısı almazlar"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu yüzden tahta/plastik saplar, sıcak tencerelerde tutmak için kullanılır."
+    },
+    {
+      "id": "q8",
+      "text": "Aşağıdakilerden hangisi ısı yalıtımı sağlayan bir malzemedir?",
+      "options": [
+        "Bakır",
+        "Demir",
+        "Strafor (köpük)",
+        "Alüminyum"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu malzeme, genellikle paketlemede ve yalıtımda kullanılır çünkü ısıyı kötü iletir."
+    },
+    {
+      "id": "q9",
+      "text": "Kışın kalın kıyafetler giymemizin sebebi nedir?",
+      "options": [
+        "Vücut ısımızın dışarı kaçmasını yavaşlatmak (yalıtım)",
+        "Kıyafetler bize ısı verir",
+        "Hiçbir bilimsel sebebi yoktur",
+        "Sadece moda içindir"
+      ],
+      "correctIndex": 0,
+      "hint": "Kıyafetler, vücut ısısının hızla kaybolmasını önleyen bir yalıtım katmanı oluşturur."
+    },
+    {
+      "id": "q10",
+      "text": "Zorlayıcı soru: Bir metal kaşık ve bir tahta kaşık aynı sıcak çorbaya batırılıyor. Hangisi daha çabuk ısınır?",
+      "options": [
+        "Tahta kaşık",
+        "Metal kaşık",
+        "İkisi de aynı hızda ısınır",
+        "Hiçbiri ısınmaz"
+      ],
+      "correctIndex": 1,
+      "hint": "Metaller ısıyı tahtadan çok daha iyi iletir."
+    },
+    {
+      "id": "q11",
+      "text": "Aşağıdakilerden hangisi bir maddenin gaz hâlden sıvı hâle geçtiği bir günlük hayat örneğidir?",
+      "options": [
+        "Suyun kaynaması",
+        "Sabah çimlerde oluşan çiy (nem)",
+        "Buzun erimesi",
+        "Suyun donması"
+      ],
+      "correctIndex": 1,
+      "hint": "Havadaki su buharı, soğuk gece havasında yoğunlaşarak çiy oluşturur."
+    },
+    {
+      "id": "q12",
+      "text": "Zorlayıcı soru: Bir kap içindeki suyu dondurup sonra tekrar ısıtırsak, madde miktarı (kütlesi) değişir mi?",
+      "options": [
+        "Evet, madde kaybolur",
+        "Hayır, sadece hâli değişir, madde miktarı korunur",
+        "Kütle iki katına çıkar",
+        "Kütle yarıya iner"
+      ],
+      "correctIndex": 1,
+      "hint": "Hâl değişimlerinde madde kaybolmaz, sadece tanecik düzeni değişir."
+    },
+    {
+      "id": "q13",
+      "text": "Aşağıdakilerden hangisi 'ısı yalıtımının' günlük hayattaki bir faydasıdır?",
+      "options": [
+        "Evlerin kışın daha az ısı kaybetmesini sağlamak",
+        "Elektrik faturasını artırmak",
+        "Hiçbir faydası yoktur",
+        "Evleri daha soğuk yapmak"
+      ],
+      "correctIndex": 0,
+      "hint": "İyi yalıtılmış evler, ısıyı daha uzun süre korur."
+    },
+    {
+      "id": "q14",
+      "text": "Bir dondurmanın oda sıcaklığında bırakıldığında erimesi hangi olaya örnektir?",
+      "options": [
+        "Donma",
+        "Erime",
+        "Buharlaşma",
+        "Süblimleşme"
+      ],
+      "correctIndex": 1,
+      "hint": "Katı hâldeki dondurma, ısı alarak sıvı hâle geçiyor."
+    },
+    {
+      "id": "q15",
+      "text": "Zorlayıcı soru: Bir bilim insanı bir maddenin sıcaklığını sürekli ölçüyor ve kaynama sırasında sıcaklığın sabit kaldığını görüyor. Bu neden olur?",
+      "options": [
+        "Isı, madde tarafından alınmıyor artık",
+        "Verilen ısı, sıcaklığı artırmak yerine hâl değişimi için kullanılıyor",
+        "Termometre bozuktur",
+        "Kaynama sırasında ısı hiç verilmez"
+      ],
+      "correctIndex": 1,
+      "hint": "Kaynama noktasında verilen enerji, taneciklerin hızını artırmak yerine onları birbirinden ayırmak için kullanılır."
+    },
+    {
+      "id": "q16",
+      "text": "Aşağıdakilerden hangisi bir sıvının donmasına örnektir?",
+      "options": [
+        "Suyun buz küpü hâline gelmesi",
+        "Buzun erimesi",
+        "Suyun buharlaşması",
+        "Buharın yoğuşması"
+      ],
+      "correctIndex": 0,
+      "hint": "Sıvı su, ısı vererek katı buza dönüşüyor."
+    },
+    {
+      "id": "q17",
+      "text": "Bir maddenin tanecikleri arasındaki çekim kuvveti, hangi hâlde en güçlüdür?",
+      "options": [
+        "Gaz",
+        "Sıvı",
+        "Katı",
+        "Hepsinde eşittir"
+      ],
+      "correctIndex": 2,
+      "hint": "Katılarda tanecikler birbirine en sıkı bağlıdır."
+    },
+    {
+      "id": "q18",
+      "text": "Bir maddenin tanecikleri arasındaki çekim kuvveti, hangi hâlde en zayıftır?",
+      "options": [
+        "Katı",
+        "Sıvı",
+        "Gaz",
+        "Hepsinde eşittir"
+      ],
+      "correctIndex": 2,
+      "hint": "Gazlarda tanecikler birbirinden en uzak ve serbesttir."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Bugün hangi hâl değişimini gözlemledin (buz erimesi, su buharlaşması vb.)?",
+    "options": [
+      "Erime",
+      "Buharlaşma",
+      "Donma",
+      "Hiçbirini gözlemlemedim"
+    ],
+    "correctIndex": 3,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

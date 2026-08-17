@@ -1,0 +1,251 @@
+{
+  "id": "matematik-unite3-ondalik-yuzde-p1",
+  "subject": "Matematik",
+  "title": "Ünite 3 - Ondalık Gösterim ve Yüzdeler (1/4)",
+  "week": 3,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "3/10 kesrinin ondalık gösterimi nedir?",
+      "options": [
+        "0,3",
+        "3,0",
+        "0,03",
+        "30,0"
+      ],
+      "correctIndex": 0,
+      "hint": "Paydası 10 olan kesirler virgülden sonra tek basamaklı yazılır."
+    },
+    {
+      "id": "q2",
+      "text": "7/10 kesrinin ondalık gösterimi nedir?",
+      "options": [
+        "0,7",
+        "7,0",
+        "0,07",
+        "70,0"
+      ],
+      "correctIndex": 0,
+      "hint": "Paydası 10 olan kesirler virgülden sonra tek basamaklı yazılır."
+    },
+    {
+      "id": "q3",
+      "text": "5/10 kesrinin ondalık gösterimi nedir?",
+      "options": [
+        "0,5",
+        "5,0",
+        "0,05",
+        "50,0"
+      ],
+      "correctIndex": 0,
+      "hint": "Paydası 10 olan kesirler virgülden sonra tek basamaklı yazılır."
+    },
+    {
+      "id": "q4",
+      "text": "9/10 kesrinin ondalık gösterimi nedir?",
+      "options": [
+        "0,9",
+        "9,0",
+        "0,09",
+        "90,0"
+      ],
+      "correctIndex": 0,
+      "hint": "Paydası 10 olan kesirler virgülden sonra tek basamaklı yazılır."
+    },
+    {
+      "id": "q5",
+      "text": "1/10 kesrinin ondalık gösterimi nedir?",
+      "options": [
+        "0,1",
+        "1,0",
+        "0,01",
+        "10,0"
+      ],
+      "correctIndex": 0,
+      "hint": "Paydası 10 olan kesirler virgülden sonra tek basamaklı yazılır."
+    },
+    {
+      "id": "q6",
+      "text": "2/10 kesrinin ondalık gösterimi nedir?",
+      "options": [
+        "0,2",
+        "2,0",
+        "0,02",
+        "20,0"
+      ],
+      "correctIndex": 0,
+      "hint": "Paydası 10 olan kesirler virgülden sonra tek basamaklı yazılır."
+    },
+    {
+      "id": "q7",
+      "text": "6/10 kesrinin ondalık gösterimi nedir?",
+      "options": [
+        "0,6",
+        "6,0",
+        "0,06",
+        "60,0"
+      ],
+      "correctIndex": 0,
+      "hint": "Paydası 10 olan kesirler virgülden sonra tek basamaklı yazılır."
+    },
+    {
+      "id": "q8",
+      "text": "4/10 kesrinin ondalık gösterimi nedir?",
+      "options": [
+        "0,4",
+        "4,0",
+        "0,04",
+        "40,0"
+      ],
+      "correctIndex": 0,
+      "hint": "Paydası 10 olan kesirler virgülden sonra tek basamaklı yazılır."
+    },
+    {
+      "id": "q9",
+      "text": "25/100 kesrinin ondalık gösterimi nedir?",
+      "options": [
+        "0,25",
+        "0,025",
+        "25,00",
+        "0,250"
+      ],
+      "correctIndex": 0,
+      "hint": "Paydası 100 olan kesirler virgülden sonra iki basamaklı yazılır."
+    },
+    {
+      "id": "q10",
+      "text": "7/100 kesrinin ondalık gösterimi nedir?",
+      "options": [
+        "0,07",
+        "0,7",
+        "7,00",
+        "0,700"
+      ],
+      "correctIndex": 0,
+      "hint": "Paydası 100 olan kesirler virgülden sonra iki basamaklı yazılır."
+    },
+    {
+      "id": "q11",
+      "text": "50/100 kesrinin ondalık gösterimi nedir?",
+      "options": [
+        "0,50",
+        "0,050",
+        "50,00",
+        "0,500"
+      ],
+      "correctIndex": 0,
+      "hint": "Paydası 100 olan kesirler virgülden sonra iki basamaklı yazılır."
+    },
+    {
+      "id": "q12",
+      "text": "3/100 kesrinin ondalık gösterimi nedir?",
+      "options": [
+        "0,03",
+        "0,3",
+        "3,00",
+        "0,300"
+      ],
+      "correctIndex": 0,
+      "hint": "Paydası 100 olan kesirler virgülden sonra iki basamaklı yazılır."
+    },
+    {
+      "id": "q13",
+      "text": "60/100 kesrinin ondalık gösterimi nedir?",
+      "options": [
+        "0,60",
+        "0,060",
+        "60,00",
+        "0,600"
+      ],
+      "correctIndex": 0,
+      "hint": "Paydası 100 olan kesirler virgülden sonra iki basamaklı yazılır."
+    },
+    {
+      "id": "q14",
+      "text": "9/100 kesrinin ondalık gösterimi nedir?",
+      "options": [
+        "0,09",
+        "0,9",
+        "9,00",
+        "0,900"
+      ],
+      "correctIndex": 0,
+      "hint": "Paydası 100 olan kesirler virgülden sonra iki basamaklı yazılır."
+    },
+    {
+      "id": "q15",
+      "text": "45/100 kesrinin ondalık gösterimi nedir?",
+      "options": [
+        "0,45",
+        "0,045",
+        "45,00",
+        "0,450"
+      ],
+      "correctIndex": 0,
+      "hint": "Paydası 100 olan kesirler virgülden sonra iki basamaklı yazılır."
+    },
+    {
+      "id": "q16",
+      "text": "18/100 kesrinin ondalık gösterimi nedir?",
+      "options": [
+        "0,18",
+        "0,018",
+        "18,00",
+        "0,180"
+      ],
+      "correctIndex": 0,
+      "hint": "Paydası 100 olan kesirler virgülden sonra iki basamaklı yazılır."
+    },
+    {
+      "id": "q17",
+      "text": "3,45 sayısında virgülden sonraki ilk rakam (4) hangi basamaktır?",
+      "options": [
+        "onda birler (onlu ondalık) basamağı",
+        "birler basamağı",
+        "onlar basamağı",
+        "yüzler basamağı"
+      ],
+      "correctIndex": 0,
+      "hint": "Virgülden sonraki ilk basamağa 'onda birler basamağı' denir."
+    },
+    {
+      "id": "q18",
+      "text": "7,82 sayısında virgülden sonraki ilk rakam (8) hangi basamaktır?",
+      "options": [
+        "onda birler basamağı",
+        "birler basamağı",
+        "onlar basamağı",
+        "yüzler basamağı"
+      ],
+      "correctIndex": 0,
+      "hint": "Virgülden sonraki ilk basamağa 'onda birler basamağı' denir."
+    },
+    {
+      "id": "q19",
+      "text": "2,19 sayısında virgülden sonraki ilk rakam (1) hangi basamaktır?",
+      "options": [
+        "onda birler basamağı",
+        "birler basamağı",
+        "onlar basamağı",
+        "yüzler basamağı"
+      ],
+      "correctIndex": 0,
+      "hint": "Virgülden sonraki ilk basamağa 'onda birler basamağı' denir."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Ondalık sayılarla ilgili en çok hangi konuda kendine güvendin?",
+    "options": [
+      "Sıralama",
+      "Toplama-çıkarma",
+      "Yüzdeye çevirme",
+      "Basamak değeri"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

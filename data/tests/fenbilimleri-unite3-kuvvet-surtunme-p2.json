@@ -1,0 +1,239 @@
+{
+  "id": "fenbilimleri-unite3-kuvvet-surtunme-p2",
+  "subject": "Fen Bilimleri",
+  "title": "Ünite 3 - Kuvvetin Ölçülmesi ve Sürtünme (2/4)",
+  "week": 3,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Dinamometrenin çalışma prensibi nedir?",
+      "options": [
+        "Elektrik akımı ölçer",
+        "İçindeki yayın uzama miktarına göre kuvveti ölçer",
+        "Sıcaklığı ölçer",
+        "Zamanı ölçer"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu araç, bir yay mekanizması kullanır - kuvvet arttıkça yay daha çok uzar."
+    },
+    {
+      "id": "q2",
+      "text": "Bir cismin ağırlığı hangi araçla ölçülebilir?",
+      "options": [
+        "Cetvel",
+        "Dinamometre",
+        "Termometre",
+        "Kronometre"
+      ],
+      "correctIndex": 1,
+      "hint": "Ağırlık bir kuvvet olduğu için, kuvvet ölçen araçla ölçülür."
+    },
+    {
+      "id": "q3",
+      "text": "Aşağıdakilerden hangisi 'itme kuvvetine' bir örnektir?",
+      "options": [
+        "Bir arabayı çekmek",
+        "Bir kapıyı iterek açmak",
+        "Bir ipi çekmek",
+        "Bir yayı çekmek"
+      ],
+      "correctIndex": 1,
+      "hint": "İtme, bir cismi kendinden uzaklaştıracak yönde kuvvet uygulamaktır."
+    },
+    {
+      "id": "q4",
+      "text": "Aşağıdakilerden hangisi 'çekme kuvvetine' bir örnektir?",
+      "options": [
+        "Bir arabayı itmek",
+        "Bir kapıyı iterek açmak",
+        "Bir ipi çekmek",
+        "Bir topu tekmelemek"
+      ],
+      "correctIndex": 2,
+      "hint": "Çekme, bir cismi kendine doğru yaklaştıracak yönde kuvvet uygulamaktır."
+    },
+    {
+      "id": "q5",
+      "text": "Zorlayıcı soru: Aynı kütleye sahip iki cisim, Dünya'da ve Ay'da tartılıyor. Hangi ifade doğrudur?",
+      "options": [
+        "Her iki gezegende ağırlıkları aynıdır",
+        "Dünya'daki ağırlık, Ay'dakinden fazladır",
+        "Ay'daki ağırlık, Dünya'dakinden fazladır",
+        "Kütleleri de farklı olur"
+      ],
+      "correctIndex": 1,
+      "hint": "Dünya'nın çekim kuvveti Ay'dan fazladır, bu yüzden ağırlık farklıdır ama kütle her yerde aynıdır."
+    },
+    {
+      "id": "q6",
+      "text": "Bir kar küreği kolayca kar üzerinde kayarken, aynı küreği çim üzerinde çekmek neden daha zordur?",
+      "options": [
+        "Çim daha ağırdır",
+        "Çim yüzeyi, kardan daha pürüzlü olduğu için sürtünme fazladır",
+        "Kar hiç sürtünme oluşturmaz",
+        "Çimde yerçekimi daha güçlüdür"
+      ],
+      "correctIndex": 1,
+      "hint": "Yüzeyin pürüzlülüğü, sürtünme miktarını doğrudan etkiler."
+    },
+    {
+      "id": "q7",
+      "text": "Bisiklet fren sistemleri hangi kuvvetten yararlanarak bisikleti durdurur?",
+      "options": [
+        "Yerçekimi",
+        "Sürtünme kuvveti",
+        "Manyetik kuvvet",
+        "İtme kuvveti"
+      ],
+      "correctIndex": 1,
+      "hint": "Fren pedleri, tekerleğe sürtünerek hareketi yavaşlatır."
+    },
+    {
+      "id": "q8",
+      "text": "Aşağıdakilerden hangisi sürtünmeyi azaltmak için kullanılan bir yöntemdir?",
+      "options": [
+        "Yüzeyi pürüzlendirmek",
+        "Yağlama yapmak",
+        "Yüzeyi ıslatmadan bırakmak",
+        "Ağırlığı artırmak"
+      ],
+      "correctIndex": 1,
+      "hint": "Yağ, sürtünmeyi azaltan yaygın bir yöntemdir."
+    },
+    {
+      "id": "q9",
+      "text": "Bir cisim havada düşerken hangi kuvvetler etkilidir?",
+      "options": [
+        "Sadece yerçekimi",
+        "Yerçekimi ve hava sürtünmesi (direnci)",
+        "Hiçbir kuvvet etkili değildir",
+        "Sadece manyetik kuvvet"
+      ],
+      "correctIndex": 1,
+      "hint": "Hava da bir ortamdır ve düşen cisme karşı bir direnç (sürtünme benzeri etki) uygular."
+    },
+    {
+      "id": "q10",
+      "text": "Paraşütlerin geniş yüzeyi neyi artırmak için tasarlanmıştır?",
+      "options": [
+        "Ağırlığı",
+        "Hava direncini (sürtünmeyi), böylece düşüşü yavaşlatmak için",
+        "Hızı",
+        "Sıcaklığı"
+      ],
+      "correctIndex": 1,
+      "hint": "Geniş yüzey, havayla daha fazla temas ederek düşüşü yavaşlatır."
+    },
+    {
+      "id": "q11",
+      "text": "Bir nesnenin kütlesini ölçmek için hangi araç kullanılır?",
+      "options": [
+        "Dinamometre",
+        "Terazi",
+        "Termometre",
+        "Barometre"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu araç, market ve laboratuvarlarda madde miktarını ölçmek için kullanılır."
+    },
+    {
+      "id": "q12",
+      "text": "Zorlayıcı soru: Bir astronot Ay'a gittiğinde neden daha kolay zıplayabilir?",
+      "options": [
+        "Ay'da oksijen fazladır",
+        "Ay'ın çekim kuvveti (dolayısıyla ağırlığı) Dünya'dan azdır",
+        "Astronotun kütlesi azalmıştır",
+        "Ay'da hava sürtünmesi fazladır"
+      ],
+      "correctIndex": 1,
+      "hint": "Daha az çekim kuvveti, daha kolay zıplamayı sağlar - kütle değil ağırlık etkilenir."
+    },
+    {
+      "id": "q13",
+      "text": "Aşağıdakilerden hangisi kuvvetin bir etkisi DEĞİLDİR?",
+      "options": [
+        "Cismin hızını değiştirmek",
+        "Cismin yönünü değiştirmek",
+        "Cismin şeklini değiştirmek",
+        "Cismin rengini değiştirmek"
+      ],
+      "correctIndex": 3,
+      "hint": "Kuvvet, fiziksel hareket ve şekille ilgilidir, renk değişimiyle değil."
+    },
+    {
+      "id": "q14",
+      "text": "Bir yayı gerdiğimizde (çektiğimizde) yayın şeklinde ne olur?",
+      "options": [
+        "Hiçbir değişiklik olmaz",
+        "Uzar",
+        "Kısalır",
+        "Kırılır"
+      ],
+      "correctIndex": 1,
+      "hint": "Kuvvet uygulandığında esnek cisimler şekil değiştirebilir."
+    },
+    {
+      "id": "q15",
+      "text": "Buz pateni yaparken patenlerin altındaki ince bıçak neden sürtünmeyi azaltır?",
+      "options": [
+        "Bıçak çok ağırdır",
+        "Bıçağın buzla temas eden yüzeyi çok küçüktür ve düzdür",
+        "Bıçak manyetiktir",
+        "Buz hiç sürtünme oluşturmaz"
+      ],
+      "correctIndex": 1,
+      "hint": "Küçük ve düz temas yüzeyi, sürtünmeyi azaltmaya yardımcı olur."
+    },
+    {
+      "id": "q16",
+      "text": "Bir spor ayakkabısının tabanındaki desenlerin amacı nedir?",
+      "options": [
+        "Sadece estetik",
+        "Yer ile ayakkabı arasındaki sürtünmeyi artırıp kaymayı önlemek",
+        "Ayakkabıyı hafifletmek",
+        "Ayakkabıyı su geçirmez yapmak"
+      ],
+      "correctIndex": 1,
+      "hint": "Desenli tabanlar, düz tabanlara göre daha fazla tutunma sağlar."
+    },
+    {
+      "id": "q17",
+      "text": "Aşağıdakilerden hangisi 'ağırlık' biriminin doğru ifadesidir (5. sınıf düzeyinde)?",
+      "options": [
+        "Kilogram",
+        "Newton",
+        "Metre",
+        "Santimetre"
+      ],
+      "correctIndex": 1,
+      "hint": "Ağırlık bir kuvvet olduğu için, kuvvet birimiyle ifade edilir."
+    },
+    {
+      "id": "q18",
+      "text": "Zorlayıcı soru: Bir cismin kütlesi 10 kg olarak sabit kalırken, bu cisim Dünya'dan Ay'a götürülürse aşağıdakilerden hangisi değişir?",
+      "options": [
+        "Sadece kütlesi",
+        "Sadece ağırlığı",
+        "Hem kütlesi hem ağırlığı",
+        "Hiçbiri değişmez"
+      ],
+      "correctIndex": 1,
+      "hint": "Kütle madde miktarıdır ve değişmez, ama ağırlık yerçekimine bağlı olduğu için değişir."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Bugün hangi kuvveti (itme/çekme) en çok kullandın?",
+    "options": [
+      "İtme",
+      "Çekme",
+      "İkisini de kullandım",
+      "Hatırlamıyorum"
+    ],
+    "correctIndex": 2,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

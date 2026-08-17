@@ -1,0 +1,239 @@
+{
+  "id": "turkce-unite3-cumlenin-ogeleri-p4",
+  "subject": "Türkçe",
+  "title": "Ünite 3 - Cümlenin Ögeleri (4/4)",
+  "week": 3,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Aşağıdaki cümlelerin hangisinde dolaylı tümleç yoktur?",
+      "options": [
+        "Okula gittim.",
+        "Eve döndüm.",
+        "Kitap okudum.",
+        "Bahçede oturdum."
+      ],
+      "correctIndex": 2,
+      "hint": "Bu cümlede sadece nesne vardır ('kitap'), dolaylı tümleç yoktur."
+    },
+    {
+      "id": "q2",
+      "text": "Bir cümlenin temel ögeleri (özne ve yüklem) dışındaki ögelere ne denir?",
+      "options": [
+        "Ana ögeler",
+        "Yardımcı ögeler",
+        "Kurallı ögeler",
+        "Devrik ögeler"
+      ],
+      "correctIndex": 1,
+      "hint": "Nesne ve tümleçler, cümleye ek bilgi katan ögelerdir."
+    },
+    {
+      "id": "q3",
+      "text": "Aşağıdakilerden hangisi bir cümlenin 'temel ögesi' değildir?",
+      "options": [
+        "Özne",
+        "Yüklem",
+        "Zarf tümleci",
+        "İkisi de temel öge"
+      ],
+      "correctIndex": 2,
+      "hint": "Zarf tümleci, cümlenin temel değil yardımcı ögesidir."
+    },
+    {
+      "id": "q4",
+      "text": "'Babam işe erken gitti.' cümlesinde kaç öge bulunur (özne, yüklem, tümleçler dahil)?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "1"
+      ],
+      "correctIndex": 2,
+      "hint": "Özne (babam), dolaylı tümleç (işe), zarf tümleci (erken) ve yüklem (gitti) toplamda 4 öge oluşturur."
+    },
+    {
+      "id": "q5",
+      "text": "Zorlayıcı soru: Bir cümlede 'kime, neye' sorularına cevap veren öge ile 'neyi, kimi' sorularına cevap veren öge birbirine karıştırılabilir mi?",
+      "options": [
+        "Hayır, bunlar birbirinden farklı ögelerdir (dolaylı tümleç ve nesne)",
+        "Evet, ikisi aynı ögedir",
+        "Bu sorular hep aynı cevabı verir",
+        "Hiçbir farkları yoktur"
+      ],
+      "correctIndex": 0,
+      "hint": "'Kime/neye' dolaylı tümleci, 'neyi/kimi' nesneyi bulmaya yarar - farklı hâl ekleri kullanılır."
+    },
+    {
+      "id": "q6",
+      "text": "'Çiçekleri suladık.' cümlesinde özne hangisidir?",
+      "options": [
+        "Çiçekleri",
+        "Suladık",
+        "Biz (gizli özne)",
+        "Hiçbiri"
+      ],
+      "correctIndex": 2,
+      "hint": "'-k' eki hangi şahsı gösterir?"
+    },
+    {
+      "id": "q7",
+      "text": "Aşağıdaki cümlelerin hangisinde hem nesne hem zarf tümleci bulunur?",
+      "options": [
+        "Kitabı hızlıca okudu.",
+        "Okula gitti.",
+        "Bahçede oturdu.",
+        "Eve döndü."
+      ],
+      "correctIndex": 0,
+      "hint": "'Kitabı' nesne, 'hızlıca' zarf tümlecidir."
+    },
+    {
+      "id": "q8",
+      "text": "Bir öğrenci bir cümlenin ögelerini bulurken hangi sıra ile ilerlemesi genellikle daha kolaydır?",
+      "options": [
+        "Önce yüklemi, sonra özneyi, sonra diğer ögeleri bulmak",
+        "Rastgele bir sırayla ilerlemek",
+        "Sadece özneyi bulup durmak",
+        "Hiçbir sıra izlemeden tahmin etmek"
+      ],
+      "correctIndex": 0,
+      "hint": "Önce yüklemi bulmak, diğer ögeleri bulmayı kolaylaştırır çünkü sorular yükleme göre sorulur."
+    },
+    {
+      "id": "q9",
+      "text": "'Bu soruyu doğru cevapladın.' cümlesinde 'bu soruyu' hangi ögedir?",
+      "options": [
+        "Özne",
+        "Nesne",
+        "Dolaylı tümleç",
+        "Zarf tümleci"
+      ],
+      "correctIndex": 1,
+      "hint": "'Neyi cevapladın?' sorusuna cevap veren ifade."
+    },
+    {
+      "id": "q10",
+      "text": "'Bu soruyu doğru cevapladın.' cümlesinde 'doğru' hangi ögedir?",
+      "options": [
+        "Özne",
+        "Nesne",
+        "Dolaylı tümleç",
+        "Zarf tümleci"
+      ],
+      "correctIndex": 3,
+      "hint": "'Nasıl cevapladın?' sorusuna cevap veren kelime."
+    },
+    {
+      "id": "q11",
+      "text": "Aşağıdaki cümlelerin hangisi eksik bir cümle örneğidir (temel ögelerden biri eksik)?",
+      "options": [
+        "Ali okula gitti.",
+        "Kuşlar uçtu.",
+        "Sınıfta.",
+        "Ben yemek yedim."
+      ],
+      "correctIndex": 2,
+      "hint": "Bu ifadede ne özne ne de yüklem net bir şekilde bulunuyor, tek başına anlamlı bir cümle değil."
+    },
+    {
+      "id": "q12",
+      "text": "Zorlayıcı soru: 'Kışın kar yağdığında sokaklar bembeyaz olur.' cümlesinde 'kışın' hangi ögedir?",
+      "options": [
+        "Özne",
+        "Nesne",
+        "Zarf tümleci",
+        "Dolaylı tümleç"
+      ],
+      "correctIndex": 2,
+      "hint": "'Ne zaman olur?' sorusuna kısmen cevap veren bir zaman ifadesidir."
+    },
+    {
+      "id": "q13",
+      "text": "Aşağıdaki cümlelerin hangisinde özne belirtilmiştir (açıkça yazılmıştır)?",
+      "options": [
+        "Geldim.",
+        "Gittik.",
+        "Kardeşim geldi.",
+        "Okudum."
+      ],
+      "correctIndex": 2,
+      "hint": "Bu cümlede özne ('kardeşim') açıkça yazılmıştır, diğerlerinde gizlidir."
+    },
+    {
+      "id": "q14",
+      "text": "'Yağmur yağdığı için dışarı çıkmadık.' cümlesinde ana cümlenin öznesi hangisidir?",
+      "options": [
+        "Yağmur",
+        "Biz (gizli özne)",
+        "Dışarı",
+        "Çıkmadık"
+      ],
+      "correctIndex": 1,
+      "hint": "Ana cümlenin (çıkmadık) öznesi kimdir? '-k' eki hangi şahsı gösterir?"
+    },
+    {
+      "id": "q15",
+      "text": "Aşağıdakilerden hangisi bir cümlede birden fazla bulunabilecek bir öge türüdür?",
+      "options": [
+        "Yüklem (her cümlede sadece bir tane olur genelde)",
+        "Zarf tümleci (birden fazla olabilir)",
+        "Özne (her zaman tek olmalıdır)",
+        "Hiçbiri birden fazla olamaz"
+      ],
+      "correctIndex": 1,
+      "hint": "Bir cümlede zaman, yer, durum gibi birden fazla zarf tümleci bulunabilir."
+    },
+    {
+      "id": "q16",
+      "text": "'Bahçıvan çiçekleri her sabah özenle sular.' cümlesinde özne hangisidir?",
+      "options": [
+        "Bahçıvan",
+        "Çiçekleri",
+        "Her sabah",
+        "Özenle"
+      ],
+      "correctIndex": 0,
+      "hint": "Sulama işini kim yapıyor?"
+    },
+    {
+      "id": "q17",
+      "text": "Zorlayıcı soru: 'Bahçıvan çiçekleri her sabah özenle sular.' cümlesinde kaç zarf tümleci vardır?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "0"
+      ],
+      "correctIndex": 1,
+      "hint": "'Her sabah' (zaman) ve 'özenle' (durum) olmak üzere 2 zarf tümleci vardır."
+    },
+    {
+      "id": "q18",
+      "text": "Cümle ögelerini doğru belirlemenin faydası nedir?",
+      "options": [
+        "Hiçbir faydası yoktur",
+        "Cümlenin anlamını daha iyi anlamaya ve doğru cümle kurmaya yardımcı olur",
+        "Sadece sınav için gereklidir",
+        "Cümle kurmayı zorlaştırır"
+      ],
+      "correctIndex": 1,
+      "hint": "Ögeleri bilmek, hem okuduğunu anlamayı hem de doğru yazmayı geliştirir."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Cümle ögelerinden hangisini bulmak sana en kolay geliyor?",
+    "options": [
+      "Özne",
+      "Yüklem",
+      "Nesne",
+      "Tümleçler"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

@@ -1,0 +1,251 @@
+{
+  "id": "turkce-unite3-cumlenin-ogeleri-p1",
+  "subject": "Türkçe",
+  "title": "Ünite 3 - Cümlenin Ögeleri (1/4)",
+  "week": 3,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Bir cümlede işi, oluşu veya durumu bildiren temel ögeye ne denir?",
+      "options": [
+        "Özne",
+        "Yüklem",
+        "Nesne",
+        "Tümleç"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu öge, genellikle cümlenin sonunda bulunan fiil veya isimdir."
+    },
+    {
+      "id": "q2",
+      "text": "Bir cümlede yüklemin bildirdiği işi yapan veya durumu yaşayan ögeye ne denir?",
+      "options": [
+        "Yüklem",
+        "Özne",
+        "Nesne",
+        "Zarf tümleci"
+      ],
+      "correctIndex": 1,
+      "hint": "'Kim/ne yaptı?' sorusuna cevap veren ögedir."
+    },
+    {
+      "id": "q3",
+      "text": "'Ali kitap okudu.' cümlesinde özne hangisidir?",
+      "options": [
+        "Ali",
+        "Kitap",
+        "Okudu",
+        "Hiçbiri"
+      ],
+      "correctIndex": 0,
+      "hint": "Okuma işini kim yaptı?"
+    },
+    {
+      "id": "q4",
+      "text": "'Ali kitap okudu.' cümlesinde yüklem hangisidir?",
+      "options": [
+        "Ali",
+        "Kitap",
+        "Okudu",
+        "Hiçbiri"
+      ],
+      "correctIndex": 2,
+      "hint": "Cümlede işi bildiren kelime hangisidir?"
+    },
+    {
+      "id": "q5",
+      "text": "Yüklemin bildirdiği işten etkilenen varlığa ne denir?",
+      "options": [
+        "Özne",
+        "Yüklem",
+        "Nesne",
+        "Zarf tümleci"
+      ],
+      "correctIndex": 2,
+      "hint": "'Neyi/kimi?' sorusuna cevap veren ögedir."
+    },
+    {
+      "id": "q6",
+      "text": "'Ahmet topu attı.' cümlesinde nesne hangisidir?",
+      "options": [
+        "Ahmet",
+        "Topu",
+        "Attı",
+        "Hiçbiri"
+      ],
+      "correctIndex": 1,
+      "hint": "Atma işinden etkilenen şey nedir?"
+    },
+    {
+      "id": "q7",
+      "text": "'-i' hâl ekini alan (belirtili) nesneye örnek hangisidir?",
+      "options": [
+        "Kitap okudu",
+        "Kitabı okudu",
+        "Kitapla okudu",
+        "Kitaba baktı"
+      ],
+      "correctIndex": 1,
+      "hint": "Belirtili nesne, '-i' ekiyle belirginleşir."
+    },
+    {
+      "id": "q8",
+      "text": "'-i' hâl eki almayan (belirtisiz) nesneye örnek hangisidir?",
+      "options": [
+        "Elmayı yedi",
+        "Elma yedi",
+        "Elmaya baktı",
+        "Elmadan aldı"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu nesne türü, eksiz ve daha genel bir anlam taşır."
+    },
+    {
+      "id": "q9",
+      "text": "Yüklemin bildirdiği eylemin yönünü, yerini veya kime/neye yapıldığını belirten ve '-e, -de, -den' ekleriyle oluşan ögeye ne denir?",
+      "options": [
+        "Özne",
+        "Nesne",
+        "Dolaylı tümleç",
+        "Zarf tümleci"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu öge, 'kime, nereye, nerede, nereden' gibi sorulara cevap verir."
+    },
+    {
+      "id": "q10",
+      "text": "'Öğretmen sınıfa girdi.' cümlesinde dolaylı tümleç hangisidir?",
+      "options": [
+        "Öğretmen",
+        "Sınıfa",
+        "Girdi",
+        "Hiçbiri"
+      ],
+      "correctIndex": 1,
+      "hint": "'Nereye girdi?' sorusuna cevap veren kelime."
+    },
+    {
+      "id": "q11",
+      "text": "'Ali okuldan geldi.' cümlesinde dolaylı tümleç hangisidir?",
+      "options": [
+        "Ali",
+        "Okuldan",
+        "Geldi",
+        "Hiçbiri"
+      ],
+      "correctIndex": 1,
+      "hint": "'Nereden geldi?' sorusuna cevap veren kelime."
+    },
+    {
+      "id": "q12",
+      "text": "Yüklemin bildirdiği eylemin zamanını, yerini, durumunu veya nasıl yapıldığını belirten ögeye ne denir?",
+      "options": [
+        "Özne",
+        "Nesne",
+        "Dolaylı tümleç",
+        "Zarf tümleci"
+      ],
+      "correctIndex": 3,
+      "hint": "Bu öge, 'ne zaman, nasıl, ne kadar' gibi sorulara cevap verir."
+    },
+    {
+      "id": "q13",
+      "text": "'Ali hızlı koştu.' cümlesinde zarf tümleci hangisidir?",
+      "options": [
+        "Ali",
+        "Hızlı",
+        "Koştu",
+        "Hiçbiri"
+      ],
+      "correctIndex": 1,
+      "hint": "'Nasıl koştu?' sorusuna cevap veren kelime."
+    },
+    {
+      "id": "q14",
+      "text": "'Yarın okula gideceğim.' cümlesinde zarf tümleci hangisidir?",
+      "options": [
+        "Yarın",
+        "Okula",
+        "Gideceğim",
+        "Hiçbiri"
+      ],
+      "correctIndex": 0,
+      "hint": "'Ne zaman gideceğim?' sorusuna cevap veren kelime."
+    },
+    {
+      "id": "q15",
+      "text": "Bir cümlede özne her zaman bulunmak zorunda mıdır?",
+      "options": [
+        "Evet, her cümlede mutlaka açıkça yazılmalıdır",
+        "Hayır, gizli özne olarak da bulunabilir (fiilin kişi ekinden anlaşılır)",
+        "Özne hiçbir cümlede bulunmaz",
+        "Özne sadece soru cümlelerinde bulunur"
+      ],
+      "correctIndex": 1,
+      "hint": "'Geldim.' cümlesinde özne 'ben' açıkça yazılmasa da fiildeki ekten anlaşılır."
+    },
+    {
+      "id": "q16",
+      "text": "'Geldim.' cümlesinde gizli özne kimdir?",
+      "options": [
+        "O",
+        "Sen",
+        "Ben",
+        "Biz"
+      ],
+      "correctIndex": 2,
+      "hint": "'-m' kişi eki, hangi şahsı gösterir?"
+    },
+    {
+      "id": "q17",
+      "text": "Bir cümlede yüklem hiç bulunmayabilir mi?",
+      "options": [
+        "Hayır, her cümlede mutlaka bir yüklem bulunur",
+        "Evet, yüklemsiz cümle olabilir",
+        "Yüklem sadece uzun cümlelerde bulunur",
+        "Bu sorunun cevabı yoktur"
+      ],
+      "correctIndex": 0,
+      "hint": "Yüklem, cümlenin temel ve vazgeçilmez ögesidir."
+    },
+    {
+      "id": "q18",
+      "text": "'Ayşe çiçekleri suladı.' cümlesinde özne, yüklem ve nesne sırasıyla hangileridir?",
+      "options": [
+        "Özne: çiçekleri, Yüklem: suladı, Nesne: Ayşe",
+        "Özne: Ayşe, Yüklem: suladı, Nesne: çiçekleri",
+        "Özne: suladı, Yüklem: Ayşe, Nesne: çiçekleri",
+        "Özne: Ayşe, Yüklem: çiçekleri, Nesne: suladı"
+      ],
+      "correctIndex": 1,
+      "hint": "Önce kim yaptığını, sonra işi, sonra neyi etkilediğini bul."
+    },
+    {
+      "id": "q19",
+      "text": "Zorlayıcı soru: 'Kardeşim dün akşam bana güzel bir hediye verdi.' cümlesinde 'bana' hangi cümle ögesidir?",
+      "options": [
+        "Özne",
+        "Nesne",
+        "Dolaylı tümleç",
+        "Zarf tümleci"
+      ],
+      "correctIndex": 2,
+      "hint": "'Kime verdi?' sorusuna cevap veren kelime, dolaylı tümleçtir."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Cümle ögelerinden hangisini bulmak sana en kolay geliyor?",
+    "options": [
+      "Özne",
+      "Yüklem",
+      "Nesne",
+      "Tümleçler"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

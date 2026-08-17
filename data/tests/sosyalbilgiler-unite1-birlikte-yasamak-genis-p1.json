@@ -1,0 +1,251 @@
+{
+  "id": "sosyalbilgiler-unite1-birlikte-yasamak-genis-p1",
+  "subject": "Sosyal Bilgiler",
+  "title": "Ünite 1 - Birlikte Yaşamak (Geniş Havuz) (1/4)",
+  "week": 1,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Bir arkadaşının duygularını anlayıp kendini onun yerine koyabilme becerisine ne denir?",
+      "options": [
+        "Empati",
+        "Rekabet",
+        "Bencillik",
+        "Kayıtsızlık"
+      ],
+      "correctIndex": 0,
+      "hint": "'Onun yerinde olsaydım nasıl hissederdim?' diye düşünmek bu beceriyle ilgilidir."
+    },
+    {
+      "id": "q2",
+      "text": "Bir grup projesinde herkesin görev alıp ortak bir hedefe ulaşmaya çalışmasına ne denir?",
+      "options": [
+        "Yalnız çalışma",
+        "İş birliği",
+        "Yarışma",
+        "Kayıtsızlık"
+      ],
+      "correctIndex": 1,
+      "hint": "Birlikte çalışıp birbirine yardım etmek bu kavramla ilgilidir."
+    },
+    {
+      "id": "q3",
+      "text": "İki arkadaş arasında bir anlaşmazlık çıktığında en doğru ilk adım hangisidir?",
+      "options": [
+        "Küsüp konuşmamak",
+        "Bağırarak haklı çıkmaya çalışmak",
+        "Sakince konuşup birbirini dinlemek",
+        "Öğretmene söylemeden görmezden gelmek"
+      ],
+      "correctIndex": 2,
+      "hint": "Sorunları çözmenin ilk adımı genelde iletişimdir."
+    },
+    {
+      "id": "q4",
+      "text": "Sınıfında farklı bir yöreden gelen, farklı bir ağzı olan bir arkadaşın var. En doğru tutum hangisidir?",
+      "options": [
+        "Onunla dalga geçmek",
+        "Farklılığını olduğu gibi kabul edip saygı göstermek",
+        "Onunla konuşmamak",
+        "Ona 'farklı konuşuyorsun' diye takılmak"
+      ],
+      "correctIndex": 1,
+      "hint": "Farklılıklar toplumu zenginleştirir, bir eksiklik değildir."
+    },
+    {
+      "id": "q5",
+      "text": "Etkili bir iletişim için aşağıdakilerden hangisi en önemlidir?",
+      "options": [
+        "Sadece kendi fikrini söylemek",
+        "Karşındakini dinlemeden cevap vermek",
+        "Karşındakini dikkatle dinlemek ve anlamaya çalışmak",
+        "Yüksek sesle konuşmak"
+      ],
+      "correctIndex": 2,
+      "hint": "İletişim tek taraflı değil, karşılıklıdır."
+    },
+    {
+      "id": "q6",
+      "text": "Bir toplulukta ortak kurallara uymanın temel amacı nedir?",
+      "options": [
+        "Herkesi kısıtlamak",
+        "Düzeni ve herkesin haklarını korumak",
+        "Sadece yetişkinleri memnun etmek",
+        "Hiçbir amacı yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Kurallar, bir arada yaşayan insanların birbirine zarar vermeden yaşamasını sağlar."
+    },
+    {
+      "id": "q7",
+      "text": "Bir arkadaşın senden bir konuda yardım istiyor ama sen o an meşgulsün. En olgun tepki hangisidir?",
+      "options": [
+        "'Şimdi olmaz' deyip hiç açıklama yapmadan uzaklaşmak",
+        "Nazikçe durumu açıklayıp uygun bir zamanda yardım edebileceğini söylemek",
+        "Sinirlenip bağırmak",
+        "Görmezden gelmek"
+      ],
+      "correctIndex": 1,
+      "hint": "Nazik ve açık iletişim, ilişkileri güçlendirir."
+    },
+    {
+      "id": "q8",
+      "text": "Grup çalışmasında herkesin farklı bir görev üstlenmesinin faydası nedir?",
+      "options": [
+        "İş daha yavaş biter",
+        "Herkesin yeteneğine göre katkı sağlaması ve işin daha verimli tamamlanması",
+        "Kimse sorumluluk almaz",
+        "Hiçbir faydası yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Görev paylaşımı, güçlü yönlerin ortaya çıkmasını sağlar."
+    },
+    {
+      "id": "q9",
+      "text": "Bir arkadaşın seninle konuşurken sürekli telefonuna bakıyorsun. Bu davranış hangi beceriyle çelişir?",
+      "options": [
+        "Empati",
+        "Etkin dinleme",
+        "Yardımlaşma",
+        "Kurallara uyma"
+      ],
+      "correctIndex": 1,
+      "hint": "Karşındakine tam dikkat vermek, iyi bir dinleyici olmanın parçasıdır."
+    },
+    {
+      "id": "q10",
+      "text": "Aşağıdakilerden hangisi bir 'sosyal sorumluluk' örneğidir?",
+      "options": [
+        "Sadece kendi işini düşünmek",
+        "Çevredeki çöpleri toplamak için gönüllü olmak",
+        "Başkalarının eşyalarını izinsiz almak",
+        "Kurallara uymamak"
+      ],
+      "correctIndex": 1,
+      "hint": "Toplum yararına gönüllü davranışlar sosyal sorumluluktur."
+    },
+    {
+      "id": "q11",
+      "text": "Bir sınıfta demokratik karar alma süreci nasıl işler?",
+      "options": [
+        "Sadece öğretmen karar verir",
+        "En güçlü öğrenci karar verir",
+        "Herkesin fikrini söyleyip oylama yaparak",
+        "Kimse karar vermez"
+      ],
+      "correctIndex": 2,
+      "hint": "Demokraside herkesin görüşü önemlidir ve ortak kararla ilerlenir."
+    },
+    {
+      "id": "q12",
+      "text": "Bir arkadaşın yanlış bir şey yaptığında ona nasıl yaklaşmak daha doğrudur?",
+      "options": [
+        "Herkesin önünde küçük düşürmek",
+        "Özel olarak, nazik bir dille durumu konuşmak",
+        "Görmezden gelip hiç bahsetmemek",
+        "Ona kızıp küsmek"
+      ],
+      "correctIndex": 1,
+      "hint": "Yapıcı geri bildirim, kişiyi incitmeden konuyu ele alır."
+    },
+    {
+      "id": "q13",
+      "text": "'Zorbalık' (bullying) ne anlama gelir?",
+      "options": [
+        "Arkadaşça şakalaşmak",
+        "Birine sürekli ve kasıtlı olarak zarar verecek şekilde davranmak",
+        "Yardımlaşmak",
+        "Kurallara uymak"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu davranış, tekrarlayan ve kasıtlı bir zarar verme biçimidir."
+    },
+    {
+      "id": "q14",
+      "text": "Sınıfında birine zorbalık yapıldığını gördüğünde en doğru davranış hangisidir?",
+      "options": [
+        "Görmezden gelmek",
+        "Katılıp gülmek",
+        "Durumu bir yetişkine bildirmek ve mağdur arkadaşına destek olmak",
+        "Hiçbir şey yapmamak"
+      ],
+      "correctIndex": 2,
+      "hint": "Zorbalığa sessiz kalmak yerine harekete geçmek önemlidir."
+    },
+    {
+      "id": "q15",
+      "text": "Aşağıdakilerden hangisi iyi bir dinleyicinin özelliğidir?",
+      "options": [
+        "Konuşan kişinin sözünü kesmek",
+        "Göz teması kurup dikkatle dinlemek",
+        "Başka şeylerle ilgilenmek",
+        "Hemen kendi fikrini söylemeye başlamak"
+      ],
+      "correctIndex": 1,
+      "hint": "Dikkatli dinleme, karşındaki kişiye değer verdiğini gösterir."
+    },
+    {
+      "id": "q16",
+      "text": "Toplumda farklı kültürlerden insanların bir arada barış içinde yaşamasına ne denir?",
+      "options": [
+        "Ayrımcılık",
+        "Hoşgörü ve birlikte yaşama kültürü",
+        "Kayıtsızlık",
+        "Yalnızlık"
+      ],
+      "correctIndex": 1,
+      "hint": "Farklılıklara saygı duyarak bir arada yaşama becerisidir."
+    },
+    {
+      "id": "q17",
+      "text": "Bir grupta ortak bir karar alınırken senin fikrin kabul edilmezse en olgun tepki ne olur?",
+      "options": [
+        "Küsüp gruptan ayrılmak",
+        "Grubun kararına saygı göstermek, fikrini nazikçe ifade etmiş olmak yeterlidir",
+        "Sinirlenip bağırmak",
+        "Grubu sabote etmek"
+      ],
+      "correctIndex": 1,
+      "hint": "Demokraside her zaman kendi fikrin kabul edilmeyebilir, önemli olan saygılı kalmaktır."
+    },
+    {
+      "id": "q18",
+      "text": "Aşağıdakilerden hangisi 'sorumluluk sahibi olmak' anlamına gelir?",
+      "options": [
+        "Sadece kendi işini yapıp başkasını düşünmemek",
+        "Üstlendiğin görevi zamanında ve özenle yapmak",
+        "Görevleri hep başkasına bırakmak",
+        "Söz verip tutmamak"
+      ],
+      "correctIndex": 1,
+      "hint": "Sorumluluk, üstlenilen bir görevi yerine getirmeyi içerir."
+    },
+    {
+      "id": "q19",
+      "text": "Bir arkadaşın senden özür dilediğinde en olgun tepki hangisidir?",
+      "options": [
+        "Asla affetmemek",
+        "Özrü kabul edip ilişkiyi onarmaya açık olmak",
+        "Onu utandırmaya devam etmek",
+        "Hiç tepki vermemek"
+      ],
+      "correctIndex": 1,
+      "hint": "Affetme becerisi, sağlıklı ilişkilerin bir parçasıdır."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Bu hafta bir arkadaşına nasıl yardımcı oldun?",
+    "options": [
+      "Ona bir konuda yardım ettim",
+      "Henüz fırsat olmadı",
+      "Hatırlamıyorum",
+      "Bunu paylaşmak istemiyorum"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

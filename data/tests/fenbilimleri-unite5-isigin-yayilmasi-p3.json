@@ -1,0 +1,239 @@
+{
+  "id": "fenbilimleri-unite5-isigin-yayilmasi-p3",
+  "subject": "Fen Bilimleri",
+  "title": "Ünite 5 - Işığın Yayılması (3/4)",
+  "week": 5,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Bir odada perdeler kapalıyken oda neden karanlık olur?",
+      "options": [
+        "Perde ışığı üretir",
+        "Perde, dışarıdan gelen ışığın odaya girmesini (opak olduğu için) engeller",
+        "Perdenin karanlıkla hiçbir ilgisi yoktur",
+        "Perde ışığı çoğaltır"
+      ],
+      "correctIndex": 1,
+      "hint": "Kalın perdeler genellikle opaktır, ışığın geçmesini engeller."
+    },
+    {
+      "id": "q2",
+      "text": "Zorlayıcı soru: Güneşli bir günde bir bulut Güneş'in önüne geldiğinde ne olur?",
+      "options": [
+        "Hiçbir şey değişmez",
+        "Bulut, ışığı kısmen engellediği için ortam kararır (gölgeye benzer bir etki)",
+        "Güneş söner",
+        "Gölgeler daha net olur"
+      ],
+      "correctIndex": 1,
+      "hint": "Bulutlar, güneş ışığının bir kısmını engelleyerek ortamı karartabilir."
+    },
+    {
+      "id": "q3",
+      "text": "Aşağıdakilerden hangisi 'ışığın madde ile etkileşimi' konusuna bir örnektir?",
+      "options": [
+        "Bir taşın sertliği",
+        "Işığın camdan geçmesi",
+        "Bir sesin yankılanması",
+        "Bir mıknatısın demiri çekmesi"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu, ışığın saydam bir maddeyle etkileşiminin bir örneğidir."
+    },
+    {
+      "id": "q4",
+      "text": "Bir sokak lambasının direği üzerine güneş ışığı düştüğünde oluşan gölge, günün farklı saatlerinde neden farklı yönlerde olur?",
+      "options": [
+        "Direk yer değiştirir",
+        "Güneş'in gökyüzündeki konumu gün içinde değişir",
+        "Gölgeler rastgele yön değiştirir",
+        "Bu bir yanılsamadır, gölge hiç değişmez"
+      ],
+      "correctIndex": 1,
+      "hint": "Güneş, sabahtan akşama kadar gökyüzünde farklı konumlara geçer, bu da gölgenin yönünü değiştirir."
+    },
+    {
+      "id": "q5",
+      "text": "Aşağıdakilerden hangisi doğru bir ifadedir?",
+      "options": [
+        "Tüm cisimler kendi ışığını üretir",
+        "Sadece bazı cisimler (ışık kaynakları) kendi ışığını üretir, diğerleri yansıtır",
+        "Hiçbir cisim ışık üretmez",
+        "Ay, kendi ışığını üretir"
+      ],
+      "correctIndex": 1,
+      "hint": "Güneş, ampul gibi ışık kaynakları ışık üretir; Ay, masa gibi diğer cisimler ışığı yansıtarak görünür."
+    },
+    {
+      "id": "q6",
+      "text": "Bir çocuğun gölgesiyle oynaması (gölge oyunları) hangi bilimsel prensibe dayanır?",
+      "options": [
+        "Sesin yayılması",
+        "Işığın doğrusal yayılması ve opak cisimlerin gölge oluşturması",
+        "Suyun akışkanlığı",
+        "Mıknatıs gücü"
+      ],
+      "correctIndex": 1,
+      "hint": "El şekilleriyle oluşturulan gölgeler, ışığın engellenmesiyle oluşur."
+    },
+    {
+      "id": "q7",
+      "text": "Zorlayıcı soru: Bir cismin gölgesi, cismin kendisinden her zaman büyük müdür?",
+      "options": [
+        "Evet, her zaman büyüktür",
+        "Hayır, ışık kaynağının konumuna göre büyük, küçük veya eşit boyda olabilir",
+        "Gölge her zaman küçüktür",
+        "Gölge boyutu cisimle hiç ilgili değildir"
+      ],
+      "correctIndex": 1,
+      "hint": "Işık kaynağının uzaklığı ve açısı, gölgenin boyutunu değiştirir."
+    },
+    {
+      "id": "q8",
+      "text": "Aşağıdakilerden hangisi ışığın varlığını gösteren bir kanıttır?",
+      "options": [
+        "Cisimleri görebilmemiz",
+        "Sesleri duyabilmemiz",
+        "Kokuları alabilmemiz",
+        "Tatları hissedebilmemiz"
+      ],
+      "correctIndex": 0,
+      "hint": "Görme duyumuz, ışığın varlığına bağlıdır."
+    },
+    {
+      "id": "q9",
+      "text": "Bir fotoğraf makinesinin çalışması için nelere ihtiyaç vardır?",
+      "options": [
+        "Hiçbir şeye ihtiyaç yoktur",
+        "Yeterli ışığa (ışık kaynağından yansıyan)",
+        "Sadece karanlığa",
+        "Sadece sese"
+      ],
+      "correctIndex": 1,
+      "hint": "Fotoğraf makineleri, cisimlerden yansıyan ışığı kaydeder."
+    },
+    {
+      "id": "q10",
+      "text": "Aşağıdakilerden hangisi 'ışığın engellenmesiyle oluşan bir olay DEĞİLDİR?",
+      "options": [
+        "Gölge oluşumu",
+        "Güneş tutulması",
+        "Ay tutulması",
+        "Gökkuşağı oluşumu"
+      ],
+      "correctIndex": 3,
+      "hint": "Gökkuşağı, ışığın kırılması ve ayrışmasıyla oluşur, engellenmesiyle değil."
+    },
+    {
+      "id": "q11",
+      "text": "Bir cismin hem saydam hem renkli olması mümkün müdür (örneğin renkli cam)?",
+      "options": [
+        "Hayır, imkansızdır",
+        "Evet, renkli cam bir örnektir - ışığın bir kısmını geçirir, rengini de gösterir",
+        "Sadece beyaz cisimler saydam olabilir",
+        "Renkli cisimler asla ışık geçirmez"
+      ],
+      "correctIndex": 1,
+      "hint": "Renkli camlar hem ışığı geçirir hem de belirli bir renk gösterir."
+    },
+    {
+      "id": "q12",
+      "text": "Zorlayıcı soru: Karanlık bir odada saydam bir bardak konsa, gölgesi oluşur mu?",
+      "options": [
+        "Hayır, saydam cisimler net gölge oluşturmaz (ışık büyük ölçüde geçer)",
+        "Evet, opak bir cisim gibi net bir gölge oluşturur",
+        "Saydam cisimlerin gölgeyle hiç ilgisi yoktur",
+        "Her zaman devasa bir gölge oluşturur"
+      ],
+      "correctIndex": 0,
+      "hint": "Saydam cisimler ışığı geçirdiği için, opak cisimler kadar belirgin bir gölge oluşturmaz."
+    },
+    {
+      "id": "q13",
+      "text": "Aşağıdakilerden hangisi doğal bir ışık kaynağı örneği olarak sayılabilir?",
+      "options": [
+        "Neon tabela",
+        "Ateş böceği (biyolüminesans)",
+        "Televizyon ekranı",
+        "Trafik lambası"
+      ],
+      "correctIndex": 1,
+      "hint": "Bazı canlılar, doğal olarak kendi ışıklarını üretebilir."
+    },
+    {
+      "id": "q14",
+      "text": "Bir tiyatro sahnesinde spot ışıkları kullanılmasının sebeplerinden biri nedir?",
+      "options": [
+        "Sahneyi karartmak için",
+        "Belirli bir alanı/kişiyi aydınlatıp dikkat çekmek için",
+        "Sesi artırmak için",
+        "Hiçbir bilimsel sebebi yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Spot ışıklar, doğrusal yayılan ışığı belirli bir noktaya yönlendirir."
+    },
+    {
+      "id": "q15",
+      "text": "Aşağıdakilerden hangisi ışığın 'hızlı yayıldığını' gösteren bir gözlemdir?",
+      "options": [
+        "Bir lambayı açtığımızda ışığın odayı anında doldurması",
+        "Sesin yavaş yayılması",
+        "Suyun akışkan olması",
+        "Isının yavaş iletilmesi"
+      ],
+      "correctIndex": 0,
+      "hint": "Bir ışık kaynağı açıldığında, ışık neredeyse anında her yere ulaşır."
+    },
+    {
+      "id": "q16",
+      "text": "Zorlayıcı soru: Bir öğrenci, bir cismi hem önden hem yandan aydınlatarak iki farklı gölge elde ediyor. Bu iki gölge birbiriyle çakışabilir mi?",
+      "options": [
+        "Hayır, asla çakışamazlar",
+        "Evet, ışık kaynaklarının açısına bağlı olarak kısmen çakışabilir veya ayrı düşebilir",
+        "Gölgeler ışıktan etkilenmez",
+        "Sadece bir gölge oluşur, ikincisi imkansızdır"
+      ],
+      "correctIndex": 1,
+      "hint": "Gölgelerin konumu, ışık kaynaklarının açısına bağlıdır, çakışma mümkündür."
+    },
+    {
+      "id": "q17",
+      "text": "Aşağıdakilerden hangisi ışığın bir cisme çarpıp geri dönmesi anlamına gelir?",
+      "options": [
+        "Kırılma",
+        "Yansıma",
+        "Emilme",
+        "Yayılma"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu olay, aynaların çalışma prensibinin temelidir."
+    },
+    {
+      "id": "q18",
+      "text": "Koyu renkli cisimler ışığı nasıl etkiler (genel gözlem)?",
+      "options": [
+        "Işığın çoğunu yansıtır",
+        "Işığın çoğunu emer (soğurur)",
+        "Işığı hiç etkilemez",
+        "Işığı çoğaltır"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu yüzden yazın koyu renkli kıyafetler daha çok ısınır."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Bugün gölgeni ne zaman fark ettin?",
+    "options": [
+      "Sabah",
+      "Öğlen",
+      "Akşam",
+      "Fark etmedim"
+    ],
+    "correctIndex": 3,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

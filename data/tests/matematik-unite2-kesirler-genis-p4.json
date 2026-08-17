@@ -1,0 +1,275 @@
+{
+  "id": "matematik-unite2-kesirler-genis-p4",
+  "subject": "Matematik",
+  "title": "Ünite 2 - Kesirler (Geniş Havuz) (4/4)",
+  "week": 2,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "30 sayısının 5/6'i kaçtır?",
+      "options": [
+        "25",
+        "31",
+        "5",
+        "20"
+      ],
+      "correctIndex": 0,
+      "hint": "Önce 30'i 6'e böl, sonra 5 ile çarp."
+    },
+    {
+      "id": "q2",
+      "text": "28 sayısının 4/7'i kaçtır?",
+      "options": [
+        "16",
+        "23",
+        "4",
+        "12"
+      ],
+      "correctIndex": 0,
+      "hint": "Önce 28'i 7'e böl, sonra 4 ile çarp."
+    },
+    {
+      "id": "q3",
+      "text": "45 sayısının 5/9'i kaçtır?",
+      "options": [
+        "25",
+        "34",
+        "5",
+        "20"
+      ],
+      "correctIndex": 0,
+      "hint": "Önce 45'i 9'e böl, sonra 5 ile çarp."
+    },
+    {
+      "id": "q4",
+      "text": "36 sayısının 6/6'i kaçtır?",
+      "options": [
+        "36",
+        "42",
+        "6",
+        "30"
+      ],
+      "correctIndex": 0,
+      "hint": "Önce 36'i 6'e böl, sonra 6 ile çarp."
+    },
+    {
+      "id": "q5",
+      "text": "40 sayısının 4/10'i kaçtır?",
+      "options": [
+        "16",
+        "26",
+        "4",
+        "12"
+      ],
+      "correctIndex": 0,
+      "hint": "Önce 40'i 10'e böl, sonra 4 ile çarp."
+    },
+    {
+      "id": "q6",
+      "text": "27 sayısının 3/9'i kaçtır?",
+      "options": [
+        "9",
+        "18",
+        "3",
+        "6"
+      ],
+      "correctIndex": 0,
+      "hint": "Önce 27'i 9'e böl, sonra 3 ile çarp."
+    },
+    {
+      "id": "q7",
+      "text": "50 sayısının 5/10'i kaçtır?",
+      "options": [
+        "25",
+        "35",
+        "5",
+        "20"
+      ],
+      "correctIndex": 0,
+      "hint": "Önce 50'i 10'e böl, sonra 5 ile çarp."
+    },
+    {
+      "id": "q8",
+      "text": "Bir çokluğun 1/5'i 8 ise, çokluğun tamamı kaçtır?",
+      "options": [
+        "40",
+        "35",
+        "13",
+        "32"
+      ],
+      "correctIndex": 0,
+      "hint": "1/5'i 8 ise, tamamı 8×5'dır."
+    },
+    {
+      "id": "q9",
+      "text": "Bir çokluğun 1/4'i 6 ise, çokluğun tamamı kaçtır?",
+      "options": [
+        "24",
+        "20",
+        "10",
+        "18"
+      ],
+      "correctIndex": 0,
+      "hint": "1/4'i 6 ise, tamamı 6×4'dır."
+    },
+    {
+      "id": "q10",
+      "text": "Bir çokluğun 1/3'i 9 ise, çokluğun tamamı kaçtır?",
+      "options": [
+        "27",
+        "24",
+        "12",
+        "18"
+      ],
+      "correctIndex": 0,
+      "hint": "1/3'i 9 ise, tamamı 9×3'dır."
+    },
+    {
+      "id": "q11",
+      "text": "Bir çokluğun 1/6'i 12 ise, çokluğun tamamı kaçtır?",
+      "options": [
+        "72",
+        "66",
+        "18",
+        "60"
+      ],
+      "correctIndex": 0,
+      "hint": "1/6'i 12 ise, tamamı 12×6'dır."
+    },
+    {
+      "id": "q12",
+      "text": "Bir çokluğun 1/7'i 7 ise, çokluğun tamamı kaçtır?",
+      "options": [
+        "49",
+        "42",
+        "14",
+        "42"
+      ],
+      "correctIndex": 0,
+      "hint": "1/7'i 7 ise, tamamı 7×7'dır."
+    },
+    {
+      "id": "q13",
+      "text": "Bir çokluğun 1/2'i 10 ise, çokluğun tamamı kaçtır?",
+      "options": [
+        "20",
+        "18",
+        "12",
+        "10"
+      ],
+      "correctIndex": 0,
+      "hint": "1/2'i 10 ise, tamamı 10×2'dır."
+    },
+    {
+      "id": "q14",
+      "text": "Zorlayıcı problem: Bir pastanın 5/8'i yenmiş. Kalan pasta, pastanın kaçta kaçıdır?",
+      "options": [
+        "3/8",
+        "5/8",
+        "2/8",
+        "8/8"
+      ],
+      "correctIndex": 0,
+      "hint": "Bütün pasta 8/8'dir. 8/8 - 5/8 işlemini yap."
+    },
+    {
+      "id": "q15",
+      "text": "Zorlayıcı problem: Zeynep bir kitabın 2/9'unu pazartesi, 4/9'unu salı günü okudu. İki günde kitabın kaçta kaçını okumuş olur?",
+      "options": [
+        "6/9",
+        "6/18",
+        "2/9",
+        "8/9"
+      ],
+      "correctIndex": 0,
+      "hint": "Paydalar eşit, payları topla: 2/9 + 4/9."
+    },
+    {
+      "id": "q16",
+      "text": "Zorlayıcı problem: Bir çokluğun 3/4'ü 24 ise, aynı çokluğun 1/4'ü kaçtır?",
+      "options": [
+        "6",
+        "8",
+        "12",
+        "16"
+      ],
+      "correctIndex": 1,
+      "hint": "3/4'ü 24 ise, önce 1/4'ünü bulmak için 24'ü 3'e böl."
+    },
+    {
+      "id": "q17",
+      "text": "Zorlayıcı problem: 72 sayfalık bir kitabın 2/8'ini okuyan bir öğrenci kaç sayfa okumuştur?",
+      "options": [
+        "9",
+        "18",
+        "24",
+        "36"
+      ],
+      "correctIndex": 1,
+      "hint": "Önce 2/8'i sadeleştir (1/4), sonra 72'nin 1/4'ünü bul."
+    },
+    {
+      "id": "q18",
+      "text": "Zorlayıcı problem: Bir sınıftaki 30 öğrencinin 2/5'i erkek öğrencidir. Kaç erkek öğrenci vardır?",
+      "options": [
+        "10",
+        "12",
+        "15",
+        "18"
+      ],
+      "correctIndex": 1,
+      "hint": "Önce 30'u 5'e böl, sonra 2 ile çarp."
+    },
+    {
+      "id": "q19",
+      "text": "Zorlayıcı problem: Bir su deposunun 3/10'u dolu. Depoda 60 litre su varsa deponun tam kapasitesi kaç litredir?",
+      "options": [
+        "150",
+        "180",
+        "200",
+        "220"
+      ],
+      "correctIndex": 2,
+      "hint": "3/10'u 60 ise, 1/10'u 20'dir, tamamı 20×10."
+    },
+    {
+      "id": "q20",
+      "text": "Zorlayıcı problem: Can bir yolun 3/7'sini yürüdü, kalan kısmın uzunluğu yolun kaçta kaçıdır?",
+      "options": [
+        "3/7",
+        "4/7",
+        "1/7",
+        "7/7"
+      ],
+      "correctIndex": 1,
+      "hint": "Bütün yol 7/7'dir. 7/7 - 3/7 işlemini yap."
+    },
+    {
+      "id": "q21",
+      "text": "Zorlayıcı problem: Bir pizza 8 eş dilime bölünmüş. 3 kişi 2'şer dilim yerse, pizzanın kaçta kaçı yenmiş olur?",
+      "options": [
+        "6/8",
+        "3/8",
+        "2/8",
+        "8/8"
+      ],
+      "correctIndex": 0,
+      "hint": "Önce toplam yenen dilim sayısını bul (3×2), sonra 8'e göre kesir olarak yaz."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Kesirlerde en çok hangi konuda kendine güvendin?",
+    "options": [
+      "Sıralama",
+      "Toplama-çıkarma",
+      "Bir çokluğun kesri",
+      "Sadeleştirme"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

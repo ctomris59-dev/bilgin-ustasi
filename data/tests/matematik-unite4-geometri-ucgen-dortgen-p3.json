@@ -1,0 +1,251 @@
+{
+  "id": "matematik-unite4-geometri-ucgen-dortgen-p3",
+  "subject": "Matematik",
+  "title": "Ünite 4 - Temel Geometrik Kavramlar, Üçgen ve Dörtgenler (3/4)",
+  "week": 4,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Bir ikizkenar üçgende eşit kenarların karşısındaki açılar için ne söylenebilir?",
+      "options": [
+        "Onlar da eşittir",
+        "Onlar farklıdır",
+        "Toplamı 180 derecedir",
+        "Hiçbiri 90 dereceden büyük olamaz"
+      ],
+      "correctIndex": 0,
+      "hint": "İkizkenar üçgende eşit kenarların karşısındaki açılar da birbirine eşittir."
+    },
+    {
+      "id": "q2",
+      "text": "Aşağıdakilerden hangisi bir 'köşegen' tanımıdır?",
+      "options": [
+        "Bir şeklin iki kenarı",
+        "Bir çokgende komşu olmayan iki köşeyi birleştiren doğru parçası",
+        "Bir açının ölçüsü",
+        "Bir çemberin yarıçapı"
+      ],
+      "correctIndex": 1,
+      "hint": "Köşegen, bir çokgenin karşılıklı (bitişik olmayan) köşelerini birbirine bağlar."
+    },
+    {
+      "id": "q3",
+      "text": "Bir karenin kaç köşegeni vardır?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctIndex": 1,
+      "hint": "Karenin 4 köşesi var, karşılıklı olanları birleştiren doğru parçalarını say."
+    },
+    {
+      "id": "q4",
+      "text": "Aşağıdakilerden hangisi bir dik üçgenin özelliğidir?",
+      "options": [
+        "Tüm kenarları eşittir",
+        "Bir açısı tam 90 derecedir",
+        "Hiç açısı 90 dereceden büyük olamaz",
+        "Dört kenarı vardır"
+      ],
+      "correctIndex": 1,
+      "hint": "'Dik' üçgen adını, içindeki dik açıdan alır."
+    },
+    {
+      "id": "q5",
+      "text": "Zorlayıcı soru: Bir üçgenin bir açısı 90 derece, diğer ikisi eşit ise, bu eşit açılar kaç derecedir?",
+      "options": [
+        "30 derece",
+        "45 derece",
+        "60 derece",
+        "90 derece"
+      ],
+      "correctIndex": 1,
+      "hint": "180-90=90, geriye kalan 90 dereceyi iki eşit açıya böl."
+    },
+    {
+      "id": "q6",
+      "text": "Aşağıdaki şekillerden hangisi bir dörtgen DEĞİLDİR?",
+      "options": [
+        "Kare",
+        "Üçgen",
+        "Dikdörtgen",
+        "Yamuk"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu şeklin 3 kenarı vardır, 4 değil."
+    },
+    {
+      "id": "q7",
+      "text": "Bir dikdörtgenin karşılıklı kenarları hakkında ne söylenebilir?",
+      "options": [
+        "Birbirine eşit ve paraleldir",
+        "Farklı uzunluktadır",
+        "Birbirine diktir",
+        "Hiçbir ilişkileri yoktur"
+      ],
+      "correctIndex": 0,
+      "hint": "Dikdörtgende karşılıklı iki çift kenar hem eşit hem paraleldir."
+    },
+    {
+      "id": "q8",
+      "text": "Bir açının kenarları arasındaki bölge küçüldükçe açı nasıl değişir?",
+      "options": [
+        "Büyür",
+        "Küçülür",
+        "Değişmez",
+        "Negatif olur"
+      ],
+      "correctIndex": 1,
+      "hint": "Kenarlar birbirine yaklaştıkça, aralarındaki açıklık azalır."
+    },
+    {
+      "id": "q9",
+      "text": "Zorlayıcı soru: Bir çemberin yarıçapı 7 cm iken, bu çemberin çapı ile aynı çemberin iki yarıçapının toplamı arasındaki ilişki nedir?",
+      "options": [
+        "Çap, iki yarıçapın toplamına eşittir",
+        "Çap, yarıçapın yarısıdır",
+        "Aralarında hiç ilişki yoktur",
+        "Çap her zaman yarıçaptan küçüktür"
+      ],
+      "correctIndex": 0,
+      "hint": "Çap = yarıçap + yarıçap = 2 × yarıçap."
+    },
+    {
+      "id": "q10",
+      "text": "Aşağıdakilerden hangisi bir 'ışının' özelliğidir?",
+      "options": [
+        "İki ucu da bellidir",
+        "Bir başlangıç noktası vardır, diğer yönde sonsuza uzanır",
+        "Hiç başlangıcı yoktur",
+        "Her iki yönde de sonsuzdur"
+      ],
+      "correctIndex": 1,
+      "hint": "Işın, güneş ışınları gibi bir noktadan başlar ve tek yöne uzanır."
+    },
+    {
+      "id": "q11",
+      "text": "Bir üçgende en uzun kenar, hangi açının karşısında bulunur?",
+      "options": [
+        "En küçük açının karşısında",
+        "En büyük açının karşısında",
+        "Herhangi bir açının karşısında olabilir, ilişkisi yoktur",
+        "Sadece dik açının karşısında"
+      ],
+      "correctIndex": 1,
+      "hint": "Üçgenlerde büyük açı ile uzun kenar arasında bir ilişki vardır."
+    },
+    {
+      "id": "q12",
+      "text": "Aşağıdakilerden hangisi bir paralelkenarın özelliğidir?",
+      "options": [
+        "Tüm açıları 90 derecedir",
+        "Karşılıklı kenarları paralel ve eşittir",
+        "Sadece bir çift kenarı paraleldir",
+        "Hiç paralel kenarı yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "'Paralel-kenar' isminden de anlaşılacağı gibi karşılıklı kenarlar paraleldir."
+    },
+    {
+      "id": "q13",
+      "text": "Bir yamuğun kaç kenarı paraleldir?",
+      "options": [
+        "Hiçbiri",
+        "Sadece 1 çift (2 kenar)",
+        "2 çift (4 kenar)",
+        "3 kenar"
+      ],
+      "correctIndex": 1,
+      "hint": "Yamukta sadece bir çift kenar birbirine paraleldir."
+    },
+    {
+      "id": "q14",
+      "text": "Zorlayıcı soru: Bir dörtgenin köşegenleri çizildiğinde kaç üçgene bölünür?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctIndex": 1,
+      "hint": "Bir köşegen, dörtgeni iki parçaya (üçgene) böler."
+    },
+    {
+      "id": "q15",
+      "text": "Aşağıdakilerden hangisi 'dik açının' günlük hayattan bir örneğidir?",
+      "options": [
+        "Bir kitabın köşesi",
+        "Bir pizza dilimi",
+        "Bir yelpazenin açılışı",
+        "Bir saat kolunun 5 dakikalık açısı"
+      ],
+      "correctIndex": 0,
+      "hint": "Kitapların ve masa köşelerinin genelde 90 derecelik açıları vardır."
+    },
+    {
+      "id": "q16",
+      "text": "Zorlayıcı soru: Bir üçgenin açıları 3:4:5 oranındaysa, en büyük açı kaç derecedir?",
+      "options": [
+        "45",
+        "60",
+        "75",
+        "90"
+      ],
+      "correctIndex": 2,
+      "hint": "Toplamı 180 olan oranı hesapla: 3+4+5=12 parça, 180÷12=15, en büyük parça 5×15=75."
+    },
+    {
+      "id": "q17",
+      "text": "Aşağıdakilerden hangisi çemberin bir parçası DEĞİLDİR?",
+      "options": [
+        "Merkez",
+        "Yarıçap",
+        "Çap",
+        "Kenar"
+      ],
+      "correctIndex": 3,
+      "hint": "'Kenar' terimi çokgenler için kullanılır, çemberler için değil."
+    },
+    {
+      "id": "q18",
+      "text": "Bir noktadan geçen sonsuz sayıda doğru çizilebilir mi?",
+      "options": [
+        "Hayır, sadece 1 tane çizilebilir",
+        "Evet, sonsuz sayıda çizilebilir",
+        "Sadece 2 tane çizilebilir",
+        "Hiç çizilemez"
+      ],
+      "correctIndex": 1,
+      "hint": "Bir nokta etrafında her yönde farklı bir doğru çizebilirsin."
+    },
+    {
+      "id": "q19",
+      "text": "İki farklı noktadan kaç doğru geçirilebilir?",
+      "options": [
+        "Sonsuz sayıda",
+        "Sadece 1 tane",
+        "2 tane",
+        "Hiç geçirilemez"
+      ],
+      "correctIndex": 1,
+      "hint": "İki nokta, aralarından geçen tek bir doğruyu belirler."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Geometri konusunda en sevdiğin şekil hangisi?",
+    "options": [
+      "Üçgen",
+      "Kare/Dikdörtgen",
+      "Çember",
+      "Diğer"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

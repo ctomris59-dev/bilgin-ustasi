@@ -1,0 +1,251 @@
+{
+  "id": "matematik-unite3-ondalik-yuzde-p2",
+  "subject": "Matematik",
+  "title": "Ünite 3 - Ondalık Gösterim ve Yüzdeler (2/4)",
+  "week": 3,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "5,67 sayısında virgülden sonraki ilk rakam (7) hangi basamaktır?",
+      "options": [
+        "yüzde birler basamağı",
+        "birler basamağı",
+        "onlar basamağı",
+        "yüzler basamağı"
+      ],
+      "correctIndex": 0,
+      "hint": "Virgülden sonraki ilk basamağa 'onda birler basamağı' denir."
+    },
+    {
+      "id": "q2",
+      "text": "9,34 sayısında virgülden sonraki ilk rakam (4) hangi basamaktır?",
+      "options": [
+        "yüzde birler basamağı",
+        "birler basamağı",
+        "onlar basamağı",
+        "yüzler basamağı"
+      ],
+      "correctIndex": 0,
+      "hint": "Virgülden sonraki ilk basamağa 'onda birler basamağı' denir."
+    },
+    {
+      "id": "q3",
+      "text": "1,256 sayısında virgülden sonraki ilk rakam (5) hangi basamaktır?",
+      "options": [
+        "yüzde birler basamağı",
+        "birler basamağı",
+        "onlar basamağı",
+        "yüzler basamağı"
+      ],
+      "correctIndex": 0,
+      "hint": "Virgülden sonraki ilk basamağa 'onda birler basamağı' denir."
+    },
+    {
+      "id": "q4",
+      "text": "6,203 sayısında virgülden sonraki ilk rakam (0) hangi basamaktır?",
+      "options": [
+        "onda birler basamağı",
+        "birler basamağı",
+        "onlar basamağı",
+        "yüzler basamağı"
+      ],
+      "correctIndex": 0,
+      "hint": "Virgülden sonraki ilk basamağa 'onda birler basamağı' denir."
+    },
+    {
+      "id": "q5",
+      "text": "4,178 sayısında virgülden sonraki ilk rakam (1) hangi basamaktır?",
+      "options": [
+        "onda birler basamağı",
+        "birler basamağı",
+        "onlar basamağı",
+        "yüzler basamağı"
+      ],
+      "correctIndex": 0,
+      "hint": "Virgülden sonraki ilk basamağa 'onda birler basamağı' denir."
+    },
+    {
+      "id": "q6",
+      "text": "3,45 ve 3,54 ondalık sayılarından hangisi daha büyüktür (veya eşit midir)?",
+      "options": [
+        "3,54 daha büyüktür",
+        "3,45 daha büyüktür",
+        "3,45 ile 3,54 eşittir",
+        "Karşılaştırılamaz"
+      ],
+      "correctIndex": 0,
+      "hint": "Basamak basamak karşılaştır, gerekirse sona sıfır ekleyerek eşitle."
+    },
+    {
+      "id": "q7",
+      "text": "2,7 ve 2,07 ondalık sayılarından hangisi daha büyüktür (veya eşit midir)?",
+      "options": [
+        "2,7 daha büyüktür",
+        "2,07 daha büyüktür",
+        "2,7 ile 2,07 eşittir",
+        "Karşılaştırılamaz"
+      ],
+      "correctIndex": 0,
+      "hint": "Basamak basamak karşılaştır, gerekirse sona sıfır ekleyerek eşitle."
+    },
+    {
+      "id": "q8",
+      "text": "5,3 ve 5,30 ondalık sayılarından hangisi daha büyüktür (veya eşit midir)?",
+      "options": [
+        "5,3 ile 5,30 eşittir",
+        "5,3 daha büyüktür",
+        "5,30 daha büyüktür",
+        "Karşılaştırılamaz"
+      ],
+      "correctIndex": 0,
+      "hint": "Basamak basamak karşılaştır, gerekirse sona sıfır ekleyerek eşitle."
+    },
+    {
+      "id": "q9",
+      "text": "1,25 ve 1,2 ondalık sayılarından hangisi daha büyüktür (veya eşit midir)?",
+      "options": [
+        "1,25 daha büyüktür",
+        "1,2 daha büyüktür",
+        "1,25 ile 1,2 eşittir",
+        "Karşılaştırılamaz"
+      ],
+      "correctIndex": 0,
+      "hint": "Basamak basamak karşılaştır, gerekirse sona sıfır ekleyerek eşitle."
+    },
+    {
+      "id": "q10",
+      "text": "0,9 ve 0,89 ondalık sayılarından hangisi daha büyüktür (veya eşit midir)?",
+      "options": [
+        "0,9 daha büyüktür",
+        "0,89 daha büyüktür",
+        "0,9 ile 0,89 eşittir",
+        "Karşılaştırılamaz"
+      ],
+      "correctIndex": 0,
+      "hint": "Basamak basamak karşılaştır, gerekirse sona sıfır ekleyerek eşitle."
+    },
+    {
+      "id": "q11",
+      "text": "4,05 ve 4,5 ondalık sayılarından hangisi daha büyüktür (veya eşit midir)?",
+      "options": [
+        "4,5 daha büyüktür",
+        "4,05 daha büyüktür",
+        "4,05 ile 4,5 eşittir",
+        "Karşılaştırılamaz"
+      ],
+      "correctIndex": 0,
+      "hint": "Basamak basamak karşılaştır, gerekirse sona sıfır ekleyerek eşitle."
+    },
+    {
+      "id": "q12",
+      "text": "6,1 ve 6,01 ondalık sayılarından hangisi daha büyüktür (veya eşit midir)?",
+      "options": [
+        "6,1 daha büyüktür",
+        "6,01 daha büyüktür",
+        "6,1 ile 6,01 eşittir",
+        "Karşılaştırılamaz"
+      ],
+      "correctIndex": 0,
+      "hint": "Basamak basamak karşılaştır, gerekirse sona sıfır ekleyerek eşitle."
+    },
+    {
+      "id": "q13",
+      "text": "8,20 ve 8,2 ondalık sayılarından hangisi daha büyüktür (veya eşit midir)?",
+      "options": [
+        "8,20 ile 8,2 eşittir",
+        "8,20 daha büyüktür",
+        "8,2 daha büyüktür",
+        "Karşılaştırılamaz"
+      ],
+      "correctIndex": 0,
+      "hint": "Basamak basamak karşılaştır, gerekirse sona sıfır ekleyerek eşitle."
+    },
+    {
+      "id": "q14",
+      "text": "3,4 + 2,3 işleminin sonucu kaçtır?",
+      "options": [
+        "5,7",
+        "5,1",
+        "6,7",
+        "4,7"
+      ],
+      "correctIndex": 0,
+      "hint": "Virgülleri alt alta getirerek toplama yap."
+    },
+    {
+      "id": "q15",
+      "text": "1,25 + 2,50 işleminin sonucu kaçtır?",
+      "options": [
+        "3,75",
+        "3,25",
+        "4,75",
+        "3,70"
+      ],
+      "correctIndex": 0,
+      "hint": "Virgülleri alt alta getirerek toplama yap."
+    },
+    {
+      "id": "q16",
+      "text": "6,7 + 2,4 işleminin sonucu kaçtır?",
+      "options": [
+        "9,1",
+        "8,1",
+        "9,3",
+        "8,9"
+      ],
+      "correctIndex": 0,
+      "hint": "Virgülleri alt alta getirerek toplama yap."
+    },
+    {
+      "id": "q17",
+      "text": "2,15 + 3,05 işleminin sonucu kaçtır?",
+      "options": [
+        "5,20",
+        "5,10",
+        "5,30",
+        "5,00"
+      ],
+      "correctIndex": 0,
+      "hint": "Virgülleri alt alta getirerek toplama yap."
+    },
+    {
+      "id": "q18",
+      "text": "8,3 - 3,1 işleminin sonucu kaçtır?",
+      "options": [
+        "5,2",
+        "5,4",
+        "4,2",
+        "5,0"
+      ],
+      "correctIndex": 0,
+      "hint": "Virgülleri alt alta getirerek çıkarma yap."
+    },
+    {
+      "id": "q19",
+      "text": "5,50 - 1,25 işleminin sonucu kaçtır?",
+      "options": [
+        "4,25",
+        "4,35",
+        "3,25",
+        "4,75"
+      ],
+      "correctIndex": 0,
+      "hint": "Virgülleri alt alta getirerek çıkarma yap."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Ondalık sayılarla ilgili en çok hangi konuda kendine güvendin?",
+    "options": [
+      "Sıralama",
+      "Toplama-çıkarma",
+      "Yüzdeye çevirme",
+      "Basamak değeri"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

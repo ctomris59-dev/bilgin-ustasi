@@ -1,0 +1,227 @@
+{
+  "id": "sosyalbilgiler-unite3-ortak-mirasimiz-p3",
+  "subject": "Sosyal Bilgiler",
+  "title": "Ünite 3 - Ortak Mirasımız (3/4)",
+  "week": 3,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Aşağıdakilerden hangisi kültürel mirasın kaybolmasına yol açabilecek bir durumdur?",
+      "options": [
+        "Geleneklerin yeni nesillere aktarılması",
+        "Geleneklerin unutulması veya önemsenmemesi",
+        "Kültürel mirasın belgelenmesi",
+        "Müzelerin kurulması"
+      ],
+      "correctIndex": 1,
+      "hint": "Aktarılmayan bilgiler, zamanla unutulma riski taşır."
+    },
+    {
+      "id": "q2",
+      "text": "Bir arkeolojik kazıda bulunan bir çömlek parçası, bilim insanlarına ne hakkında bilgi verebilir?",
+      "options": [
+        "Hiçbir bilgi vermez",
+        "O dönemin yaşam tarzı, teknolojisi ve kültürü hakkında ipuçları verebilir",
+        "Sadece o çömleğin fiyatı hakkında bilgi verir",
+        "Gelecekle ilgili bilgi verir"
+      ],
+      "correctIndex": 1,
+      "hint": "Arkeolojik buluntular, geçmiş yaşam tarzları hakkında önemli bilgiler taşır."
+    },
+    {
+      "id": "q3",
+      "text": "Aşağıdakilerden hangisi 'kültürel miras' kavramına dahil edilebilir?",
+      "options": [
+        "Sadece çok eski (binlerce yıllık) eserler",
+        "Hem çok eski eserler hem de yakın geçmişten kalan önemli değerler",
+        "Sadece bugün üretilen eşyalar",
+        "Hiçbir şey dahil edilmez"
+      ],
+      "correctIndex": 1,
+      "hint": "Kültürel miras, farklı zaman dilimlerinden gelen değerli unsurları kapsayabilir."
+    },
+    {
+      "id": "q4",
+      "text": "Zorlayıcı soru: Bir ülke, kültürel mirasını korumak için yasalar çıkarıyor ve tarihi eserlerin izinsiz satışını yasaklıyor. Bu politikanın amacı nedir?",
+      "options": [
+        "Kültürel mirası yok etmek",
+        "Kültürel mirasın ülke dışına kaçırılmasını veya zarar görmesini önlemek",
+        "Hiçbir amacı yoktur",
+        "Sadece para kazanmak"
+      ],
+      "correctIndex": 1,
+      "hint": "Yasal koruma, mirasın gelecek nesillere aktarılmasını güvence altına almaya yardımcı olur."
+    },
+    {
+      "id": "q5",
+      "text": "Aşağıdakilerden hangisi bir 'gelenek' örneğidir?",
+      "options": [
+        "Bayramlarda büyüklerin elini öpmek",
+        "Bir cep telefonu kullanmak",
+        "Bir arabaya binmek",
+        "İnternet kullanmak"
+      ],
+      "correctIndex": 0,
+      "hint": "Gelenekler, kuşaktan kuşağa aktarılan sosyal davranış biçimleridir."
+    },
+    {
+      "id": "q6",
+      "text": "Bir toplumda düğün törenlerinin belirli bir şekilde yapılması hangi tür mirasa örnektir?",
+      "options": [
+        "Somut kültürel miras",
+        "Somut olmayan kültürel miras",
+        "Doğal miras",
+        "Hiçbirine girmez"
+      ],
+      "correctIndex": 1,
+      "hint": "Törenler ve ritüeller, somut olmayan kültürel mirasın önemli bir parçasıdır."
+    },
+    {
+      "id": "q7",
+      "text": "Aşağıdakilerden hangisi 'kültürel mirasa saygı göstermenin' bir yoludur?",
+      "options": [
+        "Tarihi eserlere zarar vermemek",
+        "Geleneksel değerleri hafife almak",
+        "Farklı kültürleri küçümsemek",
+        "Kültürel farklılıkları görmezden gelmek"
+      ],
+      "correctIndex": 0,
+      "hint": "Saygı, koruma ve önemseme davranışıyla gösterilir."
+    },
+    {
+      "id": "q8",
+      "text": "Bir bölgedeki antik bir tiyatronun günümüzde hâlâ etkinlikler için kullanılması neyi gösterir?",
+      "options": [
+        "Tarihi yapıların sadece müze parçası olduğunu",
+        "Kültürel mirasın günümüzde de yaşayan bir değer olabileceğini",
+        "Hiçbir şey göstermez",
+        "Tarihi yapıların işe yaramadığını"
+      ],
+      "correctIndex": 1,
+      "hint": "Bazı tarihi yapılar, günümüzde de işlevsel olarak kullanılabilir."
+    },
+    {
+      "id": "q9",
+      "text": "Aşağıdakilerden hangisi 'miras' kelimesinin genel anlamına en yakındır?",
+      "options": [
+        "Sadece para ve mülk",
+        "Geçmişten kalan ve değer taşıyan her türlü unsur",
+        "Sadece yeni icatlar",
+        "Hiçbir anlamı yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Miras, maddi olabileceği gibi manevi/kültürel de olabilir."
+    },
+    {
+      "id": "q10",
+      "text": "Zorlayıcı soru: Bir öğrenci, büyükannesinden öğrendiği bir el işi tekniğini kendi çocuklarına da öğretmeyi planlıyor. Bu davranış hangi kavramla ilişkilidir?",
+      "options": [
+        "Kültürel mirasın nesiller arası aktarımı",
+        "Kültürel mirasın yok olması",
+        "Hiçbir kavramla ilişkili değildir",
+        "Sadece kişisel bir tercih, kültürle ilgisi yok"
+      ],
+      "correctIndex": 0,
+      "hint": "Bilgi ve becerilerin kuşaktan kuşağa aktarılması, mirasın yaşamasını sağlar."
+    },
+    {
+      "id": "q11",
+      "text": "Aşağıdakilerden hangisi doğal ve kültürel mirası tehdit eden faktörlerden biri olabilir?",
+      "options": [
+        "Bilinçli koruma çalışmaları",
+        "Kontrolsüz yapılaşma ve çevre tahribatı",
+        "Müzelerin kurulması",
+        "Eğitim faaliyetleri"
+      ],
+      "correctIndex": 1,
+      "hint": "Plansız inşaat faaliyetleri, tarihi ve doğal alanlara zarar verebilir."
+    },
+    {
+      "id": "q12",
+      "text": "Bir toplumun atasözleri ve deyimleri, hangi tür kültürel mirasa örnektir?",
+      "options": [
+        "Somut kültürel miras",
+        "Somut olmayan kültürel miras",
+        "Doğal miras",
+        "Hiçbirine girmez"
+      ],
+      "correctIndex": 1,
+      "hint": "Dil ürünleri, sözlü olarak aktarılan bir miras türüdür."
+    },
+    {
+      "id": "q13",
+      "text": "Aşağıdakilerden hangisi kültürel mirasın korunmasında bireylerin rolüne bir örnektir?",
+      "options": [
+        "Tarihi eserlere saygılı davranmak",
+        "Tarihi eserlere zarar vermek",
+        "Kültürel değerleri önemsememek",
+        "Hiçbir sorumluluk almamak"
+      ],
+      "correctIndex": 0,
+      "hint": "Her bireyin, kültürel mirası koruma konusunda küçük ama önemli bir rolü vardır."
+    },
+    {
+      "id": "q14",
+      "text": "Zorlayıcı soru: İki farklı ülkenin ortak bir tarihi mirası (örneğin sınır bölgesindeki bir antik kent) paylaşması durumunda, bu mirasın korunması için nasıl bir yaklaşım daha uygun olur?",
+      "options": [
+        "Ülkelerden birinin tek başına hareket etmesi",
+        "İki ülkenin iş birliği yaparak ortak koruma çalışmaları yürütmesi",
+        "Mirası görmezden gelmek",
+        "Mirası yok etmek"
+      ],
+      "correctIndex": 1,
+      "hint": "Ortak mirasların korunmasında iş birliği, genellikle daha etkili sonuçlar doğurur."
+    },
+    {
+      "id": "q15",
+      "text": "Aşağıdakilerden hangisi bir 'folklor' (halk bilimi) örneğidir?",
+      "options": [
+        "Halk oyunları ve türküler",
+        "Bir bilgisayar programı",
+        "Bir otomobil modeli",
+        "Bir uydu"
+      ],
+      "correctIndex": 0,
+      "hint": "Folklor, bir halkın gelenek, görenek ve sanatsal ifadelerini kapsar."
+    },
+    {
+      "id": "q16",
+      "text": "Bir tarihi kentin 'ören yeri' (antik kalıntı alanı) olarak korunması ne anlama gelir?",
+      "options": [
+        "Alanın tamamen yok edildiği anlamına gelir",
+        "Alanın tarihi değerinin korunup ziyarete açıldığı anlamına gelir",
+        "Alanın hiçbir öneminin olmadığı anlamına gelir",
+        "Alanın satıldığı anlamına gelir"
+      ],
+      "correctIndex": 1,
+      "hint": "Ören yerleri, tarihi kalıntıların korunduğu ve ziyaret edilebilen alanlardır."
+    },
+    {
+      "id": "q17",
+      "text": "Aşağıdakilerden hangisi kültürel mirası gelecek nesillere aktarmanın bir yoludur?",
+      "options": [
+        "Eğitim ve öğretim yoluyla bilgilendirmek",
+        "Kültürel mirası saklamak, kimseye anlatmamak",
+        "Sadece kitaplarda bırakıp hiç uygulamamak",
+        "Hiçbir şey yapmamak"
+      ],
+      "correctIndex": 0,
+      "hint": "Eğitim, mirasın yeni nesillere ulaşmasında kilit bir rol oynar."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Ailende nesilden nesile aktarılan bir gelenek var mı?",
+    "options": [
+      "Evet, var",
+      "Emin değilim",
+      "Hayır, yok",
+      "Araştırmak isterim"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

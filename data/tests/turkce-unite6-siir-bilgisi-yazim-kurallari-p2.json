@@ -1,0 +1,239 @@
+{
+  "id": "turkce-unite6-siir-bilgisi-yazim-kurallari-p2",
+  "subject": "Türkçe",
+  "title": "Ünite 6 - Şiir Bilgisi ve Yazım Kuralları (2/4)",
+  "week": 6,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Kısaltmalar genellikle nasıl yazılır?",
+      "options": [
+        "Büyük harflerle ve nokta kullanılmadan (örneğin TL, cm gibi)",
+        "Her zaman küçük harflerle",
+        "Rastgele yazılır",
+        "Her zaman tam kelime yazılmalıdır"
+      ],
+      "correctIndex": 0,
+      "hint": "'TL', 'cm', 'kg' gibi kısaltmaları düşün."
+    },
+    {
+      "id": "q2",
+      "text": "'Dr.' kısaltması hangi kelimenin kısaltmasıdır?",
+      "options": [
+        "Direkt",
+        "Doktor",
+        "Derece",
+        "Dünya"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu kısaltma, bir mesleği belirtir."
+    },
+    {
+      "id": "q3",
+      "text": "Sayılar yazıyla ifade edilirken hangi kural genellikle uygulanır?",
+      "options": [
+        "Küçük sayılar (bir haneli) genellikle yazıyla, büyük sayılar rakamla yazılabilir",
+        "Tüm sayılar her zaman rakamla yazılır",
+        "Tüm sayılar her zaman yazıyla yazılır",
+        "Hiçbir kural yoktur"
+      ],
+      "correctIndex": 0,
+      "hint": "Metin içinde sayı yazımı bazı esnek kurallara sahiptir, ama tutarlılık önemlidir."
+    },
+    {
+      "id": "q4",
+      "text": "Bileşik kelimelerin bir kısmı ayrı, bir kısmı bitişik yazılır. Aşağıdakilerden hangisi bitişik yazılan bir bileşik kelimedir?",
+      "options": [
+        "Aşağı yukarı",
+        "Babaanne",
+        "Şehir dışı",
+        "Cuma günü"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu kelime, iki kelimenin birleşip yeni ve tek bir kelime oluşturmasıyla meydana gelmiştir."
+    },
+    {
+      "id": "q5",
+      "text": "'Hanımeli' kelimesi nasıl yazılır?",
+      "options": [
+        "Hanım eli (ayrı)",
+        "Hanımeli (bitişik)",
+        "Hanım-eli (tireli)",
+        "HANIMELİ (büyük harf)"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu, bir bitki adı olup bitişik yazılan bir bileşik kelimedir."
+    },
+    {
+      "id": "q6",
+      "text": "Aşağıdaki bileşik kelimelerden hangisi ayrı yazılır?",
+      "options": [
+        "Babaanne",
+        "Anneanne",
+        "El ele",
+        "Hanımeli"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu ifade, iki ayrı kelimenin yan yana kullanılmasıyla oluşur, kaynaşma yoktur."
+    },
+    {
+      "id": "q7",
+      "text": "Zorlayıcı soru: 'Gökkuşağı' kelimesi neden bitişik yazılır?",
+      "options": [
+        "Rastgele bir kuraldır",
+        "İki kelime birleşerek yeni ve kalıplaşmış bir anlam kazanmıştır",
+        "Bu kelime aslında ayrı yazılmalıdır",
+        "Hiçbir sebebi yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "'Gök' ve 'kuşak' kelimeleri birleşerek tamamen yeni bir kavramı (gökkuşağı) ifade eder."
+    },
+    {
+      "id": "q8",
+      "text": "'-de/-da' bağlacı (da/de bağlacı) nasıl yazılır?",
+      "options": [
+        "Her zaman kelimeye bitişik",
+        "Her zaman kelimeden ayrı",
+        "Duruma göre bazen bitişik bazen ayrı",
+        "Hiçbir kural yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "'Ben de geldim.' cümlesindeki 'de' bağlacı her zaman ayrı yazılır."
+    },
+    {
+      "id": "q9",
+      "text": "'-de/-da' hâl eki (bulunma durumu eki) nasıl yazılır?",
+      "options": [
+        "Her zaman ayrı",
+        "Her zaman kelimeye bitişik",
+        "Rastgele yazılır",
+        "Sadece özel isimlerle kullanılır"
+      ],
+      "correctIndex": 1,
+      "hint": "'Evde kaldım.' cümlesindeki '-de' eki kelimeye bitişik yazılır."
+    },
+    {
+      "id": "q10",
+      "text": "'Okulda kaldım, ben de geldim.' cümlesinde iki farklı 'de/da' kullanımı var mıdır?",
+      "options": [
+        "Hayır, ikisi de aynıdır",
+        "Evet, biri hâl eki (okulda), diğeri bağlaç (ben de)",
+        "İkisi de yanlış yazılmıştır",
+        "Bu cümlede hiç 'de/da' yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "'Okulda' bitişik (hâl eki), 'ben de' ayrı (bağlaç) yazılır."
+    },
+    {
+      "id": "q11",
+      "text": "Bağlaç olan 'ki' nasıl yazılır?",
+      "options": [
+        "Her zaman kelimeye bitişik",
+        "Genellikle ayrı yazılır (bazı kalıplaşmış istisnalar hariç)",
+        "Rastgele yazılır",
+        "Hiçbir kuralı yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "'Bildim ki haklısın.' cümlesindeki 'ki' bağlacı ayrı yazılır."
+    },
+    {
+      "id": "q12",
+      "text": "'Sanki' ve 'halbuki' gibi kelimelerdeki 'ki' neden bitişik yazılır?",
+      "options": [
+        "Bu kelimeler kalıplaşmış, tek bir kelime olarak kabul edilir",
+        "Rastgele bir kuraldır",
+        "Bu kelimeler hiç doğru değildir",
+        "Her zaman ayrı yazılmalıdır aslında"
+      ],
+      "correctIndex": 0,
+      "hint": "Bazı 'ki'li kelimeler, zamanla kalıplaşarak bitişik yazılan tek kelimeler hâline gelmiştir."
+    },
+    {
+      "id": "q13",
+      "text": "Soru eki olan 'mi/mı/mu/mü' nasıl yazılır?",
+      "options": [
+        "Her zaman kelimeye bitişik",
+        "Her zaman ayrı yazılır",
+        "Rastgele yazılır",
+        "Sadece uzun cümlelerde ayrı yazılır"
+      ],
+      "correctIndex": 1,
+      "hint": "'Geldin mi?' cümlesindeki soru eki her zaman ayrı yazılır."
+    },
+    {
+      "id": "q14",
+      "text": "Aşağıdaki cümlelerin hangisinde soru eki doğru yazılmıştır?",
+      "options": [
+        "Geldinmi?",
+        "Geldin mi?",
+        "Geldin-mi?",
+        "Geldin Mi?"
+      ],
+      "correctIndex": 1,
+      "hint": "Soru eki, kelimeden ayrı ve küçük harfle yazılır (cümle içinde)."
+    },
+    {
+      "id": "q15",
+      "text": "Özel isimlere gelen çekim ekleri nasıl ayrılır?",
+      "options": [
+        "Kesme işaretiyle (')",
+        "Virgülle",
+        "Hiçbir işaretle ayrılmaz",
+        "Tireyle"
+      ],
+      "correctIndex": 0,
+      "hint": "'Ahmet'e', 'Türkiye'de' gibi örnekleri düşün."
+    },
+    {
+      "id": "q16",
+      "text": "'İstanbulda' yazımı doğru mudur?",
+      "options": [
+        "Evet, doğrudur",
+        "Hayır, 'İstanbul'da' şeklinde kesme işaretiyle yazılmalıdır",
+        "Her iki yazım da doğrudur",
+        "Bu bir özel isim değildir"
+      ],
+      "correctIndex": 1,
+      "hint": "Özel isimlere gelen ekler kesme işaretiyle ayrılır."
+    },
+    {
+      "id": "q17",
+      "text": "Zorlayıcı soru: 'Türkiye'nin başkenti Ankara'dır.' cümlesinde kesme işaretleri doğru kullanılmış mıdır?",
+      "options": [
+        "Evet, her iki özel isme gelen ek de kesme işaretiyle ayrılmış",
+        "Hayır, hiçbiri doğru değildir",
+        "Sadece biri doğrudur",
+        "Kesme işareti hiç kullanılmamalıydı"
+      ],
+      "correctIndex": 0,
+      "hint": "Hem 'Türkiye'nin' hem 'Ankara'dır' kelimelerinde özel isme gelen ekler doğru şekilde kesme işaretiyle ayrılmış."
+    },
+    {
+      "id": "q18",
+      "text": "Cümle sonunda bir bilgi/haber verildiğinde hangi noktalama işareti kullanılır?",
+      "options": [
+        "Soru işareti",
+        "Ünlem işareti",
+        "Nokta",
+        "Virgül"
+      ],
+      "correctIndex": 2,
+      "hint": "Düz bir bilgi cümlesi genellikle bu işaretle biter."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Hiç şiir yazmayı denedin mi?",
+    "options": [
+      "Evet, denedim",
+      "Hayır ama denemek isterim",
+      "Bilmiyorum",
+      "Söylemek istemiyorum"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

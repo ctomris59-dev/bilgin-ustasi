@@ -1,0 +1,263 @@
+{
+  "id": "matematik-unite1-dogalsayilar-genis-p1",
+  "subject": "Matematik",
+  "title": "Ünite 1 - Doğal Sayılar (Geniş Havuz) (1/4)",
+  "week": 1,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "4.582.917 sayısında '5' rakamının basamak değeri kaçtır?",
+      "options": [
+        "50.000",
+        "500.000",
+        "5.000",
+        "5.000.000"
+      ],
+      "correctIndex": 1,
+      "hint": "5, soldan ikinci basamakta - yüz binler basamağında."
+    },
+    {
+      "id": "q2",
+      "text": "236.104 sayısında '3' rakamının basamak değeri kaçtır?",
+      "options": [
+        "300",
+        "3.000",
+        "30.000",
+        "300.000"
+      ],
+      "correctIndex": 2,
+      "hint": "3, sondan beşinci basamakta."
+    },
+    {
+      "id": "q3",
+      "text": "7.890.123 sayısında '8' rakamının basamak değeri kaçtır?",
+      "options": [
+        "8.000",
+        "80.000",
+        "800.000",
+        "8.000.000"
+      ],
+      "correctIndex": 2,
+      "hint": "8, milyonlar basamağından hemen sonra gelir."
+    },
+    {
+      "id": "q4",
+      "text": "Altı basamaklı en büyük doğal sayı hangisidir?",
+      "options": [
+        "100.000",
+        "999.999",
+        "999.000",
+        "900.000"
+      ],
+      "correctIndex": 1,
+      "hint": "Her basamağa en büyük rakamı (9) yazarsan ne olur?"
+    },
+    {
+      "id": "q5",
+      "text": "Yedi basamaklı en küçük doğal sayı hangisidir?",
+      "options": [
+        "9.999.999",
+        "1.000.000",
+        "999.999",
+        "1.999.999"
+      ],
+      "correctIndex": 1,
+      "hint": "Bir üst basamağa geçmek için en küçük sayı budur."
+    },
+    {
+      "id": "q6",
+      "text": "'İki milyon üç yüz bin kırk beş' sayısı rakamla nasıl yazılır?",
+      "options": [
+        "2.300.450",
+        "2.300.045",
+        "2.030.045",
+        "2.300.405"
+      ],
+      "correctIndex": 1,
+      "hint": "Milyon, bin ve kalan kısmı ayrı ayrı yaz: 2.300.045."
+    },
+    {
+      "id": "q7",
+      "text": "5.006.070 sayısının okunuşu hangisidir?",
+      "options": [
+        "Beş milyon altmış bin yetmiş",
+        "Beş milyon altı bin yetmiş",
+        "Beş milyon altı yüz bin yetmiş",
+        "Beş milyon altı bin yedi"
+      ],
+      "correctIndex": 1,
+      "hint": "Bölükleri tek tek oku: 5 milyon, 006 bin, 070."
+    },
+    {
+      "id": "q8",
+      "text": "308.456 sayısında hangi basamakta '0' rakamı vardır?",
+      "options": [
+        "Yüzbinler",
+        "Onbinler",
+        "Binler",
+        "Yüzler"
+      ],
+      "correctIndex": 1,
+      "hint": "Soldan ikinci rakama bak: 3-0-8..."
+    },
+    {
+      "id": "q9",
+      "text": "123.456 ve 123.465 sayılarından hangisi daha büyüktür?",
+      "options": [
+        "123.456",
+        "123.465",
+        "Eşittirler",
+        "Karşılaştırılamaz"
+      ],
+      "correctIndex": 1,
+      "hint": "İlk dört rakam aynı, onlar ve birler basamağına bak."
+    },
+    {
+      "id": "q10",
+      "text": "45.678 sayısı en yakın bine yuvarlanırsa sonuç nedir?",
+      "options": [
+        "45.000",
+        "46.000",
+        "45.700",
+        "50.000"
+      ],
+      "correctIndex": 1,
+      "hint": "Yüzler basamağındaki rakam (6) 5'ten büyükse yukarı yuvarlanır."
+    },
+    {
+      "id": "q11",
+      "text": "4.567 + 2.385 işleminin sonucu kaçtır?",
+      "options": [
+        "6.842",
+        "6.952",
+        "6.942",
+        "7.052"
+      ],
+      "correctIndex": 1,
+      "hint": "Sağdan sola, elde geçirmeyi unutma."
+    },
+    {
+      "id": "q12",
+      "text": "12.345 + 8.756 işleminin sonucu kaçtır?",
+      "options": [
+        "20.101",
+        "21.101",
+        "21.001",
+        "20.991"
+      ],
+      "correctIndex": 1,
+      "hint": "Birler basamağından başla: 5+6=11, 1 yaz 1 elde."
+    },
+    {
+      "id": "q13",
+      "text": "999 + 1 işleminin sonucu kaçtır?",
+      "options": [
+        "1.000",
+        "999",
+        "1.001",
+        "990"
+      ],
+      "correctIndex": 0,
+      "hint": "Tüm basamaklar 9 olduğunda elde geçirme zinciri oluşur."
+    },
+    {
+      "id": "q14",
+      "text": "En büyük 3 basamaklı sayı ile en büyük 2 basamaklı sayının toplamı kaçtır?",
+      "options": [
+        "1.089",
+        "1.098",
+        "1.080",
+        "1.100"
+      ],
+      "correctIndex": 1,
+      "hint": "999 + 99 işlemini yap."
+    },
+    {
+      "id": "q15",
+      "text": "25.000 + 17.850 işleminin sonucu kaçtır?",
+      "options": [
+        "42.850",
+        "42.750",
+        "43.850",
+        "42.950"
+      ],
+      "correctIndex": 0,
+      "hint": "Basamak basamak topla."
+    },
+    {
+      "id": "q16",
+      "text": "47 + 38 işleminin sonucu kaçtır?",
+      "options": [
+        "75",
+        "85",
+        "84",
+        "95"
+      ],
+      "correctIndex": 1,
+      "hint": "7+8=15, 1 yaz 1 elde."
+    },
+    {
+      "id": "q17",
+      "text": "156.204 + 98.876 işleminin sonucu kaçtır?",
+      "options": [
+        "254.080",
+        "255.080",
+        "255.180",
+        "253.080"
+      ],
+      "correctIndex": 1,
+      "hint": "Sağdan sola dikkatli topla, birden fazla elde geçirme olabilir."
+    },
+    {
+      "id": "q18",
+      "text": "300 + 250 işleminin sonucu kaçtır?",
+      "options": [
+        "500",
+        "550",
+        "450",
+        "600"
+      ],
+      "correctIndex": 1,
+      "hint": "Zihinden yüzlükleri topla."
+    },
+    {
+      "id": "q19",
+      "text": "8.999 + 1 işleminin sonucu kaçtır?",
+      "options": [
+        "8.000",
+        "9.999",
+        "9.000",
+        "9.100"
+      ],
+      "correctIndex": 2,
+      "hint": "Bütün basamaklar 9, elde zinciri sona kadar gider."
+    },
+    {
+      "id": "q20",
+      "text": "120 + 230 + 150 işleminin sonucu kaçtır?",
+      "options": [
+        "490",
+        "500",
+        "510",
+        "480"
+      ],
+      "correctIndex": 1,
+      "hint": "Önce ikisini topla, sonra üçüncüyü ekle."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Bu ünitede en çok hangi işlem türünde kendine güvendin?",
+    "options": [
+      "Toplama",
+      "Çıkarma",
+      "Çarpma",
+      "Bölme"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

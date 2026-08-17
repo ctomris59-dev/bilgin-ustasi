@@ -1,0 +1,251 @@
+{
+  "id": "matematik-unite6-alan-cisimler-p2",
+  "subject": "Matematik",
+  "title": "Ünite 6 - Alan Ölçme ve Geometrik Cisimler (2/4)",
+  "week": 6,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Kenar uzunlukları 20 cm ve 10 cm olan bir dikdörtgenin alanı kaç cm²'dir?",
+      "options": [
+        "200",
+        "220",
+        "60",
+        "190"
+      ],
+      "correctIndex": 0,
+      "hint": "Alan = uzun kenar × kısa kenar."
+    },
+    {
+      "id": "q2",
+      "text": "Bir kenarı 4 cm olan karenin alanı kaç cm²'dir?",
+      "options": [
+        "16",
+        "16",
+        "20",
+        "12"
+      ],
+      "correctIndex": 0,
+      "hint": "Kare alanı = kenar × kenar = 4×4."
+    },
+    {
+      "id": "q3",
+      "text": "Bir kenarı 5 cm olan karenin alanı kaç cm²'dir?",
+      "options": [
+        "25",
+        "20",
+        "30",
+        "20"
+      ],
+      "correctIndex": 0,
+      "hint": "Kare alanı = kenar × kenar = 5×5."
+    },
+    {
+      "id": "q4",
+      "text": "Bir kenarı 6 cm olan karenin alanı kaç cm²'dir?",
+      "options": [
+        "36",
+        "24",
+        "42",
+        "30"
+      ],
+      "correctIndex": 0,
+      "hint": "Kare alanı = kenar × kenar = 6×6."
+    },
+    {
+      "id": "q5",
+      "text": "Bir kenarı 7 cm olan karenin alanı kaç cm²'dir?",
+      "options": [
+        "49",
+        "28",
+        "56",
+        "42"
+      ],
+      "correctIndex": 0,
+      "hint": "Kare alanı = kenar × kenar = 7×7."
+    },
+    {
+      "id": "q6",
+      "text": "Bir kenarı 8 cm olan karenin alanı kaç cm²'dir?",
+      "options": [
+        "64",
+        "32",
+        "72",
+        "56"
+      ],
+      "correctIndex": 0,
+      "hint": "Kare alanı = kenar × kenar = 8×8."
+    },
+    {
+      "id": "q7",
+      "text": "Bir kenarı 9 cm olan karenin alanı kaç cm²'dir?",
+      "options": [
+        "81",
+        "36",
+        "90",
+        "72"
+      ],
+      "correctIndex": 0,
+      "hint": "Kare alanı = kenar × kenar = 9×9."
+    },
+    {
+      "id": "q8",
+      "text": "Bir kenarı 10 cm olan karenin alanı kaç cm²'dir?",
+      "options": [
+        "100",
+        "40",
+        "110",
+        "90"
+      ],
+      "correctIndex": 0,
+      "hint": "Kare alanı = kenar × kenar = 10×10."
+    },
+    {
+      "id": "q9",
+      "text": "Bir kenarı 12 cm olan karenin alanı kaç cm²'dir?",
+      "options": [
+        "144",
+        "48",
+        "156",
+        "132"
+      ],
+      "correctIndex": 0,
+      "hint": "Kare alanı = kenar × kenar = 12×12."
+    },
+    {
+      "id": "q10",
+      "text": "Bir kenarı 3 cm olan karenin çevresi kaç cm'dir?",
+      "options": [
+        "12",
+        "9",
+        "16",
+        "8"
+      ],
+      "correctIndex": 0,
+      "hint": "Kare çevresi = 4 × kenar = 4×3."
+    },
+    {
+      "id": "q11",
+      "text": "Bir kenarı 5 cm olan karenin çevresi kaç cm'dir?",
+      "options": [
+        "20",
+        "25",
+        "24",
+        "16"
+      ],
+      "correctIndex": 0,
+      "hint": "Kare çevresi = 4 × kenar = 4×5."
+    },
+    {
+      "id": "q12",
+      "text": "Bir kenarı 7 cm olan karenin çevresi kaç cm'dir?",
+      "options": [
+        "28",
+        "49",
+        "32",
+        "24"
+      ],
+      "correctIndex": 0,
+      "hint": "Kare çevresi = 4 × kenar = 4×7."
+    },
+    {
+      "id": "q13",
+      "text": "Bir kenarı 9 cm olan karenin çevresi kaç cm'dir?",
+      "options": [
+        "36",
+        "81",
+        "40",
+        "32"
+      ],
+      "correctIndex": 0,
+      "hint": "Kare çevresi = 4 × kenar = 4×9."
+    },
+    {
+      "id": "q14",
+      "text": "Bir kenarı 11 cm olan karenin çevresi kaç cm'dir?",
+      "options": [
+        "44",
+        "121",
+        "48",
+        "40"
+      ],
+      "correctIndex": 0,
+      "hint": "Kare çevresi = 4 × kenar = 4×11."
+    },
+    {
+      "id": "q15",
+      "text": "Bir kenarı 13 cm olan karenin çevresi kaç cm'dir?",
+      "options": [
+        "52",
+        "169",
+        "56",
+        "48"
+      ],
+      "correctIndex": 0,
+      "hint": "Kare çevresi = 4 × kenar = 4×13."
+    },
+    {
+      "id": "q16",
+      "text": "Bir kenarı 15 cm olan karenin çevresi kaç cm'dir?",
+      "options": [
+        "60",
+        "225",
+        "64",
+        "56"
+      ],
+      "correctIndex": 0,
+      "hint": "Kare çevresi = 4 × kenar = 4×15."
+    },
+    {
+      "id": "q17",
+      "text": "Küpün kaç yüzü vardır?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "8"
+      ],
+      "correctIndex": 2,
+      "hint": "Bir zar şeklini düşün, her tarafı bir yüzdür."
+    },
+    {
+      "id": "q18",
+      "text": "Küpün kaç kenarı vardır?",
+      "options": [
+        "6",
+        "8",
+        "10",
+        "12"
+      ],
+      "correctIndex": 3,
+      "hint": "Bir küpün her yüzünün kenarlarını dikkatlice say, ortak kenarları bir kez say."
+    },
+    {
+      "id": "q19",
+      "text": "Küpün kaç köşesi (köşe noktası) vardır?",
+      "options": [
+        "4",
+        "6",
+        "8",
+        "10"
+      ],
+      "correctIndex": 2,
+      "hint": "Bir zarın köşe sayısını düşün."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Odandaki eşyalardan hangisi bir dikdörtgenler prizmasına benziyor?",
+    "options": [
+      "Dolap",
+      "Kitap",
+      "Kutu",
+      "Hepsi"
+    ],
+    "correctIndex": 3,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

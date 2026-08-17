@@ -1,0 +1,239 @@
+{
+  "id": "turkce-unite4-fiil-cekimleri-p1",
+  "subject": "Türkçe",
+  "title": "Ünite 4 - Fiil Çekimleri, Zaman ve Kişi Ekleri (1/4)",
+  "week": 4,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "İş, oluş veya hareket bildiren sözcüklere ne denir?",
+      "options": [
+        "İsim",
+        "Fiil (eylem)",
+        "Sıfat",
+        "Zamir"
+      ],
+      "correctIndex": 1,
+      "hint": "Koşmak, okumak, yazmak gibi sözcükleri düşün."
+    },
+    {
+      "id": "q2",
+      "text": "'Okumak' fiilinin kökü hangisidir?",
+      "options": [
+        "Oku-",
+        "-mak",
+        "Okum-",
+        "Ok-"
+      ],
+      "correctIndex": 0,
+      "hint": "'-mak/-mek' fiillerin mastar ekidir, kökten sonra gelir."
+    },
+    {
+      "id": "q3",
+      "text": "Şimdiki zamanı bildiren ek hangisidir?",
+      "options": [
+        "-di",
+        "-yor",
+        "-ecek",
+        "-miş"
+      ],
+      "correctIndex": 1,
+      "hint": "'Geliyorum.' cümlesindeki eki düşün."
+    },
+    {
+      "id": "q4",
+      "text": "Görülen geçmiş zamanı bildiren ek hangisidir?",
+      "options": [
+        "-yor",
+        "-ecek",
+        "-di",
+        "-r"
+      ],
+      "correctIndex": 2,
+      "hint": "'Geldim.' cümlesindeki eki düşün - konuşanın tanık olduğu bir geçmiş olay."
+    },
+    {
+      "id": "q5",
+      "text": "Gelecek zamanı bildiren ek hangisidir?",
+      "options": [
+        "-yor",
+        "-ecek/-acak",
+        "-di",
+        "-miş"
+      ],
+      "correctIndex": 1,
+      "hint": "'Geleceğim.' cümlesindeki eki düşün."
+    },
+    {
+      "id": "q6",
+      "text": "Duyulan (rivayet) geçmiş zamanı bildiren ek hangisidir?",
+      "options": [
+        "-di",
+        "-yor",
+        "-miş",
+        "-ecek"
+      ],
+      "correctIndex": 2,
+      "hint": "'Gelmiş.' cümlesi, konuşanın bizzat tanık olmadığı, başkasından duyduğu bir olayı anlatır."
+    },
+    {
+      "id": "q7",
+      "text": "'Geldim' ile 'Gelmişim' arasındaki temel fark nedir?",
+      "options": [
+        "Hiçbir fark yoktur",
+        "'Geldim' tanık olunan, 'gelmişim' başkasından duyulan bir olayı anlatır",
+        "'Gelmişim' şimdiki zamandır",
+        "'Geldim' gelecek zamandır"
+      ],
+      "correctIndex": 1,
+      "hint": "Görülen geçmiş zaman ile duyulan geçmiş zaman arasındaki anlam farkını düşün."
+    },
+    {
+      "id": "q8",
+      "text": "Geniş zamanı bildiren ek hangisidir?",
+      "options": [
+        "-yor",
+        "-r/-ar/-er",
+        "-di",
+        "-ecek"
+      ],
+      "correctIndex": 1,
+      "hint": "'Her gün okula giderim.' cümlesindeki eki düşün - alışkanlık/genel doğru bildirir."
+    },
+    {
+      "id": "q9",
+      "text": "'Gülerim' fiilinde hangi zaman eki kullanılmıştır?",
+      "options": [
+        "Şimdiki zaman",
+        "Geniş zaman",
+        "Geçmiş zaman",
+        "Gelecek zaman"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu ek, sürekli/genel bir eylemi anlatır."
+    },
+    {
+      "id": "q10",
+      "text": "'Ben' şahıs zamirine karşılık gelen kişi eki genellikle hangisidir?",
+      "options": [
+        "-m",
+        "-n",
+        "-k",
+        "-nız"
+      ],
+      "correctIndex": 0,
+      "hint": "'Geldim' kelimesindeki son eki düşün."
+    },
+    {
+      "id": "q11",
+      "text": "'Sen' şahıs zamirine karşılık gelen kişi eki genellikle hangisidir?",
+      "options": [
+        "-m",
+        "-n",
+        "-k",
+        "-lar"
+      ],
+      "correctIndex": 1,
+      "hint": "'Geldin' kelimesindeki son eki düşün."
+    },
+    {
+      "id": "q12",
+      "text": "'Biz' şahıs zamirine karşılık gelen kişi eki genellikle hangisidir?",
+      "options": [
+        "-m",
+        "-n",
+        "-k",
+        "-nız"
+      ],
+      "correctIndex": 2,
+      "hint": "'Geldik' kelimesindeki son eki düşün."
+    },
+    {
+      "id": "q13",
+      "text": "'O' şahıs zamiri için fiile genellikle nasıl bir ek eklenir?",
+      "options": [
+        "-m eki eklenir",
+        "-n eki eklenir",
+        "-k eki eklenir",
+        "Genellikle hiçbir kişi eki eklenmez"
+      ],
+      "correctIndex": 3,
+      "hint": "'Geldi' kelimesinde 3. tekil şahıs için ek yoktur."
+    },
+    {
+      "id": "q14",
+      "text": "'Geldiniz' kelimesinde kişi eki hangi şahsı gösterir?",
+      "options": [
+        "Ben",
+        "Sen",
+        "Siz",
+        "Onlar"
+      ],
+      "correctIndex": 2,
+      "hint": "'-niz' eki hangi zamire karşılık gelir?"
+    },
+    {
+      "id": "q15",
+      "text": "'Geldiler' kelimesinde kişi eki hangi şahsı gösterir?",
+      "options": [
+        "Biz",
+        "Siz",
+        "Onlar",
+        "Ben"
+      ],
+      "correctIndex": 2,
+      "hint": "'-ler' eki çoğul 3. şahsı gösterir."
+    },
+    {
+      "id": "q16",
+      "text": "Bir fiili olumsuz yapmak için hangi ek kullanılır?",
+      "options": [
+        "-ma/-me",
+        "-yor",
+        "-r",
+        "-miş"
+      ],
+      "correctIndex": 0,
+      "hint": "'Gelmedim.' cümlesindeki olumsuzluk ekini düşün."
+    },
+    {
+      "id": "q17",
+      "text": "'Gelmedim' kelimesi hangi özelliktedir?",
+      "options": [
+        "Olumlu, geçmiş zaman",
+        "Olumsuz, geçmiş zaman",
+        "Olumlu, gelecek zaman",
+        "Olumsuz, şimdiki zaman"
+      ],
+      "correctIndex": 1,
+      "hint": "'-me' olumsuzluk eki, '-di' geçmiş zaman ekidir."
+    },
+    {
+      "id": "q18",
+      "text": "Bir fiili soru yapmak için hangi ek/kelime kullanılır?",
+      "options": [
+        "mı/mi/mu/mü",
+        "-yor",
+        "-r",
+        "-miş"
+      ],
+      "correctIndex": 0,
+      "hint": "'Geldin mi?' cümlesindeki soru ekini düşün."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Bugün en çok hangi zamanı (geçmiş, şimdiki, gelecek) kullanarak konuştun?",
+    "options": [
+      "Geçmiş zaman",
+      "Şimdiki zaman",
+      "Gelecek zaman",
+      "Hepsini kullandım"
+    ],
+    "correctIndex": 3,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

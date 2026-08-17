@@ -1,0 +1,239 @@
+{
+  "id": "matematik-unite5-veri-uzunluk-zaman-p3",
+  "subject": "Matematik",
+  "title": "Ünite 5 - Veri Toplama, Uzunluk ve Zaman Ölçme (3/4)",
+  "week": 5,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Bir sınıfta 12 öğrenci köpek, 8 öğrenci kedi seviyorsa, bu bilgiyi görselleştirmek için en uygun grafik hangisi olabilir?",
+      "options": [
+        "Sütun grafiği",
+        "Sadece bir cümle yeterlidir, grafiğe gerek yok",
+        "Hiçbir grafik uygun değildir",
+        "Sadece tablo, grafik asla kullanılmaz"
+      ],
+      "correctIndex": 0,
+      "hint": "Kategoriler arası karşılaştırma için sütun grafiği uygundur."
+    },
+    {
+      "id": "q2",
+      "text": "Bir araştırmacı topladığı verileri yorumlarken nelere dikkat etmelidir?",
+      "options": [
+        "Sadece kendi fikrine uyanları seçmeli",
+        "Verilerin tamamını objektif şekilde değerlendirmeli",
+        "Verileri değiştirmeli",
+        "Hiçbir şeye dikkat etmemeli"
+      ],
+      "correctIndex": 1,
+      "hint": "Bilimsel dürüstlük, tüm verilerin objektif değerlendirilmesini gerektirir."
+    },
+    {
+      "id": "q3",
+      "text": "Bir grafikte 'lejant/açıklama' ne işe yarar?",
+      "options": [
+        "Renklerin veya sembollerin ne anlama geldiğini açıklar",
+        "Grafiği süsler",
+        "Hiçbir işe yaramaz",
+        "Grafiği küçültür"
+      ],
+      "correctIndex": 0,
+      "hint": "Lejant, grafikteki farklı renk/sembollerin anlamını gösterir."
+    },
+    {
+      "id": "q4",
+      "text": "Bir veri setinde 'aralık' (açıklık) ne anlama gelir?",
+      "options": [
+        "En büyük ve en küçük değer arasındaki fark",
+        "Verilerin toplamı",
+        "Verilerin ortalaması",
+        "En sık tekrarlanan değer"
+      ],
+      "correctIndex": 0,
+      "hint": "Aralık = en büyük değer - en küçük değer."
+    },
+    {
+      "id": "q5",
+      "text": "Zorlayıcı problem: Bir koşu pisti 400 metre. Bir sporcu bu pisti 5 kez tur atarsa toplam kaç metre koşmuş olur?",
+      "options": [
+        "1500 m",
+        "2000 m",
+        "2500 m",
+        "1800 m"
+      ],
+      "correctIndex": 1,
+      "hint": "400 × 5 işlemini yap."
+    },
+    {
+      "id": "q6",
+      "text": "Zorlayıcı problem: Ali, saat 08:15'te evden çıkıp okula 25 dakikada varıyor. Okula saat kaçta varır?",
+      "options": [
+        "08:30",
+        "08:40",
+        "08:35",
+        "08:45"
+      ],
+      "correctIndex": 1,
+      "hint": "08:15'e 25 dakika ekle."
+    },
+    {
+      "id": "q7",
+      "text": "Zorlayıcı problem: Bir kumaş topu 15 metre. Bu kumaştan her biri 3 metre olan kaç parça kesilebilir?",
+      "options": [
+        "3",
+        "5",
+        "8",
+        "10"
+      ],
+      "correctIndex": 1,
+      "hint": "15 ÷ 3 işlemini yap."
+    },
+    {
+      "id": "q8",
+      "text": "Zorlayıcı problem: 2,5 kilometre kaç metredir?",
+      "options": [
+        "25 m",
+        "250 m",
+        "2500 m",
+        "25000 m"
+      ],
+      "correctIndex": 2,
+      "hint": "1 km = 1000 m, 2,5 × 1000 işlemini yap."
+    },
+    {
+      "id": "q9",
+      "text": "Zorlayıcı problem: Bir film 1 saat 45 dakika sürüyor. Film saat 19:30'da başlarsa, kaçta biter?",
+      "options": [
+        "21:00",
+        "21:15",
+        "20:45",
+        "21:30"
+      ],
+      "correctIndex": 1,
+      "hint": "1 saat 45 dakikayı 19:30'a ekle: önce 1 saat, sonra 45 dakika."
+    },
+    {
+      "id": "q10",
+      "text": "Zorlayıcı problem: Bir sınıfta yapılan ankette 15 öğrenci matematik, 10 öğrenci Türkçe dersini en sevdiği ders olarak seçmiş. Toplam kaç öğrenciye anket yapılmıştır (sadece bu iki seçenek varsa)?",
+      "options": [
+        "20",
+        "25",
+        "30",
+        "35"
+      ],
+      "correctIndex": 1,
+      "hint": "15 + 10 işlemini yap."
+    },
+    {
+      "id": "q11",
+      "text": "Zorlayıcı problem: Bir koşucu 1. günde 3 km, 2. günde 5 km, 3. günde 4 km koşuyor. 3 günde toplam kaç km koşmuştur?",
+      "options": [
+        "10 km",
+        "12 km",
+        "14 km",
+        "11 km"
+      ],
+      "correctIndex": 1,
+      "hint": "3 + 5 + 4 işlemini yap."
+    },
+    {
+      "id": "q12",
+      "text": "Zorlayıcı problem: Bir toplantı 14:20'de başlayıp 90 dakika sürüyor. Toplantı saat kaçta biter?",
+      "options": [
+        "15:20",
+        "15:50",
+        "16:00",
+        "15:40"
+      ],
+      "correctIndex": 1,
+      "hint": "90 dakika = 1 saat 30 dakika, bunu 14:20'ye ekle."
+    },
+    {
+      "id": "q13",
+      "text": "Zorlayıcı problem: Bir bahçenin uzunluğu 25 metredir. Bu uzunluk kaç santimetredir?",
+      "options": [
+        "250 cm",
+        "2500 cm",
+        "25000 cm",
+        "250000 cm"
+      ],
+      "correctIndex": 1,
+      "hint": "1 m = 100 cm, 25 × 100 işlemini yap."
+    },
+    {
+      "id": "q14",
+      "text": "Zorlayıcı problem: Bir öğrenci 6 haftalık bir sürede her hafta 5 test çözüyorsa, toplam kaç test çözmüş olur?",
+      "options": [
+        "25",
+        "30",
+        "35",
+        "40"
+      ],
+      "correctIndex": 1,
+      "hint": "6 × 5 işlemini yap."
+    },
+    {
+      "id": "q15",
+      "text": "Zorlayıcı problem: 3 saat 15 dakika ile 1 saat 50 dakika toplanırsa sonuç ne olur?",
+      "options": [
+        "4 saat 65 dakika = 5 saat 5 dakika",
+        "5 saat 5 dakika",
+        "4 saat 5 dakika",
+        "5 saat 65 dakika"
+      ],
+      "correctIndex": 1,
+      "hint": "Saatleri ve dakikaları ayrı ayrı topla, 60 dakikayı aşarsa 1 saate çevir."
+    },
+    {
+      "id": "q16",
+      "text": "Zorlayıcı problem: Bir grafik incelendiğinde Pazartesi 20, Salı 35, Çarşamba 15 kişi bir kütüphaneyi ziyaret etmiş. En çok ziyaret hangi gün olmuştur?",
+      "options": [
+        "Pazartesi",
+        "Salı",
+        "Çarşamba",
+        "Hepsi eşit"
+      ],
+      "correctIndex": 1,
+      "hint": "En büyük sayıyı bul: 35."
+    },
+    {
+      "id": "q17",
+      "text": "Zorlayıcı problem: Yukarıdaki kütüphane örneğinde üç günün toplam ziyaretçi sayısı kaçtır?",
+      "options": [
+        "60",
+        "65",
+        "70",
+        "75"
+      ],
+      "correctIndex": 2,
+      "hint": "20 + 35 + 15 işlemini yap."
+    },
+    {
+      "id": "q18",
+      "text": "Zorlayıcı problem: Bir maraton 42 kilometredir. Bir koşucu bunun yarısını tamamladıysa kaç km koşmuştur?",
+      "options": [
+        "20 km",
+        "21 km",
+        "22 km",
+        "24 km"
+      ],
+      "correctIndex": 1,
+      "hint": "42 ÷ 2 işlemini yap."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Bugün ders çalışmak için kaç dakika ayırdın?",
+    "options": [
+      "15 dakika",
+      "30 dakika",
+      "45 dakika veya üzeri",
+      "Henüz başlamadım"
+    ],
+    "correctIndex": 2,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

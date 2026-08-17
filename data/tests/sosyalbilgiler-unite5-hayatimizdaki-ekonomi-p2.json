@@ -1,0 +1,239 @@
+{
+  "id": "sosyalbilgiler-unite5-hayatimizdaki-ekonomi-p2",
+  "subject": "Sosyal Bilgiler",
+  "title": "Ünite 5 - Hayatımızdaki Ekonomi (2/4)",
+  "week": 5,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Aşağıdakilerden hangisi 'israf' kavramına bir örnektir?",
+      "options": [
+        "Gereksiz yere yemek atmak",
+        "Suyu tasarruflu kullanmak",
+        "İhtiyaç kadar tüketmek",
+        "Bütçeye uygun harcama yapmak"
+      ],
+      "correctIndex": 0,
+      "hint": "İsraf, gereksiz ve dikkatsiz tüketimi ifade eder."
+    },
+    {
+      "id": "q2",
+      "text": "Zorlayıcı soru: Bir öğrenci, harçlığının bir kısmını her ay biriktirip yıl sonunda bir hedefi için kullanmayı planlıyor. Bu davranış hangi ekonomik kavramla ilişkilidir?",
+      "options": [
+        "İsraf",
+        "Tasarruf ve bütçeleme",
+        "Borçlanma",
+        "Hiçbir kavramla ilişkili değildir"
+      ],
+      "correctIndex": 1,
+      "hint": "Düzenli biriktirme ve planlama, tasarruf ve bütçe yönetiminin bir örneğidir."
+    },
+    {
+      "id": "q3",
+      "text": "Aşağıdakilerden hangisi 'ticaret' kavramını en iyi tanımlar?",
+      "options": [
+        "Mal ve hizmetlerin alım satımı",
+        "Sadece üretim yapmak",
+        "Sadece tüketim yapmak",
+        "Hiçbir anlamı yoktur"
+      ],
+      "correctIndex": 0,
+      "hint": "Ticaret, ürünlerin bir taraftan diğerine el değiştirmesini içerir."
+    },
+    {
+      "id": "q4",
+      "text": "Bir bölgenin ekonomik faaliyetleri, o bölgenin coğrafi özelliklerinden nasıl etkilenir?",
+      "options": [
+        "Hiç etkilenmez",
+        "Coğrafi özellikler (iklim, arazi, kaynaklar) ekonomik faaliyetleri şekillendirebilir",
+        "Sadece nüfus etkiler",
+        "Sadece hava durumu etkiler"
+      ],
+      "correctIndex": 1,
+      "hint": "Örneğin dağlık bölgelerde hayvancılık, ovalık bölgelerde tarım daha yaygın olabilir."
+    },
+    {
+      "id": "q5",
+      "text": "Aşağıdakilerden hangisi 'para biriktirmenin' bir yolu olabilir?",
+      "options": [
+        "Kumbara kullanmak",
+        "Parayı sürekli harcamak",
+        "Hiç düşünmeden alışveriş yapmak",
+        "Bütçe yapmamak"
+      ],
+      "correctIndex": 0,
+      "hint": "Kumbara, özellikle çocuklar için basit bir tasarruf yöntemidir."
+    },
+    {
+      "id": "q6",
+      "text": "Bir ailenin aylık gelir ve giderlerini kayıt altına alması neden faydalıdır?",
+      "options": [
+        "Hiçbir faydası yoktur",
+        "Harcamaları kontrol altında tutmalarına ve tasarruf yapmalarına yardımcı olur",
+        "Sadece zaman kaybıdır",
+        "Gelirlerini azaltır"
+      ],
+      "correctIndex": 1,
+      "hint": "Kayıt tutmak, mali durumu daha net görmeyi sağlar."
+    },
+    {
+      "id": "q7",
+      "text": "Aşağıdakilerden hangisi 'akıllı tüketici' olmanın bir özelliğidir?",
+      "options": [
+        "Alışveriş yapmadan önce ihtiyacını değerlendirmek",
+        "Her gördüğü ürünü almak",
+        "Bütçesini hiç düşünmemek",
+        "Fiyatları karşılaştırmamak"
+      ],
+      "correctIndex": 0,
+      "hint": "Akıllı tüketici, bilinçli ve planlı alışveriş yapar."
+    },
+    {
+      "id": "q8",
+      "text": "Zorlayıcı soru: Bir öğrenci market alışverişinde iki farklı markanın aynı ürününün fiyatlarını karşılaştırıyor. Bu davranış hangi ekonomik beceriye örnektir?",
+      "options": [
+        "Bilinçli tüketicilik",
+        "İsraf",
+        "Borçlanma",
+        "Hiçbir beceriye örnek değildir"
+      ],
+      "correctIndex": 0,
+      "hint": "Fiyat karşılaştırması yapmak, akıllı ve bilinçli tüketim davranışıdır."
+    },
+    {
+      "id": "q9",
+      "text": "Aşağıdakilerden hangisi doğal kaynakların ekonomik değerine bir örnektir?",
+      "options": [
+        "Bir ormanın kereste üretiminde kullanılması",
+        "Bir kitabın rengi",
+        "Bir şarkının süresi",
+        "Bir filmin adı"
+      ],
+      "correctIndex": 0,
+      "hint": "Ormanlar, ekonomik açıdan değerli doğal kaynaklardır."
+    },
+    {
+      "id": "q10",
+      "text": "Bir ülkenin farklı bölgelerinde farklı ekonomik faaliyetlerin gelişmiş olması neyi gösterir?",
+      "options": [
+        "Hiçbir şey göstermez",
+        "Bölgesel coğrafi ve doğal farklılıkların ekonomiyi etkilediğini",
+        "Tüm bölgelerin aynı olduğunu",
+        "Ekonominin coğrafyayla hiç ilgisi olmadığını"
+      ],
+      "correctIndex": 1,
+      "hint": "Farklı bölgelerin farklı kaynaklara sahip olması, farklı ekonomik uzmanlaşmalara yol açabilir."
+    },
+    {
+      "id": "q11",
+      "text": "Aşağıdakilerden hangisi 'borç' kavramını tanımlar?",
+      "options": [
+        "Başkasından alınan ve geri ödenmesi gereken para veya mal",
+        "Bedavaya verilen bir hediye",
+        "Tasarruf edilen para",
+        "Kazanılan gelir"
+      ],
+      "correctIndex": 0,
+      "hint": "Borç, geri ödeme yükümlülüğü olan bir mali ilişkidir."
+    },
+    {
+      "id": "q12",
+      "text": "Aşırı borçlanmanın olası bir riski nedir?",
+      "options": [
+        "Hiçbir riski yoktur",
+        "Mali zorluk ve ödeme güçlüğü yaşanabilir",
+        "Otomatik olarak zenginlik gelir",
+        "Borç hiçbir zaman geri ödenmez"
+      ],
+      "correctIndex": 1,
+      "hint": "Kontrolsüz borçlanma, mali sorunlara yol açabilir."
+    },
+    {
+      "id": "q13",
+      "text": "Bir ailenin 'zorunlu giderleri' (kira, fatura vb.) ile 'isteğe bağlı giderleri' (eğlence, lüks ürünler) arasındaki fark nedir?",
+      "options": [
+        "Hiçbir fark yoktur",
+        "Zorunlu giderler yaşam için gereklidir, isteğe bağlı giderler ise ertelenebilir",
+        "İsteğe bağlı giderler her zaman önceliklidir",
+        "Zorunlu giderlerin hiç önemi yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Bütçe yaparken, zorunlu giderlere öncelik verilmesi genellikle önerilir."
+    },
+    {
+      "id": "q14",
+      "text": "Aşağıdakilerden hangisi 'yatırım' kavramına en yakın bir örnektir?",
+      "options": [
+        "Parayı hemen harcayıp bitirmek",
+        "Gelecekte fayda sağlaması umuduyla para veya kaynak ayırmak",
+        "Parayı saklamadan tamamen israf etmek",
+        "Hiçbir planlama yapmadan harcamak"
+      ],
+      "correctIndex": 1,
+      "hint": "Yatırım, gelecekteki bir kazanç veya fayda beklentisiyle yapılan harcamadır."
+    },
+    {
+      "id": "q15",
+      "text": "Bir bölgede turizm faaliyetlerinin gelişmesi hangi coğrafi özelliklerle ilişkili olabilir?",
+      "options": [
+        "Tarihi/doğal güzellikler, deniz kıyısı gibi özellikler",
+        "Sadece iklim",
+        "Hiçbir coğrafi özellikle ilişkili değildir",
+        "Sadece nüfus yoğunluğu"
+      ],
+      "correctIndex": 0,
+      "hint": "Turistik çekicilik, genellikle doğal ve tarihi zenginliklerle ilişkilidir."
+    },
+    {
+      "id": "q16",
+      "text": "Zorlayıcı soru: Bir bölgede hem verimli tarım toprakları hem de büyük bir nehir bulunuyor. Bu bölgede hangi ekonomik faaliyetin gelişmiş olması beklenir?",
+      "options": [
+        "Kayak turizmi",
+        "Tarım ve sulama faaliyetleri",
+        "Kutup araştırmaları",
+        "Çöl ticareti"
+      ],
+      "correctIndex": 1,
+      "hint": "Verimli toprak ve su kaynağı, tarımsal üretim için idealdir."
+    },
+    {
+      "id": "q17",
+      "text": "Aşağıdakilerden hangisi 'kaynakların sınırlı olması' kavramını en iyi açıklar?",
+      "options": [
+        "Kaynaklar sonsuzdur, hiç tükenmez",
+        "Doğal kaynakların çoğu sınırlıdır ve dikkatli kullanılmalıdır",
+        "Kaynaklar hiç önemli değildir",
+        "Sadece bazı kaynaklar sınırlıdır, hepsi sonsuzdur"
+      ],
+      "correctIndex": 1,
+      "hint": "Su, orman gibi birçok kaynak sınırlıdır ve bilinçli kullanılmalıdır."
+    },
+    {
+      "id": "q18",
+      "text": "Bir öğrencinin okul kantininde para harcarken bütçesini düşünmesi neden önemlidir?",
+      "options": [
+        "Hiçbir önemi yoktur",
+        "Parasını akıllıca yönetip israf etmemesine yardımcı olur",
+        "Sadece zaman kaybıdır",
+        "Bütçenin önemi yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "Küçük yaşta kazanılan mali bilinç, gelecekte faydalı bir alışkanlık olur."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Harçlığının bir kısmını biriktiriyor musun?",
+    "options": [
+      "Evet, düzenli biriktiriyorum",
+      "Bazen biriktiriyorum",
+      "Hayır, hemen harcıyorum",
+      "Henüz harçlığım yok"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

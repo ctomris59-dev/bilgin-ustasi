@@ -1,0 +1,239 @@
+{
+  "id": "turkce-unite4-fiil-cekimleri-p2",
+  "subject": "Türkçe",
+  "title": "Ünite 4 - Fiil Çekimleri, Zaman ve Kişi Ekleri (2/4)",
+  "week": 4,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "'Geldin mi?' cümlesi hangi tür bir cümledir?",
+      "options": [
+        "Olumlu cümle",
+        "Olumsuz cümle",
+        "Soru cümlesi",
+        "Emir cümlesi"
+      ],
+      "correctIndex": 2,
+      "hint": "Cümle sonunda soru eki (mi) var."
+    },
+    {
+      "id": "q2",
+      "text": "Bir işi yapmayı emreden fiil çekimine ne denir?",
+      "options": [
+        "Emir kipi",
+        "Şimdiki zaman",
+        "Geçmiş zaman",
+        "Soru kipi"
+      ],
+      "correctIndex": 0,
+      "hint": "'Gel!' gibi bir cümleyi düşün - bir isteği/emri ifade eder."
+    },
+    {
+      "id": "q3",
+      "text": "'Otur!' cümlesi hangi kiptedir?",
+      "options": [
+        "Haber kipi",
+        "Emir kipi",
+        "Şart kipi",
+        "İstek kipi"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu cümle, bir emir/istek bildiriyor."
+    },
+    {
+      "id": "q4",
+      "text": "Bir isteği veya dileği bildiren fiil çekimine ne denir?",
+      "options": [
+        "Emir kipi",
+        "İstek kipi",
+        "Haber kipi",
+        "Soru kipi"
+      ],
+      "correctIndex": 1,
+      "hint": "'Keşke gelsem.' gibi bir cümleyi düşün - bir dileği ifade eder."
+    },
+    {
+      "id": "q5",
+      "text": "Bir eylemin gerçekleşme şartını bildiren fiil çekimine ne denir?",
+      "options": [
+        "Şart kipi",
+        "Emir kipi",
+        "Haber kipi",
+        "Soru kipi"
+      ],
+      "correctIndex": 0,
+      "hint": "'Gelirsen sevinirim.' gibi bir cümleyi düşün - bir koşulu ifade eder."
+    },
+    {
+      "id": "q6",
+      "text": "'-se/-sa' eki hangi kipi oluşturur?",
+      "options": [
+        "Emir kipi",
+        "Şart kipi",
+        "İstek kipi",
+        "Haber kipi"
+      ],
+      "correctIndex": 1,
+      "hint": "'Gelirse' kelimesindeki eki düşün."
+    },
+    {
+      "id": "q7",
+      "text": "Aşağıdakilerden hangisi bir 'haber kipi' örneğidir (bir haberi/bilgiyi doğrudan bildiren)?",
+      "options": [
+        "Gelsin!",
+        "Gelirse iyi olur.",
+        "Geldi.",
+        "Keşke gelse."
+      ],
+      "correctIndex": 2,
+      "hint": "Bu cümle, doğrudan geçmişte olan bir olayı haber veriyor."
+    },
+    {
+      "id": "q8",
+      "text": "Zorlayıcı soru: 'Yarın hava güzel olursa pikniğe gideriz.' cümlesinde hangi kip kullanılmıştır?",
+      "options": [
+        "Emir kipi",
+        "Şart kipi (olursa)",
+        "Sadece geniş zaman",
+        "İstek kipi"
+      ],
+      "correctIndex": 1,
+      "hint": "'Olursa' kelimesi bir koşulu bildiriyor - şart kipi."
+    },
+    {
+      "id": "q9",
+      "text": "Bir fiile '-ebilmek/-abilmek' eki eklendiğinde ne anlam katılır?",
+      "options": [
+        "Zorunluluk anlamı",
+        "Yeterlik (yapabilme) anlamı",
+        "Olumsuzluk anlamı",
+        "Soru anlamı"
+      ],
+      "correctIndex": 1,
+      "hint": "'Yapabilirim.' cümlesindeki anlamı düşün - bir şeyi yapma gücüne/imkanına sahip olma."
+    },
+    {
+      "id": "q10",
+      "text": "'Koşabilirim.' kelimesi hangi anlamı taşır?",
+      "options": [
+        "Koşmak zorundayım",
+        "Koşma imkanım/gücüm var",
+        "Koşmuyorum",
+        "Koşacağım kesin"
+      ],
+      "correctIndex": 1,
+      "hint": "'-ebil' eki, yeterlik/imkan bildirir."
+    },
+    {
+      "id": "q11",
+      "text": "Aşağıdakilerden hangisi şimdiki zaman çekimine örnektir?",
+      "options": [
+        "Geldi",
+        "Geliyor",
+        "Gelecek",
+        "Gelmiş"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu kelimede '-yor' eki bulunur."
+    },
+    {
+      "id": "q12",
+      "text": "Aşağıdakilerden hangisi gelecek zaman çekimine örnektir?",
+      "options": [
+        "Yazdı",
+        "Yazıyor",
+        "Yazacak",
+        "Yazmış"
+      ],
+      "correctIndex": 2,
+      "hint": "Bu kelimede '-ecek' eki bulunur."
+    },
+    {
+      "id": "q13",
+      "text": "Aşağıdakilerden hangisi görülen geçmiş zaman çekimine örnektir?",
+      "options": [
+        "Okudu",
+        "Okuyor",
+        "Okuyacak",
+        "Okurmuş"
+      ],
+      "correctIndex": 0,
+      "hint": "Bu kelimede '-du' (görülen geçmiş zaman) eki bulunur."
+    },
+    {
+      "id": "q14",
+      "text": "Aşağıdakilerden hangisi duyulan geçmiş zaman çekimine örnektir?",
+      "options": [
+        "Okudu",
+        "Okumuş",
+        "Okuyor",
+        "Okuyacak"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu kelimede '-muş' (duyulan geçmiş zaman) eki bulunur."
+    },
+    {
+      "id": "q15",
+      "text": "'Yarın sinemaya gideceğiz.' cümlesinde fiil hangi zamandadır?",
+      "options": [
+        "Şimdiki zaman",
+        "Geçmiş zaman",
+        "Gelecek zaman",
+        "Geniş zaman"
+      ],
+      "correctIndex": 2,
+      "hint": "'-eceğiz' eki hangi zamanı gösterir?"
+    },
+    {
+      "id": "q16",
+      "text": "'Her sabah erken kalkarım.' cümlesinde fiil hangi zamandadır?",
+      "options": [
+        "Şimdiki zaman",
+        "Geniş zaman",
+        "Geçmiş zaman",
+        "Gelecek zaman"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu cümle bir alışkanlığı/genel durumu anlatıyor - geniş zaman."
+    },
+    {
+      "id": "q17",
+      "text": "Zorlayıcı soru: 'Duyduğuma göre sınavı geçmiş.' cümlesinde neden 'geçmiş' (duyulan geçmiş zaman) kullanılmıştır?",
+      "options": [
+        "Konuşan bizzat tanık olmuş",
+        "Konuşan bu bilgiyi başkasından duymuş",
+        "Bu, gelecek zamandır",
+        "Hiçbir sebebi yoktur"
+      ],
+      "correctIndex": 1,
+      "hint": "'Duyduğuma göre' ifadesi, bilginin başkasından geldiğini gösterir - bu yüzden duyulan geçmiş zaman kullanılır."
+    },
+    {
+      "id": "q18",
+      "text": "Fiillere gelerek onların zamanını, kişisini veya durumunu belirten eklere ne denir?",
+      "options": [
+        "Yapım eki",
+        "Çekim eki",
+        "Kök",
+        "Gövde"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu ekler, kelimenin temel anlamını değiştirmez, sadece görevini/durumunu belirtir."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Bugün en çok hangi zamanı (geçmiş, şimdiki, gelecek) kullanarak konuştun?",
+    "options": [
+      "Geçmiş zaman",
+      "Şimdiki zaman",
+      "Gelecek zaman",
+      "Hepsini kullandım"
+    ],
+    "correctIndex": 3,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

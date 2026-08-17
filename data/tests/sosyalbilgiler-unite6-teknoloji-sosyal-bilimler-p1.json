@@ -1,0 +1,239 @@
+{
+  "id": "sosyalbilgiler-unite6-teknoloji-sosyal-bilimler-p1",
+  "subject": "Sosyal Bilgiler",
+  "title": "Ünite 6 - Teknoloji ve Sosyal Bilimler (1/4)",
+  "week": 6,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Teknolojinin toplumsal hayata olan etkisi genel olarak nasıl tanımlanabilir?",
+      "options": [
+        "Hiçbir etkisi yoktur",
+        "İletişim, eğitim ve günlük yaşamı önemli ölçüde değiştirmiştir",
+        "Sadece olumsuz etkileri vardır",
+        "Sadece belirli kişileri etkiler"
+      ],
+      "correctIndex": 1,
+      "hint": "Teknoloji, hayatımızın birçok alanında değişim yaratmıştır."
+    },
+    {
+      "id": "q2",
+      "text": "İnternetin icadı, insanlar arasındaki iletişimi nasıl etkilemiştir?",
+      "options": [
+        "İletişimi imkansız hale getirmiştir",
+        "Mesafelere rağmen hızlı iletişim kurmayı kolaylaştırmıştır",
+        "Hiçbir etkisi olmamıştır",
+        "İletişimi yavaşlatmıştır"
+      ],
+      "correctIndex": 1,
+      "hint": "İnternet, dünyanın farklı yerlerindeki insanları anında birbirine bağlayabilir."
+    },
+    {
+      "id": "q3",
+      "text": "'Medya okuryazarlığı' kavramı ne anlama gelir?",
+      "options": [
+        "Sadece kitap okuyabilme becerisi",
+        "Medya içeriklerini eleştirel bir şekilde değerlendirebilme becerisi",
+        "Hiçbir anlamı yoktur",
+        "Sadece televizyon izleyebilme"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu beceri, gördüğümüz/okuduğumuz bilgileri sorgulayabilmeyi içerir."
+    },
+    {
+      "id": "q4",
+      "text": "İnternette karşılaşılan bir haberin doğruluğunu kontrol etmeden paylaşmak neden risklidir?",
+      "options": [
+        "Hiçbir riski yoktur",
+        "Yanlış bilginin (dezenformasyonun) yayılmasına katkıda bulunabilir",
+        "Her zaman doğru bilgi yayılır",
+        "Paylaşmak hiçbir sonuç doğurmaz"
+      ],
+      "correctIndex": 1,
+      "hint": "Doğrulanmamış bilgiler, yanlış anlaşılmalara ve yanlış bilgilendirmeye yol açabilir."
+    },
+    {
+      "id": "q5",
+      "text": "Aşağıdakilerden hangisi güvenilir bir bilgi kaynağı olma ihtimali daha yüksektir?",
+      "options": [
+        "Kaynağı belirsiz bir sosyal medya paylaşımı",
+        "Resmi ve tanınmış bir kurumun yayını",
+        "Anonim bir forum yorumu",
+        "Kimin yazdığı belli olmayan bir mesaj"
+      ],
+      "correctIndex": 1,
+      "hint": "Güvenilirlik, kaynağın şeffaflığı ve itibarıyla ilgilidir."
+    },
+    {
+      "id": "q6",
+      "text": "Teknolojinin eğitime katkılarından biri nedir?",
+      "options": [
+        "Hiçbir katkısı yoktur",
+        "Uzaktan eğitim ve çevrimiçi kaynaklara erişimi mümkün kılması",
+        "Eğitimi imkansız hale getirmesi",
+        "Sadece eğlence sağlaması"
+      ],
+      "correctIndex": 1,
+      "hint": "Teknoloji, öğrencilerin farklı kaynaklara ve derslere erişimini kolaylaştırabilir."
+    },
+    {
+      "id": "q7",
+      "text": "Aşırı ekran süresinin olası bir olumsuz etkisi nedir?",
+      "options": [
+        "Hiçbir olumsuz etkisi yoktur",
+        "Göz yorgunluğu ve uyku düzensizliği gibi sorunlara yol açabilir",
+        "Her zaman faydalıdır",
+        "Fiziksel aktiviteyi artırır"
+      ],
+      "correctIndex": 1,
+      "hint": "Uzun süreli ekran kullanımı, çeşitli sağlık etkilerine sahip olabilir."
+    },
+    {
+      "id": "q8",
+      "text": "Bir öğrencinin ekran süresini dengeli kullanması neden önemlidir?",
+      "options": [
+        "Hiçbir önemi yoktur",
+        "Fiziksel aktivite, sosyal ilişkiler ve dinlenme için zaman ayırabilmesi için",
+        "Ekran süresinin sınırı olmamalıdır",
+        "Sadece eğlence içindir"
+      ],
+      "correctIndex": 1,
+      "hint": "Dengeli bir yaşam tarzı, farklı aktiviteler arasında denge kurmayı gerektirir."
+    },
+    {
+      "id": "q9",
+      "text": "Aşağıdakilerden hangisi internette kişisel bilgileri korumanın bir yoludur?",
+      "options": [
+        "Şifreleri herkesle paylaşmak",
+        "Güçlü ve gizli şifreler kullanmak",
+        "Kişisel bilgileri her yerde paylaşmak",
+        "Tanımadığı kişilerle özel bilgi paylaşmak"
+      ],
+      "correctIndex": 1,
+      "hint": "Güçlü şifreler, hesapların güvenliğini korumaya yardımcı olur."
+    },
+    {
+      "id": "q10",
+      "text": "'Siber zorbalık' (cyberbullying) kavramı ne anlama gelir?",
+      "options": [
+        "İnternet üzerinden birine kasıtlı zarar verecek şekilde davranmak",
+        "Arkadaşça internet sohbeti yapmak",
+        "Hiçbir anlamı yoktur",
+        "İnternette oyun oynamak"
+      ],
+      "correctIndex": 0,
+      "hint": "Bu, dijital ortamda yapılan bir tür zorbalıktır."
+    },
+    {
+      "id": "q11",
+      "text": "Siber zorbalığa maruz kalan bir kişinin yapması gereken en doğru şey nedir?",
+      "options": [
+        "Durumu güvendiği bir yetişkine anlatmak",
+        "Sessiz kalıp hiçbir şey yapmamak",
+        "Aynı şekilde karşılık vermek",
+        "Durumu görmezden gelmek"
+      ],
+      "correctIndex": 0,
+      "hint": "Güvenilir bir yetişkinden destek almak, bu tür durumlarla başa çıkmanın önemli bir yoludur."
+    },
+    {
+      "id": "q12",
+      "text": "Aşağıdakilerden hangisi internet kullanırken dikkat edilmesi gereken bir güvenlik kuralıdır?",
+      "options": [
+        "Tanımadığı kişilerle kişisel bilgi paylaşmamak",
+        "Her bağlantıya tıklamak",
+        "Şifreleri kolay tahmin edilebilir yapmak",
+        "Kişisel bilgileri herkese açık paylaşmak"
+      ],
+      "correctIndex": 0,
+      "hint": "Kişisel güvenlik, dikkatli ve bilinçli internet kullanımını gerektirir."
+    },
+    {
+      "id": "q13",
+      "text": "Teknolojinin sosyal bilimlerle (tarih, coğrafya vb.) ilişkisi nasıl açıklanabilir?",
+      "options": [
+        "Hiçbir ilişkisi yoktur",
+        "Teknoloji, sosyal bilimler alanındaki araştırma ve öğrenmeyi kolaylaştırabilir",
+        "Teknoloji sosyal bilimlere zarar verir",
+        "İkisi tamamen bağımsızdır"
+      ],
+      "correctIndex": 1,
+      "hint": "Dijital haritalar, çevrimiçi arşivler gibi araçlar, sosyal bilim araştırmalarına katkı sağlar."
+    },
+    {
+      "id": "q14",
+      "text": "Aşağıdakilerden hangisi teknolojinin tarih araştırmalarına katkısına bir örnektir?",
+      "options": [
+        "Dijital arşivlerin oluşturulması",
+        "Tarihi eserlerin yok edilmesi",
+        "Hiçbir katkısı yoktur",
+        "Araştırmayı imkansız hale getirmesi"
+      ],
+      "correctIndex": 0,
+      "hint": "Dijitalleştirme, tarihi belgelere erişimi kolaylaştırır."
+    },
+    {
+      "id": "q15",
+      "text": "GPS (Küresel Konumlama Sistemi) teknolojisi hangi alanda kullanılabilir?",
+      "options": [
+        "Sadece eğlence amaçlı",
+        "Harita ve konum belirleme, coğrafya çalışmaları",
+        "Sadece müzik dinlemek için",
+        "Hiçbir alanda kullanılmaz"
+      ],
+      "correctIndex": 1,
+      "hint": "GPS, konum bilgisi sağlayarak coğrafi çalışmalara yardımcı olur."
+    },
+    {
+      "id": "q16",
+      "text": "Aşağıdakilerden hangisi 'dijital vatandaşlık' kavramını en iyi açıklar?",
+      "options": [
+        "İnternet ve teknolojiyi sorumlu ve bilinçli şekilde kullanma becerisi",
+        "Sadece internet kullanmak",
+        "Hiçbir anlamı yoktur",
+        "Teknolojiden tamamen kaçınmak"
+      ],
+      "correctIndex": 0,
+      "hint": "Dijital vatandaşlık, çevrimiçi ortamda doğru davranışları içerir."
+    },
+    {
+      "id": "q17",
+      "text": "Aşağıdakilerden hangisi iyi bir dijital vatandaşlık davranışıdır?",
+      "options": [
+        "Başkalarına internette saygılı davranmak",
+        "Başkalarına internette hakaret etmek",
+        "Yanlış bilgi yaymak",
+        "Kişisel bilgileri izinsiz paylaşmak"
+      ],
+      "correctIndex": 0,
+      "hint": "Saygılı iletişim, çevrimiçi ortamda da geçerlidir."
+    },
+    {
+      "id": "q18",
+      "text": "Teknolojik gelişmelerin iş dünyasına etkisi nasıl açıklanabilir?",
+      "options": [
+        "Hiçbir etkisi yoktur",
+        "Yeni meslekler ortaya çıkarken bazı geleneksel işler değişebilir",
+        "İş dünyasını tamamen durdurur",
+        "Sadece olumsuz etkileri vardır"
+      ],
+      "correctIndex": 1,
+      "hint": "Teknoloji, iş yapma şekillerini ve meslekleri zaman içinde dönüştürebilir."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Bugün internette bir bilgiyi doğrulamayı denedin mi?",
+    "options": [
+      "Evet, denedim",
+      "Henüz denemedim ama önemli olduğunu biliyorum",
+      "Hatırlamıyorum",
+      "Söylemek istemiyorum"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

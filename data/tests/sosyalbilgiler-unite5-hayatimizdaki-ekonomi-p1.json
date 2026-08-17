@@ -1,0 +1,239 @@
+{
+  "id": "sosyalbilgiler-unite5-hayatimizdaki-ekonomi-p1",
+  "subject": "Sosyal Bilgiler",
+  "title": "Ünite 5 - Hayatımızdaki Ekonomi (1/4)",
+  "week": 5,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Sınırlı olan kaynakları verimli kullanmak neden önemlidir?",
+      "options": [
+        "Hiçbir önemi yoktur",
+        "Kaynakların israf edilmeden uzun süre kullanılabilmesi için",
+        "Kaynaklar sonsuzdur, önemi yoktur",
+        "Sadece zenginler için önemlidir"
+      ],
+      "correctIndex": 1,
+      "hint": "Kaynaklar sınırlıdır, bu yüzden dikkatli kullanılmalıdır."
+    },
+    {
+      "id": "q2",
+      "text": "Bir ailenin gelir ve giderlerini planladığı listeye ne denir?",
+      "options": [
+        "Fatura",
+        "Bütçe",
+        "Makbuz",
+        "Senet"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu plan, ne kadar para geldiğini ve ne kadar harcanacağını gösterir."
+    },
+    {
+      "id": "q3",
+      "text": "Bir bütçe hazırlarken ilk adım genellikle nedir?",
+      "options": [
+        "Harcamaları rastgele yapmak",
+        "Geliri ve giderleri belirlemek",
+        "Hiçbir plan yapmamak",
+        "Sadece harcama yapmak"
+      ],
+      "correctIndex": 1,
+      "hint": "Bütçe, ne kadar gelir olduğunu ve nereye harcanacağını planlamayı içerir."
+    },
+    {
+      "id": "q4",
+      "text": "Bir kişinin harcamaları gelirinden fazla olursa ne olur?",
+      "options": [
+        "Hiçbir sorun oluşmaz",
+        "Borçlanma riski oluşabilir",
+        "Otomatik olarak tasarruf artar",
+        "Gelir otomatik olarak artar"
+      ],
+      "correctIndex": 1,
+      "hint": "Gelirden fazla harcama yapmak, mali sorunlara yol açabilir."
+    },
+    {
+      "id": "q5",
+      "text": "Aşağıdakilerden hangisi 'tasarruf' kavramını tanımlar?",
+      "options": [
+        "Parayı hemen harcamak",
+        "Gelirin bir kısmını harcamayıp biriktirmek",
+        "Hiç para kazanmamak",
+        "Borç almak"
+      ],
+      "correctIndex": 1,
+      "hint": "Tasarruf, gelecekteki ihtiyaçlar için para biriktirmektir."
+    },
+    {
+      "id": "q6",
+      "text": "Tasarruf yapmanın faydalarından biri nedir?",
+      "options": [
+        "Hiçbir faydası yoktur",
+        "Beklenmedik durumlar için bir güvence oluşturur",
+        "Parayı israf etmeyi kolaylaştırır",
+        "Sadece zenginleri ilgilendirir"
+      ],
+      "correctIndex": 1,
+      "hint": "Biriktirilen para, acil durumlarda veya gelecekteki hedefler için kullanılabilir."
+    },
+    {
+      "id": "q7",
+      "text": "Bir ürünün üretilip satıldığı, insanların alışveriş yaptığı sisteme genel olarak ne denir?",
+      "options": [
+        "Siyaset",
+        "Ekonomi",
+        "Coğrafya",
+        "Tarih"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu kavram, üretim, tüketim ve ticaret faaliyetlerini kapsar."
+    },
+    {
+      "id": "q8",
+      "text": "Bir bölgenin denize kıyısı olması, hangi ekonomik faaliyeti destekler?",
+      "options": [
+        "Balıkçılık ve deniz ticareti",
+        "Sadece kayak turizmi",
+        "Sadece madencilik",
+        "Hiçbir ekonomik faaliyeti desteklemez"
+      ],
+      "correctIndex": 0,
+      "hint": "Deniz kıyısı, su ile ilgili ekonomik faaliyetlere elverişlidir."
+    },
+    {
+      "id": "q9",
+      "text": "Verimli tarım toprağına sahip bir bölgede hangi ekonomik faaliyet daha yaygın olur?",
+      "options": [
+        "Balıkçılık",
+        "Tarım",
+        "Madencilik",
+        "Turizm sadece"
+      ],
+      "correctIndex": 1,
+      "hint": "Verimli topraklar, tarımsal üretime uygundur."
+    },
+    {
+      "id": "q10",
+      "text": "Bir bölgede yer altı kaynakları (maden vb.) bulunması, hangi ekonomik faaliyeti destekleyebilir?",
+      "options": [
+        "Madencilik",
+        "Balıkçılık",
+        "Ormancılık",
+        "Hiçbirini desteklemez"
+      ],
+      "correctIndex": 0,
+      "hint": "Yer altı zenginlikleri, madencilik faaliyetlerine olanak sağlar."
+    },
+    {
+      "id": "q11",
+      "text": "Aşağıdakilerden hangisi 'ihtiyaç' ile 'istek' arasındaki farkı en iyi açıklar?",
+      "options": [
+        "İhtiyaç yaşamak için gereklidir, istek ise gerekli olmayan ama arzu edilen şeydir",
+        "İkisi arasında hiç fark yoktur",
+        "İstek her zaman ihtiyaçtan önce gelir",
+        "İhtiyaçlar hiç önemli değildir"
+      ],
+      "correctIndex": 0,
+      "hint": "Yemek bir ihtiyaç, lüks bir oyuncak ise genellikle bir istektir."
+    },
+    {
+      "id": "q12",
+      "text": "Aşağıdakilerden hangisi bir 'temel ihtiyaç' örneğidir?",
+      "options": [
+        "Barınma",
+        "Lüks bir araba",
+        "Pahalı bir oyuncak",
+        "Yeni çıkan bir oyun konsolu"
+      ],
+      "correctIndex": 0,
+      "hint": "Barınma, insanın hayatta kalması için gerekli temel ihtiyaçlardan biridir."
+    },
+    {
+      "id": "q13",
+      "text": "Bir bütçe yaparken 'öncelik sırası' belirlemenin faydası nedir?",
+      "options": [
+        "Hiçbir faydası yoktur",
+        "En önemli ihtiyaçlara önce kaynak ayrılmasını sağlar",
+        "Harcamaları rastgele yapmaya yardımcı olur",
+        "Sadece isteklere odaklanmayı sağlar"
+      ],
+      "correctIndex": 1,
+      "hint": "Öncelik belirlemek, kaynakların akıllıca kullanılmasına yardımcı olur."
+    },
+    {
+      "id": "q14",
+      "text": "Bir öğrencinin harçlığını akıllıca yönetmesi için hangi davranış önerilir?",
+      "options": [
+        "Tüm parayı hemen harcamak",
+        "Bir kısmını biriktirip planlı harcamak",
+        "Parayı kaybetmek",
+        "Hiç düşünmeden harcamak"
+      ],
+      "correctIndex": 1,
+      "hint": "Planlı harcama, akıllı bir mali yönetim alışkanlığıdır."
+    },
+    {
+      "id": "q15",
+      "text": "Aşağıdakilerden hangisi bir 'üretici' rolüne örnektir?",
+      "options": [
+        "Bir ürünü satın alan kişi",
+        "Bir çiftçi ürün yetiştiren",
+        "Bir ürünü kullanan kişi",
+        "Hiçbiri"
+      ],
+      "correctIndex": 1,
+      "hint": "Üretici, mal veya hizmet ortaya koyan kişi/kurumdur."
+    },
+    {
+      "id": "q16",
+      "text": "Aşağıdakilerden hangisi bir 'tüketici' rolüne örnektir?",
+      "options": [
+        "Bir marketten alışveriş yapan kişi",
+        "Bir fabrikada ürün üreten kişi",
+        "Bir çiftçi",
+        "Bir tasarımcı"
+      ],
+      "correctIndex": 0,
+      "hint": "Tüketici, üretilen mal ve hizmetleri satın alıp kullanan kişidir."
+    },
+    {
+      "id": "q17",
+      "text": "Bir ürünün fiyatını genel olarak neler etkileyebilir?",
+      "options": [
+        "Sadece rengi",
+        "Arz (üretim miktarı) ve talep (istek miktarı)",
+        "Hiçbir şey etkilemez",
+        "Sadece hava durumu"
+      ],
+      "correctIndex": 1,
+      "hint": "Bu iki kavram, ekonomide fiyat oluşumunu etkileyen temel unsurlardandır."
+    },
+    {
+      "id": "q18",
+      "text": "Bir ürüne olan talep arttığında (arz sabit kalırsa) fiyat genellikle nasıl etkilenir?",
+      "options": [
+        "Düşer",
+        "Artabilir",
+        "Hiç değişmez",
+        "Sıfıra iner"
+      ],
+      "correctIndex": 1,
+      "hint": "Talep arttıkça, genellikle fiyat üzerinde yukarı yönlü bir baskı oluşabilir."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Harçlığının bir kısmını biriktiriyor musun?",
+    "options": [
+      "Evet, düzenli biriktiriyorum",
+      "Bazen biriktiriyorum",
+      "Hayır, hemen harcıyorum",
+      "Henüz harçlığım yok"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}

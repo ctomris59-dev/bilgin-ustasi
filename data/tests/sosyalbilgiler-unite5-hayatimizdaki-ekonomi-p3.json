@@ -1,0 +1,227 @@
+{
+  "id": "sosyalbilgiler-unite5-hayatimizdaki-ekonomi-p3",
+  "subject": "Sosyal Bilgiler",
+  "title": "Ünite 5 - Hayatımızdaki Ekonomi (3/4)",
+  "week": 5,
+  "gradeLevel": "Orta 1 (Standart)",
+  "targetSecondsPerQuestion": 45,
+  "hintsAllowed": 2,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Aşağıdakilerden hangisi 'ekonomik faaliyet' örneği DEĞİLDİR?",
+      "options": [
+        "Bir ürünü satmak",
+        "Bir hizmet sunmak",
+        "Bir şarkı dinlemek",
+        "Bir ürün üretmek"
+      ],
+      "correctIndex": 2,
+      "hint": "Şarkı dinlemek, doğrudan bir ekonomik üretim/tüketim faaliyeti değildir."
+    },
+    {
+      "id": "q2",
+      "text": "Bir çiftçinin ürettiği ürünleri pazara götürüp satması hangi ekonomik döngünün bir parçasıdır?",
+      "options": [
+        "Üretim ve ticaret",
+        "Sadece tüketim",
+        "Hiçbir ekonomik döngünün parçası değildir",
+        "Sadece eğlence"
+      ],
+      "correctIndex": 0,
+      "hint": "Üretim yapıp satmak, ekonomik faaliyetin temel bir örneğidir."
+    },
+    {
+      "id": "q3",
+      "text": "Aşağıdakilerden hangisi bir 'hizmet sektörü' örneğidir?",
+      "options": [
+        "Bir berberlik hizmeti",
+        "Bir buğday tarlası",
+        "Bir maden ocağı",
+        "Bir balıkçı teknesi"
+      ],
+      "correctIndex": 0,
+      "hint": "Hizmet sektörü, fiziksel bir ürün değil bir hizmet sunar."
+    },
+    {
+      "id": "q4",
+      "text": "Zorlayıcı soru: Bir aile, aylık gelirlerinin %70'ini zorunlu giderlere, %20'sini tasarrufa, %10'unu eğlenceye ayırıyor. Bu plan hangi kavramın bir örneğidir?",
+      "options": [
+        "Dengeli bir bütçe planlaması",
+        "İsraf",
+        "Borçlanma",
+        "Hiçbir kavramın örneği değildir"
+      ],
+      "correctIndex": 0,
+      "hint": "Gelirin farklı kategorilere planlı şekilde dağıtılması, bütçelemenin bir örneğidir."
+    },
+    {
+      "id": "q5",
+      "text": "Aşağıdakilerden hangisi tarım sektörüne örnektir?",
+      "options": [
+        "Buğday yetiştiriciliği",
+        "Otomobil üretimi",
+        "Bilgisayar programlama",
+        "Bankacılık"
+      ],
+      "correctIndex": 0,
+      "hint": "Bu faaliyet, toprakla ilgili üretim faaliyetidir."
+    },
+    {
+      "id": "q6",
+      "text": "Aşağıdakilerden hangisi sanayi (üretim) sektörüne örnektir?",
+      "options": [
+        "Bir fabrikada araba üretmek",
+        "Balık avlamak",
+        "Buğday ekmek",
+        "Bir dükkanda satış yapmak"
+      ],
+      "correctIndex": 0,
+      "hint": "Sanayi sektörü, hammaddeyi işleyerek ürün üretmeyi içerir."
+    },
+    {
+      "id": "q7",
+      "text": "Bir bölgede sanayi tesislerinin (fabrikaların) yoğun olması, o bölgenin ekonomisi hakkında ne söyler?",
+      "options": [
+        "Bölgenin sanayi/üretim odaklı bir ekonomiye sahip olabileceğini",
+        "Hiçbir şey söylemez",
+        "Bölgenin tarım odaklı olduğunu",
+        "Bölgenin turizm odaklı olduğunu"
+      ],
+      "correctIndex": 0,
+      "hint": "Yoğun sanayi varlığı, o bölgenin ekonomik yapısını yansıtabilir."
+    },
+    {
+      "id": "q8",
+      "text": "Aşağıdakilerden hangisi 'hizmet' örneği DEĞİLDİR?",
+      "options": [
+        "Bir öğretmenin ders vermesi",
+        "Bir doktorun muayene yapması",
+        "Bir tarım ürününün yetiştirilmesi",
+        "Bir berberin saç kesmesi"
+      ],
+      "correctIndex": 2,
+      "hint": "Tarım ürünü yetiştirmek, üretim faaliyetidir, hizmet değil."
+    },
+    {
+      "id": "q9",
+      "text": "Zorlayıcı soru: Bir öğrenci, harçlığının tamamını hemen harcamak yerine bir kısmını gelecekteki bir hedef (örneğin bisiklet almak) için biriktiriyor. Bu davranışın uzun vadeli faydası nedir?",
+      "options": [
+        "Hiçbir faydası yoktur",
+        "Hedefine ulaşmasını sağlayacak bir mali disiplin kazandırır",
+        "Parasını kaybetmesine sebep olur",
+        "Sadece zaman kaybettirir"
+      ],
+      "correctIndex": 1,
+      "hint": "Düzenli biriktirme, hedeflere ulaşmada etkili bir stratejidir."
+    },
+    {
+      "id": "q10",
+      "text": "Aşağıdakilerden hangisi 'bilinçli tüketici' davranışına örnektir?",
+      "options": [
+        "Ürünün ihtiyaca uygun olup olmadığını değerlendirmek",
+        "Reklamlara bakmadan her ürünü almak",
+        "Bütçeyi hiç düşünmemek",
+        "Sadece markaya göre karar vermek"
+      ],
+      "correctIndex": 0,
+      "hint": "İhtiyaç değerlendirmesi, bilinçli tüketimin önemli bir parçasıdır."
+    },
+    {
+      "id": "q11",
+      "text": "Aynı ülke sınırları içinde yapılan ürün alışverişine ne denir?",
+      "options": [
+        "İç ticaret",
+        "Dış ticaret",
+        "Hiçbiri",
+        "Yalnızca ihracat"
+      ],
+      "correctIndex": 0,
+      "hint": "Ülke sınırları içinde kalan ticarete bu ad verilir."
+    },
+    {
+      "id": "q12",
+      "text": "Farklı ülkeler arasında yapılan ürün alışverişine ne denir?",
+      "options": [
+        "İç ticaret",
+        "Dış ticaret (uluslararası ticaret)",
+        "Hiçbiri",
+        "Yalnızca yerel ticaret"
+      ],
+      "correctIndex": 1,
+      "hint": "Ülke sınırlarını aşan ticarete bu ad verilir."
+    },
+    {
+      "id": "q13",
+      "text": "Aşağıdakilerden hangisi 'ihracat' kavramını tanımlar?",
+      "options": [
+        "Yurt dışına ürün satmak",
+        "Yurt dışından ürün almak",
+        "Hiçbir anlamı yoktur",
+        "Sadece yurt içi satış"
+      ],
+      "correctIndex": 0,
+      "hint": "İhracat, bir ülkenin ürünlerini başka ülkelere satmasıdır."
+    },
+    {
+      "id": "q14",
+      "text": "Aşağıdakilerden hangisi 'ithalat' kavramını tanımlar?",
+      "options": [
+        "Yurt dışına ürün satmak",
+        "Yurt dışından ürün satın almak",
+        "Hiçbir anlamı yoktur",
+        "Sadece yurt içi üretim"
+      ],
+      "correctIndex": 1,
+      "hint": "İthalat, bir ülkenin başka ülkelerden ürün satın almasıdır."
+    },
+    {
+      "id": "q15",
+      "text": "Zorlayıcı soru: Bir ülke, kendi üretemediği bir ürünü başka bir ülkeden satın alıyor. Bu işlem nasıl adlandırılır?",
+      "options": [
+        "İhracat",
+        "İthalat",
+        "Hiçbir işlem değildir",
+        "Sadece bağış"
+      ],
+      "correctIndex": 1,
+      "hint": "Dışarıdan alım yapmak, ithalat olarak tanımlanır."
+    },
+    {
+      "id": "q16",
+      "text": "Aşağıdakilerden hangisi 'ekonomik kalkınma' kavramıyla ilişkilidir?",
+      "options": [
+        "Bir ülkenin üretim ve refah düzeyinin zamanla iyileşmesi",
+        "Hiçbir anlamı yoktur",
+        "Sadece nüfusun azalması",
+        "Sadece hava durumu değişimi"
+      ],
+      "correctIndex": 0,
+      "hint": "Ekonomik kalkınma, bir toplumun refah seviyesindeki gelişmeyi ifade eder."
+    },
+    {
+      "id": "q17",
+      "text": "Bir bölgede eğitim seviyesinin yükselmesi, o bölgenin ekonomisine nasıl katkı sağlayabilir?",
+      "options": [
+        "Hiçbir katkısı olmaz",
+        "Daha nitelikli iş gücü ve yenilikçi fikirler ortaya çıkabilir",
+        "Ekonomiyi olumsuz etkiler",
+        "Sadece eğlence sektörünü etkiler"
+      ],
+      "correctIndex": 1,
+      "hint": "Eğitimli iş gücü, genellikle ekonomik gelişmeye olumlu katkı sağlar."
+    }
+  ],
+  "bonusQuestion": {
+    "text": "Günün bonus sorusu: Harçlığının bir kısmını biriktiriyor musun?",
+    "options": [
+      "Evet, düzenli biriktiriyorum",
+      "Bazen biriktiriyorum",
+      "Hayır, hemen harcıyorum",
+      "Henüz harçlığım yok"
+    ],
+    "correctIndex": 0,
+    "isParentBonus": true,
+    "note": "Bu soruyu ebeveyn paneline girdiğin herhangi bir şeyle değiştirebilirsin."
+  }
+}
