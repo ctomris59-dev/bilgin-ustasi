@@ -19,6 +19,8 @@ export default function Shop({ profile, onBuyItem, onRedeemReward, selectedItem,
   const [sort, setSort] = useState("recommended");
   const [showOwned, setShowOwned] = useState(true);
   const [section, setSection] = useState("items");
+  const [page, setPage] = useState(1);
+  const pageSize = 20;
 
   const level = getLevelInfo(profile.xp || 0).current.level;
   const owned = useMemo(() => new Set(profile.unlockedItems || []), [profile.unlockedItems]);
@@ -44,11 +46,17 @@ export default function Shop({ profile, onBuyItem, onRedeemReward, selectedItem,
     });
   }, [category, enriched, level, owned, query, rarity, section, showOwned, sort]);
 
+  const pageCount = Math.max(1, Math.ceil(visible.length / pageSize));
+  const pagedVisible = useMemo(() => visible.slice((page - 1) * pageSize, page * pageSize), [visible, page]);
+
+  useEffect(() => { setPage(1); }, [category, rarity, query, sort, showOwned, section]);
+  useEffect(() => { if (page > pageCount) setPage(pageCount); }, [page, pageCount]);
+
   useEffect(() => {
     if (section !== "items") return;
-    if (!selectedItem && visible[0]) onSelectItem?.(visible[0]);
-    if (selectedItem && !visible.some((item) => item.id === selectedItem.id) && visible[0]) onSelectItem?.(visible[0]);
-  }, [visible, selectedItem, onSelectItem, section]);
+    if (!selectedItem && pagedVisible[0]) onSelectItem?.(pagedVisible[0]);
+    if (selectedItem && !pagedVisible.some((item) => item.id === selectedItem.id) && pagedVisible[0]) onSelectItem?.(pagedVisible[0]);
+  }, [pagedVisible, selectedItem, onSelectItem, section]);
 
   const purchasable = visible.filter((item) => !owned.has(item.id) && item.world.unlockLevel <= level && profile.coins >= item.price && !item.legendary).length;
   const currentWorld = visible.find((item) => item.world.unlockLevel <= level)?.world;
@@ -106,7 +114,7 @@ export default function Shop({ profile, onBuyItem, onRedeemReward, selectedItem,
           </section>
 
           <section className="v4x-item-grid">
-            {visible.map((item) => {
+            {pagedVisible.map((item) => {
               const isOwned = owned.has(item.id);
               const isEquipped = isItemEquipped(profile, item);
               const locked = item.world.unlockLevel > level || item.legendary;
@@ -126,6 +134,14 @@ export default function Shop({ profile, onBuyItem, onRedeemReward, selectedItem,
               );
             })}
           </section>
+
+          {visible.length > 0 && <nav className="v43-pagination" aria-label="Dükkan sayfaları">
+            <button disabled={page <= 1} onClick={() => setPage((v) => Math.max(1, v - 1))}>‹</button>
+            {Array.from({ length: pageCount }, (_, i) => i + 1).filter((n) => n === 1 || n === pageCount || Math.abs(n - page) <= 2).map((n, i, arr) => <span key={n} className="v43-page-frag">{i > 0 && n - arr[i - 1] > 1 && <i>…</i>}<button className={n === page ? "is-active" : ""} onClick={() => setPage(n)}>{n}</button></span>)}
+            <button disabled={page >= pageCount} onClick={() => setPage((v) => Math.min(pageCount, v + 1))}>›</button>
+          </nav>}
+
+          <section className="v43-shop-loop-banner"><div><span>01</span><strong>Ders Çalış</strong><small>Bilgini güçlendir</small></div><i>→</i><div><span>02</span><strong>Test Çöz</strong><small>XP + coin kazan</small></div><i>→</i><div><span>03</span><strong>Item Aç</strong><small>Karakterini geliştir</small></div><i>→</i><div><span>04</span><strong>Yeni Dünya</strong><small>Macera devam etsin</small></div></section>
 
           {visible.length === 0 && <div className="v4x-empty"><span>◇</span><strong>Bu filtrede item yok</strong><small>Başka kategori veya nadirlik seç.</small></div>}
         </>
