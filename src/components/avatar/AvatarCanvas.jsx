@@ -1,21 +1,23 @@
 import { ITEMS } from "../../data/avatarParts";
-import { getAvatarPreset, getItemCardAsset } from "../../data/gameAssets";
+import { getCharacterStyleAsset } from "../../data/gameAssets";
 
-// V4.3.2: Build-safe wearable registry.
-// Wearable assets are loaded locally so AvatarCanvas does not depend on a
-// getWearableAsset named export from gameAssets.js. This makes the component
-// compatible with both older and newer gameAssets registries.
-const WEARABLE_MODULES = import.meta.glob(
-  "../../assets/game-assets/wearables/**/*.webp",
-  { eager: true, query: "?url", import: "default" }
-);
+const STYLE_BY_SET = {
+  gunluk: "blue",
+  buyulu: "casual",
+  deniz: "pink",
+  prens: "red",
+  uzay: "blue",
+  bilim: "street",
+  pijama: "pink",
+  kozmik: "blue",
+};
 
-const SLOT_ORDER = ["back", "outfit", "shoes", "headwear", "face"];
+function resolveRigStyle(avatar = {}) {
+  const explicit = avatar.characterStyle;
+  if (explicit && explicit !== "auto") return explicit;
 
-function getWearableAsset(item) {
-  if (!item?.id || !item?.slot) return "";
-  const key = `../../assets/game-assets/wearables/${item.slot}/${item.id}.webp`;
-  return WEARABLE_MODULES[key] || "";
+  const outfit = ITEMS.find((item) => item.id === avatar.outfit);
+  return STYLE_BY_SET[outfit?.set] || "blue";
 }
 
 export default function AvatarCanvas({
@@ -24,71 +26,30 @@ export default function AvatarCanvas({
   showEquipment = true,
   showBadges = false,
 }) {
-  const preset = getAvatarPreset(avatar);
-
-  const equipped = SLOT_ORDER
-    .map((slot) => ({
-      slot,
-      id: avatar?.[slot],
-      item: ITEMS.find((row) => row.id === avatar?.[slot]),
-    }))
-    .filter((row) => row.item);
+  const style = resolveRigStyle(avatar);
+  const preset = getCharacterStyleAsset(style);
+  const equippedCount = [avatar.outfit, avatar.shoes, avatar.headwear, avatar.face, avatar.back].filter(Boolean).length;
 
   return (
     <div
-      className="game-avatar v43-avatar relative isolate flex items-end justify-center"
+      className="game-avatar v44-avatar-rig"
       style={{ width: size, height: size * 1.25 }}
       role="img"
       aria-label="Kaşif avatarı"
+      data-rig-style={style}
     >
-      <div className="v43-avatar-aura" />
+      <div className="v44-avatar-aura" />
+      <img src={preset} alt="" draggable="false" className="v44-avatar-character" />
+      <div className="v44-avatar-floor" />
 
-      {showEquipment &&
-        equipped
-          .filter((row) => row.slot === "back")
-          .map((row) => (
-            <Wearable key={row.slot} row={row} className="is-back" />
-          ))}
+      {showEquipment && equippedCount > 0 && (
+        <div className="v44-rig-status" aria-hidden="true">
+          <span>✦</span>
+          <b>{equippedCount}</b>
+        </div>
+      )}
 
-      <img src={preset} alt="" draggable="false" className="v43-avatar-base" />
-
-      {showEquipment &&
-        equipped
-          .filter((row) => row.slot !== "back")
-          .map((row) => (
-            <Wearable
-              key={row.slot}
-              row={row}
-              className={`is-${row.slot}`}
-            />
-          ))}
-
-      {showBadges &&
-        equipped.map((row, index) => (
-          <div
-            className={`v43-avatar-mini-slot slot-${index}`}
-            key={`badge-${row.slot}`}
-            title={row.item.label}
-          >
-            <img src={getItemCardAsset(row.item)} alt="" />
-          </div>
-        ))}
-
-      <div className="v43-avatar-floor" />
+      {showBadges && <span className="v44-rig-label">RIG SAFE</span>}
     </div>
-  );
-}
-
-function Wearable({ row, className }) {
-  const src = getWearableAsset(row.item);
-  if (!src) return null;
-
-  return (
-    <img
-      src={src}
-      alt=""
-      draggable="false"
-      className={`v43-wearable ${className}`}
-    />
   );
 }
