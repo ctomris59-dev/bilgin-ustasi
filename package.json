@@ -1,11 +1,11 @@
 {
   "name": "bilgin-ustasi",
   "private": true,
-  "version": "5.1.3",
+  "version": "4.5.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run check:v5 && vite build",
+    "build": "vite build",
     "lint": "oxlint",
     "preview": "vite preview",
     "check:v4": "node scripts/validate-v4.mjs",
