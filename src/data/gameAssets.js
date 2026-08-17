@@ -78,7 +78,7 @@ export function getItemAsset(itemOrId, slotOverride) {
 
   if (!item.id || !item.slot) return "";
   const slot = normalizeSlot(item.slot);
-  return asset(`unique/${slot}/${item.id}.png`);
+  return asset(`premium/${slot}/${item.id}.webp`) || asset(`unique/${slot}/${item.id}.png`);
 }
 
 
@@ -91,9 +91,18 @@ export function getItemCardAsset(itemOrId, slotOverride) {
   return asset(`premium/${slot}/${item.id}.webp`) || getItemAsset(item);
 }
 
+export function getWearableAsset(itemOrId, slotOverride) {
+  const item = typeof itemOrId === "string"
+    ? { id: itemOrId, slot: slotOverride }
+    : itemOrId || {};
+  if (!item.id || !item.slot) return "";
+  const slot = normalizeSlot(item.slot);
+  return asset(`wearables/${slot}/${item.id}.webp`);
+}
+
 export function getPetAsset(petId) {
   if (!petId) return "";
-  return asset(`unique/petSpecies/${petId}.png`);
+  return asset(`premium/petSpecies/${petId}.webp`) || asset(`unique/petSpecies/${petId}.png`);
 }
 
 export function getHairAsset(hairId) {
@@ -106,19 +115,10 @@ export function getCharacterStyleAsset(styleId) {
 
 export function getAvatarPreset(avatar = {}) {
   const explicitStyle = avatar.characterStyle;
-  if (explicitStyle && explicitStyle !== "auto" && PRESETS[explicitStyle]) {
-    return PRESETS[explicitStyle];
-  }
-
-  const outfit = avatar.outfit || "";
-  const hair = avatar.hairStyle || "";
-
-  if (/summer|halloween|infinity|galaxy|cloud|christmas/i.test(outfit)) return PRESETS.pink;
-  if (/red|gold|prens|crystal/i.test(outfit)) return PRESETS.red;
-  if (/labcoat|robe|emerald|green/i.test(outfit)) return PRESETS.casual;
-  if (/bob|curly/i.test(hair)) return PRESETS.street;
-  if (/pigtail|braid|wavy|space-buns/i.test(hair)) return PRESETS.red;
-  return PRESETS.blue;
+  if (explicitStyle && explicitStyle !== "auto" && PRESETS[explicitStyle]) return PRESETS[explicitStyle];
+  // Auto mode deliberately uses the neutral street base; real equipment is rendered
+  // as aligned wearable layers by AvatarCanvas.
+  return PRESETS.street || PRESETS.blue;
 }
 
 export function getRarity(item = {}) {

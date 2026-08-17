@@ -10,6 +10,7 @@ export const SLOT_META = {
   shoes: { label: "Ayakkabı", category: "equipment", icon: "⌁" },
   headwear: { label: "Başlık", category: "equipment", icon: "△" },
   face: { label: "Aksesuar", category: "equipment", icon: "◎" },
+  back: { label: "Sırt Eşyası", category: "equipment", icon: "▰" },
   petSpecies: { label: "Keşif Dostu", category: "pets", icon: "✦" },
   petAccessory: { label: "Dost Aksesuarı", category: "pets", icon: "◇" },
   wallpaper: { label: "Duvar Teması", category: "room", icon: "▧" },
@@ -27,6 +28,7 @@ export const CATEGORY_FILTERS = [
   { id: "shoes", label: "Ayakkabı" },
   { id: "headwear", label: "Başlık" },
   { id: "face", label: "Aksesuar" },
+  { id: "back", label: "Sırt Eşyası" },
   { id: "pets", label: "Dostlar" },
   { id: "room", label: "Üs" },
 ];
@@ -54,7 +56,7 @@ export function getCatalogMeta(item) {
 
 export function isItemEquipped(profile, item) {
   if (!profile || !item) return false;
-  if (["outfit", "shoes", "headwear", "face"].includes(item.slot)) {
+  if (["outfit", "shoes", "headwear", "face", "back"].includes(item.slot)) {
     return profile.avatar?.[item.slot] === item.id;
   }
   if (item.slot === "petSpecies") return profile.pet?.activeSpecies === item.id;
@@ -69,7 +71,7 @@ export function isItemEquipped(profile, item) {
 
 export function filterCatalog(items, category) {
   if (!category || category === "all") return items;
-  if (category === "equipment") return items.filter((item) => ["outfit", "shoes", "headwear", "face"].includes(item.slot));
+  if (category === "equipment") return items.filter((item) => ["outfit", "shoes", "headwear", "face", "back"].includes(item.slot));
   if (category === "pets") return items.filter((item) => ["petSpecies", "petAccessory"].includes(item.slot));
   if (category === "room") return items.filter((item) => ["wallpaper", "rug", "desk", "lamp", "plant", "poster"].includes(item.slot));
   return items.filter((item) => item.slot === category);
