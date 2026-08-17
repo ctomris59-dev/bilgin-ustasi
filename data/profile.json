@@ -21,7 +21,8 @@
     "outfit": "outfit-tshirt",
     "shoes": "shoes-sneaker",
     "headwear": null,
-    "face": null
+    "face": null,
+    "back": null
   },
   "pet": {
     "activeSpecies": null,
@@ -251,6 +252,6 @@
     "lastRewardDate": null,
     "bestMoves": {}
   },
-  "lastSyncedAt": "2026-08-17T06:35:32.908Z",
+  "lastSyncedAt": "2026-08-17T10:45:16.879Z",
   "gems": 0
 }
