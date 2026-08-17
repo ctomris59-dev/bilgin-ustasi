@@ -14,14 +14,14 @@
     "shoes-sneaker"
   ],
   "avatar": {
+    "characterStyle": "auto",
     "skin": "skin-1",
     "hairStyle": "hair-space-buns",
     "hairColor": "#FF9EAA",
     "outfit": "outfit-tshirt",
     "shoes": "shoes-sneaker",
     "headwear": null,
-    "face": null,
-    "characterStyle": "auto"
+    "face": null
   },
   "pet": {
     "activeSpecies": null,
@@ -251,6 +251,6 @@
     "lastRewardDate": null,
     "bestMoves": {}
   },
-  "lastSyncedAt": "2026-08-16T12:54:18.227Z",
+  "lastSyncedAt": "2026-08-17T06:35:21.642Z",
   "gems": 0
 }
