@@ -2,7 +2,7 @@
   "childName": "Bilgin Adayı",
   "accountCreatedAt": "2026-08-16T11:49:54.152Z",
   "xp": 282,
-  "coins": 132,
+  "coins": 32,
   "streak": {
     "current": 2,
     "longest": 2,
@@ -11,7 +11,8 @@
   },
   "unlockedItems": [
     "outfit-tshirt",
-    "shoes-sneaker"
+    "shoes-sneaker",
+    "face-v4-archive-monocle"
   ],
   "avatar": {
     "characterStyle": "pink",
@@ -264,6 +265,6 @@
     "lastRewardDate": null,
     "bestMoves": {}
   },
-  "lastSyncedAt": "2026-08-17T11:12:17.841Z",
+  "lastSyncedAt": "2026-08-17T11:12:38.452Z",
   "gems": 0
 }
