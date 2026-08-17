@@ -22,7 +22,7 @@
     "outfit": "outfit-tshirt",
     "shoes": "shoes-sneaker",
     "headwear": null,
-    "face": null,
+    "face": "face-v4-archive-monocle",
     "back": null
   },
   "pet": {
@@ -265,6 +265,6 @@
     "lastRewardDate": null,
     "bestMoves": {}
   },
-  "lastSyncedAt": "2026-08-17T13:34:22.633Z",
+  "lastSyncedAt": "2026-08-17T13:34:23.532Z",
   "gems": 0
 }
