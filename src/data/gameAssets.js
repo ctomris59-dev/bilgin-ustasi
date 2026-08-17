@@ -1,5 +1,5 @@
 /*
- * Bilgin Ustası V3 asset registry
+ * Bilgin Ustası V4.3.1 asset registry — wearable export hotfix
  *
  * V3 rule: every inventory item has exactly one dedicated artwork file.
  * No hash based / random slot assignment remains.
@@ -91,14 +91,14 @@ export function getItemCardAsset(itemOrId, slotOverride) {
   return asset(`premium/${slot}/${item.id}.webp`) || getItemAsset(item);
 }
 
-export function getWearableAsset(itemOrId, slotOverride) {
+export const getWearableAsset = (itemOrId, slotOverride) => {
   const item = typeof itemOrId === "string"
     ? { id: itemOrId, slot: slotOverride }
     : itemOrId || {};
   if (!item.id || !item.slot) return "";
   const slot = normalizeSlot(item.slot);
   return asset(`wearables/${slot}/${item.id}.webp`);
-}
+};
 
 export function getPetAsset(petId) {
   if (!petId) return "";
