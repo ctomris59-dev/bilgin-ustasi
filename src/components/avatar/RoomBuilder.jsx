@@ -1,25 +1,75 @@
 import { useEffect, useRef, useState } from "react";
 import { ROOM_ITEMS } from "../../data/petsAndRoom";
 import { makePlacedItem } from "../../data/houseRooms";
+import { getItemCardAsset } from "../../data/gameAssets";
 import RoomItemGlyph from "./RoomItemGlyph";
 import { playPop } from "../../lib/sound";
 
-function findItem(id){return ROOM_ITEMS.find((i)=>i.id===id)||null;}
+function findItem(id) { return ROOM_ITEMS.find((item) => item.id === id) || null; }
+
 export default function RoomBuilder({ room, roomId, unlockedIds, onCommit }) {
-  const [localRoom,setLocalRoom]=useState(room); const [draggingUid,setDraggingUid]=useState(null); const canvasRef=useRef(null); const localRef=useRef(room);
-  useEffect(()=>{setLocalRoom(room);localRef.current=room;},[roomId,room]);
-  function update(fn){setLocalRoom((prev)=>{const next=fn(prev);localRef.current=next;return next;});}
-  useEffect(()=>{if(!draggingUid)return undefined; function move(e){if(!canvasRef.current)return;const r=canvasRef.current.getBoundingClientRect();const p=e.touches?e.touches[0]:e;const x=Math.min(95,Math.max(5,((p.clientX-r.left)/r.width)*100));const y=Math.min(94,Math.max(8,((p.clientY-r.top)/r.height)*100));update((prev)=>({...prev,items:prev.items.map((it)=>it.uid===draggingUid?{...it,x,y}:it)}));} function up(){setDraggingUid(null);onCommit(localRef.current);} window.addEventListener('pointermove',move);window.addEventListener('pointerup',up);return()=>{window.removeEventListener('pointermove',move);window.removeEventListener('pointerup',up);};},[draggingUid,onCommit]);
-  function place(item){playPop();const next={...localRef.current,items:[...localRef.current.items,makePlacedItem(item.id,25+Math.random()*50,35+Math.random()*40)]};localRef.current=next;setLocalRoom(next);onCommit(next);}
-  function remove(uid,e){e.stopPropagation();playPop();const next={...localRef.current,items:localRef.current.items.filter((it)=>it.uid!==uid)};localRef.current=next;setLocalRoom(next);onCommit(next);}
-  function wallpaper(id){playPop();const prev=localRef.current;const next={...prev,wallpaper:prev.wallpaper===id?null:id};localRef.current=next;setLocalRoom(next);onCommit(next);}
-  const walls=ROOM_ITEMS.filter((i)=>i.slot==='wallpaper'&&unlockedIds.has(i.id)); const placed=new Set(localRoom.items.map((it)=>it.itemId)); const palette=ROOM_ITEMS.filter((i)=>i.slot!=='wallpaper'&&unlockedIds.has(i.id)&&!placed.has(i.id)); const wall=findItem(localRoom.wallpaper)?.color||'#26345F';
-  return <div className="space-y-3">
-    <div className="glass-card p-3.5"><div className="flex items-center justify-between"><div><p className="text-xs font-black">Duvar Atmosferi</p><p className="mt-0.5 text-[10px] text-[#8793B4]">Üssünün ana tonunu seç.</p></div><span className="game-chip">{walls.length} seçenek</span></div><div className="mt-3 flex flex-wrap gap-2">{walls.length===0&&<p className="text-xs text-[#687494]">Henüz duvar teması yok. Kaşif Dükkânı’ndan açabilirsin.</p>}{walls.map((w)=><button key={w.id} onClick={()=>wallpaper(w.id)} className="h-10 w-10 rounded-xl border transition hover:scale-105" style={{background:`linear-gradient(145deg,${w.color},${w.color}77)`,borderColor:localRoom.wallpaper===w.id?'rgba(82,227,255,.8)':'rgba(255,255,255,.13)',boxShadow:localRoom.wallpaper===w.id?'0 0 20px rgba(82,227,255,.18)':'none'}} aria-label={w.label}/>)}</div></div>
-    <div ref={canvasRef} className="relative touch-none select-none overflow-hidden rounded-[22px] border border-white/10" style={{height:300,background:`linear-gradient(180deg,${wall}35 0%,rgba(17,26,56,.94) 65%,rgba(7,11,25,.98) 65%)`,boxShadow:'inset 0 1px 0 rgba(255,255,255,.06),0 22px 50px rgba(0,0,0,.24)'}}>
-      <div className="absolute left-1/2 top-3 -translate-x-1/2 rounded-full border border-white/10 bg-[#070b1d]/75 px-3 py-1 text-[9px] font-black text-[#A5AEC6] backdrop-blur">Eşyayı sürükleyerek yerleştir</div><div className="absolute left-5 top-7 h-20 w-24 rounded-xl border border-white/10 bg-[#07101f]/45"><div className="absolute inset-3 rounded-lg bg-gradient-to-br from-[#52E3FF]/15 to-[#8B6CFF]/10"/></div><div className="absolute right-7 top-8 h-12 w-12 rounded-full bg-[#FFD166]/10 blur-sm"/>
-      {localRoom.items.map((placed)=>{const item=findItem(placed.itemId);if(!item)return null;const drag=draggingUid===placed.uid;return <div key={placed.uid} onPointerDown={(e)=>{e.preventDefault();setDraggingUid(placed.uid);}} className={`absolute -translate-x-1/2 -translate-y-1/2 cursor-grab transition ${drag?'z-30 scale-110':'z-10'}`} style={{left:`${placed.x}%`,top:`${placed.y}%`,touchAction:'none'}}><RoomItemGlyph item={item} size={54}/><button onPointerDown={(e)=>e.stopPropagation()} onClick={(e)=>remove(placed.uid,e)} className="absolute -right-2 -top-2 flex h-6 w-6 items-center justify-center rounded-full border border-white/15 bg-[#FF647F] text-xs font-black text-white shadow-lg">×</button></div>;})}
+  const [localRoom, setLocalRoom] = useState(room || { wallpaper: null, items: [] });
+  const [draggingUid, setDraggingUid] = useState(null);
+  const canvasRef = useRef(null);
+  const localRef = useRef(localRoom);
+
+  useEffect(() => {
+    const safe = room || { wallpaper: null, items: [] };
+    setLocalRoom(safe); localRef.current = safe;
+  }, [roomId, room]);
+
+  function update(fn) {
+    setLocalRoom((prev) => { const next = fn(prev); localRef.current = next; return next; });
+  }
+
+  useEffect(() => {
+    if (!draggingUid) return undefined;
+    function move(event) {
+      const box = canvasRef.current?.getBoundingClientRect(); if (!box) return;
+      const point = event.touches?.[0] || event;
+      const x = Math.min(95, Math.max(5, ((point.clientX - box.left) / box.width) * 100));
+      const y = Math.min(94, Math.max(8, ((point.clientY - box.top) / box.height) * 100));
+      update((prev) => ({ ...prev, items: (prev.items || []).map((item) => item.uid === draggingUid ? { ...item, x, y } : item) }));
+    }
+    function up() { setDraggingUid(null); onCommit(localRef.current); }
+    window.addEventListener("pointermove", move); window.addEventListener("pointerup", up);
+    return () => { window.removeEventListener("pointermove", move); window.removeEventListener("pointerup", up); };
+  }, [draggingUid, onCommit]);
+
+  function place(item) {
+    playPop();
+    const next = { ...localRef.current, items: [...(localRef.current.items || []), makePlacedItem(item.id, 25 + Math.random() * 50, 38 + Math.random() * 36)] };
+    localRef.current = next; setLocalRoom(next); onCommit(next);
+  }
+  function remove(uid, event) {
+    event.stopPropagation(); playPop();
+    const next = { ...localRef.current, items: (localRef.current.items || []).filter((item) => item.uid !== uid) };
+    localRef.current = next; setLocalRoom(next); onCommit(next);
+  }
+  function wallpaper(id) {
+    playPop(); const prev = localRef.current; const next = { ...prev, wallpaper: prev.wallpaper === id ? null : id };
+    localRef.current = next; setLocalRoom(next); onCommit(next);
+  }
+
+  const walls = ROOM_ITEMS.filter((item) => item.slot === "wallpaper" && unlockedIds.has(item.id));
+  const placedIds = new Set((localRoom.items || []).map((item) => item.itemId));
+  const palette = ROOM_ITEMS.filter((item) => item.slot !== "wallpaper" && unlockedIds.has(item.id) && !placedIds.has(item.id));
+  const wall = findItem(localRoom.wallpaper)?.color || "#26345F";
+
+  return <div className="v4x-room-builder">
+    <div className="v4x-wall-themes">
+      <div><small>DUVAR ATMOSFERİ</small><strong>Üssünün ana temasını seç</strong></div>
+      <div className="v4x-wall-options">{walls.map((item) => <button key={item.id} onClick={() => wallpaper(item.id)} className={localRoom.wallpaper === item.id ? "is-active" : ""} title={item.label}><img src={getItemCardAsset(item)} alt=""/><span>{item.label}</span></button>)}{walls.length === 0 && <em>Henüz duvar teması açmadın.</em>}</div>
     </div>
-    <div className="glass-card p-3.5"><div className="flex items-center justify-between"><div><p className="text-xs font-black">Ekipman Deposu</p><p className="mt-0.5 text-[10px] text-[#8793B4]">Dokun, üssüne ekle.</p></div><span className="game-chip">{palette.length}</span></div>{palette.length===0?<p className="mt-3 text-xs text-[#687494]">Açık tüm eşyaların bu odada. Yeni parçaları dükkândan açabilirsin.</p>:<div className="mt-3 flex gap-2.5 overflow-x-auto pb-1">{palette.map((item)=><button key={item.id} onClick={()=>place(item)} className="glass-card shrink-0 p-2.5 text-center transition hover:-translate-y-1"><RoomItemGlyph item={item} size={42}/><span className="mt-1 block w-20 text-[9px] font-bold leading-tight text-[#C7CEE2]">{item.label}</span></button>)}</div>}</div>
+
+    <div ref={canvasRef} className="v4x-room-canvas" style={{ "--wall-color": wall }}>
+      <div className="v4x-room-window"><i/><i/></div><div className="v4x-room-floor"/><div className="v4x-room-hint">Eşyayı sürükleyerek yerleştir</div>
+      {(localRoom.items || []).map((placed) => { const item = findItem(placed.itemId); if (!item) return null; const dragging = draggingUid === placed.uid; return <div key={placed.uid} onPointerDown={(e) => { e.preventDefault(); setDraggingUid(placed.uid); }} className={`v4x-placed-item ${dragging ? "is-dragging" : ""}`} style={{ left: `${placed.x}%`, top: `${placed.y}%` }}><RoomItemGlyph item={item} size={62}/><button onPointerDown={(e) => e.stopPropagation()} onClick={(e) => remove(placed.uid, e)}>×</button></div>; })}
+    </div>
+
+    <div className="v4x-room-palette">
+      <div className="v4x-section-title"><div><small>EKİPMAN DEPOSU</small><strong>Üs itemleri</strong></div><span>{palette.length} kullanılabilir</span></div>
+      {palette.length ? <div>{palette.map((item) => <button key={item.id} onClick={() => place(item)}><img src={getItemCardAsset(item)} alt=""/><span>{item.label}</span><b>+ Yerleştir</b></button>)}</div> : <p>Açık tüm eşyaların odada. Yeni parçaları Kaşif Dükkânı'ndan açabilirsin.</p>}
+    </div>
   </div>;
 }

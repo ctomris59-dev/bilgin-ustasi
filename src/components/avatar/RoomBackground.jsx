@@ -9,7 +9,7 @@ function findItem(id) {
 export default function RoomBackground({ room, children, compact = false }) {
   const wallpaper = findItem(room?.wallpaper);
   const items = room?.items || [];
-  const backgroundImage = wallpaper ? getWorldAsset(wallpaper.world) : GAME_ASSETS.roomBackground;
+  const backgroundImage = wallpaper ? getWorldAsset(wallpaper.world) : (GAME_ASSETS.premiumBaseRoom || GAME_ASSETS.roomBackground);
 
   return (
     <div

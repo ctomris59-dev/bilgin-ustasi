@@ -1,0 +1,35 @@
+import SideNav from "./SideNav";
+import TopBar from "./TopBar";
+import RightRail from "./RightRail";
+
+const SECTION_META = {
+  dashboard: { eyebrow: "GÜNLÜK MACERA", title: "Ana Üs" },
+  mistakes: { eyebrow: "ÖĞRENMEYİ GÜÇLENDİR", title: "Tekrar Merkezi" },
+  wardrobe: { eyebrow: "KAŞİFİNİ GELİŞTİR", title: "Karakter & Envanter" },
+  shop: { eyebrow: "ÖDÜLLERİ KULLAN", title: "Kaşif Dükkânı" },
+  archive: { eyebrow: "KAZANIMLAR", title: "Keşif Arşivi" },
+  parent: { eyebrow: "İLERLEME & KONTROL", title: "Ebeveyn Paneli" },
+  test: { eyebrow: "AKTİF GÖREV", title: "Test Görevi" },
+  result: { eyebrow: "GÖREV SONUCU", title: "Ödül Merkezi" },
+  world: { eyebrow: "KEŞİF ROTASI", title: "Dünya Haritası" },
+  minigame: { eyebrow: "KISA MOLA", title: "Hafıza Görevi" },
+};
+
+export default function AppShell({
+  profile, tests, syncStatus, activeSection, tab, onChangeTab, onOpenWorldMap,
+  onStartMiniGame, onOpenMistakes, onStartTest, children, focusMode = false,
+  selectedItem, onSelectItem, onBuyItem, onEquipItem, onOpenShop, onOpenCharacter,
+}) {
+  const meta = SECTION_META[activeSection] || SECTION_META.dashboard;
+  return (
+    <div className={`v4-root v4x-root ${focusMode ? "is-focus-mode" : ""}`}>
+      <div className="v4-ambient v4-ambient-one" /><div className="v4-ambient v4-ambient-two" />
+      <SideNav active={tab} onChange={onChangeTab} onOpenWorldMap={onOpenWorldMap} onStartMiniGame={onStartMiniGame} compact={focusMode} />
+      <div className="v4-workspace v4x-workspace">
+        <TopBar profile={profile} syncStatus={syncStatus} title={meta.title} eyebrow={meta.eyebrow} />
+        <main className="v4-main-scroll v4x-main-scroll"><div className="v4-content-canvas v4x-content-canvas">{children}</div></main>
+      </div>
+      {!focusMode && <RightRail profile={profile} tests={tests} activeSection={activeSection} selectedItem={selectedItem} onSelectItem={onSelectItem} onOpenWorldMap={onOpenWorldMap} onOpenMistakes={onOpenMistakes} onStartTest={onStartTest} onBuyItem={onBuyItem} onEquipItem={onEquipItem} onOpenShop={onOpenShop} onOpenCharacter={onOpenCharacter} />}
+    </div>
+  );
+}

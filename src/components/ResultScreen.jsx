@@ -2,11 +2,12 @@ import { useEffect, useMemo, useState } from "react";
 import confetti from "canvas-confetti";
 import { playCelebrate, playCorrect } from "../lib/sound";
 
-export default function ResultScreen({ result, xpEarned = 0, coinsEarned = 0, speedBonus = 0, newBadges = [], newLegendaryItems = [], newSticker, boostActive, onClose }) {
+export default function ResultScreen({ result, xpEarned = 0, coinsEarned = 0, gemsEarned = 0, speedBonus = 0, newBadges = [], newLegendaryItems = [], newSticker, boostActive, onClose }) {
   const { correctCount, totalCount, fullScore, bonusCorrect, isRetryTest, subject } = result;
   const percentage = totalCount ? Math.round((correctCount / totalCount) * 100) : 0;
   const animatedXp = useCountUp(xpEarned, 950, 180);
   const animatedCoins = useCountUp(coinsEarned, 950, 360);
+  const animatedGems = useCountUp(gemsEarned, 850, 520);
   const animatedScore = useCountUp(percentage, 850, 80);
   const performance = useMemo(() => getPerformanceInfo(percentage, fullScore), [percentage, fullScore]);
   const special = Boolean(newSticker) || newBadges.length > 0 || newLegendaryItems.length > 0;
@@ -24,9 +25,9 @@ export default function ResultScreen({ result, xpEarned = 0, coinsEarned = 0, sp
       <section className="glass-card relative overflow-hidden p-5 sm:p-7" style={{ background:"linear-gradient(145deg,rgba(24,33,67,.89),rgba(8,13,30,.96))" }}>
         <div className="relative z-10 flex flex-col items-center"><ScoreRing score={animatedScore} percentage={percentage} fullScore={fullScore} /><p className="mt-4 text-sm font-black">{correctCount} / {totalCount} doğru</p><p className="mt-1 text-[9px] font-black uppercase tracking-[.14em] text-[#687494]">{subject || 'Görev Sonucu'}</p></div>
         <Divider label="Kazanımlar" />
-        <div className="relative z-10 grid grid-cols-2 gap-3"><RewardCard icon="✦" label="Kazanılan XP" value={`+${animatedXp}`} color="#52E3FF" /><RewardCard icon="◈" label="Kazanılan Coin" value={`+${animatedCoins}`} color="#FFD166" delay=".15s" /></div>
+        <div className={`relative z-10 grid gap-3 ${gemsEarned > 0 ? "grid-cols-3" : "grid-cols-2"}`}><RewardCard icon="✦" label="Kazanılan XP" value={`+${animatedXp}`} color="#52E3FF" /><RewardCard icon="◈" label="Kazanılan Coin" value={`+${animatedCoins}`} color="#FFD166" delay=".15s" />{gemsEarned > 0 && <RewardCard icon="◆" label="Kristal" value={`+${animatedGems}`} color="#D277FF" delay=".28s" />}</div>
         {(speedBonus > 0 || bonusCorrect || boostActive) && <div className="relative z-10 mt-4 space-y-2">{speedBonus > 0 && <BonusRow title="Hız Bonusu" value={`+${speedBonus} XP`} color="#52E3C2" />}{bonusCorrect && <BonusRow title="Gizli Keşif" value="+10 Coin" color="#FFD166" />}{boostActive && <BonusRow title="Keşif Güçlendirmesi" value="1.5× aktif" color="#A98CFF" />}</div>}
-        {fullScore && <div className="animate-pop relative z-10 mt-5 rounded-2xl border border-[#FFD166]/20 bg-[#FFD166]/5 p-4"><p className="text-sm font-black text-[#FFE29A]">✦ Kusursuz görev</p><p className="mt-1 text-[11px] leading-relaxed text-[#9AA7C7]">Tüm soruları doğru cevapladın. Ustalık bonusun ödüllerine eklendi.</p></div>}
+        {fullScore && <div className="animate-pop relative z-10 mt-5 rounded-2xl border border-[#FFD166]/20 bg-[#FFD166]/5 p-4"><p className="text-sm font-black text-[#FFE29A]">✦ Kusursuz görev</p><p className="mt-1 text-[11px] leading-relaxed text-[#9AA7C7]">Tüm soruları doğru cevapladın. Ustalık bonusun ve 1 kristal ödülün eklendi.</p></div>}
         {special && <div className="relative z-10 mt-7"><Divider label="Yeni Keşifler" gold /> <div className="space-y-2.5">{newLegendaryItems.map((item)=><UnlockCard key={item.id} eyebrow="Efsanevi Keşif" title={item.label} accent="#FFD166" />)}{newBadges.map((b)=><UnlockCard key={b.id} eyebrow="Yeni Rozet" title={b.label} description={b.desc} accent="#52E3C2" />)}{newSticker && <UnlockCard eyebrow="Koleksiyon Keşfi" title={newSticker.category || 'Yeni Sticker'} description="Arşiv koleksiyonuna yeni bir parça eklendi." accent="#FF78AA" icon={newSticker.emoji} />}</div></div>}
         {isRetryTest && <div className="relative z-10 mt-5 rounded-2xl border border-[#A98CFF]/15 bg-[#A98CFF]/5 p-3.5 text-[11px] leading-relaxed text-[#A5AEC6]">↻ Tekrar yaptığın her soru bilgiyi daha kalıcı hale getirir.</div>}
         <button onClick={onClose} className={`sticker-btn relative z-10 mt-7 w-full py-4 text-sm ${fullScore?'btn-gold':''}`}>Ödülleri Topla →</button>

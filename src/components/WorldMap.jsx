@@ -4,7 +4,7 @@ import { getLevelInfo } from "../data/levels";
 import { ITEMS } from "../data/avatarParts";
 import { PETS, ROOM_ITEMS } from "../data/petsAndRoom";
 import { playPop } from "../lib/sound";
-import { getWorldAsset, getItemAsset } from "../data/gameAssets";
+import { getWorldAsset, getItemCardAsset } from "../data/gameAssets";
 
 const FALLBACK_POINTS = [
   { x: 50, y: 90 },
@@ -699,7 +699,7 @@ function WorldDetailSheet({
                 <div className="flex items-center gap-2.5">
                   <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-white/[0.06] bg-white/[0.025]">
                     <img
-                      src={getItemAsset(item)}
+                      src={getItemCardAsset(item)}
                       alt=""
                       className="h-[88%] w-[88%] object-contain drop-shadow-[0_6px_6px_rgba(0,0,0,.3)]"
                     />

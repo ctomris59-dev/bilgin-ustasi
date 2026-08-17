@@ -1,11 +1,9 @@
 import { useMemo } from "react";
-import AvatarCanvas from "./avatar/AvatarCanvas";
-import PetCanvas from "./avatar/PetCanvas";
-import RoomBackground from "./avatar/RoomBackground";
 import { getLevelInfo } from "../data/levels";
 import { BADGES } from "../lib/gamification";
 import { getRandomGreeting } from "../data/messages";
 import { getWorldForLevel } from "../data/worlds";
+import { getWorldAsset } from "../data/gameAssets";
 
 const SUBJECT_META = {
   Matematik: { icon: "△", accent: "#70A1FF", place: "Sayı Dağları" },
@@ -16,110 +14,126 @@ const SUBJECT_META = {
   İngilizce: { icon: "≈", accent: "#70D6FF", place: "Dil Limanı" },
 };
 
-export default function Dashboard({ profile, tests = [], onStartTest, onGeneratePractice, onOpenMistakeBox, onStartMiniGame, onOpenWorldMap, pausedTest, onResumeTest, onDiscardPausedTest }) {
+export default function Dashboard({ profile, tests = [], onStartTest, onGeneratePractice, onOpenMistakeBox, onStartMiniGame, onOpenWorldMap, onOpenShop, onOpenCharacter, pausedTest, onResumeTest, onDiscardPausedTest }) {
   const { current, next, progressPct } = getLevelInfo(profile.xp || 0);
   const greeting = useMemo(() => getRandomGreeting(), []);
   const world = getWorldForLevel(current.level);
+  const worldArt = getWorldAsset(world.id);
   const activeMistakes = (profile.mistakeBox || []).filter((m) => !m.resolved).length;
   const earnedBadges = BADGES.filter((b) => (profile.badges || []).includes(b.id));
   const mainTest = tests[0] || null;
   const mainMeta = SUBJECT_META[mainTest?.subject] || { icon: "✦", accent: "#A98CFF", place: world.title };
+  const totalTests = (profile.history || []).length;
+  const today = new Date().toISOString().slice(0, 10);
+  const todayHistory = (profile.history || []).filter((h) => String(h.date || "").slice(0, 10) === today);
+  const todayCorrect = todayHistory.reduce((sum, h) => sum + (h.correctCount || 0), 0);
 
   return (
-    <div className="app-shell space-y-5 pb-5">
-      <span className="magic-particle" style={{ left: "6%", top: "8%" }} />
-      <span className="magic-particle" style={{ right: "9%", top: "19%", animationDelay: "1.2s" }} />
-
+    <div className="v4-dashboard">
       {pausedTest && (
-        <section className="glass-card animate-pop p-4">
-          <div className="flex items-center gap-3">
-            <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-violet/15 text-violet">▶</div>
-            <div className="min-w-0 flex-1">
-              <p className="text-sm font-black">Kaldığın görev hazır</p>
-              <p className="mt-1 truncate text-xs text-[#8793B4]">{pausedTest.test.title} · Soru {pausedTest.index + 1}/{pausedTest.test.questions.length}</p>
-            </div>
-            <button onClick={onResumeTest} className="sticker-btn px-4 py-2 text-xs">Devam</button>
+        <section className="v4-dashboard-resume">
+          <div className="v4-resume-icon">▶</div>
+          <div className="v4-resume-copy">
+            <p>KALDIĞIN GÖREV</p>
+            <strong>{pausedTest.test.title}</strong>
+            <small>Soru {pausedTest.index + 1}/{pausedTest.test.questions.length}</small>
           </div>
-          <button onClick={onDiscardPausedTest} className="mt-2 text-[10px] font-bold text-[#65718e] hover:text-white">Kaydı kaldır</button>
+          <button onClick={onResumeTest} className="v4-dashboard-button">Devam Et →</button>
+          <button onClick={onDiscardPausedTest} className="v4-resume-discard" aria-label="Görev kaydını kaldır">×</button>
         </section>
       )}
 
-      <section className="glass-card relative overflow-hidden p-4 sm:p-5" style={{ background: "linear-gradient(145deg,rgba(27,36,75,.88),rgba(8,13,31,.94))" }}>
-        <div className="pointer-events-none absolute -right-24 -top-28 h-64 w-64 rounded-full bg-violet/20 blur-3xl" />
-        <div className="relative z-10 flex items-start justify-between gap-3">
-          <div>
-            <p className="text-[10px] font-black uppercase tracking-[.2em] text-[#A98CFF]">Ana Üs · {world.title}</p>
-            <h1 className="font-display mt-1 text-2xl font-black">{profile.childName}</h1>
-            <p className="mt-1 max-w-sm text-xs font-medium leading-relaxed text-[#9AA7C7]">{greeting}</p>
-          </div>
-          <div className="game-chip">LVL {current.level}</div>
-        </div>
-
-        <div className="relative z-10 mt-4">
-          <RoomBackground room={profile.rooms?.bedroom} compact>
-            <div className="flex items-end justify-center gap-1 pt-3">
-              <div className="animate-bob"><AvatarCanvas avatar={profile.avatar} size={154} /></div>
-              {profile.pet && <div style={{ animationDelay: ".35s" }} className="animate-bob"><PetCanvas pet={profile.pet} size={70} /></div>}
+      <section className="v4-mission-hero">
+        <img src={worldArt} alt="" className="v4-mission-bg" />
+        <div className="v4-mission-overlay" />
+        <div className="v4-mission-content">
+          <div className="v4-mission-copy">
+            <p className="v4-mission-kicker">SIRADAKİ GÖREV · {mainMeta.place}</p>
+            <h2>{mainTest?.title || "Yeni bir keşif görevi hazırlanıyor"}</h2>
+            <p>{mainTest ? `${mainTest.subject} · ${mainTest.questions?.length || 0} soru. Testi bitir, XP ve coin kazan; yeni ekipmanlara yaklaş.` : greeting}</p>
+            <div className="v4-mission-actions">
+              <button disabled={!mainTest} onClick={() => mainTest && onStartTest(mainTest)} className="v4-mission-primary">{mainTest ? "Göreve Başla" : "Görev Bekleniyor"}<span>→</span></button>
+              <button onClick={onOpenWorldMap} className="v4-mission-secondary">Dünya Haritası</button>
             </div>
-          </RoomBackground>
-        </div>
-
-        <div className="relative z-10 mt-3 rounded-2xl border border-white/8 bg-[#070c1d]/75 p-3.5 backdrop-blur-xl">
-          <div className="flex items-end justify-between gap-3">
-            <div><p className="text-[9px] font-black uppercase tracking-[.16em] text-[#8793B4]">{current.title}</p><p className="mt-1 text-sm font-black">{profile.xp} XP</p></div>
-            <p className="text-[10px] font-bold text-[#8793B4]">{next ? `${next.minXp - profile.xp} XP sonra seviye ${next.level}` : "Maksimum seviye"}</p>
           </div>
-          <div className="xp-track mt-2"><div className="xp-fill" style={{ width: `${progressPct}%` }} /></div>
+
+          <div className="v4-mission-progress-card">
+            <span>AKTİF BÖLGE</span>
+            <strong>{world.title}</strong>
+            <div className="v4-mission-world-row"><span style={{ color: world.accent }}>{world.emoji}</span><small>Seviye {current.level}</small></div>
+            <div className="v4-mission-progress"><span style={{ width: `${progressPct}%` }} /></div>
+            <small>{next ? `${next.minXp - profile.xp} XP sonra seviye ${next.level}` : "Usta seviyedesin"}</small>
+          </div>
         </div>
       </section>
 
-      <section>
-        <div className="mb-2 flex items-end justify-between px-1"><div><p className="text-[9px] font-black uppercase tracking-[.2em] text-[#8B6CFF]">Bugünün hedefi</p><h2 className="font-display text-xl font-black">Bugünün Macerası</h2></div><span className="text-lg text-[#A98CFF]">✦</span></div>
-        <button disabled={!mainTest} onClick={() => mainTest && onStartTest(mainTest)} className="glass-card group w-full overflow-hidden p-4 text-left transition duration-300 hover:-translate-y-1 disabled:opacity-60" style={{ background: `linear-gradient(135deg,${mainMeta.accent}18,rgba(139,108,255,.05))` }}>
-          <div className="flex items-center gap-3">
-            <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl text-2xl" style={{ color: mainMeta.accent, background: `${mainMeta.accent}16`, boxShadow: `0 0 28px ${mainMeta.accent}12` }}>{mainMeta.icon}</div>
-            <div className="min-w-0 flex-1"><p className="text-[9px] font-black uppercase tracking-[.16em]" style={{ color: mainMeta.accent }}>{mainMeta.place}</p><p className="mt-1 truncate text-base font-black">{mainTest?.title || "Yeni görev hazırlanıyor"}</p><p className="mt-1 text-[11px] font-medium text-[#8793B4]">{mainTest ? `${mainTest.subject} · ${mainTest.questions?.length || 0} soru` : "Tekrar Merkezi ve keşif haritası açık."}</p></div>
-            <span className="text-xl text-[#C5CEE7] transition group-hover:translate-x-1">→</span>
-          </div>
-        </button>
+      <section className="v4-dashboard-stat-grid">
+        <DashboardStat icon="✓" value={todayCorrect} label="Bugün doğru" detail={`${todayHistory.length} test tamamlandı`} color="#52E3C2" />
+        <DashboardStat icon="ϟ" value={profile.streak?.current || 0} label="Çalışma serisi" detail="Düzenli çalışmayı sürdür" color="#FF789E" />
+        <DashboardStat icon="◈" value={profile.coins || 0} label="Coin bakiyesi" detail="Dükkânda kullan" color="#FFD166" />
+        <DashboardStat icon="↻" value={activeMistakes} label="Tekrar sorusu" detail="Öğrenmeyi güçlendir" color="#70D6FF" />
       </section>
 
-      <div className="grid grid-cols-3 gap-2.5">
-        <StatCard icon="◈" value={profile.coins || 0} label="Coin" color="#FFD166" />
-        <StatCard icon="ϟ" value={profile.streak?.current || 0} label="Seri" color="#FF789E" />
-        <StatCard icon="↻" value={activeMistakes} label="Tekrar" color="#52E3C2" />
-      </div>
-
-      <div className="grid grid-cols-2 gap-2.5">
-        <ActionCard onClick={onOpenWorldMap} icon="⌁" title="Keşif Haritası" subtitle="Bölgeleri aç" accent="#52E3C2" />
-        <ActionCard onClick={onOpenMistakeBox} icon="↻" title="Tekrar Merkezi" subtitle={`${activeMistakes} soru bekliyor`} accent="#FF789E" />
-      </div>
-
-
-      <button onClick={onStartMiniGame} className="glass-card group flex w-full items-center gap-3 p-3.5 text-left transition hover:-translate-y-0.5">
-        <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-300/10 text-[#52E3FF]">▦</div>
-        <div className="flex-1"><p className="text-sm font-black">Kısa mola</p><p className="mt-0.5 text-[11px] text-[#8793B4]">Hafıza oyunuyla zihnini tazele.</p></div><span className="text-xs font-black text-[#52E3FF]">Oyna →</span>
-      </button>
-
-      {tests.length > 1 && (
-        <section className="space-y-2.5">
-          <div className="flex items-center justify-between px-1"><h2 className="font-display text-lg font-black">Diğer Görevler</h2><span className="text-[10px] font-bold text-[#8793B4]">{tests.length - 1} görev</span></div>
-          {tests.slice(1, 5).map((test) => {
-            const meta = SUBJECT_META[test.subject] || { icon: "✦", accent: "#A98CFF", place: "Keşif" };
-            return <button key={test.id} onClick={() => onStartTest(test)} className="glass-card group flex w-full items-center gap-3 p-3.5 text-left transition hover:-translate-y-0.5"><div className="flex h-10 w-10 items-center justify-center rounded-xl" style={{ color: meta.accent, background: `${meta.accent}12` }}>{meta.icon}</div><div className="min-w-0 flex-1"><p className="truncate text-sm font-black">{test.title}</p><p className="mt-0.5 text-[10px] text-[#8793B4]">{test.subject} · {test.questions?.length || 0} soru</p></div><span className="text-[#8793B4] transition group-hover:translate-x-1">→</span></button>;
-          })}
-          {tests[0]?.subject && onGeneratePractice && <button onClick={() => onGeneratePractice(tests[0].subject)} className="w-full py-2 text-xs font-bold text-[#8f9bbb] hover:text-white">Aynı dersten pratik görev üret</button>}
+      <div className="v4-dashboard-columns">
+        <section className="v4-dashboard-panel">
+          <div className="v4-panel-heading">
+            <div><p>KEŞİF GÖREVLERİ</p><h3>Ders Çalışma Merkezi</h3></div>
+            <span>{tests.length} görev</span>
+          </div>
+          <div className="v4-task-list">
+            {tests.slice(0, 6).map((test, index) => {
+              const meta = SUBJECT_META[test.subject] || { icon: "✦", accent: "#A98CFF", place: "Keşif" };
+              return (
+                <button key={test.id} onClick={() => onStartTest(test)} className={`v4-task-row ${index === 0 ? "is-featured" : ""}`}>
+                  <span className="v4-task-icon" style={{ color: meta.accent, background: `${meta.accent}12`, borderColor: `${meta.accent}24` }}>{meta.icon}</span>
+                  <span className="v4-task-copy"><small>{meta.place}</small><strong>{test.title}</strong><em>{test.subject} · {test.questions?.length || 0} soru</em></span>
+                  <span className="v4-task-reward">+XP<br/><b>+Coin</b></span>
+                  <span className="v4-task-go">→</span>
+                </button>
+              );
+            })}
+            {tests.length === 0 && <div className="v4-empty-task"><span>✦</span><strong>Yeni görevler hazırlanıyor</strong><small>Testler geldiğinde burada görünecek.</small></div>}
+          </div>
+          {tests[0]?.subject && onGeneratePractice && <button onClick={() => onGeneratePractice(tests[0].subject)} className="v4-panel-footer-button">{tests[0].subject} için ekstra pratik üret →</button>}
         </section>
-      )}
 
-      {earnedBadges.length > 0 && <div className="flex flex-wrap gap-2">{earnedBadges.slice(-5).map((b) => <span key={b.id} className="game-chip">⬡ {b.label}</span>)}</div>}
+        <section className="v4-dashboard-panel">
+          <div className="v4-panel-heading"><div><p>BUGÜNKÜ ROTA</p><h3>Öğren & Geliştir</h3></div><span>{totalTests} toplam test</span></div>
+          <div className="v4-route-list">
+            <RouteCard number="01" title="Ders çalış" text="Bir test seç ve görevi tamamla." done={todayHistory.length > 0} accent="#52E3FF" onClick={() => mainTest && onStartTest(mainTest)} />
+            <RouteCard number="02" title="Tekrar yap" text={`${activeMistakes} soru ustalaşmayı bekliyor.`} done={activeMistakes === 0} accent="#FF789E" onClick={onOpenMistakeBox} />
+            <RouteCard number="03" title="Ödülleri kullan" text={`${profile.coins || 0} coinin yeni itemlere dönüşebilir.`} done={false} accent="#FFD166" onClick={onOpenShop} />
+          </div>
+
+          <button onClick={onStartMiniGame} className="v4-break-card">
+            <span className="v4-break-icon">▦</span>
+            <span><small>KISA MOLA</small><strong>Hafıza Görevi</strong><em>Bugünün ders hedefinden sonra zihnini tazele.</em></span>
+            <b>Oyna →</b>
+          </button>
+
+          {earnedBadges.length > 0 && (
+            <div className="v4-badge-strip">
+              <p>SON KAZANIMLAR</p>
+              <div>{earnedBadges.slice(-4).map((badge) => <span key={badge.id}>⬡ {badge.label}</span>)}</div>
+            </div>
+          )}
+        </section>
+      </div>
+
+      <section className="v4x-dashboard-actions">
+        <button onClick={() => mainTest && onStartTest(mainTest)}><span>▤</span><div><small>DERS ÇALIŞ</small><strong>Test çözmeye devam et</strong></div><b>Başla →</b></button>
+        <button onClick={onOpenWorldMap}><span>◉</span><div><small>DÜNYA HARİTASI</small><strong>Yeni bölgeleri keşfet</strong></div><b>Harita →</b></button>
+        <button onClick={onOpenShop}><span>◈</span><div><small>KAŞİF DÜKKÂNI</small><strong>Coinleri iteme dönüştür</strong></div><b>Dükkan →</b></button>
+        <button onClick={onOpenCharacter}><span>◇</span><div><small>KARAKTER</small><strong>Itemlerini kuşan</strong></div><b>Ekipman →</b></button>
+      </section>
     </div>
   );
 }
 
-function StatCard({ icon, value, label, color }) {
-  return <div className="glass-card p-3 text-center"><div className="mx-auto flex h-9 w-9 items-center justify-center rounded-xl text-sm font-black" style={{ color, background: `${color}12` }}>{icon}</div><p className="mt-2 text-lg font-black" style={{ color }}>{value}</p><p className="text-[8px] font-black uppercase tracking-[.14em] text-[#8793B4]">{label}</p></div>;
+function DashboardStat({ icon, value, label, detail, color }) {
+  return <article className="v4-dashboard-stat"><span style={{ color, background: `${color}12`, borderColor: `${color}22` }}>{icon}</span><div><strong style={{ color }}>{value}</strong><p>{label}</p><small>{detail}</small></div></article>;
 }
-function ActionCard({ onClick, icon, title, subtitle, accent }) {
-  return <button onClick={onClick} className="glass-card group p-3.5 text-left transition hover:-translate-y-1"><div className="flex h-10 w-10 items-center justify-center rounded-xl font-black" style={{ color: accent, background: `${accent}12` }}>{icon}</div><p className="mt-2 text-sm font-black">{title}</p><p className="mt-1 text-[10px] text-[#8793B4]">{subtitle}</p><div className="mt-2 text-xs font-black transition group-hover:translate-x-1" style={{ color: accent }}>Keşfet →</div></button>;
+
+function RouteCard({ number, title, text, done, accent, onClick }) {
+  return <button type="button" onClick={onClick} className={`v4-route-card ${done ? "is-done" : ""}`}><span className="v4-route-number" style={{ color: done ? "#071C17" : accent, background: done ? "#52E3C2" : `${accent}10`, borderColor: done ? "transparent" : `${accent}25` }}>{done ? "✓" : number}</span><span className="v4-route-copy"><strong>{title}</strong><small>{text}</small></span><span className="v4-route-arrow">→</span></button>;
 }
