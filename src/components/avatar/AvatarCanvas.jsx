@@ -1,10 +1,5 @@
 import { ITEMS } from "../../data/avatarParts";
-import { getCharacterStyleAsset } from "../../data/gameAssets";
-
-const WEARABLE_MODULES = import.meta.glob(
-  "../../assets/game-assets/wearables/**/*.webp",
-  { eager: true, query: "?url", import: "default" }
-);
+import { getCharacterStyleAsset, getItemCardAsset } from "../../data/gameAssets";
 
 const STYLE_BY_SET = {
   gunluk: "blue",
@@ -17,7 +12,26 @@ const STYLE_BY_SET = {
   kozmik: "blue",
 };
 
-const EQUIPMENT_SLOTS = ["back", "outfit", "shoes", "headwear", "face"];
+const STYLE_BY_OUTFIT = {
+  "outfit-tshirt": "blue",
+  "outfit-tshirt-red": "red",
+  "outfit-tshirt-yellow": "casual",
+  "outfit-tshirt-green": "street",
+  "outfit-overalls": "casual",
+  "outfit-robe": "casual",
+  "outfit-robe-purple": "pink",
+  "outfit-robe-emerald": "street",
+  "outfit-labcoat": "street",
+  "outfit-labcoat-blue": "blue",
+  "outfit-halloween": "street",
+  "outfit-christmas": "pink",
+  "outfit-summer-dress": "pink",
+  "outfit-cloud-dress": "blue",
+  "outfit-crystal-robe": "red",
+  "outfit-galaxy-dress": "blue",
+};
+
+const EQUIPMENT_SLOTS = ["outfit", "shoes", "headwear", "face", "back"];
 
 function findItem(id) {
   return ITEMS.find((item) => item.id === id) || null;
@@ -25,24 +39,11 @@ function findItem(id) {
 
 function resolveRigStyle(avatar = {}) {
   const outfit = findItem(avatar.outfit);
-  if (outfit) return STYLE_BY_SET[outfit.set] || "blue";
+  if (outfit) return STYLE_BY_OUTFIT[outfit.id] || STYLE_BY_SET[outfit.set] || "blue";
 
   const explicit = avatar.characterStyle;
   if (explicit && explicit !== "auto") return explicit;
   return "blue";
-}
-
-function wearableAsset(item) {
-  if (!item?.id || !item?.slot) return "";
-  const key = `../../assets/game-assets/wearables/${item.slot}/${item.id}.webp`;
-  return WEARABLE_MODULES[key] || "";
-}
-
-function visualSlot(item) {
-  if (!item) return "";
-  if (item.shape === "wings" || item.shape === "backpack-badge") return "back";
-  if (["wand", "magnifier"].includes(item.shape)) return "hand";
-  return item.slot;
 }
 
 export default function AvatarCanvas({
@@ -53,37 +54,34 @@ export default function AvatarCanvas({
 }) {
   const style = resolveRigStyle(avatar);
   const preset = getCharacterStyleAsset(style);
-
   const equipped = EQUIPMENT_SLOTS
     .map((slot) => ({ slot, item: findItem(avatar?.[slot]) }))
     .filter((entry) => entry.item);
 
-  const backItems = equipped.filter(({ item }) => visualSlot(item) === "back");
-  const frontItems = equipped.filter(({ item }) => visualSlot(item) !== "back");
+  const gearSize = Math.max(24, Math.min(38, Number(size || 180) * 0.12));
 
   return (
     <div
-      className="game-avatar v44-avatar-rig v45-avatar-rig"
-      style={{ width: size, height: size * 1.25 }}
+      className="game-avatar v44-avatar-rig v46-avatar-rig"
+      style={{ width: size, height: size * 1.25, "--v46-gear-size": `${gearSize}px` }}
       role="img"
       aria-label="Kaşif avatarı"
       data-rig-style={style}
     >
       <div className="v44-avatar-aura" />
-
-      <div className="v45-avatar-stack">
-        {showEquipment && backItems.map(({ slot, item }) => (
-          <Wearable key={`${slot}-${item.id}`} item={item} />
-        ))}
-
-        <img src={preset} alt="" draggable="false" className="v44-avatar-character v45-avatar-character" />
-
-        {showEquipment && frontItems.map(({ slot, item }) => (
-          <Wearable key={`${slot}-${item.id}`} item={item} />
-        ))}
-      </div>
-
+      <img src={preset} alt="" draggable="false" className="v46-avatar-character" />
       <div className="v44-avatar-floor" />
+
+      {showEquipment && equipped.length > 0 && (
+        <div className="v46-gear-dock" aria-label="Takılı ekipmanlar">
+          {equipped.map(({ slot, item }) => (
+            <span key={`${slot}-${item.id}`} className={`v46-gear-chip is-${slot}`} title={`${item.label} · Takılı`}>
+              <img src={getItemCardAsset(item)} alt="" draggable="false" />
+              <i>✓</i>
+            </span>
+          ))}
+        </div>
+      )}
 
       {showEquipment && equipped.length > 0 && (
         <div className="v44-rig-status" aria-hidden="true">
@@ -94,23 +92,5 @@ export default function AvatarCanvas({
 
       {showBadges && <span className="v44-rig-label">EQUIPPED</span>}
     </div>
-  );
-}
-
-function Wearable({ item }) {
-  const src = wearableAsset(item);
-  if (!src) return null;
-
-  const slot = visualSlot(item);
-  const shape = item.shape ? ` shape-${item.shape}` : "";
-
-  return (
-    <img
-      src={src}
-      alt=""
-      draggable="false"
-      className={`v45-wearable is-${slot}${shape}`}
-      data-item-id={item.id}
-    />
   );
 }

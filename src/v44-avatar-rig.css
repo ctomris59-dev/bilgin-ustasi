@@ -1,32 +1,28 @@
-/* Bilgin Ustası V4.5 — hybrid rig: outfit-first preset + calibrated wearable overlays */
-.v44-avatar-rig{position:relative;isolation:isolate;display:flex;align-items:flex-end;justify-content:center;overflow:visible;filter:drop-shadow(0 20px 28px rgba(0,0,0,.35))}
+/* Bilgin Ustası V4.5.1 — stable full-body avatar presentation */
+.v44-avatar-rig{position:relative;isolation:isolate;display:block;overflow:visible;filter:drop-shadow(0 20px 28px rgba(0,0,0,.35))}
 .v44-avatar-aura{position:absolute;z-index:0;left:8%;right:8%;bottom:1%;height:25%;border-radius:50%;background:radial-gradient(ellipse at center,rgba(65,235,255,.5),rgba(79,86,255,.18) 48%,transparent 72%);filter:blur(10px);animation:v44Aura 3.4s ease-in-out infinite}
-.v45-avatar-stack{position:absolute;inset:0;z-index:3;transform-origin:center bottom;animation:v44Idle 4.2s ease-in-out infinite}
-.v44-avatar-character,.v45-avatar-character{position:absolute;inset:0;z-index:20;width:100%;height:100%;object-fit:contain;object-position:center bottom;user-select:none;pointer-events:none}
-.v45-wearable{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center;pointer-events:none;user-select:none;filter:drop-shadow(0 10px 15px rgba(0,0,0,.38));transform-origin:center center}
-.v45-wearable.is-back{z-index:10;transform:translateY(7%) scale(.63);opacity:.98}
-.v45-wearable.is-outfit{z-index:30;transform:translateY(11%) scale(.57)}
-.v45-wearable.is-shoes{z-index:36;transform:translateY(32%) scale(.49)}
-.v45-wearable.is-headwear{z-index:44;transform:translateY(-28%) scale(.52)}
-.v45-wearable.is-face{z-index:48;transform:translateY(-19%) scale(.43)}
-.v45-wearable.is-hand{z-index:50;transform:translate(22%,8%) scale(.42)}
-.v45-wearable.shape-wings{transform:translateY(8%) scale(.72);opacity:.94}
-.v45-wearable.shape-halo{transform:translateY(-34%) scale(.44)}
-.v45-wearable.shape-crown{transform:translateY(-31%) scale(.48)}
-.v45-wearable.shape-hairbow{transform:translate(12%,-30%) scale(.38)}
-.v45-wearable.shape-glasses,.v45-wearable.shape-sunglasses{transform:translateY(-21%) scale(.36)}
-.v45-wearable.shape-magnifier{transform:translate(23%,6%) scale(.39)}
-.v45-wearable.shape-wand{transform:translate(25%,9%) scale(.42)}
+.v46-avatar-character{position:absolute;inset:0;z-index:20;width:100%;height:100%;object-fit:contain;object-position:center bottom;user-select:none;pointer-events:none;transform-origin:center bottom}
 .v44-avatar-floor{position:absolute;z-index:1;left:17%;right:17%;bottom:0;height:9%;border-radius:50%;background:radial-gradient(ellipse,rgba(61,230,255,.72),rgba(35,115,255,.22) 52%,transparent 73%);box-shadow:0 0 30px rgba(46,219,255,.38)}
-.v44-rig-status{position:absolute;z-index:60;right:6%;top:7%;display:flex;align-items:center;gap:5px;padding:6px 9px;border:1px solid rgba(88,229,255,.45);border-radius:999px;background:rgba(4,26,65,.78);backdrop-filter:blur(10px);box-shadow:0 0 18px rgba(38,202,255,.18);font-size:11px;color:#e9fbff}
+.v44-rig-status{position:absolute;z-index:60;right:5%;top:6%;display:flex;align-items:center;gap:5px;padding:6px 9px;border:1px solid rgba(88,229,255,.45);border-radius:999px;background:rgba(4,26,65,.78);backdrop-filter:blur(10px);box-shadow:0 0 18px rgba(38,202,255,.18);font-size:11px;color:#e9fbff}
 .v44-rig-status span{color:#52e9ff;text-shadow:0 0 10px #52e9ff}.v44-rig-status b{font-size:12px}
-.v44-rig-label{position:absolute;z-index:61;left:6%;top:7%;padding:5px 8px;border-radius:999px;background:rgba(19,37,86,.8);border:1px solid rgba(255,255,255,.16);font-size:9px;font-weight:900;letter-spacing:.12em;color:#86eaff}
-.v43-character-stage{min-height:560px}.v43-character-stage>div{min-height:560px!important}.v43-character-stage .v44-avatar-rig{width:min(88%,390px)!important;height:min(535px,70vh)!important;margin:auto}
+.v44-rig-label{position:absolute;z-index:61;left:5%;top:6%;padding:5px 8px;border-radius:999px;background:rgba(19,37,86,.8);border:1px solid rgba(255,255,255,.16);font-size:9px;font-weight:900;letter-spacing:.12em;color:#86eaff}
+
+.v46-gear-dock{position:absolute;z-index:55;left:5%;bottom:7%;display:flex;flex-direction:column;gap:5px;pointer-events:none}
+.v46-gear-chip{position:relative;width:var(--v46-gear-size,32px);height:var(--v46-gear-size,32px);display:grid;place-items:center;border-radius:10px;border:1px solid rgba(89,211,255,.38);background:linear-gradient(155deg,rgba(11,52,111,.94),rgba(3,24,62,.94));box-shadow:0 8px 18px rgba(0,0,0,.28),inset 0 1px rgba(255,255,255,.08);overflow:hidden}
+.v46-gear-chip img{width:100%;height:100%;object-fit:contain;padding:3px;filter:drop-shadow(0 4px 5px rgba(0,0,0,.28))}
+.v46-gear-chip i{position:absolute;right:1px;bottom:1px;display:grid;place-items:center;width:12px;height:12px;border-radius:50%;background:#50e3bd;color:#052d39;font-size:8px;font-style:normal;font-weight:1000;box-shadow:0 0 8px rgba(80,227,189,.45)}
+.v46-gear-chip.is-outfit{border-color:rgba(85,232,255,.7);box-shadow:0 0 16px rgba(45,210,255,.22),0 8px 18px rgba(0,0,0,.28)}
+
+.v43-character-stage{min-height:560px}
+.v43-character-stage>div,.v43-character-stage>.room-background{width:100%!important;min-width:100%!important;min-height:560px!important}
+.v43-character-stage .room-background>div:last-child{width:100%}
+.v43-character-stage .v44-avatar-rig{width:min(88%,390px)!important;height:min(535px,70vh)!important;margin:auto}
 .v43-character-stage-panel{background:linear-gradient(180deg,rgba(10,55,119,.96),rgba(5,27,72,.98));border:1px solid rgba(61,171,255,.32);box-shadow:inset 0 1px rgba(255,255,255,.08),0 24px 65px rgba(0,0,0,.28)}
 .v43-equipped-strip{gap:8px}.v43-equipped-strip>div{min-height:74px;border:1px solid rgba(88,175,255,.22);background:linear-gradient(180deg,rgba(21,67,129,.8),rgba(8,34,79,.86));transition:.2s ease}.v43-equipped-strip>div.is-on{border-color:rgba(60,236,220,.55);box-shadow:0 0 18px rgba(35,224,220,.13)}
 .v43-inventory-card{overflow:hidden;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}.v43-inventory-card:hover{transform:translateY(-4px);box-shadow:0 15px 30px rgba(0,0,0,.28),0 0 22px color-mix(in srgb,var(--item-accent) 28%,transparent)}
 .v43-inventory-card .v4x-inventory-preview{min-height:205px;background:radial-gradient(circle at 50% 45%,color-mix(in srgb,var(--item-accent) 20%,transparent),rgba(2,15,38,.94) 68%)}
 .v43-inventory-card .v4x-inventory-preview img{width:100%;height:190px;object-fit:contain;padding:12px;filter:drop-shadow(0 12px 18px rgba(0,0,0,.45))}
-@keyframes v44Idle{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-4px) scale(1.008)}}
+
 @keyframes v44Aura{0%,100%{opacity:.65;transform:scale(.96)}50%{opacity:1;transform:scale(1.05)}}
-@media(max-width:1100px){.v43-character-stage{min-height:460px}.v43-character-stage>div{min-height:460px!important}.v43-character-stage .v44-avatar-rig{height:430px!important}.v43-inventory-card .v4x-inventory-preview{min-height:170px}.v43-inventory-card .v4x-inventory-preview img{height:155px}}
+@media(max-width:1100px){.v43-character-stage{min-height:460px}.v43-character-stage>div,.v43-character-stage>.room-background{min-height:460px!important}.v43-character-stage .v44-avatar-rig{height:430px!important}.v43-inventory-card .v4x-inventory-preview{min-height:170px}.v43-inventory-card .v4x-inventory-preview img{height:155px}}
+@media(max-width:760px){.v46-gear-dock{left:3%;bottom:5%;gap:3px}.v44-rig-status{right:3%;top:4%}}

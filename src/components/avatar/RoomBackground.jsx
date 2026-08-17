@@ -13,8 +13,10 @@ export default function RoomBackground({ room, children, compact = false }) {
 
   return (
     <div
-      className="relative overflow-hidden rounded-2xl border border-white/10"
+      className="room-background relative w-full h-full overflow-hidden rounded-2xl border border-white/10"
       style={{
+        width: "100%",
+        minWidth: 0,
         minHeight: compact ? 205 : 255,
         backgroundImage: `linear-gradient(180deg, rgba(4,8,20,.05), rgba(4,8,20,.54)), url(${backgroundImage})`,
         backgroundSize: "cover",
@@ -39,7 +41,7 @@ export default function RoomBackground({ room, children, compact = false }) {
         );
       })}
 
-      <div className="relative z-20 flex min-h-[inherit] items-end justify-center pb-2">{children}</div>
+      <div className="relative z-20 flex min-h-[inherit] w-full items-end justify-center pb-2">{children}</div>
     </div>
   );
 }
