@@ -1,0 +1,18 @@
+Bilgin Ustası V4.3 Premium Final — değişen dosyalar
+
+src/App.jsx
+src/index.css
+src/data/avatarParts.js
+src/data/petsAndRoom.js
+src/data/catalog.js
+src/data/gameAssets.js
+src/components/Shop.jsx
+src/components/avatar/AvatarCanvas.jsx
+src/components/avatar/PetCanvas.jsx
+src/components/avatar/Wardrobe.jsx
+src/components/shell/RightRail.jsx
+src/assets/game-assets/premium/      (200 benzersiz WebP)
+src/assets/game-assets/wearables/    (140 hizalanmış wearable WebP)
+V4_3_PREMIUM_FINAL.md
+
+Kopyalama: ZIP içeriğini proje köküne çıkar ve aynı isimli dosyaların üzerine yaz.
