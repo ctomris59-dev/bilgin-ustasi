@@ -6,6 +6,7 @@ let failed = false;
 const fail = (message) => { console.error(`❌ ${message}`); failed = true; };
 const ok = (message) => console.log(`✅ ${message}`);
 
+const chunkPaths = Array.from({ length: 6 }, (_, i) => `src/assets/avatar-v5/premium/heroMasterChunk${i}.js`);
 const required = [
   "src/components/shell/AppShell.jsx",
   "src/components/shell/RightRail.jsx",
@@ -18,7 +19,8 @@ const required = [
   "src/data/avatarParts.js",
   "src/data/catalog.js",
   "src/data/premiumRigMasks.js",
-  "src/assets/avatar-v5/premium/hero-master.webp",
+  "src/assets/avatar-v5/premium/heroMasterData.js",
+  ...chunkPaths,
   "src/v5-avatar.css",
 ];
 
@@ -42,32 +44,45 @@ console.log(`🎨 Shop premium art: ${premiumCount}/200`);
 if (premiumCount !== 200) fail(`Premium shop asset sayısı 200 olmalı; bulunan: ${premiumCount}`);
 else ok("200 premium shop asseti korunuyor");
 
-const masterPath = path.join(root, "src/assets/avatar-v5/premium/hero-master.webp");
-if (fs.existsSync(masterPath)) {
-  const bytes = fs.statSync(masterPath).size;
-  if (bytes < 20000) fail(`Premium hero master beklenenden küçük: ${bytes} byte`);
-  else ok(`Premium raster hero master mevcut · ${Math.round(bytes / 1024)} KB`);
+let masterSourceBytes = 0;
+for (const rel of chunkPaths) {
+  const full = path.join(root, rel);
+  if (fs.existsSync(full)) masterSourceBytes += fs.statSync(full).size;
+}
+if (masterSourceBytes < 40000) fail(`Premium hero master bundle eksik/küçük: ${masterSourceBytes} byte`);
+else ok(`Premium hero master-art bundle aktif · ${Math.round(masterSourceBytes / 1024)} KB source`);
+
+const dataPath = path.join(root, "src/assets/avatar-v5/premium/heroMasterData.js");
+if (fs.existsSync(dataPath)) {
+  const data = fs.readFileSync(dataPath, "utf8");
+  if (!data.includes("data:image/webp;base64")) fail("Master-art data URI WebP olarak kurulmamış");
+  for (let i = 0; i < 6; i += 1) {
+    if (!data.includes(`heroMasterChunk${i}.js`)) fail(`Master-art chunk importu eksik: ${i}`);
+  }
 }
 
 const avatarCanvasPath = path.join(root, "src/components/avatar/AvatarCanvas.jsx");
 if (fs.existsSync(avatarCanvasPath)) {
   const avatarCanvas = fs.readFileSync(avatarCanvasPath, "utf8");
-  if (!avatarCanvas.includes('import AnimatedAvatar from "./AnimatedAvatar"')) fail("AvatarCanvas V5 AnimatedAvatar motoruna bağlı değil");
+  if (!avatarCanvas.includes('import AnimatedAvatar from "./AnimatedAvatar"')) fail("AvatarCanvas premium AnimatedAvatar motoruna bağlı değil");
   else ok("AvatarCanvas → premium AnimatedAvatar bridge aktif");
 }
 
 const animatedPath = path.join(root, "src/components/avatar/AnimatedAvatar.jsx");
 if (fs.existsSync(animatedPath)) {
   const animated = fs.readFileSync(animatedPath, "utf8");
-  if (!animated.includes('hero-master.webp')) fail("AnimatedAvatar premium master-art kullanmıyor");
+  if (!animated.includes("heroMasterData.js")) fail("AnimatedAvatar premium master-art bundle kullanmıyor");
   if (!animated.includes("PREMIUM_RIG_MASKS")) fail("Premium pixel-aligned rig maskeleri bağlı değil");
-  for (const marker of ["v5p-outfit", "v5p-shoes", "v5p-headwear", "v5p-back", "PremiumFaceItem", "PremiumHeadwear"]) {
-    if (!animated.includes(marker)) fail(`Premium rig marker eksik: ${marker}`);
+  for (const slot of ["back", "outfit", "shoes", "headwear"]) {
+    if (!animated.includes(`slot=\"${slot}\"`)) fail(`Premium rig slotu eksik: ${slot}`);
   }
-  if (animated.includes('className="v5-avatar-svg"') || animated.includes("function HairBack")) {
+  for (const marker of ["PremiumFaceItem", "PremiumHeadwear", "BlinkOverlay", "v5p-master-image"]) {
+    if (!animated.includes(marker)) fail(`Premium avatar marker eksik: ${marker}`);
+  }
+  if (animated.includes("function HairBack") || animated.includes('className="v5-avatar-svg"')) {
     fail("Legacy primitive SVG kahraman renderer hâlâ aktif");
   } else {
-    ok("Primitive SVG kahraman kaldırıldı; raster master + clip rig aktif");
+    ok("Primitive SVG kaldırıldı; premium raster master + pixel mask rig aktif");
   }
 }
 
@@ -91,4 +106,4 @@ if (failed) {
   process.exit(1);
 }
 
-console.log("\n🚀 V5.1 — Premium Master-Art Rig doğrulaması başarılı.");
+console.log("\n🚀 V5.1.2 — Premium Master-Art Rig doğrulaması başarılı.");
