@@ -28,7 +28,7 @@
     "hairColor": "#FF9EAA",
     "outfit": "outfit-v4-infinity",
     "shoes": "shoes-sneaker",
-    "headwear": null,
+    "headwear": "headwear-crown",
     "face": null,
     "back": null
   },
@@ -286,6 +286,6 @@
     "lastRewardDate": null,
     "bestMoves": {}
   },
-  "lastSyncedAt": "2026-08-17T20:27:13.741Z",
+  "lastSyncedAt": "2026-08-17T20:27:26.822Z",
   "gems": 1
 }
