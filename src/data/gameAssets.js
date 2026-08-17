@@ -45,6 +45,8 @@ export const GAME_ASSETS = {
   logo: asset("logo.jpg"),
   roomBackground: asset("rooms/base-study-room.jpg"),
   mapBackground: asset("worlds/map-background.jpg"),
+  heroStage: asset("scenes/hero-character-stage.webp"),
+  premiumBaseRoom: asset("scenes/premium-base-room.webp"),
 };
 
 function normalizeSlot(slot) {
@@ -77,6 +79,16 @@ export function getItemAsset(itemOrId, slotOverride) {
   if (!item.id || !item.slot) return "";
   const slot = normalizeSlot(item.slot);
   return asset(`unique/${slot}/${item.id}.png`);
+}
+
+
+export function getItemCardAsset(itemOrId, slotOverride) {
+  const item = typeof itemOrId === "string"
+    ? { id: itemOrId, slot: slotOverride }
+    : itemOrId || {};
+  if (!item.id || !item.slot) return "";
+  const slot = normalizeSlot(item.slot);
+  return asset(`premium/${slot}/${item.id}.webp`) || getItemAsset(item);
 }
 
 export function getPetAsset(petId) {

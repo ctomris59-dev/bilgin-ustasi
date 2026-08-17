@@ -10,6 +10,7 @@ export function createDefaultProfile(childName = "Bilgin Adayı") {
     accountCreatedAt: new Date().toISOString(),
     xp: 0,
     coins: 0,
+    gems: 0,
     streak: { current: 0, longest: 0, lastWeekKey: null, freezesAvailable: 1 },
     unlockedItems: [...STARTER_UNLOCKED],
     avatar: { ...DEFAULT_AVATAR },
@@ -57,6 +58,7 @@ export function normalizeProfile(profile) {
   return {
     ...profileWithoutLegacyCheckIn,
     accountCreatedAt: profile.accountCreatedAt || new Date().toISOString(),
+    gems: Number(profile.gems || 0),
     avatar: { ...DEFAULT_AVATAR, ...(profile.avatar || {}), characterStyle: profile.avatar?.characterStyle || "auto" },
     pet: profile.pet || { ...DEFAULT_PET_STATE },
     rooms,
