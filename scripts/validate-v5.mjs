@@ -17,11 +17,13 @@ const required = [
   "src/data/avatarRig.js",
   "src/data/avatarParts.js",
   "src/data/catalog.js",
+  "src/data/premiumRigMasks.js",
+  "src/assets/avatar-v5/premium/hero-master.webp",
   "src/v5-avatar.css",
 ];
 
 for (const rel of required) {
-  if (!fs.existsSync(path.join(root, rel))) fail(`Eksik V5 dosyası: ${rel}`);
+  if (!fs.existsSync(path.join(root, rel))) fail(`Eksik V5.1 dosyası: ${rel}`);
 }
 
 function countWebp(dir) {
@@ -40,23 +42,41 @@ console.log(`🎨 Shop premium art: ${premiumCount}/200`);
 if (premiumCount !== 200) fail(`Premium shop asset sayısı 200 olmalı; bulunan: ${premiumCount}`);
 else ok("200 premium shop asseti korunuyor");
 
+const masterPath = path.join(root, "src/assets/avatar-v5/premium/hero-master.webp");
+if (fs.existsSync(masterPath)) {
+  const bytes = fs.statSync(masterPath).size;
+  if (bytes < 20000) fail(`Premium hero master beklenenden küçük: ${bytes} byte`);
+  else ok(`Premium raster hero master mevcut · ${Math.round(bytes / 1024)} KB`);
+}
+
 const avatarCanvasPath = path.join(root, "src/components/avatar/AvatarCanvas.jsx");
 if (fs.existsSync(avatarCanvasPath)) {
   const avatarCanvas = fs.readFileSync(avatarCanvasPath, "utf8");
   if (!avatarCanvas.includes('import AnimatedAvatar from "./AnimatedAvatar"')) fail("AvatarCanvas V5 AnimatedAvatar motoruna bağlı değil");
-  else ok("AvatarCanvas → AnimatedAvatar V5 bridge aktif");
-  if (avatarCanvas.includes("getWearableAsset") || avatarCanvas.includes("game-assets/wearables")) fail("V5 karakter motoru legacy wearable PNG sistemine bağlı olmamalı");
-  else ok("Legacy wearable overlay bağımlılığı kaldırıldı");
+  else ok("AvatarCanvas → premium AnimatedAvatar bridge aktif");
 }
 
 const animatedPath = path.join(root, "src/components/avatar/AnimatedAvatar.jsx");
 if (fs.existsSync(animatedPath)) {
   const animated = fs.readFileSync(animatedPath, "utf8");
-  for (const marker of ["v5-bone-head", "v5-bone-torso", "v5-slot-outfit", "v5-slot-shoes", "v5-slot-headwear", "v5-slot-face", "v5-slot-back"]) {
-    if (!animated.includes(marker)) fail(`AnimatedAvatar rig marker eksik: ${marker}`);
+  if (!animated.includes('hero-master.webp')) fail("AnimatedAvatar premium master-art kullanmıyor");
+  if (!animated.includes("PREMIUM_RIG_MASKS")) fail("Premium pixel-aligned rig maskeleri bağlı değil");
+  for (const marker of ["v5p-outfit", "v5p-shoes", "v5p-headwear", "v5p-back", "PremiumFaceItem", "PremiumHeadwear"]) {
+    if (!animated.includes(marker)) fail(`Premium rig marker eksik: ${marker}`);
   }
-  if (!animated.includes("EYE = \"#35D58B\"")) fail("Yeşil gözlü tek kahraman tanımı doğrulanamadı");
-  else ok("Tek kahraman SVG rig ve ekipman slotları mevcut");
+  if (animated.includes('className="v5-avatar-svg"') || animated.includes("function HairBack")) {
+    fail("Legacy primitive SVG kahraman renderer hâlâ aktif");
+  } else {
+    ok("Primitive SVG kahraman kaldırıldı; raster master + clip rig aktif");
+  }
+}
+
+const masksPath = path.join(root, "src/data/premiumRigMasks.js");
+if (fs.existsSync(masksPath)) {
+  const masks = fs.readFileSync(masksPath, "utf8");
+  for (const slot of ["outfit", "shoes", "headwear", "back"]) {
+    if (!masks.includes(`\"${slot}\"`)) fail(`Premium rig maskesi eksik: ${slot}`);
+  }
 }
 
 const mainPath = path.join(root, "src/main.jsx");
@@ -67,8 +87,8 @@ if (fs.existsSync(mainPath)) {
 }
 
 if (failed) {
-  console.error("\nV5 doğrulaması başarısız. Vite build başlatılmadı.");
+  console.error("\nV5.1 premium avatar doğrulaması başarısız. Vite build başlatılmadı.");
   process.exit(1);
 }
 
-console.log("\n🚀 V5 — Animated Avatar System doğrulaması başarılı.");
+console.log("\n🚀 V5.1 — Premium Master-Art Rig doğrulaması başarılı.");
