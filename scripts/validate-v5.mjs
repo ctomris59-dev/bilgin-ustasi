@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { pathToFileURL } from "node:url";
 
 const root = process.cwd();
 let failed = false;
@@ -7,6 +8,7 @@ const fail = (message) => { console.error(`❌ ${message}`); failed = true; };
 const ok = (message) => console.log(`✅ ${message}`);
 
 const chunkPaths = Array.from({ length: 6 }, (_, i) => `src/assets/avatar-v5/premium/heroMasterChunk${i}.js`);
+const dataRel = "src/assets/avatar-v5/premium/heroMasterData.js";
 const required = [
   "src/components/shell/AppShell.jsx",
   "src/components/shell/RightRail.jsx",
@@ -19,7 +21,7 @@ const required = [
   "src/data/avatarParts.js",
   "src/data/catalog.js",
   "src/data/premiumRigMasks.js",
-  "src/assets/avatar-v5/premium/heroMasterData.js",
+  dataRel,
   ...chunkPaths,
   "src/v5-avatar.css",
 ];
@@ -52,12 +54,31 @@ for (const rel of chunkPaths) {
 if (masterSourceBytes < 40000) fail(`Premium hero master bundle eksik/küçük: ${masterSourceBytes} byte`);
 else ok(`Premium hero master-art bundle aktif · ${Math.round(masterSourceBytes / 1024)} KB source`);
 
-const dataPath = path.join(root, "src/assets/avatar-v5/premium/heroMasterData.js");
+const dataPath = path.join(root, dataRel);
 if (fs.existsSync(dataPath)) {
-  const data = fs.readFileSync(dataPath, "utf8");
-  if (!data.includes("data:image/webp;base64")) fail("Master-art data URI WebP olarak kurulmamış");
+  const dataSource = fs.readFileSync(dataPath, "utf8");
+  if (!dataSource.includes("data:image/webp;base64")) fail("Master-art data URI WebP olarak kurulmamış");
   for (let i = 0; i < 6; i += 1) {
-    if (!data.includes(`heroMasterChunk${i}.js`)) fail(`Master-art chunk importu eksik: ${i}`);
+    if (!dataSource.includes(`heroMasterChunk${i}.js`)) fail(`Master-art chunk importu eksik: ${i}`);
+  }
+
+  try {
+    const moduleUrl = `${pathToFileURL(dataPath).href}?validate=${Date.now()}`;
+    const heroModule = await import(moduleUrl);
+    const dataUri = heroModule.default || "";
+    const prefix = "data:image/webp;base64,";
+    if (!dataUri.startsWith(prefix)) {
+      fail("Birleştirilen master-art geçerli WebP data URI değil");
+    } else {
+      const buffer = Buffer.from(dataUri.slice(prefix.length), "base64");
+      const riff = buffer.subarray(0, 4).toString("ascii");
+      const webp = buffer.subarray(8, 12).toString("ascii");
+      if (riff !== "RIFF" || webp !== "WEBP") fail(`Master-art binary imzası geçersiz: ${riff}/${webp}`);
+      else if (buffer.length < 30000) fail(`Master-art binary beklenenden küçük: ${buffer.length} byte`);
+      else ok(`Master-art binary doğrulandı · RIFF/WEBP · ${Math.round(buffer.length / 1024)} KB`);
+    }
+  } catch (error) {
+    fail(`Master-art bundle import edilemedi: ${error.message}`);
   }
 }
 
@@ -106,4 +127,4 @@ if (failed) {
   process.exit(1);
 }
 
-console.log("\n🚀 V5.1.2 — Premium Master-Art Rig doğrulaması başarılı.");
+console.log("\n🚀 V5.1.3 — Premium Master-Art Rig doğrulaması başarılı.");
