@@ -6,10 +6,10 @@ import Shop from "./components/Shop";
 import ParentPanel from "./components/ParentPanel";
 import TestSolver from "./components/TestSolver";
 import ResultScreen from "./components/ResultScreen";
-import BottomNav from "./components/BottomNav";
 import MemoryGame from "./components/MemoryGame";
 import WorldMap from "./components/WorldMap";
-import SoundToggle from "./components/SoundToggle";
+import StickerAlbum from "./components/StickerAlbum";
+import AppShell from "./components/shell/AppShell";
 import { playCoin, playPop, playCelebrate } from "./lib/sound";
 import { createDefaultProfile, getLocalProfile, saveLocalProfile, normalizeProfile, getPausedTest, savePausedTest, clearPausedTest } from "./lib/storage";
 import { fetchCloudData, pushProfile, uploadTest } from "./lib/github";
@@ -19,7 +19,7 @@ import { PETS } from "./data/petsAndRoom";
 import { getLevelInfo } from "./data/levels";
 import { getNextStickerToUnlock } from "./data/stickers";
 import { generatePracticeTest } from "./lib/practiceGenerator";
-import { getWorldForLevel } from "./data/worlds";
+import { getWorldForLevel, getWorldById } from "./data/worlds";
 import { isRoomComplete } from "./data/houseRooms";
 
 function todayKey(date = new Date()) {
@@ -39,6 +39,7 @@ export default function App() {
   const [pausedTest, setPausedTest] = useState(() => getPausedTest());
   const [toast, setToast] = useState(null);
   const [worldUnlock, setWorldUnlock] = useState(null);
+  const [selectedItem, setSelectedItem] = useState(null);
 
   function showToast(message) {
     setToast(message);
@@ -134,6 +135,7 @@ export default function App() {
       ? calcSpeedBonus({ avgSecondsPerQuestion: result.avgSecondsPerQuestion, targetSeconds: result.targetSecondsPerQuestion })
       : 0;
     const bonusCoins = result.bonusCorrect ? 10 : 0;
+    const gemsEarned = result.correctCount === result.totalCount ? 1 : 0;
 
     const boost = getBoostInfo(profile.accountCreatedAt);
     const xpEarned = applyBoost(rewards.xp + speedBonus, boost.multiplier);
@@ -142,6 +144,7 @@ export default function App() {
     let next = { ...profile };
     next.xp += xpEarned;
     next.coins += coinsEarned;
+    next.gems = (next.gems || 0) + gemsEarned;
 
     const prevLevel = getLevelInfo(profile.xp).current.level;
 
@@ -255,10 +258,14 @@ export default function App() {
       newLegendaryItems,
       newSticker,
       boostActive: boost.active,
+      gemsEarned,
     });
   }
 
   function handleBuyItem(item) {
+    if (!item || item.legendary || (profile.unlockedItems || []).includes(item.id)) return;
+    const requiredLevel = getWorldById(item.world)?.unlockLevel || 1;
+    if (getLevelInfo(profile.xp || 0).current.level < requiredLevel) return;
     if (profile.coins < item.price) return;
     playCoin();
     const next = {
@@ -267,6 +274,25 @@ export default function App() {
       unlockedItems: [...profile.unlockedItems, item.id],
     };
     persist(next);
+  }
+
+
+  function handleEquipItem(item) {
+    if (!item || !(profile.unlockedItems || []).includes(item.id)) return;
+    playPop();
+    if (["outfit", "shoes", "headwear", "face"].includes(item.slot)) {
+      const removable = ["headwear", "face"].includes(item.slot);
+      const current = profile.avatar?.[item.slot];
+      handleChangeAvatar({ ...profile.avatar, [item.slot]: removable && current === item.id ? null : item.id });
+      return;
+    }
+    if (item.slot === "petSpecies") {
+      handleChangePet({ ...profile.pet, activeSpecies: profile.pet?.activeSpecies === item.id ? null : item.id });
+      return;
+    }
+    if (item.slot === "petAccessory") {
+      handleChangePet({ ...profile.pet, accessory: profile.pet?.accessory === item.id ? null : item.id });
+    }
   }
 
   function handleRedeemReward(reward) {
@@ -328,36 +354,52 @@ export default function App() {
 
   if (loading || !profile) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
-        <p className="font-display text-xl animate-pulse">✨ Yükleniyor...</p>
+      <div className="v4-loading-screen">
+        <div className="v4-loading-orbit"><span>✦</span></div>
+        <p className="v4-loading-kicker">BİLGİN USTASI</p>
+        <h1 className="font-display">Macera hazırlanıyor...</h1>
+        <div className="v4-loading-track"><span /></div>
       </div>
     );
   }
 
+  const activeSection = activeTest
+    ? "test"
+    : pendingResult
+    ? "result"
+    : showMiniGame
+    ? "minigame"
+    : showWorldMap
+    ? "world"
+    : tab;
+
+  const focusMode = Boolean(activeTest || pendingResult || showMiniGame || showWorldMap);
+
   return (
-    <div className="app-shell min-h-screen pb-28">
-      <header className="px-4 sm:px-8 pt-4 pb-3 max-w-3xl mx-auto w-full flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-2xl border border-white/10 bg-gradient-to-br from-[#8B6CFF]/20 to-[#52E3FF]/10 text-[#A98CFF] shadow-lg">✦</div>
-          <div>
-            <p className="text-[8px] font-black uppercase tracking-[.22em] text-[#687494]">Keşfet · Öğren · Ustalaş</p>
-            <h1 className="font-display text-lg font-black tracking-tight">Bilgin Ustası</h1>
-          </div>
-        </div>
-        <div className="flex items-center gap-2">
-          <SoundToggle />
-          <span className="game-chip" style={{ color: syncStatus === "synced" ? "#52E3C2" : syncStatus === "offline" ? "#FFD166" : "#A98CFF" }}>
-            <span className="inline-block h-1.5 w-1.5 rounded-full" style={{ background: syncStatus === "synced" ? "#52E3C2" : syncStatus === "offline" ? "#FFD166" : "#A98CFF" }} />
-            {syncStatus === "synced" ? "Senkron" : syncStatus === "offline" ? "Yerel" : "Bağlanıyor"}
-          </span>
-        </div>
-      </header>
-
-      {toast && (
-        <div className="fixed top-3 left-1/2 -translate-x-1/2 z-40 glass-card px-4 py-2.5 text-xs font-black animate-pop shadow-2xl">{toast}</div>
-      )}
-
-      <main className="px-4 sm:px-8 max-w-3xl mx-auto w-full">
+    <>
+      <AppShell
+        profile={profile}
+        tests={tests}
+        syncStatus={syncStatus}
+        activeSection={activeSection}
+        tab={tab}
+        onChangeTab={(nextTab) => {
+          setShowWorldMap(false);
+          setShowMiniGame(false);
+          setTab(nextTab);
+        }}
+        onOpenWorldMap={() => setShowWorldMap(true)}
+        onStartMiniGame={() => setShowMiniGame(true)}
+        onOpenMistakes={() => setTab("mistakes")}
+        onStartTest={handleStartTest}
+        focusMode={focusMode}
+        selectedItem={selectedItem}
+        onSelectItem={setSelectedItem}
+        onBuyItem={handleBuyItem}
+        onEquipItem={handleEquipItem}
+        onOpenShop={() => setTab("shop")}
+        onOpenCharacter={() => setTab("wardrobe")}
+      >
         {activeTest ? (
           <TestSolver
             test={activeTest.test}
@@ -388,6 +430,8 @@ export default function App() {
                 onOpenMistakeBox={() => setTab("mistakes")}
                 onStartMiniGame={() => setShowMiniGame(true)}
                 onOpenWorldMap={() => setShowWorldMap(true)}
+                onOpenShop={() => setTab("shop")}
+                onOpenCharacter={() => setTab("wardrobe")}
                 pausedTest={pausedTest}
                 onResumeTest={handleResumeTest}
                 onDiscardPausedTest={handleDiscardPausedTest}
@@ -395,18 +439,23 @@ export default function App() {
             )}
             {tab === "mistakes" && <MistakeBox profile={profile} onStartRetryTest={handleStartRetryTest} />}
             {tab === "wardrobe" && (
-              <Wardrobe profile={profile} onChangeAvatar={handleChangeAvatar} onChangePet={handleChangePet} onChangeRoomSlot={handleChangeRoomSlot} />
+              <Wardrobe profile={profile} onChangeAvatar={handleChangeAvatar} onChangePet={handleChangePet} onChangeRoomSlot={handleChangeRoomSlot} selectedItem={selectedItem} onSelectItem={setSelectedItem} />
             )}
-            {tab === "shop" && <Shop profile={profile} onBuyItem={handleBuyItem} onRedeemReward={handleRedeemReward} />}
+            {tab === "shop" && <Shop profile={profile} onBuyItem={handleBuyItem} onRedeemReward={handleRedeemReward} selectedItem={selectedItem} onSelectItem={setSelectedItem} />}
+            {tab === "archive" && <StickerAlbum profile={profile} />}
             {tab === "parent" && <ParentPanel profile={profile} onUpdateProfile={persist} onUploadTest={handleUploadTest} />}
           </>
         )}
-      </main>
+      </AppShell>
 
-      {!activeTest && !pendingResult && !showMiniGame && !showWorldMap && <BottomNav active={tab} onChange={setTab} />}
+      {toast && (
+        <div className="v4-toast">{toast}</div>
+      )}
+
       {worldUnlock && <WorldUnlockReveal world={worldUnlock} onClose={() => setWorldUnlock(null)} />}
-    </div>
+    </>
   );
+
 }
 
 function WorldUnlockReveal({ world, onClose }) {
