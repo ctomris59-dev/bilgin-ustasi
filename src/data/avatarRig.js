@@ -1,9 +1,10 @@
 import { ITEMS } from "./avatarParts";
 
+// V5.1 premium single-hero rig. All wearable slots resolve against the same master character.
 export const HERO_PROFILE = Object.freeze({
   id: "alya",
   name: "Bilgin Kaşif",
-  title: "Tek Kahraman",
+  title: "Premium Tek Kahraman",
   hair: "curly-brown",
   eyes: "emerald-green",
   skin: "warm",
