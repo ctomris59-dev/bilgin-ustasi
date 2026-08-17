@@ -5,43 +5,61 @@ import { ROOM_TYPES } from "../../data/houseRooms";
 import { getCatalogMeta, isItemEquipped } from "../../data/catalog";
 import { getLevelInfo } from "../../data/levels";
 import { getWorldById } from "../../data/worlds";
-import { HERO_PROFILE } from "../../data/avatarRig";
 import RoomBuilder from "./RoomBuilder";
-import RoomBackground from "./RoomBackground";
-import AvatarCanvas from "./AvatarCanvas";
 import PetCanvas from "./PetCanvas";
+import GameHero from "./GameHero";
 import { playPop } from "../../lib/sound";
 
-const TABS = [
-  { id: "equipment", label: "Ekipman", hint: "Kahramanı giydir" },
-  { id: "pets", label: "Dostlar", hint: "Keşif dostunu seç" },
-  { id: "base", label: "Üs", hint: "Odanı geliştir" },
+const MODES = [
+  ["equipment", "Kahraman", "✦"],
+  ["pets", "Dost", "◆"],
+  ["base", "Üs", "⌂"],
 ];
 
 const SLOT_TABS = [
-  ["outfit", "Kıyafet"], ["shoes", "Ayakkabı"], ["headwear", "Başlık"],
-  ["face", "Aksesuar"], ["back", "Sırt Eşyası"],
+  ["outfit", "Kıyafet", "◈"],
+  ["shoes", "Ayakkabı", "⌁"],
+  ["headwear", "Başlık", "△"],
+  ["face", "Aksesuar", "◎"],
+  ["back", "Sırt", "◇"],
 ];
 
 export default function Wardrobe({ profile, onChangeAvatar, onChangePet, onChangeRoomSlot, onSelectItem }) {
-  const [tab, setTab] = useState("equipment");
+  const [mode, setMode] = useState("equipment");
   const [slot, setSlot] = useState("outfit");
+  const [selectedId, setSelectedId] = useState(null);
   const [roomId, setRoomId] = useState("bedroom");
+  const [pulseKey, setPulseKey] = useState(0);
+
   const owned = useMemo(() => new Set(profile.unlockedItems || []), [profile.unlockedItems]);
   const level = getLevelInfo(profile.xp || 0).current.level;
-
-  const equipment = useMemo(() => ITEMS.filter((item) => owned.has(item.id) && item.slot === slot).map(getCatalogMeta), [owned, slot]);
+  const equipment = useMemo(
+    () => ITEMS.filter((item) => owned.has(item.id) && item.slot === slot).map(getCatalogMeta),
+    [owned, slot]
+  );
+  const selected = equipment.find((item) => item.id === selectedId) || equipment[0] || null;
   const pets = useMemo(() => PETS.filter((item) => owned.has(item.id)).map(getCatalogMeta), [owned]);
   const petAccessories = useMemo(() => PET_ACCESSORIES.filter((item) => owned.has(item.id)).map(getCatalogMeta), [owned]);
+  const equippedCount = [profile.avatar?.outfit, profile.avatar?.shoes, profile.avatar?.headwear, profile.avatar?.face, profile.avatar?.back].filter(Boolean).length;
+  const completion = Math.round((equippedCount / 5) * 100);
+
+  function choose(item) {
+    setSelectedId(item.id);
+    onSelectItem?.(item);
+    playPop();
+  }
 
   function equip(item) {
+    if (!item) return;
     playPop();
     onSelectItem?.(item);
-    if (["outfit", "shoes", "headwear", "face", "back"].includes(item.slot)) {
-      const removable = ["headwear", "face", "back"].includes(item.slot);
-      const current = profile.avatar?.[item.slot];
-      onChangeAvatar({ ...profile.avatar, [item.slot]: removable && current === item.id ? null : item.id });
-    }
+    const removable = ["headwear", "face", "back"].includes(item.slot);
+    const current = profile.avatar?.[item.slot];
+    onChangeAvatar({
+      ...profile.avatar,
+      [item.slot]: removable && current === item.id ? null : item.id,
+    });
+    setPulseKey((value) => value + 1);
   }
 
   function choosePet(item) {
@@ -57,108 +75,161 @@ export default function Wardrobe({ profile, onChangeAvatar, onChangePet, onChang
   }
 
   return (
-    <div className="v4x-character-screen v43-character-screen">
-      <section className="v4x-character-head v43-character-head">
+    <div className="v45-game-screen">
+      <header className="v45-game-head">
         <div>
-          <span className="v4x-eyebrow">V5 · TEK KAHRAMAN</span>
-          <h2>Karakter & Envanter</h2>
-          <p>{HERO_PROFILE.name} tek ana karakterdir. Kazandığın parçalar artık doğrudan onun rig slotlarına takılır ve hareket eder.</p>
+          <span className="v45-kicker">V4.5 · KAHRAMAN ÜSSÜ</span>
+          <h2>Bilgin Kaşifini geliştir</h2>
+          <p>Tek kahraman. Tek kimlik. Kazandığın her parça doğrudan karakterin rig slotuna takılır.</p>
         </div>
-        <div className="v4x-character-summary">
-          <span><b>{owned.size}</b><small>Sahip</small></span>
-          <span><b>{countEquipped(profile)}</b><small>Takılı</small></span>
-          <span><b>{level}</b><small>Seviye</small></span>
+        <div className="v45-head-stats">
+          <span><b>Lv.{level}</b><small>Seviye</small></span>
+          <span><b>{owned.size}</b><small>Koleksiyon</small></span>
+          <span><b>{completion}%</b><small>Donanım</small></span>
         </div>
-      </section>
+      </header>
 
-      <nav className="v4x-character-tabs v43-character-tabs">
-        {TABS.map((entry) => (
-          <button key={entry.id} className={tab === entry.id ? "is-active" : ""} onClick={() => { playPop(); setTab(entry.id); }}>
-            <strong>{entry.label}</strong><small>{entry.hint}</small>
+      <nav className="v45-mode-switch" aria-label="Karakter alanı">
+        {MODES.map(([id, label, icon]) => (
+          <button key={id} className={mode === id ? "is-active" : ""} onClick={() => { setMode(id); playPop(); }}>
+            <span>{icon}</span><strong>{label}</strong>
           </button>
         ))}
       </nav>
 
-      <div className="v43-character-workspace">
-        <CharacterStage profile={profile} level={level} />
-        <div className="v43-character-content">
-          {tab === "equipment" && (
-            <section className="v4x-inventory-panel v43-inventory-panel">
-              <div className="v43-panel-title">
-                <div><small>V5 RIG EKİPMANLARI</small><strong>Takmak istediğin parçayı seç</strong></div>
-                <span>{equipment.length} açık</span>
-              </div>
-              <div className="v4x-slot-tabs v43-slot-tabs">
-                {SLOT_TABS.map(([id,label]) => <button key={id} className={slot === id ? "is-active" : ""} onClick={() => setSlot(id)}>{label}</button>)}
-              </div>
-              <div className="v4x-inventory-grid v43-inventory-grid">
-                {equipment.map((item) => (
-                  <InventoryCard key={item.id} item={item} equipped={isItemEquipped(profile, item)} onClick={() => equip(item)} onSelect={() => onSelectItem?.(item)} />
-                ))}
-                {equipment.length === 0 && <EmptyInventory text="Bu slot için henüz item açmadın. Test çözerek coin kazan ve Kaşif Dükkânı'ndan yeni parçalar aç." />}
-              </div>
-            </section>
-          )}
+      {mode === "equipment" && (
+        <section className="v45-loadout-layout">
+          <div className="v45-hero-stage">
+            <div className="v45-stage-orbit v45-stage-orbit-one" />
+            <div className="v45-stage-orbit v45-stage-orbit-two" />
+            <div className="v45-stage-stars" aria-hidden="true"><i /><i /><i /><i /><i /></div>
+            <div className="v45-stage-copy">
+              <span>AKTİF KAHRAMAN</span>
+              <strong>Bilgin Kaşif</strong>
+              <small>Kıvırcık saç · yeşil göz · canlı SVG rig</small>
+            </div>
+            <GameHero
+              avatar={profile.avatar}
+              pulseKey={`${pulseKey}-${profile.avatar?.outfit}-${profile.avatar?.shoes}-${profile.avatar?.headwear}-${profile.avatar?.face}-${profile.avatar?.back}`}
+            />
+            <div className="v45-equipped-dock">
+              {SLOT_TABS.map(([id, label, icon]) => (
+                <button key={id} className={`${slot === id ? "is-active" : ""} ${profile.avatar?.[id] ? "is-equipped" : ""}`} onClick={() => { setSlot(id); setSelectedId(null); playPop(); }}>
+                  <span>{icon}</span><small>{label}</small><b>{profile.avatar?.[id] ? "✓" : "+"}</b>
+                </button>
+              ))}
+            </div>
+          </div>
 
-          {tab === "pets" && (
-            <section className="v4x-pet-manager v43-pet-manager">
-              <div className="v4x-section-title"><div><small>KEŞİF DOSTLARI</small><strong>Aktif dostunu seç</strong></div><span>{pets.length} açık</span></div>
-              <div className="v4x-inventory-grid v4x-pet-grid v43-inventory-grid">
-                {pets.map((item) => <InventoryCard key={item.id} item={item} equipped={profile.pet?.activeSpecies === item.id} onClick={() => choosePet(item)} onSelect={() => onSelectItem?.(item)} actionLabel="Aktif Et" />)}
-              </div>
-              <div className="v4x-section-title v4x-subsection"><div><small>DOST EKİPMANI</small><strong>Aksesuarlar</strong></div></div>
-              <div className="v4x-inventory-grid v4x-compact-grid v43-inventory-grid">
-                {petAccessories.map((item) => <InventoryCard key={item.id} item={item} equipped={profile.pet?.accessory === item.id} onClick={() => choosePetAccessory(item)} onSelect={() => onSelectItem?.(item)} actionLabel="Kullan" />)}
-              </div>
-            </section>
-          )}
+          <div className="v45-inventory-zone">
+            <div className="v45-loop-banner">
+              <span><b>1</b> Soruyu çöz</span><i>→</i>
+              <span><b>2</b> Ödül kazan</span><i>→</i>
+              <span><b>3</b> Ekipmanı kuşan</span><i>→</i>
+              <span><b>4</b> Kahramanı geliştir</span>
+            </div>
 
-          {tab === "base" && (
-            <section className="v4x-base-manager v43-base-manager">
-              <div className="v4x-room-tabs">
-                {ROOM_TYPES.map((room) => {
-                  const world = getWorldById(room.unlockWorld);
-                  const unlocked = !world || level >= world.unlockLevel;
-                  return <button key={room.id} disabled={!unlocked} className={roomId === room.id ? "is-active" : ""} onClick={() => setRoomId(room.id)}><span>{room.emoji}</span><strong>{room.title}</strong><small>{unlocked ? "Düzenle" : `Sv. ${world?.unlockLevel}`}</small></button>;
-                })}
+            <div className="v45-slot-header">
+              <div>
+                <small>{SLOT_TABS.find(([id]) => id === slot)?.[1]?.toUpperCase()}</small>
+                <strong>Envanter</strong>
               </div>
-              <RoomBuilder room={profile.rooms?.[roomId]} roomId={roomId} unlockedIds={owned} onCommit={(nextRoom) => onChangeRoomSlot(roomId, nextRoom)} />
-            </section>
-          )}
-        </div>
-      </div>
+              <span>{equipment.length} parça açık</span>
+            </div>
+
+            <div className="v45-item-carousel">
+              {equipment.map((item) => {
+                const equipped = isItemEquipped(profile, item);
+                const active = selected?.id === item.id;
+                return (
+                  <button
+                    key={item.id}
+                    className={`v45-item-card rarity-${item.rarity} ${equipped ? "is-equipped" : ""} ${active ? "is-selected" : ""}`}
+                    style={{ "--item-accent": item.rarityMeta.color }}
+                    onClick={() => choose(item)}
+                  >
+                    <span className="v45-rarity">{item.rarityMeta.label}</span>
+                    <img src={item.cardAsset} alt="" />
+                    <strong>{item.label}</strong>
+                    <small>{item.world.shortTitle}</small>
+                    <em>{equipped ? "TAKILI" : "SEÇ"}</em>
+                  </button>
+                );
+              })}
+              {equipment.length === 0 && (
+                <div className="v45-empty-inventory"><span>◇</span><strong>Bu slot henüz boş</strong><small>Görevleri tamamla, coin kazan ve yeni ekipmanların kilidini aç.</small></div>
+              )}
+            </div>
+
+            <div className="v45-selected-panel">
+              {selected ? (
+                <>
+                  <div className="v45-selected-art" style={{ "--item-accent": selected.rarityMeta.color }}>
+                    <img src={selected.cardAsset} alt={selected.label} />
+                  </div>
+                  <div className="v45-selected-copy">
+                    <span style={{ color: selected.rarityMeta.color }}>{selected.rarityMeta.label} · {selected.slotMeta.label}</span>
+                    <h3>{selected.label}</h3>
+                    <p>{selected.world.shortTitle} koleksiyonundan. Seçildiğinde doğrudan Bilgin Kaşif'in {selected.slotMeta.label.toLowerCase()} rig slotuna bağlanır.</p>
+                    <div><b>RIG SLOT</b><strong>{selected.slot.toUpperCase()}</strong></div>
+                  </div>
+                  <button className={`v45-equip-cta ${isItemEquipped(profile, selected) ? "is-on" : ""}`} onClick={() => equip(selected)}>
+                    {isItemEquipped(profile, selected) ? "✓ Üzerinde" : "Kahramana Tak"}
+                  </button>
+                </>
+              ) : (
+                <div className="v45-select-hint"><span>✦</span><strong>Bir ekipman seç</strong><small>Detayını gör ve tek dokunuşla kahramana tak.</small></div>
+              )}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {mode === "pets" && (
+        <section className="v45-secondary-screen">
+          <div className="v45-secondary-hero">
+            <span className="v45-kicker">KEŞİF DOSTU</span>
+            <h3>Macera takımını kur</h3>
+            <p>Dostun kahramanın yanında görevlerde görünür. Aktif dostunu ve aksesuarını seç.</p>
+            <div className="v45-pet-stage"><PetCanvas pet={profile.pet} size={210} /></div>
+          </div>
+          <div className="v45-secondary-list">
+            <h3>Dostlar</h3>
+            <div className="v45-mini-cards">
+              {pets.map((item) => <MiniCard key={item.id} item={item} active={profile.pet?.activeSpecies === item.id} onClick={() => choosePet(item)} />)}
+            </div>
+            <h3>Aksesuarlar</h3>
+            <div className="v45-mini-cards">
+              {petAccessories.map((item) => <MiniCard key={item.id} item={item} active={profile.pet?.accessory === item.id} onClick={() => choosePetAccessory(item)} />)}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {mode === "base" && (
+        <section className="v45-base-screen">
+          <div className="v45-room-selector">
+            {ROOM_TYPES.map((room) => {
+              const world = getWorldById(room.unlockWorld);
+              const unlocked = !world || level >= world.unlockLevel;
+              return (
+                <button key={room.id} disabled={!unlocked} className={roomId === room.id ? "is-active" : ""} onClick={() => setRoomId(room.id)}>
+                  <span>{room.emoji}</span><strong>{room.title}</strong><small>{unlocked ? "Düzenle" : `Sv. ${world?.unlockLevel}`}</small>
+                </button>
+              );
+            })}
+          </div>
+          <RoomBuilder room={profile.rooms?.[roomId]} roomId={roomId} unlockedIds={owned} onCommit={(nextRoom) => onChangeRoomSlot(roomId, nextRoom)} />
+        </section>
+      )}
     </div>
   );
 }
 
-function CharacterStage({ profile, level }) {
-  return <aside className="v43-character-stage-panel">
-    <div className="v43-stage-kicker"><span>AKTİF KAŞİF · {HERO_PROFILE.name.toUpperCase()}</span><b>Lv. {level}</b></div>
-    <div className="v43-character-stage">
-      <RoomBackground room={profile.rooms?.bedroom} compact heroStage>
-        <AvatarCanvas avatar={profile.avatar} size={350} showEquipment showBadges />
-        {profile.pet?.activeSpecies && <div className="v43-stage-pet"><PetCanvas pet={profile.pet} size={104} /></div>}
-      </RoomBackground>
-    </div>
-    <div className="v43-equipped-strip">
-      {SLOT_TABS.map(([slot,label]) => <div key={slot} className={profile.avatar?.[slot] ? "is-on" : ""}><span>{profile.avatar?.[slot] ? "✓" : "–"}</span><small>{label}</small></div>)}
-    </div>
-    <div className="v43-learning-loop"><strong>Ders → Ödül → Ekipman → Kahraman</strong><small>Her yeni parça karakterin gerçek SVG rig slotuna takılır.</small></div>
-  </aside>;
-}
-
-function InventoryCard({ item, equipped, onClick, onSelect, actionLabel = "Kuşan" }) {
-  return <article className={`v4x-inventory-card v43-inventory-card rarity-${item.rarity} ${equipped ? "is-equipped" : ""}`} style={{ "--item-accent": item.rarityMeta.color }}>
-    <button type="button" className="v4x-inventory-preview" onClick={onSelect}><img src={item.cardAsset} alt={item.label} /><span>{item.rarityMeta.label}</span></button>
-    <div className="v4x-inventory-copy"><small>{item.slotMeta.label}</small><strong>{item.label}</strong><em>{item.world.shortTitle}</em></div>
-    <button className="v4x-equip-button" onClick={onClick}>{equipped ? "✓ Takılı" : actionLabel}</button>
-  </article>;
-}
-
-function EmptyInventory({ text }) {
-  return <div className="v4x-empty v4x-empty-wide"><span>◇</span><strong>Henüz item yok</strong><small>{text}</small></div>;
-}
-
-function countEquipped(profile) {
-  return [profile.avatar?.outfit, profile.avatar?.shoes, profile.avatar?.headwear, profile.avatar?.face, profile.avatar?.back, profile.pet?.activeSpecies, profile.pet?.accessory].filter(Boolean).length;
+function MiniCard({ item, active, onClick }) {
+  return (
+    <button className={`v45-mini-card ${active ? "is-active" : ""}`} onClick={onClick}>
+      <img src={item.cardAsset} alt="" /><strong>{item.label}</strong><small>{active ? "Aktif" : "Seç"}</small>
+    </button>
+  );
 }
