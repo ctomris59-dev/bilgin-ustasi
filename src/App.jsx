@@ -280,8 +280,8 @@ export default function App() {
   function handleEquipItem(item) {
     if (!item || !(profile.unlockedItems || []).includes(item.id)) return;
     playPop();
-    if (["outfit", "shoes", "headwear", "face"].includes(item.slot)) {
-      const removable = ["headwear", "face"].includes(item.slot);
+    if (["outfit", "shoes", "headwear", "face", "back"].includes(item.slot)) {
+      const removable = ["headwear", "face", "back"].includes(item.slot);
       const current = profile.avatar?.[item.slot];
       handleChangeAvatar({ ...profile.avatar, [item.slot]: removable && current === item.id ? null : item.id });
       return;
