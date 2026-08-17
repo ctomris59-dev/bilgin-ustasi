@@ -1,8 +1,8 @@
 {
   "childName": "Bilgin Adayı",
   "accountCreatedAt": "2026-08-16T11:49:54.152Z",
-  "xp": 282,
-  "coins": 32,
+  "xp": 398,
+  "coins": 82,
   "streak": {
     "current": 2,
     "longest": 2,
@@ -12,7 +12,13 @@
   "unlockedItems": [
     "outfit-tshirt",
     "shoes-sneaker",
-    "face-v4-archive-monocle"
+    "face-v4-archive-monocle",
+    "headwear-crown",
+    "outfit-v4-infinity",
+    "shoes-v4-infinity",
+    "headwear-v4-infinity",
+    "face-v4-infinity-visor",
+    "back-v4-infinity"
   ],
   "avatar": {
     "characterStyle": "pink",
@@ -151,7 +157,7 @@
         "hint": "'since' ile Present Perfect kullanılır."
       },
       "addedAt": "2026-08-16T12:54:16.610Z",
-      "resolved": false
+      "resolved": true
     },
     {
       "id": "m1786884856610-q5",
@@ -225,15 +231,28 @@
       "xpEarned": 146,
       "coinsEarned": 72,
       "isRetry": true
+    },
+    {
+      "id": "h1786998160965",
+      "testId": "retry-İngilizce (Orta 2 Seviyesi)-1786998154170",
+      "subject": "İngilizce (Orta 2 Seviyesi)",
+      "date": "2026-08-17T20:22:40.965Z",
+      "correctCount": 1,
+      "totalCount": 1,
+      "xpEarned": 116,
+      "coinsEarned": 50,
+      "isRetry": true
     }
   ],
   "stats": {
     "testsBySubject": {
-      "İngilizce (Orta 2 Seviyesi)": 3
+      "İngilizce (Orta 2 Seviyesi)": 4
     },
-    "fullScoreBySubject": {},
+    "fullScoreBySubject": {
+      "İngilizce (Orta 2 Seviyesi)": 1
+    },
     "speedBonusCount": 0,
-    "retryTestsPassed": 0
+    "retryTestsPassed": 1
   },
   "rewardsCatalog": [
     {
@@ -258,13 +277,14 @@
     "unlockedIds": [
       "sticker-0-0",
       "sticker-0-1",
-      "sticker-0-2"
+      "sticker-0-2",
+      "sticker-0-3"
     ]
   },
   "miniGame": {
     "lastRewardDate": null,
     "bestMoves": {}
   },
-  "lastSyncedAt": "2026-08-17T13:34:31.671Z",
-  "gems": 0
+  "lastSyncedAt": "2026-08-17T20:22:42.829Z",
+  "gems": 1
 }
