@@ -25,7 +25,7 @@
     "outfit": "outfit-labcoat",
     "shoes": "shoes-cape-boots",
     "headwear": "headwear-pilot-goggles",
-    "face": "face-v4-archive-monocle",
+    "face": "face-compass-necklace",
     "back": "back-v4-daypack"
   },
   "pet": {
@@ -282,6 +282,6 @@
     "lastRewardDate": null,
     "bestMoves": {}
   },
-  "lastSyncedAt": "2026-08-18T07:56:34.965Z",
+  "lastSyncedAt": "2026-08-18T07:56:35.936Z",
   "gems": 1
 }
