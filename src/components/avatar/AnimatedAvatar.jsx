@@ -1,51 +1,92 @@
 import { useEffect, useId, useMemo, useRef, useState } from "react";
 import heroMaster from "../../assets/avatar-v5/premium/heroMasterData.js";
 import { getRigLoadout, getRigSignature, HERO_PROFILE } from "../../data/avatarRig";
+import { PREMIUM_RIG_MASKS } from "../../data/premiumRigMasks";
 
 const VIEW_W = 320;
 const VIEW_H = 427;
 
 function motionFrame(motion, elapsed) {
   const t = elapsed / 1000;
-  if (motion === "thinking") return { x: 5 + Math.sin(t * 2.6) * 2, y: -5 + Math.sin(t * 3.1) * 2, rotate: 3 + Math.sin(t * 2.2), scale: 1.01 };
+  if (motion === "thinking") {
+    return { x: 5 + Math.sin(t * 2.7) * 2, y: -6 + Math.sin(t * 3.2) * 2, rotate: 3 + Math.sin(t * 2.1) * 1.2, scale: 1.01 };
+  }
   if (motion === "happy") {
-    const b = Math.abs(Math.sin(t * 5.2));
-    return { x: Math.sin(t * 3.8) * 2, y: -4 - b * 14, rotate: Math.sin(t * 4.6) * 1.4, scale: 1 + b * .02 };
+    const bounce = Math.abs(Math.sin(t * 5.4));
+    return { x: Math.sin(t * 3.6) * 2.5, y: -4 - bounce * 15, rotate: Math.sin(t * 4.5) * 1.5, scale: 1 + bounce * .022 };
   }
   if (motion === "victory") {
-    const p = (t % 1.25) / 1.25;
-    const jump = p < .72 ? Math.sin(Math.PI * (p / .72)) : 0;
-    return { x: Math.sin(t * 5.1) * 3, y: -jump * 28, rotate: Math.sin(t * 4.9) * 2.2, scale: 1 + jump * .028 };
+    const phase = (t % 1.25) / 1.25;
+    const jump = phase < .72 ? Math.sin(Math.PI * (phase / .72)) : 0;
+    return { x: Math.sin(t * 5) * 3, y: -jump * 30, rotate: Math.sin(t * 4.8) * 2.3, scale: 1 + jump * .03 };
   }
   if (motion === "levelup") {
-    const p = (Math.sin(t * 4.4) + 1) / 2;
-    return { x: 0, y: -p * 12, rotate: 0, scale: 1 + p * .028 };
+    const pulse = (Math.sin(t * 4.4) + 1) / 2;
+    return { x: 0, y: -pulse * 13, rotate: 0, scale: 1 + pulse * .03 };
   }
   if (motion === "equip") {
     const p = Math.min(elapsed / 720, 1);
     const pop = Math.sin(Math.PI * p);
-    return { x: 0, y: -pop * 8, rotate: 0, scale: .94 + p * .06 + pop * .05 };
+    return { x: 0, y: -pop * 9, rotate: 0, scale: .95 + p * .05 + pop * .055 };
   }
-  const b = (Math.sin(t * 2.05) + 1) / 2;
-  return { x: Math.sin(t * 1.25) * 1.5, y: -2 - b * 6, rotate: Math.sin(t * 1.35) * .5, scale: 1 + b * .007 };
+  const breathe = (Math.sin(t * 2) + 1) / 2;
+  return { x: Math.sin(t * 1.2) * 1.6, y: -2 - breathe * 6, rotate: Math.sin(t * 1.3) * .55, scale: 1 + breathe * .008 };
 }
 
-function palette(item, slot) {
+function itemTone(item, slot) {
   const id = item?.id || "";
-  if (slot === "outfit" && (id === "outfit-tshirt" || /labcoat/i.test(id))) return { a: "#f7fbff", b: "#dbe9f3", trim: "#45d9bd", dark: "#183b54" };
-  if (/gold|crown|halo|solar|sun/i.test(id)) return { a: "#ffd66b", b: "#e39a24", trim: "#fff3ae", dark: "#724416" };
-  if (/crystal|galaxy|cosmic|aurora|comet|orbit|infinity/i.test(id)) return { a: "#586cff", b: "#8f46e9", trim: "#54e7ff", dark: "#1f255f" };
-  if (/green|emerald|forest|teal|ocean/i.test(id)) return { a: "#39d7b7", b: "#15918a", trim: "#d8fff7", dark: "#14505a" };
-  if (/red|meteor|christmas|coral/i.test(id)) return { a: "#ff6f78", b: "#be3d57", trim: "#ffd8dd", dark: "#6b2437" };
-  if (/pink|summer|candy/i.test(id)) return { a: "#ff8fc7", b: "#c5579a", trim: "#ffe0f1", dark: "#72345e" };
-  if (/night|shadow|black|thunder/i.test(id)) return { a: "#40506f", b: "#202b49", trim: "#8edaff", dark: "#10172a" };
-  return { a: item?.primary || item?.color || "#3e9fe8", b: item?.secondary || "#175e9c", trim: "#dff8ff", dark: "#153c58" };
+  const common = { color: "#2f9fe8", trim: "#8eeeff", filter: "saturate(1.18) brightness(1.03)" };
+  if (!item) return common;
+  if (slot === "outfit" && (id === "outfit-tshirt" || /labcoat|science|lab/i.test(id))) {
+    return { color: "#edf9ff", trim: "#49dfbf", filter: "grayscale(1) brightness(1.72) contrast(.78)" };
+  }
+  if (/infinity|galaxy|crystal|cosmic|aurora|comet|orbit/i.test(id)) {
+    return { color: "#694cff", trim: "#55e9ff", filter: "hue-rotate(58deg) saturate(1.7) brightness(1.08)" };
+  }
+  if (/gold|crown|halo|solar|sun/i.test(id)) {
+    return { color: "#f3b83f", trim: "#fff0a2", filter: "sepia(.75) saturate(1.8) hue-rotate(350deg) brightness(1.1)" };
+  }
+  if (/green|emerald|forest|ocean|teal/i.test(id)) {
+    return { color: "#25c9a4", trim: "#c9fff2", filter: "hue-rotate(-43deg) saturate(1.55) brightness(1.05)" };
+  }
+  if (/red|meteor|christmas|coral|volcano/i.test(id)) {
+    return { color: "#e94b64", trim: "#ffd0d7", filter: "hue-rotate(122deg) saturate(1.6) brightness(1.03)" };
+  }
+  if (/pink|summer|candy/i.test(id)) {
+    return { color: "#f36aaf", trim: "#ffe0f1", filter: "hue-rotate(88deg) saturate(1.45) brightness(1.08)" };
+  }
+  if (/night|shadow|black|thunder/i.test(id)) {
+    return { color: "#263956", trim: "#8bdcff", filter: "saturate(.8) brightness(.67) contrast(1.18)" };
+  }
+  return { ...common, color: item.primary || item.color || common.color };
 }
 
-export default function AnimatedAvatar({ avatar = {}, size = 320, animation = "idle", showEquipment = true, showBadges = false, compact = false }) {
+function outfitKind(item) {
+  const id = item?.id || "";
+  if (id === "outfit-tshirt" || /labcoat|science|lab/i.test(id)) return "lab";
+  if (/infinity|armor|crystal|galaxy|meteor|volcano|neon/i.test(id)) return "armor";
+  if (/robe|cape|cloud|wizard/i.test(id)) return "robe";
+  if (/overall/i.test(id)) return "overall";
+  return item?.kind || "jacket";
+}
+
+export default function AnimatedAvatar({
+  avatar = {},
+  size = 320,
+  animation = "idle",
+  showEquipment = true,
+  showBadges = false,
+  compact = false,
+}) {
   const uid = useId().replace(/:/g, "");
-  const loadout = useMemo(() => getRigLoadout(avatar), [avatar.outfit, avatar.shoes, avatar.headwear, avatar.face, avatar.back]);
-  const signature = useMemo(() => getRigSignature(avatar), [avatar.outfit, avatar.shoes, avatar.headwear, avatar.face, avatar.back]);
+  const loadout = useMemo(
+    () => getRigLoadout(avatar),
+    [avatar.outfit, avatar.shoes, avatar.headwear, avatar.face, avatar.back]
+  );
+  const signature = useMemo(
+    () => getRigSignature(avatar),
+    [avatar.outfit, avatar.shoes, avatar.headwear, avatar.face, avatar.back]
+  );
   const previousSignature = useRef(signature);
   const stackRef = useRef(null);
   const [equipBurst, setEquipBurst] = useState(false);
@@ -63,32 +104,59 @@ export default function AnimatedAvatar({ avatar = {}, size = 320, animation = "i
   useEffect(() => {
     const node = stackRef.current;
     if (!node) return undefined;
-    let frameId = 0;
+    let raf = 0;
     let stopped = false;
     const start = performance.now();
     const tick = (now) => {
       if (stopped || !stackRef.current) return;
       const f = motionFrame(motion, now - start);
       stackRef.current.style.transform = `translate3d(${f.x.toFixed(2)}px,${f.y.toFixed(2)}px,0) rotate(${f.rotate.toFixed(2)}deg) scale(${f.scale.toFixed(4)})`;
-      frameId = requestAnimationFrame(tick);
+      raf = window.requestAnimationFrame(tick);
     };
-    frameId = requestAnimationFrame(tick);
-    return () => { stopped = true; cancelAnimationFrame(frameId); if (node) node.style.transform = "none"; };
+    raf = window.requestAnimationFrame(tick);
+    return () => {
+      stopped = true;
+      window.cancelAnimationFrame(raf);
+      if (node) node.style.transform = "translate3d(0,0,0) rotate(0deg) scale(1)";
+    };
   }, [motion]);
 
   const equippedCount = Object.values(loadout).filter(Boolean).length;
-  const wingItem = loadout.back?.kind === "wings" ? loadout.back : loadout.headwear?.shape === "wings" ? loadout.headwear : null;
 
   return (
-    <div className={`v5-animated-avatar v5p-avatar v45-live-avatar motion-${motion} ${compact ? "is-compact" : ""}`} style={{ width: size, aspectRatio: `${VIEW_W}/${VIEW_H}` }} role="img" aria-label={`${HERO_PROFILE.name}, kıvırcık saçlı yeşil gözlü Bilgin Kaşif`} data-avatar-version="4.5.4-body-rig" data-motion={motion} data-rig-signature={signature}>
+    <div
+      className={`v5-animated-avatar v5p-avatar v45-live-avatar v455-mask-avatar motion-${motion} ${compact ? "is-compact" : ""}`}
+      style={{ width: size, aspectRatio: `${VIEW_W}/${VIEW_H}` }}
+      role="img"
+      aria-label={`${HERO_PROFILE.name}, kıvırcık saçlı yeşil gözlü Bilgin Kaşif`}
+      data-avatar-version="4.5.5-mask-rig"
+      data-motion={motion}
+      data-rig-signature={signature}
+    >
       <div className="v5p-aura" aria-hidden="true" />
       <div className="v5p-floor" aria-hidden="true" />
       {equipBurst && <div className="v5p-equip-ring" aria-hidden="true" />}
 
       <div ref={stackRef} className="v45-live-stack" aria-hidden="true">
-        {showEquipment && (loadout.back || wingItem) && <BackRig item={wingItem || loadout.back} uid={uid} />}
+        {showEquipment && <BackLayer item={loadout.back} uid={uid} />}
         <img src={heroMaster} alt="" draggable="false" className="v45-live-master" />
-        {showEquipment && <FrontRig loadout={loadout} uid={uid} />}
+        {showEquipment && (
+          <svg className="v455-mask-svg" viewBox={`0 0 ${VIEW_W} ${VIEW_H}`} preserveAspectRatio="xMidYMid meet">
+            <defs>
+              {Object.entries(PREMIUM_RIG_MASKS).map(([slot, paths]) => (
+                <clipPath key={slot} id={`${slot}-${uid}`} clipPathUnits="userSpaceOnUse">
+                  {paths.map((d, index) => <path key={index} d={d} />)}
+                </clipPath>
+              ))}
+            </defs>
+
+            {loadout.outfit && <MasterTint slot="outfit" item={loadout.outfit} uid={uid} />}
+            {loadout.shoes && <MasterTint slot="shoes" item={loadout.shoes} uid={uid} />}
+            {loadout.back && loadout.back.kind !== "wings" && <MasterTint slot="back" item={loadout.back} uid={uid} />}
+            {loadout.headwear && <HeadwearLayer item={loadout.headwear} uid={uid} />}
+            {loadout.face && <FaceLayer item={loadout.face} uid={uid} />}
+          </svg>
+        )}
       </div>
 
       <MotionFX motion={motion} />
@@ -97,97 +165,176 @@ export default function AnimatedAvatar({ avatar = {}, size = 320, animation = "i
   );
 }
 
-function BackRig({ item, uid }) {
-  const c = palette(item, "back");
-  const wings = item?.kind === "wings" || item?.shape === "wings" || /wing/i.test(item?.id || "");
+function MasterTint({ slot, item, uid }) {
+  const tone = itemTone(item, slot);
   return (
-    <svg className="v45-body-rig v45-body-rig-back" viewBox={`0 0 ${VIEW_W} ${VIEW_H}`}>
-      <defs><linearGradient id={`bg-${uid}`} x1="0" y1="0" x2="1" y2="1"><stop stopColor={c.a}/><stop offset="1" stopColor={c.b}/></linearGradient></defs>
-      {wings ? <g className="v45-rig-wings" fill={`url(#bg-${uid})`} stroke={c.trim} strokeWidth="2.2" opacity=".9">
-        <path d="M121 173 C79 143 48 162 42 205 C69 189 88 196 108 224 C82 226 66 244 69 270 C102 253 119 242 132 221 Z"/>
-        <path d="M199 173 C241 143 272 162 278 205 C251 189 232 196 212 224 C238 226 254 244 251 270 C218 253 201 242 188 221 Z"/>
-      </g> : <g className="v45-rig-backpack">
-        <path d="M184 149 C219 147 238 166 238 201 L239 255 C238 274 226 286 207 286 L184 286 C177 250 175 210 178 177 C179 164 180 156 184 149 Z" fill={`url(#bg-${uid})`} stroke={c.dark} strokeWidth="3"/>
-        <path d="M194 163 Q215 151 228 169" fill="none" stroke={c.trim} strokeWidth="5" strokeLinecap="round"/>
-        <rect x="192" y="216" width="36" height="38" rx="9" fill={c.dark} opacity=".55"/>
-        <path d="M197 226 H223" stroke={c.trim} strokeWidth="3" opacity=".85"/>
-      </g>}
-    </svg>
+    <g clipPath={`url(#${slot}-${uid})`} className={`v455-tint-layer is-${slot}`}>
+      <image
+        href={heroMaster}
+        x="0"
+        y="0"
+        width={VIEW_W}
+        height={VIEW_H}
+        preserveAspectRatio="none"
+        style={{ filter: tone.filter }}
+      />
+      <rect x="0" y="0" width={VIEW_W} height={VIEW_H} fill={tone.color} opacity={slot === "outfit" ? ".20" : ".16"} className="v455-color-wash" />
+      {slot === "outfit" && <OutfitDetails item={item} tone={tone} />}
+      {slot === "shoes" && <ShoeDetails item={item} tone={tone} />}
+      {slot === "back" && <BackDetails item={item} tone={tone} />}
+    </g>
   );
 }
 
-function FrontRig({ loadout, uid }) {
+function OutfitDetails({ item, tone }) {
+  const id = item?.id || "";
+  const kind = outfitKind(item);
+  const legendary = item?.rarity === "legendary" || /infinity|galaxy|crystal|cosmic/i.test(id);
+
+  if (kind === "lab") {
+    return (
+      <g className="v455-outfit-details">
+        <path d="M159 103 V171" stroke={tone.trim} strokeWidth="2.4" strokeLinecap="round" />
+        <path d="M136 139 H151 M169 139 H187" stroke={tone.trim} strokeWidth="2.3" strokeLinecap="round" />
+        <rect x="176" y="116" width="11" height="9" rx="2" fill={tone.trim} opacity=".95" />
+        <path d="M178 121 l3 2 4-5" fill="none" stroke="#ffffff" strokeWidth="1.4" strokeLinecap="round" />
+      </g>
+    );
+  }
+
+  if (kind === "armor") {
+    return (
+      <g className="v455-outfit-details">
+        <path d="M145 107 L160 115 L176 107 L184 132 L174 151 L160 158 L146 151 L137 132 Z" fill={tone.color} fillOpacity=".28" stroke={tone.trim} strokeWidth="2.3" />
+        <path d="M143 126 H178 M148 139 H173" stroke={tone.trim} strokeWidth="1.8" opacity=".85" />
+        {legendary && <>
+          <circle cx="151" cy="119" r="2" fill="#fff2a6" />
+          <circle cx="169" cy="132" r="1.8" fill="#8ff5ff" />
+          <path d="M183 111 l3 5 5 3-5 3-3 5-3-5-5-3 5-3z" fill="#fff0a0" opacity=".9" />
+        </>}
+      </g>
+    );
+  }
+
+  if (kind === "robe") {
+    return (
+      <g className="v455-outfit-details">
+        <path d="M140 111 Q160 124 181 111" fill="none" stroke={tone.trim} strokeWidth="2.4" />
+        <path d="M138 132 Q160 144 183 132" fill="none" stroke={tone.trim} strokeWidth="1.7" opacity=".8" />
+        <path d="M158 116 l3 5 5 3-5 3-3 5-3-5-5-3 5-3z" fill={tone.trim} opacity=".85" />
+      </g>
+    );
+  }
+
+  if (kind === "overall") {
+    return (
+      <g className="v455-outfit-details">
+        <path d="M146 105 L152 121 V151 H169 V121 L176 105" fill="none" stroke={tone.trim} strokeWidth="3" />
+        <rect x="153" y="131" width="15" height="10" rx="2.5" fill={tone.color} opacity=".55" />
+      </g>
+    );
+  }
+
   return (
-    <svg className="v45-body-rig v45-body-rig-front" viewBox={`0 0 ${VIEW_W} ${VIEW_H}`}>
+    <g className="v455-outfit-details">
+      <path d="M160 105 V167" stroke={tone.trim} strokeWidth="2" opacity=".9" />
+      <path d="M140 138 H151 M169 138 H181" stroke={tone.trim} strokeWidth="2" strokeLinecap="round" />
+      {item?.variant % 2 === 1 && <path d="M139 118 Q160 128 181 118" fill="none" stroke={tone.trim} strokeWidth="1.8" opacity=".75" />}
+    </g>
+  );
+}
+
+function ShoeDetails({ item, tone }) {
+  const id = item?.id || "";
+  const cosmic = /cosmic|galaxy|crystal|aurora|comet|star/i.test(id);
+  return (
+    <g className="v455-shoe-details" fill="none" stroke={tone.trim} strokeLinecap="round">
+      <path d="M111 374 C122 379 133 378 142 373" strokeWidth="2.3" />
+      <path d="M218 396 C229 400 240 399 249 395" strokeWidth="2.3" />
+      <path d="M116 354 L133 365 M125 351 L139 360" strokeWidth="1.7" opacity=".9" />
+      <path d="M219 367 L238 379 M225 363 L243 374" strokeWidth="1.7" opacity=".9" />
+      {cosmic && <><circle cx="132" cy="382" r="2" fill={tone.trim} stroke="none" /><circle cx="236" cy="407" r="2" fill={tone.trim} stroke="none" /></>}
+    </g>
+  );
+}
+
+function BackDetails({ item, tone }) {
+  if (!item) return null;
+  return (
+    <g className="v455-back-details">
+      <path d="M205 115 Q220 122 225 143" fill="none" stroke={tone.trim} strokeWidth="2.5" opacity=".9" />
+      <circle cx="218" cy="153" r="3" fill={tone.trim} />
+    </g>
+  );
+}
+
+function BackLayer({ item, uid }) {
+  if (!item) return null;
+  const isWings = item.kind === "wings" || item.shape === "wings" || /wing/i.test(item.id || "");
+  if (!isWings) return null;
+  const tone = itemTone(item, "back");
+  return (
+    <svg className="v455-back-svg" viewBox={`0 0 ${VIEW_W} ${VIEW_H}`} preserveAspectRatio="xMidYMid meet">
       <defs>
-        {[["out", loadout.outfit, "outfit"],["shoe", loadout.shoes, "shoes"],["head", loadout.headwear, "headwear"],["face", loadout.face, "face"]].map(([key,item,slot]) => {
-          const c = palette(item, slot);
-          return <linearGradient key={key} id={`${key}-${uid}`} x1="0" y1="0" x2="1" y2="1"><stop stopColor={c.a}/><stop offset="1" stopColor={c.b}/></linearGradient>;
-        })}
+        <linearGradient id={`wing-${uid}`} x1="0" y1="0" x2="1" y2="1">
+          <stop stopColor={tone.trim} stopOpacity=".88" />
+          <stop offset="1" stopColor={tone.color} stopOpacity=".55" />
+        </linearGradient>
       </defs>
-      {loadout.outfit && <OutfitRig item={loadout.outfit} uid={uid}/>} 
-      {loadout.shoes && <ShoesRig item={loadout.shoes} uid={uid}/>} 
-      {loadout.headwear && loadout.headwear.shape !== "wings" && <HeadRig item={loadout.headwear} uid={uid}/>} 
-      {loadout.face && <FaceRig item={loadout.face} uid={uid}/>} 
+      <g fill={`url(#wing-${uid})`} stroke={tone.trim} strokeWidth="2" opacity=".92" className="v455-wing-group">
+        <path d="M125 150 C91 128 60 142 49 176 C73 166 92 174 109 197 C88 197 74 210 72 231 C100 220 120 204 134 181 Z" />
+        <path d="M195 150 C229 128 260 142 271 176 C247 166 228 174 211 197 C232 197 246 210 248 231 C220 220 200 204 186 181 Z" />
+      </g>
     </svg>
   );
 }
 
-function OutfitRig({ item, uid }) {
-  const c = palette(item, "outfit");
-  const kind = item.kind || "jacket";
-  const robe = ["robe","dress"].includes(kind);
-  const lab = kind === "lab";
-  const armor = kind === "armor";
-  const overall = kind === "overall";
-  return <g className={`v45-rig-outfit kind-${kind}`} strokeLinejoin="round" strokeLinecap="round">
-    <path d="M125 154 C112 158 102 168 96 184 L83 230 C80 240 86 247 96 248 C104 249 109 244 112 236 L124 202 L127 255 C128 270 139 279 160 279 C181 279 192 270 193 255 L196 202 L208 236 C211 244 216 249 224 248 C234 247 240 240 237 230 L224 184 C218 168 208 158 195 154 L179 149 C174 154 168 157 160 157 C152 157 146 154 141 149 Z" fill={`url(#out-${uid})`} stroke={c.dark} strokeWidth="3.2"/>
-    {robe && <path d="M128 247 C139 260 181 260 192 247 L203 320 C183 329 137 329 117 320 Z" fill={`url(#out-${uid})`} stroke={c.dark} strokeWidth="3"/>}
-    {lab && <><path d="M159 158 V276" stroke={c.trim} strokeWidth="3.5"/><path d="M131 198 H151 M169 198 H189" stroke={c.trim} strokeWidth="3"/><rect x="174" y="169" width="15" height="12" rx="2" fill={c.trim}/><path d="M178 175 l3 3 5-7" fill="none" stroke={c.dark} strokeWidth="2"/></>}
-    {armor && <><path d="M128 160 L160 174 L192 160 L187 219 L160 236 L133 219 Z" fill={c.trim} fillOpacity=".28" stroke={c.trim} strokeWidth="3"/><path d="M136 188 H184 M140 206 H180" stroke={c.trim} strokeWidth="2.5"/></>}
-    {overall && <><path d="M139 157 L147 178 V241 H173 V178 L181 157" fill="none" stroke={c.trim} strokeWidth="5"/><rect x="148" y="195" width="24" height="18" rx="4" fill={c.dark} opacity=".55"/></>}
-    {!lab && !armor && !overall && <><path d="M160 158 V268" stroke={c.trim} strokeWidth="3" opacity=".9"/><path d="M133 208 H150 M170 208 H187" stroke={c.trim} strokeWidth="3"/><circle cx="160" cy="185" r="3.5" fill={c.trim}/><circle cx="160" cy="202" r="3.5" fill={c.trim}/></>}
-    {item.variant % 2 === 1 && <path d="M126 173 Q143 185 160 176 Q177 185 194 173" fill="none" stroke={c.trim} strokeWidth="2.4" opacity=".75"/>}
-  </g>;
+function HeadwearLayer({ item, uid }) {
+  const id = item?.id || "";
+  const shape = item?.shape || "";
+  const tone = itemTone(item, "headwear");
+  if (shape === "wings") return null;
+
+  if (/halo/i.test(shape + id)) {
+    return <ellipse cx="160" cy="30" rx="34" ry="8" fill="none" stroke={tone.trim} strokeWidth="5" className="v455-headwear v455-halo" />;
+  }
+  if (/crown/i.test(shape + id)) {
+    return <g className="v455-headwear"><path d="M132 54 L138 30 L153 45 L161 24 L173 45 L188 31 L187 57 Z" fill={tone.color} stroke={tone.trim} strokeWidth="2.5" /><circle cx="161" cy="39" r="3" fill={tone.trim} /></g>;
+  }
+  if (/hairbow|bow/i.test(shape + id)) {
+    return <g className="v455-headwear" transform="translate(194 61) rotate(12)"><path d="M0 0 C-17-12-24 6-8 14 L0 9 C17 22 25 2 9-7 Z" fill={tone.color} stroke={tone.trim} strokeWidth="2" /><circle cx="1" cy="5" r="6" fill={tone.trim} /></g>;
+  }
+  if (/wizard|witch/i.test(id)) {
+    return <g className="v455-headwear"><path d="M116 67 Q160 49 204 67 Q197 77 160 76 Q123 77 116 67Z" fill={tone.color} stroke={tone.trim} strokeWidth="2.5" /><path d="M137 64 L166 11 L190 65 Z" fill={tone.color} stroke={tone.trim} strokeWidth="2.5" /><circle cx="169" cy="36" r="3" fill={tone.trim} /></g>;
+  }
+  if (/party/i.test(id)) {
+    return <g className="v455-headwear"><path d="M143 62 L161 17 L178 62 Z" fill={tone.color} stroke={tone.trim} strokeWidth="2" /><circle cx="161" cy="16" r="5" fill={tone.trim} /></g>;
+  }
+
+  return <g className="v455-headwear"><path d="M119 65 Q132 38 164 38 Q191 39 202 62 Q182 54 158 55 Q136 55 119 65 Z" fill={tone.color} stroke={tone.trim} strokeWidth="2.5" /><path d="M160 55 Q191 53 207 65 Q190 69 167 64" fill={tone.color} stroke={tone.trim} strokeWidth="2" /></g>;
 }
 
-function ShoesRig({ item, uid }) {
-  const c = palette(item, "shoes");
-  const sandals = item.kind === "sandals";
-  const boots = item.kind === "boots";
-  const shoe = (x, flip = false) => <g transform={`translate(${x} 0) ${flip ? "scale(-1 1) translate(-320 0)" : ""}`}>
-    {boots ? <><path d="M101 341 C113 337 127 338 136 343 L137 389 C127 397 105 397 95 389 L98 359 Z" fill={`url(#shoe-${uid})`} stroke={c.dark} strokeWidth="3"/><path d="M99 389 C112 393 128 393 140 389 L146 402 C129 410 102 409 87 402 L94 391 Z" fill={c.dark}/><path d="M105 351 H131 M104 362 H132 M103 373 H133" stroke={c.trim} strokeWidth="2.3"/></> : sandals ? <><path d="M92 389 C107 383 130 383 143 391 L142 401 C125 407 102 407 88 401 Z" fill={`url(#shoe-${uid})`} stroke={c.dark} strokeWidth="3"/><path d="M103 374 L129 398 M128 374 L104 398" stroke={c.trim} strokeWidth="4"/></> : <><path d="M93 384 C104 375 129 374 141 383 L147 398 C130 407 102 407 87 399 Z" fill={`url(#shoe-${uid})`} stroke={c.dark} strokeWidth="3"/><path d="M99 385 Q116 392 137 386" fill="none" stroke={c.trim} strokeWidth="3"/><path d="M92 399 H143" stroke="#f6ffff" strokeWidth="4"/></>}
-  </g>;
-  return <g className={`v45-rig-shoes kind-${item.kind || "sneakers"}`}>{shoe(0)}{shoe(0, true)}</g>;
-}
-
-function HeadRig({ item, uid }) {
-  const c = palette(item, "headwear");
-  const shape = item.shape || item.kind || "cap";
-  if (shape === "halo") return <ellipse cx="160" cy="54" rx="46" ry="11" fill="none" stroke={c.a} strokeWidth="6" opacity=".9"/>;
-  if (shape === "crown") return <path d="M116 81 L126 49 L148 69 L161 42 L176 69 L198 49 L205 82 Z" fill={`url(#head-${uid})`} stroke={c.dark} strokeWidth="3"/>;
-  if (shape === "wizardhat") return <><path d="M118 92 L159 24 L197 93 Z" fill={`url(#head-${uid})`} stroke={c.dark} strokeWidth="3"/><ellipse cx="160" cy="94" rx="57" ry="13" fill={c.b} stroke={c.dark} strokeWidth="3"/><path d="M145 59 Q160 69 176 58" fill="none" stroke={c.trim} strokeWidth="4"/></>;
-  if (shape === "hairbow") return <><path d="M111 83 C92 68 89 50 105 47 C119 46 130 58 137 72 Z" fill={`url(#head-${uid})`} stroke={c.dark} strokeWidth="3"/><path d="M137 72 C143 55 158 48 169 56 C177 63 172 78 155 87 Z" fill={`url(#head-${uid})`} stroke={c.dark} strokeWidth="3"/><circle cx="142" cy="73" r="8" fill={c.trim}/></>;
-  if (shape === "partyhat") return <><path d="M137 84 L160 37 L184 84 Z" fill={`url(#head-${uid})`} stroke={c.dark} strokeWidth="3"/><circle cx="160" cy="34" r="7" fill={c.trim}/></>;
-  if (shape === "beanie") return <><path d="M111 92 C113 59 133 45 160 45 C187 45 207 59 209 92 Z" fill={`url(#head-${uid})`} stroke={c.dark} strokeWidth="3"/><rect x="110" y="82" width="100" height="20" rx="9" fill={c.b} stroke={c.dark} strokeWidth="3"/></>;
-  if (shape === "detective-hat") return <><path d="M116 84 C126 58 144 49 161 49 C179 49 197 59 204 84 Z" fill={`url(#head-${uid})`} stroke={c.dark} strokeWidth="3"/><ellipse cx="160" cy="88" rx="59" ry="12" fill={c.b} stroke={c.dark} strokeWidth="3"/></>;
-  return <><path d="M111 83 C119 55 139 46 160 46 C183 46 201 59 205 84 Z" fill={`url(#head-${uid})`} stroke={c.dark} strokeWidth="3"/><path d="M161 83 C184 78 207 83 220 95 C197 99 178 99 159 95 Z" fill={c.b} stroke={c.dark} strokeWidth="3"/></>;
-}
-
-function FaceRig({ item, uid }) {
-  const c = palette(item, "face");
-  const shape = item.shape || item.kind || "glasses";
-  if (shape === "wand") return <g transform="rotate(-18 232 230)"><rect x="226" y="170" width="8" height="104" rx="4" fill={c.dark}/><path d="M230 157 l8 13 15 2-11 10 3 15-15-7-14 7 3-15-11-10 15-2z" fill={`url(#face-${uid})`} stroke={c.trim} strokeWidth="2"/></g>;
-  if (shape === "magnifier") return <><circle cx="206" cy="151" r="22" fill="none" stroke={c.dark} strokeWidth="6"/><circle cx="206" cy="151" r="17" fill="#9befff" fillOpacity=".17"/><path d="M221 167 L249 203" stroke={c.dark} strokeWidth="8" strokeLinecap="round"/></>;
-  const sunglasses = shape === "sunglasses";
-  return <g className="v45-rig-face"><rect x="119" y="125" width="39" height="27" rx="12" fill={sunglasses ? c.dark : "#bceeff"} fillOpacity={sunglasses ? .9 : .2} stroke={c.dark} strokeWidth="4"/><rect x="163" y="125" width="39" height="27" rx="12" fill={sunglasses ? c.dark : "#bceeff"} fillOpacity={sunglasses ? .9 : .2} stroke={c.dark} strokeWidth="4"/><path d="M158 135 H164 M117 134 L105 129 M204 134 L216 129" stroke={c.dark} strokeWidth="4" strokeLinecap="round"/></g>;
+function FaceLayer({ item }) {
+  const id = item?.id || "";
+  const shape = item?.shape || "";
+  const tone = itemTone(item, "face");
+  if (/wand/i.test(shape + id)) {
+    return <g className="v455-face-item"><path d="M216 169 L253 126" stroke={tone.color} strokeWidth="5" strokeLinecap="round" /><path d="M254 118 l4 8 9 2-7 6 1 9-7-4-8 5 1-9-7-6 9-2z" fill={tone.trim} /></g>;
+  }
+  if (/magnifier/i.test(shape + id)) {
+    return <g className="v455-face-item"><circle cx="204" cy="105" r="16" fill="#b8f4ff" fillOpacity=".16" stroke={tone.trim} strokeWidth="4" /><path d="M215 117 L237 146" stroke={tone.color} strokeWidth="6" strokeLinecap="round" /></g>;
+  }
+  const sunglasses = /sunglass|shade/i.test(shape + id);
+  return <g className="v455-face-item" fill={sunglasses ? "#183047" : "#aeefff"} fillOpacity={sunglasses ? ".78" : ".18"} stroke={tone.trim} strokeWidth="2.5"><rect x="132" y="77" width="25" height="16" rx="8" /><rect x="164" y="77" width="25" height="16" rx="8" /><path d="M157 83 H164 M132 82 L122 78 M189 82 L199 78" fill="none" /></g>;
 }
 
 function MotionFX({ motion }) {
-  return <div className={`v45-motion-fx is-${motion}`} aria-hidden="true">
-    {motion === "thinking" && <span className="v45-fx-question">?</span>}
-    {motion === "happy" && <><i className="v45-fx-star s1">✦</i><i className="v45-fx-star s2">✦</i></>}
-    {motion === "victory" && <><i className="v45-fx-star s1">★</i><i className="v45-fx-star s2">✦</i><i className="v45-fx-star s3">★</i></>}
-    {motion === "equip" && <span className="v45-fx-equip">KUŞANILDI!</span>}
-  </div>;
+  return (
+    <div className={`v45-motion-fx is-${motion}`} aria-hidden="true">
+      {motion === "thinking" && <span className="v45-fx-question">?</span>}
+      {motion === "happy" && <><i className="v45-fx-star s1">✦</i><i className="v45-fx-star s2">✦</i></>}
+      {motion === "victory" && <><i className="v45-fx-star s1">★</i><i className="v45-fx-star s2">✦</i><i className="v45-fx-star s3">★</i></>}
+      {motion === "equip" && <span className="v45-fx-equip">KUŞANILDI!</span>}
+    </div>
+  );
 }
