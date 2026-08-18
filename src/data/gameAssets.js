@@ -1,7 +1,9 @@
 /*
- * Bilgin Ustası V4.5.6 asset registry
+ * Bilgin Ustası V4.6 asset registry
  * Shop artwork and worn-rig identity are intentionally separate.
  */
+
+import { getShopIconIdentity } from "./coreWearables";
 
 const ASSET_MODULES = import.meta.glob(
   "../assets/game-assets/**/*.{png,jpg,jpeg,webp}",
@@ -72,20 +74,29 @@ function resolveArtIdentity(itemOrId, slotOverride) {
   };
 }
 
+function resolveShopIdentity(itemOrId, slotOverride) {
+  if (typeof itemOrId === "string") {
+    return { id: itemOrId, slot: normalizeSlot(slotOverride) };
+  }
+  const item = itemOrId || {};
+  const shop = getShopIconIdentity(item);
+  return { id: shop.id, slot: normalizeSlot(shop.slot || slotOverride) };
+}
+
 export function getItemAsset(itemOrId, slotOverride) {
   const { id, slot } = resolveArtIdentity(itemOrId, slotOverride);
   if (!id || !slot) return "";
   return asset(`premium/${slot}/${id}.webp`) || asset(`unique/${slot}/${id}.png`);
 }
 
+// Store/inventory cards ONLY. Never use this result on the hero renderer.
 export function getItemCardAsset(itemOrId, slotOverride) {
-  const { id, slot } = resolveArtIdentity(itemOrId, slotOverride);
+  const { id, slot } = resolveShopIdentity(itemOrId, slotOverride);
   if (!id || !slot) return "";
   return asset(`premium/${slot}/${id}.webp`) || asset(`unique/${slot}/${id}.png`) || getItemAsset(itemOrId, slotOverride);
 }
 
-// Kept only for legacy callers. Core V4.5.6 wearables are rendered by the master rig,
-// never by dropping these product images over the character.
+// Legacy compatibility only. V4.6 LayeredHero never calls this for Core 18.
 export const getWearableAsset = (itemOrId, slotOverride) => {
   const { id, slot } = resolveArtIdentity(itemOrId, slotOverride);
   if (!id || !slot) return "";
