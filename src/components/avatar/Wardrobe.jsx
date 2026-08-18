@@ -59,9 +59,9 @@ export default function Wardrobe({ profile, onChangeAvatar, onChangePet, onChang
     <div className="v45-game-screen v45-master-screen">
       <header className="v45-game-head">
         <div>
-          <span className="v45-kicker">V4.5.6 · CORE 18</span>
+          <span className="v45-kicker">V4.6 · LAYERED CORE 18</span>
           <h2>Bilgin Kaşifini geliştir</h2>
-          <p>Tek master karakter · 5 sabit slot · karaktere özel 18 çekirdek item. Mağaza görseli ve giyilen rig aynı item kimliğine bağlıdır.</p>
+          <p>Tek nötr master · 5 sabit slot · anchor tabanlı wornAsset katmanları. Mağaza ikonları karakter rendererından tamamen ayrıdır.</p>
         </div>
         <div className="v45-head-stats">
           <span><b>Lv.{level}</b><small>Seviye</small></span>
@@ -80,7 +80,7 @@ export default function Wardrobe({ profile, onChangeAvatar, onChangePet, onChang
             <div className="v45-stage-orbit v45-stage-orbit-one" />
             <div className="v45-stage-orbit v45-stage-orbit-two" />
             <div className="v45-stage-stars" aria-hidden="true"><i /><i /><i /><i /><i /></div>
-            <div className="v45-stage-copy"><span>AKTİF KAHRAMAN</span><strong>Bilgin Kaşif</strong><small>Kıvırcık saç · yeşil göz · tek master karakter</small></div>
+            <div className="v45-stage-copy"><span>AKTİF KAHRAMAN</span><strong>Bilgin Kaşif</strong><small>Kıvırcık saç · yeşil göz · nötr master + katmanlı rig</small></div>
 
             <div className="v45-motion-console" aria-label="Karakter animasyonları" data-active-motion={motion}>
               {MOTIONS.map(([id, label, icon]) => <button key={id} type="button" className={motion === id ? "is-active" : ""} onClick={() => { setMotion(id); playPop(); }} title={`${label} animasyonu`} aria-pressed={motion === id}><span>{icon}</span><small>{label}</small></button>)}
@@ -111,7 +111,7 @@ export default function Wardrobe({ profile, onChangeAvatar, onChangePet, onChang
             <div className="v45-selected-panel">
               {selected ? <>
                 <div className="v45-selected-art" style={{ "--item-accent": selected.rarityMeta.color }}><img src={selected.cardAsset} alt={selected.label} /></div>
-                <div className="v45-selected-copy"><span style={{ color: selected.rarityMeta.color }}>{selected.rarityMeta.label} · {selected.slotMeta.label}</span><h3>{selected.label}</h3><p>Core 18 setinin parçası. Dükkân kartı vitrin görselidir; karakter üzerinde master silüete özel rig şablonu kullanılır.</p><div><b>RIG SLOT</b><strong>{selected.slot.toUpperCase()}</strong></div></div>
+                <div className="v45-selected-copy"><span style={{ color: selected.rarityMeta.color }}>{selected.rarityMeta.label} · {selected.slotMeta.label}</span><h3>{selected.label}</h3><p>Vitrindeki shopIcon yalnızca kart içindir. Kahraman üzerinde bu itemin ayrı wornAsset'i, kendi anchor noktası ve katman sırası kullanılır.</p><div><b>RIG SLOT</b><strong>{selected.slot.toUpperCase()}</strong></div></div>
                 <button type="button" className={`v45-equip-cta ${isItemEquipped(profile, selected) ? "is-on" : ""}`} onClick={() => { playPop(); equip(selected); }}>{isItemEquipped(profile, selected) ? "✓ Üzerinde" : "Kahramana Tak"}</button>
               </> : <div className="v45-select-hint"><span>✦</span><strong>Bir ekipman seç</strong><small>Karta dokunduğunda doğrudan kuşanır.</small></div>}
             </div>
