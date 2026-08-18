@@ -4,6 +4,7 @@ import "./index.css";
 import "./v5-focus.css";
 import "./v47-reference.css";
 import "./v47-stage.css";
+import "./v47-extras.css";
 import V47App from "./V47App.jsx";
 
 createRoot(document.getElementById("root")).render(
