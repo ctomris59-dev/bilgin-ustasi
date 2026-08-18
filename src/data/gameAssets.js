@@ -1,6 +1,6 @@
 /*
- * Bilgin Ustası V4.6 asset registry
- * Shop artwork and worn-rig identity are intentionally separate.
+ * Bilgin Ustası V4.7 asset registry
+ * Store artwork and full character preset renders are intentionally separate.
  */
 
 import { getShopIconIdentity } from "./coreWearables";
@@ -24,16 +24,16 @@ const HAIR_ASSETS = {
   "hair-curly-afro": asset("avatar/hair/hair-6.png"),
 };
 
-const PRESETS = {
+export const CHARACTER_PRESETS = Object.freeze({
+  explorer: asset("avatar/presets/explorer-street.png"),
+  galaxy: asset("avatar/presets/explorer-red.png"),
+  cloud: asset("avatar/presets/explorer-pink.png"),
+  forest: asset("avatar/presets/explorer-casual.png"),
   blue: asset("avatar/presets/explorer-blue.png"),
-  red: asset("avatar/presets/explorer-red.png"),
-  casual: asset("avatar/presets/explorer-casual.png"),
-  street: asset("avatar/presets/explorer-street.png"),
-  pink: asset("avatar/presets/explorer-pink.png"),
-};
+});
 
 export const CHARACTER_STYLES = [
-  { id: "master", label: "Bilgin Kaşif", description: "Tek sabit master karakter.", asset: PRESETS.street },
+  { id: "master", label: "Bilgin Kaşif", description: "Tek sabit Bilgin Kaşif karakteri.", asset: CHARACTER_PRESETS.explorer },
 ];
 
 export const GAME_ASSETS = {
@@ -46,38 +46,20 @@ export const GAME_ASSETS = {
 
 function normalizeSlot(slot) {
   const aliases = {
-    petSpecies: "petSpecies",
-    petAccessory: "petAccessory",
-    outfit: "outfit",
-    shoes: "shoes",
-    headwear: "headwear",
-    face: "face",
-    back: "back",
-    wallpaper: "wallpaper",
-    rug: "rug",
-    desk: "desk",
-    lamp: "lamp",
-    plant: "plant",
-    poster: "poster",
+    petSpecies: "petSpecies", petAccessory: "petAccessory", outfit: "outfit", shoes: "shoes",
+    headwear: "headwear", face: "face", back: "back", wallpaper: "wallpaper", rug: "rug",
+    desk: "desk", lamp: "lamp", plant: "plant", poster: "poster",
   };
   return aliases[slot] || slot;
 }
 
 function resolveArtIdentity(itemOrId, slotOverride) {
-  const item = typeof itemOrId === "string"
-    ? { id: itemOrId, slot: slotOverride }
-    : itemOrId || {};
-  return {
-    item,
-    id: item.assetId || item.id,
-    slot: normalizeSlot(item.assetSlot || item.slot || slotOverride),
-  };
+  const item = typeof itemOrId === "string" ? { id: itemOrId, slot: slotOverride } : itemOrId || {};
+  return { item, id: item.assetId || item.id, slot: normalizeSlot(item.assetSlot || item.slot || slotOverride) };
 }
 
 function resolveShopIdentity(itemOrId, slotOverride) {
-  if (typeof itemOrId === "string") {
-    return { id: itemOrId, slot: normalizeSlot(slotOverride) };
-  }
+  if (typeof itemOrId === "string") return { id: itemOrId, slot: normalizeSlot(slotOverride) };
   const item = itemOrId || {};
   const shop = getShopIconIdentity(item);
   return { id: shop.id, slot: normalizeSlot(shop.slot || slotOverride) };
@@ -89,14 +71,12 @@ export function getItemAsset(itemOrId, slotOverride) {
   return asset(`premium/${slot}/${id}.webp`) || asset(`unique/${slot}/${id}.png`);
 }
 
-// Store/inventory cards ONLY. Never use this result on the hero renderer.
 export function getItemCardAsset(itemOrId, slotOverride) {
   const { id, slot } = resolveShopIdentity(itemOrId, slotOverride);
   if (!id || !slot) return "";
   return asset(`premium/${slot}/${id}.webp`) || asset(`unique/${slot}/${id}.png`) || getItemAsset(itemOrId, slotOverride);
 }
 
-// Legacy compatibility only. V4.6 LayeredHero never calls this for Core 18.
 export const getWearableAsset = (itemOrId, slotOverride) => {
   const { id, slot } = resolveArtIdentity(itemOrId, slotOverride);
   if (!id || !slot) return "";
@@ -112,13 +92,8 @@ export function getHairAsset(hairId) {
   return HAIR_ASSETS[hairId] || HAIR_ASSETS["hair-curly-afro"] || "";
 }
 
-export function getCharacterStyleAsset() {
-  return PRESETS.street || PRESETS.blue;
-}
-
-export function getAvatarPreset() {
-  return PRESETS.street || PRESETS.blue;
-}
+export function getCharacterStyleAsset() { return CHARACTER_PRESETS.explorer || CHARACTER_PRESETS.blue; }
+export function getAvatarPreset() { return CHARACTER_PRESETS.explorer || CHARACTER_PRESETS.blue; }
 
 export function getRarity(item = {}) {
   if (item.legendary) return "legendary";
