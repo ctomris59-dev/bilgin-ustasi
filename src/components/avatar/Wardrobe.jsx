@@ -58,7 +58,6 @@ export default function Wardrobe({ profile, onChangeAvatar, onChangePet, onChang
 
   function equip(item) {
     if (!item) return;
-    playPop();
     onSelectItem?.(item);
     const removable = ["headwear", "face", "back"].includes(item.slot);
     const current = profile.avatar?.[item.slot];
@@ -66,6 +65,13 @@ export default function Wardrobe({ profile, onChangeAvatar, onChangePet, onChang
       ...profile.avatar,
       [item.slot]: removable && current === item.id ? null : item.id,
     });
+  }
+
+  function chooseAndEquip(item) {
+    if (!item) return;
+    setSelectedId(item.id);
+    playPop();
+    equip(item);
   }
 
   function choosePet(item) {
@@ -84,9 +90,9 @@ export default function Wardrobe({ profile, onChangeAvatar, onChangePet, onChang
     <div className="v45-game-screen v45-master-screen">
       <header className="v45-game-head">
         <div>
-          <span className="v45-kicker">V4.5 · MASTER HERO</span>
+          <span className="v45-kicker">V4.5.3 · MASTER HERO</span>
           <h2>Bilgin Kaşifini geliştir</h2>
-          <p>Oyunun her ekranında aynı kıvırcık saçlı, yeşil gözlü kahraman. Tüm ekipmanlar tek premium rig üzerinde çalışır.</p>
+          <p>Tek kahraman, gerçek wearable katmanları ve canlı hareket sistemi. Envanter kartına dokunduğunda parça anında kuşanır.</p>
         </div>
         <div className="v45-head-stats">
           <span><b>Lv.{level}</b><small>Seviye</small></span>
@@ -97,7 +103,7 @@ export default function Wardrobe({ profile, onChangeAvatar, onChangePet, onChang
 
       <nav className="v45-mode-switch" aria-label="Karakter alanı">
         {MODES.map(([id, label, icon]) => (
-          <button key={id} className={mode === id ? "is-active" : ""} onClick={() => { setMode(id); playPop(); }}>
+          <button key={id} type="button" className={mode === id ? "is-active" : ""} onClick={() => { setMode(id); playPop(); }}>
             <span>{icon}</span><strong>{label}</strong>
           </button>
         ))}
@@ -112,12 +118,12 @@ export default function Wardrobe({ profile, onChangeAvatar, onChangePet, onChang
             <div className="v45-stage-copy">
               <span>AKTİF KAHRAMAN</span>
               <strong>Bilgin Kaşif</strong>
-              <small>Kıvırcık saç · yeşil göz · premium master rig</small>
+              <small>Kıvırcık saç · yeşil göz · tek master karakter</small>
             </div>
 
-            <div className="v45-motion-console" aria-label="Karakter animasyonları">
+            <div className="v45-motion-console" aria-label="Karakter animasyonları" data-active-motion={motion}>
               {MOTIONS.map(([id, label, icon]) => (
-                <button key={id} className={motion === id ? "is-active" : ""} onClick={() => { setMotion(id); playPop(); }} title={label}>
+                <button key={id} type="button" className={motion === id ? "is-active" : ""} onClick={() => { setMotion(id); playPop(); }} title={`${label} animasyonu`} aria-pressed={motion === id}>
                   <span>{icon}</span><small>{label}</small>
                 </button>
               ))}
@@ -135,7 +141,7 @@ export default function Wardrobe({ profile, onChangeAvatar, onChangePet, onChang
 
             <div className="v45-equipped-dock">
               {SLOT_TABS.map(([id, label, icon]) => (
-                <button key={id} className={`${slot === id ? "is-active" : ""} ${profile.avatar?.[id] ? "is-equipped" : ""}`} onClick={() => { setSlot(id); setSelectedId(null); playPop(); }}>
+                <button key={id} type="button" className={`${slot === id ? "is-active" : ""} ${profile.avatar?.[id] ? "is-equipped" : ""}`} onClick={() => { setSlot(id); setSelectedId(null); playPop(); }}>
                   <span>{icon}</span><small>{label}</small><b>{profile.avatar?.[id] ? "✓" : "+"}</b>
                 </button>
               ))}
@@ -165,15 +171,17 @@ export default function Wardrobe({ profile, onChangeAvatar, onChangePet, onChang
                 return (
                   <button
                     key={item.id}
+                    type="button"
                     className={`v45-item-card rarity-${item.rarity} ${equipped ? "is-equipped" : ""} ${active ? "is-selected" : ""}`}
                     style={{ "--item-accent": item.rarityMeta.color }}
-                    onClick={() => choose(item)}
+                    onClick={() => chooseAndEquip(item)}
+                    aria-pressed={equipped}
                   >
                     <span className="v45-rarity">{item.rarityMeta.label}</span>
                     <img src={item.cardAsset} alt="" />
                     <strong>{item.label}</strong>
                     <small>{item.world.shortTitle}</small>
-                    <em>{equipped ? "TAKILI" : "SEÇ"}</em>
+                    <em>{equipped ? "TAKILI" : "KUŞAN"}</em>
                   </button>
                 );
               })}
@@ -191,15 +199,15 @@ export default function Wardrobe({ profile, onChangeAvatar, onChangePet, onChang
                   <div className="v45-selected-copy">
                     <span style={{ color: selected.rarityMeta.color }}>{selected.rarityMeta.label} · {selected.slotMeta.label}</span>
                     <h3>{selected.label}</h3>
-                    <p>{selected.world.shortTitle} koleksiyonundan. Bu parça master karakterin {selected.slotMeta.label.toLowerCase()} slotuna bağlanır ve tüm animasyonlarda kahramanla birlikte hareket eder.</p>
+                    <p>{selected.world.shortTitle} koleksiyonundan. Bu parça master karakterin {selected.slotMeta.label.toLowerCase()} slotuna bağlanır ve karakterle birlikte hareket eder.</p>
                     <div><b>RIG SLOT</b><strong>{selected.slot.toUpperCase()}</strong></div>
                   </div>
-                  <button className={`v45-equip-cta ${isItemEquipped(profile, selected) ? "is-on" : ""}`} onClick={() => equip(selected)}>
+                  <button type="button" className={`v45-equip-cta ${isItemEquipped(profile, selected) ? "is-on" : ""}`} onClick={() => { playPop(); equip(selected); }}>
                     {isItemEquipped(profile, selected) ? "✓ Üzerinde" : "Kahramana Tak"}
                   </button>
                 </>
               ) : (
-                <div className="v45-select-hint"><span>✦</span><strong>Bir ekipman seç</strong><small>Detayını gör ve tek dokunuşla kahramana tak.</small></div>
+                <div className="v45-select-hint"><span>✦</span><strong>Bir ekipman seç</strong><small>Karta dokunduğunda parça anında kuşanır.</small></div>
               )}
             </div>
           </div>
@@ -234,7 +242,7 @@ export default function Wardrobe({ profile, onChangeAvatar, onChangePet, onChang
               const world = getWorldById(room.unlockWorld);
               const unlocked = !world || level >= world.unlockLevel;
               return (
-                <button key={room.id} disabled={!unlocked} className={roomId === room.id ? "is-active" : ""} onClick={() => setRoomId(room.id)}>
+                <button key={room.id} type="button" disabled={!unlocked} className={roomId === room.id ? "is-active" : ""} onClick={() => setRoomId(room.id)}>
                   <span>{room.emoji}</span><strong>{room.title}</strong><small>{unlocked ? "Düzenle" : `Sv. ${world?.unlockLevel}`}</small>
                 </button>
               );
@@ -249,7 +257,7 @@ export default function Wardrobe({ profile, onChangeAvatar, onChangePet, onChang
 
 function MiniCard({ item, active, onClick }) {
   return (
-    <button className={`v45-mini-card ${active ? "is-active" : ""}`} onClick={onClick}>
+    <button type="button" className={`v45-mini-card ${active ? "is-active" : ""}`} onClick={onClick}>
       <img src={item.cardAsset} alt="" /><strong>{item.label}</strong><small>{active ? "Aktif" : "Seç"}</small>
     </button>
   );
