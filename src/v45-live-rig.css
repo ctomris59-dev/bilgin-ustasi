@@ -1,118 +1,49 @@
 /* =========================================================
-   BILGIN USTASI V4.5.5 — EXACT MASTER MASK RIG
-   The premium raster hero stays untouched. Outfit/shoes/back recolors are
-   clipped to pixel-accurate masks extracted from the master character.
+   BILGIN USTASI V4.5.6 — CORE 18 MASTER RIG
+   One raster master hero + five fixed equipment slots.
+   Product-card images never render on the body.
    ========================================================= */
 
-.v45-live-avatar{
-  position:relative;
-  isolation:isolate;
-  overflow:visible;
-  transform-origin:50% 88%;
-}
-.v45-live-avatar,
-.v45-live-avatar.motion-idle,
-.v45-live-avatar.motion-thinking,
-.v45-live-avatar.motion-happy,
-.v45-live-avatar.motion-victory,
-.v45-live-avatar.motion-levelup,
-.v45-live-avatar.motion-equip{
-  animation:none!important;
-}
-.v45-live-stack{
-  position:absolute;
-  z-index:4;
-  inset:0;
-  transform-origin:50% 88%;
-  will-change:transform;
-  backface-visibility:hidden;
-}
-.v45-live-master{
-  position:absolute;
-  z-index:20;
-  inset:0;
-  width:100%;
-  height:100%;
-  object-fit:fill;
-  object-position:center;
-  user-select:none;
-  pointer-events:none;
-  filter:drop-shadow(0 18px 20px rgba(0,8,27,.28));
-}
+.v45-live-avatar{position:relative;isolation:isolate;overflow:visible;transform-origin:50% 88%}
+.v45-live-avatar,.v45-live-avatar.motion-idle,.v45-live-avatar.motion-thinking,.v45-live-avatar.motion-happy,.v45-live-avatar.motion-victory,.v45-live-avatar.motion-levelup,.v45-live-avatar.motion-equip{animation:none!important}
+.v45-live-stack{position:absolute;z-index:4;inset:0;transform-origin:50% 88%;will-change:transform;backface-visibility:hidden}
+.v45-live-master{position:absolute;z-index:20;inset:0;width:100%;height:100%;object-fit:fill;object-position:center;user-select:none;pointer-events:none;filter:drop-shadow(0 18px 20px rgba(0,8,27,.28))}
 
-/* Both SVG layers use the exact same 320×427 coordinate system as heroMaster. */
-.v455-mask-svg,
-.v455-back-svg{
-  position:absolute;
-  inset:0;
-  width:100%;
-  height:100%;
-  overflow:visible;
-  pointer-events:none;
-  user-select:none;
-}
+.v455-mask-svg,.v455-back-svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none;user-select:none}
 .v455-back-svg{z-index:10}
 .v455-mask-svg{z-index:30}
-.v455-tint-layer{transition:opacity .2s ease,filter .2s ease}
-.v455-color-wash{mix-blend-mode:color}
-.v455-outfit-details,.v455-shoe-details,.v455-back-details,.v455-headwear,.v455-face-item{
-  filter:drop-shadow(0 2px 2px rgba(4,13,34,.28));
-}
-.v455-wing-group{transform-origin:160px 190px}
-.v45-live-avatar.motion-victory .v455-wing-group{
-  animation:v455Wing .4s ease-in-out infinite alternate!important;
-}
-@keyframes v455Wing{from{transform:scaleX(.95)}to{transform:scaleX(1.04)}}
+.v456-core-svg{shape-rendering:geometricPrecision;text-rendering:geometricPrecision}
+.v456-masked-slot{transition:opacity .18s ease,filter .18s ease}
+.v456-color-wash{mix-blend-mode:color}
 
-/* Equipment swap feedback: no geometry changes, only a short controlled glow. */
-.v45-live-avatar.motion-equip .v455-mask-svg,
-.v45-live-avatar.motion-equip .v455-back-svg{
-  animation:v455EquipFlash .72s cubic-bezier(.16,1,.3,1) both!important;
-}
-@keyframes v455EquipFlash{
-  0%{opacity:.15;filter:brightness(1.75) drop-shadow(0 0 18px rgba(79,240,226,.85))}
-  45%{opacity:1;filter:brightness(1.18) drop-shadow(0 0 13px rgba(79,240,226,.45))}
-  100%{opacity:1;filter:none}
-}
+.v456-outfit-detail,.v456-shoe-detail,.v456-back-front,.v456-headwear,.v456-accessory,.v456-soft-addon,
+.v455-headwear,.v455-face-item{filter:drop-shadow(0 2px 2.5px rgba(3,12,30,.34))}
+.v456-soft-addon{stroke-linejoin:round;stroke-linecap:round}
+.v456-headwear,.v456-accessory{stroke-linejoin:round;stroke-linecap:round}
+.v456-crystal-wings{transform-origin:160px 185px;filter:drop-shadow(0 0 8px rgba(91,224,255,.32))}
 
-.v45-live-avatar.motion-victory .v5p-aura,
-.v45-live-avatar.motion-levelup .v5p-aura{
-  animation:v455Aura .58s ease-in-out infinite alternate!important;
-}
-@keyframes v455Aura{from{opacity:.48;filter:blur(18px) brightness(1)}to{opacity:1;filter:blur(22px) brightness(1.42)}}
+.v45-live-avatar.motion-victory .v455-wing-group{animation:v456Wing .38s ease-in-out infinite alternate!important}
+@keyframes v456Wing{from{transform:scaleX(.95) rotate(-1deg)}to{transform:scaleX(1.045) rotate(1deg)}}
 
-/* Motion feedback is deliberately obvious so every button has visible proof. */
+.v45-live-avatar.motion-equip .v455-mask-svg,.v45-live-avatar.motion-equip .v455-back-svg{animation:v456EquipFlash .72s cubic-bezier(.16,1,.3,1) both!important}
+@keyframes v456EquipFlash{0%{opacity:.15;filter:brightness(1.8) drop-shadow(0 0 20px rgba(79,240,226,.9))}45%{opacity:1;filter:brightness(1.18) drop-shadow(0 0 13px rgba(79,240,226,.45))}100%{opacity:1;filter:none}}
+
+.v45-live-avatar.motion-victory .v5p-aura,.v45-live-avatar.motion-levelup .v5p-aura{animation:v456Aura .58s ease-in-out infinite alternate!important}
+@keyframes v456Aura{from{opacity:.48;filter:blur(18px) brightness(1)}to{opacity:1;filter:blur(22px) brightness(1.42)}}
+
 .v45-motion-fx{position:absolute;z-index:60;inset:0;pointer-events:none;overflow:visible}
-.v45-fx-question{
-  position:absolute;right:16%;top:12%;display:grid;place-items:center;width:50px;height:50px;
-  border:2px solid rgba(101,246,224,.7);border-radius:50%;background:rgba(4,48,91,.92);
-  color:#72f6df;font:1000 29px/1 var(--font-display);box-shadow:0 0 26px rgba(71,235,226,.35);
-  animation:v455Question 1.08s ease-in-out infinite!important;
-}
-.v45-fx-star{position:absolute;color:#ffe06b;font-style:normal;text-shadow:0 0 15px rgba(255,220,84,.9);animation:v455Star .62s ease-in-out infinite alternate!important}
+.v45-fx-question{position:absolute;right:16%;top:12%;display:grid;place-items:center;width:50px;height:50px;border:2px solid rgba(101,246,224,.7);border-radius:50%;background:rgba(4,48,91,.92);color:#72f6df;font:1000 29px/1 var(--font-display);box-shadow:0 0 26px rgba(71,235,226,.35);animation:v456Question 1.08s ease-in-out infinite!important}
+.v45-fx-star{position:absolute;color:#ffe06b;font-style:normal;text-shadow:0 0 15px rgba(255,220,84,.9);animation:v456Star .62s ease-in-out infinite alternate!important}
 .v45-fx-star.s1{left:13%;top:28%;font-size:29px}
 .v45-fx-star.s2{right:11%;top:21%;font-size:23px;animation-delay:.16s!important}
 .v45-fx-star.s3{right:17%;top:47%;font-size:20px;animation-delay:.31s!important}
-.v45-fx-equip{
-  position:absolute;left:50%;top:16%;transform:translateX(-50%);padding:7px 13px;
-  border:1px solid rgba(99,242,224,.65);border-radius:999px;background:rgba(2,35,76,.92);
-  color:#73f6df;font-size:9px;font-weight:1000;letter-spacing:.13em;box-shadow:0 0 24px rgba(63,227,231,.32);
-  animation:v455EquipLabel .76s ease-out both!important;
-}
-@keyframes v455Question{0%,100%{transform:translateY(0) rotate(-7deg)}50%{transform:translateY(-9px) rotate(7deg)}}
-@keyframes v455Star{from{transform:scale(.55) rotate(-16deg);opacity:.35}to{transform:scale(1.28) rotate(16deg);opacity:1}}
-@keyframes v455EquipLabel{0%{opacity:0;transform:translate(-50%,12px) scale(.8)}38%{opacity:1;transform:translate(-50%,0) scale(1.08)}100%{opacity:0;transform:translate(-50%,-10px) scale(1)}}
+.v45-fx-equip{position:absolute;left:50%;top:16%;transform:translateX(-50%);padding:7px 13px;border:1px solid rgba(99,242,224,.65);border-radius:999px;background:rgba(2,35,76,.92);color:#73f6df;font-size:9px;font-weight:1000;letter-spacing:.13em;box-shadow:0 0 24px rgba(63,227,231,.32);animation:v456EquipLabel .76s ease-out both!important}
+@keyframes v456Question{0%,100%{transform:translateY(0) rotate(-7deg)}50%{transform:translateY(-9px) rotate(7deg)}}
+@keyframes v456Star{from{transform:scale(.55) rotate(-16deg);opacity:.35}to{transform:scale(1.28) rotate(16deg);opacity:1}}
+@keyframes v456EquipLabel{0%{opacity:0;transform:translate(-50%,12px) scale(.8)}38%{opacity:1;transform:translate(-50%,0) scale(1.08)}100%{opacity:0;transform:translate(-50%,-10px) scale(1)}}
 
-.v45-premium-hero-wrap .v45-live-avatar,
-.v45-premium-hero-wrap .v45-live-stack,
-.v45-premium-hero-wrap .v455-mask-svg,
-.v45-premium-hero-wrap .v455-back-svg{pointer-events:none}
+.v45-premium-hero-wrap .v45-live-avatar,.v45-premium-hero-wrap .v45-live-stack,.v45-premium-hero-wrap .v455-mask-svg,.v45-premium-hero-wrap .v455-back-svg{pointer-events:none}
 
 @media(prefers-reduced-motion:reduce){
-  .v45-live-avatar.motion-thinking .v45-fx-question,
-  .v45-live-avatar.motion-happy .v45-fx-star,
-  .v45-live-avatar.motion-victory .v45-fx-star,
-  .v45-live-avatar.motion-equip .v455-mask-svg{
-    animation-duration:1s!important;
-  }
+  .v45-live-avatar.motion-thinking .v45-fx-question,.v45-live-avatar.motion-happy .v45-fx-star,.v45-live-avatar.motion-victory .v45-fx-star,.v45-live-avatar.motion-equip .v455-mask-svg{animation-duration:1s!important}
 }
