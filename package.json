@@ -1,11 +1,11 @@
 {
   "name": "bilgin-ustasi",
   "private": true,
-  "version": "4.8.0",
+  "version": "4.9.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run check:v48 && vite build",
+    "build": "npm run check:v49 && vite build",
     "lint": "oxlint",
     "preview": "vite preview",
     "check:v4": "node scripts/validate-v4.mjs",
@@ -13,7 +13,8 @@
     "check:v46": "node scripts/validate-v46.mjs",
     "check:v47": "node scripts/validate-v47.mjs",
     "check:v48": "node scripts/validate-v48.mjs",
-    "check:v5": "node scripts/validate-v5.mjs"
+    "check:v5": "node scripts/validate-v5.mjs",
+    "check:v49": "node scripts/validate-v49.mjs"
   },
   "dependencies": {
     "canvas-confetti": "^1.9.4",
