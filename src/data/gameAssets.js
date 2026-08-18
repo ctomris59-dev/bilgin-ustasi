@@ -1,8 +1,6 @@
 /*
- * Bilgin Ustası V4.3.1 asset registry — wearable export hotfix
- *
- * V3 rule: every inventory item has exactly one dedicated artwork file.
- * No hash based / random slot assignment remains.
+ * Bilgin Ustası V4.5.6 asset registry
+ * Shop artwork and worn-rig identity are intentionally separate.
  */
 
 const ASSET_MODULES = import.meta.glob(
@@ -33,12 +31,7 @@ const PRESETS = {
 };
 
 export const CHARACTER_STYLES = [
-  { id: "auto", label: "Ekipmana Göre", description: "Takılı ekipmana göre görünüm değişir.", asset: PRESETS.blue },
-  { id: "blue", label: "Mavi Kaşif", description: "Klasik keşif görünümü.", asset: PRESETS.blue },
-  { id: "red", label: "Kızıl Kaşif", description: "Saha görevleri için güçlü stil.", asset: PRESETS.red },
-  { id: "casual", label: "Doğa Kaşifi", description: "Rahat ve keşif odaklı görünüm.", asset: PRESETS.casual },
-  { id: "street", label: "Şehir Kaşifi", description: "Modern ve sade görünüm.", asset: PRESETS.street },
-  { id: "pink", label: "Enerji Kaşifi", description: "Canlı macera görünümü.", asset: PRESETS.pink },
+  { id: "master", label: "Bilgin Kaşif", description: "Tek sabit master karakter.", asset: PRESETS.street },
 ];
 
 export const GAME_ASSETS = {
@@ -57,6 +50,7 @@ function normalizeSlot(slot) {
     shoes: "shoes",
     headwear: "headwear",
     face: "face",
+    back: "back",
     wallpaper: "wallpaper",
     rug: "rug",
     desk: "desk",
@@ -67,37 +61,35 @@ function normalizeSlot(slot) {
   return aliases[slot] || slot;
 }
 
-/**
- * Returns the artwork dedicated to this exact item id.
- * Unlike V2, V3 never maps multiple ids onto a small shared image pool.
- */
-export function getItemAsset(itemOrId, slotOverride) {
+function resolveArtIdentity(itemOrId, slotOverride) {
   const item = typeof itemOrId === "string"
     ? { id: itemOrId, slot: slotOverride }
     : itemOrId || {};
-
-  if (!item.id || !item.slot) return "";
-  const slot = normalizeSlot(item.slot);
-  return asset(`premium/${slot}/${item.id}.webp`) || asset(`unique/${slot}/${item.id}.png`);
+  return {
+    item,
+    id: item.assetId || item.id,
+    slot: normalizeSlot(item.assetSlot || item.slot || slotOverride),
+  };
 }
 
+export function getItemAsset(itemOrId, slotOverride) {
+  const { id, slot } = resolveArtIdentity(itemOrId, slotOverride);
+  if (!id || !slot) return "";
+  return asset(`premium/${slot}/${id}.webp`) || asset(`unique/${slot}/${id}.png`);
+}
 
 export function getItemCardAsset(itemOrId, slotOverride) {
-  const item = typeof itemOrId === "string"
-    ? { id: itemOrId, slot: slotOverride }
-    : itemOrId || {};
-  if (!item.id || !item.slot) return "";
-  const slot = normalizeSlot(item.slot);
-  return asset(`premium/${slot}/${item.id}.webp`) || getItemAsset(item);
+  const { id, slot } = resolveArtIdentity(itemOrId, slotOverride);
+  if (!id || !slot) return "";
+  return asset(`premium/${slot}/${id}.webp`) || asset(`unique/${slot}/${id}.png`) || getItemAsset(itemOrId, slotOverride);
 }
 
+// Kept only for legacy callers. Core V4.5.6 wearables are rendered by the master rig,
+// never by dropping these product images over the character.
 export const getWearableAsset = (itemOrId, slotOverride) => {
-  const item = typeof itemOrId === "string"
-    ? { id: itemOrId, slot: slotOverride }
-    : itemOrId || {};
-  if (!item.id || !item.slot) return "";
-  const slot = normalizeSlot(item.slot);
-  return asset(`wearables/${slot}/${item.id}.webp`);
+  const { id, slot } = resolveArtIdentity(itemOrId, slotOverride);
+  if (!id || !slot) return "";
+  return asset(`wearables/${slot}/${id}.webp`);
 };
 
 export function getPetAsset(petId) {
@@ -106,18 +98,14 @@ export function getPetAsset(petId) {
 }
 
 export function getHairAsset(hairId) {
-  return HAIR_ASSETS[hairId] || HAIR_ASSETS["hair-bob-bangs"] || "";
+  return HAIR_ASSETS[hairId] || HAIR_ASSETS["hair-curly-afro"] || "";
 }
 
-export function getCharacterStyleAsset(styleId) {
-  return PRESETS[styleId] || PRESETS.blue;
+export function getCharacterStyleAsset() {
+  return PRESETS.street || PRESETS.blue;
 }
 
-export function getAvatarPreset(avatar = {}) {
-  const explicitStyle = avatar.characterStyle;
-  if (explicitStyle && explicitStyle !== "auto" && PRESETS[explicitStyle]) return PRESETS[explicitStyle];
-  // Auto mode deliberately uses the neutral street base; real equipment is rendered
-  // as aligned wearable layers by AvatarCanvas.
+export function getAvatarPreset() {
   return PRESETS.street || PRESETS.blue;
 }
 
@@ -125,8 +113,8 @@ export function getRarity(item = {}) {
   if (item.legendary) return "legendary";
   const price = Number(item.price || 0);
   const worldNumber = Number(String(item.world || "w1").replace("w", "")) || 1;
-  if (price >= 220 || worldNumber >= 10) return "epic";
-  if (price >= 100 || worldNumber >= 5) return "rare";
+  if (price >= 180 || worldNumber >= 5) return "epic";
+  if (price >= 100 || worldNumber >= 3) return "rare";
   return "common";
 }
 
