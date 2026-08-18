@@ -49,22 +49,18 @@ export function getCatalogMeta(item) {
     rarity,
     rarityMeta,
     slotMeta,
-    asset: getItemAsset(item),
-    cardAsset: getItemCardAsset(item),
+    asset: item.asset || getItemAsset(item),
+    cardAsset: item.cardAsset || getItemCardAsset(item),
   };
 }
 
 export function isItemEquipped(profile, item) {
   if (!profile || !item) return false;
-  if (["outfit", "shoes", "headwear", "face", "back"].includes(item.slot)) {
-    return profile.avatar?.[item.slot] === item.id;
-  }
+  if (["outfit", "shoes", "headwear", "face", "back"].includes(item.slot)) return profile.avatar?.[item.slot] === item.id;
   if (item.slot === "petSpecies") return profile.pet?.activeSpecies === item.id;
   if (item.slot === "petAccessory") return profile.pet?.accessory === item.id;
   if (["wallpaper", "rug", "desk", "lamp", "plant", "poster"].includes(item.slot)) {
-    return Object.values(profile.rooms || {}).some((room) =>
-      room?.wallpaper === item.id || (room?.items || []).some((placed) => placed.itemId === item.id)
-    );
+    return Object.values(profile.rooms || {}).some((room) => room?.wallpaper === item.id || (room?.items || []).some((placed) => placed.itemId === item.id));
   }
   return false;
 }
