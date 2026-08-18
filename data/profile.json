@@ -29,7 +29,7 @@
     "back": "back-v4-daypack"
   },
   "pet": {
-    "activeSpecies": null,
+    "activeSpecies": "pet-cat-orange",
     "accessory": null
   },
   "rooms": {
@@ -282,6 +282,6 @@
     "lastRewardDate": null,
     "bestMoves": {}
   },
-  "lastSyncedAt": "2026-08-18T11:28:47.599Z",
+  "lastSyncedAt": "2026-08-18T11:28:56.224Z",
   "gems": 1
 }
