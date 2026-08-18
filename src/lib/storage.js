@@ -1,8 +1,29 @@
-import { STARTER_UNLOCKED, DEFAULT_AVATAR } from "../data/avatarParts";
+import { STARTER_UNLOCKED, DEFAULT_AVATAR, CORE_ITEM_ID_SET, CORE_ITEMS_BY_SLOT } from "../data/avatarParts";
 import { DEFAULT_PET_STATE } from "../data/petsAndRoom";
 import { createDefaultRooms, createEmptyRoomState, migrateLegacyRoom, ROOM_TYPES } from "../data/houseRooms";
 
 const LOCAL_KEY = "bilginustasi_profile_v1";
+const WEARABLE_PREFIXES = ["outfit-", "shoes-", "headwear-", "face-", "back-"];
+
+function isLegacyWearableId(id) {
+  return typeof id === "string" && WEARABLE_PREFIXES.some((prefix) => id.startsWith(prefix));
+}
+
+function sanitizeUnlockedItems(ids = []) {
+  const nonWearables = ids.filter((id) => !isLegacyWearableId(id));
+  const ownedCore = ids.filter((id) => CORE_ITEM_ID_SET.has(id));
+  return [...new Set([...nonWearables, ...STARTER_UNLOCKED, ...ownedCore])];
+}
+
+function sanitizeAvatar(avatar = {}) {
+  const next = { ...DEFAULT_AVATAR };
+  for (const slot of ["outfit", "shoes", "headwear", "face", "back"]) {
+    const id = avatar?.[slot];
+    const valid = CORE_ITEMS_BY_SLOT[slot]?.some((entry) => entry.id === id);
+    next[slot] = valid ? id : DEFAULT_AVATAR[slot];
+  }
+  return next;
+}
 
 export function createDefaultProfile(childName = "Bilgin Adayı") {
   return {
@@ -34,32 +55,29 @@ export function createDefaultProfile(childName = "Bilgin Adayı") {
   };
 }
 
-// Eski profillerde (önceki fazlarda) yeni alanlar olmayabilir - güvenli tamamlama
 export function normalizeProfile(profile) {
   if (!profile) return profile;
   let rooms = profile.rooms;
   if (!rooms) {
-    // Çok eski (tek odalı, Faz 3) veriden göç: yatak odasına taşı
     rooms = createDefaultRooms();
     if (profile.room) rooms.bedroom = migrateLegacyRoom(profile.room);
   } else {
-    // Her oda için: eksikse oluştur, slot-bazlı eski formatsa (items dizisi yoksa) göç ettir
     ROOM_TYPES.forEach((rt) => {
       const r = rooms[rt.id];
-      if (!r) {
-        rooms[rt.id] = createEmptyRoomState();
-      } else if (!Array.isArray(r.items)) {
-        rooms[rt.id] = migrateLegacyRoom(r);
-      }
+      if (!r) rooms[rt.id] = createEmptyRoomState();
+      else if (!Array.isArray(r.items)) rooms[rt.id] = migrateLegacyRoom(r);
     });
   }
+
   const profileWithoutLegacyCheckIn = { ...profile };
   delete profileWithoutLegacyCheckIn["mood" + "Log"];
+
   return {
     ...profileWithoutLegacyCheckIn,
     accountCreatedAt: profile.accountCreatedAt || new Date().toISOString(),
     gems: Number(profile.gems || 0),
-    avatar: { ...DEFAULT_AVATAR, ...(profile.avatar || {}), characterStyle: profile.avatar?.characterStyle || "auto" },
+    unlockedItems: sanitizeUnlockedItems(profile.unlockedItems || []),
+    avatar: sanitizeAvatar(profile.avatar || {}),
     pet: profile.pet || { ...DEFAULT_PET_STATE },
     rooms,
     completedRooms: profile.completedRooms || [],
@@ -85,9 +103,7 @@ export function saveLocalProfile(profile) {
 export function clearLocalProfile() {
   localStorage.removeItem(LOCAL_KEY);
 }
-// --- Duraklatılmış Test ---
-// Test ortasında "Ana Sayfa"ya dönülürse ilerlemenin kaybolmaması için
-// yerel olarak (localStorage) saklanır. Bulut senkronuna dahil değildir.
+
 const PAUSED_TEST_KEY = "bilginustasi_paused_test_v1";
 
 export function getPausedTest() {
