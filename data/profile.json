@@ -10,27 +10,23 @@
     "freezesAvailable": 1
   },
   "unlockedItems": [
-    "outfit-tshirt",
-    "shoes-sneaker",
-    "face-v4-archive-monocle",
-    "headwear-crown",
-    "outfit-v4-infinity",
-    "shoes-v4-infinity",
-    "headwear-v4-infinity",
-    "face-v4-infinity-visor",
-    "back-v4-infinity",
-    "headwear-hairbow-pink"
+    "outfit-labcoat",
+    "shoes-cape-boots",
+    "headwear-pilot-goggles",
+    "face-compass-necklace",
+    "back-v4-daypack",
+    "face-v4-archive-monocle"
   ],
   "avatar": {
-    "characterStyle": "pink",
-    "skin": "skin-1",
-    "hairStyle": "hair-space-buns",
-    "hairColor": "#FF9EAA",
-    "outfit": "outfit-v4-infinity",
-    "shoes": "shoes-sneaker",
-    "headwear": null,
-    "face": null,
-    "back": null
+    "characterStyle": "master",
+    "skin": "skin-master",
+    "hairStyle": "hair-master-curly",
+    "hairColor": "#6B351F",
+    "outfit": "outfit-labcoat",
+    "shoes": "shoes-cape-boots",
+    "headwear": "headwear-pilot-goggles",
+    "face": "face-compass-necklace",
+    "back": "back-v4-daypack"
   },
   "pet": {
     "activeSpecies": null,
@@ -286,6 +282,6 @@
     "lastRewardDate": null,
     "bestMoves": {}
   },
-  "lastSyncedAt": "2026-08-18T06:35:10.796Z",
+  "lastSyncedAt": "2026-08-18T07:56:23.708Z",
   "gems": 1
 }
