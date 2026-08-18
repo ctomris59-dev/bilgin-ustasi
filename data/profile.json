@@ -10,22 +10,23 @@
     "freezesAvailable": 1
   },
   "unlockedItems": [
-    "outfit-v48-explorer",
-    "shoes-v48-explorer",
-    "headwear-v48-explorer",
-    "face-v48-explorer",
-    "back-v48-explorer"
+    "outfit-v49-explorer",
+    "shoes-v49-explorer",
+    "headwear-v49-explorer",
+    "face-v49-explorer",
+    "back-v49-explorer"
   ],
   "avatar": {
     "characterStyle": "master",
     "skin": "skin-master",
     "hairStyle": "hair-master-curly",
     "hairColor": "#6B351F",
-    "outfit": "outfit-v48-explorer",
-    "shoes": "shoes-v48-explorer",
-    "headwear": "headwear-v48-explorer",
-    "face": "face-v48-explorer",
-    "back": "back-v48-explorer"
+    "set": "explorer",
+    "outfit": "outfit-v49-explorer",
+    "shoes": "shoes-v49-explorer",
+    "headwear": "headwear-v49-explorer",
+    "face": "face-v49-explorer",
+    "back": "back-v49-explorer"
   },
   "pet": {
     "activeSpecies": "pet-cat-orange",
@@ -281,6 +282,6 @@
     "lastRewardDate": null,
     "bestMoves": {}
   },
-  "lastSyncedAt": "2026-08-18T12:45:32.576Z",
+  "lastSyncedAt": "2026-08-18T13:35:01.768Z",
   "gems": 1
 }
