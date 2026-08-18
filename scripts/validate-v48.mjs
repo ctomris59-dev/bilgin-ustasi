@@ -1,0 +1,23 @@
+import fs from "node:fs";
+const read=(p)=>fs.readFileSync(new URL(`../${p}`,import.meta.url),"utf8");
+const must=(ok,msg)=>{if(!ok){console.error(`❌ ${msg}`);process.exitCode=1}else console.log(`✅ ${msg}`)};
+const parts=read("src/data/avatarParts.js");
+const hero=read("src/components/v47/HeroHub.jsx");
+const renderer=read("src/components/v48/WardrobeAvatar.jsx");
+const assets=read("src/data/gameAssets.js");
+const main=read("src/main.jsx");
+const storage=read("src/lib/storage.js");
+
+const ids=[...parts.matchAll(/id: \"((?:outfit|shoes|headwear|face|back)-v48-[^\"]+)\"/g)].map(m=>m[1]);
+must(ids.length===20,"Yeni katalog tam 20 master-fit item içeriyor");
+for(const slot of ["outfit","shoes","headwear","face","back"]) must(ids.filter(id=>id.startsWith(`${slot}-v48-`)).length===4,`${slot} slotunda tam 4 yeni item var`);
+for(const setId of ["explorer","galaxy","cloud","forest"]) must(parts.includes(`${setId}: { id: \"${setId}\"`) && parts.includes(`set: \"${setId}\"`),`${setId} seti tanımlı`);
+must(parts.includes("SET_LOADOUTS")&&parts.includes("...SET_LOADOUTS.explorer"),"Setler 5 slotu tek yükleme ile kuşatıyor");
+must(hero.includes("WardrobeAvatar")&&hero.includes("applySet")&&hero.includes("SET_LOADOUTS"),"Kahraman ekranı yeni master wardrobe rendererına bağlı");
+must(!hero.includes("CHARACTER_PRESETS")&&!hero.includes("heroMaster"),"Kahraman ekranında eski full-preset seçim motoru yok");
+must(renderer.includes("heroMaster")&&renderer.includes('viewBox="0 0 320 480"')&&renderer.includes("BackLayer")&&renderer.includes("OutfitLayer")&&renderer.includes("ShoesLayer")&&renderer.includes("HeadLayer")&&renderer.includes("AccessoryLayer"),"Tek master + sabit 320×480 katmanlı renderer aktif");
+must(!assets.includes("coreWearables")&&!fs.existsSync(new URL("../src/data/coreWearables.js",import.meta.url)),"Eski V4.6 coreWearables sistemi silindi");
+must(main.includes("v48-wardrobe.css"),"V4.8 wardrobe stilleri production girişine bağlı");
+must(storage.includes("CORE_ITEM_ID_SET")&&storage.includes("sanitizeAvatar"),"Eski profil itemleri yeni kataloğa migrate ediliyor");
+if(process.exitCode)process.exit(process.exitCode);
+console.log("🚀 V4.8 — MASTER CHARACTER WARDROBE / 20 NEW ITEMS / 4 SETS doğrulaması başarılı.");
