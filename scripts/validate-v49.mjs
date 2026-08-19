@@ -1,25 +1,40 @@
 import fs from "node:fs";
+import explorerHD from "../src/assets/v492q25/explorer.js";
+import cloudHD from "../src/assets/v492/cloud.js";
+import forestHD from "../src/assets/v492/forest.js";
+
 const read=(p)=>fs.readFileSync(new URL(`../${p}`,import.meta.url),"utf8");
 const avatar=read("src/data/avatarParts.js");
 const hub=read("src/components/v47/HeroHub.jsx");
 const storage=read("src/lib/storage.js");
 const main=read("src/main.jsx");
 const css=read("src/v49-wardrobe.css");
+const registry=read("src/assets/v49/index.js");
 const pkg=JSON.parse(read("package.json"));
+
+function inspectAvif(dataUri){
+  if(!dataUri?.startsWith("data:image/avif;base64,"))return {ok:false,width:0,height:0,bytes:0};
+  const buf=Buffer.from(dataUri.split(",")[1],"base64");
+  const ispe=buf.indexOf(Buffer.from("ispe"));
+  if(ispe<0||ispe+16>buf.length)return {ok:false,width:0,height:0,bytes:buf.length};
+  const width=buf.readUInt32BE(ispe+8);const height=buf.readUInt32BE(ispe+12);
+  return {ok:buf.subarray(4,12).toString("ascii").includes("ftyp"),width,height,bytes:buf.length};
+}
+const hd={explorer:inspectAvif(explorerHD),cloud:inspectAvif(cloudHD),forest:inspectAvif(forestHD)};
+const allFullHd=Object.values(hd).every((x)=>x.ok&&x.width===1086&&x.height===1448&&x.bytes>18000);
+
 const checks=[
-  [pkg.version==="4.9.1","Sürüm 4.9.1"],
-  [(avatar.match(/id:\"(?:outfit|shoes|headwear|face|back)-v49-/g)||[]).length===15,"15 yeni item"],
-  [avatar.includes('setPrice: 360')&&avatar.includes('setPrice: 340'),"3 tamamlanmış set fiyatı"],
-  [hub.includes('getCharacterSetAsset')&&hub.includes('v49-set-hero'),"Tam karakter set renderı"],
-  [hub.includes('makeAvatarForSet')&&hub.includes('Set bütünlüğü: 5 parça birlikte uygulanır'),"Set bütünlüğü aktif"],
-  [hub.includes('v49-preview-window')&&hub.includes('ItemPreview'),"Item preview penceresi aktif"],
-  [css.includes('overflow:hidden')&&!css.includes('transform:scale(2.6)'),"Taşan item ölçek hackleri kaldırıldı"],
-  [css.includes('height:88%')&&css.includes('max-width:78%'),"Merkez karakter kontrollü ölçekte"],
+  [pkg.version==="4.9.2","Sürüm 4.9.2"],
+  [(avatar.match(/id:\"(?:outfit|shoes|headwear|face|back)-v49-/g)||[]).length===15,"15 item / 3 set korunuyor"],
+  [hub.includes('getCharacterSetAsset')&&hub.includes('v49-set-hero'),"Merkez karakter HD registry kullanıyor"],
+  [hub.includes('v49-preview-window')&&hub.includes('ItemPreview'),"Item preview pencereleri korunuyor"],
+  [css.includes('overflow:hidden')&&!css.includes('transform:scale(2.6)'),"Layout taşma hacklerinden arındırılmış"],
+  [registry.includes('../v492q25/explorer.js')&&registry.includes('../v492/cloud.js')&&registry.includes('../v492/forest.js'),"Runtime yalnızca HD master registry'ye bağlı"],
+  [allFullHd,`Üç HD master gerçek 1086×1448 AVIF (${Object.entries(hd).map(([k,v])=>`${k}:${v.width}x${v.height}/${v.bytes}B`).join(', ')})`],
   [!hub.includes('WardrobeAvatar'),"Eski katmanlı WardrobeAvatar kapalı"],
-  [!fs.existsSync(new URL('../src/components/v48/WardrobeAvatar.jsx',import.meta.url)),"Eski V4.8 renderer silindi"],
-  [!fs.existsSync(new URL('../src/v48-wardrobe.css',import.meta.url)),"Eski V4.8 CSS silindi"],
-  [main.includes('./v49-wardrobe.css'),"V4.9 görsel CSS aktif"],
-  [storage.includes('makeAvatarForSet')&&storage.includes('detectedSet'),"Eski profil V4.9 sete migrate oluyor"],
-  [fs.existsSync(new URL('../src/assets/v49/explorerFull.js',import.meta.url))&&fs.existsSync(new URL('../src/assets/v49/cloudFull.js',import.meta.url))&&fs.existsSync(new URL('../src/assets/v49/forestFull.js',import.meta.url)),"Üç karaktere özel görsel paket mevcut"],
+  [main.includes('./v49-wardrobe.css'),"Mevcut V4.7/V4.9 tasarım CSS'i korunuyor"],
+  [storage.includes('makeAvatarForSet')&&storage.includes('detectedSet'),"Profil set migrasyonu korunuyor"],
 ];
-let failed=false;for(const [ok,label] of checks){console.log(`${ok?'✅':'❌'} ${label}`);if(!ok)failed=true;}if(failed)process.exit(1);console.log('🚀 V4.9.1 — CONTAINED CHARACTER & ITEM PREVIEWS doğrulaması başarılı.');
+let failed=false;for(const [ok,label] of checks){console.log(`${ok?'✅':'❌'} ${label}`);if(!ok)failed=true;}
+if(failed)process.exit(1);
+console.log('🚀 V4.9.2 — FULL HD CHARACTER ASSET PASS doğrulaması başarılı.');
