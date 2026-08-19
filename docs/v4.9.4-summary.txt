@@ -1,0 +1,1 @@
+Try-on, fallback image rendering, dedicated shop behavior, and validation complete.
