@@ -1,7 +1,5 @@
 import fs from "node:fs";
 import explorerHD from "../src/assets/v492q25/explorer.js";
-import cloudHD from "../src/assets/v492/cloud.js";
-import forestHD from "../src/assets/v492/forest.js";
 
 const read=(p)=>fs.readFileSync(new URL(`../${p}`,import.meta.url),"utf8");
 const avatar=read("src/data/avatarParts.js");
@@ -20,21 +18,23 @@ function inspectAvif(dataUri){
   const width=buf.readUInt32BE(ispe+8);const height=buf.readUInt32BE(ispe+12);
   return {ok:buf.subarray(4,12).toString("ascii").includes("ftyp"),width,height,bytes:buf.length};
 }
-const hd={explorer:inspectAvif(explorerHD),cloud:inspectAvif(cloudHD),forest:inspectAvif(forestHD)};
-const allFullHd=Object.values(hd).every((x)=>x.ok&&x.width===1086&&x.height===1448&&x.bytes>18000);
+const explorer=inspectAvif(explorerHD);
+const explorerHdOk=explorer.ok&&explorer.width===1086&&explorer.height===1448&&explorer.bytes>18000;
+const visibleFallbacks=registry.includes('explorer-pink.png')&&registry.includes('explorer-casual.png')&&!registry.includes('../v492/cloud.js')&&!registry.includes('../v492/forest.js');
 
 const checks=[
   [/^4\.9\./.test(pkg.version),`Sürüm ${pkg.version}`],
   [(avatar.match(/id:\"(?:outfit|shoes|headwear|face|back)-v49-/g)||[]).length===15,"15 item / 3 set korunuyor"],
-  [hub.includes('getCharacterSetAsset')&&hub.includes('v49-set-hero'),"Merkez karakter HD registry kullanıyor"],
+  [hub.includes('getCharacterSetAsset')&&hub.includes('v49-set-hero'),"Merkez karakter set registry kullanıyor"],
   [hub.includes('v49-preview-window')&&hub.includes('ItemPreview'),"Item preview pencereleri korunuyor"],
   [css.includes('overflow:hidden')&&!css.includes('transform:scale(2.6)'),"Layout taşma hacklerinden arındırılmış"],
-  [registry.includes('../v492q25/explorer.js')&&registry.includes('../v492/cloud.js')&&registry.includes('../v492/forest.js'),"Runtime HD master registry'ye bağlı"],
-  [allFullHd,`Üç HD master gerçek 1086×1448 AVIF (${Object.entries(hd).map(([k,v])=>`${k}:${v.width}x${v.height}/${v.bytes}B`).join(', ')})`],
+  [registry.includes('../v492q25/explorer.js'),"Kaşif HD master registry'de"],
+  [explorerHdOk,`Kaşif master gerçek 1086×1448 AVIF (${explorer.width}x${explorer.height}/${explorer.bytes}B)`],
+  [visibleFallbacks,"Boş Gökyüzü/Orman AVIF runtime'dan çıkarıldı; görünür PNG renderlar bağlı"],
   [!hub.includes('WardrobeAvatar'),"Eski katmanlı WardrobeAvatar kapalı"],
   [main.includes('./v49-wardrobe.css'),"Mevcut V4.7/V4.9 tasarım CSS'i korunuyor"],
   [storage.includes('makeAvatarForSet')&&storage.includes('detectedSet'),"Profil set migrasyonu korunuyor"],
 ];
 let failed=false;for(const [ok,label] of checks){console.log(`${ok?'✅':'❌'} ${label}`);if(!ok)failed=true;}
 if(failed)process.exit(1);
-console.log('🚀 V4.9 HD CHARACTER ASSET PASS doğrulaması başarılı.');
+console.log('🚀 V4.9 visible-set registry doğrulaması başarılı.');
