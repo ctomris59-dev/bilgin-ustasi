@@ -29,7 +29,7 @@
     "back": "back-v49-explorer"
   },
   "pet": {
-    "activeSpecies": "pet-cat-orange",
+    "activeSpecies": "pet-owl-purple",
     "accessory": null
   },
   "rooms": {
@@ -282,6 +282,6 @@
     "lastRewardDate": null,
     "bestMoves": {}
   },
-  "lastSyncedAt": "2026-08-19T09:08:25.339Z",
+  "lastSyncedAt": "2026-08-19T09:08:32.143Z",
   "gems": 1
 }
