@@ -1,0 +1,1 @@
+Preview validation passed on Vercel: V4.9 HD asset pass + V4.9.4 try-on/fallback checks + Vite production build.
