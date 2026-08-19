@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import AppShell from "./components/shell/AppShell";
 import HeroHub from "./components/v47/HeroHub";
+import ShopHub from "./components/v47/ShopHub";
 import LessonsHub from "./components/v47/LessonsHub";
 import TasksHub from "./components/v47/TasksHub";
 import CompanionHub from "./components/v47/CompanionHub";
@@ -33,5 +34,16 @@ export default function V47App() {
   function buyItem(item){if(!item?.set||!SETS[item.set])return;const setMeta=SETS[item.set];const setIds=getSetItemIds(item.set);const alreadyOwned=setIds.every((id)=>(profile.unlockedItems||[]).includes(id));if(alreadyOwned){persist({...profile,avatar:makeAvatarForSet(item.set,profile.avatar)});return;}const requiredLevel=getWorldById(item.world)?.unlockLevel||1;if(getLevelInfo(profile.xp||0).current.level<requiredLevel){notify(`Bu set için Seviye ${requiredLevel} gerekiyor.`);return;}if((profile.coins||0)<setMeta.setPrice){notify("Yeterli coin yok.");return;}playCoin();const unlocked=[...new Set([...(profile.unlockedItems||[]),...setIds])];persist({...profile,coins:(profile.coins||0)-setMeta.setPrice,unlockedItems:unlocked,avatar:makeAvatarForSet(item.set,profile.avatar)});notify(`${setMeta.label} açıldı ve kuşanıldı!`);}
   if(loading||!profile)return <div className="v47-loading"><span>✦</span><h1>Bilgin Kaşif Üssü hazırlanıyor...</h1></div>;
   const focusMode=Boolean(activeTest||pendingResult); const activeSection=activeTest?"test":pendingResult?"result":tab;
-  return <><AppShell profile={profile} tests={tests} syncStatus={syncStatus} activeSection={activeSection} tab={tab} onChangeTab={setTab} focusMode={focusMode}>{activeTest?<TestSolver test={activeTest.test} isRetryTest={false} onFinish={finishTest} onCancel={()=>setActiveTest(null)} onPause={()=>setActiveTest(null)}/>:pendingResult?<ResultScreen {...pendingResult} onClose={()=>{setPendingResult(null);setTab("lessons");}}/>:tab==="wardrobe"||tab==="shop"?<HeroHub profile={profile} onChangeAvatar={changeAvatar} onOpenLessons={()=>setTab("lessons")} onBuyItem={buyItem}/>:tab==="lessons"?<LessonsHub profile={profile} tests={tests} onStartTest={startTest} onGeneratePractice={generatePractice}/>:tab==="dashboard"?<TasksHub profile={profile} tests={tests} onStartTest={startTest} onOpenLessons={()=>setTab("lessons")}/>:tab==="pets"?<CompanionHub profile={profile} onChangePet={changePet}/>:tab==="base"?<BaseHub profile={profile}/>:tab==="leaderboard"?<LeaderboardHub profile={profile}/>:<HeroHub profile={profile} onChangeAvatar={changeAvatar} onOpenLessons={()=>setTab("lessons")} onBuyItem={buyItem}/>}</AppShell>{toast&&<div className="v47-toast">{toast}</div>}</>;
+  let page=null;
+  if(activeTest) page=<TestSolver test={activeTest.test} isRetryTest={false} onFinish={finishTest} onCancel={()=>setActiveTest(null)} onPause={()=>setActiveTest(null)}/>;
+  else if(pendingResult) page=<ResultScreen {...pendingResult} onClose={()=>{setPendingResult(null);setTab("lessons");}}/>;
+  else if(tab==="wardrobe") page=<HeroHub profile={profile} onChangeAvatar={changeAvatar} onOpenLessons={()=>setTab("lessons")} onBuyItem={buyItem}/>;
+  else if(tab==="shop") page=<ShopHub profile={profile} onBuyItem={buyItem}/>;
+  else if(tab==="lessons") page=<LessonsHub profile={profile} tests={tests} onStartTest={startTest} onGeneratePractice={generatePractice}/>;
+  else if(tab==="dashboard") page=<TasksHub profile={profile} tests={tests} onStartTest={startTest} onOpenLessons={()=>setTab("lessons")}/>;
+  else if(tab==="pets") page=<CompanionHub profile={profile} onChangePet={changePet}/>;
+  else if(tab==="base") page=<BaseHub profile={profile}/>;
+  else if(tab==="leaderboard") page=<LeaderboardHub profile={profile}/>;
+  else page=<HeroHub profile={profile} onChangeAvatar={changeAvatar} onOpenLessons={()=>setTab("lessons")} onBuyItem={buyItem}/>;
+  return <><AppShell profile={profile} tests={tests} syncStatus={syncStatus} activeSection={activeSection} tab={tab} onChangeTab={setTab} focusMode={focusMode}>{page}</AppShell>{toast&&<div className="v47-toast">{toast}</div>}</>;
 }
