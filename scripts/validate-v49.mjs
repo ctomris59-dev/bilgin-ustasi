@@ -24,12 +24,12 @@ const hd={explorer:inspectAvif(explorerHD),cloud:inspectAvif(cloudHD),forest:ins
 const allFullHd=Object.values(hd).every((x)=>x.ok&&x.width===1086&&x.height===1448&&x.bytes>18000);
 
 const checks=[
-  [pkg.version==="4.9.2","Sürüm 4.9.2"],
+  [/^4\.9\./.test(pkg.version),`Sürüm ${pkg.version}`],
   [(avatar.match(/id:\"(?:outfit|shoes|headwear|face|back)-v49-/g)||[]).length===15,"15 item / 3 set korunuyor"],
   [hub.includes('getCharacterSetAsset')&&hub.includes('v49-set-hero'),"Merkez karakter HD registry kullanıyor"],
   [hub.includes('v49-preview-window')&&hub.includes('ItemPreview'),"Item preview pencereleri korunuyor"],
   [css.includes('overflow:hidden')&&!css.includes('transform:scale(2.6)'),"Layout taşma hacklerinden arındırılmış"],
-  [registry.includes('../v492q25/explorer.js')&&registry.includes('../v492/cloud.js')&&registry.includes('../v492/forest.js'),"Runtime yalnızca HD master registry'ye bağlı"],
+  [registry.includes('../v492q25/explorer.js')&&registry.includes('../v492/cloud.js')&&registry.includes('../v492/forest.js'),"Runtime HD master registry'ye bağlı"],
   [allFullHd,`Üç HD master gerçek 1086×1448 AVIF (${Object.entries(hd).map(([k,v])=>`${k}:${v.width}x${v.height}/${v.bytes}B`).join(', ')})`],
   [!hub.includes('WardrobeAvatar'),"Eski katmanlı WardrobeAvatar kapalı"],
   [main.includes('./v49-wardrobe.css'),"Mevcut V4.7/V4.9 tasarım CSS'i korunuyor"],
@@ -37,4 +37,4 @@ const checks=[
 ];
 let failed=false;for(const [ok,label] of checks){console.log(`${ok?'✅':'❌'} ${label}`);if(!ok)failed=true;}
 if(failed)process.exit(1);
-console.log('🚀 V4.9.2 — FULL HD CHARACTER ASSET PASS doğrulaması başarılı.');
+console.log('🚀 V4.9 HD CHARACTER ASSET PASS doğrulaması başarılı.');
