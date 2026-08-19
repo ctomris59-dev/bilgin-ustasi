@@ -1,31 +1,54 @@
 import { useMemo, useState } from "react";
-import { ITEMS, SETS, SET_LOADOUTS, makeAvatarForSet } from "../../data/avatarParts";
-import { getCatalogMeta } from "../../data/catalog";
-import { CHARACTER_PRESETS, getCharacterSetAsset } from "../../data/gameAssets";
+import { CHARACTER_STYLES, STYLE_BY_ID, DEFAULT_STYLE_ID, getUnlockedStyles, isStyleUnlocked } from "../../data/characterStyles";
 import { playPop } from "../../lib/sound";
 
-const SLOT_TABS=[["outfit","Kıyafet","👕"],["shoes","Ayakkabı","👢"],["headwear","Başlık","🧢"],["face","Aksesuar","◉"],["back","Sırt","🎒"]];
 const MOTIONS=[["idle","Rahat","🏃"],["thinking","Düşün","🤔"],["happy","Mutlu","🙂"],["victory","Zafer","🏆"]];
-const SET_ORDER=["explorer","cloud","forest"];
-function inferSet(profile){if(SETS[profile.avatar?.set])return profile.avatar.set;const outfit=ITEMS.find((item)=>item.id===profile.avatar?.outfit);return outfit?.set||"explorer";}
-function fallbackFor(setId){return CHARACTER_PRESETS[setId]||CHARACTER_PRESETS.explorer||"";}
-function SafeImage({src,fallback,alt,className}){return <img className={className} src={src||fallback} alt={alt||""} onError={(e)=>{if(fallback&&e.currentTarget.src!==fallback){e.currentTarget.onerror=null;e.currentTarget.src=fallback;}}}/>;}
-function SetImage({setId,alt,className}){return <SafeImage src={getCharacterSetAsset(setId)} fallback={fallbackFor(setId)} alt={alt} className={className}/>;}
-function ItemPreview({item,variant="card"}){return <span className={`v49-preview-window is-${variant} slot-${item.slot}`}><SetImage setId={item.set} alt={item.label}/></span>;}
+const PAGE_SIZE=6;
+
+function StyleImage({style,className="",alt=""}){
+  const [failed,setFailed]=useState(false);
+  if(!style)return null;
+  return failed?<div className={`v50-image-fallback ${className}`}><span>★</span><b>{style.shortLabel}</b></div>:<img className={className} src={style.image} alt={alt||style.label} onError={()=>setFailed(true)}/>;
+}
 
 export default function HeroHub({profile,onChangeAvatar,onOpenLessons,onOpenShop}){
- const[slot,setSlot]=useState("outfit");const[motion,setMotion]=useState("idle");const activeSet=inferSet(profile);const[previewSet,setPreviewSet]=useState(activeSet);const[selectedId,setSelectedId]=useState(profile.avatar?.outfit||SET_LOADOUTS.explorer.outfit);
- const owned=useMemo(()=>new Set(profile.unlockedItems||[]),[profile.unlockedItems]);const items=useMemo(()=>ITEMS.filter((item)=>item.slot===slot).map(getCatalogMeta),[slot]);const selected=items.find((i)=>i.id===selectedId)||items.find((i)=>i.set===previewSet)||items[0];const activeLoadout=SET_LOADOUTS[activeSet];const equipped=Object.values(activeLoadout).map((id)=>ITEMS.find((item)=>item.id===id)).filter(Boolean).map(getCatalogMeta);const setOwned=(setId)=>Object.values(SET_LOADOUTS[setId]||{}).every((id)=>owned.has(id));const isTrying=previewSet!==activeSet;
- function applySet(setId){if(!SETS[setId]||!setOwned(setId))return;playPop();onChangeAvatar?.(makeAvatarForSet(setId,profile.avatar));setPreviewSet(setId);}
- function previewItem(item){setSelectedId(item.id);setPreviewSet(item.set);playPop();}
- function actionSelected(){if(!selected)return;if(setOwned(selected.set)){applySet(selected.set);return;}onOpenShop?.();}
- function randomize(){const available=SET_ORDER.filter(setOwned);const setId=available[Math.floor(Math.random()*available.length)]||"explorer";setPreviewSet(setId);setSelectedId(SET_LOADOUTS[setId]?.[slot]||SET_LOADOUTS[setId]?.outfit);playPop();}
- return <section className="v47-hero-page">
-  <aside className="v47-equipped-panel v47-panel"><h3>Kuşanılanlar</h3><div className="v47-equipped-list">{equipped.map((item)=><button key={item.id} onClick={()=>{setSlot(item.slot);setSelectedId(item.id);setPreviewSet(activeSet);}}><ItemPreview item={item} variant="equipped"/><span><small>{item.slotMeta.label}</small><strong>{item.label}</strong></span></button>)}</div></aside>
-  <div className="v47-stage-panel"><div className="v47-scene-glow"/>{isTrying&&<div className="v494-tryon-badge">DENEME · {SETS[previewSet]?.shortLabel}</div>}<div className={`v47-full-hero motion-${motion}`}><SetImage className="v49-set-hero" setId={previewSet} alt={`${SETS[previewSet]?.label} Bilgin Kaşif`}/></div><div className="v47-motion-stack">{MOTIONS.map(([id,label,icon])=><button key={id} className={motion===id?"is-active":""} onClick={()=>{setMotion(id);playPop();}}><span>{icon}</span><b>{label}</b></button>)}<button onClick={randomize}><span>🎲</span><b>Rastgele</b></button></div></div>
-  <div className="v47-wardrobe-panel v47-panel"><div className="v47-slot-tabs">{SLOT_TABS.map(([id,label,icon])=><button key={id} className={slot===id?"is-active":""} onClick={()=>{setSlot(id);setSelectedId(SET_LOADOUTS[previewSet]?.[id]||ITEMS.find((x)=>x.slot===id)?.id);playPop();}}><span>{icon}</span>{label}</button>)}</div><div className="v47-shop-head"><h2>Gardırop · {SLOT_TABS.find(([id])=>id===slot)?.[1]}</h2><b>{items.filter((item)=>setOwned(item.set)).length} / {items.length}</b></div><div className="v47-shop-grid">{items.map((item)=>{const isOn=activeLoadout?.[slot]===item.id;const isPreview=previewSet===item.set;const unlocked=setOwned(item.set);const set=SETS[item.set];return <button key={item.id} className={`v47-shop-card rarity-${item.rarity} ${isOn?"is-equipped":""} ${isPreview?"is-previewing":""} ${!unlocked?"is-locked":""}`} onClick={()=>previewItem(item)}>{isOn&&<i>✓</i>}<ItemPreview item={item}/><strong>{item.label}</strong><small style={{color:item.rarityMeta.color}}>{isPreview&&!isOn?"👁 DENENİYOR":unlocked?set.label:"🔒 DENE · DÜKKANDA AÇ"}</small></button>;})}</div>
-  {selected&&<div className="v47-detail-card"><div><span>{SETS[selected.set]?.label}</span><h3>{selected.label}</h3><p>{SETS[selected.set]?.description}</p><ul><li>✦ {SETS[selected.set]?.bonus}</li><li>👁 Seçince karakter üzerinde anında denenir</li><li>⬡ Set bütünlüğü: 5 parça birlikte uygulanır</li></ul></div><ItemPreview item={selected} variant="detail"/><button className={activeSet===selected.set?"is-on":""} onClick={actionSelected}>{activeSet===selected.set?"✓ TAKILI":setOwned(selected.set)?"BU SETİ KUŞAN":"DÜKKANDA AÇ →"}</button></div>}
-  <div className="v47-combos"><h3>Tam Setler · tıklayarak dene</h3><div>{SET_ORDER.map((setId)=>{const active=activeSet===setId;const preview=previewSet===setId;const complete=setOwned(setId);return <button key={setId} className={`${active?"is-active":""} ${preview?"is-previewing":""} ${!complete?"is-locked":""}`} onClick={()=>{setPreviewSet(setId);setSelectedId(SET_LOADOUTS[setId]?.[slot]||SET_LOADOUTS[setId]?.outfit);playPop();}}><SetImage className="v49-combo-render" setId={setId} alt={`${SETS[setId].label} önizleme`}/><span>{SETS[setId].shortLabel}</span>{active?<i>✓</i>:preview?<i>👁</i>:<i>{complete?"★":"🔒"}</i>}</button>;})}</div></div></div>
-  <div className="v47-learning-strip"><div className="v47-lesson-cta"><span>📖</span><div><strong>Dersler & Öğrenme</strong><small>Yeni bilgiler keşfet, sınavları geç, ödüller kazan.</small></div><button onClick={onOpenLessons}>Derslere Git →</button></div><div className="v47-daily-mini"><b>Önerilen Ders</b><span>Fen Bilimleri · Keşif Görevi</span><i><em style={{width:"60%"}}/></i></div><div className="v47-daily-mini"><b>Günlük Hedef</b><span>1 ders tamamla · 1 soru çöz</span><i><em style={{width:"34%"}}/></i></div></div>
- </section>;
+  const activeId=STYLE_BY_ID[profile.avatar?.styleId]?profile.avatar.styleId:DEFAULT_STYLE_ID;
+  const [previewId,setPreviewId]=useState(activeId);
+  const [motion,setMotion]=useState("idle");
+  const [page,setPage]=useState(Math.floor((STYLE_BY_ID[activeId]?.index-1||0)/PAGE_SIZE));
+  const active=STYLE_BY_ID[activeId];
+  const preview=STYLE_BY_ID[previewId]||active;
+  const unlocked=useMemo(()=>getUnlockedStyles(profile.xp||0),[profile.xp]);
+  const totalPages=Math.ceil(CHARACTER_STYLES.length/PAGE_SIZE);
+  const pageStyles=CHARACTER_STYLES.slice(page*PAGE_SIZE,page*PAGE_SIZE+PAGE_SIZE);
+  const nextLocked=CHARACTER_STYLES.find((style)=>!isStyleUnlocked(style.id,profile.xp||0));
+  const isPreviewing=preview.id!==active.id;
+  const canEquip=isStyleUnlocked(preview.id,profile.xp||0);
+
+  function previewStyle(style){setPreviewId(style.id);setPage(Math.floor((style.index-1)/PAGE_SIZE));playPop();}
+  function equipPreview(){if(!canEquip)return;playPop();onChangeAvatar?.({styleId:preview.id,characterStyle:"bilgin-kasif-master"});}
+  function randomize(){const pool=unlocked.length?unlocked:[CHARACTER_STYLES[0]];previewStyle(pool[Math.floor(Math.random()*pool.length)]);}
+  function shiftPage(delta){const next=(page+delta+totalPages)%totalPages;setPage(next);playPop();}
+
+  return <section className="v50-hero-page">
+    <aside className="v50-status-panel v47-panel">
+      <span className="v47-eyebrow">AKTİF GÖRÜNÜM</span>
+      <div className="v50-active-thumb"><StyleImage style={active}/></div>
+      <h2>{active.label}</h2><p>{active.description}</p>
+      <div className="v50-unlock-stat"><strong>{unlocked.length}<small>/20</small></strong><span>Açılan Stil</span></div>
+      {nextLocked?<div className="v50-next-style"><small>SONRAKİ STİL</small><b>{nextLocked.shortLabel}</b><div><i style={{width:`${Math.min(100,Math.round(((profile.xp||0)/nextLocked.unlockXp)*100))}%`}}/></div><span>{profile.xp||0} / {nextLocked.unlockXp} XP</span></div>:<div className="v50-next-style is-complete"><b>🏆 Koleksiyon tamamlandı!</b></div>}
+      <button className="v50-shop-link" onClick={onOpenShop}>20 Stilin Tamamını Gör →</button>
+    </aside>
+
+    <div className="v47-stage-panel v50-stage-panel"><div className="v47-scene-glow"/>{isPreviewing&&<div className="v494-tryon-badge">DENEME · {preview.shortLabel}</div>}<div className={`v47-full-hero motion-${motion}`}><StyleImage className="v50-style-hero" style={preview} alt={`${preview.label} Bilgin Kaşif`}/></div><div className="v47-motion-stack">{MOTIONS.map(([id,label,icon])=><button key={id} className={motion===id?"is-active":""} onClick={()=>{setMotion(id);playPop();}}><span>{icon}</span><b>{label}</b></button>)}<button onClick={randomize}><span>🎲</span><b>Rastgele</b></button></div></div>
+
+    <div className="v50-style-panel v47-panel">
+      <div className="v50-style-head"><div><span className="v47-eyebrow">STİL KOLEKSİYONU</span><h2>Bilgin Kaşif · 20 Görünüm</h2></div><b>{page+1}/{totalPages}</b></div>
+      <div className="v50-style-grid">{pageStyles.map((style)=>{const owned=isStyleUnlocked(style.id,profile.xp||0);const isActive=active.id===style.id;const selected=preview.id===style.id;return <button key={style.id} className={`v50-style-card ${selected?"is-selected":""} ${isActive?"is-active":""} ${!owned?"is-locked":""}`} onClick={()=>previewStyle(style)}><div><StyleImage style={style}/>{!owned&&<i>🔒</i>}{isActive&&<em>✓</em>}</div><strong>{style.shortLabel}</strong><small>{owned?isActive?"TAKILI":"AÇIK":`${style.unlockXp} XP`}</small></button>;})}</div>
+      <div className="v50-pager"><button onClick={()=>shiftPage(-1)}>← Önceki</button><div>{Array.from({length:totalPages},(_,i)=><button key={i} className={i===page?"is-active":""} onClick={()=>setPage(i)}>{i+1}</button>)}</div><button onClick={()=>shiftPage(1)}>Sonraki →</button></div>
+      <div className="v50-style-detail"><div><span>STİL {String(preview.index).padStart(2,"0")}</span><h3>{preview.label}</h3><p>{preview.description}</p>{canEquip?<small>✓ Bu görünüm XP ile açıldı.</small>:<small>🔒 Açmak için {Math.max(0,preview.unlockXp-(profile.xp||0))} XP daha kazan.</small>}</div><button disabled={!canEquip||active.id===preview.id} onClick={equipPreview}>{active.id===preview.id?"✓ TAKILI":canEquip?"BU STİLİ KUŞAN":`${preview.unlockXp} XP GEREKİYOR`}</button></div>
+    </div>
+
+    <div className="v47-learning-strip"><div className="v47-lesson-cta"><span>📖</span><div><strong>Dersler & Öğrenme</strong><small>Testleri tamamla, XP kazan ve yeni karakter stillerini aç.</small></div><button onClick={onOpenLessons}>Derslere Git →</button></div><div className="v47-daily-mini"><b>Stil İlerlemesi</b><span>{unlocked.length} / 20 görünüm açık</span><i><em style={{width:`${unlocked.length*5}%`}}/></i></div><div className="v47-daily-mini"><b>Aktif Stil</b><span>{active.label}</span><i><em style={{width:"100%"}}/></i></div></div>
+  </section>;
 }
