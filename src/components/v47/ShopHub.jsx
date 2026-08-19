@@ -1,33 +1,25 @@
-import { useMemo, useState } from "react";
-import { ITEMS, SETS, SET_LOADOUTS } from "../../data/avatarParts";
-import { getCatalogMeta } from "../../data/catalog";
-import { CHARACTER_PRESETS, getCharacterSetAsset } from "../../data/gameAssets";
+import { useState } from "react";
+import { CHARACTER_STYLES, STYLE_BY_ID, isStyleUnlocked } from "../../data/characterStyles";
 import { playPop } from "../../lib/sound";
 
-const SLOT_TABS = [["outfit","Kıyafet","👕"],["shoes","Ayakkabı","👢"],["headwear","Başlık","🧢"],["face","Aksesuar","◉"],["back","Sırt","🎒"]];
-const SET_ORDER = ["explorer","cloud","forest"];
-function fallbackFor(setId){return CHARACTER_PRESETS[setId]||CHARACTER_PRESETS.explorer||"";}
-function SetImage({setId,alt,className}){const fallback=fallbackFor(setId);return <img className={className} src={getCharacterSetAsset(setId)||fallback} alt={alt||""} onError={(e)=>{if(fallback&&e.currentTarget.src!==fallback){e.currentTarget.onerror=null;e.currentTarget.src=fallback;}}}/>;}
+const PAGE_SIZE=10;
+function StyleImage({style}){const[failed,setFailed]=useState(false);return failed?<div className="v50-image-fallback"><span>★</span><b>{style.shortLabel}</b></div>:<img src={style.image} alt={style.label} onError={()=>setFailed(true)}/>;}
 
-export default function ShopHub({ profile, onBuyItem, onOpenHero }) {
-  const [slot, setSlot] = useState("outfit");
-  const [selectedSet, setSelectedSet] = useState("explorer");
-  const owned = useMemo(() => new Set(profile?.unlockedItems || []), [profile?.unlockedItems]);
-  const items = useMemo(() => ITEMS.filter((item) => item.slot === slot).map(getCatalogMeta), [slot]);
-  const selected = items.find((item) => item.set === selectedSet) || items[0];
-  const setOwned = (setId) => Object.values(SET_LOADOUTS[setId] || {}).every((id) => owned.has(id));
-  function selectItem(item) { playPop(); setSelectedSet(item.set); }
-  function action(item) { if (!item) return; playPop(); if(setOwned(item.set)){onOpenHero?.();return;} onBuyItem?.(item); }
-
-  return <section className="v493-shop-page">
-    <header className="v493-shop-header v47-panel"><div><span className="v47-eyebrow">DÜKKAN</span><h1>Kaşif ekipmanlarını keşfet.</h1><p>Satın almadan önce Kahraman ekranında her seti deneyebilirsin.</p></div><div className="v493-shop-wallet"><small>CÜZDAN</small><strong>◈ {profile?.coins || 0}</strong><span>COIN</span></div></header>
-    <div className="v493-shop-shell v47-panel">
-      <div className="v493-shop-tabs">{SLOT_TABS.map(([id,label,icon])=><button key={id} className={slot===id?"is-active":""} onClick={()=>{setSlot(id);playPop();}}><span>{icon}</span><b>{label}</b></button>)}</div>
-      <div className="v493-shop-content">
-        <div className="v493-shop-items">{items.map((item)=>{const set=SETS[item.set];const isOwned=setOwned(item.set);const active=selected?.id===item.id;return <button key={item.id} className={`v493-store-card rarity-${item.rarity} ${active?"is-selected":""}`} onClick={()=>selectItem(item)}><div className="v493-store-art"><SetImage setId={item.set} alt={item.label}/></div><div className="v493-store-copy"><small>{set?.label}</small><strong>{item.label}</strong><span>{isOwned?"✓ SAHİP":`◈ ${set?.setPrice||0} · 5 PARÇA SET`}</span></div></button>;})}</div>
-        {selected&&<aside className="v493-shop-detail"><div className="v493-shop-detail-art"><SetImage setId={selected.set} alt={`${SETS[selected.set]?.label} Bilgin Kaşif`}/></div><div className="v493-shop-detail-copy"><span>{SETS[selected.set]?.label}</span><h2>{selected.label}</h2><p>{SETS[selected.set]?.description}</p><ul><li>✦ {SETS[selected.set]?.bonus}</li><li>⬡ 5 parça birlikte açılır</li><li>👁 Kahraman ekranında ücretsiz deneme</li></ul></div><button className={setOwned(selected.set)?"is-owned":""} onClick={()=>action(selected)}>{setOwned(selected.set)?"Kahramanda Dene / Kuşan →":`◈ ${SETS[selected.set]?.setPrice||0} · SETİ SATIN AL`}</button></aside>}
-      </div>
-      <div className="v493-shop-sets"><strong>Tam Setler</strong><div>{SET_ORDER.map((setId)=><button key={setId} className={selectedSet===setId?"is-active":""} onClick={()=>{setSelectedSet(setId);playPop();}}><SetImage setId={setId} alt={`${SETS[setId]?.label} önizleme`}/><span>{SETS[setId]?.shortLabel}</span><i>{setOwned(setId)?"✓":"🔒"}</i></button>)}</div></div>
+export default function ShopHub({profile,onOpenHero,onOpenLessons}){
+  const activeId=STYLE_BY_ID[profile.avatar?.styleId]?profile.avatar.styleId:"style-01";
+  const [selectedId,setSelectedId]=useState(activeId);
+  const [page,setPage]=useState(Math.floor(((STYLE_BY_ID[activeId]?.index||1)-1)/PAGE_SIZE));
+  const selected=STYLE_BY_ID[selectedId]||CHARACTER_STYLES[0];
+  const pageStyles=CHARACTER_STYLES.slice(page*PAGE_SIZE,page*PAGE_SIZE+PAGE_SIZE);
+  const unlockedCount=CHARACTER_STYLES.filter((style)=>isStyleUnlocked(style.id,profile.xp||0)).length;
+  function select(style){setSelectedId(style.id);playPop();}
+  function action(){playPop();if(isStyleUnlocked(selected.id,profile.xp||0)){onOpenHero?.();}else{onOpenLessons?.();}}
+  return <section className="v50-shop-page">
+    <header className="v50-shop-header v47-panel"><div><span className="v47-eyebrow">STİL GALERİSİ</span><h1>20 Bilgin Kaşif görünümünü keşfet.</h1><p>Coin harcamazsın. Ders ve testlerden XP kazandıkça yeni stiller otomatik açılır.</p></div><div className="v50-shop-progress"><small>KOLEKSİYON</small><strong>{unlockedCount}<i>/20</i></strong><span>{profile.xp||0} XP</span></div></header>
+    <div className="v50-shop-shell v47-panel">
+      <div className="v50-shop-grid">{pageStyles.map((style)=>{const owned=isStyleUnlocked(style.id,profile.xp||0);const active=style.id===activeId;const selectedNow=style.id===selectedId;return <button key={style.id} className={`v50-store-card ${selectedNow?"is-selected":""} ${active?"is-active":""} ${!owned?"is-locked":""}`} onClick={()=>select(style)}><div><StyleImage style={style}/>{!owned&&<i>🔒</i>}{active&&<em>✓</em>}</div><span>STİL {String(style.index).padStart(2,"0")}</span><strong>{style.shortLabel}</strong><small>{owned?active?"TAKILI":"AÇIK":`${style.unlockXp} XP`}</small></button>;})}</div>
+      <aside className="v50-shop-detail"><div className="v50-shop-detail-art"><StyleImage style={selected}/></div><div className="v50-shop-detail-copy"><span>STİL {String(selected.index).padStart(2,"0")}</span><h2>{selected.label}</h2><p>{selected.description}</p><ul><li>✦ Aynı Bilgin Kaşif karakteri</li><li>▣ Sabit 1024×1536 master çözünürlük</li><li>🏆 XP kazanarak kalıcı açılır</li></ul></div><button onClick={action}>{isStyleUnlocked(selected.id,profile.xp||0)?selected.id===activeId?"✓ ŞU AN TAKILI":"KAHRAMANDA DENE / KUŞAN →":`DERSLERLE ${Math.max(0,selected.unlockXp-(profile.xp||0))} XP KAZAN →`}</button></aside>
+      <div className="v50-shop-pager"><button disabled={page===0} onClick={()=>{setPage(0);playPop();}}>01–10</button><button disabled={page===1} onClick={()=>{setPage(1);playPop();}}>11–20</button></div>
     </div>
   </section>;
 }
