@@ -14,23 +14,21 @@ const gameAssets=read('src/data/gameAssets.js');
 const main=read('src/main.jsx');
 const sprite=read('src/assets/v50/styleSprite.js');
 const css=read('src/v50-styles.css');
+const atlasPath=path.join(root,'public/character-styles/v50-styles.avif');
 
 const ids=[...styles.matchAll(/\["style-(\d{2})"/g)].map((m)=>m[1]);
 must(ids.length===20,'characterStyles.js must define exactly 20 full styles');
 must(new Set(ids).size===20,'style IDs must be unique');
-must(styles.includes('width:1024,height:1536'),'all style metadata must use 1024×1536');
+must(styles.includes('width:640,height:960'),'all style metadata must use the same 640×960 tile resolution');
 must(styles.includes('STYLE_UNLOCK_STEP = 250'),'styles must unlock through XP progression');
 
 must(sprite.includes('SPRITE_COLUMNS = 5')&&sprite.includes('SPRITE_ROWS = 4'),'sprite must be a 5×4 atlas');
-for(let i=0;i<4;i++)must(fs.existsSync(path.join(root,`src/assets/v50/sprite${i}.js`)),`sprite${i}.js missing`);
-const payload=[0,1,2,3].map((i)=>{
-  const src=read(`src/assets/v50/sprite${i}.js`);
-  const m=src.match(/export default '([\s\S]*)';\s*$/);
-  must(Boolean(m),`sprite${i}.js is malformed`);
-  return m[1];
-}).join('');
-must(payload.startsWith('AAAAIGZ0eXBhdmlm'),'sprite payload is not AVIF');
-must(payload.length>90000,'sprite payload looks truncated');
+must(sprite.includes('/character-styles/v50-styles.avif'),'runtime must use the single production AVIF atlas');
+must(sprite.includes('STYLE_TILE_WIDTH = 640')&&sprite.includes('STYLE_TILE_HEIGHT = 960'),'sprite tile metadata must be 640×960');
+must(fs.existsSync(atlasPath),'production V5 AVIF atlas is missing');
+const atlas=fs.readFileSync(atlasPath);
+must(atlas.length>500000,'production V5 AVIF atlas looks too small/truncated');
+must(atlas.subarray(4,12).toString('ascii').includes('ftypavif'),'production V5 atlas is not an AVIF file');
 
 must(hero.includes('StyleRender')&&!hero.includes('SLOT_TABS')&&!hero.includes('SET_LOADOUTS'),'HeroHub must use full-style renderer only');
 must(shop.includes('StyleRender')&&!shop.includes('onBuyItem'),'ShopHub must be a separate XP style gallery');
@@ -41,4 +39,4 @@ must(gameAssets.includes('getWearableAsset=()=>""'),'legacy wearable resolver mu
 must(main.includes('v50-styles.css')&&!main.includes('v49-wardrobe.css')&&!main.includes('v494-tryon.css'),'runtime must use V5 CSS only');
 must(css.includes('.v50-sprite-render')&&css.includes('aspect-ratio:2/3'),'sprite rendering must preserve the 2:3 master ratio');
 
-console.log(`✅ V5.0 validated: 20 styles · 1024×1536 · 5×4 AVIF sprite · no wearable slots/assets.`);
+console.log(`✅ V5.0 validated: 20 styles · 640×960 each · 3200×3840 AVIF atlas · XP unlock · no wearable slots/assets.`);
