@@ -5,9 +5,8 @@ import "./v5-focus.css";
 import "./v47-reference.css";
 import "./v47-stage.css";
 import "./v47-extras.css";
-import "./v49-wardrobe.css";
 import "./v493-screen-fit.css";
-import "./v494-tryon.css";
+import "./v50-styles.css";
 import V47App from "./V47App.jsx";
 
 createRoot(document.getElementById("root")).render(
