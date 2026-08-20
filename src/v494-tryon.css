@@ -1,5 +1,0 @@
-/* V4.9.4 — real try-on states, loaded last. */
-.v494-tryon-badge{position:absolute;top:12px;right:12px;z-index:8;padding:7px 11px;border:1px solid #42f4d2;border-radius:999px;background:#063a6ee8;color:#8affea;font-size:10px;font-weight:1000;letter-spacing:.12em;box-shadow:0 0 18px #2ce5d455}
-.v47-shop-card.is-previewing{border-color:#4edcff!important;box-shadow:0 0 18px #27c9ff55,inset 0 0 0 1px #75e7ff55!important}.v47-shop-card.is-previewing small{color:#72eaff!important}.v47-shop-card.is-locked.is-previewing{opacity:1!important}
-.v47-combos button.is-previewing{border-color:#4edcff!important;box-shadow:0 0 16px #27c9ff55!important}.v47-combos button.is-locked.is-previewing{opacity:1!important}
-.v49-preview-window img,.v493-store-art img,.v493-shop-detail-art img,.v493-shop-sets img,.v49-set-hero,.v49-combo-render{visibility:visible;opacity:1}
