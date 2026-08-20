@@ -10,6 +10,7 @@ const hero=read('src/components/v47/HeroHub.jsx');
 const shop=read('src/components/v47/ShopHub.jsx');
 const storage=read('src/lib/storage.js');
 const catalog=read('src/data/catalog.js');
+const gameAssets=read('src/data/gameAssets.js');
 const main=read('src/main.jsx');
 const sprite=read('src/assets/v50/styleSprite.js');
 const css=read('src/v50-styles.css');
@@ -35,7 +36,9 @@ must(hero.includes('StyleRender')&&!hero.includes('SLOT_TABS')&&!hero.includes('
 must(shop.includes('StyleRender')&&!shop.includes('onBuyItem'),'ShopHub must be a separate XP style gallery');
 must(storage.includes('LEGACY_WEARABLE_PREFIXES')&&storage.includes('styleId'),'storage must migrate old wearables to styleId');
 must(!catalog.includes('avatarParts')&&!catalog.includes('outfit'),'shared catalog must not expose character wearables');
+must(!gameAssets.includes('assets/v49')&&!gameAssets.includes('game-assets/**/*'),'V5 bundle must not import legacy wearable registries or broad character asset globs');
+must(gameAssets.includes('getWearableAsset=()=>""'),'legacy wearable resolver must be disabled');
 must(main.includes('v50-styles.css')&&!main.includes('v49-wardrobe.css')&&!main.includes('v494-tryon.css'),'runtime must use V5 CSS only');
 must(css.includes('.v50-sprite-render')&&css.includes('aspect-ratio:2/3'),'sprite rendering must preserve the 2:3 master ratio');
 
-console.log(`✅ V5.0 validated: 20 styles · 1024×1536 · 5×4 AVIF sprite · no wearable slots.`);
+console.log(`✅ V5.0 validated: 20 styles · 1024×1536 · 5×4 AVIF sprite · no wearable slots/assets.`);
