@@ -34,7 +34,7 @@ export default function V47App() {
   if(activeTest) content=<div className="v493-test-fit"><TestSolver test={activeTest.test} isRetryTest={false} onFinish={finishTest} onCancel={()=>setActiveTest(null)} onPause={()=>setActiveTest(null)}/></div>;
   else if(pendingResult) content=<div className="v493-result-fit"><ResultScreen {...pendingResult} onClose={()=>{setPendingResult(null);setTab("lessons");}}/></div>;
   else if(tab==="wardrobe") content=<HeroHub profile={profile} onChangeAvatar={changeAvatar} onOpenLessons={()=>setTab("lessons")} onOpenShop={()=>setTab("shop")}/>;
-  else if(tab==="shop") content=<ShopHub profile={profile} onOpenHero={()=>setTab("wardrobe")} onOpenLessons={()=>setTab("lessons")}/>;
+  else if(tab==="shop") content=<ShopHub profile={profile} onChangeAvatar={changeAvatar} onOpenHero={()=>setTab("wardrobe")} onOpenLessons={()=>setTab("lessons")}/>;
   else if(tab==="lessons") content=<LessonsHub profile={profile} tests={tests} onStartTest={startTest} onGeneratePractice={generatePractice}/>;
   else if(tab==="dashboard") content=<TasksHub profile={profile} tests={tests} onStartTest={startTest} onOpenLessons={()=>setTab("lessons")}/>;
   else if(tab==="pets") content=<CompanionHub profile={profile} onChangePet={changePet}/>;
