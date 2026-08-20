@@ -1,12 +1,4 @@
-import {
-  STYLE_SPRITE,
-  SPRITE_COLUMNS,
-  SPRITE_ROWS,
-  SPRITE_TILE_WIDTH,
-  SPRITE_TILE_HEIGHT,
-  SPRITE_PIXEL_WIDTH,
-  SPRITE_PIXEL_HEIGHT,
-} from "../../assets/v50/styleSprite";
+import { STYLE_SPRITE, SPRITE_COLUMNS, SPRITE_ROWS } from "../../assets/v50/styleSprite";
 
 export default function StyleRender({ style, className = "", label = true }) {
   if (!style) return null;
@@ -25,32 +17,56 @@ export default function StyleRender({ style, className = "", label = true }) {
   }
 
   return (
-    <svg
+    <div
       role="img"
       aria-label={style.label}
       className={`v50-sprite-render ${className}`}
       data-style-index={idx + 1}
-      viewBox={`0 0 ${SPRITE_TILE_WIDTH} ${SPRITE_TILE_HEIGHT}`}
-      preserveAspectRatio="xMidYMid meet"
+      style={{
+        position: "relative",
+        overflow: "hidden",
+        aspectRatio: "2 / 3",
+      }}
     >
-      <image
-        href={STYLE_SPRITE}
-        x={-col * SPRITE_TILE_WIDTH}
-        y={-row * SPRITE_TILE_HEIGHT}
-        width={SPRITE_PIXEL_WIDTH}
-        height={SPRITE_PIXEL_HEIGHT}
-        preserveAspectRatio="none"
+      <img
+        src={STYLE_SPRITE}
+        alt=""
+        aria-hidden="true"
+        draggable="false"
+        decoding="async"
+        style={{
+          position: "absolute",
+          width: `${SPRITE_COLUMNS * 100}%`,
+          height: `${SPRITE_ROWS * 100}%`,
+          maxWidth: "none",
+          left: `${-col * 100}%`,
+          top: `${-row * 100}%`,
+          objectFit: "fill",
+          userSelect: "none",
+          pointerEvents: "none",
+        }}
       />
       {label && (
-        <text
-          x={SPRITE_TILE_WIDTH / 2}
-          y={SPRITE_TILE_HEIGHT - 12}
-          textAnchor="middle"
-          className="v50-render-label"
+        <span
+          aria-hidden="true"
+          style={{
+            position: "absolute",
+            left: "50%",
+            bottom: 6,
+            transform: "translateX(-50%)",
+            zIndex: 2,
+            padding: "2px 6px",
+            borderRadius: 999,
+            background: "rgba(2, 17, 31, .72)",
+            color: "#dff7ff",
+            fontSize: 8,
+            fontWeight: 900,
+            whiteSpace: "nowrap",
+          }}
         >
           {style.shortLabel}
-        </text>
+        </span>
       )}
-    </svg>
+    </div>
   );
 }
