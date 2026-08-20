@@ -10,8 +10,5 @@ export function getSpritePosition(index=0){
   const safe=Math.max(0,Math.min(19,Number(index)||0));
   const col=safe%SPRITE_COLUMNS;
   const row=Math.floor(safe/SPRITE_COLUMNS);
-  return {
-    x:SPRITE_COLUMNS===1?0:(col/(SPRITE_COLUMNS-1))*100,
-    y:SPRITE_ROWS===1?0:(row/(SPRITE_ROWS-1))*100,
-  };
+  return {x:SPRITE_COLUMNS===1?0:(col/(SPRITE_COLUMNS-1))*100,y:SPRITE_ROWS===1?0:(row/(SPRITE_ROWS-1))*100};
 }
