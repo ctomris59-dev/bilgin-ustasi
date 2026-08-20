@@ -15,6 +15,21 @@ const main=read('src/main.jsx');
 const sprite=read('src/assets/v50/styleSprite.js');
 const css=read('src/v50-styles.css');
 
+const forbiddenLegacyPaths=[
+  'src/components/avatar/AnimatedAvatar.jsx',
+  'src/components/avatar/AvatarCanvas.jsx',
+  'src/components/avatar/LayeredHero.jsx',
+  'src/components/avatar/Wardrobe.jsx',
+  'src/components/avatar/WornAsset.jsx',
+  'src/data/avatarRig.js',
+  'src/data/heroAnchors.js',
+  'src/data/premiumRigMasks.js',
+  'src/assets/avatar-v5/premium',
+];
+for(const legacyPath of forbiddenLegacyPaths){
+  must(!fs.existsSync(path.join(root,legacyPath)),`legacy wearable source must stay removed: ${legacyPath}`);
+}
+
 const ids=[...styles.matchAll(/\["style-(\d{2})"/g)].map((m)=>m[1]);
 must(ids.length===20,'characterStyles.js must define exactly 20 full styles');
 must(new Set(ids).size===20,'style IDs must be unique');
