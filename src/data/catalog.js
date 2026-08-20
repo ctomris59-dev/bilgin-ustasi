@@ -1,16 +1,12 @@
-import { ITEMS } from "./avatarParts";
 import { PETS, PET_ACCESSORIES, ROOM_ITEMS } from "./petsAndRoom";
 import { WORLDS } from "./worlds";
 import { getRarity, getRarityMeta, getItemAsset, getItemCardAsset } from "./gameAssets";
 
-export const CATALOG_ITEMS = [...ITEMS, ...PETS, ...PET_ACCESSORIES, ...ROOM_ITEMS];
+// V5.0: Character wearables were removed. The shared catalog now only owns
+// companion and base/room items; character appearances live in characterStyles.js.
+export const CATALOG_ITEMS = [...PETS, ...PET_ACCESSORIES, ...ROOM_ITEMS];
 
 export const SLOT_META = {
-  outfit: { label: "Kıyafet", category: "equipment", icon: "◈" },
-  shoes: { label: "Ayakkabı", category: "equipment", icon: "⌁" },
-  headwear: { label: "Başlık", category: "equipment", icon: "△" },
-  face: { label: "Aksesuar", category: "equipment", icon: "◎" },
-  back: { label: "Sırt Eşyası", category: "equipment", icon: "▰" },
   petSpecies: { label: "Keşif Dostu", category: "pets", icon: "✦" },
   petAccessory: { label: "Dost Aksesuarı", category: "pets", icon: "◇" },
   wallpaper: { label: "Duvar Teması", category: "room", icon: "▧" },
@@ -23,12 +19,6 @@ export const SLOT_META = {
 
 export const CATEGORY_FILTERS = [
   { id: "all", label: "Tümü" },
-  { id: "equipment", label: "Ekipman" },
-  { id: "outfit", label: "Kıyafet" },
-  { id: "shoes", label: "Ayakkabı" },
-  { id: "headwear", label: "Başlık" },
-  { id: "face", label: "Aksesuar" },
-  { id: "back", label: "Sırt Eşyası" },
   { id: "pets", label: "Dostlar" },
   { id: "room", label: "Üs" },
 ];
@@ -42,7 +32,7 @@ export function getCatalogMeta(item) {
   const world = WORLDS.find((w) => w.id === item.world) || WORLDS[0];
   const rarity = getRarity(item);
   const rarityMeta = getRarityMeta(rarity);
-  const slotMeta = SLOT_META[item.slot] || { label: "Özel Eşya", category: "equipment", icon: "✦" };
+  const slotMeta = SLOT_META[item.slot] || { label: "Özel Eşya", category: "other", icon: "✦" };
   return {
     ...item,
     world,
@@ -56,7 +46,6 @@ export function getCatalogMeta(item) {
 
 export function isItemEquipped(profile, item) {
   if (!profile || !item) return false;
-  if (["outfit", "shoes", "headwear", "face", "back"].includes(item.slot)) return profile.avatar?.[item.slot] === item.id;
   if (item.slot === "petSpecies") return profile.pet?.activeSpecies === item.id;
   if (item.slot === "petAccessory") return profile.pet?.accessory === item.id;
   if (["wallpaper", "rug", "desk", "lamp", "plant", "poster"].includes(item.slot)) {
@@ -67,7 +56,6 @@ export function isItemEquipped(profile, item) {
 
 export function filterCatalog(items, category) {
   if (!category || category === "all") return items;
-  if (category === "equipment") return items.filter((item) => ["outfit", "shoes", "headwear", "face", "back"].includes(item.slot));
   if (category === "pets") return items.filter((item) => ["petSpecies", "petAccessory"].includes(item.slot));
   if (category === "room") return items.filter((item) => ["wallpaper", "rug", "desk", "lamp", "plant", "poster"].includes(item.slot));
   return items.filter((item) => item.slot === category);
