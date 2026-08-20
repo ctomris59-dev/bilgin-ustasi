@@ -1,9 +1,9 @@
-/* V5.0 asset registry — character wearables are intentionally excluded. */
+/* V5.0 asset registry — character wearables and legacy hero-stage art are intentionally excluded. */
 const ASSET_MODULES = import.meta.glob([
   "../assets/game-assets/logo.jpg",
   "../assets/game-assets/rooms/**/*.{png,jpg,jpeg,webp}",
   "../assets/game-assets/worlds/**/*.{png,jpg,jpeg,webp}",
-  "../assets/game-assets/scenes/**/*.{png,jpg,jpeg,webp}",
+  "../assets/game-assets/scenes/premium-base-room.webp",
   "../assets/game-assets/ui/rarity/*.{png,jpg,jpeg,webp}",
   "../assets/game-assets/premium/petSpecies/*.{png,jpg,jpeg,webp}",
   "../assets/game-assets/unique/petSpecies/*.{png,jpg,jpeg,webp}",
@@ -31,7 +31,6 @@ export const GAME_ASSETS={
   logo:asset("logo.jpg"),
   roomBackground:asset("rooms/base-study-room.jpg"),
   mapBackground:asset("worlds/map-background.jpg"),
-  heroStage:asset("scenes/hero-character-stage.webp"),
   premiumBaseRoom:asset("scenes/premium-base-room.webp")
 };
 
