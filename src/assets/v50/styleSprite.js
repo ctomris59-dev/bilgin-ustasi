@@ -1,13 +1,10 @@
-import sprite0 from "./sprite0.js";
-import sprite1 from "./sprite1.js";
-import sprite2 from "./sprite2.js";
-import sprite3 from "./sprite3.js";
-
-export const STYLE_SPRITE = `data:image/avif;base64,${sprite0}${sprite1}${sprite2}${sprite3}`;
+export const STYLE_SPRITE = "/character-styles/v50-styles.avif";
 export const SPRITE_COLUMNS = 5;
 export const SPRITE_ROWS = 4;
-export const STYLE_TILE_WIDTH = 1024;
-export const STYLE_TILE_HEIGHT = 1536;
+export const STYLE_TILE_WIDTH = 640;
+export const STYLE_TILE_HEIGHT = 960;
+export const STYLE_ATLAS_WIDTH = 3200;
+export const STYLE_ATLAS_HEIGHT = 3840;
 
 export function getSpritePosition(index=0){
   const safe=Math.max(0,Math.min(19,Number(index)||0));
